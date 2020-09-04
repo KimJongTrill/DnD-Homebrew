@@ -5,7 +5,7 @@
 		<description>Home Cookin</description>
 		<author>KimJongTrill</author>
 		<update version="0.0.5">
-			<file name="Homebrew.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/third-party/dms-guild/classes/class-pugilist.xml" />
+			<file name="Homebrew.xml" url="https://github.com/KimJongTrill/Aurora-Homebrew/blob/master/Homebrew.xml" />
 		</update>
 	</info>
 
