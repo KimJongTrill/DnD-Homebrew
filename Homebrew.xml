@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+		<name>Homebrew</name>
+		<description>Home Cookin</description>
+		<author>KimJongTrill</author>
+		<update version="0.0.5">
+			<file name="Homebrew.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/third-party/dms-guild/classes/class-pugilist.xml" />
+		</update>
+	</info>
+
+	<element name="Homebrew" type="Source" source="Core" id="ID_HB">
+		<description>
+			<p>Nothing beats homestyle cookin</p>
+		</description>
+		<setters>
+			<set name="abbreviation">HB</set>
+			<set name="image">https://pbs.twimg.com/profile_images/1101458990033260544/AbMssnTl.png</set>
+			<set name="author">KimJongTrill</set>
+			<set name="Custom">true</set>
+		</setters>
+	</element>
+
+    <element name="Knucle Duster" type="Weapon" source="Homebrew" id="ID_HB_KNUCKS">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">5</set>
+			<set name="weight" lb=".5">.5 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="bludgeoning">1d4</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB</set>
+		</setters>
+	</element>
+
+    <element name="Knucle Duster (Off Hand)" type="Weapon" source="Homebrew" id="ID_HB_KNUCKS_OH">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">5</set>
+			<set name="weight" lb=".5">.5 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="bludgeoning">1d4</set>
+			
+		</setters>
+	</element>
+
+    <element name="Hulk Hogan" type="Deity" source="Guild of the Hawkes" id="ID_GOTH_DEITY_HH">
+        <description>
+            <p class="flavor">God of Entertainment</p>
+        </description>
+        <setters>
+            <set name="setting">Forgotten Realms</set>
+            <set name="alignment">CN</set>
+			<set name="domains">Nature, Tempest</set>
+            <set name="symbol">Feather Boa</set>
+            <set name="gender">male</set>
+        </setters>
+        <sheet>
+            <description>God of Entertainment</description>
+        </sheet>
+    </element>
+</elements>
