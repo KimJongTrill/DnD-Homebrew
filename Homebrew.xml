@@ -47,7 +47,6 @@
 			<set name="weight" lb=".5">.5 lb.</set>
 			<set name="slot">onehand</set>
 			<set name="damage" type="bludgeoning">1d4</set>
-			
 		</setters>
 	</element>
 
