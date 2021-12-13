@@ -2,10 +2,10 @@
 <index>
   <info>
     <update version="6.9">
-      <file name="Homebrew.index" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/edit/master/Homebrew.index" />
+      <file name="Homebrew.index" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew.index" />
     </update>
   </info>
   <files>
-    <file name="source.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/edit/master/Homebrew.xml" />
+    <file name="source.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew.xml" />
   </files>
 </index>
