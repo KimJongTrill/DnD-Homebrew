@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.1">
+			<file name="source.xml" url="M" />
+		</update>
+	</info>
+	<element name="Homebrew" type="Source" source="Core" id="ID_HB">
+		<description>
+			<![CDATA[<p>Homebrew content made for you, by me</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">KJTHB</set>
+			<set name="url">https://youtu.be/dQw4w9WgXcQ</set>
+			<set name="author" abbreviation="KJT">KimJongTrill</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+</elements>
