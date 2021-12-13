@@ -6,6 +6,6 @@
     </update>
   </info>
   <files>
-    <file name="source.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew.xml" />
+    <file name="Homebrew.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew.xml" />
   </files>
 </index>
