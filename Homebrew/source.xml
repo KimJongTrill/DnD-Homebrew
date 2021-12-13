@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.1">
-			<file name="source.xml" url="M" />
+			<file name="source.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/source.xml" />
 		</update>
 	</info>
 	<element name="Homebrew" type="Source" source="Core" id="ID_HB">
