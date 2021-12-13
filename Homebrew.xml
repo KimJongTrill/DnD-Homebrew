@@ -1,25 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
-    <info>
-		<name>Homebrew</name>
-		<description>Home Cookin</description>
-		<author>KimJongTrill</author>
-		<update version="0.0.5">
-			<file name="Homebrew.xml" url="https://github.com/KimJongTrill/Aurora-Homebrew/blob/master/Homebrew.xml" />
-		</update>
-	</info>
-
-	<element name="Homebrew" type="Source" source="Core" id="ID_HB">
-		<description>
-			<p>Nothing beats homestyle cookin</p>
-		</description>
-		<setters>
-			<set name="abbreviation">HB</set>
-			<set name="image">https://pbs.twimg.com/profile_images/1101458990033260544/AbMssnTl.png</set>
-			<set name="author">KimJongTrill</set>
-			<set name="Custom">true</set>
-		</setters>
-	</element>
 
     <element name="Knucle Duster" type="Weapon" source="Homebrew" id="ID_HB_KNUCKS">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
@@ -36,28 +16,79 @@
 		</setters>
 	</element>
 
-    <element name="Knucle Duster (Off Hand)" type="Weapon" source="Homebrew" id="ID_HB_KNUCKS_OH">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
+    <element name="Shillelagh" type="Weapon" source="Homebrew" id="ID_HB_SHILLELAGH">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="sp">2</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="bludgeoning">1d8</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF</set>
+		</setters>
+	</element>
+
+	<element name="Magic Stone" type="Weapon" source="Homebrew" id="ID_HB_MAGIC_STONE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING</supports>
 		<description>
 			<p></p>
 		</description>
 		<setters>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">5</set>
-			<set name="weight" lb=".5">.5 lb.</set>
+			<set name="weight" lb="0">0 lb.</set>
 			<set name="slot">onehand</set>
-			<set name="damage" type="bludgeoning">1d4</set>
+			<set name="range">60 ft</set>
+			<set name="damage" type="bludgeoning">1d6</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_DART</set>
 		</setters>
 	</element>
 
-    <element name="Hulk Hogan" type="Deity" source="Guild of the Hawkes" id="ID_GOTH_DEITY_HH">
+    <element name="Eldritch Blast" type="Weapon" source="Homebrew" id="ID_HB_ELDRBL">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">1</set>
+			<set name="weight" lb=".5">0 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="Force">1d10</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB</set>
+		</setters>
+	</element>
+
+	<element name="Mage Armor" type="Armor" source="Homebrew" id="ID_HB_MAGE_ARMOR">
+		<supports>ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
+		<description>
+			<p>Mage Armor from Warlock Invocation</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Light</set>
+			<set name="armorClass">13 + Dex modifier</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_STUDDED_LEATHER</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:armor" value="13" />
+		</rules>
+	</element>
+    
+    <element name="Hulk Hogan" type="Deity" source="Homebrew" id="ID_HB_DEITY_HH">
         <description>
             <p class="flavor">God of Entertainment</p>
         </description>
         <setters>
             <set name="setting">Forgotten Realms</set>
             <set name="alignment">CN</set>
-			<set name="domains">Nature, Tempest</set>
+			<set name="domains">Entertainment, Politics, Warriors</set>
             <set name="symbol">Feather Boa</set>
             <set name="gender">male</set>
         </setters>
@@ -65,4 +96,60 @@
             <description>God of Entertainment</description>
         </sheet>
     </element>
+	
+	<element name="Custom Background (Tool/Language)" type="Background" source="Homebrew" id="ID_HB_CUSTOM_BG_TL">
+		<description>
+			<p>Before you became an adventurer, you did something.</p>
+			<ul class="unstyled">
+				<li> <strong>Skill Proficiencies:</strong> Choose two from any Skill</li>
+				<li> <strong>Tool Proficiencies:</strong> Choose one from any Tool</li>
+				<li> <strong>Language Proficiencies:</strong> Choose one from any Language</li>
+				<li> <strong>Equipment:</strong> A set of clothes appropriate to your duties and a pouch containing 20 gp</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="short">2 Any Skill, 1 Gaming Set / Instrument / Tools, 1 Language</set>
+		</setters>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency Custom" supports="Skill" number="2" />
+			<select type="Proficiency" name="Tool Proficiency Custom " supports="Musical Instrument||Gaming Set||Thieves tools||Artisan tools" />
+			<select type="Language" name="Language Custom" supports="Standard||Exotic"/>
+		</rules>
+	</element>
+
+	<element name="Custom Background (2 Tool)" type="Background" source="Homebrew" id="ID_HB_CUSTOM_BG_TT">
+		<description>
+			<p>Before you became an adventurer, you did something.</p>
+			<ul class="unstyled">
+				<li> <strong>Skill Proficiencies:</strong> Choose two from any Skill</li>
+				<li> <strong>Tool Proficiencies:</strong> Choose two from any Tool</li>
+				<li> <strong>Equipment:</strong> A set of clothes appropriate to your duties and a pouch containing 20 gp</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="short">2 Any Skill, 2 Gaming Set / Instrument / Tools </set>
+		</setters>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency Custom" supports="Skill" number="2" />
+			<select type="Proficiency" name="Tool Proficiency Custom" supports="Musical Instrument||Gaming Set||Artisan tools||Thieves tools" number="2" />		
+		</rules>
+	</element>
+
+	<element name="Custom Background (2 Language)" type="Background" source="Homebrew" id="ID_HB_CUSTOM_LL">
+		<description>
+			<p>Before you became an adventurer, you did something.</p>
+			<ul class="unstyled">
+				<li> <strong>Skill Proficiencies:</strong> Choose two from any Skill</li>
+				<li> <strong>Language Proficiencies:</strong> Choose two from any Language</li>
+				<li> <strong>Equipment:</strong> A set of clothes appropriate to your duties and a pouch containing 20 gp</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="short">2 Any Skill, 2 Languages</set>
+		</setters>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency Custom" supports="Skill" number="2" />
+			<select type="Language" name="Language Custom" supports="Standard||Exotic" number="2"/>		
+		</rules>
+	</element>
 </elements>
