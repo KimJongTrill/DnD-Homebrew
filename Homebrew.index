@@ -1,24 +1,11 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<elements>
-    <info>
-		<name>Homebrew</name>
-		<description>Home Cookin</description>
-		<author>KimJongTrill</author>
-		<update version="0.0.5">
-			<file name="Homebrew.xml" url="https://github.com/KimJongTrill/Aurora-Homebrew/blob/master/Homebrew.xml" />
-		</update>
-	</info>
-
-	<element name="Homebrew" type="Source" source="Core" id="ID_HB">
-		<description>
-			<p>Nothing beats homestyle cookin</p>
-		</description>
-		<setters>
-			<set name="abbreviation">HB</set>
-			<set name="image">https://pbs.twimg.com/profile_images/1101458990033260544/AbMssnTl.png</set>
-			<set name="author">KimJongTrill</set>
-			<set name="Custom">true</set>
-		</setters>
-	</element>
-</elements>
-  
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+  <info>
+    <update version="6.9">
+      <file name="Homebrew.index" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/edit/master/Homebrew.index" />
+    </update>
+  </info>
+  <files>
+    <file name="source.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/edit/master/Homebrew.xml" />
+  </files>
+</index>
