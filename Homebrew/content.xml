@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 
+	<element name="KimJongTrill’s Custom Content" type="Source" source="Core" id="ID_KJT_CC">
+		<description>
+			<![CDATA[<p>Homebrew content made for you, by me</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">KJTCC</set>
+			<set name="url">https://youtu.be/dQw4w9WgXcQ</set>
+			<set name="author">KimJongTrill</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+
     <element name="Knuckle Duster" type="Weapon" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_KNUCKS">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
 		<description>
