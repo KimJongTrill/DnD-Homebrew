@@ -3,7 +3,7 @@
 
 	<element name="KimJongTrill’s Custom Content" type="Source" source="Core" id="ID_KJT_CC">
 		<description>
-			<![<p>Homebrew content made for you, by me.</p>]>
+			<p>Homebrew content made for you, by me.</p>
 		</description>
 		<setters>
 			<set name="abbreviation">KJTCC</set>
