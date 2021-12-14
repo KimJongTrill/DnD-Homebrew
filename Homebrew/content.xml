@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
-
+	<info>
+		<update version="0.1">
+			<file name="content.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/content.xml" />
+		</update>
+	</info>
 	<element name="KimJongTrill’s Custom Content" type="Source" source="KimJongTrill’s Custom Content" id="ID_KJT_CC">
 		<description>
 			<![CDATA[<p>It's stuff I made.</p>]]>
