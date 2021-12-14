@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 
-	<element name="KimJongTrill’s Custom Content" type="Source" source="Core" id="ID_KJT_CC">
+<element name="KimJongTrill’s Custom Content" type="Source" source="Core" id="ID_KJT_CC">
 		<description>
 			<p>Homebrew content made for you, by me.</p>
 		</description>
