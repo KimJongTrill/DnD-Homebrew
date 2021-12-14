@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 
-    <element name="Knucle Duster" type="Weapon" source="Homebrew" id="ID_HB_KNUCKS">
+    <element name="Knucle Duster" type="Weapon" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_KNUCKS">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
 		<description>
 			<p></p>
@@ -16,7 +16,7 @@
 		</setters>
 	</element>
 
-    <element name="Shillelagh" type="Weapon" source="Homebrew" id="ID_HB_SHILLELAGH">
+    <element name="Shillelagh" type="Weapon" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_SHILLELAGH">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING</supports>
 		<description>
 			<p></p>
@@ -31,7 +31,7 @@
 		</setters>
 	</element>
 
-	<element name="Magic Stone" type="Weapon" source="Homebrew" id="ID_HB_MAGIC_STONE">
+	<element name="Magic Stone" type="Weapon" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_MAGIC_STONE">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING</supports>
 		<description>
 			<p></p>
@@ -47,7 +47,7 @@
 		</setters>
 	</element>
 
-    <element name="Eldritch Blast" type="Weapon" source="Homebrew" id="ID_HB_ELDRBL">
+    <element name="Eldritch Blast" type="Weapon" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ELDRBL">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
 		<description>
 			<p></p>
@@ -62,7 +62,7 @@
 		</setters>
 	</element>
 
-	<element name="Mage Armor" type="Armor" source="Homebrew" id="ID_HB_MAGE_ARMOR">
+	<element name="Mage Armor" type="Armor" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_MAGE_ARMOR">
 		<supports>ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
 		<description>
 			<p>Mage Armor from Warlock Invocation</p>
@@ -81,7 +81,7 @@
 		</rules>
 	</element>
     
-    <element name="Hulk Hogan" type="Deity" source="Homebrew" id="ID_HB_DEITY_HH">
+    <element name="Hulk Hogan" type="Deity" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_DEITY_HH">
         <description>
             <p class="flavor">God of Entertainment</p>
         </description>
@@ -97,7 +97,7 @@
         </sheet>
     </element>
 	
-	<element name="Custom Background (Tool/Language)" type="Background" source="Homebrew" id="ID_HB_CUSTOM_BG_TL">
+	<element name="Custom Background (Tool/Language)" type="Background" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_CUSTOM_BG_TL">
 		<description>
 			<p>Before you became an adventurer, you did something.</p>
 			<ul class="unstyled">
@@ -117,7 +117,7 @@
 		</rules>
 	</element>
 
-	<element name="Custom Background (2 Tool)" type="Background" source="Homebrew" id="ID_HB_CUSTOM_BG_TT">
+	<element name="Custom Background (2 Tool)" type="Background" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_CUSTOM_BG_TT">
 		<description>
 			<p>Before you became an adventurer, you did something.</p>
 			<ul class="unstyled">
@@ -135,7 +135,7 @@
 		</rules>
 	</element>
 
-	<element name="Custom Background (2 Language)" type="Background" source="Homebrew" id="ID_HB_CUSTOM_LL">
+	<element name="Custom Background (2 Language)" type="Background" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_CUSTOM_LL">
 		<description>
 			<p>Before you became an adventurer, you did something.</p>
 			<ul class="unstyled">
