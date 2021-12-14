@@ -7,7 +7,7 @@
 		<setters>
 			<set name="abbreviation">KJTCC</set>
 			<set name="url">https://youtu.be/dQw4w9WgXcQ</set>
-			<set name="author" abbreviation="KJTCC">KimJongTrill</set>
+			<set name="author">KimJongTrill</set>
 			<set name="homebrew">true</set>
 		</setters>
 	</element>
