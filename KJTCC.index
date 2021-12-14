@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
   <info>
-    <update version="6.9">
+    <update version="420.69">
       <file name="KJTCC.index" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/KJTCC.index" />
     </update>
   </info>
   <files>
     <file name="content.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/content.xml" />
-    <file name="source.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/source.xml" />
   </files>
 </index>
