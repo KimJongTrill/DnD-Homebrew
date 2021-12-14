@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 
-    <element name="Knucle Duster" type="Weapon" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_KNUCKS">
+    <element name="Knuckle Duster" type="Weapon" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_KNUCKS">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
 		<description>
 			<p></p>
