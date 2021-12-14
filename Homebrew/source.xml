@@ -5,7 +5,7 @@
 			<file name="source.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/source.xml" />
 		</update>
 	</info>
-	<element name="Homebrew" type="Source" id="ID_HB">
+	<element name="KImJongTrill's Custom Content" type="Source" source="Core" id="ID_KJT_CC">
 		<description>
 			<![CDATA[<p>Homebrew content made for you, by me</p>]]>
 		</description>
