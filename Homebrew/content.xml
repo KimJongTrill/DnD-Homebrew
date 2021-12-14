@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 
-<element name="KimJongTrill’s Custom Content" type="Source" source="KimJongTrill’s Custom Content" id="ID_KJT_CC">
+	<element name="KimJongTrill’s Custom Content" type="Source" source="KimJongTrill’s Custom Content" id="ID_KJT_CC">
 		<description>
 			<![CDATA[<p>It's stuff I made.</p>]]>
 		</description>
