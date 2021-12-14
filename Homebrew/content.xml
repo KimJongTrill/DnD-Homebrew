@@ -3,13 +3,13 @@
 
 <element name="KimJongTrill’s Custom Content" type="Source" source="Core" id="ID_KJT_CC">
 		<description>
-			<p>Homebrew content made for you, by me.</p>
+			<![CDATA[<p>It's stuff I made.</p>]]>
 		</description>
 		<setters>
-			<set name="url">https://youtu.be/dQw4w9WgXcQ</set>
-			<set name="author">KimJongTrill</set>
+			<set name="abbreviation">KJTCC</set>
+			<set name="url">https://www.youtube.com/watch?v=dQw4w9WgXcQ</set>
+			<set name="author" abbreviation="KJT">KimJongTrill</set>
 			<set name="homebrew">true</set>
-		</setters>
 	</element>
 
     <element name="Knuckle Duster" type="Weapon" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_KNUCKS">
