@@ -9,5 +9,6 @@
     <file name="content.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/content.xml" />
     <file name="maestro.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/maestro.xml" />
     <file name="fighter-gunslinger.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/fighter-gunslinger.xml" />
+    <file name="class-bloodhunter.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/class-bloodhunter.xml" />
   </files>
 </index>
