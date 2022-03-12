@@ -502,7 +502,7 @@
     <!-- /Ghostslayer -->
 	
     <!-- Lycan -->
-<element name="Order of the Lycan" type="Archetype" source="Critical Role" id="ID_CRIT_ARCHETYPE_BLOOD_HUNTER_ORDER_OF_THE_LYCAN">
+    <element name="Order of the Lycan" type="Archetype" source="Critical Role" id="ID_CRIT_ARCHETYPE_BLOOD_HUNTER_ORDER_OF_THE_LYCAN">
         <supports>Blood Hunter Order</supports>
         <description>
             <p>Of the many terrible curses that plague the realm, few are as ancient or as feared Lycanthropy. Passed through blood, this affliction seeds a host with the savage strength and hunger for violence of a wild beast. Those that shun the curse spend their lives burying their wild, bestial urges deep inside. However, the power of a rising full moon makes the curse too strong to resist, and the host transforms into a terrifying animal-humanoid hybrid controlled by murderous impluse. Those that embrace the dark nature of their curse learn to harness their bestial gifts, but also succumb to the evil, vicious temperament that drives the beast within.</p>
@@ -751,7 +751,7 @@
     <!-- /Lycan -->
 
     <!-- Profane Soul -->
-	<element name="Order of the Profane Soul" type="Archetype" source="Critical Role" id="ID_CRIT_ARCHETYPE_BLOOD_HUNTER_ORDER_OF_THE_PROFANE_SOUL">
+    <element name="Order of the Profane Soul" type="Archetype" source="Critical Role" id="ID_CRIT_ARCHETYPE_BLOOD_HUNTER_ORDER_OF_THE_PROFANE_SOUL">
 		<supports>Blood Hunter Order</supports>
 		<description>
 			<p>The magics adopted by the wayward blood hunter prove formidable against many an evil across the realm. However, the darkest of abominations draw from an ancient well of cruel, unfathomable power. These terrors can control shadows to do their bidding, hide in plain sight among the noblest of nobles, and bend the minds of the most stalwart warrior with but a glance. These fiends are far trickier to hunt, and many lost their lives in pursuit of such wickedness.</p>
