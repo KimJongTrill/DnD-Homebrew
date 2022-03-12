@@ -6,7 +6,6 @@
     </update>
   </info>
   <files>
-    <file name="source.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/source.xml" />
     <file name="content.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/content.xml" />
     <file name="bard-maestro.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/bard-maestro.xml" />
     <file name="fighter-gunslinger.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/fighter-gunslinger.xml" />
