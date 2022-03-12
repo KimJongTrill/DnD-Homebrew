@@ -11,4 +11,16 @@
 			<set name="homebrew">true</set>
 		</setters>
 	</element>
+	<element name="Critical Role" type="Source" source="Core" id="ID_CRIT_SOURCE_CRITICAL_ROLE">
+		<description>
+			<![CDATA[<p>Critical Role is a weekly livestreamed Dungeons & Dragons game set in Exandria, which is the world created by veteran voice actor and Dungeon Master, Matthew Mercer. Each week, Matthew leads his friends (also fellow voice actors!) on epic adventures.</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">CRIT</set>
+			<set name="url">https://critrole.com/</set>
+			<set name="author" abbreviation="MM" url="https://geekandsundry.com/shows/critical-role/">Matthew Mercer</set>
+			<set name="third-party">true</set>
+		</setters>
+	</element>
+</elements>
 </elements>
