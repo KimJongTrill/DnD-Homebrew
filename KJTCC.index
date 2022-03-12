@@ -8,5 +8,6 @@
   <files>
     <file name="content.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/content.xml" />
     <file name="maestro.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/maestro.xml" />
+    <file name="fighter-gunslinger" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/fighter-gunslinger.xml" />
   </files>
 </index>
