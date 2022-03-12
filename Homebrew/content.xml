@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1">
+		<update version="1.0">
 			<file name="content.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/content.xml" />
 		</update>
 	</info>
@@ -13,6 +13,17 @@
 			<set name="abbreviation">KJTCC</set>
 			<set name="url">https://www.youtube.com/watch?v=dQw4w9WgXcQ</set>
 			<set name="author" abbreviation="KJT">KimJongTrill</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+		<element name="Critical Role" type="Source" source="Core" id="ID_CRIT_SOURCE_CRITICAL_ROLE">
+		<description>
+			<![CDATA[<p>Critical Role is a weekly livestreamed Dungeons & Dragons game set in Exandria, which is the world created by veteran voice actor and Dungeon Master, Matthew Mercer. Each week, Matthew leads his friends (also fellow voice actors!) on epic adventures.</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">CRIT</set>
+			<set name="url">https://critrole.com/</set>
+			<set name="author" abbreviation="MM" url="https://geekandsundry.com/shows/critical-role/">Matthew Mercer</set>
 			<set name="homebrew">true</set>
 		</setters>
 	</element>
