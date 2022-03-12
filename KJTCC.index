@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
   <info>
-    <update version="1.11">
+    <update version="1.12">
       <file name="KJTCC.index" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/KJTCC.index" />
     </update>
   </info>
   <files>
     <file name="content.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/content.xml" />
     <file name="maestro.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/maestro.xml" />
-    <file name="fighter-gunslinger" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/fighter-gunslinger.xml" />
+    <file name="fighter-gunslinger.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/fighter-gunslinger.xml" />
   </files>
 </index>
