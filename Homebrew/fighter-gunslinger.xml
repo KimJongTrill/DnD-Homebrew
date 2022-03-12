@@ -4,7 +4,7 @@
 		<name>Gunslinger</name>
 		<description>The Gunslinger is a new Fighter Archetype option to the Fighter class, available at 3rd level. This archetype focuses on the ability to design, craft, and utilize powerful, yet dangerous ranged weapons. Through creative innovation and immaculate aim, you become a distant force of death on the battlefield. However, not being a perfect science, firearms carry an inherent instability that can occasionally leave you without a functional means of attack. This is the danger of new, untested technologies in a world where the arcane energies that rule the elements are ever present.</description>
 		<author url="https://www.dmsguild.com/product/170778/Gunslinger-Martial-Archetype-for-Fighters">Matthew Mercer</author>
-        <update version="1.22">
+        <update version="1.23">
             <file name="fighter-gunslinger.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/third-party/critical-role/classes/fighter-gunslinger.xml" />
         </update>
 	</info>
@@ -54,7 +54,7 @@
 			<description>Use Tinker’s Tools to craft ammunition, repair damaged firearms, or draft and create new ones.</description>
 		</sheet>
 		<rules>
-			<grant type="Proficiciency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
 		</rules>
 	</element>
 	<element name="Grit" type="Archetype Feature" source="Critical Role" id="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_GRIT">
@@ -74,10 +74,26 @@
 		</rules>
 	</element>
 	<element name="Trick Shot" type="Archetype Feature" source="Critical Role" id="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_TRICK_SHOT">
+		<requirements>!ID_CRIT_ARCHETYPE_REPLACEMENT_FIGHTER_GUNSLINGER_TRICK_SHOT</requirements>
 		<description>
-			<p>You learn two trick shots of your choice, which are detailed under “Trick Shots” below. Many maneuvers enhance an attack in some way. Each use of a trick shot must be declared before the attack roll is made. You can use only one trick shot per attack. You learn an additional trick shot of your choice at 7th, 10th, 15th, and 18th level. Each time you learn a new trick shot, you can also replace one trick shot you know with a different one.</p>
-			<p><center><b>Trick Shot DC = 8</b> + your proficiency bonus + your Dexterity modifier</center></p>
+			<p>When you choose this archetype at 3rd level, you learn maneuvers that are fueled by special dice called superiority dice.</p>
+			<p class="indent"><strong><em>Maneuvers.</em></strong> You learn three maneuvers of your choice, which are detailed under “Maneuvers” below. Many maneuvers enhance an attack in some way. You can use only one maneuver per attack. You learn two additional maneuvers of your choice at 7th, 10th, and 15th level. Each time you learn new maneuvers, you can also replace one maneuver you know with a different one.</p>
+			<p class="indent"><strong><em>Superiority Dice.</em></strong> You have four superiority dice, which are d8s. A superiority die is expended when you use it. You regain all of your expended superiority dice when you finish a short or long rest. You gain another superiority die at 7th level and one more at 15th level.</p>
+			<p class="indent"><strong><em>Saving Throws.</em></strong> Some of your maneuvers require your target to make a saving throw to resist the maneuver’s effects. The saving throw DC is calculated as follows:</p>
+			<center>
+				<p><strong>Maneuver save DC</strong> = 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice).</p>
+			</center>
 		</description>
+		<sheet>
+			<description>You learn maneuvers that are fueled by special dice called superiority dice. You have {{superiority dice:amount}} superiority dice which are d{{superiority dice:size}}s. DC {{superiority dice:dc}}</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Trick Shot (Level 3)" supports="Trick Shot, Gunslinger" number="2" />
+			<select type="Archetype Feature" name="Trick Shot (Level 7)" supports="Trick Shot, Gunslinger" number="1" level="7" />
+			<select type="Archetype Feature" name="Trick Shot (Level 10)" supports="Trick Shot, Gunslinger" number="1" level="10" />
+			<select type="Archetype Feature" name="Trick Shot (Level 15)" supports="Trick Shot, Gunslinger" number="1" level="15" />
+			<select type="Archetype Feature" name="Trick Shot (Level 18)" supports="Trick Shot, Gunslinger" number="1" level="18" />
+		</rules>
 	</element>
 	<element name="Quickdraw" type="Archetype Feature" source="Critical Role" id="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_QUICKDRAW">
 		<description>
