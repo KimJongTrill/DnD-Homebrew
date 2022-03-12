@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
   <info>
-    <update version="1.2">
+    <update version="1.21">
       <file name="KJTCC.index" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/KJTCC.index" />
     </update>
   </info>
@@ -9,6 +9,5 @@
     <file name="content.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/content.xml" />
     <file name="maestro.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/maestro.xml" />
     <file name="fighter-gunslinger.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/fighter-gunslinger.xml" />
-    <file name="class-bloodhunter.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/class-bloodhunter.xml" />
   </files>
 </index>
