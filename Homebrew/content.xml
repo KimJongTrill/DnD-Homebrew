@@ -23,7 +23,7 @@
 		<setters>
 			<set name="abbreviation">CRIT</set>
 			<set name="url">https://critrole.com/</set>
-			<set name="author" abbreviation="MM" url="https://geekandsundry.com/shows/critical-role/">Matthew Mercer</set>
+			<set name="author" abbreviation="MM">Matthew Mercer</set>
 			<set name="homebrew">true</set>
 		</setters>
 	</element>
