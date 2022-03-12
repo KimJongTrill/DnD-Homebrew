@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
     <info>
-        <update version="1.1">
+        <name>Blood Hunter</name>
+        <description>The Blood Hunter class (v2.0).</description>
+        <author url="http://www.dmsguild.com/product/170777/Blood-Hunter-Class">Matthew Mercer</author>
+        <update version="2.0">
             <file name="class-bloodhunter.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/class-bloodhunter.xml" />
         </update>
     </info>
