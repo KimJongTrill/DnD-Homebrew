@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.0">
+		<update version="1.1">
 			<file name="content.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/content.xml" />
 		</update>
 	</info>
@@ -178,5 +178,12 @@
 			<select type="Proficiency" name="Skill Proficiency Custom" supports="Skill" number="2" />
 			<select type="Language" name="Language Custom" supports="Standard||Exotic" number="2"/>		
 		</rules>
+	</element>
+	<element>
+		<append id="ID_WOTC_UA20200224_ARCHETYPE_FEATURE_ARMORER_POWER_ARMOR">
+		<rules>
+			<stat name="speed" value="0" bonus="armor" />
+		</rules>
+		</append>
 	</element>
 </elements>
