@@ -2,9 +2,9 @@
 <elements>
     <info>
         <name>Blood Hunter</name>
-        <description>The Blood Hunter class (v2.0).</description>
+        <description>Blood hunters are clever warriors driven by an unending determination to destroy evils old and new. Armed with rites of secretive blood magic and a willingness to sacrifice their own vitality and humanity for their cause, they protect the realms from the shadows — even as they remain ever vigilant against being drawn to the darkness that consumes the monsters they hunt.</description>
         <author url="http://www.dmsguild.com/product/170777/Blood-Hunter-Class">Matthew Mercer</author>
-        <update version="0.1.9">
+        <update version="2.0">
             <file name="class-bloodhunter.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/class-bloodhunter.xml" />
         </update>
     </info>
