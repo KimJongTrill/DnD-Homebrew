@@ -179,11 +179,9 @@
 			<select type="Language" name="Language Custom" supports="Standard||Exotic" number="2"/>		
 		</rules>
 	</element>
-	<element>
-		<append id="ID_WOTC_UA20200224_ARCHETYPE_FEATURE_ARMORER_POWER_ARMOR">
+	<append id="ID_WOTC_UA20200224_ARCHETYPE_FEATURE_ARMORER_POWER_ARMOR">
 		<rules>
 			<stat name="speed" value="0" bonus="armor" />
 		</rules>
-		</append>
-	</element>
+	</append>
 </elements>
