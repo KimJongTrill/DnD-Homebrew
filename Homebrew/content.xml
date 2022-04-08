@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.2.2">
+		<update version="1.2.3">
 			<file name="content.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/content.xml" />
 		</update>
 	</info>
@@ -239,6 +239,45 @@
 		<rules>
 			<select type="Proficiency" name="Skill Proficiency Custom" supports="Skill" number="2" />
 			<select type="Language" name="Language Custom" supports="Standard||Exotic" number="2"/>		
+		</rules>
+	</element>
+	
+	<element name="Custom Attunement PB 4" type="Class Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_CUSTOM_ATTUNEMENT">
+		<description>
+			<p><i>KJT Homebrew</i></p>
+			<p>Attunement slots are equal to Proficiency Bonus (Minimum 3).</p>
+		</description>
+		<sheet display="false">
+			<description>Attunement slots are equal to Proficiency Bonus (Minimum 3)</description>
+		</sheet>
+		<rules>
+			<stat name="attunement:max" value="4" bonus="base" />
+		</rules>
+	</element>
+	
+	<element name="Custom Attunement PB 5" type="Class Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_CUSTOM_ATTUNEMENT">
+		<description>
+			<p><i>KJT Homebrew</i></p>
+			<p>Attunement slots are equal to Proficiency Bonus (Minimum 3).</p>
+		</description>
+		<sheet display="false">
+			<description>Attunement slots are equal to Proficiency Bonus (Minimum 3)</description>
+		</sheet>
+		<rules>
+			<stat name="attunement:max" value="5" bonus="base" />
+		</rules>
+	</element>
+	
+	<element name="Custom Attunement PB 6" type="Class Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_CUSTOM_ATTUNEMENT">
+		<description>
+			<p><i>KJT Homebrew</i></p>
+			<p>Attunement slots are equal to Proficiency Bonus (Minimum 3).</p>
+		</description>
+		<sheet display="false">
+			<description>Attunement slots are equal to Proficiency Bonus (Minimum 3)</description>
+		</sheet>
+		<rules>
+			<stat name="attunement:max" value="6" bonus="base" />
 		</rules>
 	</element>
 	
