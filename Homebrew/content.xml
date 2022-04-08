@@ -16,7 +16,7 @@
 			<set name="homebrew">true</set>
 		</setters>
 	</element>
-		<element name="Critical Role" type="Source" source="Core" id="ID_CRIT_SOURCE_CRITICAL_ROLE">
+	<element name="Critical Role" type="Source" source="Core" id="ID_CRIT_SOURCE_CRITICAL_ROLE">
 		<description>
 			<![CDATA[<p>Critical Role is a weekly livestreamed Dungeons & Dragons game set in Exandria, which is the world created by veteran voice actor and Dungeon Master, Matthew Mercer. Each week, Matthew leads his friends (also fellow voice actors!) on epic adventures.</p>]]>
 		</description>
@@ -174,13 +174,13 @@
 		<description>
 			<p class="flavor">God of Entertainment</p>
 		</description>
-        <setters>
-            <set name="setting">Forgotten Realms</set>
-            <set name="alignment">CN</set>
+        	<setters>
+            		<set name="setting">Forgotten Realms</set>
+            		<set name="alignment">CN</set>
 			<set name="domains">Entertainment, Politics, Warriors</set>
-            <set name="symbol">Feather Boa</set>
-            <set name="gender">male</set>
-        </setters>
+            		<set name="symbol">Feather Boa</set>
+            		<set name="gender">male</set>
+        	</setters>
         	<sheet>
             		<description>God of Entertainment</description>
         	</sheet>
@@ -241,6 +241,7 @@
 			<select type="Language" name="Language Custom" supports="Standard||Exotic" number="2"/>		
 		</rules>
 	</element>
+	
 	<append id="ID_WOTC_UA20200224_ARCHETYPE_FEATURE_ARMORER_POWER_ARMOR">
 		<rules>
 			<stat name="speed" value="0" bonus="armor" />
