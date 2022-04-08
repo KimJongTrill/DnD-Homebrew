@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.2">
+		<update version="1.2.1">
 			<file name="content.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/content.xml" />
 		</update>
 	</info>
@@ -179,6 +179,7 @@
 			<stat name="ac:bracers of the war mage" value="14" />
 			<stat name="ac:bracers of the war mage" value="dexterity:modifier" />
 			<stat name="ac:calculation" value="ac:bracers of the war mage" bonus="calculation" equipped="[armor:none]" alt="Bracers of the War Mage" />
+		</rules>
 	</element>
     
 	<element name="Hulk Hogan" type="Deity" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_DEITY_HH">
