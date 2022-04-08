@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.2.3">
+		<update version="1.1">
 			<file name="content.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/content.xml" />
 		</update>
 	</info>
@@ -16,7 +16,7 @@
 			<set name="homebrew">true</set>
 		</setters>
 	</element>
-	<element name="Critical Role" type="Source" source="Core" id="ID_CRIT_SOURCE_CRITICAL_ROLE">
+		<element name="Critical Role" type="Source" source="Core" id="ID_CRIT_SOURCE_CRITICAL_ROLE">
 		<description>
 			<![CDATA[<p>Critical Role is a weekly livestreamed Dungeons & Dragons game set in Exandria, which is the world created by veteran voice actor and Dungeon Master, Matthew Mercer. Each week, Matthew leads his friends (also fellow voice actors!) on epic adventures.</p>]]>
 		</description>
@@ -74,6 +74,21 @@
 		</setters>
 	</element>
 
+	<element name="Eldritch Blast" type="Weapon" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ELDRBL">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">1</set>
+			<set name="weight" lb=".5">0 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="Force">1d10</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB</set>
+		</setters>
+	</element>
+
 	<element name="Mage Armor" type="Armor" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_MAGE_ARMOR">
 		<supports>ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
 		<description>
@@ -92,95 +107,18 @@
 			<stat name="ac:armored:armor" value="13" />
 		</rules>
 	</element>
-	
-	<element name="Amulet of Lathander" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_AMULET_OF_LATHANDER">
-		<description>
-			<p>Your Constitution score is 19 while you wear this holy symbol. It has no effect on you if your Constitution is already 19 or higher without it. Additionally, you gain a +2 bonus to spell attack rolls and the saving throw DCs of your spells. While you wear this amulet, you can use your Channel Divinity feature without expending one of the feature’s uses. Once this property is used, it can’t be used again until the next dawn.</p>
-		</description>
-		<setters>
-			<set name="keywords">constitution</set>
-			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
-			<set name="weight" lb="0">0 lb.</set>
-			<set name="slot">neck</set>
-			<set name="type">Wondrous Item</set>
-			<set name="attunement" addition="by a cleric">true</set>
-			<set name="rarity">Legendary</set>
-		</setters>
-		<rules>
-			<stat name="constitution:score:set" value="19" bonus="base" />
-			<stat name="cleric:spellcasting:attack" value="2" />
-			<stat name="cleric:spellcasting:dc" value="2" />
-		</rules>
-	</element>
-	
-	<element name="Belt of Frost Giant Might" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_BELT_OF_FROST_GIANT_MIGHT">
-		<description>
-			<p>While attuned to this belt, your Strength score changes to 19. The item has no effect on you if your Strength without the belt is equal to or greater than 19.</p>
-			<p>You can channel the Ancient Giant's essence as a Bonus Action to gain the benefits of the Enlarge portion of the Enlarge/Reduce spell for 1 minute. Once used this property can't be used again until the next dawn.</p>
-		</description>
-		<setters>
-			<set name="keywords">strength</set>
-			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
-			<set name="weight" lb="0">0 lb.</set>
-			<set name="slot">waist</set>
-			<set name="type">Wondrous Item</set>
-			<set name="attunement">true</set>
-			<set name="rarity">Rare</set>
-		</setters>
-		<rules>
-			<stat name="strength:score:set" value="19" bonus="base" />
-		</rules>
-	</element>
-	
-	<element name="Merchant's Medallion" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_MERCHANT_MEDALLION">
-		<description>
-			<p><strong><em>Merchants Luck.</em></strong> When worn (no attunement) the wearer gains advantage on the first persuasion check made every day used in relation to a trade (sale, purchase or barter).</p>
-			<p><strong><em>Insightful Eye.</em></strong> When worn (and attuned) the wearer cannot be deceived without being aware of the attempted deceit. The wearer cannot read minds but will immediately know when someone is not being completely truthful and have insight into the degree/scope of the subterfuge in question.</p>
-			<p><strong><em>Spirit Bound.</em></strong> When worn (and attuned) the wearers spirit/soul is bound to the diamond and becomes absorbed by the diamond upon death. When absorbed the spirit remains in the diamond until released. The soul is released when the necklace is worn by another creature and the soul determines that the creature is a suitable host and the soul will then take over the host body and imbue it with all its powers, traits and skills.</p>
-		</description>
-		<setters>
-			<set name="keywords">soul</set>
-			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
-			<set name="weight" lb="0">0 lb.</set>
-			<set name="slot">neck</set>
-			<set name="type">Wondrous Item</set>
-			<set name="attunement">true</set>
-			<set name="rarity">Very Rare</set>
-		</setters>
-	</element>
-		
-	<element name="Bracers of the War Mage" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_BRACERS_OF_THE_WAR_MAGE">
-		<description>
-			<p>These bracers are made of hardened Dwarven Steel and are imbued with strong defensive magic, to protect the Dwarven War Mages in battle. While wearing these bracers your AC is 14 + DEX.</p>
-		</description>
-		<setters>
-			<set name="keywords">AC, armor, protection</set>
-			<set name="category">Wondrous Items</set>
-			<set name="type">Wondrous Item</set>
-			<set name="rarity">Rare</set>
-			<set name="attunement">addition="by a sorcerer, wizard, or warlock"</set>
-		</setters>
-		<rules>
-			<stat name="ac:bracers of the war mage" value="14" />
-			<stat name="ac:bracers of the war mage" value="dexterity:modifier" />
-			<stat name="ac:calculation" value="ac:bracers of the war mage" bonus="calculation" equipped="[armor:none]" alt="Bracers of the War Mage" />
-		</rules>
-	</element>
     
 	<element name="Hulk Hogan" type="Deity" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_DEITY_HH">
 		<description>
 			<p class="flavor">God of Entertainment</p>
 		</description>
-        	<setters>
-            		<set name="setting">Forgotten Realms</set>
-            		<set name="alignment">CN</set>
+        <setters>
+            <set name="setting">Forgotten Realms</set>
+            <set name="alignment">CN</set>
 			<set name="domains">Entertainment, Politics, Warriors</set>
-            		<set name="symbol">Feather Boa</set>
-            		<set name="gender">male</set>
-        	</setters>
+            <set name="symbol">Feather Boa</set>
+            <set name="gender">male</set>
+        </setters>
         	<sheet>
             		<description>God of Entertainment</description>
         	</sheet>
@@ -241,68 +179,9 @@
 			<select type="Language" name="Language Custom" supports="Standard||Exotic" number="2"/>		
 		</rules>
 	</element>
-	
-	<element name="Custom Attunement PB 4" type="Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_CUSTOM_ATTUNEMENT_4">
-		<description>
-			<p><i>KJT Homebrew</i></p>
-			<p>Attunement slots are equal to Proficiency Bonus (Minimum 3). Equip to enable.</p>
-		</description>
-		<sheet display="false">
-			<description>Attunement slots are equal to Proficiency Bonus (Minimum 3). Equip to enable.</description>
-		</sheet>
-		<setters>
-			<set name="category">Optional Class Features</set>
-			<set name="keywords">Attunement</set>
-			<set name="slot">misc</set>
-			<set name="inventory-hidden">true</set>
-		</setters>
-		<rules>
-			<stat name="attunement:max" value="4" bonus="base"/>
-		</rules>
-	</element>
-	
-	<element name="Custom Attunement PB 5" type="Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_CUSTOM_ATTUNEMENT_5">
-		<description>
-			<p><i>KJT Homebrew</i></p>
-			<p>Attunement slots are equal to Proficiency Bonus (Minimum 3). Equip to enable.</p>
-		</description>
-		<sheet display="false">
-			<description>Attunement slots are equal to Proficiency Bonus (Minimum 3). Equip to enable.</description>
-		</sheet>
-		<setters>
-			<set name="category">Optional Class Features</set>
-			<set name="keywords">Attunement</set>
-			<set name="slot">misc</set>
-			<set name="inventory-hidden">true</set>
-		</setters>
-		<rules>
-			<stat name="attunement:max" value="5" bonus="base"/>
-		</rules>
-	</element>
-	
-	<element name="Custom Attunement PB 6" type="Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_CUSTOM_ATTUNEMENT_6">
-		<description>
-			<p><i>KJT Homebrew</i></p>
-			<p>Attunement slots are equal to Proficiency Bonus (Minimum 3). Equip to enable.</p>
-		</description>
-		<sheet display="false">
-			<description>Attunement slots are equal to Proficiency Bonus (Minimum 3). Equip to enable.</description>
-		</sheet>
-		<setters>
-			<set name="category">Optional Class Features</set>
-			<set name="keywords">Attunement</set>
-			<set name="slot">misc</set>
-			<set name="inventory-hidden">true</set>
-		</setters>
-		<rules>
-			<stat name="attunement:max" value="6" bonus="base"/>
-		</rules>
-	</element>
-	
 	<append id="ID_WOTC_UA20200224_ARCHETYPE_FEATURE_ARMORER_POWER_ARMOR">
 		<rules>
-			<stat name="speed" value="0" bonus="armor"/>
+			<stat name="speed" value="0" bonus="armor" />
 		</rules>
 	</append>
-	
 </elements>
