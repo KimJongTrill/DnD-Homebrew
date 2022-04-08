@@ -242,48 +242,67 @@
 		</rules>
 	</element>
 	
-	<element name="Custom Attunement PB 4" type="Class Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_CUSTOM_ATTUNEMENT">
+	<element name="Custom Attunement PB 4" type="Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_CUSTOM_ATTUNEMENT_4">
 		<description>
 			<p><i>KJT Homebrew</i></p>
-			<p>Attunement slots are equal to Proficiency Bonus (Minimum 3).</p>
+			<p>Attunement slots are equal to Proficiency Bonus (Minimum 3). Equip to enable.</p>
 		</description>
 		<sheet display="false">
-			<description>Attunement slots are equal to Proficiency Bonus (Minimum 3)</description>
+			<description>Attunement slots are equal to Proficiency Bonus (Minimum 3). Equip to enable.</description>
 		</sheet>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">Attunement</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
 		<rules>
-			<stat name="attunement:max" value="4" bonus="base" />
+			<stat name="attunement:max" value="4" bonus="base"/>
 		</rules>
 	</element>
 	
-	<element name="Custom Attunement PB 5" type="Class Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_CUSTOM_ATTUNEMENT">
+	<element name="Custom Attunement PB 5" type="Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_CUSTOM_ATTUNEMENT_5">
 		<description>
 			<p><i>KJT Homebrew</i></p>
-			<p>Attunement slots are equal to Proficiency Bonus (Minimum 3).</p>
+			<p>Attunement slots are equal to Proficiency Bonus (Minimum 3). Equip to enable.</p>
 		</description>
 		<sheet display="false">
-			<description>Attunement slots are equal to Proficiency Bonus (Minimum 3)</description>
+			<description>Attunement slots are equal to Proficiency Bonus (Minimum 3). Equip to enable.</description>
 		</sheet>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">Attunement</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
 		<rules>
-			<stat name="attunement:max" value="5" bonus="base" />
+			<stat name="attunement:max" value="5" bonus="base"/>
 		</rules>
 	</element>
 	
-	<element name="Custom Attunement PB 6" type="Class Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_CUSTOM_ATTUNEMENT">
+	<element name="Custom Attunement PB 6" type="Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_CUSTOM_ATTUNEMENT_6">
 		<description>
 			<p><i>KJT Homebrew</i></p>
-			<p>Attunement slots are equal to Proficiency Bonus (Minimum 3).</p>
+			<p>Attunement slots are equal to Proficiency Bonus (Minimum 3). Equip to enable.</p>
 		</description>
 		<sheet display="false">
-			<description>Attunement slots are equal to Proficiency Bonus (Minimum 3)</description>
+			<description>Attunement slots are equal to Proficiency Bonus (Minimum 3). Equip to enable.</description>
 		</sheet>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">Attunement</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
 		<rules>
-			<stat name="attunement:max" value="6" bonus="base" />
+			<stat name="attunement:max" value="6" bonus="base"/>
 		</rules>
 	</element>
 	
 	<append id="ID_WOTC_UA20200224_ARCHETYPE_FEATURE_ARMORER_POWER_ARMOR">
 		<rules>
-			<stat name="speed" value="0" bonus="armor" />
+			<stat name="speed" value="0" bonus="armor"/>
 		</rules>
 	</append>
+	
 </elements>
