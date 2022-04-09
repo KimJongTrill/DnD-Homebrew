@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="1.1">
+			<file name="HBitems.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/HBitems.xml" />
+		</update>
+	</info>
+	
+	<element name="Brass Knuckles" type="Weapon" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_KNUCKS_B">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
+		<description>
+			<p>These melee weapons receive the same benefits as your unarmed strikes.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">5</set>
+			<set name="weight" lb=".5">.5 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="bludgeoning">1d4</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB</set>
+		</setters>
+	</element>
+	
+	<element name="Barbed Kunckles" type="Weapon" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_KNUCKS_S">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
+		<description>
+			<p>These melee weapons receive the same benefits as your unarmed strikes.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">5</set>
+			<set name="weight" lb=".5">.5 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="slashing">1d4</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB</set>
+		</setters>
+	</element>
+	
+	<element name="Spiked Knuckles" type="Weapon" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_KNUCKS_P">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
+		<description>
+			<p>These melee weapons receive the same benefits as your unarmed strikes.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">5</set>
+			<set name="weight" lb=".5">.5 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="piercing">1d4</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB</set>
+		</setters>
+	</element>
+    
+	<element name="Amulet of Lathander" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_AMULET_OF_LATHANDER">
+		<description>
+			<p>Your Constitution score is 19 while you wear this holy symbol. It has no effect on you if your Constitution is already 19 or higher without it.</p>
+			<p>Additionally, you gain a +2 bonus to spell attack rolls and the saving throw DCs of your spells, and you can use your Channel Divinity feature without expending one of the feature’s uses. Once this property is used, it can’t be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">constitution</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">neck</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement" addition="by a cleric">true</set>
+			<set name="rarity">Legendary</set>
+		</setters>
+		<rules>
+			<stat name="constitution:score:set" value="19" bonus="base" />
+			<stat name="cleric:spellcasting:attack" value="2" />
+			<stat name="cleric:spellcasting:dc" value="2" />
+		</rules>
+	</element>
+	
+	<element name="Belt of Giant Might" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_BELT_OF_GIANT_MIGHT">
+		<description>
+			<p>While attuned to this belt, your Strength score changes to 19. The item has no effect on you if your Strength without the belt is equal to or greater than 19.</p>
+			<p>You can channel the giant's essence as a Bonus Action to gain the benefits of the Enlarge portion of the Enlarge/Reduce spell for 1 minute. Once used this property can't be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">strength</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">waist</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+		<rules>
+			<stat name="strength:score:set" value="19" bonus="base" />
+		</rules>
+	</element>
+	
+	<element name="Merchant's Medallion" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_MERCHANT_MEDALLION">
+		<description>
+			<p><strong><em>Merchants Luck.</em></strong> When worn (no attunement) the wearer gains advantage on the first persuasion check made every day used in relation to a trade (sale, purchase or barter).</p>
+			<p><strong><em>Insightful Eye.</em></strong> When worn (and attuned) the wearer cannot be deceived without being aware of the attempted deceit. The wearer cannot read minds but will immediately know when someone is not being completely truthful and have insight into the degree/scope of the subterfuge in question.</p>
+			<p><strong><em>Spirit Bound.</em></strong> When worn (and attuned) the wearers spirit/soul is bound to the diamond and becomes absorbed by the diamond upon death. When absorbed the spirit remains in the diamond until released. The soul is released when the necklace is worn by another creature and the soul determines that the creature is a suitable host and the soul will then take over the host body and imbue it with all its powers, traits and skills.</p>
+		</description>
+		<setters>
+			<set name="keywords">soul</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">neck</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+		
+	<element name="Bracers of the War Mage" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_BRACERS_OF_THE_WAR_MAGE">
+		<description>
+			<p>These bracers are made of hardened Dwarven Steel and are imbued with strong defensive magic, to protect the Dwarven War Mages in battle. While wearing these bracers your AC is 14 + DEX.</p>
+		</description>
+		<setters>
+			<set name="keywords">AC, armor, protection</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement" addition="by a sorcerer, wizard, or warlock">true</set>
+		</setters>
+		<rules>
+			<stat name="ac:bracers of the war mage" value="14" />
+			<stat name="ac:bracers of the war mage" value="dexterity:modifier" />
+			<stat name="ac:calculation" value="ac:bracers of the war mage" bonus="calculation" equipped="[armor:none]" alt="Bracers of the War Mage" />
+		</rules>
+	</element>
+
+	<element name="Devil's Due" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_DEVILS_DUE">
+		<description>
+			<p>This +1 arrow has a icy blue shaft adorned with chardalyn razor fletching and matching head, can also be used as a dart.</p>
+			<p><strong><em>Levistus' Ire.</em></strong>When attuned, this arrow adds a d6 of cold damage when it hits along with returning upon reaching or missing its target. Additionally, hitting a target with this arrow makes your next shot against that target have advantage, and a critical hit the target is wounded and loses 10 feet of movement speed and 5 feet for each after the first until their next long rest is completed.</p>
+		</description>
+		<setters>
+			<set name="keywords">cold, ranged</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Legendary</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+	
+</elements>
