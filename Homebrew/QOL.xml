@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.1">
+		<update version="1.2">
 			<file name="QOL.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/QOL.xml" />
 		</update>
 	</info>
@@ -109,62 +109,6 @@
         	</sheet>
 	</element>
 	
-	<element name="Custom Background (Tool/Language)" type="Background" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_CUSTOM_BG_TL">
-		<description>
-			<p>Before you became an adventurer, you did something.</p>
-			<ul class="unstyled">
-				<li> <strong>Skill Proficiencies:</strong> Choose two from any Skill</li>
-				<li> <strong>Tool Proficiencies:</strong> Choose one from any Tool</li>
-				<li> <strong>Language Proficiencies:</strong> Choose one from any Language</li>
-				<li> <strong>Equipment:</strong> A set of clothes appropriate to your duties and a pouch containing 20 gp</li>
-			</ul>
-		</description>
-		<setters>
-			<set name="short">2 Any Skill, 1 Gaming Set / Instrument / Tools, 1 Language</set>
-		</setters>
-		<rules>
-			<select type="Proficiency" name="Skill Proficiency Custom" supports="Skill" number="2" />
-			<select type="Proficiency" name="Tool Proficiency Custom " supports="Musical Instrument||Gaming Set||Thieves tools||Artisan tools" />
-			<select type="Language" name="Language Custom" supports="Standard||Exotic"/>
-		</rules>
-	</element>
-
-	<element name="Custom Background (2 Tool)" type="Background" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_CUSTOM_BG_TT">
-		<description>
-			<p>Before you became an adventurer, you did something.</p>
-			<ul class="unstyled">
-				<li> <strong>Skill Proficiencies:</strong> Choose two from any Skill</li>
-				<li> <strong>Tool Proficiencies:</strong> Choose two from any Tool</li>
-				<li> <strong>Equipment:</strong> A set of clothes appropriate to your duties and a pouch containing 20 gp</li>
-			</ul>
-		</description>
-		<setters>
-			<set name="short">2 Any Skill, 2 Gaming Set / Instrument / Tools </set>
-		</setters>
-		<rules>
-			<select type="Proficiency" name="Skill Proficiency Custom" supports="Skill" number="2" />
-			<select type="Proficiency" name="Tool Proficiency Custom" supports="Musical Instrument||Gaming Set||Artisan tools||Thieves tools" number="2" />		
-		</rules>
-	</element>
-
-	<element name="Custom Background (2 Language)" type="Background" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_CUSTOM_LL">
-		<description>
-			<p>Before you became an adventurer, you did something.</p>
-			<ul class="unstyled">
-				<li> <strong>Skill Proficiencies:</strong> Choose two from any Skill</li>
-				<li> <strong>Language Proficiencies:</strong> Choose two from any Language</li>
-				<li> <strong>Equipment:</strong> A set of clothes appropriate to your duties and a pouch containing 20 gp</li>
-			</ul>
-		</description>
-		<setters>
-			<set name="short">2 Any Skill, 2 Languages</set>
-		</setters>
-		<rules>
-			<select type="Proficiency" name="Skill Proficiency Custom" supports="Skill" number="2" />
-			<select type="Language" name="Language Custom" supports="Standard||Exotic" number="2"/>		
-		</rules>
-	</element>
-	
 	<element name="Custom Attunement PB 4" type="Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_CUSTOM_ATTUNEMENT_4">
 		<description>
 			<p><i>KJT Homebrew</i></p>
@@ -221,6 +165,124 @@
 			<stat name="attunement:max" value="6" bonus="base"/>
 		</rules>
 	</element>
+	<element name="Custom Background" type="Background" source="Player’s Handbook" id="ID_WOTC_PHB_BACKGROUND_CUSTOM">
+		<description>
+			<p>You might want to tweak some of the features of a background so it better fits your character or the campaign setting. To customize a background, you can replace one feature with any other one, choose any two skills, and choose a total of two tool proficiencies or languages from the sample backgrounds. You can either use the equipment package from your background or spend coin on gear as described in chapter 5. (If you spend coin, you can’t also take the equipment package suggested for your class.) Finally, choose two personality traits, one ideal, one bond, and one flaw. If you can’t find a feature that matches your desired background, work with your DM to create one.</p>
+			<ul>
+				<li><strong>Skill Proficiencies:</strong> You can select any two skills to be proficient with</li>
+				<li><strong>Tool Proficiencies and Languages:</strong> You can select up to 2 tool proficiencies or languages</li>
+				<li><strong>Background Feature:</strong> You can pick any background feature</li>
+				<li><strong>Equipment:</strong> Use the equipment package from another background</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="short">2 Skills, 1-2 Language/Tool</set>
+		</setters>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Custom Background)" number="2" supports="Skill" />
+			<select type="Background Feature" name="First Tool Proficiency / Language" supports="Tool Language Select" />
+			<select type="Background Feature" name="Second Tool Proficiency / Language" supports="Tool Language Select 2" optional="true" />
+			<select type="Background Feature" name="Background Feature" supports="Background Feature" />
+		</rules>
+	</element>
+
+	<element name="Tool Proficiency" type="Background Feature" source="Player’s Handbook" id="ID_WOTC_PHB_BACKGROUND_CUSTOM_TOOL_SELECT">
+		<supports>Tool Language Select</supports>
+		<rules>
+			<select type="Proficiency" name="Tool Proficiency (Custom Background)" supports="Tool" />
+		</rules>
+		<sheet display="false" />
+		<compendium display="false" />
+	</element>
+
+	<element name="Additional Language" type="Background Feature" source="Player’s Handbook" id="ID_WOTC_PHB_BACKGROUND_CUSTOM_LANGUAGE_SELECT">
+		<supports>Tool Language Select</supports>
+		<rules>
+			<select type="Language" name="Language (Custom Background)" supports="Standard||Exotic" />
+		</rules>
+		<sheet display="false" />
+		<compendium display="false" />
+	</element>
+
+	<element name="Tool Proficiency" type="Background Feature" source="Player’s Handbook" id="ID_WOTC_PHB_BACKGROUND_CUSTOM_TOOL_SELECT_2">
+		<supports>Tool Language Select 2</supports>
+		<rules>
+			<select type="Proficiency" name="Tool Proficiency (Custom Background)" supports="Tool" />
+		</rules>
+		<sheet display="false" />
+		<compendium display="false" />
+	</element>
+
+	<element name="Additional Language" type="Background Feature" source="Player’s Handbook" id="ID_WOTC_PHB_BACKGROUND_CUSTOM_LANGUAGE_SELECT_2">
+		<supports>Tool Language Select 2</supports>
+		<rules>
+			<select type="Language" name="Language (Custom Background)" supports="Standard||Exotic" />
+		</rules>
+		<sheet display="false" />
+		<compendium display="false" />
+	</element>
+
+	<!--Missing Supports-->
+	<append id="ID_WOTC_ACQINC_BACKGROUND_FEATURE_NAME_DROPPING">
+		<supports>Background Feature</supports>
+	</append>
+	<append id="ID_WOTC_ACQINC_BACKGROUND_FEATURE_SUPPLY_CHAIN">
+		<supports>Background Feature</supports>
+	</append>
+	<append id="ID_WOTC_ACQINC_BACKGROUND_FEATURE_NEVER_TELL_ME_THE_ODDS">
+		<supports>Background Feature</supports>
+	</append>
+	<append id="ID_WOTC_ACQINC_BACKGROUND_FEATURE_LEGALESE">
+		<supports>Background Feature</supports>
+	</append>
+	<append id="ID_WOTC_ACQINC_BACKGROUND_FEATURE_INSIDE_INFORMANT">
+		<supports>Background Feature</supports>
+	</append>
+	<append id="ID_WOTC_ALEE_BACKGROUND_FEATURE_WAGONMASTER">
+		<supports>Background Feature</supports>
+	</append>
+	<append id="ID_WOTC_ALEE_BACKGROUND_FEATURE_DEEP_MINER">
+		<supports>Background Feature</supports>
+	</append>
+	<append id="ID_WOTC_ALEE_BACKGROUND_FEATURE_HARBORFOLK">
+		<supports>Background Feature</supports>
+	</append>
+	<append id="ID_WOTC_ALEE_BACKGROUND_FEATURE_HIGHBORN">
+		<supports>Background Feature</supports>
+	</append>
+	<append id="ID_WOTC_ALEE_BACKGROUND_FEATURE_PHLAN_SURVIVOR">
+		<supports>Background Feature</supports>
+	</append>
+	<append id="ID_WOCT_BGDIA_BACKGROUND_FEATURE_DUAL_PERSONALITIES">
+		<supports>Background Feature</supports>
+	</append>
+	<append id="ID_WOTC_EGTW_BACKGROUND_FEATURE_BALLAD_OF_THE_GRINNING_FOOL">
+		<supports>Background Feature</supports>
+	</append>
+	<append id="ID_WOTC_EGTW_BACKGROUND_FEATURE_SHADOW_NETWORK">
+		<supports>Background Feature</supports>
+	</append>
+	<append id="ID_WOTC_GOS_BACKGROUND_FEATURE_HARVEST_THE_WATER">
+		<supports>Background Feature</supports>
+	</append>
+	<append id="ID_WOTC_GOS_BACKGROUND_FEATURE_MARINE_STEADY">
+		<supports>Background Feature</supports>
+	</append>
+	<append id="ID_WOTC_GOS_BACKGROUND_FEATURE_ILL_PATCH_IT">
+		<supports>Background Feature</supports>
+	</append>
+	<append id="ID_WOTC_GOS_BACKGROUND_FEATURE_DOWN_LOW">
+		<supports>Background Feature</supports>
+	</append>
+	<append id="ID_WOTC_MOOT_BACKGROUND_FEATURE_ECHOES_OF_VICTORY">
+		<supports>Background Feature</supports>
+	</append>
+	<append id="ID_WOTC_ROD_BACKGROUND_HILLSFAR_MERCHANT_FEATURE_FACTOR">
+		<supports>Background Feature</supports>
+	</append>
+	<append id="ID_WOTC_ROD_BACKGROUND_HILLSFAR_MERCHANT_FEATURE_TRADE_CONTRACT">
+		<supports>Background Feature</supports>
+	</append>
 	<append id="ID_WOTC_UA20200224_ARCHETYPE_FEATURE_ARMORER_POWER_ARMOR">
 		<rules>
 			<stat name="speed" value="0" bonus="armor" />
