@@ -189,7 +189,7 @@
 	<element name="Tool Proficiency" type="Background Feature" source="Player’s Handbook" id="ID_WOTC_PHB_BACKGROUND_CUSTOM_TOOL_SELECT">
 		<supports>Tool Language Select</supports>
 		<rules>
-			<select type="Proficiency" name="Tool Proficiency (Custom Background)" supports="Tool" />
+			<select type="Proficiency" name="Tool Proficiency (Custom Background)" supports="Tool||Gaming Set" />
 		</rules>
 		<sheet display="false" />
 		<compendium display="false" />
@@ -207,7 +207,7 @@
 	<element name="Tool Proficiency" type="Background Feature" source="Player’s Handbook" id="ID_WOTC_PHB_BACKGROUND_CUSTOM_TOOL_SELECT_2">
 		<supports>Tool Language Select 2</supports>
 		<rules>
-			<select type="Proficiency" name="Tool Proficiency (Custom Background)" supports="Tool" />
+			<select type="Proficiency" name="Tool Proficiency (Custom Background)" supports="Tool||Gaming Set" />
 		</rules>
 		<sheet display="false" />
 		<compendium display="false" />
