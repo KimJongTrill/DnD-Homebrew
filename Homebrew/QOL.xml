@@ -45,7 +45,7 @@
 		</setters>
 	</element>
 
-	<element name="Shillelagh" type="Weapon" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_SHILLELAGH">
+	<element name="Shillelagh" type="Weapon" source="Player’s Handbook" id="ID_WOTC_PHB_SHILLELAGH">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING</supports>
 		<description>
 			<p></p>
@@ -60,7 +60,7 @@
 		</setters>
 	</element>
 
-	<element name="Magic Stone" type="Weapon" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_MAGIC_STONE">
+	<element name="Magic Stone" type="Weapon" source="Player’s Handbook" id="ID_WOTC_PHB_MAGIC_STONE">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING</supports>
 		<description>
 			<p></p>
@@ -93,7 +93,7 @@
 		</rules>
 	</element>
 
-	<element name="Hulk Hogan" type="Diety" source="Dungeon Master’s Guide" id="ID_KJT_CC_DEITY_HH">
+	<element name="Hulk Hogan" type="Diety" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_HH">
 		<description>
 			<p class="flavor">God of Entertainment</p>
 		</description>
