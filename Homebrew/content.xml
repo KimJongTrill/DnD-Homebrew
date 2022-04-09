@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.3">
+		<update version="1.3.1">
 			<file name="content.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/content.xml" />
 		</update>
 	</info>
@@ -104,13 +104,13 @@
 		</setters>
 	</element>
 
-	<element name="Mage Armor" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_MAGE_ARMOR">
+	<element name="Mage Armor" type="Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_MAGE_ARMOR">
 		<description>
 			<p>Mage Armor from Warlock Invocation, a blessing from your Patron.</p>
 		</description>
 		<setters>
 			<set name="keywords">armor</set>
-			<set name="category">Supernatural Gifts</set>
+			<set name="category">KJT Homebrew Rules</set>
 			<set name="type">Blessing</set>
 			<set name="slot">gift</set>
 		</setters>
@@ -280,7 +280,7 @@
 			<description>Attunement slots are equal to Proficiency Bonus (Minimum 3). Equip to enable.</description>
 		</sheet>
 		<setters>
-			<set name="category">Optional Class Features</set>
+			<set name="category">Additional Feature</set>
 			<set name="keywords">Attunement</set>
 			<set name="slot">misc</set>
 			<set name="inventory-hidden">true</set>
@@ -299,7 +299,7 @@
 			<description>Attunement slots are equal to Proficiency Bonus (Minimum 3). Equip to enable.</description>
 		</sheet>
 		<setters>
-			<set name="category">Optional Class Features</set>
+			<set name="category">Additional Feature</set>
 			<set name="keywords">Attunement</set>
 			<set name="slot">misc</set>
 			<set name="inventory-hidden">true</set>
@@ -318,7 +318,7 @@
 			<description>Attunement slots are equal to Proficiency Bonus (Minimum 3). Equip to enable.</description>
 		</sheet>
 		<setters>
-			<set name="category">Optional Class Features</set>
+			<set name="category">Additional Feature</set>
 			<set name="keywords">Attunement</set>
 			<set name="slot">misc</set>
 			<set name="inventory-hidden">true</set>
