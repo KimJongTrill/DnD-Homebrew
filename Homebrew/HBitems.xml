@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.2.1">
+		<update version="1.2.2">
 			<file name="HBitems.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/HBitems.xml" />
 		</update>
 	</info>
@@ -168,7 +168,7 @@
 		<description>
 			<p>This wand has 5 charges and is made of translucent crystal resembling a slender icicle. While holding it, you can use an action to expend 1 or more of its charges to cast the *ice storm* spell (save DC 17) from it. For 1 charge, you cast the 4th-level version of the spell. You can increase the spell slot level by one for each additional charge you expend.</p> 
 
-			<div element="ID_PHB_SPELL_ICE_STORM">
+			<div element="ID_PHB_SPELL_ICE_STORM" />
 			</div>
 
 			<p>The wand regains 1d4 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand melts into water and is destroyed.</p>
