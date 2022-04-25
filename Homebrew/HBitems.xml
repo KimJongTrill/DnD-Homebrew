@@ -191,7 +191,7 @@
 	<element name="Dwarven Maul of Thunder" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_DMT">
 		<supports>ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
 		<description>
-			<p>This hand sized maul is made of Dwarven Steel inscribed with thunder runes, it hums with a light buzz. You gain a +1 bonus to attack and damage rolls made with this magic weapon. It has the light thrown property with a normal range of 20 feet and a long range of 60 feet. The damage the weapon deals is thunder, and after a throw the hammer returns to the thrower's hand like a lightning bolt. </p>
+			<p>This hand sized maul is made of Dwarven Steel inscribed with thunder runes, it hums with a light buzz. You gain a +1 bonus to attack and damage rolls made with this magic weapon. It has the thrown property with a normal range of 20 feet and a long range of 60 feet. The damage the weapon deals is thunder, and after a throw the hammer returns to the thrower's hand like a lightning bolt. </p>
 			<p>Once per day as an Action you can speak the command phrase *"BY ODINS BEARD"* and throw the hammer at a target or an unoccupied space, if at a target make an attack roll, on hit or miss any creature within 20 feet of the impact must make a DC 15 Dexterity saving throw or take 4d6 lightning and 4d6 lightning strikes the area and the hammer crashes with a thunderclap. Once used this property can't be used again until the next dawn. In the meantime, the hammer can still be used as a magic weapon.</p>
 		</description>
 		<setters>
