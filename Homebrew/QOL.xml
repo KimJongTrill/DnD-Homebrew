@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.2.2">
+		<update version="1.2.3">
 			<file name="QOL.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/QOL.xml" />
 		</update>
 	</info>
@@ -222,7 +222,7 @@
 		<compendium display="false" />
 	</element>
 	
-	<element name="Amethyst Dragon" type="Archetype Feature" source="KimJongTrill's Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_AMETHYST">
+	<element name="Amethyst Dragon" type="Archetype Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_AMETHYST">
 		<supports>Dragon Ancestor</supports>
 		<description>
 			<p>You choose the amethyst dragon as your ancestor. The force damage type is used by features you gain later.</p>
@@ -235,7 +235,7 @@
 		</rules>
 	</element>
 
-		<element name="Crystal Dragon" type="Archetype Feature" source="KimJongTrill's Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_CRYSTAL">
+		<element name="Crystal Dragon" type="Archetype Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_CRYSTAL">
 		<supports>Dragon Ancestor</supports>
 		<description>
 			<p>You choose the crystal dragon as your ancestor. The radiant damage type is used by features you gain later.</p>
@@ -248,7 +248,7 @@
 		</rules>
 	</element>
 
-		<element name="Emerald Dragon" type="Archetype Feature" source="KimJongTrill's Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_EMERALD">
+		<element name="Emerald Dragon" type="Archetype Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_EMERALD">
 		<supports>Dragon Ancestor</supports>
 		<description>
 			<p>You choose the emerald dragon as your ancestor. The force damage type is used by features you gain later.</p>
@@ -261,7 +261,7 @@
 		</rules>
 	</element>
 
-		<element name="Sapphire Dragon" type="Archetype Feature" source="KimJongTrill's Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_SAPPHIRE">
+		<element name="Sapphire Dragon" type="Archetype Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_SAPPHIRE">
 		<supports>Dragon Ancestor</supports>
 		<description>
 			<p>You choose the Sapphire dragon as your ancestor. The thunder damage type is used by features you gain later.</p>
@@ -274,7 +274,7 @@
 		</rules>
 	</element>
 
-		<element name="Topaz Dragon" type="Archetype Feature" source="KimJongTrill's Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_TOPAZ">
+		<element name="Topaz Dragon" type="Archetype Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_TOPAZ">
 		<supports>Dragon Ancestor</supports>
 		<description>
 			<p>You choose the topaz dragon as your ancestor. The necrotic damage type is used by features you gain later.</p>
