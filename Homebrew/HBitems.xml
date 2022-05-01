@@ -224,7 +224,7 @@
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_GROUP_SWORDS, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
 		<description>
 			<p>You gain a +3 bonus to attack and damage rolls made with this magic weapon. It has the thrown property with a normal range of 30 feet and a long range of 120 feet.</p>
-			<p>Attuning to the sword establishes a link between you and the weapon, becoming an extension of yourself, you are unable to be forcefully disarmed of the weapon, and immediately after an attack, the weapon flies back to your hand. It also deals an extra 1d8 psychic damage on hit once you have established your link as it draws on your psionic abilities to inflict mental damage with each hit. </p>
+			<p>Attuning to the sword establishes a link between you and the weapon becoming an extension of yourself; you gain proficency with this rapier, you are unable to be forcefully disarmed of the weapon, immediately after an attack the weapon flies back to your hand, and it deals an extra 1d8 psychic damage on hit as it draws on your psionic abilities to inflict mental damage. </p>
 			<p>While you are attuned to this sword your Intelligence score is 20, unless already higher and you also gain telepathy with any target you can see.</p>
 		</description>
 		<setters>
@@ -239,6 +239,7 @@
 		</setters>
 		<rules>
 			<stat name="intelligence:score:set" value="20" bonus="base" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER" />
 		</rules>
 	</element>
 </elements>
