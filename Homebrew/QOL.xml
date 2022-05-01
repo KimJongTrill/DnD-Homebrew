@@ -221,6 +221,71 @@
 		<sheet display="false" />
 		<compendium display="false" />
 	</element>
+	
+	<element name="Amethyst Dragon" type="Archetype Feature" source="KimJongTrill's Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_AMETHYST">
+		<supports>Dragon Ancestor</supports>
+		<description>
+			<p>You choose the amethyst dragon as your ancestor. The force damage type is used by features you gain later.</p>
+		</description>
+		<sheet>
+			<description>The amethyst dragon as your ancestor.</description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="dragon ancestor damage type" value="Force" />
+		</rules>
+	</element>
+
+		<element name="Crystal Dragon" type="Archetype Feature" source="KimJongTrill's Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_CRYSTAL">
+		<supports>Dragon Ancestor</supports>
+		<description>
+			<p>You choose the crystal dragon as your ancestor. The radiant damage type is used by features you gain later.</p>
+		</description>
+		<sheet>
+			<description>The crystal dragon as your ancestor.</description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="dragon ancestor damage type" value="Radiant" />
+		</rules>
+	</element>
+
+		<element name="Emerald Dragon" type="Archetype Feature" source="KimJongTrill's Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_EMERALD">
+		<supports>Dragon Ancestor</supports>
+		<description>
+			<p>You choose the emerald dragon as your ancestor. The force damage type is used by features you gain later.</p>
+		</description>
+		<sheet>
+			<description>The emerald dragon as your ancestor.</description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="dragon ancestor damage type" value="Psychic" />
+		</rules>
+	</element>
+
+		<element name="Sapphire Dragon" type="Archetype Feature" source="KimJongTrill's Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_SAPPHIRE">
+		<supports>Dragon Ancestor</supports>
+		<description>
+			<p>You choose the Sapphire dragon as your ancestor. The thunder damage type is used by features you gain later.</p>
+		</description>
+		<sheet>
+			<description>The sapphire dragon as your ancestor.</description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="dragon ancestor damage type" value="Thunder" />
+		</rules>
+	</element>
+
+		<element name="Topaz Dragon" type="Archetype Feature" source="KimJongTrill's Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_TOPAZ">
+		<supports>Dragon Ancestor</supports>
+		<description>
+			<p>You choose the topaz dragon as your ancestor. The necrotic damage type is used by features you gain later.</p>
+		</description>
+		<sheet>
+			<description>The topaz dragon as your ancestor.</description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="dragon ancestor damage type" value="Necrotic" />
+		</rules>
+	</element>
 
 	<!--Missing Supports-->
 	<append id="ID_WOTC_ACQINC_BACKGROUND_FEATURE_NAME_DROPPING">
