@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.4">
+		<update version="1.4.1">
 			<file name="HBitems.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/HBitems.xml" />
 		</update>
 	</info>
@@ -223,7 +223,7 @@
 	<element name="Mind Lance" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_MIND_LANCE">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_GROUP_SWORDS, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
 		<description>
-			<p>You gain a +3 bonus to attack and damage rolls made with this magic weapon. It has the thrown property with a normal range of 30 feet and a long range of 120 feet.</p>
+			<p>You gain a +3 bonus to attack and damage rolls made with this magic weapon. It has the thrown property with a normal range of 20 feet and a long range of 60 feet.</p>
 			<p>Attuning to the sword establishes a link between you and the weapon becoming an extension of yourself; you gain proficency with this rapier, you are unable to be forcefully disarmed of the weapon, immediately after an attack the weapon flies back to your hand, and it deals an extra 1d8 psychic damage on hit as it draws on your psionic abilities to inflict mental damage. </p>
 			<p>While you are attuned to this sword your Intelligence score is 20, unless already higher and you also gain telepathy with any target you can see.</p>
 		</description>
