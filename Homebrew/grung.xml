@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.0">
+		<update version="1.1">
 			<file name="grung.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/grung.xml" />
 		</update>
 	</info>
@@ -47,7 +47,7 @@
 			<grant type="Proficiency" id="ID_WOTC_OGA_PROFICIENCY_TOOL_PROFICIENCY_WHISTLE_STICK" />
 			<grant type="Racial Trait" id="ID_WOTC_OGA_RACIAL_TRAIT_GRUNG_ARBOREAL_ALERTNESS" />
 			<grant type="Racial Trait" id="ID_WOTC_OGA_RACIAL_TRAIT_GRUNG_AMPHIBIOUS" />
-			<grant type="Racial Trait" id="ID_WOTC_OGA_RACIAL_TRAIT_GRUNG_POISON_IMMUNITY" />
+			<grant type="Racial Trait" id="ID_KJT_CC_RACIAL_TRAIT_GRUNG_POISON_RESISTANCE" />
 			<grant type="Racial Trait" id="ID_KJT_CC_RACIAL_TRAIT_GRUNG_POISONOUS_SKIN" />
 			<grant type="Racial Trait" id="ID_WOTC_OGA_RACIAL_TRAIT_GRUNG_STANDING_LEAP" />
 		</rules>
@@ -62,5 +62,16 @@
 		<sheet usage="{{proficiency}}/Long Rest">
 			<description>Until the beginning of your next turn you can take advantage of the Poisonous Skin feature.</description>
 		</sheet>
+	</element>
+	<element name="Poison Immunity" type="Racial Trait" source="One Grung Above" id="ID_KJT_CC_RACIAL_TRAIT_GRUNG_POISON_RESISTANCE">
+		<description>
+			<p>You’re immune to poison damage and the poisoned condition.</p>
+		</description>
+		<sheet>
+			<description>You are immune to the poisoned condition.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
 	</element>
 </elements>
