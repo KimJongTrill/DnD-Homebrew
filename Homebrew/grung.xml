@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.1">
+		<update version="1.2">
 			<file name="grung.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/grung.xml" />
 		</update>
 	</info>
@@ -19,7 +19,7 @@
 			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 25 feet, and you have a climbing speed of 25 feet.</p>
 			<p class="indent"><strong><em>Arboreal Alertness.</em></strong> You have proficiency in the Perception skill.</p>
 			<p class="indent"><strong><em>Amphibious.</em></strong> You can breathe air and water.</p>
-			<p class="indent"><strong><em>Poison Immunity.</em></strong> You’re immune to poison damage and the poisoned condition.</p>
+			<p class="indent"><strong><em>Toxic by Nature.</em></strong> You’re resistant to poison damage and immune to the poisoned condition.</p>
 			<p class="indent"><strong><em>Poisonous Skin.</em></strong> For one turn any creature that grapples you or otherwise comes into direct contact with your skin must succeed on a DC 12 Constitution saving throw or become poisoned for 1 minute. A poisoned creature no longer in direct contact with you can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
 			<p class="indent">You can also apply this poison to any piercing weapon as part of an attack with that weapon, though when you hit the poison reacts differently. The target must succeed on a DC 12 Constitution saving throw or take 2d4 poison damage.</p>
 			<p class="indent">You can use your Poisonous Skin a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
@@ -63,12 +63,12 @@
 			<description>Until the beginning of your next turn you can take advantage of the Poisonous Skin feature.</description>
 		</sheet>
 	</element>
-	<element name="Poison Immunity" type="Racial Trait" source="One Grung Above" id="ID_KJT_CC_RACIAL_TRAIT_GRUNG_POISON_RESISTANCE">
+	<element name="Toxic by Nature" type="Racial Trait" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_RACIAL_TRAIT_GRUNG_POISON_RESISTANCE">
 		<description>
-			<p>You’re immune to poison damage and the poisoned condition.</p>
+			<p>You’re resistant to poison damage and immune to the poisoned condition.</p>
 		</description>
 		<sheet>
-			<description>You are immune to the poisoned condition.</description>
+			<description>You’re resistant to poison damage and immune to the poisoned condition.</description>
 		</sheet>
 		<rules>
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
