@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="1.2">
-			<file name="grung.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/grung.xml" />
+			<file name="grung.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/teruvian-grung.xml" />
 		</update>
 	</info>
 
