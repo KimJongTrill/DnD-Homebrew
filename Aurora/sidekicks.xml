@@ -1,0 +1,2006 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Sidekicks</name>
+		<update version="0.0.1">
+			<file name="sidekicks.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/sidekicks.xml" />
+		</update>
+	</info>
+
+	<!--Rules-->
+	<element name="Gaining a Sidekick Class" type="Information" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_INFO_SIDEKICK">
+		<description>
+			
+			<p>When you create a sidekick, you choose the class it will have for the rest of its career: Expert, Spellcaster, or Warrior, each of which is detailed below. If a sidekick class contains a choice, you may make the choice or let the players make it.</p>
+			<h5>Starting Level</h5>
+			<p>The starting level of a sidekick is the same as the average level of the group. For example, if a 1st-level group starts out with a sidekick, that sidekick is also 1st level, but if a 10th-level group invites a sidekick to join them, that sidekick starts at 10th level.</p>
+			<h5>Leveling Up a Sidekick</h5>
+			<p>Whenever a group’s average level goes up, the sidekick gains a level. It doesn’t matter how much of the group’s recent adventures the sidekick experienced; the sidekick levels up because of a combination of the adventures it shared with the group and its own training.</p>
+			<h5>Hit Points</h5>
+			<p>Whenever the sidekick gains a level, it gains one Hit Die, and its hit point maximum increases. To determine the amount of the increase, roll the Hit Die (the type of die appears in the sidekick’s stat block), and add its Constitution modifier. It gains a minimum of 1 hit point per level.</p>
+			<p class="indent">If the sidekick drops to 0 hit points and isn’t killed outright, it falls unconscious and subsequently makes death saving throws, just like a player character.</p>
+			<h5>Proficiency Bonus</h5>
+			<p>The sidekick’s proficiency bonus is determined by its level in its class, as shown in the class’s table.</p>
+			<p class="indent">Whenever the sidekick’s proficiency bonus increases by 1, add 1 to the to-hit modifier of all the attacks in its stat block, and increase the DCs in its stat block by 1.</p>
+			<h5>Ability Score Increases</h5>
+			<p>Whenever the sidekick gains the Ability Score Improvement feature, adjust anything in its stat block that relies on an ability modifier that you increase. For example, if the sidekick has an attack that uses its Strength modifier, increase the attack’s modifiers to hit and damage if the Strength modifier increases.</p>
+			<p class="indent">If it’s unclear whether a melee attack in the stat block uses Strength or Dexterity, the attack can use either.</p>
+		</description>
+	</element>
+
+	<!--Race-->
+	<element name="Sidekick" type="Race" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_RACE_SIDEKICK">
+		<supports>Sidekick</supports>
+		<description>
+			<div class="sidebar">
+				<p>My soon-to-be sidekick could learn a thing or two from all this--more material for Project Humblekainen.</p>
+				<p align="right">TASHA</p>
+			</div>
+			<p>This section provides a straightforward way to add a special NPC—called a sidekick—to the group of adventurers. These rules take a creature with a low challenge rating and give it levels in one of three simple classes: Expert, Spellcaster, or Warrior.</p>
+			<p class="indent">A sidekick can be incorporated into a group at the party’s inception, or a sidekick might join them during the campaign. For example, the characters might meet a villager, an animal, or another creature, forge a friendship, and invite the creature to join them on their adventures.</p>
+			<p class="indent">You can also use these rules to customize a monster for your own use as DM.</p>
+			<h4>Creation Notes</h4>
+			<ul>
+				<li>Some classes require the creature to have at least 1 language</li>
+				<li>Use Equipment > Additional Features to give the appropriate speed(s) and vision(s)</li>
+				<li>Use Equipment > Additional Language to give the appropriate language(s)</li>
+				<li>Use Equipment > Additional Proficiency to give the appropriate proficiency(s)</li>
+				<li>Use Equipment > Additional Spells to give the appropriate spells(s)</li>	
+			</ul>
+			<p><strong><i>Remember to equip the items</i></strong></p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Hit Die" supports="Sidekick HD" requirements="!ID_WOTC_TCOE_GRANT_PRECONFIGURED_SIDEKICK" />
+			<select type="Racial Trait" name="Creature Type" optional="true" supports="Creature Type" requirements="!ID_WOTC_TCOE_GRANT_PRECONFIGURED_SIDEKICK" />
+			<select type="Racial Trait" name="CR 1/2 Cap" optional="true" supports="Uncap CR" />
+			<select type="Race Variant" name="Preconfigured Sidekicks - Uncapped" supports="Sidekick" optional="true" requirements="ID_WOTC_TCOE_RACIAL_TRAIT_CR_UNCAP" />
+			<select type="Race Variant" name="Preconfigured Sidekicks" supports="Sidekick,(CR0||CR1-4||CR1-2)" optional="true" requirements="!ID_WOTC_TCOE_RACIAL_TRAIT_CR_UNCAP" />
+		</rules>
+	</element>
+
+	<element name="Preconfigured Sidekick" type="Grant" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_GRANT_PRECONFIGURED_SIDEKICK" />
+
+	<element name="Uncap CR" type="Racial Trait" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_RACIAL_TRAIT_CR_UNCAP">
+		<supports>Uncap CR</supports>
+		<description>
+			<p>Removes the CR 1/2 cap for preconfigured sidekicks</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+	</element>
+
+	<element name="D4" type="Racial Trait" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D4">
+		<supports>Sidekick HD</supports>
+		<description>
+			<p>Your sidekick creature has a d4 hit die</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+	</element>
+
+	<element name="D6" type="Racial Trait" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D6">
+		<supports>Sidekick HD</supports>
+		<description>
+			<p>Your sidekick creature has a d6 hit die</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+	</element>
+
+	<element name="D8" type="Racial Trait" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D8">
+		<supports>Sidekick HD</supports>
+		<description>
+			<p>Your sidekick creature has a d8 hit die</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+	</element>
+
+	<element name="D10" type="Racial Trait" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D10">
+		<supports>Sidekick HD</supports>
+		<description>
+			<p>Your sidekick creature has a d10 hit die</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+	</element>
+
+	<element name="D12" type="Racial Trait" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D12">
+		<supports>Sidekick HD</supports>
+		<description>
+			<p>Your sidekick creature has a d12 hit die</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+	</element>
+
+	<element name="D20" type="Racial Trait" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D20">
+		<supports>Sidekick HD</supports>
+		<description>
+			<p>Your sidekick creature has a d20 hit die</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+	</element>
+	<!--END - Race-->
+
+	<!--Expert Class-->
+	<element name="Sidekick D4 - Expert" type="Class" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_SIDEKICK_EXPERT_D4">
+		<requirements>ID_WOTC_TCOE_RACE_SIDEKICK,[type:language],ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D4</requirements>
+		<description>
+			<div element="ID_WOTC_TCOE_INFO_SIDEKICK" />
+			<h4>Expert</h4>
+			<p>The Expert is a master of certain tasks or knowledge, favoring cunning over brawn. It might be a scout, a musician, a librarian, a clever street kid, a wily merchant, or a burglar.</p>
+			<p class="indent">To gain the Expert class, a creature must have at least one language in its stat block that it can speak.</p>
+			<p class="indent">A sidekick gains the following class features as it gains levels, as summarized on the Expert table.</p>
+			<h5 class="caption">THE EXPERT</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="col-10">Proficiency Bonus</td><td class="col-60 left">Features</td></tr>
+				</thead>
+				<tr><td> 1st</td><td>+2</td><td class="left">Bonus Proficiencies, Helpful</td></tr>
+				<tr><td> 2nd</td><td>+2</td><td class="left">Cunning Action</td></tr>
+				<tr><td> 3rd</td><td>+2</td><td class="left">Expertise</td></tr>
+				<tr><td> 4th</td><td>+2</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 5th</td><td>+3</td><td class="left">-</td></tr>
+				<tr><td> 6th</td><td>+3</td><td class="left">Coordinated Strike</td></tr>
+				<tr><td> 7th</td><td>+3</td><td class="left">Evasion</td></tr>
+				<tr><td> 8th</td><td>+3</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 9th</td><td>+4</td><td class="left">-</td></tr>
+				<tr><td>10th</td><td>+4</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>11th</td><td>+4</td><td class="left">Inspiring Help (1d6)</td></tr>
+				<tr><td>12th</td><td>+4</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>13th</td><td>+5</td><td class="left">-</td></tr>
+				<tr><td>14th</td><td>+5</td><td class="left">Reliable Talent</td></tr>
+				<tr><td>15th</td><td>+5</td><td class="left">Expertise</td></tr>
+				<tr><td>16th</td><td>+5</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>17th</td><td>+6</td><td class="left">-</td></tr>
+				<tr><td>18th</td><td>+6</td><td class="left">Sharp Mind</td></tr>
+				<tr><td>19th</td><td>+6</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>20th</td><td>+6</td><td class="left">Inspiring Help (2d6)</td></tr>
+			</table>
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_BONUS_PROFICIENCIES" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_HELPFUL" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_CUNNING_ACTION" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_EXPERTISE" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_ABILITYSCOREIMPROVEMENT" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_COORDINATED_STRIKE" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_EVASION" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_INSPIRING_HELP" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_RELIABLE_TALENT" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_SHARP_MIND" />
+		</description>
+		<setters>
+			<set name="short">The Expert is a master of certain tasks or knowledge, favoring cunning over brawn.</set>
+			<set name="hd">d4</set>
+		</setters>
+		<sheet display="false" alt="Expert"/>
+		<rules>
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_BONUS_PROFICIENCIES" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_HELPFUL" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_CUNNING_ACTION" level="2" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_EXPERTISE" level="3" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_ABILITYSCOREIMPROVEMENT" level="4" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_COORDINATED_STRIKE" level="6" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_EVASION" level="7" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_INSPIRING_HELP" level="11" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_RELIABLE_TALENT" level="14" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_SHARP_MIND" level="18" />
+		</rules>
+	</element>
+
+	<element name="Sidekick D6 - Expert" type="Class" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_SIDEKICK_EXPERT_D6">
+		<requirements>ID_WOTC_TCOE_RACE_SIDEKICK,[type:language],ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D6</requirements>
+		<description>
+			<div element="ID_WOTC_TCOE_INFO_SIDEKICK" />
+			<h4>Expert</h4>
+			<p>The Expert is a master of certain tasks or knowledge, favoring cunning over brawn. It might be a scout, a musician, a librarian, a clever street kid, a wily merchant, or a burglar.</p>
+			<p class="indent">To gain the Expert class, a creature must have at least one language in its stat block that it can speak.</p>
+			<p class="indent">A sidekick gains the following class features as it gains levels, as summarized on the Expert table.</p>
+			<h5 class="caption">THE EXPERT</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="col-10">Proficiency Bonus</td><td class="col-60 left">Features</td></tr>
+				</thead>
+				<tr><td> 1st</td><td>+2</td><td class="left">Bonus Proficiencies, Helpful</td></tr>
+				<tr><td> 2nd</td><td>+2</td><td class="left">Cunning Action</td></tr>
+				<tr><td> 3rd</td><td>+2</td><td class="left">Expertise</td></tr>
+				<tr><td> 4th</td><td>+2</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 5th</td><td>+3</td><td class="left">-</td></tr>
+				<tr><td> 6th</td><td>+3</td><td class="left">Coordinated Strike</td></tr>
+				<tr><td> 7th</td><td>+3</td><td class="left">Evasion</td></tr>
+				<tr><td> 8th</td><td>+3</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 9th</td><td>+4</td><td class="left">-</td></tr>
+				<tr><td>10th</td><td>+4</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>11th</td><td>+4</td><td class="left">Inspiring Help (1d6)</td></tr>
+				<tr><td>12th</td><td>+4</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>13th</td><td>+5</td><td class="left">-</td></tr>
+				<tr><td>14th</td><td>+5</td><td class="left">Reliable Talent</td></tr>
+				<tr><td>15th</td><td>+5</td><td class="left">Expertise</td></tr>
+				<tr><td>16th</td><td>+5</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>17th</td><td>+6</td><td class="left">-</td></tr>
+				<tr><td>18th</td><td>+6</td><td class="left">Sharp Mind</td></tr>
+				<tr><td>19th</td><td>+6</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>20th</td><td>+6</td><td class="left">Inspiring Help (2d6)</td></tr>
+			</table>
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_BONUS_PROFICIENCIES" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_HELPFUL" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_CUNNING_ACTION" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_EXPERTISE" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_ABILITYSCOREIMPROVEMENT" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_COORDINATED_STRIKE" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_EVASION" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_INSPIRING_HELP" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_RELIABLE_TALENT" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_SHARP_MIND" />
+		</description>
+		<setters>
+			<set name="short">The Expert is a master of certain tasks or knowledge, favoring cunning over brawn.</set>
+			<set name="hd">d6</set>
+		</setters>
+		<sheet display="false" alt="Expert"/>
+		<rules>
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_BONUS_PROFICIENCIES" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_HELPFUL" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_CUNNING_ACTION" level="2" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_EXPERTISE" level="3" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_ABILITYSCOREIMPROVEMENT" level="4" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_COORDINATED_STRIKE" level="6" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_EVASION" level="7" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_INSPIRING_HELP" level="11" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_RELIABLE_TALENT" level="14" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_SHARP_MIND" level="18" />
+		</rules>
+	</element>
+
+	<element name="Sidekick D8 - Expert" type="Class" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_SIDEKICK_EXPERT_D8">
+		<requirements>ID_WOTC_TCOE_RACE_SIDEKICK,[type:language],ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D8</requirements>
+		<description>
+			<div element="ID_WOTC_TCOE_INFO_SIDEKICK" />
+			<h4>Expert</h4>
+			<p>The Expert is a master of certain tasks or knowledge, favoring cunning over brawn. It might be a scout, a musician, a librarian, a clever street kid, a wily merchant, or a burglar.</p>
+			<p class="indent">To gain the Expert class, a creature must have at least one language in its stat block that it can speak.</p>
+			<p class="indent">A sidekick gains the following class features as it gains levels, as summarized on the Expert table.</p>
+			<h5 class="caption">THE EXPERT</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="col-10">Proficiency Bonus</td><td class="col-60 left">Features</td></tr>
+				</thead>
+				<tr><td> 1st</td><td>+2</td><td class="left">Bonus Proficiencies, Helpful</td></tr>
+				<tr><td> 2nd</td><td>+2</td><td class="left">Cunning Action</td></tr>
+				<tr><td> 3rd</td><td>+2</td><td class="left">Expertise</td></tr>
+				<tr><td> 4th</td><td>+2</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 5th</td><td>+3</td><td class="left">-</td></tr>
+				<tr><td> 6th</td><td>+3</td><td class="left">Coordinated Strike</td></tr>
+				<tr><td> 7th</td><td>+3</td><td class="left">Evasion</td></tr>
+				<tr><td> 8th</td><td>+3</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 9th</td><td>+4</td><td class="left">-</td></tr>
+				<tr><td>10th</td><td>+4</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>11th</td><td>+4</td><td class="left">Inspiring Help (1d6)</td></tr>
+				<tr><td>12th</td><td>+4</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>13th</td><td>+5</td><td class="left">-</td></tr>
+				<tr><td>14th</td><td>+5</td><td class="left">Reliable Talent</td></tr>
+				<tr><td>15th</td><td>+5</td><td class="left">Expertise</td></tr>
+				<tr><td>16th</td><td>+5</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>17th</td><td>+6</td><td class="left">-</td></tr>
+				<tr><td>18th</td><td>+6</td><td class="left">Sharp Mind</td></tr>
+				<tr><td>19th</td><td>+6</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>20th</td><td>+6</td><td class="left">Inspiring Help (2d6)</td></tr>
+			</table>
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_BONUS_PROFICIENCIES" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_HELPFUL" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_CUNNING_ACTION" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_EXPERTISE" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_ABILITYSCOREIMPROVEMENT" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_COORDINATED_STRIKE" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_EVASION" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_INSPIRING_HELP" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_RELIABLE_TALENT" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_SHARP_MIND" />
+		</description>
+		<setters>
+			<set name="short">The Expert is a master of certain tasks or knowledge, favoring cunning over brawn.</set>
+			<set name="hd">d8</set>
+		</setters>
+		<sheet display="false" alt="Expert"/>
+		<rules>
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_BONUS_PROFICIENCIES" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_HELPFUL" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_CUNNING_ACTION" level="2" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_EXPERTISE" level="3" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_ABILITYSCOREIMPROVEMENT" level="4" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_COORDINATED_STRIKE" level="6" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_EVASION" level="7" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_INSPIRING_HELP" level="11" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_RELIABLE_TALENT" level="14" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_SHARP_MIND" level="18" />
+		</rules>
+	</element>
+
+	<element name="Sidekick D10 - Expert" type="Class" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_SIDEKICK_EXPERT_D10">
+		<requirements>ID_WOTC_TCOE_RACE_SIDEKICK,[type:language],ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D10</requirements>
+		<description>
+			<div element="ID_WOTC_TCOE_INFO_SIDEKICK" />
+			<h4>Expert</h4>
+			<p>The Expert is a master of certain tasks or knowledge, favoring cunning over brawn. It might be a scout, a musician, a librarian, a clever street kid, a wily merchant, or a burglar.</p>
+			<p class="indent">To gain the Expert class, a creature must have at least one language in its stat block that it can speak.</p>
+			<p class="indent">A sidekick gains the following class features as it gains levels, as summarized on the Expert table.</p>
+			<h5 class="caption">THE EXPERT</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="col-10">Proficiency Bonus</td><td class="col-60 left">Features</td></tr>
+				</thead>
+				<tr><td> 1st</td><td>+2</td><td class="left">Bonus Proficiencies, Helpful</td></tr>
+				<tr><td> 2nd</td><td>+2</td><td class="left">Cunning Action</td></tr>
+				<tr><td> 3rd</td><td>+2</td><td class="left">Expertise</td></tr>
+				<tr><td> 4th</td><td>+2</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 5th</td><td>+3</td><td class="left">-</td></tr>
+				<tr><td> 6th</td><td>+3</td><td class="left">Coordinated Strike</td></tr>
+				<tr><td> 7th</td><td>+3</td><td class="left">Evasion</td></tr>
+				<tr><td> 8th</td><td>+3</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 9th</td><td>+4</td><td class="left">-</td></tr>
+				<tr><td>10th</td><td>+4</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>11th</td><td>+4</td><td class="left">Inspiring Help (1d6)</td></tr>
+				<tr><td>12th</td><td>+4</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>13th</td><td>+5</td><td class="left">-</td></tr>
+				<tr><td>14th</td><td>+5</td><td class="left">Reliable Talent</td></tr>
+				<tr><td>15th</td><td>+5</td><td class="left">Expertise</td></tr>
+				<tr><td>16th</td><td>+5</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>17th</td><td>+6</td><td class="left">-</td></tr>
+				<tr><td>18th</td><td>+6</td><td class="left">Sharp Mind</td></tr>
+				<tr><td>19th</td><td>+6</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>20th</td><td>+6</td><td class="left">Inspiring Help (2d6)</td></tr>
+			</table>
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_BONUS_PROFICIENCIES" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_HELPFUL" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_CUNNING_ACTION" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_EXPERTISE" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_ABILITYSCOREIMPROVEMENT" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_COORDINATED_STRIKE" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_EVASION" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_INSPIRING_HELP" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_RELIABLE_TALENT" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_SHARP_MIND" />
+		</description>
+		<setters>
+			<set name="short">The Expert is a master of certain tasks or knowledge, favoring cunning over brawn.</set>
+			<set name="hd">10</set>
+		</setters>
+		<sheet display="false" alt="Expert"/>
+		<rules>
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_BONUS_PROFICIENCIES" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_HELPFUL" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_CUNNING_ACTION" level="2" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_EXPERTISE" level="3" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_ABILITYSCOREIMPROVEMENT" level="4" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_COORDINATED_STRIKE" level="6" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_EVASION" level="7" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_INSPIRING_HELP" level="11" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_RELIABLE_TALENT" level="14" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_SHARP_MIND" level="18" />
+		</rules>
+	</element>
+
+	<element name="Sidekick D12 - Expert" type="Class" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_SIDEKICK_EXPERT_D12">
+		<requirements>ID_WOTC_TCOE_RACE_SIDEKICK,[type:language],ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D12</requirements>
+		<description>
+			<div element="ID_WOTC_TCOE_INFO_SIDEKICK" />
+			<h4>Expert</h4>
+			<p>The Expert is a master of certain tasks or knowledge, favoring cunning over brawn. It might be a scout, a musician, a librarian, a clever street kid, a wily merchant, or a burglar.</p>
+			<p class="indent">To gain the Expert class, a creature must have at least one language in its stat block that it can speak.</p>
+			<p class="indent">A sidekick gains the following class features as it gains levels, as summarized on the Expert table.</p>
+			<h5 class="caption">THE EXPERT</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="col-10">Proficiency Bonus</td><td class="col-60 left">Features</td></tr>
+				</thead>
+				<tr><td> 1st</td><td>+2</td><td class="left">Bonus Proficiencies, Helpful</td></tr>
+				<tr><td> 2nd</td><td>+2</td><td class="left">Cunning Action</td></tr>
+				<tr><td> 3rd</td><td>+2</td><td class="left">Expertise</td></tr>
+				<tr><td> 4th</td><td>+2</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 5th</td><td>+3</td><td class="left">-</td></tr>
+				<tr><td> 6th</td><td>+3</td><td class="left">Coordinated Strike</td></tr>
+				<tr><td> 7th</td><td>+3</td><td class="left">Evasion</td></tr>
+				<tr><td> 8th</td><td>+3</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 9th</td><td>+4</td><td class="left">-</td></tr>
+				<tr><td>10th</td><td>+4</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>11th</td><td>+4</td><td class="left">Inspiring Help (1d6)</td></tr>
+				<tr><td>12th</td><td>+4</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>13th</td><td>+5</td><td class="left">-</td></tr>
+				<tr><td>14th</td><td>+5</td><td class="left">Reliable Talent</td></tr>
+				<tr><td>15th</td><td>+5</td><td class="left">Expertise</td></tr>
+				<tr><td>16th</td><td>+5</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>17th</td><td>+6</td><td class="left">-</td></tr>
+				<tr><td>18th</td><td>+6</td><td class="left">Sharp Mind</td></tr>
+				<tr><td>19th</td><td>+6</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>20th</td><td>+6</td><td class="left">Inspiring Help (2d6)</td></tr>
+			</table>
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_BONUS_PROFICIENCIES" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_HELPFUL" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_CUNNING_ACTION" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_EXPERTISE" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_ABILITYSCOREIMPROVEMENT" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_COORDINATED_STRIKE" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_EVASION" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_INSPIRING_HELP" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_RELIABLE_TALENT" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_SHARP_MIND" />
+		</description>
+		<setters>
+			<set name="short">The Expert is a master of certain tasks or knowledge, favoring cunning over brawn.</set>
+			<set name="hd">d12</set>
+		</setters>
+		<sheet display="false" alt="Expert"/>
+		<rules>
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_BONUS_PROFICIENCIES" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_HELPFUL" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_CUNNING_ACTION" level="2" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_EXPERTISE" level="3" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_ABILITYSCOREIMPROVEMENT" level="4" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_COORDINATED_STRIKE" level="6" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_EVASION" level="7" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_INSPIRING_HELP" level="11" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_RELIABLE_TALENT" level="14" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_SHARP_MIND" level="18" />
+		</rules>
+	</element>
+
+	<element name="Sidekick D20 - Expert" type="Class" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_SIDEKICK_EXPERT_D20">
+		<requirements>ID_WOTC_TCOE_RACE_SIDEKICK,[type:language],ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D20</requirements>
+		<description>
+			<div element="ID_WOTC_TCOE_INFO_SIDEKICK" />
+			<h4>Expert</h4>
+			<p>The Expert is a master of certain tasks or knowledge, favoring cunning over brawn. It might be a scout, a musician, a librarian, a clever street kid, a wily merchant, or a burglar.</p>
+			<p class="indent">To gain the Expert class, a creature must have at least one language in its stat block that it can speak.</p>
+			<p class="indent">A sidekick gains the following class features as it gains levels, as summarized on the Expert table.</p>
+			<h5 class="caption">THE EXPERT</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="col-10">Proficiency Bonus</td><td class="col-60 left">Features</td></tr>
+				</thead>
+				<tr><td> 1st</td><td>+2</td><td class="left">Bonus Proficiencies, Helpful</td></tr>
+				<tr><td> 2nd</td><td>+2</td><td class="left">Cunning Action</td></tr>
+				<tr><td> 3rd</td><td>+2</td><td class="left">Expertise</td></tr>
+				<tr><td> 4th</td><td>+2</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 5th</td><td>+3</td><td class="left">-</td></tr>
+				<tr><td> 6th</td><td>+3</td><td class="left">Coordinated Strike</td></tr>
+				<tr><td> 7th</td><td>+3</td><td class="left">Evasion</td></tr>
+				<tr><td> 8th</td><td>+3</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 9th</td><td>+4</td><td class="left">-</td></tr>
+				<tr><td>10th</td><td>+4</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>11th</td><td>+4</td><td class="left">Inspiring Help (1d6)</td></tr>
+				<tr><td>12th</td><td>+4</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>13th</td><td>+5</td><td class="left">-</td></tr>
+				<tr><td>14th</td><td>+5</td><td class="left">Reliable Talent</td></tr>
+				<tr><td>15th</td><td>+5</td><td class="left">Expertise</td></tr>
+				<tr><td>16th</td><td>+5</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>17th</td><td>+6</td><td class="left">-</td></tr>
+				<tr><td>18th</td><td>+6</td><td class="left">Sharp Mind</td></tr>
+				<tr><td>19th</td><td>+6</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>20th</td><td>+6</td><td class="left">Inspiring Help (2d6)</td></tr>
+			</table>
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_BONUS_PROFICIENCIES" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_HELPFUL" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_CUNNING_ACTION" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_EXPERTISE" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_ABILITYSCOREIMPROVEMENT" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_COORDINATED_STRIKE" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_EVASION" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_INSPIRING_HELP" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_RELIABLE_TALENT" />
+				<div element="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_SHARP_MIND" />
+		</description>
+		<setters>
+			<set name="short">The Expert is a master of certain tasks or knowledge, favoring cunning over brawn.</set>
+			<set name="hd">d20</set>
+		</setters>
+		<sheet display="false" alt="Expert"/>
+		<rules>
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_BONUS_PROFICIENCIES" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_HELPFUL" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_CUNNING_ACTION" level="2" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_EXPERTISE" level="3" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_ABILITYSCOREIMPROVEMENT" level="4" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_COORDINATED_STRIKE" level="6" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_EVASION" level="7" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_INSPIRING_HELP" level="11" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_RELIABLE_TALENT" level="14" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_SHARP_MIND" level="18" />
+		</rules>
+	</element>
+
+	<element name="Bonus Proficiencies" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_BONUS_PROFICIENCIES">
+		<description>
+			<p>The sidekick gains proficiency in one saving throw of your choice: Dexterity, Intelligence, or Charisma.</p>
+			<p class="indent">In addition, the sidekick gains proficiency in five skills of your choice, and it gains proficiency with light armor. If it is a humanoid or has a simple or martial weapon in its stat block, it also gains proficiency with all simple weapons and with two tools of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Saving Throw (Expert)" supports="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE|ID_PROFICIENCY_SAVINGTHROW_DEXTERITY|ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
+			<select type="Proficiency" name="Skill (Expert)" number="5" supports="Skill" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+			<select type="Class Feature" name="Bonus Proficiencies (Expert)" optional="True" supports="Expert Bonus Proficiencies" requirements="!ID_INTERNAL_RACIAL_TRAIT_TYPE_HUMANOID" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_HUMANOID" requirements="ID_INTERNAL_RACIAL_TRAIT_TYPE_HUMANOID" />
+		</rules>
+	</element>
+
+	<element name="Humanoid or has weapon in statblock" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_HUMANOID">
+		<supports>Expert Bonus Proficiencies</supports>
+		<description>
+			<p>If it is a humanoid or has a simple or martial weapon in its stat block, it also gains proficiency with all simple weapons and with two tools of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+			<select type="Proficiency" name="Tool Proficiency, Humanoid (Expert)" number="2" supports="Tool" />
+		</rules>
+	</element>
+
+	<element name="Helpful" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_HELPFUL">
+		<description>
+			<p>The sidekick is adept at giving well-timed assistance; the sidekick can take the Help action as a bonus action.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can take the Help action as a bonus action.</description>
+		</sheet>
+	</element>
+
+	<element name="Cunning Action" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_CUNNING_ACTION">
+		<description>
+			<p>The sidekick’s agility or quick thinking allows it to act speedily. On its turn in combat, it can take the Dash, Disengage, or Hide action as a bonus action.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can take the Dash, Disengage, or Hide action as a bonus action.</description>
+		</sheet>
+	</element>
+
+	<element name="Expertise" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_EXPERTISE">
+		<description>
+			<p>Choose two of the sidekick's skill proficiencies. The sidekick's proficiency bonus is doubled for any ability check it makes that uses any of the chosen proficiencies.</p>
+			<p class="indent">At 15th level, choose two additional skills of the sidekick's skill proficiencies.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Expertise (Expert)" level="1" number="2" supports="ID_INTERNAL_SUPPORT_EXPERTISE"/>
+			<select type="Class Feature" name="Expertise (Expert)" level="15" number="2" supports="ID_INTERNAL_SUPPORT_EXPERTISE"/>
+		</rules>
+	</element>
+
+	<element name="Ability Score Improvement" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_ABILITYSCOREIMPROVEMENT">
+		<compendium display="false" />
+		<description>
+			<p>At 4th level and again at 8th, 10th, 12th, 16th, and 19th level, the sidekick increases one ability score of your choice by 2, or the sidekick increases two ability scores of your choice by 1. The sidekick can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement (Expert 4)" number="2" supports="Ability Score Improvement, Class" level="4" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement (Expert 8)" number="2" supports="Ability Score Improvement, Class" level="8" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement (Expert 10)" number="2" supports="Ability Score Improvement, Class" level="10" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement (Expert 12)" number="2" supports="Ability Score Improvement, Class" level="12" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement (Expert 16)" number="2" supports="Ability Score Improvement, Class" level="16" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement (Expert 19)" number="2" supports="Ability Score Improvement, Class" level="19" />
+		</rules>
+	</element>
+
+	<element name="Coordinated Strike" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_COORDINATED_STRIKE">
+		<description>
+			<p>The sidekick is adept at fighting in concert with a companion. When the sidekick uses its Helpful feature to aid an ally in attacking a creature, that target can be up to 30 feet away from the sidekick, and the sidekick can deal an extra 2d6 damage to it the next time the sidekick hits it with an attack roll before the end of the current turn. The extra damage is the same type of damage dealt by the attack.</p>
+		</description>
+		<sheet>
+			<description>When the sidekick uses its Helpful feature to aid an ally in attacking a creature, that target can be up to 30 feet away from the sidekick, and the sidekick can deal an extra 2d6 damage to it the next time the sidekick hits it with an attack roll before the end of the current turn. The extra damage is the same type of damage dealt by the attack.</description>
+		</sheet>
+	</element>
+
+	<element name="Evasion" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_EVASION">
+		<description>
+			<p>Because of extraordinary good luck, the sidekick is skilled at avoiding danger. When the sidekick is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it failed. The sidekick doesn’t benefit from this feature while incapacitated.</p>
+		</description>
+		<sheet>
+			<description>Because of extraordinary good luck, the sidekick is skilled at avoiding danger. When the sidekick is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it failed. The sidekick doesn’t benefit from this feature while incapacitated.</description>
+		</sheet>
+	</element>
+
+	<element name="Inspiring Help" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_INSPIRING_HELP">
+		<description>
+			<p>When the sidekick takes the Help action, the creature who receives the help also gains a 1d6 bonus to the d20 roll. If that roll is an attack roll, the creature can forgo adding the bonus to it, and then if the attack hits, the creature can add the bonus to the attack’s damage roll against one target.</p>
+			<p class="indent">At 20th level, the bonus increases to 2d6.</p>
+		</description>
+		<sheet>
+			<description>When the sidekick takes the Help action, the creature who receives the help also gains a 1d6 bonus to the d20 roll. If that roll is an attack roll, the creature can forgo adding the bonus to it, and then if the attack hits, the creature can add the bonus to the attack’s damage roll against one target.</description>
+			<description level="20">When the sidekick takes the Help action, the creature who receives the help also gains a 2d6 bonus to the d20 roll. If that roll is an attack roll, the creature can forgo adding the bonus to it, and then if the attack hits, the creature can add the bonus to the attack’s damage roll against one target.</description>
+		</sheet>
+	</element>
+
+	<element name="Reliable Talent" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_RELIABLE_TALENT">
+		<description>
+			<p>The sidekick has refined its skills to an exceptional degree. Whenever the sidekick makes an ability check that includes its whole proficiency bonus, it can treat a d20 roll of 9 or lower as a 10.</p>
+		</description>
+		<sheet>
+			<description>Whenever the sidekick makes an ability check that includes its whole proficiency bonus, it can treat a d20 roll of 9 or lower as a 10.</description>
+		</sheet>
+	</element>
+
+	<element name="Sharp Mind" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_EXPERT_SHARP_MIND">
+		<description>
+			<p>The sidekick gains proficiency in one of the following saving throws of your choice: Intelligence, Wisdom, or Charisma.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Saving Throw (Expert)" supports="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE|ID_PROFICIENCY_SAVINGTHROW_WISDOM|ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
+		</rules>
+	</element>
+	<!--END - Expert Class-->
+
+	<!--Spellcaster Class-->
+	<element name="Sidekick D4 - Spellcaster" type="Class" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_SIDEKICK_SPELLCASTER_D4">
+		<requirements>ID_WOTC_TCOE_RACE_SIDEKICK,[type:language],ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D4</requirements>
+		<description>
+			<div element="ID_WOTC_TCOE_INFO_SIDEKICK" />
+			<h4>Spellcaster</h4>
+			<p>A sidekick who becomes a Spellcaster walks the paths of magic. The sidekick might be a hedge wizard, a priest, a soothsayer, a magical performer, or a person with magic in their veins.</p>
+			<p class="indent">To gain the Spellcaster class, a creature must have at least one language in its stat block that it can speak.</p>
+			<p class="indent">A sidekick gains the following class features as it gains levels in this class, as summarized on the Spellcaster table.</p>
+			<h5 class="caption">THE SPELLCASTER</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-10">Level</td><td class="col-10">Proficiency Bonus</td><td class="left">Features</td><td class="col-10">Cantrips Known</td><td class="col-10">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td></tr>
+				</thead>
+				<tr><td> 1st</td><td class="col-10">+2</td><td class="left">Bonus Proficiencies, Spellcasting</td><td>2</td><td> 1</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 2nd</td><td class="col-10">+2</td><td class="left">-</td><td>2</td><td> 2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 3rd</td><td class="col-10">+2</td><td class="left">-</td><td>2</td><td> 3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4th</td><td class="col-10">+2</td><td class="left">Ability Score Improvement</td><td>3</td><td> 3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5th</td><td class="col-10">+3</td><td class="left">-</td><td>3</td><td> 4</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6th</td><td class="col-10">+3</td><td class="left">Potent Cantrips</td><td>3</td><td> 4</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7th</td><td class="col-10">+3</td><td class="left">-</td><td>3</td><td> 5</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 8th</td><td class="col-10">+3</td><td class="left">Ability Score Improvement</td><td>3</td><td> 5</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 9th</td><td class="col-10">+4</td><td class="left">-</td><td>3</td><td> 6</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td class="col-10">+4</td><td class="left">-</td><td>4</td><td> 6</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td class="col-10">+4</td><td class="left">-</td><td>4</td><td> 7</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td class="col-10">+4</td><td class="left">Ability Score Improvement</td><td>4</td><td> 7</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td class="col-10">+5</td><td class="left">-</td><td>4</td><td> 8</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
+				<tr><td>14th</td><td class="col-10">+5</td><td class="left">Empowered Spells</td><td>4</td><td> 8</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
+				<tr><td>15th</td><td class="col-10">+5</td><td class="left">-</td><td>4</td><td> 9</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>16th</td><td class="col-10">+5</td><td class="left">Ability Score Improvement</td><td>4</td><td> 9</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>17th</td><td class="col-10">+6</td><td class="left">-</td><td>4</td><td>10</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>18th</td><td class="col-10">+6</td><td class="left">Ability Score Improvement</td><td>4</td><td>10</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>19th</td><td class="col-10">+6</td><td class="left">-</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+				<tr><td>20th</td><td class="col-10">+6</td><td class="left">Focused Casting</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+			</table>
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_BONUS_PROFICIENCIES" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_SPELLCASTING" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_ABILITYSCOREIMPROVEMENT" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_POTENT_CANTRIPS" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_EMPOWERED_SPELLS" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_FOCUSED_CASTING" />
+		</description>
+		<setters>
+			<set name="short">A sidekick who becomes a Spellcaster walks the paths of magic.</set>
+			<set name="hd">d4</set>
+		</setters>
+		<sheet display="false" alt="Spellcaster" />
+		<rules>
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_BONUS_PROFICIENCIES" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_SPELLCASTING" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_ABILITYSCOREIMPROVEMENT" level="4" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_POTENT_CANTRIPS" level="6" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_EMPOWERED_SPELLS" level="14" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_FOCUSED_CASTING" level="20" />
+		</rules>
+	</element>
+
+	<element name="Sidekick D6 - Spellcaster" type="Class" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_SIDEKICK_SPELLCASTER_D6">
+		<requirements>ID_WOTC_TCOE_RACE_SIDEKICK,[type:language],ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D6</requirements>
+		<description>
+			<div element="ID_WOTC_TCOE_INFO_SIDEKICK" />
+			<h4>Spellcaster</h4>
+			<p>A sidekick who becomes a Spellcaster walks the paths of magic. The sidekick might be a hedge wizard, a priest, a soothsayer, a magical performer, or a person with magic in their veins.</p>
+			<p class="indent">To gain the Spellcaster class, a creature must have at least one language in its stat block that it can speak.</p>
+			<p class="indent">A sidekick gains the following class features as it gains levels in this class, as summarized on the Spellcaster table.</p>
+			<h5 class="caption">THE SPELLCASTER</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-10">Level</td><td class="col-10">Proficiency Bonus</td><td class="left">Features</td><td class="col-10">Cantrips Known</td><td class="col-10">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td></tr>
+				</thead>
+				<tr><td> 1st</td><td class="col-10">+2</td><td class="left">Bonus Proficiencies, Spellcasting</td><td>2</td><td> 1</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 2nd</td><td class="col-10">+2</td><td class="left">-</td><td>2</td><td> 2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 3rd</td><td class="col-10">+2</td><td class="left">-</td><td>2</td><td> 3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4th</td><td class="col-10">+2</td><td class="left">Ability Score Improvement</td><td>3</td><td> 3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5th</td><td class="col-10">+3</td><td class="left">-</td><td>3</td><td> 4</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6th</td><td class="col-10">+3</td><td class="left">Potent Cantrips</td><td>3</td><td> 4</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7th</td><td class="col-10">+3</td><td class="left">-</td><td>3</td><td> 5</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 8th</td><td class="col-10">+3</td><td class="left">Ability Score Improvement</td><td>3</td><td> 5</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 9th</td><td class="col-10">+4</td><td class="left">-</td><td>3</td><td> 6</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td class="col-10">+4</td><td class="left">-</td><td>4</td><td> 6</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td class="col-10">+4</td><td class="left">-</td><td>4</td><td> 7</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td class="col-10">+4</td><td class="left">Ability Score Improvement</td><td>4</td><td> 7</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td class="col-10">+5</td><td class="left">-</td><td>4</td><td> 8</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
+				<tr><td>14th</td><td class="col-10">+5</td><td class="left">Empowered Spells</td><td>4</td><td> 8</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
+				<tr><td>15th</td><td class="col-10">+5</td><td class="left">-</td><td>4</td><td> 9</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>16th</td><td class="col-10">+5</td><td class="left">Ability Score Improvement</td><td>4</td><td> 9</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>17th</td><td class="col-10">+6</td><td class="left">-</td><td>4</td><td>10</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>18th</td><td class="col-10">+6</td><td class="left">Ability Score Improvement</td><td>4</td><td>10</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>19th</td><td class="col-10">+6</td><td class="left">-</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+				<tr><td>20th</td><td class="col-10">+6</td><td class="left">Focused Casting</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+			</table>
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_BONUS_PROFICIENCIES" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_SPELLCASTING" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_ABILITYSCOREIMPROVEMENT" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_POTENT_CANTRIPS" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_EMPOWERED_SPELLS" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_FOCUSED_CASTING" />
+		</description>
+		<setters>
+			<set name="hd">d6</set>
+		</setters>
+		<sheet display="false" alt="Spellcaster" />
+		<rules>
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_BONUS_PROFICIENCIES" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_SPELLCASTING" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_ABILITYSCOREIMPROVEMENT" level="4" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_POTENT_CANTRIPS" level="6" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_EMPOWERED_SPELLS" level="14" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_FOCUSED_CASTING" level="20" />
+		</rules>
+	</element>
+
+	<element name="Sidekick D8 - Spellcaster" type="Class" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_SIDEKICK_SPELLCASTER_D8">
+		<requirements>ID_WOTC_TCOE_RACE_SIDEKICK,[type:language],ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D8</requirements>
+		<description>
+			<div element="ID_WOTC_TCOE_INFO_SIDEKICK" />
+			<h4>Spellcaster</h4>
+			<p>A sidekick who becomes a Spellcaster walks the paths of magic. The sidekick might be a hedge wizard, a priest, a soothsayer, a magical performer, or a person with magic in their veins.</p>
+			<p class="indent">To gain the Spellcaster class, a creature must have at least one language in its stat block that it can speak.</p>
+			<p class="indent">A sidekick gains the following class features as it gains levels in this class, as summarized on the Spellcaster table.</p>
+			<h5 class="caption">THE SPELLCASTER</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-10">Level</td><td class="col-10">Proficiency Bonus</td><td class="left">Features</td><td class="col-10">Cantrips Known</td><td class="col-10">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td></tr>
+				</thead>
+				<tr><td> 1st</td><td class="col-10">+2</td><td class="left">Bonus Proficiencies, Spellcasting</td><td>2</td><td> 1</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 2nd</td><td class="col-10">+2</td><td class="left">-</td><td>2</td><td> 2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 3rd</td><td class="col-10">+2</td><td class="left">-</td><td>2</td><td> 3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4th</td><td class="col-10">+2</td><td class="left">Ability Score Improvement</td><td>3</td><td> 3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5th</td><td class="col-10">+3</td><td class="left">-</td><td>3</td><td> 4</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6th</td><td class="col-10">+3</td><td class="left">Potent Cantrips</td><td>3</td><td> 4</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7th</td><td class="col-10">+3</td><td class="left">-</td><td>3</td><td> 5</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 8th</td><td class="col-10">+3</td><td class="left">Ability Score Improvement</td><td>3</td><td> 5</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 9th</td><td class="col-10">+4</td><td class="left">-</td><td>3</td><td> 6</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td class="col-10">+4</td><td class="left">-</td><td>4</td><td> 6</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td class="col-10">+4</td><td class="left">-</td><td>4</td><td> 7</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td class="col-10">+4</td><td class="left">Ability Score Improvement</td><td>4</td><td> 7</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td class="col-10">+5</td><td class="left">-</td><td>4</td><td> 8</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
+				<tr><td>14th</td><td class="col-10">+5</td><td class="left">Empowered Spells</td><td>4</td><td> 8</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
+				<tr><td>15th</td><td class="col-10">+5</td><td class="left">-</td><td>4</td><td> 9</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>16th</td><td class="col-10">+5</td><td class="left">Ability Score Improvement</td><td>4</td><td> 9</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>17th</td><td class="col-10">+6</td><td class="left">-</td><td>4</td><td>10</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>18th</td><td class="col-10">+6</td><td class="left">Ability Score Improvement</td><td>4</td><td>10</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>19th</td><td class="col-10">+6</td><td class="left">-</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+				<tr><td>20th</td><td class="col-10">+6</td><td class="left">Focused Casting</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+			</table>
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_BONUS_PROFICIENCIES" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_SPELLCASTING" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_ABILITYSCOREIMPROVEMENT" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_POTENT_CANTRIPS" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_EMPOWERED_SPELLS" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_FOCUSED_CASTING" />
+		</description>
+		<setters>
+			<set name="short">A sidekick who becomes a Spellcaster walks the paths of magic.</set>
+			<set name="hd">d8</set>
+		</setters>
+		<sheet display="false" alt="Spellcaster" />
+		<rules>
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_BONUS_PROFICIENCIES" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_SPELLCASTING" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_ABILITYSCOREIMPROVEMENT" level="4" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_POTENT_CANTRIPS" level="6" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_EMPOWERED_SPELLS" level="14" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_FOCUSED_CASTING" level="20" />
+		</rules>
+	</element>
+
+	<element name="Sidekick D10 - Spellcaster" type="Class" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_SIDEKICK_SPELLCASTER_D10">
+		<requirements>ID_WOTC_TCOE_RACE_SIDEKICK,[type:language],ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D10</requirements>
+		<description>
+			<div element="ID_WOTC_TCOE_INFO_SIDEKICK" />
+			<h4>Spellcaster</h4>
+			<p>A sidekick who becomes a Spellcaster walks the paths of magic. The sidekick might be a hedge wizard, a priest, a soothsayer, a magical performer, or a person with magic in their veins.</p>
+			<p class="indent">To gain the Spellcaster class, a creature must have at least one language in its stat block that it can speak.</p>
+			<p class="indent">A sidekick gains the following class features as it gains levels in this class, as summarized on the Spellcaster table.</p>
+			<h5 class="caption">THE SPELLCASTER</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-10">Level</td><td class="col-10">Proficiency Bonus</td><td class="left">Features</td><td class="col-10">Cantrips Known</td><td class="col-10">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td></tr>
+				</thead>
+				<tr><td> 1st</td><td class="col-10">+2</td><td class="left">Bonus Proficiencies, Spellcasting</td><td>2</td><td> 1</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 2nd</td><td class="col-10">+2</td><td class="left">-</td><td>2</td><td> 2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 3rd</td><td class="col-10">+2</td><td class="left">-</td><td>2</td><td> 3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4th</td><td class="col-10">+2</td><td class="left">Ability Score Improvement</td><td>3</td><td> 3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5th</td><td class="col-10">+3</td><td class="left">-</td><td>3</td><td> 4</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6th</td><td class="col-10">+3</td><td class="left">Potent Cantrips</td><td>3</td><td> 4</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7th</td><td class="col-10">+3</td><td class="left">-</td><td>3</td><td> 5</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 8th</td><td class="col-10">+3</td><td class="left">Ability Score Improvement</td><td>3</td><td> 5</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 9th</td><td class="col-10">+4</td><td class="left">-</td><td>3</td><td> 6</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td class="col-10">+4</td><td class="left">-</td><td>4</td><td> 6</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td class="col-10">+4</td><td class="left">-</td><td>4</td><td> 7</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td class="col-10">+4</td><td class="left">Ability Score Improvement</td><td>4</td><td> 7</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td class="col-10">+5</td><td class="left">-</td><td>4</td><td> 8</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
+				<tr><td>14th</td><td class="col-10">+5</td><td class="left">Empowered Spells</td><td>4</td><td> 8</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
+				<tr><td>15th</td><td class="col-10">+5</td><td class="left">-</td><td>4</td><td> 9</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>16th</td><td class="col-10">+5</td><td class="left">Ability Score Improvement</td><td>4</td><td> 9</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>17th</td><td class="col-10">+6</td><td class="left">-</td><td>4</td><td>10</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>18th</td><td class="col-10">+6</td><td class="left">Ability Score Improvement</td><td>4</td><td>10</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>19th</td><td class="col-10">+6</td><td class="left">-</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+				<tr><td>20th</td><td class="col-10">+6</td><td class="left">Focused Casting</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+			</table>
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_BONUS_PROFICIENCIES" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_SPELLCASTING" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_ABILITYSCOREIMPROVEMENT" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_POTENT_CANTRIPS" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_EMPOWERED_SPELLS" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_FOCUSED_CASTING" />
+		</description>
+		<setters>
+			<set name="short">A sidekick who becomes a Spellcaster walks the paths of magic.</set>
+			<set name="hd">d10</set>
+		</setters>
+		<sheet display="false" alt="Spellcaster" />
+		<rules>
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_BONUS_PROFICIENCIES" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_SPELLCASTING" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_ABILITYSCOREIMPROVEMENT" level="4" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_POTENT_CANTRIPS" level="6" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_EMPOWERED_SPELLS" level="14" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_FOCUSED_CASTING" level="20" />
+		</rules>
+	</element>
+
+	<element name="Sidekick D12 - Spellcaster" type="Class" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_SIDEKICK_SPELLCASTER_D12">
+		<requirements>ID_WOTC_TCOE_RACE_SIDEKICK,[type:language],ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D12</requirements>
+		<description>
+			<div element="ID_WOTC_TCOE_INFO_SIDEKICK" />
+			<h4>Spellcaster</h4>
+			<p>A sidekick who becomes a Spellcaster walks the paths of magic. The sidekick might be a hedge wizard, a priest, a soothsayer, a magical performer, or a person with magic in their veins.</p>
+			<p class="indent">To gain the Spellcaster class, a creature must have at least one language in its stat block that it can speak.</p>
+			<p class="indent">A sidekick gains the following class features as it gains levels in this class, as summarized on the Spellcaster table.</p>
+			<h5 class="caption">THE SPELLCASTER</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-10">Level</td><td class="col-10">Proficiency Bonus</td><td class="left">Features</td><td class="col-10">Cantrips Known</td><td class="col-10">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td></tr>
+				</thead>
+				<tr><td> 1st</td><td class="col-10">+2</td><td class="left">Bonus Proficiencies, Spellcasting</td><td>2</td><td> 1</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 2nd</td><td class="col-10">+2</td><td class="left">-</td><td>2</td><td> 2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 3rd</td><td class="col-10">+2</td><td class="left">-</td><td>2</td><td> 3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4th</td><td class="col-10">+2</td><td class="left">Ability Score Improvement</td><td>3</td><td> 3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5th</td><td class="col-10">+3</td><td class="left">-</td><td>3</td><td> 4</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6th</td><td class="col-10">+3</td><td class="left">Potent Cantrips</td><td>3</td><td> 4</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7th</td><td class="col-10">+3</td><td class="left">-</td><td>3</td><td> 5</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 8th</td><td class="col-10">+3</td><td class="left">Ability Score Improvement</td><td>3</td><td> 5</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 9th</td><td class="col-10">+4</td><td class="left">-</td><td>3</td><td> 6</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td class="col-10">+4</td><td class="left">-</td><td>4</td><td> 6</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td class="col-10">+4</td><td class="left">-</td><td>4</td><td> 7</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td class="col-10">+4</td><td class="left">Ability Score Improvement</td><td>4</td><td> 7</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td class="col-10">+5</td><td class="left">-</td><td>4</td><td> 8</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
+				<tr><td>14th</td><td class="col-10">+5</td><td class="left">Empowered Spells</td><td>4</td><td> 8</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
+				<tr><td>15th</td><td class="col-10">+5</td><td class="left">-</td><td>4</td><td> 9</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>16th</td><td class="col-10">+5</td><td class="left">Ability Score Improvement</td><td>4</td><td> 9</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>17th</td><td class="col-10">+6</td><td class="left">-</td><td>4</td><td>10</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>18th</td><td class="col-10">+6</td><td class="left">Ability Score Improvement</td><td>4</td><td>10</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>19th</td><td class="col-10">+6</td><td class="left">-</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+				<tr><td>20th</td><td class="col-10">+6</td><td class="left">Focused Casting</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+			</table>
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_BONUS_PROFICIENCIES" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_SPELLCASTING" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_ABILITYSCOREIMPROVEMENT" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_POTENT_CANTRIPS" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_EMPOWERED_SPELLS" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_FOCUSED_CASTING" />
+		</description>
+		<setters>
+			<set name="short">A sidekick who becomes a Spellcaster walks the paths of magic.</set>
+			<set name="hd">d12</set>
+		</setters>
+		<sheet display="false" alt="Spellcaster" />
+		<rules>
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_BONUS_PROFICIENCIES" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_SPELLCASTING" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_ABILITYSCOREIMPROVEMENT" level="4" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_POTENT_CANTRIPS" level="6" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_EMPOWERED_SPELLS" level="14" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_FOCUSED_CASTING" level="20" />
+		</rules>
+	</element>
+
+	<element name="Sidekick D20 - Spellcaster" type="Class" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_SIDEKICK_SPELLCASTER_D20">
+		<requirements>ID_WOTC_TCOE_RACE_SIDEKICK,[type:language],ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D20</requirements>
+		<description>
+			<div element="ID_WOTC_TCOE_INFO_SIDEKICK" />
+			<h4>Spellcaster</h4>
+			<p>A sidekick who becomes a Spellcaster walks the paths of magic. The sidekick might be a hedge wizard, a priest, a soothsayer, a magical performer, or a person with magic in their veins.</p>
+			<p class="indent">To gain the Spellcaster class, a creature must have at least one language in its stat block that it can speak.</p>
+			<p class="indent">A sidekick gains the following class features as it gains levels in this class, as summarized on the Spellcaster table.</p>
+			<h5 class="caption">THE SPELLCASTER</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-10">Level</td><td class="col-10">Proficiency Bonus</td><td class="left">Features</td><td class="col-10">Cantrips Known</td><td class="col-10">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td></tr>
+				</thead>
+				<tr><td> 1st</td><td class="col-10">+2</td><td class="left">Bonus Proficiencies, Spellcasting</td><td>2</td><td> 1</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 2nd</td><td class="col-10">+2</td><td class="left">-</td><td>2</td><td> 2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 3rd</td><td class="col-10">+2</td><td class="left">-</td><td>2</td><td> 3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4th</td><td class="col-10">+2</td><td class="left">Ability Score Improvement</td><td>3</td><td> 3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5th</td><td class="col-10">+3</td><td class="left">-</td><td>3</td><td> 4</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6th</td><td class="col-10">+3</td><td class="left">Potent Cantrips</td><td>3</td><td> 4</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7th</td><td class="col-10">+3</td><td class="left">-</td><td>3</td><td> 5</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 8th</td><td class="col-10">+3</td><td class="left">Ability Score Improvement</td><td>3</td><td> 5</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 9th</td><td class="col-10">+4</td><td class="left">-</td><td>3</td><td> 6</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td class="col-10">+4</td><td class="left">-</td><td>4</td><td> 6</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td class="col-10">+4</td><td class="left">-</td><td>4</td><td> 7</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td class="col-10">+4</td><td class="left">Ability Score Improvement</td><td>4</td><td> 7</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td class="col-10">+5</td><td class="left">-</td><td>4</td><td> 8</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
+				<tr><td>14th</td><td class="col-10">+5</td><td class="left">Empowered Spells</td><td>4</td><td> 8</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
+				<tr><td>15th</td><td class="col-10">+5</td><td class="left">-</td><td>4</td><td> 9</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>16th</td><td class="col-10">+5</td><td class="left">Ability Score Improvement</td><td>4</td><td> 9</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>17th</td><td class="col-10">+6</td><td class="left">-</td><td>4</td><td>10</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>18th</td><td class="col-10">+6</td><td class="left">Ability Score Improvement</td><td>4</td><td>10</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>19th</td><td class="col-10">+6</td><td class="left">-</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+				<tr><td>20th</td><td class="col-10">+6</td><td class="left">Focused Casting</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+			</table>
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_BONUS_PROFICIENCIES" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_SPELLCASTING" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_ABILITYSCOREIMPROVEMENT" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_POTENT_CANTRIPS" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_EMPOWERED_SPELLS" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_FOCUSED_CASTING" />
+		</description>
+		<setters>
+			<set name="short">A sidekick who becomes a Spellcaster walks the paths of magic.</set>
+			<set name="hd">d20</set>
+		</setters>
+		<sheet display="false" alt="Spellcaster" />
+		<rules>
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_BONUS_PROFICIENCIES" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_SPELLCASTING" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_ABILITYSCOREIMPROVEMENT" level="4" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_POTENT_CANTRIPS" level="6" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_EMPOWERED_SPELLS" level="14" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_FOCUSED_CASTING" level="20" />
+		</rules>
+	</element>
+
+	<element name="Bonus Proficiencies" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_BONUS_PROFICIENCIES">
+		<description>
+			<p>The sidekick gains proficiency in one saving throw of your choice: Dexterity, Intelligence, or Charisma.</p>
+			<p class="indent">In addition, the sidekick gains proficiency in five skills of your choice, and it gains proficiency with light armor. If it is a humanoid or has a simple or martial weapon in its stat block, it also gains proficiency with all simple weapons and with two tools of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Saving Throw (Spellcaster)" supports="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE|ID_PROFICIENCY_SAVINGTHROW_WISDOM|ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
+			<select type="Proficiency" name="Skill (Spellcaster)" number="2" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_RELIGION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+			<select type="Class Feature" name="Bonus Proficiencies (Spellcaster)" optional="True" supports="Spellcaster Bonus Proficiencies" requirements="!ID_INTERNAL_RACIAL_TRAIT_TYPE_HUMANOID" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_HUMANOID" requirements="ID_INTERNAL_RACIAL_TRAIT_TYPE_HUMANOID" />
+		</rules>
+	</element>
+
+	<element name="Humanoid or has weapon in statblock" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_HUMANOID">
+		<supports>Spellcaster Bonus Proficiencies</supports>
+		<description>
+			<p>If it is a humanoid or has a simple or martial weapon in its stat block, it also gains proficiency with all simple weapons.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+		</rules>
+	</element>
+
+	<element name="Spellcasting" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_SPELLCASTING">
+		<description>
+			<p>The sidekick gains the ability to cast spells. (If the creature already has the Spellcasting trait, this feature replaces that trait.) Choose the Spellcaster's role: Mage, Healer, or Prodigy. This choice determines the spell list and spellcasting ability used by the sidekick, as shown on the Spellcasting table.</p>
+			<h5>SPELLCASTING</h5>
+			 <table>
+				<thead>
+					<tr><td>Role</td><td>Spell List</td><td>Ability</td></tr>
+				</thead>
+				<tr><td>Mage</td><td>Wizard</td><td>Intelligence</td></tr>
+				<tr><td>Healer</td><td>Cleric and Druid</td><td>Wisdom</td></tr>
+				<tr><td>Prodigy</td><td>Bard and Warlock</td><td>Charisma</td></tr>
+			</table>
+			<p class="indent"><strong><em>Spell Slots.</em></strong> The Spellcaster table shows how many spell slots the sidekick has to cast its Spellcaster spells of 1st level and higher. To cast one of these spells, the sidekick must expend a slot of the spell's level or higher. The sidekick regains all expended spell slots when it finishes a long rest.</p>
+			<p class="indent"><strong><em>Spell Known.</em></strong> The sidekick knows two cantrips and one 1st-level spell of your choice from its spell list. Here are recommendations for a 1st-level spellcaster of each role:</p>
+			<ul>
+				<li><strong>Mage:</strong><em> mage hand, ray of frost, thunderwave</em></li>
+				<li><strong>Healer:</strong><em> cure wounds, guidance, sacred flame</em></li>
+				<li><strong>Prodigy:</strong><em> eldritch blast, healing word, light</em></li>
+			</ul>
+			<p class="indent">The Cantrips Known and Spells Known columns of the Spellcaster table shows when the sidekick learns more spells of your choice. Each of the spells in the Spells Known column must be of a level for which the sidekick has spell slots, as shown on the table. For instance, when the sidekick reaches 5th level in this class, it can learn one new spell of 1st or 2nd level.</p>
+			<p class="indent">Additionally, when the sidekick gains a level in this class, you can choose one of the spells it knows from this class and replace it with another spell from its spell list. The new spell must be a cantrip or of a level for which the sidekick has spell slots.</p>
+			<p class="indent"><strong><em>Spellcasting Ability.</em></strong> The sidekick's spellcasting ability for these spells depends on the choice you made on the Spellcasting table.</p>
+			<p class="indent">The sidekick uses its spellcasting ability whenever a spell refers to that ability. In addition, it uses its spellcasting ability modifier when setting the saving throw DC for a spell it casts and when making an attack roll with one.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + spellcasting ability modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + spellcasting ability modifier</p>
+			</center>
+			<h5></h5>
+			<p class="indent"><strong><em>Spellcasting Focus.</em></strong> The sidekick can use a focus for its spells depending on the choice you made on the Spellcasting table. A Mage can use an arcane focus, a Priest can use a holy symbol, and a Prodigy can use an arcane focus or a musical instrument.</p>
+		</description>
+		<sheet />
+		<rules>
+			<select type="Class Feature" name="Spellcasting Role" supports="Spellcasting Role" />
+		</rules>
+	</element>
+
+	<element name="Mage" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_SPELLCASTING_MAGE">
+		<supports>Spellcasting Role</supports>
+		<description>
+			<p>You have access to the Wizard spell list. Intelligence is your spellcasting ability.</p>
+		</description>
+		<sheet>
+			<description>You have access to the Wizard spell list. Intelligence is your spellcasting ability.</description>
+		</sheet>
+		<compendium display="false" />
+		<spellcasting name="Spellcaster" ability="Intelligence" prepare="false" allowReplace="true">
+			<list>Wizard</list>
+		</spellcasting>
+		<rules>
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_SPELLCASTING_SPELL_SLOTS" />
+			<stat name="spellcaster:ability" value="intelligence:modifier" />
+		</rules>
+	</element>
+
+	<element name="Healer" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_SPELLCASTING_HEALER">
+		<supports>Spellcasting Role</supports>
+		<description>
+			<p>You have access to the Cleric and Druid spell lists. Wisdom is your spellcasting ability.</p>
+		</description>
+		<sheet>
+			<description>You have access to the Cleric and Druid spell lists. Wisdom is your spellcasting ability.</description>
+		</sheet>
+		<compendium display="false" />
+		<spellcasting name="Spellcaster" ability="Wisdom" prepare="false" allowReplace="true">
+			<list>(Cleric||Druid)</list>
+		</spellcasting>
+		<rules>
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_SPELLCASTING_SPELL_SLOTS" />
+			<stat name="spellcaster:ability" value="wisdom:modifier" />
+		</rules>
+	</element>
+
+	<element name="Prodigy" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_SPELLCASTING_PRODIGY">
+		<supports>Spellcasting Role</supports>
+		<description>
+			<p>You have access to the Bard and Warlock spell lists. Charisma is your spellcasting ability.</p>
+		</description>
+		<sheet>
+			<description>You have access to the Bard and Warlock spell lists. Charisma is your spellcasting ability.</description>
+		</sheet>
+		<compendium display="false" />
+		<spellcasting name="Spellcaster" ability="Charisma" prepare="false" allowReplace="true">
+			<list>(Bard||Warlock)</list>
+		</spellcasting>
+		<rules>
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_SPELLCASTING_SPELL_SLOTS" />
+			<stat name="spellcaster:ability" value="charisma:modifier" />
+		</rules>
+	</element>
+
+	<element name="Spellcaster Spell Slots" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_SPELLCASTING_SPELL_SLOTS">
+		<sheet display="false" />
+		<compendium display="false" />
+		<rules>
+			<stat name="Spellcaster:spellcasting:slots:1" value="2" level="1" />
+			<stat name="Spellcaster:spellcasting:slots:1" value="1" level="3" />
+			<stat name="Spellcaster:spellcasting:slots:1" value="1" level="4" />
+			<stat name="Spellcaster:spellcasting:slots:2" value="2" level="5" />
+			<stat name="Spellcaster:spellcasting:slots:2" value="1" level="7" />
+			<stat name="Spellcaster:spellcasting:slots:3" value="2" level="9" />
+			<stat name="Spellcaster:spellcasting:slots:3" value="1" level="11" />
+			<stat name="Spellcaster:spellcasting:slots:4" value="1" level="13" />
+			<stat name="Spellcaster:spellcasting:slots:4" value="1" level="15" />
+			<stat name="Spellcaster:spellcasting:slots:4" value="1" level="17" />
+			<stat name="Spellcaster:spellcasting:slots:5" value="1" level="17" />
+			<stat name="Spellcaster:spellcasting:slots:5" value="1" level="19" />
+			<select type="Spell" name="Cantrip (Spellcaster)" supports="$(spellcasting:list), 0" level="1" number="2" spellcasting="Spellcaster" />
+			<select type="Spell" name="Cantrip (Spellcaster)" supports="$(spellcasting:list), 0" level="4" number="1" spellcasting="Spellcaster" />
+			<select type="Spell" name="Cantrip (Spellcaster)" supports="$(spellcasting:list), 0" level="10" number="1" spellcasting="Spellcaster" />
+			<select type="Spell" name="Spellcasting (Spellcaster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="1" number="1" spellcasting="Spellcaster" />
+			<select type="Spell" name="Spellcasting (Spellcaster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="2" number="1" spellcasting="Spellcaster" />
+			<select type="Spell" name="Spellcasting (Spellcaster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="3" number="1" spellcasting="Spellcaster" />
+			<select type="Spell" name="Spellcasting (Spellcaster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="5" number="1" spellcasting="Spellcaster" />
+			<select type="Spell" name="Spellcasting (Spellcaster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" number="1" spellcasting="Spellcaster" />
+			<select type="Spell" name="Spellcasting (Spellcaster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="9" number="1" spellcasting="Spellcaster" />
+			<select type="Spell" name="Spellcasting (Spellcaster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" number="1" spellcasting="Spellcaster" />
+			<select type="Spell" name="Spellcasting (Spellcaster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" number="1" spellcasting="Spellcaster" />
+			<select type="Spell" name="Spellcasting (Spellcaster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="15" number="1" spellcasting="Spellcaster" />
+			<select type="Spell" name="Spellcasting (Spellcaster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="17" number="1" spellcasting="Spellcaster" />
+			<select type="Spell" name="Spellcasting (Spellcaster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" number="1" spellcasting="Spellcaster" />
+		</rules>
+	</element>
+
+	<element name="Ability Score Improvement" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_ABILITYSCOREIMPROVEMENT">
+		<compendium display="false" />
+		<description>
+			<p>At 4th level and again at 8th, 12th, 16th, and 18th level, the sidekick increases one ability score of your choice by 2, or the sidekick increases two ability scores of your choice by 1. The sidekick can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement (Spellcaster 4)" number="2" supports="Ability Score Improvement, Class" level="4" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement (Spellcaster 8)" number="2" supports="Ability Score Improvement, Class" level="8" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement (Spellcaster 12)" number="2" supports="Ability Score Improvement, Class" level="12" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement (Spellcaster 16)" number="2" supports="Ability Score Improvement, Class" level="16" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement (Spellcaster 19)" number="2" supports="Ability Score Improvement, Class" level="18" />
+		</rules>
+	</element>
+
+	<element name="Potent Cantrips" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_POTENT_CANTRIPS">
+		<description>
+			<p>The sidekick can add its spellcasting ability modifier to the damage it deals with any cantrip.</p>
+		</description>
+		<sheet>
+			<description>You can add {{spellcaster:ability}} to the damage it deals with any cantrip.</description>
+		</sheet>
+	</element>
+
+	<element name="Empowered Spells" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_EMPOWERED_SPELLS">
+		<description>
+			<p>Choose one school of magic. Whenever the sidekick casts a spell of that school by expending a spell slot, the sidekick can add its spellcasting ability modifier to the spell’s damage roll or healing roll, if any.</p>
+		</description>
+		<sheet>
+			<description>Whenever you cast a {{empowered spells:type}} spell by expending a spell slot, you can add {{spellcaster:ability}} to the spell’s damage roll or healing roll, if any.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Empowered Spells School" supports="Spellcaster Empowered Spells" />
+		</rules>
+	</element>
+
+	<element name="Conjuration" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_EMPOWERED_SPELLS_CONJURATION">
+		<supports>Spellcaster Empowered Spells</supports>
+		<description>
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_EMPOWERED_SPELLS" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="empowered spells:type" value="Conjuration" inline="true" />
+		</rules>
+	</element>
+
+	<element name="Necromancy" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_EMPOWERED_SPELLS_NECROMANCY">
+		<supports>Spellcaster Empowered Spells</supports>
+		<description>
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_EMPOWERED_SPELLS" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="empowered spells:type" value="Necromancy" inline="true" />
+		</rules>
+	</element>
+
+	<element name="Evocation" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_EMPOWERED_SPELLS_EVOCATION">
+		<supports>Spellcaster Empowered Spells</supports>
+		<description>
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_EMPOWERED_SPELLS" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="empowered spells:type" value="Evocation" inline="true" />
+		</rules>
+	</element>
+
+	<element name="Abjuration" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_EMPOWERED_SPELLS_ABJURATION ">
+		<supports>Spellcaster Empowered Spells</supports>
+		<description>
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_EMPOWERED_SPELLS" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="empowered spells:type" value="Abjuration" inline="true" />
+		</rules>
+	</element>
+
+	<element name="Transmutation" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_EMPOWERED_SPELLS_TRANSMUTATION">
+		<supports>Spellcaster Empowered Spells</supports>
+		<description>
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_EMPOWERED_SPELLS" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="empowered spells:type" value="Transmutation" inline="true" />
+		</rules>
+	</element>
+
+	<element name="Divination" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_EMPOWERED_SPELLS_DIVINATION">
+		<supports>Spellcaster Empowered Spells</supports>
+		<description>
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_EMPOWERED_SPELLS" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="empowered spells:type" value="Divination" inline="true" />
+		</rules>
+	</element>
+
+	<element name="Enchantment" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_EMPOWERED_SPELLS_ENCHANTMENT">
+		<supports>Spellcaster Empowered Spells</supports>
+		<description>
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_EMPOWERED_SPELLS" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="empowered spells:type" value="Enchantment" inline="true" />
+		</rules>
+	</element>
+
+	<element name="Illusion" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_EMPOWERED_SPELLS_ILLUSION">
+		<supports>Spellcaster Empowered Spells</supports>
+		<description>
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_EMPOWERED_SPELLS" inline="true" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="empowered spells:type" value="Illusion" inline="true" />
+		</rules>
+	</element>
+
+	<element name="Focused Casting" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_SPELLCASTER_FOCUSED_CASTING">
+		<description>
+			<p>Taking damage can’t break the sidekick’s concentration on a spell.</p>
+		</description>
+		<sheet>
+			<description>Taking damage can’t break your concentration on a spell.</description>
+		</sheet>
+	</element>
+	<!--END - Spellcaster Class-->
+
+	<!--Warrior Class-->
+	<element name="Sidekick D4 - Warrior" type="Class" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_SIDEKICK_WARRIOR_D4">
+		<requirements>ID_WOTC_TCOE_RACE_SIDEKICK,ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D4</requirements>
+		<description>
+			<div element="ID_WOTC_TCOE_INFO_SIDEKICK" />
+			<h4>Warrior</h4>
+			<p>A Warrior sidekick grows in martial prowess as it fights by your side. It might be a soldier, a town guard, a battle-trained beast, or any other creature honed for combat.</p>
+			<p class="indent">A sidekick gains the following class features as it gains levels in this class, as summarized on the Warrior table.</p>
+			<h5 class="caption">THE WARRIOR</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="col-10">Proficiency Bonus</td><td class="col-60 left">Features</td></tr>
+				</thead>
+				<tr><td> 1st</td><td>+2</td><td class="left">Bonus Proficiencies, Martial Role</td></tr>
+				<tr><td> 2nd</td><td>+2</td><td class="left">Second Wind (1 use)</td></tr>
+				<tr><td> 3rd</td><td>+2</td><td class="left">Improved Critical</td></tr>
+				<tr><td> 4th</td><td>+2</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 5th</td><td>+3</td><td class="left">-</td></tr>
+				<tr><td> 6th</td><td>+3</td><td class="left">Extra Attack (1 extra)</td></tr>
+				<tr><td> 7th</td><td>+3</td><td class="left">Battle Readiness</td></tr>
+				<tr><td> 8th</td><td>+3</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 9th</td><td>+4</td><td class="left">-</td></tr>
+				<tr><td>10th</td><td>+4</td><td class="left">Improved Defense</td></tr>
+				<tr><td>11th</td><td>+4</td><td class="left">Indomitable (1 use)</td></tr>
+				<tr><td>12th</td><td>+4</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>13th</td><td>+5</td><td class="left">-</td></tr>
+				<tr><td>14th</td><td>+5</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>15th</td><td>+5</td><td class="left">Extra Attack (2 extra)</td></tr>
+				<tr><td>16th</td><td>+5</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>17th</td><td>+6</td><td class="left">-</td></tr>
+				<tr><td>18th</td><td>+6</td><td class="left">Indomitable (2 uses)</td></tr>
+				<tr><td>19th</td><td>+6</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>20th</td><td>+6</td><td class="left">Second Wind (2 uses)</td></tr>
+			</table>
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_BONUS_PROFICIENCIES" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_MARTIAL_ROLE" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_SECOND_WIND" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_IMPROVED_CRITICAL" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_ABILITYSCOREIMPROVEMENT" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_EXTRAATTACK" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_BATTLE_READINESS" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_IMPROVED_DEFENSE" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_INDOMITABLE" />
+		</description>
+		<setters>
+			<set name="short">A Warrior sidekick grows in martial prowess as it fights by your side.</set>
+			<set name="hd">d4</set>
+		</setters>
+		<sheet display="false" alt="Warrior"/>
+		<rules>
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_BONUS_PROFICIENCIES" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_MARTIAL_ROLE" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_SECOND_WIND" level="2" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_IMPROVED_CRITICAL" level="3" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_ABILITYSCOREIMPROVEMENT" level="4" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_EXTRAATTACK" level="6" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_BATTLE_READINESS" level="7" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_IMPROVED_DEFENSE" level="10" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_INDOMITABLE" level="11" />
+		</rules>
+	</element>
+
+	<element name="Sidekick D6 - Warrior" type="Class" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_SIDEKICK_WARRIOR_D6">
+		<requirements>ID_WOTC_TCOE_RACE_SIDEKICK,ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D6</requirements>
+		<description>
+			<div element="ID_WOTC_TCOE_INFO_SIDEKICK" />
+			<h4>Warrior</h4>
+			<p>A Warrior sidekick grows in martial prowess as it fights by your side. It might be a soldier, a town guard, a battle-trained beast, or any other creature honed for combat.</p>
+			<p class="indent">A sidekick gains the following class features as it gains levels in this class, as summarized on the Warrior table.</p>
+			<h5 class="caption">THE WARRIOR</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="col-10">Proficiency Bonus</td><td class="col-60 left">Features</td></tr>
+				</thead>
+				<tr><td> 1st</td><td>+2</td><td class="left">Bonus Proficiencies, Martial Role</td></tr>
+				<tr><td> 2nd</td><td>+2</td><td class="left">Second Wind (1 use)</td></tr>
+				<tr><td> 3rd</td><td>+2</td><td class="left">Improved Critical</td></tr>
+				<tr><td> 4th</td><td>+2</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 5th</td><td>+3</td><td class="left">-</td></tr>
+				<tr><td> 6th</td><td>+3</td><td class="left">Extra Attack (1 extra)</td></tr>
+				<tr><td> 7th</td><td>+3</td><td class="left">Battle Readiness</td></tr>
+				<tr><td> 8th</td><td>+3</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 9th</td><td>+4</td><td class="left">-</td></tr>
+				<tr><td>10th</td><td>+4</td><td class="left">Improved Defense</td></tr>
+				<tr><td>11th</td><td>+4</td><td class="left">Indomitable (1 use)</td></tr>
+				<tr><td>12th</td><td>+4</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>13th</td><td>+5</td><td class="left">-</td></tr>
+				<tr><td>14th</td><td>+5</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>15th</td><td>+5</td><td class="left">Extra Attack (2 extra)</td></tr>
+				<tr><td>16th</td><td>+5</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>17th</td><td>+6</td><td class="left">-</td></tr>
+				<tr><td>18th</td><td>+6</td><td class="left">Indomitable (2 uses)</td></tr>
+				<tr><td>19th</td><td>+6</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>20th</td><td>+6</td><td class="left">Second Wind (2 uses)</td></tr>
+			</table>
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_BONUS_PROFICIENCIES" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_MARTIAL_ROLE" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_SECOND_WIND" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_IMPROVED_CRITICAL" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_ABILITYSCOREIMPROVEMENT" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_EXTRAATTACK" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_BATTLE_READINESS" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_IMPROVED_DEFENSE" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_INDOMITABLE" />
+		</description>
+		<setters>
+			<set name="short">A Warrior sidekick grows in martial prowess as it fights by your side.</set>
+			<set name="hd">d6</set>
+		</setters>
+		<sheet display="false" alt="Warrior"/>
+		<rules>
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_BONUS_PROFICIENCIES" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_MARTIAL_ROLE" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_SECOND_WIND" level="2" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_IMPROVED_CRITICAL" level="3" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_ABILITYSCOREIMPROVEMENT" level="4" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_EXTRAATTACK" level="6" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_BATTLE_READINESS" level="7" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_IMPROVED_DEFENSE" level="10" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_INDOMITABLE" level="11" />
+		</rules>
+	</element>
+
+	<element name="Sidekick D8 - Warrior" type="Class" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_SIDEKICK_WARRIOR_D8">
+		<requirements>ID_WOTC_TCOE_RACE_SIDEKICK,ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D8</requirements>
+		<description>
+			<div element="ID_WOTC_TCOE_INFO_SIDEKICK" />
+			<h4>Warrior</h4>
+			<p>A Warrior sidekick grows in martial prowess as it fights by your side. It might be a soldier, a town guard, a battle-trained beast, or any other creature honed for combat.</p>
+			<p class="indent">A sidekick gains the following class features as it gains levels in this class, as summarized on the Warrior table.</p>
+			<h5 class="caption">THE WARRIOR</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="col-10">Proficiency Bonus</td><td class="col-60 left">Features</td></tr>
+				</thead>
+				<tr><td> 1st</td><td>+2</td><td class="left">Bonus Proficiencies, Martial Role</td></tr>
+				<tr><td> 2nd</td><td>+2</td><td class="left">Second Wind (1 use)</td></tr>
+				<tr><td> 3rd</td><td>+2</td><td class="left">Improved Critical</td></tr>
+				<tr><td> 4th</td><td>+2</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 5th</td><td>+3</td><td class="left">-</td></tr>
+				<tr><td> 6th</td><td>+3</td><td class="left">Extra Attack (1 extra)</td></tr>
+				<tr><td> 7th</td><td>+3</td><td class="left">Battle Readiness</td></tr>
+				<tr><td> 8th</td><td>+3</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 9th</td><td>+4</td><td class="left">-</td></tr>
+				<tr><td>10th</td><td>+4</td><td class="left">Improved Defense</td></tr>
+				<tr><td>11th</td><td>+4</td><td class="left">Indomitable (1 use)</td></tr>
+				<tr><td>12th</td><td>+4</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>13th</td><td>+5</td><td class="left">-</td></tr>
+				<tr><td>14th</td><td>+5</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>15th</td><td>+5</td><td class="left">Extra Attack (2 extra)</td></tr>
+				<tr><td>16th</td><td>+5</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>17th</td><td>+6</td><td class="left">-</td></tr>
+				<tr><td>18th</td><td>+6</td><td class="left">Indomitable (2 uses)</td></tr>
+				<tr><td>19th</td><td>+6</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>20th</td><td>+6</td><td class="left">Second Wind (2 uses)</td></tr>
+			</table>
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_BONUS_PROFICIENCIES" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_MARTIAL_ROLE" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_SECOND_WIND" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_IMPROVED_CRITICAL" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_ABILITYSCOREIMPROVEMENT" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_EXTRAATTACK" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_BATTLE_READINESS" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_IMPROVED_DEFENSE" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_INDOMITABLE" />
+		</description>
+		<setters>
+			<set name="short">A Warrior sidekick grows in martial prowess as it fights by your side.</set>
+			<set name="hd">d8</set>
+		</setters>
+		<sheet display="false" alt="Warrior"/>
+		<rules>
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_BONUS_PROFICIENCIES" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_MARTIAL_ROLE" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_SECOND_WIND" level="2" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_IMPROVED_CRITICAL" level="3" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_ABILITYSCOREIMPROVEMENT" level="4" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_EXTRAATTACK" level="6" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_BATTLE_READINESS" level="7" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_IMPROVED_DEFENSE" level="10" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_INDOMITABLE" level="11" />
+		</rules>
+	</element>
+
+	<element name="Sidekick D10 - Warrior" type="Class" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_SIDEKICK_WARRIOR_D10">
+		<requirements>ID_WOTC_TCOE_RACE_SIDEKICK,ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D10</requirements>
+		<description>
+			<div element="ID_WOTC_TCOE_INFO_SIDEKICK" />
+			<h4>Warrior</h4>
+			<p>A Warrior sidekick grows in martial prowess as it fights by your side. It might be a soldier, a town guard, a battle-trained beast, or any other creature honed for combat.</p>
+			<p class="indent">A sidekick gains the following class features as it gains levels in this class, as summarized on the Warrior table.</p>
+			<h5 class="caption">THE WARRIOR</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="col-10">Proficiency Bonus</td><td class="col-60 left">Features</td></tr>
+				</thead>
+				<tr><td> 1st</td><td>+2</td><td class="left">Bonus Proficiencies, Martial Role</td></tr>
+				<tr><td> 2nd</td><td>+2</td><td class="left">Second Wind (1 use)</td></tr>
+				<tr><td> 3rd</td><td>+2</td><td class="left">Improved Critical</td></tr>
+				<tr><td> 4th</td><td>+2</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 5th</td><td>+3</td><td class="left">-</td></tr>
+				<tr><td> 6th</td><td>+3</td><td class="left">Extra Attack (1 extra)</td></tr>
+				<tr><td> 7th</td><td>+3</td><td class="left">Battle Readiness</td></tr>
+				<tr><td> 8th</td><td>+3</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 9th</td><td>+4</td><td class="left">-</td></tr>
+				<tr><td>10th</td><td>+4</td><td class="left">Improved Defense</td></tr>
+				<tr><td>11th</td><td>+4</td><td class="left">Indomitable (1 use)</td></tr>
+				<tr><td>12th</td><td>+4</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>13th</td><td>+5</td><td class="left">-</td></tr>
+				<tr><td>14th</td><td>+5</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>15th</td><td>+5</td><td class="left">Extra Attack (2 extra)</td></tr>
+				<tr><td>16th</td><td>+5</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>17th</td><td>+6</td><td class="left">-</td></tr>
+				<tr><td>18th</td><td>+6</td><td class="left">Indomitable (2 uses)</td></tr>
+				<tr><td>19th</td><td>+6</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>20th</td><td>+6</td><td class="left">Second Wind (2 uses)</td></tr>
+			</table>
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_BONUS_PROFICIENCIES" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_MARTIAL_ROLE" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_SECOND_WIND" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_IMPROVED_CRITICAL" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_ABILITYSCOREIMPROVEMENT" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_EXTRAATTACK" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_BATTLE_READINESS" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_IMPROVED_DEFENSE" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_INDOMITABLE" />
+		</description>
+		<setters>
+			<set name="short">A Warrior sidekick grows in martial prowess as it fights by your side.</set>
+			<set name="hd">d10</set>
+		</setters>
+		<sheet display="false" alt="Warrior"/>
+		<rules>
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_BONUS_PROFICIENCIES" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_MARTIAL_ROLE" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_SECOND_WIND" level="2" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_IMPROVED_CRITICAL" level="3" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_ABILITYSCOREIMPROVEMENT" level="4" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_EXTRAATTACK" level="6" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_BATTLE_READINESS" level="7" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_IMPROVED_DEFENSE" level="10" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_INDOMITABLE" level="11" />
+		</rules>
+	</element>
+
+	<element name="Sidekick D12 - Warrior" type="Class" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_SIDEKICK_WARRIOR_D12">
+		<requirements>ID_WOTC_TCOE_RACE_SIDEKICK,ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D12</requirements>
+		<description>
+			<div element="ID_WOTC_TCOE_INFO_SIDEKICK" />
+			<h4>Warrior</h4>
+			<p>A Warrior sidekick grows in martial prowess as it fights by your side. It might be a soldier, a town guard, a battle-trained beast, or any other creature honed for combat.</p>
+			<p class="indent">A sidekick gains the following class features as it gains levels in this class, as summarized on the Warrior table.</p>
+			<h5 class="caption">THE WARRIOR</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="col-10">Proficiency Bonus</td><td class="col-60 left">Features</td></tr>
+				</thead>
+				<tr><td> 1st</td><td>+2</td><td class="left">Bonus Proficiencies, Martial Role</td></tr>
+				<tr><td> 2nd</td><td>+2</td><td class="left">Second Wind (1 use)</td></tr>
+				<tr><td> 3rd</td><td>+2</td><td class="left">Improved Critical</td></tr>
+				<tr><td> 4th</td><td>+2</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 5th</td><td>+3</td><td class="left">-</td></tr>
+				<tr><td> 6th</td><td>+3</td><td class="left">Extra Attack (1 extra)</td></tr>
+				<tr><td> 7th</td><td>+3</td><td class="left">Battle Readiness</td></tr>
+				<tr><td> 8th</td><td>+3</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 9th</td><td>+4</td><td class="left">-</td></tr>
+				<tr><td>10th</td><td>+4</td><td class="left">Improved Defense</td></tr>
+				<tr><td>11th</td><td>+4</td><td class="left">Indomitable (1 use)</td></tr>
+				<tr><td>12th</td><td>+4</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>13th</td><td>+5</td><td class="left">-</td></tr>
+				<tr><td>14th</td><td>+5</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>15th</td><td>+5</td><td class="left">Extra Attack (2 extra)</td></tr>
+				<tr><td>16th</td><td>+5</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>17th</td><td>+6</td><td class="left">-</td></tr>
+				<tr><td>18th</td><td>+6</td><td class="left">Indomitable (2 uses)</td></tr>
+				<tr><td>19th</td><td>+6</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>20th</td><td>+6</td><td class="left">Second Wind (2 uses)</td></tr>
+			</table>
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_BONUS_PROFICIENCIES" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_MARTIAL_ROLE" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_SECOND_WIND" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_IMPROVED_CRITICAL" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_ABILITYSCOREIMPROVEMENT" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_EXTRAATTACK" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_BATTLE_READINESS" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_IMPROVED_DEFENSE" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_INDOMITABLE" />
+		</description>
+		<setters>
+			<set name="short">A Warrior sidekick grows in martial prowess as it fights by your side.</set>
+			<set name="hd">d12</set>
+		</setters>
+		<sheet display="false" alt="Warrior"/>
+		<rules>
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_BONUS_PROFICIENCIES" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_MARTIAL_ROLE" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_SECOND_WIND" level="2" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_IMPROVED_CRITICAL" level="3" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_ABILITYSCOREIMPROVEMENT" level="4" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_EXTRAATTACK" level="6" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_BATTLE_READINESS" level="7" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_IMPROVED_DEFENSE" level="10" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_INDOMITABLE" level="11" />
+		</rules>
+	</element>
+
+	<element name="Sidekick D20 - Warrior" type="Class" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_SIDEKICK_WARRIOR_D20">
+		<requirements>ID_WOTC_TCOE_RACE_SIDEKICK,ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D20</requirements>
+		<description>
+			<div element="ID_WOTC_TCOE_INFO_SIDEKICK" />
+			<h4>Warrior</h4>
+			<p>A Warrior sidekick grows in martial prowess as it fights by your side. It might be a soldier, a town guard, a battle-trained beast, or any other creature honed for combat.</p>
+			<p class="indent">A sidekick gains the following class features as it gains levels in this class, as summarized on the Warrior table.</p>
+			<h5 class="caption">THE WARRIOR</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="col-10">Proficiency Bonus</td><td class="col-60 left">Features</td></tr>
+				</thead>
+				<tr><td> 1st</td><td>+2</td><td class="left">Bonus Proficiencies, Martial Role</td></tr>
+				<tr><td> 2nd</td><td>+2</td><td class="left">Second Wind (1 use)</td></tr>
+				<tr><td> 3rd</td><td>+2</td><td class="left">Improved Critical</td></tr>
+				<tr><td> 4th</td><td>+2</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 5th</td><td>+3</td><td class="left">-</td></tr>
+				<tr><td> 6th</td><td>+3</td><td class="left">Extra Attack (1 extra)</td></tr>
+				<tr><td> 7th</td><td>+3</td><td class="left">Battle Readiness</td></tr>
+				<tr><td> 8th</td><td>+3</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 9th</td><td>+4</td><td class="left">-</td></tr>
+				<tr><td>10th</td><td>+4</td><td class="left">Improved Defense</td></tr>
+				<tr><td>11th</td><td>+4</td><td class="left">Indomitable (1 use)</td></tr>
+				<tr><td>12th</td><td>+4</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>13th</td><td>+5</td><td class="left">-</td></tr>
+				<tr><td>14th</td><td>+5</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>15th</td><td>+5</td><td class="left">Extra Attack (2 extra)</td></tr>
+				<tr><td>16th</td><td>+5</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>17th</td><td>+6</td><td class="left">-</td></tr>
+				<tr><td>18th</td><td>+6</td><td class="left">Indomitable (2 uses)</td></tr>
+				<tr><td>19th</td><td>+6</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>20th</td><td>+6</td><td class="left">Second Wind (2 uses)</td></tr>
+			</table>
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_BONUS_PROFICIENCIES" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_MARTIAL_ROLE" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_SECOND_WIND" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_IMPROVED_CRITICAL" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_ABILITYSCOREIMPROVEMENT" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_EXTRAATTACK" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_BATTLE_READINESS" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_IMPROVED_DEFENSE" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_INDOMITABLE" />
+		</description>
+		<setters>
+			<set name="short">A Warrior sidekick grows in martial prowess as it fights by your side.</set>
+			<set name="hd">d20</set>
+		</setters>
+		<sheet display="false" alt="Warrior"/>
+		<rules>
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_BONUS_PROFICIENCIES" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_MARTIAL_ROLE" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_SECOND_WIND" level="2" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_IMPROVED_CRITICAL" level="3" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_ABILITYSCOREIMPROVEMENT" level="4" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_EXTRAATTACK" level="6" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_BATTLE_READINESS" level="7" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_IMPROVED_DEFENSE" level="10" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_INDOMITABLE" level="11" />
+		</rules>
+	</element>
+
+	<element name="Bonus Proficiencies" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_BONUS_PROFICIENCIES">
+		<description>
+			<p>The sidekick gains proficiency in one saving throw of your choice: Dexterity, Intelligence, or Charisma.</p>
+			<p class="indent">In addition, the sidekick gains proficiency in five skills of your choice, and it gains proficiency with light armor. If it is a humanoid or has a simple or martial weapon in its stat block, it also gains proficiency with all simple weapons and with two tools of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Saving Throw (Warrior)" supports="ID_PROFICIENCY_SAVINGTHROW_STRENGTH|ID_PROFICIENCY_SAVINGTHROW_DEXTERITY|ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
+			<select type="Proficiency" name="Skill (Warrior)" number="2" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SURVIVAL" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+			<select type="Class Feature" name="Bonus Proficiencies (Warrior)" optional="True" supports="Warrior Bonus Proficiencies" requirements="!ID_INTERNAL_RACIAL_TRAIT_TYPE_HUMANOID" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_HUMANOID" requirements="ID_INTERNAL_RACIAL_TRAIT_TYPE_HUMANOID" />
+		</rules>
+	</element>
+
+	<element name="Humanoid or has weapon in statblock" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_HUMANOID">
+		<supports>Warrior Bonus Proficiencies</supports>
+		<description>
+			<p>If it is a humanoid or has a simple or martial weapon in its stat block, it also gains proficiency with all simple weapons and with two tools of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+		</rules>
+	</element>
+
+	<element name="Martial Role" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_MARTIAL_ROLE">
+		<description>
+			<p>Each warrior focuses on offense or defense in their training. Choose one of the following options:</p>
+			<p class="indent"><strong>Attacker</strong> The sidekick gains a +2 bonus to all attack rolls.</p>
+			<p class="indent"><strong>Defender</strong> The sidekick can use its reaction to impose disadvantage on the attack roll of a creature within 5 feet of it whose target isn’t the sidekick, provided the sidekick can see the attacker.</p>
+		</description>
+		<sheet />
+		<rules>
+			<select type="Class Feature" name="Martial Role" supports="Martial Role" />
+		</rules>
+	</element>
+
+	<element name="Attacker" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_MARTIAL_ROLE_ATTACKER">
+		<supports>Martial Role</supports>
+		<description>
+			<p>The sidekick gains a +2 bonus to all attack rolls.</p>
+		</description>
+		<sheet>
+			<description>You gain a +2 bonus to all attack rolls.</description>
+		</sheet>
+		<compendium display="false" />
+	</element>
+
+	<element name="Defender" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_MARTIAL_ROLE_DEFENDER">
+		<supports>Martial Role</supports>
+		<description>
+			<p>The sidekick can use its reaction to impose disadvantage on the attack roll of a creature within 5 feet of it whose target isn’t the sidekick, provided the sidekick can see the attacker.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>You can use its reaction to impose disadvantage on the attack roll of a creature within 5 feet of it whose target isn’t the sidekick, provided the sidekick can see the attacker.</description>
+		</sheet>
+		<compendium display="false" />
+	</element>
+
+	<element name="Second Wind" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_SECOND_WIND">
+		<description>
+			<p>The sidekick can use a bonus action on its turn to regain hit points equal to 1d10 + its level in this class. Once it uses this feature, it must finish a short or long rest before it can use it again.</p>
+		</description>
+		<sheet usage="{{warrior:second wind}}/Short or Long Rest" action="Bonus Action">
+			<description>You regain 1d10 + {{level}} hp.</description>
+		</sheet>
+		<rules>
+			<stat name="warrior:second wind" value="1" />
+			<stat name="warrior:second wind" value="1" level="20" />
+		</rules>
+	</element>
+
+	<element name="Improved Critical" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_IMPROVED_CRITICAL">
+		<description>
+			<p>The sidekick’s attack rolls score a critical hit on a roll of 19 or 20 on the d20.</p>
+		</description>
+		<sheet>
+			<description>Your attack rolls score a critical hit on a roll of 19 or 20 on the d20.</description>
+		</sheet>
+	</element>
+
+	<element name="Ability Score Improvement" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_ABILITYSCOREIMPROVEMENT">
+		<compendium display="false" />
+		<description>
+			<p>At 4th level and again at 8th, 12th, 14th, 16th, and 19th level, the sidekick increases one ability score of your choice by 2, or the sidekick increases two ability scores of your choice by 1. The sidekick can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement (Warrior 4)" number="2" supports="Ability Score Improvement, Class" level="4" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement (Warrior 8)" number="2" supports="Ability Score Improvement, Class" level="8" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement (Warrior 12)" number="2" supports="Ability Score Improvement, Class" level="12" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement (Warrior 14)" number="2" supports="Ability Score Improvement, Class" level="14" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement (Warrior 16)" number="2" supports="Ability Score Improvement, Class" level="16" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement (Warrior 19)" number="2" supports="Ability Score Improvement, Class" level="19" />
+		</rules>
+	</element>
+
+	<element name="Extra Attack" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_EXTRAATTACK">
+		<description>
+			<p>The sidekick can attack twice, instead of once, whenever it takes the Attack action on its turn.</p>
+			<p class="indent">The number of attacks increases to three when the sidekick reaches 15th level.</p>
+			<p class="indent">If the sidekick has the Multiattack action, it can use Extra Attack or Multiattack on a turn, not both.</p>
+		</description>
+		<sheet>
+			<description level="6">You can attack twice, instead of once, whenever you take the Attack action on your turn. If you have the Multiattack action, you can use Extra Attack or Multiattack on a turn, not both.</description>
+			<description level="16">You can attack three times, instead of once, whenever you take the Attack action on your turn. If you have the Multiattack action, you can use Extra Attack or Multiattack on a turn, not both.</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" level="6" bonus="extra attack" />
+			<stat name="extra attack:count" value="3" level="15" bonus="extra attack" />
+		</rules>
+	</element>
+
+	<element name="Battle Readiness" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_BATTLE_READINESS">
+		<description>
+			<p>The sidekick has advantage on initiative rolls.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on initiative rolls.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_INITIATIVE_ADVANTAGE" />
+		</rules>
+	</element>
+
+	<element name="Improved Defense" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_IMPROVED_DEFENSE">
+		<description>
+			<p>The sidekick’s Armor Class increases by 1.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="ac:misc" value="1" />
+		</rules>
+	</element>
+
+	<element name="Indomitable" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_WARRIOR_INDOMITABLE">
+		<description>
+			<p>The sidekick can reroll a saving throw that it fails, but it must use the new roll. When it uses this feature, it can’t use the feature again until it finishes a long rest.</p>
+			<p class="indent">The sidekick can use this feature twice between long rests starting at 18th level.</p>
+		</description>
+		<sheet usage="{{warrior:indomitable}}/Long Rest">
+			<description>You can reroll a saving throw that you fails, but you must use the new roll.</description>
+		</sheet>
+		<rules>
+			<stat name="warrior:indomitable" value="1" />
+			<stat name="warrior:indomitable" value="1" level="18" />
+		</rules>
+	</element>
+	<!--END - Warrior Class-->
+
+
+<!--Premade Sidekick Options-->
+	<!--Commoner-->
+	<element name="Commoner" type="Race Variant" source="Monster Manual" id="ID_WOTC_MM_VARIANT_RACE_SIDEKICK_COMMONER">
+		<supports>CR0,Sidekick</supports>
+		<description>
+			<p><em>Medium humanoid (any race) , any alignment</em></p>
+			<p class="indent"><strong><em>Armor Class.</em></strong> 10</p>
+			<p class="indent"><strong><em>Hit Die.</em></strong> D8</p>
+			<p class="indent"><strong><em>Speed.</em></strong> 30</p>
+			<p class="indent"><strong><em>Languages.</em></strong> Any one language (usually Common)</p>
+			<p class="indent"><strong><em>Challenge Rating.</em></strong> 0</p>
+			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>10 (+0)</td><td>10 (+0)</td><td>10 (+0)</td><td>10 (+0)</td><td>10 (+0)</td><td>10 (+0)</td></tr>
+			</table>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="strength:score:set" value="10" bonus="base" />
+			<stat name="dexterity:score:set" value="10" bonus="base" />
+			<stat name="constitution:score:set" value="10" bonus="base" />
+			<stat name="intelligence:score:set" value="10" bonus="base" />
+			<stat name="wisdom:score:set" value="10" bonus="base" />
+			<stat name="charisma:score:set" value="10" bonus="base" />
+			<select type="Language" name="Language (Commoner)" supports="Standard" />
+			<stat name="innate speed" value="30" bonus="base"/>
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_HUMANOID" />
+			<grant type="Racial Trait" id="ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D8" />
+			<grant type="Grant" id="ID_WOTC_TCOE_GRANT_PRECONFIGURED_SIDEKICK" />
+		</rules>
+	</element>
+
+	<!--Giant Elk-->
+	<element name="Giant Elk" type="Race Variant" source="Monster Manual" id="ID_WOTC_MM_VARIANT_RACE_SIDEKICK_GIANT_ELK">
+		<supports>CR2,Sidekick</supports>
+		<description>
+			<p><em>Huge beast , unaligned</em></p>
+			<p class="indent"><strong><em>Armor Class.</em></strong> 14</p>
+			<p class="indent"><strong><em>Hit Die.</em></strong> D12</p>
+			<p class="indent"><strong><em>Speed.</em></strong> 60</p>
+			<p class="indent"><strong><em>Proficiencies.</em></strong> Perception</p>
+			<p class="indent"><strong><em>Languages.</em></strong> Giant Elk , understands Common, Elvish, and Sylvan but can't speak them</p>
+			<p class="indent"><strong><em>Challenge Rating.</em></strong> 2</p>
+			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>19 (+4)</td><td>16 (+3)</td><td>14 (+2)</td><td>7 (-2)</td><td>14 (+2)</td><td>10 (+0)</td></tr>
+			</table>
+			<p class="indent"><strong><em>Charge.</em></strong> If the elk moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (2d6) damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="strength:score:set" value="19" bonus="base" />
+			<stat name="dexterity:score:set" value="16" bonus="base" />
+			<stat name="constitution:score:set" value="14" bonus="base" />
+			<stat name="intelligence" value="-3" />
+			<stat name="wisdom:score:set" value="14" bonus="base" />
+			<stat name="charisma:score:set" value="10" bonus="base" />
+			<grant type="Language" id="ID_MM_LANGUAGE_GIANT_ELK" />
+			<stat name="innate speed" value="60" bonus="base"/>
+			<grant type="Size" id="ID_SIZE_HUGE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_BEAST" />
+			<grant type="Racial Trait" id="ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D12" />
+			<grant type="Grant" id="ID_WOTC_TCOE_GRANT_PRECONFIGURED_SIDEKICK" />
+			<stat name="ac:calculation" value="1" bonus="misc" />
+			<grant type="Racial Trait" id="ID_WOTC_MM_RACIAL_TRAIT_SIDEKICK_GIANT_ELK_CHARGE" />
+		</rules>
+	</element>
+
+	<element name="Charge" type="Racial Trait" source="source" id="ID_WOTC_MM_RACIAL_TRAIT_SIDEKICK_GIANT_ELK_CHARGE">
+		<description>
+			<p>If the elk moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (2d6) damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone.</p>
+		</description>
+		<sheet>
+			<description>If the elk moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (2d6) damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone.</description>
+		</sheet>
+	</element>
+
+	<!--Horses-->
+	<element name="Riding Horse" type="Race Variant" source="Monster Manual" id="ID_WOTC_MM_VARIANT_RACE_SIDEKICK_RIDING_HORSE">
+		<supports>CR1-4,Sidekick</supports>
+		<description>
+			<p><em>Large beast , unaligned</em></p>
+			<p class="indent"><strong><em>Armor Class.</em></strong> 10</p>
+			<p class="indent"><strong><em>Hit Die.</em></strong> D10</p>
+			<p class="indent"><strong><em>Speed.</em></strong> 60</p>
+			<p class="indent"><strong><em>Challenge Rating.</em></strong> 1/4</p>
+			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>16 (+3)</td><td>10 (+0)</td><td>12 (+1)</td><td>2 (-4)</td><td>11 (+0)</td><td>7 (-2)</td></tr>
+			</table>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="strength:score:set" value="16" bonus="base" />
+			<stat name="dexterity:score:set" value="10" bonus="base" />
+			<stat name="constitution:score:set" value="12" bonus="base" />
+			<stat name="intelligence" value="-8" />
+			<stat name="wisdom:score:set" value="11" bonus="base" />
+			<stat name="charisma" value="-3" />
+			<stat name="innate speed" value="60" bonus="base"/>
+			<grant type="Size" id="ID_SIZE_LARGE" />
+			<grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_BEAST" />
+			<grant type="Racial Trait" id="ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D10" />
+			<grant type="Grant" id="ID_WOTC_TCOE_GRANT_PRECONFIGURED_SIDEKICK" />
+			<grant type="Racial Trait" id="ID_WOTC_MM_RACIAL_TRAIT_SIDEKICK_HORSE_HOOVES" />
+		</rules>
+	</element>
+
+	<element name="Draft Horse" type="Race Variant" source="Monster Manual" id="ID_WOTC_MM_VARIANT_RACE_SIDEKICK_DRAFT_HORSE">
+		<supports>CR1-4,Sidekick</supports>
+		<description>
+			<p><em>Large beast , unaligned</em></p>
+			<p class="indent"><strong><em>Armor Class.</em></strong> 10</p>
+			<p class="indent"><strong><em>Hit Die.</em></strong> D10</p>
+			<p class="indent"><strong><em>Speed.</em></strong> 40</p>
+			<p class="indent"><strong><em>Challenge Rating.</em></strong> 1/4</p>
+			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>18 (+4)</td><td>10 (+0)</td><td>12 (+1)</td><td>2 (-4)</td><td>11 (+0)</td><td>7 (-2)</td></tr>
+			</table>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="strength:score:set" value="18" bonus="base" />
+			<stat name="dexterity:score:set" value="10" bonus="base" />
+			<stat name="constitution:score:set" value="12" bonus="base" />
+			<stat name="intelligence" value="-8" />
+			<stat name="wisdom:score:set" value="11" bonus="base" />
+			<stat name="charisma" value="-3" />
+			<stat name="innate speed" value="40" bonus="base"/>
+			<grant type="Size" id="ID_SIZE_LARGE" />
+			<grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_BEAST" />
+			<grant type="Racial Trait" id="ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D10" />
+			<grant type="Grant" id="ID_WOTC_TCOE_GRANT_PRECONFIGURED_SIDEKICK" />
+			<grant type="Racial Trait" id="ID_WOTC_MM_RACIAL_TRAIT_SIDEKICK_HORSE_HOOVES" />
+		</rules>
+	</element>
+
+	<element name="Warhorse" type="Race Variant" source="Monster Manual" id="ID_WOTC_MM_VARIANT_RACE_SIDEKICK_WARHORSE">
+		<supports>CR1-2,Sidekick</supports>
+		<description>
+			<p><em>Large beast , unaligned</em></p>
+			<p class="indent"><strong><em>Armor Class.</em></strong> 11</p>
+			<p class="indent"><strong><em>Hit Die.</em></strong> D10</p>
+			<p class="indent"><strong><em>Speed.</em></strong> 60</p>
+			<p class="indent"><strong><em>Challenge Rating.</em></strong> 1/2</p>
+			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>18 (+4)</td><td>12 (+1)</td><td>13 (+1)</td><td>2 (-4)</td><td>12 (+1)</td><td>7 (-2)</td></tr>
+			</table>
+			<p class="indent"><strong><em>Trampling Charge.</em></strong> If the horse moves at least 20 feet straight toward a creature and then hits it with a hooves attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the horse can make another attack with its hooves against it as a bonus action.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="strength:score:set" value="18" bonus="base" />
+			<stat name="dexterity:score:set" value="12" bonus="base" />
+			<stat name="constitution:score:set" value="13" bonus="base" />
+			<stat name="intelligence" value="-8" />
+			<stat name="wisdom:score:set" value="12" bonus="base" />
+			<stat name="charisma" value="-3" />
+			<stat name="innate speed" value="60" bonus="base"/>
+			<grant type="Size" id="ID_SIZE_LARGE" />
+			<grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_BEAST" />
+			<grant type="Racial Trait" id="ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D10" />
+			<grant type="Grant" id="ID_WOTC_TCOE_GRANT_PRECONFIGURED_SIDEKICK" />
+			<grant type="Racial Trait" id="ID_WOTC_MM_RACIAL_TRAIT_SIDEKICK_WARHORSE_TRAMPLING_CHARGE" />
+			<grant type="Racial Trait" id="ID_WOTC_MM_RACIAL_TRAIT_SIDEKICK_HORSE_HOOVES" />
+			<stat name="horsehooves:die" value="6" bonus="base"/>
+		</rules>
+	</element>
+
+	<element name="Hooves" type="Racial Trait" source="Monster Manual" id="ID_WOTC_MM_RACIAL_TRAIT_SIDEKICK_HORSE_HOOVES">
+		<description>
+			<p><em>Melee Weapon Attack:</em> Strength Modifer + Proficiency to hit, reach 5 ft., one target. Hit: (2d4 + Strength Modifer) bludgeoning damage.</p>
+		</description>
+		<sheet>
+			<description><em>Melee Weapon Attack:</em> +{{horsehooves:hit}} to hit, reach 5 ft., one target. Hit: (2d{{horsehooves:die}} + {{strength:modifier}}) bludgeoning damage.</description>
+		</sheet>
+		<rules>
+			<stat name="horsehooves:die" value="4" bonus="base"/>
+			<stat name="horsehooves:hit" value="strength:modifier" />
+			<stat name="horsehooves:hit" value="proficiency" />
+		</rules>
+	</element>
+
+	<element name="Trampling Charge" type="Racial Trait" source="Monster Manual" id="ID_WOTC_MM_RACIAL_TRAIT_SIDEKICK_WARHORSE_TRAMPLING_CHARGE">
+		<description>
+			<p>If the horse moves at least 20 feet straight toward a creature and then hits it with a hooves attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the horse can make another attack with its hooves against it as a bonus action.</p>
+		</description>
+		<sheet>
+			<description>If the horse moves at least 20 feet straight toward a creature and then hits it with a hooves attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the horse can make another attack with its hooves against it as a bonus action.</description>
+		</sheet>
+	</element>
+
+	<!--Template- -
+	<element name="HERE" type="Race Variant" source="Monster Manual" id="ID_WOTC_MM_VARIANT_RACE_SIDEKICK_">
+		<supports>CR0,Sidekick</supports>
+		<description>
+			<p><em>HERE</em></p>
+			<p class="indent"><strong><em>Armor Class.</em></strong> 10</p>
+			<p class="indent"><strong><em>Hit Die.</em></strong> D8</p>
+			<p class="indent"><strong><em>Speed.</em></strong> 30</p>
+			<p class="indent"><strong><em>Languages.</em></strong> Any one language (usually Common)</p>
+			<p class="indent"><strong><em>Challenge Rating.</em></strong> 0</p>
+			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>10 (+0)</td><td>10 (+0)</td><td>10 (+0)</td><td>10 (+0)</td><td>10 (+0)</td><td>10 (+0)</td></tr>
+			</table>
+			<p class="indent"><strong><em>FEATURE.</em></strong> DESCRIPTION</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="strength:score:set" value="10" bonus="base" />
+			<stat name="dexterity:score:set" value="10" bonus="base" />
+			<stat name="constitution:score:set" value="10" bonus="base" />
+			<stat name="intelligence:score:set" value="10" bonus="base" />
+			<stat name="wisdom:score:set" value="10" bonus="base" />
+			<stat name="charisma:score:set" value="10" bonus="base" />
+			<stat name="innate speed" value="30" bonus="base"/>
+			<grant type="Size" id="ID_SIZE_" />
+			<grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_" />
+			<grant type="Racial Trait" id="ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D" />
+			<grant type="Grant" id="ID_WOTC_TCOE_GRANT_PRECONFIGURED_SIDEKICK" />
+		</rules>
+	</element>
+	-->
+<!--END - Premade Sidekick Options-->
+</elements>
