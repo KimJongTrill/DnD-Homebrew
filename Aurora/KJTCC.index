@@ -8,7 +8,7 @@
   <files>
     <file name="source.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/source.xml" />
     <file name="QOL.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/QOL.xml" />
-    <file name="HBitems.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/HBitems.xml" />
+    <file name="HBitems.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/items.xml" />
     <file name="bard-maestro.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/bard-maestro.xml" />
     <file name="fighter-gunslinger.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/Aurora/Homebrew/fighter-gunslinger.xml" />
     <file name="class-bloodhunter.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/Aurora/Homebrew/class-bloodhunter.xml" />
