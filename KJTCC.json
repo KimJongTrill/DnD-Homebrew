@@ -4,17 +4,21 @@
 			{
 				"json": "KimJongTrillsCustomContent",
 				"abbreviation": "KJTCC",
-				"full": "KimJongTrill's Custom Content",
-				"url": "https://raw.githubusercontent.com/KimJongTrill/5eTools/main/KJTCC.json",
+				"full": "KimJongTrill's Custom Content (Items)",
+				"color": "68BB59",
+				"url": "https://www.gmbinder.com/pdf/-MxkLio91IPl29SFoO8H/adventurers-guide-to-trvia.pdf",
 				"authors": [
 					"KimJongTrill"
 				],
+				"version": "1.1.0",
 				"convertedBy": []
 			}
 		],
 		"dateAdded": 1653278513,
-		"dateLastModified": 1653278513
-	},{
+		"dateLastModified": 1653278569
+	},
+	"item": [
+		{
 	"name": "Cloak of Cleanliness",
 	"source": "KJTCC",
 	"tier": "minor",
@@ -23,4 +27,5 @@
 	"entries": [
 		"While wearing this cloak, you are always pristinely clean and well kept with a slight scent of lavender."
 	]
+}]
 }
