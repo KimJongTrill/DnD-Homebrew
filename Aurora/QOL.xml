@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="1.2.3">
-			<file name="QOL.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/QOL.xml" />
+			<file name="QOL.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/QOL.xml" />
 		</update>
 	</info>
 		
