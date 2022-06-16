@@ -4,7 +4,7 @@
 			{
 				"json": "KimJongTrillsCustomContent",
 				"abbreviation": "KJTCC",
-				"full": "KimJongTrill's Custom Content (Creatures)",
+				"full": "KimJongTrill's Custom Content",
 				"color": "68BB59",
         "url": "https://www.gmbinder.com/pdf/-MxkLio91IPl29SFoO8H/adventurers-guide-to-trvia.pdf",
 				"authors": [
@@ -17,6 +17,7 @@
 		"dateAdded": 1653278513,
 		"dateLastModified": 1653278569
 	},
+	
 	"monster": [
 		{
 			"name": "Black Sword Archer",
