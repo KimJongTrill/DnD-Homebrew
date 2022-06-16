@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="1.4.1">
-			<file name="HBitems.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/HBitems.xml" />
+			<file name="HBitems.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/HBitems.xml" />
 		</update>
 	</info>
 	
