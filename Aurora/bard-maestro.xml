@@ -4,7 +4,7 @@
 		<name>College of the Maestro</name>
 		<author url="https://www.dmsguild.com/product/183630/College-of-the-Maestro--Bard-College-Option">Matthew Mercer</author>
 		<update version="1.2">
-			<file name="bard-maestro.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/maestro.xml" />
+			<file name="bard-maestro.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/maestro.xml" />
 		</update>
 	</info>
 
