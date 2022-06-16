@@ -3,7 +3,7 @@
 	<info>
 		<name>Sidekicks</name>
 		<update version="0.0.1">
-			<file name="sidekicks.xml" url="https://raw.githubusercontent.com/KimJongTrill/Aurora-Homebrew/master/Homebrew/sidekicks.xml" />
+			<file name="sidekicks.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/sidekicks.xml" />
 		</update>
 	</info>
 
