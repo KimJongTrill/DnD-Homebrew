@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.2.3">
+		<update version="1.2.4">
 			<file name="QOL.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/QOL.xml" />
 		</update>
 	</info>
@@ -251,7 +251,7 @@
 		<element name="Emerald Dragon" type="Archetype Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_EMERALD">
 		<supports>Dragon Ancestor</supports>
 		<description>
-			<p>You choose the emerald dragon as your ancestor. The force damage type is used by features you gain later.</p>
+			<p>You choose the emerald dragon as your ancestor. The psychic damage type is used by features you gain later.</p>
 		</description>
 		<sheet>
 			<description>The emerald dragon as your ancestor.</description>
