@@ -9,55 +9,45 @@
         </update>
 	</info>
 	
-	<element name="Gunslinger" type="Archetype" source="Critical Role" id="ID_CRIT_ARCHETYPE_FIGHTER_GUNSLINGER">
+	<element name="Gunslinger" type="Archetype" source="KimJongTrill's Custom Content" id="ID_KJT_CC_ARCHETYPE_FIGHTER_GUNSLINGER">
 		<supports>Martial Archetype</supports>
 		<description>
 			<p>Most warriors and combat specialists spend their years perfecting the classic arts of swordplay, archery, or polearm tactics. Whether duelist or infantry, martial weapons were seemingly perfected long ago, and the true challenge is to master them.</p>
 			<p class="indent">However, some minds couldn’t stop with the innovation of the crossbow. Experimentation with alchemical components and rare metals have unlocked the secrets of controlled explosive force. The few who survive these trials of ingenuity may become the first to create, and deftly wield, the first firearms.</p>
 			<p class="indent">This archetype focuses on the ability to design, craft, and utilize powerful, yet dangerous ranged weapons. Through creative innovation and immaculate aim, you become a distant force of death on the battlefield. However, not being a perfect science, firearms carry an inherent instability that can occasionally leave you without a functional means of attack. This is the danger of new, untested technologies in a world where the arcane energies that rule the elements are ever present.</p>
 			<p class="indent">Should this path of powder, fire, and metal call to you, keep your wits about you, hold on to your convictions as a fighter, and let skill meet luck to guide your bullets to strike true.</p>
-			<div element="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_FIREARM_PROFICIENCY" />
-			<div element="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_GUNSMITH" />
-			<div element="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_GRIT" />
-			<div element="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_TRICK_SHOT" />
-			<div element="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_QUICKDRAW" />
-			<div element="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_LIGHTNING_RELOAD" />
-			<div element="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_VICIOUS_INTENT" />
-			<div element="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_HEMORRHAGING_CRITICAL" />
+			<div element="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_GUNSMITH" />
+			<div element="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_GRIT" />
+			<div element="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_TRICK_SHOT" />
+			<div element="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_QUICKDRAW" />
+			<div element="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_LIGHTNING_RELOAD" />
+			<div element="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_VICIOUS_INTENT" />
+			<div element="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_HEMORRHAGING_CRITICAL" />
 		</description>
 		<sheet display="false" />
 		<rules>
-			<grant type="Archetype Feature" id="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_FIREARM_PROFICIENCY" level="3" />
-			<grant type="Archetype Feature" id="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_GUNSMITH" level="3" />
-			<grant type="Archetype Feature" id="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_GRIT" level="3" />
-			<grant type="Archetype Feature" id="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_TRICK_SHOT" level="3" />
-			<grant type="Archetype Feature" id="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_QUICKDRAW" level="7" />
-			<grant type="Archetype Feature" id="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_LIGHTNING_RELOAD" level="15" />
-			<grant type="Archetype Feature" id="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_VICIOUS_INTENT" level="18" />
-			<grant type="Archetype Feature" id="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_HEMORRHAGING_CRITICAL" level="18" />
+			<grant type="Archetype Feature" id="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_GUNSMITH" level="3" />
+			<grant type="Archetype Feature" id="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_GRIT" level="3" />
+			<grant type="Archetype Feature" id="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_TRICK_SHOT" level="3" />
+			<grant type="Archetype Feature" id="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_QUICKDRAW" level="7" />
+			<grant type="Archetype Feature" id="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_LIGHTNING_RELOAD" level="10" />
+			<grant type="Archetype Feature" id="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_LIGHTNING_RELOAD" level="15" />
+			<grant type="Archetype Feature" id="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_VICIOUS_INTENT" level="18" />
+			<grant type="Archetype Feature" id="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_HEMORRHAGING_CRITICAL" level="18" />
 		</rules>
 	</element>
-	<element name="Firearm Proficiency" type="Archetype Feature" source="Critical Role" id="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_FIREARM_PROFICIENCY">
+	<element name="Gunsmith" type="Archetype Feature" source="KimJongTrill's Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_GUNSMITH">
 		<description>
-			<p>Starting when you choose this archetype at 3rd level, you gain proficiency with firearms, allowing you to add your proficiency bonus to attacks made with firearms.</p>
-		</description>
-		<sheet display="false" />
-		<rules>
-			<grant type="Proficiency" id="ID_CRIT_PROFICIENCY_WEAPON_FIREARMS" />
-		</rules>
-	</element>
-	<element name="Gunsmith" type="Archetype Feature" source="Critical Role" id="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_GUNSMITH">
-		<description>
-			<p>Upon choosing this archetype at 3rd level. you gain proficiency with Tinker’s Tools. You may use them to craft ammunition, repair damaged firearms, or even draft and create new ones (DM’s discretion). Some extremely intricate and experimental firearms are only available through crafting.</p>
+			<p>Upon choosing this archetype at 3rd level. you gain proficiency with Tinker’s Tools, when used in relation to firearms your proficeincy becomes expertise. You may use them to craft specialty ammunition, repair damaged firearms, or even draft and create new ones (DM’s discretion). Some extremely intricate and experimental firearms are only available through crafting.</p>
 		</description>
 		<sheet>
-			<description>Use Tinker’s Tools to craft ammunition, repair damaged firearms, or draft and create new ones.</description>
+			<description>Use Tinker’s Tools to craft specialty ammunition, repair damaged firearms, or even draft and create new ones. With expertise on checks related to firearms</description>
 		</sheet>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
 		</rules>
 	</element>
-	<element name="Grit" type="Archetype Feature" source="Critical Role" id="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_GRIT">
+	<element name="Grit" type="Archetype Feature" source="KimJongTrill's Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_GRIT">
 		<description>
 			<p>Also starting at 3rd level, you gain a number of grit points equal to your Wisdom modifier (minimum of 1). You can spend grit points to perform various "shot" attacks with your firearms. An attack can only be affected by a single shot feature. You can regain spent Grit points in the following ways:</p>
 			<p class="indent"><b><em>Critical hit with a firearm.</em></b> Each time you score a critical hit with a firearm attack, you regain 1 spent grit point.</p>
@@ -73,8 +63,8 @@
 			<stat name="grit-points" value="wisdom:modifier" bonus="base" />
 		</rules>
 	</element>
-	<element name="Trick Shot" type="Archetype Feature" source="Critical Role" id="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_TRICK_SHOT">
-		<requirements>!ID_CRIT_ARCHETYPE_REPLACEMENT_FIGHTER_GUNSLINGER_TRICK_SHOT</requirements>
+	<element name="Trick Shot" type="Archetype Feature" source="KimJongTrill's Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_TRICK_SHOT">
+		<requirements>!ID_KJT_CC_ARCHETYPE_REPLACEMENT_FIGHTER_GUNSLINGER_TRICK_SHOT</requirements>
 		<description>
 			<p>You learn two trick shots of your choice, which are detailed under “Trick Shots” below. Many maneuvers enhance an attack in some way. Each use of a trick shot must be declared before the attack roll is made. You can use only one trick shot per attack. You learn an additional trick shot of your choice at 7th, 10th, 15th, and 18th level. Each time you learn a new trick shot, you can also replace one trick shot you know with a different one.</p>
 			<p class="indent"><strong><em>Saving Throws.</em></strong> Some of your Trick Shots require your target to make a saving throw to resist the effects. The saving throw DC is calculated as follows:</p>
@@ -97,7 +87,7 @@
 			<select type="Archetype Feature" name="Trick Shot (Level 18)" supports="Trick Shot, Gunslinger" number="1" level="18" />
 		</rules>
 	</element>
-	<element name="Quickdraw" type="Archetype Feature" source="Critical Role" id="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_QUICKDRAW">
+	<element name="Quickdraw" type="Archetype Feature" source="KimJongTrill's Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_QUICKDRAW">
 		<description>
 			<p>When you reach 7th level, you add your proficiency bonus to your initiative. You can also stow a firearm, then draw another firearm as a single object interaction on your turn.</p>
 		</description>
@@ -108,15 +98,20 @@
 			<stat name="initiative" value="proficiency" bonus="proficiency" />
 		</rules>
 	</element>
-	<element name="Lightning Reload" type="Archetype Feature" source="Critical Role" id="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_LIGHTNING_RELOAD">
+	<element name="Lightning Reload" type="Archetype Feature" source="KimJongTrill's Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_LIGHTNING_RELOAD">
 		<description>
-			<p>Starting at 15th level, you can reload any firearm as a bonus action.</p>
+			<p>Starting at 10th level, you can reload any firearm as an item interaction.</p>
 		</description>
-		<sheet action="Bonus Action">
-			<description>Reload a firearm.</description>
+	</element>
+	<element name="Dig Deep" type="Archetype Feature" source="KimJongTrill's Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_DIG_DEEP">
+		<description>
+			<p>Starting at 15th level, when you roll initiative and have no grit remaining, you regain 1 grit.</p>
+		</description>
+		<sheet>
+			<description>When you roll initiative and have no grit remaining, you regain 1 grit.</description>
 		</sheet>
 	</element>
-	<element name="Vicious Intent" type="Archetype Feature" source="Critical Role" id="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_VICIOUS_INTENT">
+	<element name="Vicious Intent" type="Archetype Feature" source="KimJongTrill's Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_VICIOUS_INTENT">
 		<description>
 			<p>At 18th level, your firearm attacks score a critical hit on a roll of 19-20.</p>
 		</description>
@@ -124,7 +119,7 @@
 			<description>Firearm attacks score a critical hit on 19-20.</description>
 		</sheet>
 	</element>
-	<element name="Hemorrhaging Critical" type="Archetype Feature" source="Critical Role" id="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_HEMORRHAGING_CRITICAL">
+	<element name="Hemorrhaging Critical" type="Archetype Feature" source="KimJongTrill's Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_HEMORRHAGING_CRITICAL">
 		<description>
 			<p>Upon reaching 18th level, whenever you score a critical hit on an attack with a firearm, the target additionally suffers half of the damage from the attack at the end of its next turn.</p>
 		</description>
@@ -135,7 +130,7 @@
   
   	<!-- Trick Shots -->
 
-	<element name="Dazing Shot" type="Archetype Feature" source="Critical Role" id="ID_CRIT_ARCHETYPE_FEATURE_TRICK_SHOT_DAZING">
+	<element name="Dazing Shot" type="Archetype Feature" source="KimJongTrill's Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_TRICK_SHOT_DAZING">
 		<supports>Trick Shot, Gunslinger</supports>
 		<description>
 			<p>When you make a firearm attack against a creature, you can expend one grit point to attempt to dizzy your opponent. On a hit, the creature suffers normal damage and must make a Constitution saving throw or suffer disadvantage on attacks until the end of their next turn.</p>
@@ -145,7 +140,7 @@
 		</sheet>
 	</element>
 
-	<element name="Deadeye Shot" type="Archetype Feature" source="Critical Role" id="ID_CRIT_ARCHETYPE_FEATURE_TRICK_SHOT_DEADEYE">
+	<element name="Deadeye Shot" type="Archetype Feature" source="KimJongTrill's Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_TRICK_SHOT_DEADEYE">
 		<supports>Trick Shot, Gunslinger</supports>
 		<description>
 			<p>When you make a firearm attack against a creature, you can expend one grit point to gain advantage on the attack roll.</p>
@@ -155,7 +150,7 @@
 		</sheet>
 	</element>
 
-	<element name="Disarming Shot" type="Archetype Feature" source="Critical Role" id="ID_CRIT_ARCHETYPE_FEATURE_TRICK_SHOT_DISARM">
+	<element name="Disarming Shot" type="Archetype Feature" source="KimJongTrill's Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_TRICK_SHOT_DISARM">
 		<supports>Trick Shot, Gunslinger</supports>
 		<description>
 			<p>When you make a firearm attack against a creature, you can expend one grit point to attempt to shoot an object from their hands. On a hit, the creature suffers normal damage and must succeed on a Strength saving throw or drop 1 held object of your choice and have that object be pushed 10 feet away from you.</p>
@@ -165,7 +160,7 @@
 		</sheet>
 	</element>
 
-	<element name="Forceful Shot" type="Archetype Feature" source="Critical Role" id="ID_CRIT_ARCHETYPE_FEATURE_TRICK_SHOT_FORCE">
+	<element name="Forceful Shot" type="Archetype Feature" source="KimJongTrill's Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_TRICK_SHOT_FORCE">
 		<supports>Trick Shot, Gunslinger</supports>
 		<description>
 			<p>When you make a firearm attack against a creature, you can expend one grit point to attempt to trip them up and force them back. On a hit, the creature suffers normal damage and must succeed on a Strength saving throw or be pushed 15 feet away from you.</p>
@@ -175,27 +170,27 @@
 		</sheet>
 	</element>
 
-	<element name="Piercing Shot" type="Archetype Feature" source="Critical Role" id="ID_CRIT_ARCHETYPE_FEATURE_TRICK_SHOT_PIERCE">
+	<element name="Piercing Shot" type="Archetype Feature" source="KimJongTrill's Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_TRICK_SHOT_PIERCE">
 		<supports>Trick Shot, Gunslinger</supports>
 		<description>
-			<p>When you make a firearm attack against a creature, you can expend one grit point to attempt to fire through multiple opponents. The initial attack gains a +1 to the firearm’s misfire score. On a hit, the creature suffers normal damage and you make an attack roll with disadvantage against every creature in a line directly behind the target within your first range increment. Only the initial attack can misfire.</p>
+			<p>When you make a firearm attack against a creature, you can expend one grit point to attempt to fire through multiple opponents. On a hit, the creature suffers normal damage and you make an attack roll with disadvantage against every creature in a line directly behind the target within your first range increment.</p>
 		</description>
 		<sheet>
-			<description>When you make a firearm attack against a creature, you can expend one grit point to attempt to fire through multiple opponents. The initial attack gains a +1 to the firearm’s misfire score. On a hit, the creature suffers normal damage and you make an attack roll with disadvantage against every creature in a line directly behind the target within your first range increment. Only the initial attack can misfire.</description>
+			<description>When you make a firearm attack against a creature, you can expend one grit point to attempt to fire through multiple opponents. On a hit, the creature suffers normal damage and you make an attack roll with disadvantage against every creature in a line directly behind the target within your first range increment.</description>
 		</sheet>
 	</element>
 
-	<element name="Violent Shot" type="Archetype Feature" source="Critical Role" id="ID_CRIT_ARCHETYPE_FEATURE_TRICK_SHOT_VIOLENT">
+	<element name="Violent Shot" type="Archetype Feature" source="KimJongTrill's Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_TRICK_SHOT_VIOLENT">
 		<supports>Trick Shot, Gunslinger</supports>
 		<description>
-			<p>When you make a firearm attack against a creature, you can expend one or more grit points to enhance the volatility of the attack. For each grit point expended, the attack gains a +2 to the firearm’s misfire score. If the attack hits, you can roll one additional weapon damage die per grit point spent when determining the damage.</p>
+			<p>When you make a firearm attack against a creature, you can expend one grit point to enhance the volatility of the attack. If the attack hits, you can roll one additional weapon damage die.</p>
 		</description>
 		<sheet>
-			<description>When you make a firearm attack against a creature, you can expend one or more grit points to enhance the volatility of the attack. For each grit point expended, the attack gains a +2 to the firearm’s misfire score. If the attack hits, you can roll one additional weapon damage die per grit point spent when determining the damage.</description>
+			<description>When you make a firearm attack against a creature, you can expend one grit point to enhance the volatility of the attack. If the attack hits, you can roll one additional weapon damage die.</description>
 		</sheet>
 	</element>
 
-	<element name="Winging Shot" type="Archetype Feature" source="Critical Role" id="ID_CRIT_ARCHETYPE_FEATURE_TRICK_SHOT_WING">
+	<element name="Winging Shot" type="Archetype Feature" source="KimJongTrill's Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_TRICK_SHOT_WING">
 		<supports>Trick Shot, Gunslinger</supports>
 		<description>
 			<p>When you make a firearm attack against a creature, you can expend one grit point to attempt to topple a moving target. On a hit, the creature suffers normal damage and must make a Strength saving throw or be knocked prone.</p>
@@ -205,7 +200,7 @@
 		</sheet>
 	</element>
   
-	<element name="Flintlock" type="Weapon" source="KimJongTrill's Custom Copntten" id="ID_KJT_CC_WEAPON_PISTOL">
+	<element name="Flintlock" type="Weapon" source="KimJongTrill's Custom Content" id="ID_KJT_CC_WEAPON_PISTOL">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_LOADING</supports>
 		<description />
 		<setters>
@@ -218,7 +213,7 @@
 			<set name="proficiency">ID_WOTC_DMG_PROFICIENCY_WEAPON_RENAISSANCE_FIREARMS_PISTOL</set>
 		</setters>
 	</element>
-	<element name="Revolver" type="Weapon" source="KimJongTrill's Custom Copntten" id="ID_KJT_CC_WEAPON_REVOLVER">
+	<element name="Revolver" type="Weapon" source="KimJongTrill's Custom Content" id="ID_KJT_CC_WEAPON_REVOLVER">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
 		<description />
 		<setters>
@@ -230,7 +225,7 @@
 			<set name="damage" type="piercing">1d6</set>
 			<set name="proficiency">ID_WOTC_DMG_PROFICIENCY_WEAPON_MODERN_FIREARMS_REVOLVER</set>
   </element>
-  <element name="Long Rifle" type="Weapon" source="KimJongTrill's Custom Copntten" id="ID_KJT_CC_WEAPON_RIFLE">
+  <element name="Long Rifle" type="Weapon" source="KimJongTrill's Custom Content" id="ID_KJT_CC_WEAPON_RIFLE">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
 		<description />
 		<setters>
