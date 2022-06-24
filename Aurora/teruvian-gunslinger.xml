@@ -4,7 +4,7 @@
 		<name>Gunslinger</name>
 		<description>A lone cowboy wondering the frontier, a genius with a knack for the destructive, a battle tested hero who likes to go in loud with metaphorical and literal guns blazing. All of these could be considered gunslingers</description>
 		<author url="https://www.dmsguild.com/product/170778/Gunslinger-Martial-Archetype-for-Fighters">Matthew Mercer</author>
-        <update version="1.1">
+        <update version="1.2">
             <file name="teruvian-gunslinger.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/teruvian-gunslinger.xml" />
         </update>
 	</info>
@@ -205,7 +205,7 @@
 	</element>
   
 	<element name="Flintlock" type="Weapon" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_WEAPON_PISTOL">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_LOADING</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION</supports>
 		<description />
 		<setters>
 			<set name="category">Weapons</set>
@@ -218,7 +218,7 @@
 		</setters>
 	</element>
 	<element name="Revolver" type="Weapon" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_WEAPON_REVOLVER">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD_6_SHOTS, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION</supports>
 		<description />
 		<setters>
 			<set name="category">Weapons</set>
@@ -231,7 +231,7 @@
 		</setters>
   </element>
   <element name="Long Rifle" type="Weapon" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_WEAPON_RIFLE">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_LOADING</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION</supports>
 		<description />
 		<setters>
 			<set name="category">Weapons</set>
