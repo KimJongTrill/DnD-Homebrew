@@ -45,8 +45,8 @@
 
 		</description>
 		<sheet>
-			<description>Gunslingers are able to use Two-Weapon Fighting with light Firearms despite them not being melee weapons.</description>
-			<description>Use Tinker’s Tools to craft specialty ammunition, repair damaged firearms, or even draft and create new ones.</description>
+			<description>You can use Two-Weapon Fighting with light Firearms despite them not being melee weapons.
+			Use Tinker’s Tools to craft specialty ammunition, repair damaged firearms, or even draft and create new ones.</description>
 			
 		</sheet>
 		<rules>
@@ -61,7 +61,7 @@
 			<p class="indent">You also regain all spent grit points after finishing a short or long rest.</p>
 		</description>
 		<sheet>
-			<description>You have {{grit-points}} Grit points. You regain 1 when you score or a critical hit, or when you kill a significant threat.
+			<description>You have {{grit-points}} Grit points. You regain 1 when you score a critical hit, or when you kill a significant threat.
 			You also regain all spent grit points after finishing a short or long rest.</description>
 		</sheet>
 		<rules>
@@ -79,7 +79,7 @@
 			</center>
 		</description>
 		<sheet>
-			<description>You learn two trick shots of your choice, which are detailed under “Trick Shots” below. Many maneuvers enhance an attack in some way. Each use of a trick shot must be declared before the attack roll is made. You can use only one trick shot per attack. You learn an additional trick shot of your choice at 7th, 10th, 15th, and 18th level. Each time you learn a new trick shot, you can also replace one trick shot you know with a different one. DC {{trick shot:dc}}</description>
+			<description>Each use of a trick shot must be declared before the attack roll is made. You can use only one trick shot per attack.Your Trick Shot DC is {{trick shot:dc}}</description>
 		</sheet>
 		<rules>
 			<stat name="trick shot:dc" value="8" />
@@ -110,8 +110,8 @@
 			<p>Additionally, you can reload any firearm as an item interaction.</p>
 		</description>
 		<sheet>
-			<description>You score a critical hit on a 19 or 20.</description>
-			<description>Reloading any firearm is an item interaction.</description>
+			<description>You score a critical hit on a 19 or 20.
+			Reloading any firearm is an item interaction.</description>
 		</sheet>
 	</element>
 	<element name="Dig Deep" type="Archetype Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_DIG_DEEP">
@@ -250,7 +250,6 @@
 			<set name="proficiency">ID_WOTC_DMG_PROFICIENCY_WEAPON_RENAISSANCE_FIREARMS_MUSKET</set>
 		</setters>
 	</element>
-	  </element>
   <element name="Carbine Rifle" type="Weapon" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_WEAPON_CARBINE_RIFLE">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD_4_SHOTS, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION</supports>
 		<description />
