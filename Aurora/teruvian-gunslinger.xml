@@ -4,7 +4,7 @@
 		<name>Gunslinger</name>
 		<description>A lone cowboy wondering the frontier, a genius with a knack for the destructive, a battle tested hero who likes to go in loud with metaphorical and literal guns blazing. All of these could be considered gunslingers</description>
 		<author url="https://www.dmsguild.com/product/170778/Gunslinger-Martial-Archetype-for-Fighters">Matthew Mercer</author>
-        <update version="1.2.1">
+        <update version="2.0.0">
             <file name="teruvian-gunslinger.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/teruvian-gunslinger.xml" />
         </update>
 	</info>
@@ -16,33 +16,38 @@
 			<p class="indent">However, some minds couldn’t stop with the innovation of the crossbow. Experimentation with alchemical components and rare metals have unlocked the secrets of controlled explosive force. The few who survive these trials of ingenuity may become the first to create, and deftly wield, the first firearms.</p>
 			<p class="indent">This archetype focuses on the ability to design, craft, and utilize powerful, yet dangerous ranged weapons. Through creative innovation and immaculate aim, you become a distant force of death on the battlefield.</p>
 			<p class="indent">Should this path of powder, fire, and metal call to you, keep your wits about you, hold on to your convictions as a fighter, and let skill meet luck to guide your bullets to strike true.</p>
-			<div element="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_GUNSMITH" />
+			<div element="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_GUNSLINGER" />
 			<div element="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_GRIT" />
 			<div element="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_TRICK_SHOT" />
 			<div element="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_QUICKDRAW" />
-			<div element="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_LIGHTNING_RELOAD" />
+			<div element="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_ELITE_MARKSMAN" />
 			<div element="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_DIG_DEEP" />
-			<div element="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_VICIOUS_INTENT" />
+			<div element="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_DEADEYE" />
 			<div element="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_HEMORRHAGING_CRITICAL" />
 		</description>
 		<sheet display="false" />
 		<rules>
-			<grant type="Archetype Feature" id="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_GUNSMITH" level="3" />
+			<grant type="Archetype Feature" id="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_GUNSLINGER" level="3" />
 			<grant type="Archetype Feature" id="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_GRIT" level="3" />
 			<grant type="Archetype Feature" id="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_TRICK_SHOT" level="3" />
 			<grant type="Archetype Feature" id="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_QUICKDRAW" level="7" />
-			<grant type="Archetype Feature" id="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_LIGHTNING_RELOAD" level="10" />
+			<grant type="Archetype Feature" id="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_ELITE_MARKSMAN" level="10" />
 			<grant type="Archetype Feature" id="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_DIG_DEEP" level="15" />
-			<grant type="Archetype Feature" id="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_VICIOUS_INTENT" level="18" />
+			<grant type="Archetype Feature" id="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_DEADEYE" level="18" />
 			<grant type="Archetype Feature" id="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_HEMORRHAGING_CRITICAL" level="18" />
 		</rules>
 	</element>
-	<element name="Gunsmith" type="Archetype Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_GUNSMITH">
+	<element name="Gunslinger Extraordinaire" type="Archetype Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_GUNSLINGER">
 		<description>
-			<p>Upon choosing this archetype at 3rd level. you gain proficiency with Tinker’s Tools, when used in relation to firearms your proficeincy becomes expertise. You may use them to craft specialty ammunition, repair damaged firearms, or even draft and create new ones (DM’s discretion). Some extremely intricate and experimental firearms are only available through crafting.</p>
+			<p>Gunslingers are able to use Two-Weapon Fighting with light Firearms despite them not being melee weapons.</p>
+			<p>Aditionally, upon choosing this archetype at 3rd level you gain proficiency with Tinker’s Tools. You may use them to craft specialty ammunition, repair damaged firearms, or even draft and create new ones (DM’s discretion). Some extremely intricate and experimental firearms are only available through crafting.</p>
+			
+
 		</description>
 		<sheet>
-			<description>Use Tinker’s Tools to craft specialty ammunition, repair damaged firearms, or even draft and create new ones. You have expertise on checks related to firearms with your tools.</description>
+			<description>Gunslingers are able to use Two-Weapon Fighting with light Firearms despite them not being melee weapons.</description>
+			<description>Use Tinker’s Tools to craft specialty ammunition, repair damaged firearms, or even draft and create new ones.</description>
+			
 		</sheet>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
@@ -99,11 +104,13 @@
 			<stat name="initiative" value="proficiency" bonus="proficiency" />
 		</rules>
 	</element>
-	<element name="Lightning Reload" type="Archetype Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_LIGHTNING_RELOAD">
+	<element name="Elite Marksman" type="Archetype Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_ELITE_MARKSMAN">
 		<description>
-			<p>Starting at 10th level, you can reload any firearm as an item interaction.</p>
+			<p>Starting at 10th level, your firearm attacks score a critical hit on a roll of 19 or 20.</p>
+			<p>Additionally, you can reload any firearm as an item interaction.</p>
 		</description>
 		<sheet>
+			<description>You score a critical hit on a 19 or 20.</description>
 			<description>Reloading any firearm is an item interaction.</description>
 		</sheet>
 	</element>
@@ -115,12 +122,12 @@
 			<description>When you roll initiative and have no Grit remaining, you regain 1 Grit.</description>
 		</sheet>
 	</element>
-	<element name="Vicious Intent" type="Archetype Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_VICIOUS_INTENT">
+	<element name="Deadeye" type="Archetype Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_DEADEYE">
 		<description>
-			<p>At 18th level, your firearm attacks score a critical hit on a roll of 19-20.</p>
+			<p>At 18th level, your firearm attacks score a critical hit on a roll of 18-20.</p>
 		</description>
 		<sheet>
-			<description>Firearm attacks score a critical hit on 19-20.</description>
+			<description>Firearm attacks score a critical hit on 18-20.</description>
 		</sheet>
 	</element>
 	<element name="Hemorrhaging Critical" type="Archetype Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_HEMORRHAGING_CRITICAL">
@@ -204,7 +211,7 @@
 		</sheet>
 	</element>
   
-	<element name="Flintlock" type="Weapon" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_WEAPON_PISTOL">
+	<element name="Flintlock" type="Weapon" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_WEAPON_FLINTLOCK">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION</supports>
 		<description />
 		<setters>
@@ -212,8 +219,8 @@
 			<set name="cost" currency="gp">50</set>
 			<set name="weight" lb="3"> 3 lbs.</set>
 			<set name="slot">onehand</set>
-			<set name="range">40/80</set>
-			<set name="damage" type="piercing">1d8</set>
+			<set name="range">60/120</set>
+			<set name="damage" type="piercing">1d10</set>
 			<set name="proficiency">ID_WOTC_DMG_PROFICIENCY_WEAPON_RENAISSANCE_FIREARMS_PISTOL</set>
 		</setters>
 	</element>
@@ -222,7 +229,7 @@
 		<description />
 		<setters>
 			<set name="category">Weapons</set>
-			<set name="cost" currency="gp">75</set>
+			<set name="cost" currency="gp">100</set>
 			<set name="weight" lb="1.5">1.5 lbs.</set>
 			<set name="slot">onehand</set>
 			<set name="range">30/60</set>
@@ -230,15 +237,29 @@
 			<set name="proficiency">ID_WOTC_DMG_PROFICIENCY_WEAPON_MODERN_FIREARMS_REVOLVER</set>
 		</setters>
   </element>
-  <element name="Long Rifle" type="Weapon" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_WEAPON_RIFLE">
+  <element name="Long Rifle" type="Weapon" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_WEAPON_LONG_RIFLE">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION</supports>
+		<description />
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">300</set>
+			<set name="weight" lb="10">10 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">100/200</set>
+			<set name="damage" type="piercing">1d12</set>
+			<set name="proficiency">ID_WOTC_DMG_PROFICIENCY_WEAPON_RENAISSANCE_FIREARMS_MUSKET</set>
+		</setters>
+	</element>
+	  </element>
+  <element name="Carbine Rifle" type="Weapon" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_WEAPON_CARBINE_RIFLE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD_4_SHOTS, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION</supports>
 		<description />
 		<setters>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">150</set>
 			<set name="weight" lb="10">10 lb.</set>
 			<set name="slot">twohand</set>
-			<set name="range">60/120</set>
+			<set name="range">50/100</set>
 			<set name="damage" type="piercing">1d10</set>
 			<set name="proficiency">ID_WOTC_DMG_PROFICIENCY_WEAPON_RENAISSANCE_FIREARMS_MUSKET</set>
 		</setters>
