@@ -4,7 +4,7 @@
 		<name>Gunslinger</name>
 		<description>A lone cowboy wondering the frontier, a genius with a knack for the destructive, a battle tested hero who likes to go in loud with metaphorical and literal guns blazing. All of these could be considered gunslingers</description>
 		<author url="https://www.dmsguild.com/product/170778/Gunslinger-Martial-Archetype-for-Fighters">Matthew Mercer</author>
-        <update version="2.0.1">
+        <update version="2.0.2">
             <file name="teruvian-gunslinger.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/teruvian-gunslinger.xml" />
         </update>
 	</info>
@@ -18,7 +18,7 @@
 			<p class="indent">Should this path of powder, fire, and metal call to you, keep your wits about you, hold on to your convictions as a fighter, and let skill meet luck to guide your bullets to strike true.</p>
 			<div element="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_GUNSLINGER" />
 			<div element="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_GRIT" />
-			<div element="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_TRICK_SHOT" />
+			<div element="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_ADEPT" />
 			<div element="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_QUICKDRAW" />
 			<div element="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_ELITE_MARKSMAN" />
 			<div element="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_DIG_DEEP" />
@@ -29,7 +29,7 @@
 		<rules>
 			<grant type="Archetype Feature" id="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_GUNSLINGER" level="3" />
 			<grant type="Archetype Feature" id="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_GRIT" level="3" />
-			<grant type="Archetype Feature" id="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_TRICK_SHOT" level="3" />
+			<grant type="Archetype Feature" id="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_ADEPT" level="3" />
 			<grant type="Archetype Feature" id="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_QUICKDRAW" level="7" />
 			<grant type="Archetype Feature" id="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_ELITE_MARKSMAN" level="10" />
 			<grant type="Archetype Feature" id="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_DIG_DEEP" level="15" />
@@ -69,7 +69,7 @@
 			<stat name="grit-points" value="wisdom:modifier" bonus="base" />
 		</rules>
 	</element>
-	<element name="Trick Shot" type="Archetype Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_TRICK_SHOT">
+	<element name="Adept Marksman" type="Archetype Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_GUNSLINGER_ADEPT">
 		<requirements>!ID_KJT_CC_ARCHETYPE_REPLACEMENT_FIGHTER_GUNSLINGER_TRICK_SHOT</requirements>
 		<description>
 			<p>You learn two trick shots of your choice, which are detailed under “Trick Shots” below. Many maneuvers enhance an attack in some way. Each use of a trick shot must be declared before the attack roll is made. You can use only one trick shot per attack. You learn an additional trick shot of your choice at 7th, 10th, 15th, and 18th level. Each time you learn a new trick shot, you can also replace one trick shot you know with a different one.</p>
