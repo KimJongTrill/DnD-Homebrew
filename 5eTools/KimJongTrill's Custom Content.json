@@ -343,284 +343,7 @@
 			"hasFluff": true
 		},
 		{
-			"name": "Dragon",
-			"isNpc": true,
-			"source": "KimJongTrillsCustomContent",
-			"size": [
-				"L"
-			],
-			"type": "dragon",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				{
-					"ac": 18,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"formula": "10d10 + 50",
-				"average": 105
-			},
-			"speed": {
-				"walk": 40,
-				"fly": 80
-			},
-			"str": 19,
-			"dex": 10,
-			"con": 20,
-			"int": 14,
-			"wis": 10,
-			"cha": 18,
-			"save": {
-				"dex": "+4",
-				"con": "+9",
-				"wis": "+4"
-			},
-			"skill": {
-				"perception": "+4",
-				"stealth": "+4"
-			},
-			"senses": [
-				"blindsight 30 ft.",
-				"darkvision 120 ft."
-			],
-			"passive": 14,
-			"immune": [
-				"cold"
-			],
-			"languages": [
-				"Common",
-				"Draconic"
-			],
-			"cr": "9",
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"The dragon makes two attacks: one with its bite and one with its claws."
-					]
-				},
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}8 ({@damage 1d6 + 4}) piercing damage and {@h}3 ({@damage 1d6}) cold damage."
-					]
-				},
-				{
-					"name": "Claw",
-					"entries": [
-						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d8 + 4}) slashing damage."
-					]
-				},
-				{
-					"name": "Breath Weapons 4/Long Rest",
-					"entries": [
-						"The dragon uses one of the following breath weapons.",
-						{
-							"type": "list",
-							"style": "list-hang-notitle",
-							"items": [
-								{
-									"type": "item",
-									"name": "Cold Breath",
-									"entry": "The dragon exhales an icy blast in a 30-foot cone. Each creature in that area must make a {@dc 17} Constitution saving throw, taking 35 ({@damage 10d6}) cold damage on a failed save, or half as much damage on a successful one."
-								},
-								{
-									"type": "item",
-									"name": "Paralyzing Breath",
-									"entry": "The dragon exhales paralyzing gas in a 30-foot cone. Each creature in that area must succeed on a {@dc 17} Constitution saving throw or be {@condition paralyzed} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
-								}
-							]
-						}
-					]
-				}
-			],
-			"environment": [
-				"mountain",
-				"urban"
-			],
-			"fluff": {
-				"name": "Young Silver Dragon",
-				"source": "MM",
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									"The friendliest and most social of the metallic dragons, silver dragons cheerfully assist good creatures in need.",
-									"A silver dragon shimmers as if sculpted from pure metal, its face given a noble cast by its high eyes and sweeping beard-like chin spikes. A spiny frill rises high over its head, tracing down its neck to the tip of its tail. A silver wyrmling's scales are blue-gray with silver highlights. As the dragon approaches adulthood, its color gradually brightens until its individual scales are barely visible. As a silver dragon grows older, its pupils fade until its eyes resemble orbs of mercury.",
-									{
-										"name": "Dragons of Virtue",
-										"type": "entries",
-										"entries": [
-											"Silver dragons believe that living a moral life involves doing good deeds and ensuring that one's actions cause no undeserved harm to other sentient beings. They don't take it upon themselves to root out evil, as gold and bronze dragons do, but they will gladly oppose creatures that dare to commit evil acts or harm the innocent."
-										]
-									},
-									{
-										"name": "Friends of the Small Races",
-										"type": "entries",
-										"entries": [
-											"Silver dragons enjoy the company of other silver dragons. Their only true friendships outside their own kin arise in the company of humanoids, and many silver dragons spend as much time in humanoid form as they do in draconic form. A silver dragon adopts a benign humanoid persona such as a kindly old sage or a young wanderer, and it often has mortal companions with whom it develops strong friendships.",
-											"Silver dragons must step away from their humanoid lives on a regular basis, returning to their true forms to mate and rear offspring, or to tend to their hoards and personal affairs. Because many lose track of time while away, they sometimes return to find that their companions have grown old or died. Silver dragons often end up befriending several generations of humanoids within a single family as a result.",
-											{
-												"name": "Respect for Humanity",
-												"entries": [
-													" Silver dragons befriend humanoids of all races, but shorter-lived races such as humans spark their curiosity in a way the longer-lived elves and dwarves don't. Humans have a drive and zest for life that silver dragons find fascinating."
-												],
-												"type": "entries"
-											}
-										]
-									},
-									{
-										"name": "Hoarding History",
-										"type": "entries",
-										"entries": [
-											"Silver dragons love to possess relics of humanoid history. This includes the great piles of coins they covet, minted by current and fallen humanoid empires, as well as art objects and fine jewelery crafted by numerous races. Other treasures that make up their hoards can include intact ships, the remains of kings and queens, thrones, the crown jewels of ancient empires, inventions and contraptions, and monoliths carried from the ruins of fallen cities."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "A Silver Dragon's Lair",
-										"entries": [
-											"Silver dragons dwell among the clouds, making their lairs on secluded cold mountain peaks. Though many are comfortable in natural cavern complexes or abandoned mines, silver dragons covet the lost outposts of humanoid civilization. An abandoned mountaintop citadel or a remote tower raised by a long-dead wizard is the sort of lair that every silver dragon dreams of."
-										]
-									}
-								]
-							}
-						]
-					},
-					{
-						"type": "entries",
-						"name": "Metallic Dragons",
-						"entries": [
-							"Metallic dragons seek to preserve and protect, viewing themselves as one powerful race among the many races that have a place in the world.",
-							{
-								"name": "Noble Curiosity",
-								"type": "entries",
-								"entries": [
-									"Metallic dragons covet treasure as do their evil chromatic kin, but they aren't driven as much by greed in their pursuit of wealth. Rather, metallic dragons are driven to investigate and collect, taking unclaimed relics and storing them in their lairs. A metallic dragon's treasure hoard is filled with items that reflect its persona, tell its history, and preserve its memories. Metallic dragons also seek to protect other creatures from dangerous magic. As such, powerful magic items and even evil artifacts are sometimes secreted away in a metallic dragon's hoard.",
-									"A metallic dragon can be persuaded to part with an item in its hoard for the greater good. However, another creature's need for or right to the item is often unclear from the dragon's point of view. A metallic dragon must be bribed or otherwise convinced to part with the item."
-								]
-							},
-							{
-								"name": "Solitary Shapeshifters",
-								"type": "entries",
-								"entries": [
-									"At some point in their long lives, metallic dragons gain the magical ability to assume the forms of humanoids and beasts. When a dragon learns how to disguise itself, it might immerse itself in other cultures for a time. Some dragons are too shy or paranoid to stray far from their lairs and their treasure hoards, but bolder dragons love to wander city streets in humanoid form, taking in the local culture and cuisine, and amusing themselves by observing how the smaller races live.",
-									"Some metallic dragons prefer to stay as far away from civilization as possible so as to not attract enemies. However, this means that they are often far out of touch with current events."
-								]
-							},
-							{
-								"name": "The Persistence of Memory",
-								"type": "entries",
-								"entries": [
-									"Metallic dragons have long memories, and they form opinions of humanoids based on previous contact with related humanoids. Good dragons can recognize humanoid bloodlines by smell, sniffing out each person they meet and remembering any relatives they have come into contact with over the years. A gold dragon might never suspect duplicity from a cunning villain, assuming that the villain is of the same mind and heart as a good and virtuous grandmother. On the other hand, the dragon might resent a noble paladin whose ancestor stole a silver statue from the dragon's hoard three centuries before."
-								]
-							},
-							{
-								"name": "King of Good Dragons",
-								"type": "entries",
-								"entries": [
-									"The chief deity of the metallic dragons is Bahamut, the Platinum Dragon. He dwells in the Seven Heavens of Mount Celestia, but often wanders the Material Plane in the magical guise of a venerable human male in peasant robes. In this form, he is usually accompanied by seven golden canaries-actually seven ancient gold dragons in polymorphed form.",
-									"Bahamut seldom interferes in the affairs of mortal creatures, though he makes exceptions to help thwart the machinations of Tiamat the Dragon Queen and her evil brood. Good-aligned clerics and paladins sometimes worship Bahamut for his dedication to justice and protection. As a lesser god, he has the power to grant divine spells."
-								]
-							}
-						]
-					},
-					"True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.",
-					"Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.",
-					"Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.",
-					"True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.",
-					"Dragon Age Categories",
-					{
-						"type": "table",
-						"colLabels": [
-							"Category",
-							"Size",
-							"Age Range"
-						],
-						"colStyles": [
-							"col-4",
-							"col-4",
-							"col-4"
-						],
-						"rows": [
-							[
-								"Wyrmling",
-								"Medium",
-								"5 years or less"
-							],
-							[
-								"Young",
-								"Large",
-								"6–100 years"
-							],
-							[
-								"Adult",
-								"Huge",
-								"101–800 years"
-							],
-							[
-								"Ancient",
-								"Gargantuan",
-								"801 years or more"
-							]
-						]
-					}
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "internal",
-							"path": "bestiary/MM/Silver Dragon.jpg"
-						}
-					}
-				]
-			},
-			"dragonCastingColor": "silver",
-			"dragonAge": "young",
-			"tokenUrl": "https://5e.tools/img/MM/Young Silver Dragon.png",
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/silver-dragon.mp3"
-			},
-			"senseTags": [
-				"B",
-				"SD"
-			],
-			"actionTags": [
-				"Breath Weapon",
-				"Multiattack"
-			],
-			"languageTags": [
-				"C",
-				"DR"
-			],
-			"damageTags": [
-				"C",
-				"P",
-				"S"
-			],
-			"miscTags": [
-				"AOE",
-				"MW",
-				"RCH"
-			],
-			"conditionInflict": [
-				"paralyzed"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
-		},
-		{
-			"name": "Mob of Ten Towners",
+			"name": "Mob of Commoners",
 			"shortName": true,
 			"isNamedCreature": true,
 			"source": "KimJongTrillsCustomContent",
@@ -777,7 +500,7 @@
 				"Common",
 				"Abyssal"
 			],
-			"cr": "1/8",
+			"cr": "1",
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
@@ -867,8 +590,8 @@
 				"url": "https://get.5e.tools/audio/bestiary/bandit.mp3"
 			},
 			"languageTags": [
-				"AB",
-				"C"
+				"C",
+				"AB"
 			],
 			"damageTags": [
 				"O",
@@ -877,7 +600,15 @@
 			"miscTags": [
 				"MW"
 			],
-			"hasFluff": true
+			"hasFluff": true,
+			"spellcastingTags": [
+				"O"
+			],
+			"damageTagsSpell": [
+				"F",
+				"N",
+				"O"
+			]
 		},
 		{
 			"name": "Ravager Blood Lord",
@@ -889,7 +620,7 @@
 				"L"
 			],
 			"type": {
-				"type": "humanoid",
+				"type": "aberration",
 				"tags": [
 					"any"
 				]
@@ -942,20 +673,18 @@
 				{
 					"name": "Innate Spellcasting",
 					"headerEntries": [
-						"The Blood Lord's innate spellcasting ability is Wisdom (spell save {@dc 15}, {@hit 7} to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
+						"The Blood Lord's innate spellcasting ability is Wisdom (spell save {@dc 15}, {@hit 7} to hit with spell attacks). It can innately cast the following spells, requiring no components:"
 					],
 					"will": [
+						"{@spell spirit guardians}",
 						"{@spell thaumaturgy}"
 					],
 					"daily": {
-						"3e": [
-							"{@spell flame strike}",
-							"{@spell spirit guardians}"
-						],
 						"1e": [
-							"{@spell control weather}",
-							"{@spell divine word}",
-							"{@spell fire storm}"
+							"{@spell destructive wave}",
+							"{@spell fire storm}",
+							"{@spell fireball}",
+							"{@spell harm}"
 						]
 					},
 					"ability": "wis",
@@ -964,7 +693,7 @@
 			],
 			"trait": [
 				{
-					"name": "Legendary Resistance (2/Day)",
+					"name": "Legendary Resistance (3/Day)",
 					"entries": [
 						"If the Blood Lord fails a saving throw, it can choose to succeed instead."
 					]
@@ -986,13 +715,19 @@
 				{
 					"name": "Dual Bloodswords",
 					"entries": [
-						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d6 + 6}) piercing damage plus 3 ({@damage 1d6}) fire damage."
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d6 + 6}) slashing damage plus 3 ({@damage 1d6}) fire damage."
 					]
 				},
 				{
 					"name": "Crimson Spear",
 					"entries": [
 						"{@atk mw,rw} {@hit 10} to hit, range 20/60 ft., one target. {@h}13 ({@damage 2d6 + 6}) piercing damage plus 3 ({@damage 1d6}) fire damage, or 15 ({@damage 2d8 + 6}) piercing damage plus 3 ({@damage 1d6}) fire damage if used with both hands to make a melee attack."
+					]
+				},
+				{
+					"name": "Whirlwind Strikes {@recharge 5}",
+					"entries": [
+						"Each Creature within 15 feet of the Blood Lord must make a {@dc 18} Dexterity Save or take ({@damage 5d6}) slashing and ({@damage 5d6}) fire damage, half as much on a success"
 					]
 				}
 			],
@@ -1014,7 +749,7 @@
 				{
 					"name": "Move",
 					"entries": [
-						"The Blood Lord moves up to half its speed."
+						"The Blood Lord moves up to half its speed without provoking opportunity attacks."
 					]
 				},
 				{
@@ -1049,7 +784,8 @@
 			],
 			"damageTags": [
 				"F",
-				"P"
+				"P",
+				"S"
 			],
 			"spellcastingTags": [
 				"I"
@@ -1057,12 +793,19 @@
 			"miscTags": [
 				"MW",
 				"RW",
-				"THW"
+				"THW",
+				"AOE"
 			],
 			"conditionInflictSpell": [
 				"blinded",
 				"deafened",
 				"stunned"
+			],
+			"damageTagsSpell": [
+				"F",
+				"N",
+				"R",
+				"T"
 			]
 		},
 		{
@@ -1255,16 +998,14 @@
 			],
 			"ac": [
 				{
-					"ac": 20,
+					"ac": 19,
 					"from": [
-						"{@item plate armor|phb}",
-						"{@item shield|phb}"
+						"{@item plate armor|phb}"
 					]
 				}
 			],
 			"hp": {
-				"average": 84,
-				"formula": "13d8 + 26"
+				"special": "130"
 			},
 			"speed": {
 				"walk": 30
@@ -1277,7 +1018,8 @@
 			"cha": 16,
 			"save": {
 				"wis": "+5",
-				"cha": "+6"
+				"cha": "+6",
+				"con": "+6"
 			},
 			"skill": {
 				"athletics": "+7",
@@ -1295,15 +1037,15 @@
 			"languages": [
 				"any one language (usually Common)"
 			],
-			"cr": "5",
+			"cr": "9",
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The knight is an 8th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 14}, {@hit 6} to hit with spell attacks). It has the following paladin spells prepared:"
+						"Its spellcasting ability is Charisma (spell save {@dc 15}, {@hit 6} to hit with spell attacks). It has the following spells prepared:"
 					],
 					"footerEntries": [
-						"{@damage 2d8} | {@damage 2d12} | {@damage 2d12} | {@damage 2d12}"
+						"{@damage 2d8} | {@damage 2d12} "
 					],
 					"spells": {
 						"0": {
@@ -1339,7 +1081,13 @@
 				{
 					"name": "Aura of Protection",
 					"entries": [
-						"All allies of the Knight within 10 feet of it gain +3 to saves."
+						"All allies within 10 feet gain +3 to saves."
+					]
+				},
+				{
+					"name": "Legendary Resistance (2/Day)",
+					"entries": [
+						"If the Lieutenant fails a saving throw, it can choose to succeed instead."
 					]
 				}
 			],
@@ -1353,7 +1101,7 @@
 				{
 					"name": "Greatsword",
 					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing and ({@damage 1d8}) necrotic damage."
 					]
 				},
 				{
@@ -1413,298 +1161,45 @@
 				"X"
 			],
 			"damageTags": [
-				"O",
-				"S"
+				"O"
 			],
 			"spellcastingTags": [
-				"CP"
+				"O"
 			],
 			"miscTags": [
 				"MW"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
-		},
-		{
-			"name": "Ravager Officer",
-			"source": "KimJongTrillsCustomContent",
-			"size": [
-				"M"
+			"hasFluffImages": true,
+			"damageTagsSpell": [
+				"F",
+				"N",
+				"O"
 			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"any race"
-				]
-			},
-			"alignment": [
-				"NX",
-				"C",
-				"G",
-				"NY",
-				"E"
-			],
-			"ac": [
+			"shortName": true,
+			"legendary": [
 				{
-					"ac": 15,
-					"from": [
-						"{@item studded leather armor|phb}"
-					]
-				}
-			],
-			"hp": {
-				"formula": "10d10 + 20",
-				"average": 75
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 15,
-			"dex": 16,
-			"con": 14,
-			"int": 12,
-			"wis": 12,
-			"cha": 16,
-			"save": {
-				"str": "+4",
-				"dex": "+5"
-			},
-			"skill": {
-				"athletics": "+4",
-				"deception": "+5"
-			},
-			"passive": 11,
-			"languages": [
-				"any two languages"
-			],
-			"cr": "2",
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"The officer is a 3rd-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 13}, {@hit 5} to hit with spell attacks). The officer has the following spells prepared"
-					],
-					"footerEntries": [
-						"{@damage 2d8} | {@damage 2d12} | {@damage 3d10}"
-					],
-					"spells": {
-						"0": {
-							"spells": [
-								"{@spell eldritch blast}",
-								"{@spell toll the dead|XGE}"
-							]
-						},
-						"2": {
-							"spells": [
-								"{@spell command}",
-								"{@spell hellish rebuke}",
-								"{@spell hold person}"
-							],
-							"slots": 2
-						}
-					},
-					"ability": "cha",
-					"type": "spellcasting"
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
+					"name": "Greatsword",
 					"entries": [
-						"The captain makes two melee attacks or two ranged attacks with its daggers."
+						"Makes an attack with the Greatsword"
 					]
 				},
 				{
-					"name": "Scimitar",
+					"name": "Eldritch Blast",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage."
+						"Cast Eldritch Blast"
 					]
 				},
 				{
-					"name": "Eldritch Blast [2 Beams]",
+					"name": "Cast Spell (2 Actions)",
 					"entries": [
-						"{@atk rsp} {@hit 5} to hit, range 120/120 ft., one target. {@h}8 ({@damage 1d10}) force damage."
+						"uses it's Spellcasting feature"
 					]
 				}
 			],
-			"bonus": [
-				{
-					"name": "Off Hand Attack",
-					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage."
-					]
-				}
-			],
-			"reaction": [
-				{
-					"name": "Parry",
-					"entries": [
-						"The captain adds 2 to its AC against one melee attack that would hit it. To do so, the captain must see the attacker and be wielding a melee weapon."
-					]
-				}
-			],
-			"environment": [
-				"arctic",
-				"coastal",
-				"desert",
-				"forest",
-				"hill",
-				"urban"
-			],
-			"fluff": {
-				"name": "Bandit Captain",
-				"source": "MM",
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									"It takes a strong personality, ruthless cunning, and a silver tongue to keep a gang of bandits in line. The bandit captain has these qualities in spades.",
-									"In addition to managing a crew of selfish malcontents, the pirate captain is a variation of the bandit captain, with a ship to protect and command. To keep the crew in line, the captain must mete out rewards and punishment on a regular basis.",
-									"More than treasure, a bandit captain or pirate captain craves infamy. A prisoner who appeals to the captain's vanity or ego is more likely to be treated fairly than a prisoner who does not or claims not to know anything of the captain's colorful reputation."
-								]
-							}
-						]
-					}
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "internal",
-							"path": "bestiary/MM/Bandit Captain.jpg"
-						}
-					}
-				]
-			},
-			"tokenUrl": "https://get.5e.tools/img/MM/Bandit Captain.png",
-			"soundClip": {
-				"type": "external",
-				"url": "https://get.5e.tools/audio/bestiary/bandit-captain.mp3"
-			},
-			"actionTags": [
-				"Multiattack",
-				"Parry"
-			],
-			"languageTags": [
-				"X"
-			],
-			"damageTags": [
-				"O",
-				"S"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
-		},
-		{
-			"name": "Ravager Stabber",
-			"group": [
-				"Ravagers"
-			],
-			"source": "KimJongTrillsCustomContent",
-			"size": [
-				"S"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"any"
-				]
-			},
-			"alignment": [
-				"C",
-				"E"
-			],
-			"ac": [
-				{
-					"ac": 15,
-					"from": [
-						"{@item studded leather armor|PHB|studded leather}"
-					]
-				}
-			],
-			"hp": {
-				"average": 36,
-				"formula": "8d6 + 8"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 10,
-			"dex": 16,
-			"con": 12,
-			"int": 10,
-			"wis": 8,
-			"cha": 7,
-			"save": {
-				"wis": "+1"
-			},
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"passive": 9,
-			"conditionImmune": [
-				"charmed"
-			],
-			"languages": [
-				"Common",
-				"one other language"
-			],
-			"cr": "3",
-			"trait": [
-				{
-					"name": "Blood Frenzy",
-					"entries": [
-						"When the Stabber hits with a melee attack, it can attack again and continue making additional attacks until it misses. The stabby-stabber cannot move between the attacks made with this trait."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Shortsword",
-					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
-					]
-				},
-				{
-					"name": "Dagger",
-					"entries": [
-						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft., range 20/60 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage."
-					]
-				}
-			],
-			"bonus": [
-				{
-					"name": "Nimble Escape",
-					"entries": [
-						"The Stabber can use the {@action Disengage}, {@action Dash}, or {@action Hide} action."
-					]
-				}
-			],
-			"environment": [
-				"grassland"
-			],
-			"fluff": {},
-			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TDCSR/creature/RavagerStabbyStabberToken.webp",
-			"senseTags": [
-				"D"
-			],
-			"languageTags": [
-				"C",
-				"X"
-			],
-			"damageTags": [
-				"P"
-			],
-			"miscTags": [
-				"MW",
-				"RW",
-				"THW"
+			"isNamedCreature": true,
+			"traitTags": [
+				"Legendary Resistances"
 			]
 		},
 		{
@@ -2353,6 +1848,1001 @@
 			"legendaryHeader": [
 				"The Piper can use 2 Legendary actions at the end of another creatures turn."
 			]
+		},
+		{
+			"name": "Kavosen's Chosen",
+			"source": "KimJongTrillsCustomContent",
+			"basicRules": true,
+			"size": [
+				"H"
+			],
+			"type": "construct",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d12 + 80",
+				"average": 184
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 22,
+			"dex": 14,
+			"con": 20,
+			"int": 19,
+			"wis": 14,
+			"cha": 12,
+			"passive": 12,
+			"languages": [
+				"Dwarvish"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"name": "Legendary Resistance (2/day)",
+					"entries": [
+						"When the Chosen One fails a save it can succeed instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The chosen makes two weapon attacks."
+					]
+				},
+				{
+					"name": "Weapon",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}17 ({@damage 3d6 + 6}) b/p/s damage."
+					]
+				},
+				{
+					"name": "Rock {@recharge 5}",
+					"entries": [
+						"{@dc 15} DEX Save in 5 ft radius ({@damage 5d6}) bludgeoning damage, half on success"
+					]
+				}
+			],
+			"environment": [
+				"coastal",
+				"desert",
+				"grassland",
+				"hill",
+				"mountain",
+				"underdark"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/cyclops.mp3"
+			},
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/MM/Cyclops.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/bestiary/MM/Cyclops.jpg"
+						}
+					}
+				]
+			},
+			"legendary": [
+				{
+					"name": "Attack [1 Action]",
+					"entries": [
+						"Attack with the weapon"
+					]
+				},
+				{
+					"name": "Combat Dash [1 Action]",
+					"entries": [
+						"Moves up to his movement speed without provoking opportunity attacks."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"isNamedCreature": true,
+			"shortName": true,
+			"mythic": [
+				{
+					"name": "Reinforcments",
+					"entries": [
+						"Summon 4 Mascots, act on init 20"
+					]
+				},
+				{
+					"name": "Earthquake",
+					"entries": [
+						"{@dc 15} DEX Save or creatures in lair fall {@condition prone}"
+					]
+				}
+			],
+			"mythicHeader": [
+				"At Initiative 20 the Lair does an action, can't use the same 2 actions at once"
+			],
+			"languageTags": [
+				"D"
+			]
+		},
+		{
+			"name": "Fiero Fighter",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "KimJongTrillsCustomContent",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"formula": "5d8 + 25",
+				"average": 47
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 20,
+			"int": 8,
+			"wis": 14,
+			"cha": 9,
+			"passive": 14,
+			"cr": "3",
+			"save": {
+				"dex": "+5",
+				"str": "+3"
+			},
+			"skill": {
+				"acrobatics": "+5",
+				"athletics": "+3",
+				"history": "+1",
+				"insight": "+4",
+				"perception": "+4"
+			},
+			"isNamedCreature": true,
+			"action": [
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 30 ft., one target. {@h}5 ({@damage 1d4 + 3}) bludgeoning damage in melee, or 5 ({@damage 1d4 + 3}) radiant damage at range."
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"R"
+			],
+			"miscTags": [
+				"RW",
+				"MW"
+			],
+			"bonus": [
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Flurry of Blows 2x [1 Ki]",
+					"entries": [
+						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 30 ft., one target. {@h}5 ({@damage 1d4 + 3}) bludgeoning damage in melee, or 5 ({@damage 1d4 + 3}) radiant damage at range."
+					]
+				},
+				{
+					"name": "Monk Shit [1 Ki]",
+					"entries": [
+						"take the Hide, Disengage, Dash, or Dodge action"
+					]
+				}
+			],
+			"trait": [
+				{
+					"name": "Mobile",
+					"entries": [
+						"When you make a melee attack against a creature, you don't provoke opportunity attacks from that creature for the rest of the turn, whether you hit or not.",
+						"Additionally, when you use the Dash action, difficult terrain doesn't cost you extra movement on that turn."
+					]
+				},
+				{
+					"name": "Crusher [1/Turn]",
+					"entries": [
+						"Once per turn, when you hit a creature with an attack that deals bludgeoning damage, you can move it 5 feet to an unoccupied space, provided the target is no more than one size larger than you."
+					]
+				}
+			]
+		},
+		{
+			"name": "Ravager Stabber",
+			"group": [
+				"Ravagers"
+			],
+			"source": "KimJongTrillsCustomContent",
+			"size": [
+				"S"
+			],
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item studded leather armor|PHB|studded leather}"
+					]
+				}
+			],
+			"hp": {
+				"average": 36,
+				"formula": "8d6 + 8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 16,
+			"con": 12,
+			"int": 10,
+			"wis": 8,
+			"cha": 7,
+			"save": {
+				"wis": "+1"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 9,
+			"conditionImmune": [
+				"charmed"
+			],
+			"languages": [
+				"Common",
+				"one other language"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Blood Frenzy",
+					"entries": [
+						"When the Stabber hits with a melee attack, it can attack again and continue making additional attacks until it misses. The stabby-stabber cannot move between the attacks made with this trait."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft., range 20/60 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Nimble Escape",
+					"entries": [
+						"The Stabber can use the {@action Disengage}, {@action Dash}, or {@action Hide} action."
+					]
+				}
+			],
+			"environment": [
+				"grassland"
+			],
+			"fluff": {},
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TDCSR/creature/RavagerStabbyStabberToken.webp",
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			]
+		},
+		{
+			"name": "Sofia DeMarcco",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Human"
+				]
+			},
+			"source": "KimJongTrillsCustomContent",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				17
+			],
+			"hp": {
+				"formula": "10d8 + 20",
+				"average": 65
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 7,
+			"dex": 18,
+			"con": 12,
+			"int": 10,
+			"wis": 16,
+			"cha": 10,
+			"passive": 13,
+			"save": {
+				"dex": "+7",
+				"int": "+3"
+			},
+			"skill": {
+				"acrobatics": "+10",
+				"insight": "+9",
+				"intimidation": "+3",
+				"investigation": "+3",
+				"sleight of hand": "+10",
+				"stealth": "+10",
+				"survival": "+6",
+				"deception": "+3"
+			},
+			"bonus": [
+				{
+					"name": "Insightful Fighting",
+					"entries": [
+						"As a bonus action, you make a Wisdom (Insight) check against a creature you can see that isn’t {@condition incapacitated}, contested by the target’s Charisma (Deception) check. If you succeed, you can use your Sneak Attack against that target even if you don't have advantage on the attack roll, but not if you have disadvantage on it."
+					]
+				},
+				{
+					"name": "Cunning Action",
+					"entries": [
+						"Take the Dash, Disengage, or Hide Action."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Pistol",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 40/80 ft., one target. {@h}8 ({@damage 1d8 + 4}) piercing damage, plus 10 ({@damage 3d6}) piercing damage if Sneak Attack is available."
+					]
+				}
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"RW"
+			],
+			"reaction": [
+				{
+					"name": "Uncanny Dodge",
+					"entries": [
+						"When an attacker that you can see hits you with an attack, you can halve the attack’s damage against you."
+					]
+				}
+			]
+		},
+		{
+			"source": "KimJongTrillsCustomContent",
+			"name": "Warlock of the Ravager, Legendary",
+			"environment": [
+				"volcanic"
+			],
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"condition": "with {@spell mage armor}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 110,
+				"formula": "17d8 + 34"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 15,
+			"int": 12,
+			"wis": 12,
+			"cha": 20,
+			"save": {
+				"wis": "+6",
+				"cha": "+10"
+			},
+			"skill": {
+				"arcana": "+6",
+				"deception": "+10",
+				"perception": "+6",
+				"religion": "+6"
+			},
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't silvered",
+					"cond": true
+				}
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 16,
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"any two languages (usually Abyssal or Infernal)"
+			],
+			"languageTags": [
+				"AB",
+				"I",
+				"X"
+			],
+			"cr": "14",
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the warlock fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Dark One's Own Luck (Recharges After A Short Or Long Rest)",
+					"entries": [
+						"When the warlock makes an ability check or saving throw, it can add a d10 to the roll. It can do this after the roll is made but before any of the roll's effects occur."
+					]
+				},
+				{
+					"name": "Spell Penetration",
+					"entries": [
+						"When the warlock casts a spell and is interrupted by an enemy's {@spell counterspell}, treat the spell's level as 3 levels higher."
+					]
+				},
+				{
+					"name": "Supreme Focus",
+					"entries": [
+						"The warlock has advantage on saving throws it makes to maintain its concentration."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"action": [
+				{
+					"name": "Quarterstaff",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) bludgeoning damage, or 4 ({@damage 1d8}) bludgeoning damage if wielded with two hands, plus 9 ({@damage 2d8}) fire damage."
+					]
+				},
+				{
+					"name": "Summon Blood Lord (1/Day)",
+					"entries": [
+						"The warlock summons a Blood Lord. It appears in an unoccupied space within 60 feet of the warlock and acts as an ally of the warlock. It remains for an hour, until it or the warlock dies, or until its summoner dismisses it as an action."
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The warlock casts one of the following spells using Charisma as the spellcasting ability (spell save {@dc 18}, {@hit 10} to hit with spell attacks):"
+					],
+					"will": [
+						"{@spell eldritch blast} (4 beams, {@damage 1d10 + 5})",
+						"{@spell fire bolt} ({@damage 4d10})",
+						"{@spell freedom of movement}",
+						"{@spell levitate} (self only)",
+						"{@spell mage armor} (self only)",
+						"{@spell mage hand}",
+						"{@spell minor illusion}",
+						"{@spell prestidigitation}",
+						"{@spell toll the dead|XGE} ({@damage 4d8}) or ({@damage 4d12})"
+					],
+					"daily": {
+						"4": [
+							"{@spell banishment} (as 5th-level spell)",
+							"{@spell counterspell} (as 5th-level spell)",
+							"{@spell dimension door}  (as 5th-level spell)",
+							"{@spell dispel magic} (as 5th-level spell)",
+							"{@spell fireball} (as 5th-level spell)",
+							"{@spell fly} (as 5th-level spell)",
+							"{@spell stinking cloud} (as 5th-level spell)",
+							"{@spell summon greater demon|XGE} (as 5th-level spell)",
+							"{@spell wall of fire} (as 5th-level spell)"
+						],
+						"1e": [
+							"{@spell chain lightning}",
+							"{@spell circle of death}",
+							"{@spell plane shift}",
+							"{@spell teleport}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I",
+				"CL"
+			],
+			"conditionInflictSpell": [
+				"incapacitated"
+			],
+			"shortName": "warlock",
+			"legendary": [
+				{
+					"name": "Move",
+					"entries": [
+						"The warlock moves up to half its speed without provoking {@action opportunity attack|PHB|opportunity attacks}."
+					]
+				},
+				{
+					"name": "Quarterstaff",
+					"entries": [
+						"The warlock attacks with its Quarterstaff."
+					]
+				},
+				{
+					"name": "Diabolical Presence",
+					"entries": [
+						"The warlock targets one creature it can see within 60 feet of it. If the target can see and hear the warlock, it must succeed on a {@dc 18} Wisdom saving throw or become {@condition charmed} or {@condition frightened} (warlock's choice) for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to warlock's Diabolical Presence for the next 24 hours."
+					]
+				},
+				{
+					"name": "Eldritch Blast (Costs 2 Actions)",
+					"entries": [
+						"The warlock casts {@spell eldritch blast}."
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"F"
+			],
+			"conditionInflict": [
+				"charmed",
+				"frightened"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded3/creature/token/Warlock%20Of%20The%20Fiend,%20Legendary%20%28Token%29.png",
+			"fluff": {},
+			"damageTagsSpell": [
+				"F",
+				"L",
+				"N",
+				"O"
+			]
+		},
+		{
+			"name": "Christhia, The Vengeful",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"wood elf"
+				]
+			},
+			"source": "KimJongTrillsCustomContent",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 21,
+					"from": [
+						"{@item molten bronze skin plate armor|mot}",
+						"{@item sentinel shield}"
+					]
+				}
+			],
+			"hp": {
+				"special": "67"
+			},
+			"speed": {
+				"walk": 45
+			},
+			"str": 18,
+			"dex": 6,
+			"con": 12,
+			"int": 10,
+			"wis": 12,
+			"cha": 14,
+			"passive": 15,
+			"save": {
+				"wis": "+5",
+				"cha": "+6"
+			},
+			"cr": "9",
+			"resist": [
+				"fire"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell bane}",
+								"{@spell command}",
+								"{@spell hunter's mark}"
+							],
+							"slots": 0
+						},
+						"2": {
+							"spells": [
+								"{@spell aid}",
+								"{@spell find steed}",
+								"{@spell hold person}",
+								"{@spell misty step}"
+							],
+							"slots": 0
+						},
+						"3": {
+							"spells": [
+								"{@spell dispel magic}",
+								"{@spell haste}",
+								"{@spell protection from energy}",
+								"{@spell revivify}",
+								"{@spell spirit shroud|TCE}"
+							],
+							"slots": 0
+						}
+					},
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"damageTagsSpell": [
+				"C",
+				"N",
+				"R"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Christhia can make two weapon attacks."
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d8 + 5}) slashing damage.",
+						"If smiting add ({@damage 2d8}) ({@damage 3d8}) ({@damage 4d8}) ({@damage 5d8})radiant damage."
+					]
+				}
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"trait": [
+				{
+					"name": "Mobile",
+					"entries": [
+						"When you make a melee attack against a creature, you don’t provoke opportunity attacks from that creature for the rest of the turn, whether you hit or not."
+					]
+				}
+			],
+			"skill": {
+				"perception": "+5",
+				"athletics": "+8",
+				"stealth": "+2",
+				"intimidation": "+6",
+				"investigation": "+4"
+			}
+		},
+		{
+			"name": "Wendigo",
+			"source": "KimJongTrillsCustomContent",
+			"size": [
+				"L"
+			],
+			"type": "fey",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d10 + 48",
+				"average": 200
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 20,
+			"dex": 16,
+			"con": 18,
+			"int": 10,
+			"wis": 16,
+			"cha": 18,
+			"skill": {
+				"perception": "+7",
+				"stealth": "+7",
+				"survival": "+7"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 17,
+			"immune": [
+				"cold",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks not made with silvered weapons",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"stunned"
+			],
+			"languages": [
+				"Common",
+				"Elvish",
+				"and Sylvan; telepathy 60 ft."
+			],
+			"cr": "9",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The wendigo's innate spellcasting ability is Charisma (spell save {@dc 16}). The wendigo can innately cast the following spells, without providing material components:"
+					],
+					"will": [
+						"{@spell chill touch} ({@dice 3d8})",
+						"{@spell dancing lights}",
+						"{@spell detect magic}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell greater invisibility}",
+							"{@spell wind walk} (self only)."
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Charge",
+					"entries": [
+						"If the wendigo moves at least 10 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 ({@damage 2d8}) piercing damage. If the target is a creature, it must succeed on a {@dc 15} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The wendigo has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The wendigo regains 10 hit points at the start of its turn. If the wendigo takes fire damage, this trait doesn't function at the start of the wendigo's next turn. The wendigo dies only if it starts its turn with 0 hit points and doesn't regenerate."
+					]
+				},
+				{
+					"name": "Legendary Resistance (2/Day)",
+					"entries": [
+						"If the Wendigo fails a save it can choose to succeed instead"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The wendigo makes three melee attacks: one with its ravenous bite or gore and two with its claws."
+					]
+				},
+				{
+					"name": "Ravenous Bite",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) piercing damage plus 7 ({@damage 2d6}) necrotic damage and the target must succeed on a {@dc 16} Constitution saving throw against disease or become {@condition poisoned} until the disease is cured. While {@condition poisoned}, the target's Wisdom score is reduced by {@dice 1d4} at the start of each of its turns. This reduction will not cause a target's score to go below 3. When a target's Wisdom reaches a score of 3, it becomes insane and ravenous. While in this state, the creature acts as an ally of the wendigo, gains a bite attack ({@damage 1d6} piercing damage), and must spend its action each turn making a bite attack against an enemy of the wendigo. The Wisdom score reduction lasts until the target finishes a short or long rest."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d6 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Gore",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Baleful Howl",
+					"entries": [
+						"The wendigo emits a terrifying howl. Every enemy within 300 feet of the wendigo that can hear it must succeed on a {@dc 16} Wisdom saving throw or be {@condition frightened} for 1 minute. A {@condition frightened} target that  starts its turn within 30 feet of the wendigo must use all its movement on that turn to get as far from the wendigo as possible, must finish the move before taking an action, and must take the most direct route, even if hazards lie that way. A {@condition frightened} target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+						"A target that successfully saves is immune to the wendigo's baleful howl for the next 24 hours."
+					]
+				}
+			],
+			"traitTags": [
+				"Charge",
+				"Keen Senses",
+				"Legendary Resistances",
+				"Regeneration"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"E",
+				"S",
+				"TP"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"S",
+				"Y"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"frightened",
+				"poisoned",
+				"prone"
+			],
+			"conditionInflictSpell": [
+				"invisible",
+				"incapacitated"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded2/token/wendigo.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded2/wendigo.webp"
+						}
+					}
+				]
+			},
+			"damageTagsSpell": [
+				"N"
+			],
+			"legendary": [
+				{
+					"name": "Claw",
+					"entries": [
+						"Uses its claw attack twice against the same target."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"Uses its bite attack"
+					]
+				},
+				{
+					"name": "Nimble Movement",
+					"entries": [
+						"Moves up to its movement speed without provoking opportunity attacks"
+					]
+				},
+				{
+					"name": "Charge (2 Actions)",
+					"entries": [
+						"Moves up to its movement speed without provoking opportunity attacks and makes a gore attack."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Maddening Whispers",
+					"entries": [
+						"As a bonus action, the wendigo chooses one creature it can see within 60 feet of it. The target must succeed on a {@dc 16} Wisdom saving throw, or it takes 13 ({@damage 2d8 + 4}) psychic damage and must use its reaction to move up to half its speed and make a melee weapon attack against one creature of the wendigo's choice that the wendigo can see. Constructs and undead are immune to this effect."
+					]
+				}
+			]
 		}
 	],
 	"item": [
@@ -2364,6 +2854,322 @@
 			"wondrous": true,
 			"entries": [
 				"While wearing this cloak, you are always pristinely clean and well kept, along with having a slight scent of lavender."
+			]
+		},
+		{
+			"name": "Infinite Grimoire",
+			"source": "KimJongTrillsCustomContent",
+			"page": 0,
+			"rarity": "uncommon",
+			"wondrous": true,
+			"weight": 3,
+			"entries": [
+				"Your spell book now has an infinite number of pages, is three inches thick, eight inches wide, twelve inches long, and weighs three pounds.",
+				"You can use the grimoire as your spellbook, and you can scribe new spells into it as normal. When you prepare wizard spells using the grimoire, the number of wizard spells you can prepare increases by 1.",
+				"In the presence of Wizards that show great power, those Wizards may see the grimoire show increased abilities over time.",
+				{
+					"type": "entries",
+					"name": "Enhanced",
+					"entries": [
+						" rare (requires attunement by a wizard)",
+						"You gain a +1 to your Wizard Spell {@action Attack} rolls and Spell Save DC.",
+						"When you use your Arcane Recovery feature you can gain 1 additional level of spells."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Empowered",
+					"entries": [
+						" very rare (requires attunement by a wizard)",
+						"You gain a +1 to your Wizard Spell {@action Attack} rolls and Spell Save DC.",
+						"When you use your Arcane Recovery feature you can gain 2 additional level of spells.",
+						"When you prepare wizard spells using the grimoire as your spellbook, the number of spells you can prepare increases by 2 total."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Perfected",
+					"entries": [
+						" legendary (requires attunement by a wizard)",
+						"When you use your Arcane Recovery feature you can gain 3 additional level of spells.",
+						"When you prepare wizard spells using the grimoire as your spellbook, the number of spells you can prepare increases by 3 total.",
+						"If you aren't wearing armor, your base Armor Class is 15 + your Dexterity modifier.",
+						"You gain a +2 to your Wizard Spell {@action Attack} rolls and Spell Save DC."
+					]
+				}
+			]
+		},
+		{
+			"name": "Thunder of the Mammoth",
+			"source": "KimJongTrillsCustomContent",
+			"page": 0,
+			"rarity": "rare",
+			"wondrous": true,
+			"entries": [
+				"When blowing into this horn one creature of your choice can hear a Mammoth bellow, provided the creature is within 600 feet of the horn and not {@condition deafened}. No other creature hears sound coming from the horn.",
+				"As an Action you can use the command phrase and blow the horn to create a booming sound and cast the spell Shatter from it [DC13 CON]. Once used this property can't be used again until the next dawn."
+			]
+		},
+		{
+			"name": "Amulet of Life Stealing",
+			"source": "KimJongTrillsCustomContent",
+			"page": 0,
+			"rarity": "uncommon",
+			"wondrous": true,
+			"bonusWeaponAttack": "+4",
+			"entries": [
+				"While wearing this amulet you can use an action to make an unarmed strike using STR or DEX to make the attack roll dealing {@dice 1d4} slashing{@damage  + 4d4} necrotic damage on a hit. Any necrotic damage is transferred to you as healing. Once used this property can't be used again until Midnight.",
+				"\\columnbreak"
+			]
+		},
+		{
+			"name": "Bracers of the War Mage",
+			"source": "KimJongTrillsCustomContent",
+			"page": 0,
+			"rarity": "rare",
+			"reqAttune": "by a warlock, wizard, or sorcerer",
+			"reqAttuneTags": [
+				{
+					"class": "warlock"
+				},
+				{
+					"class": "wizard"
+				},
+				{
+					"class": "sorcerer"
+				}
+			],
+			"wondrous": true,
+			"entries": [
+				"These bracers are made of hardened Dwarven Steel and are imbued with strong defensive magic, to protect the Dwarven War Mages in battle. While wearing these bracers your AC is 14 + DEX."
+			]
+		},
+		{
+			"name": "Merchant's Medallion",
+			"source": "KimJongTrillsCustomContent",
+			"page": 0,
+			"rarity": "rare",
+			"wondrous": true,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Merchants Luck",
+					"entries": [
+						"When worn (no attunement) the wearer gains advantage on the first persuasion check made every day used in relation to a trade (sale, purchase or barter)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Tricksters Pain",
+					"entries": [
+						"When worn (and attuned) the wearer cannot be deceived without being aware of the attempted deceit. The wearer cannot read minds but will immediately know when someone is not being completely truthful and have insight into the degree/scope of the subterfuge in question"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spirit Bound",
+					"entries": [
+						"When worn (and attuned) the wearers spirit/soul is bound to the diamond and becomes absorbed by the diamond upon death. When absorbed the spirit remains in the diamond until released. The soul is released when the necklace is worn by another creature and the soul determines that the creature is a suitable host and the soul will then take over the host body and imbue it with all its powers, traits and skills."
+					]
+				}
+			]
+		},
+		{
+			"name": "Dwarven Maul of Thunder",
+			"source": "KimJongTrillsCustomContent",
+			"page": 0,
+			"rarity": "rare",
+			"wondrous": true,
+			"entries": [
+				"This hand sized maul is made of Dwarven Steel inscribed with thunder runes, it hums with a light buzz. It is a martial melee weapon with the light and thrown properties and a range of 30/60. The damage die is {@dice d6}+STR and the type is thunder, after a throw the hammer returns to the thrower's hand.",
+				"Once per day on your turn you can speak the command phrase (BY ODINS BEARD) and throw the hammer a a target or unoccupied space, if at a target make an attack roll, any creature within 20 feet of the impact must make a DC 15 Dexterity saving throw or take {@dice 4d6} lightning and {@dice 4d6} thunder as lightning strikes the area and the hammer crashes with a thunderclap. Once used this property can't be used again until the next dawn. In the meantime, the hammer can still be used as a magic weapon.",
+				"\\pagebreakNum"
+			]
+		},
+		{
+			"name": "Psionic Amplifier",
+			"source": "KimJongTrillsCustomContent",
+			"page": 0,
+			"rarity": "rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"Your Intelligence score is 19 while you are attuned to this item. It has no Effect if your Intelligence is already 19 or higher without it.",
+				"It also grants you telepathy (120ft) and glows with a purplish inner light (15 bright/15 dim) while you are attuned to it.",
+				"See the introduction of the Monster Manual for rules on how this telepathy works."
+			]
+		},
+		{
+			"name": "Bracers of Seeking Daggers",
+			"source": "KimJongTrillsCustomContent",
+			"page": 0,
+			"rarity": "very rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"bonusWeapon": "+1",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Winds of Truth",
+					"entries": [
+						"These matching armbands appear to have thin daggers strapped to them. As an action, you can pull up to two magic +1 daggers from the bracers and immediately hurl them, making a ranged attack as the dagger seeks out a target that you can see within 120 feet of you ignoring half and three-quarters cover. A dagger vanishes if you don't hurl it right away, and the daggers disappear right after they hit or miss. The bracer never runs out of daggers."
+					]
+				}
+			]
+		},
+		{
+			"name": "Wand of Winter Storms",
+			"source": "KimJongTrillsCustomContent",
+			"page": 0,
+			"type": "WD",
+			"rarity": "very rare",
+			"reqAttune": "by a spellcaster",
+			"reqAttuneTags": [
+				{
+					"spellcasting": true
+				}
+			],
+			"recharge": "dawn",
+			"charges": 7,
+			"entries": [
+				"This wand has 7 charges and is made of translucent crystal resembling a slender icicle. While holding it, you can use an action to expend 1 or more of its charges to cast the {@spell ice storm} spell (save DC 17) from it. For 1 charge, you cast the 4th-level version of the spell. You can increase the spell slot level by one for each additional charge you expend.",
+				"The wand regains {@dice 1d6 + 1} expended charges daily at dawn. If you expend the wand's last charge, roll a {@dice d20}. On a 1, the wand melts into water and is destroyed."
+			],
+			"attachedSpells": [
+				"ice storm"
+			]
+		},
+		{
+			"name": "Haka-Tut's Heka",
+			"source": "KimJongTrillsCustomContent",
+			"page": 0,
+			"rarity": "very rare",
+			"wondrous": true,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Swiftness of Sand",
+					"entries": [
+						"The wielder of this Heka, as an action speaks the command phrase \"I hate sand. Its coarse, and rough, and irritating. And it gets everywhere.\" and is magically transformed into a whirlwind of sand, moving up to 60 feet, and reverting to its normal form. While in whirlwind form, the wielder is immune to all damage, and it can't be {@condition grappled}, {@condition petrified}, knocked {@condition prone}, {@condition restrained}, or {@condition stunned}. Equipment worn or carried by the wielder remain in its possession. Once used in such a way it is unable to be used until the next dawn."
+					]
+				}
+			]
+		},
+		{
+			"name": "The Devil's Due",
+			"source": "KimJongTrillsCustomContent",
+			"page": 0,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"bonusWeapon": "+1",
+			"entries": [
+				"This arrow has a icy blue shaft adorned with chardalyn razor fletching and matching head.",
+				{
+					"type": "entries",
+					"name": "Levistus' Ire",
+					"entries": [
+						"This arrow adds a {@dice d6} of cold damage along with giving an additional +1 to attack and damage rolls when used to make a ranged attack, returning upon reaching or missing its target. Hitting a target with this arrow makes your next shot against that target have advantage. Upon a critical hit the target is wounded and loses 10 feet of movement speed and 5 feet for each after the first.",
+						"\\columnbreak"
+					]
+				}
+			]
+		},
+		{
+			"name": "Amulet of Lathander",
+			"source": "KimJongTrillsCustomContent",
+			"page": 0,
+			"rarity": "very rare",
+			"reqAttune": "by a cleric",
+			"reqAttuneTags": [
+				{
+					"class": "cleric"
+				}
+			],
+			"wondrous": true,
+			"bonusSpellAttack": "+2",
+			"bonusSpellSaveDc": "+2",
+			"entries": [
+				"Your Constitution score is 19 while you wear this holy symbol. It has no effect on you if your Constitution is already 19 or higher without it. Additionally, you gain a +2 bonus to spell attack rolls and the saving throw DCs of your spells.",
+				"While you wear this amulet, you can use your Channel Divinity feature without expending one of the feature's uses. Once this property is used, it can't be used again until the next dawn."
+			]
+		},
+		{
+			"name": "Sword of the Elements",
+			"source": "KimJongTrillsCustomContent",
+			"page": 0,
+			"baseItem": "longsword|phb",
+			"type": "M",
+			"tier": "major",
+			"rarity": "rare",
+			"reqAttune": true,
+			"weight": 3,
+			"weaponCategory": "martial",
+			"property": [
+				"F",
+				"V"
+			],
+			"dmg1": "1d8",
+			"dmgType": "O",
+			"dmg2": "1d10",
+			"bonusWeapon": "+2",
+			"entries": [
+				"This item appears to be a longsword hilt. While grasping the hilt, you can use a bonus action to cause a blade of pure radiance to spring into existence, or make the blade disappear. While the blade exists, this magic longsword has the finesse property. If you are proficient with {@item shortsword|phb|shortswords} or {@item longsword|phb|longswords}, you are proficient with this sword.",
+				"You gain a +2 bonus to attack and damage rolls made with this weapon, which deals force damage instead of slashing damage. When you hit an elemental with it, that target takes an extra {@damage 1d8} force damage."
+			]
+		},
+		{
+			"name": "Spelljamming Mythallar",
+			"source": "KimJongTrillsCustomContent",
+			"page": 0,
+			"rarity": "artifact",
+			"reqAttune": "by a spellcaster",
+			"wondrous": true,
+			"entries": [
+				"The Spelljamming Mythallar looks like an large crystal ball filled with a swirling miasma resembling Wildspace held in an ornate cradle. The globe draws magic directly from the Weave that can be harnessed for various purposes. The Spelljamming Mythallar is capable of venturing into the multiverse.",
+				"The Spelljamming Mythallar is 10 feet in diameter, but controls the area within 500 feet of it. To attune to this mythallar, a creature must finish a short rest within 30 feet of it, meditating on the mythallar, this artifact does not count against your attunement limit. The Spelljamming Mythallar's properties are as follows:",
+				{
+					"type": "list",
+					"items": [
+						"While you're within 500 feet of the Spelljamming Mythallar, you can choose which direction and how fast the mythallar moves.  It can move up to Spelljamming Speed (100 million miles in 24 hours) in Wildspace or the Astral Sea, or up to 10 mph while objects weighing 1 ton or more are within 1 mile of it. All matter within 500 feet of the device moves with it. The Spelljamming Mythallar and all structures held aloft by it hover in place when not in motion.",
+						"As an action, you can cause one magic item you are holding within 30 feet of the Spelljamming Mythallar to immediately regain all its expended charges or uses. A magic item recharged in this manner can't be recharged by the Spelljamming Mythallar again until after the item regains expended charges or uses on its own.",
+						"You can use the Spelljamming Mythallar to cast the {@spell dream of the blue veil|tce} provided you have the material components. The creature limit is lifted and instead uses the area controlled by the mythallar. This property can be used 1 time per day, or after the mythallar has been fueled by a magic item (up to DM Discretion).",
+						"Any creature that touches the globe of the mythallar must make a DC 30 Constitution saving throw, taking {@damage 30d10 + 100} force damage on a failed save, or half as much damage on a successful one. Any object that touches the globe, other than some artifacts or the mythallar's cradle, is disintegrated instantly (no save)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Transfer Attunement",
+					"entries": [
+						"You can use an action to touch a willing spellcaster. That creature attunes to the spelljamming helm immediately, and your attunement to it ends."
+					]
+				}
+			],
+			"hasFluffImages": false
+		},
+		{
+			"name": "Belt of Utility",
+			"source": "KimJongTrillsCustomContent",
+			"page": 0,
+			"tier": "major",
+			"rarity": "rare",
+			"wondrous": true,
+			"reqAttune": true,
+			"entries": [
+				"This canvas belt is adorned with many small pouches along the strap, it is able to magically fit any waist and can only be unbuckled by the attuned wearer. When the attuned wearer reaches into a pouch of this belt they are able to pull any Adventuring Gear of their choice worth less than 10gp as their item interaction. The item persists until the belt is used again or the item is not in use, then the item produced disappears."
+			],
+			"hasFluffImages": false
+		},
+		{
+			"name": "Belt of Giant Might",
+			"source": "KimJongTrillsCustomContent",
+			"page": 0,
+			"rarity": "rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"While attuned to this belt, your Strength score changes to 19. The item has no effect on you if your Strength without the belt is equal to or greater than 19.",
+				"You can channel the Ancient Giant's essence as a Bonus Action to gain the benefits of the Enlarge portion of the Enlarge/Reduce spell for 1 minute. Once used this property can't be used again until the next dawn."
 			]
 		}
 	]
