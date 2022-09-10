@@ -2843,6 +2843,550 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "Wendigo",
+			"source": "KimJongTrillsCustomContent",
+			"size": [
+				"L"
+			],
+			"type": "fey",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "200"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 20,
+			"dex": 16,
+			"con": 18,
+			"int": 10,
+			"wis": 16,
+			"cha": 18,
+			"skill": {
+				"perception": "+7",
+				"stealth": "+7",
+				"survival": "+7"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 17,
+			"immune": [
+				"cold",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks not made with silvered weapons",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"stunned"
+			],
+			"languages": [
+				"Common",
+				"Elvish",
+				"and Sylvan; telepathy 60 ft."
+			],
+			"cr": "9",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The wendigo's innate spellcasting ability is Charisma (spell save {@dc 16}). The wendigo can innately cast the following spells, without providing material components:"
+					],
+					"will": [
+						"{@spell chill touch} ({@dice 3d8})",
+						"{@spell dancing lights}",
+						"{@spell detect magic}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell greater invisibility}",
+							"{@spell wind walk} (self only)."
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Charge",
+					"entries": [
+						"If the wendigo moves at least 10 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 ({@damage 2d8}) piercing damage. If the target is a creature, it must succeed on a {@dc 15} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The wendigo has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The wendigo regains 10 hit points at the start of its turn. If the wendigo takes fire damage, this trait doesn't function at the start of the wendigo's next turn. The wendigo dies only if it starts its turn with 0 hit points and doesn't regenerate."
+					]
+				},
+				{
+					"name": "Legendary Resistance (2/Day)",
+					"entries": [
+						"If the Wendigo fails a save it can choose to succeed instead"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The wendigo makes three melee attacks: one with its ravenous bite or gore and two with its claws."
+					]
+				},
+				{
+					"name": "Ravenous Bite",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) piercing damage plus 7 ({@damage 2d6}) necrotic damage and the target must succeed on a {@dc 16} Constitution saving throw against disease or become {@condition poisoned} until the disease is cured. While {@condition poisoned}, the target's Wisdom score is reduced by {@dice 1d4} at the start of each of its turns. This reduction will not cause a target's score to go below 3. When a target's Wisdom reaches a score of 3, it becomes insane and ravenous. While in this state, the creature acts as an ally of the wendigo, gains a bite attack ({@damage 1d6} piercing damage), and must spend its action each turn making a bite attack against an enemy of the wendigo. The Wisdom score reduction lasts until the target finishes a short or long rest."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d6 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Gore",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Baleful Howl",
+					"entries": [
+						"The wendigo emits a terrifying howl. Every enemy within 300 feet of the wendigo that can hear it must succeed on a {@dc 16} Wisdom saving throw or be {@condition frightened} for 1 minute. A {@condition frightened} target that  starts its turn within 30 feet of the wendigo must use all its movement on that turn to get as far from the wendigo as possible, must finish the move before taking an action, and must take the most direct route, even if hazards lie that way. A {@condition frightened} target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+						"A target that successfully saves is immune to the wendigo's baleful howl for the next 24 hours."
+					]
+				}
+			],
+			"traitTags": [
+				"Charge",
+				"Keen Senses",
+				"Legendary Resistances",
+				"Regeneration"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"E",
+				"S",
+				"TP"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"S",
+				"Y"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"frightened",
+				"poisoned",
+				"prone"
+			],
+			"conditionInflictSpell": [
+				"invisible",
+				"incapacitated"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded2/token/wendigo.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded2/wendigo.webp"
+						}
+					}
+				]
+			},
+			"damageTagsSpell": [
+				"N"
+			],
+			"legendary": [
+				{
+					"name": "Claw",
+					"entries": [
+						"Uses its claw attack twice against the same target."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"Uses its bite attack"
+					]
+				},
+				{
+					"name": "Nimble Movement",
+					"entries": [
+						"Moves up to its movement speed without provoking opportunity attacks"
+					]
+				},
+				{
+					"name": "Charge (2 Actions)",
+					"entries": [
+						"Moves up to its movement speed and makes a gore attack."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Maddening Whispers",
+					"entries": [
+						"As a bonus action, the wendigo chooses one creature it can see within 60 feet of it. The target must succeed on a {@dc 16} Wisdom saving throw, or it takes 13 ({@damage 2d8 + 4}) psychic damage and must use its reaction to move up to half its speed and make a melee weapon attack against one creature of the wendigo's choice that the wendigo can see. Constructs and undead are immune to this effect."
+					]
+				}
+			]
+		},
+		{
+			"name": "Minion of Dib",
+			"source": "KimJongTrillsCustomContent",
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"goblinoid"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item chain shirt|phb}"
+					],
+					"condition": "17 in melee"
+				}
+			],
+			"hp": {
+				"average": 21,
+				"formula": "6d6"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 10,
+			"int": 10,
+			"wis": 8,
+			"cha": 10,
+			"skill": {
+				"stealth": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 9,
+			"languages": [
+				"Common",
+				"Goblin"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Nimble Escape",
+					"entries": [
+						"The goblin can take the Disengage or Hide action as a bonus action on each of its turns."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The goblin makes two attacks with a weapon, or one with a Ballista"
+					]
+				},
+				{
+					"name": "Ballista",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 300 ft., one target. {@h}7 ({@damage 1d10 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Bow",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 80/320 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Scimitar",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) slashing damage."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"grassland",
+				"hill",
+				"underdark"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/goblin-boss.mp3"
+			},
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"GO"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/MM/Goblin Boss.png",
+			"fluff": {
+				"name": "Goblin Boss",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Goblins are small, black-hearted, selfish humanoids that lair in caves, abandoned mines, despoiled dungeons, and other dismal settings. Individually weak, goblins gather in large-sometimes overwhelming-numbers. They crave power and regularly abuse whatever authority they obtain.",
+									{
+										"name": "Goblinoids",
+										"type": "entries",
+										"entries": [
+											"Goblins belong to a family of creatures called goblinoids. Their larger cousins, hobgoblins and bugbears, like to bully goblins into submission. Goblins are lazy and undisciplined, making them poor servants, laborers, and guards."
+										]
+									},
+									{
+										"name": "Malicious Glee",
+										"type": "entries",
+										"entries": [
+											"Motivated by greed and malice, goblins can't help but celebrate the few times they have the upper hand. They dance, caper with sheer joy when victory is theirs. Once their revels have ended, goblins delight in the torment of other creatures and embrace all manner of wickedness."
+										]
+									},
+									{
+										"name": "Leaders and Followers",
+										"type": "entries",
+										"entries": [
+											"Goblins are ruled by the strongest or smartest among them. A goblin boss might command a single lair, while a goblin king or queen (who is nothing more than a glorified goblin boss) rules hundreds of goblins, spread out among multiple lairs to ensure the tribe's survival. Goblin bosses are easily ousted, and many goblin tribes are taken over by hobgoblin warlords or bugbear chiefs."
+										]
+									},
+									{
+										"name": "Challenging Lairs",
+										"type": "entries",
+										"entries": [
+											"Goblins festoon their lairs with alarms designed to signal the arrival of intruders. Those lairs are also riddled with narrow tunnels and bolt-holes that human-sized creatures can't navigate, but which goblins can crawl through with ease, allowing them to flee or to circle around and surprise their enemies. Rat Keepers and Wolf Riders. Goblins have an affinity for rats and wolves, raising them to serve as companions and mounts, respectively. Like rats, goblins shun sunlight and sleep underground during the day. Like wolves, they are pack hunters, made bolder by their numbers. When they hunt from the backs of wolves, goblins use hit-and-run attacks."
+										]
+									},
+									{
+										"name": "Worshipers of Maglubiyet",
+										"type": "entries",
+										"entries": [
+											"Maglubiyet the Mighty One, the Lord of Depths and Darkness, is the greater god of goblinoids. Envisioned by most goblins as an eleven-foot-tall battle-scarred goblin with black skin and fire erupting from his eyes, he is worshiped not out of adoration but fear. Goblins believe that when they die in battle, their spirits join the ranks of Maglubiyet's army on the plane of Acheron. This is a \"privilege\" that most goblins dread, fearing the Mighty One's eternal tyranny even more than death."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Goblin.jpg"
+						}
+					}
+				]
+			},
+			"miscTags": [
+				"RW",
+				"MW"
+			]
+		},
+		{
+			"source": "KimJongTrillsCustomContent",
+			"name": "Dib the Savage",
+			"environment": [
+				"forest",
+				"grassland",
+				"hill",
+				"jungle/Tropical",
+				"underdark"
+			],
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"goblinoid"
+				]
+			},
+			"alignmentPrefix": "typically ",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item chain shirt|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 60,
+				"formula": "11d6 + 22"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 18,
+			"con": 14,
+			"int": 10,
+			"wis": 10,
+			"cha": 14,
+			"skill": {
+				"deception": "+5",
+				"stealth": "+10"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Goblin"
+			],
+			"languageTags": [
+				"GO"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Dib uses Command Flanking Maneuver, if available. He then makes two Scimitar attacks."
+					]
+				},
+				{
+					"name": "Scimitar",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage, plus 5 ({@damage 2d4}) piercing damage."
+					]
+				},
+				{
+					"name": "Nimble Escape",
+					"entries": [
+						"The goblin can take the {@action Disengage} or {@action Hide} action asa bonus action on each of its turns."
+					]
+				},
+				{
+					"name": "Command Flanking Maneuver {@recharge 5}",
+					"entries": [
+						"The goblin targets up to three allies it can see within 60 feet of it. If the target can see or hear the goblin, the target can use its reaction to move up to half its speed. The target's next attack has advantage until the start of the goblin's next turn."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Redirect Attack",
+					"entries": [
+						"When a creature the goblin can see targets it with an attack, the goblin chooses another goblin within 5 feet of it. The two goblins swap places, and the chosen goblin becomes the target instead."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"legendary": [
+				{
+					"name": "Move",
+					"entries": [
+						"The goblin moves up to half its speed without provoking {@action opportunity attack|PHB|opportunity attacks}."
+					]
+				},
+				{
+					"name": "Intimidate Foe",
+					"entries": [
+						"The goblin targets one creature it can see within 30 feet of it. If the target can see and hear the goblin, it must make a {@dc 12} Wisdom saving throw or become {@condition frightened} of the goblin until the end of the goblin's next turn."
+					]
+				},
+				{
+					"name": "Attack (Costs 2 Actions)",
+					"entries": [
+						"The goblin makes a melee or ranged attack."
+					]
+				}
+			],
+			"damageTags": [
+				"P"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded3/creature/token/Goblin%20Ganglord%20%28Token%29.png",
+			"fluff": {},
+			"miscTags": [
+				"MW"
+			],
+			"shortName": true
 		}
 	],
 	"item": [
@@ -3170,6 +3714,28 @@
 			"entries": [
 				"While attuned to this belt, your Strength score changes to 19. The item has no effect on you if your Strength without the belt is equal to or greater than 19.",
 				"You can channel the Ancient Giant's essence as a Bonus Action to gain the benefits of the Enlarge portion of the Enlarge/Reduce spell for 1 minute. Once used this property can't be used again until the next dawn."
+			]
+		},
+		{
+			"name": "Adventurer's Guide to Térûvia",
+			"source": "KimJongTrillsCustomContent",
+			"page": 0,
+			"tier": "major",
+			"rarity": "common",
+			"wondrous": true,
+			"entries": [
+				"The Adventurer's Guide to Térûvia contains the basic knowledge an Adventurer would need to navigate Térûvia. In addition to information the book contains a map with live tracking of the book's location to aid in navigation, along with the forms needed for reports and the means to send them via transport slot on the back of the cover. This handbook, can't be damaged by fire, acid, or immersion in water. In addition, the book doesn't deteriorate with age."
+			]
+		},
+		{
+			"name": "Adventurers Initiative ID",
+			"source": "KimJongTrillsCustomContent",
+			"page": 0,
+			"tier": "major",
+			"rarity": "common",
+			"wondrous": true,
+			"entries": [
+				"The Adventurers Initiative ID is keyed to each individual Adventurer and functions as your pass around Térûvia as it is used to reap any of the benefits that come with being and Adventurer like lodging, rations, ammunition, and basic components. It also functions as a coin purse for the keyed Adventurer storing all coin one might encounter and converting between Silver, Gold, and Platinum at will. The ID also lets the Adventurer know when the damage or effect they may be trying to inflict on a target is useful or not calling out Immunities and Resistances along with Vulnerabilities."
 			]
 		}
 	]
