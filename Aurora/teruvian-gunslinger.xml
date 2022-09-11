@@ -4,7 +4,7 @@
 		<name>Gunslinger</name>
 		<description>A lone cowboy wondering the frontier, a genius with a knack for the destructive, a battle tested hero who likes to go in loud with metaphorical and literal guns blazing. All of these could be considered gunslingers</description>
 		<author url="https://www.dmsguild.com/product/170778/Gunslinger-Martial-Archetype-for-Fighters">Matthew Mercer</author>
-        <update version="2.0.2">
+        <update version="2.1.0">
             <file name="teruvian-gunslinger.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/teruvian-gunslinger.xml" />
         </update>
 	</info>
