@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.4.1">
+		<update version="1.4.2">
 			<file name="items.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/items.xml" />
 		</update>
 	</info>
@@ -241,5 +241,50 @@
 			<stat name="intelligence:score:set" value="20" bonus="base" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER" />
 		</rules>
+	</element>
+		
+	<element name="Wand of the Weavestepper" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_WAND_WEAVESTEPPER">
+		<description>
+			<p>This wand is made from many rare woods twisted and fused together using the raw power of the Weave by the Witch Neia Kelxisys, Vekzian Hero of the Great War. The wand was her chosen tool of destruction when facing off against the warring nations of Kol and Eshea allowing her to move among the battlefield with ease.</p>
+			<p>You have advantage on initiative rolls while you are holding the wand. In addition whenever you use a spell slot to cast a spell, you can immediately teleport to an unoccupied space you can see within 15 feet of you.</p>
+		</description>
+		<setters>
+			<set name="category">Wands</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="type">Wand</set>
+			<set name="attunement" addition="by a spellcaster">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_INITIATIVE_ADVANTAGE" />
+		</rules>
+	</element>
+	
+	<element name="Adventurers Initiative ID" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_AIID">		
+		<description>
+			<p>The Adventurers Initiative ID is keyed to each individual Adventurer and functions as your pass around Térûvia as it is used to reap any of the benefits that come with being and Adventurer like lodging, rations, ammunition, and basic components. It also functions as a coin purse for the keyed Adventurer storing all coin one might encounter and converting between Silver, Gold, and Platinum at will. The ID also lets the Adventurer know when the damage or effect they may be trying to inflict on a target is useful or not calling out Immunities and Resistances along with Vulnerabilities.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	
+	<element name="Adventurer's Guide to Térûvia" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_AGT_ID">		
+		<description>
+			<p>The Adventurer's Guide to Térûvia contains the basic knowledge an Adventurer would need to navigate Térûvia. In addition to information the book contains a map with live tracking of the book's location to aid in navigation, along with the forms needed for reports and the means to send them via transport slot on the back of the cover. This handbook, can't be damaged by fire, acid, or immersion in water. In addition, the book doesn't deteriorate with age.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
 	</element>
 </elements>
