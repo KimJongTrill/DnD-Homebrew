@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.4.2">
+		<update version="1.4.3">
 			<file name="items.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/items.xml" />
 		</update>
 	</info>
@@ -285,6 +285,23 @@
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
 			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	
+	<element name="Amulet of Equilibrium" type="Third Party Curated Homebrew" type="Source" source="Third Party Curated Homebrew" id="ID_CHB_TGS_AMULET_EQUILIBRIUM">
+		<description>
+			<p>This spiraling pendant is made of three magic-sensitive panes of colorful crystal. Each piece of crystal is attuned to a different arcane element. If you can cast spells, you can use the amulet as a spellcasting focus while you're attuned to it.</p>
+			<p>The amulet has 4 charges and regains 2 expended charges daily at dawn. When you deal cold, fire, or lightning damage to a single creature while wearing the amulet, you can expend any number of its charges to reroll that many of the cold, fire, or lightning damage dice. You must use the new rolls. Whenever you take cold, fire, or lightning damage from a hostile creature, the amulet regains 1 charge.</p>
+		</description>
+		<setters>
+			<set name="keywords">divination, scry</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">neck</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
 		</setters>
 	</element>
 </elements>
