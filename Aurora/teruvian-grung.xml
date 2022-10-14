@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.2">
+		<update version="1.3">
 			<file name="grung.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/teruvian-grung.xml" />
 		</update>
 	</info>
@@ -40,6 +40,7 @@
 			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Grung)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
 			<stat name="innate speed" value="25" bonus="base" />
 			<stat name="innate speed:climb" value="25" bonus="base" />
+			<stat name="innate speed:swim" value="25" bonus="base" />
 			<grant type="Size" id="ID_SIZE_SMALL" />
 			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<grant type="Language" id="ID_OGA_LANGUAGE_GRUNG" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
