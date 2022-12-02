@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.4.5">
+		<update version="1.4.6">
 			<file name="items.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/items.xml" />
 		</update>
 	</info>
@@ -303,5 +303,34 @@
 			<set name="attunement">true</set>
 			<set name="rarity">Uncommon</set>
 		</setters>
+	</element>
+	<element name="Belt of the Tempest (Dormant)" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_BOT_1">
+		<compendium display="false" />
+		<description>
+			<p>The Belt of the Tempest was found by Logen and the other Witchlight Warriors inside an ancient temple of Atlanta, it formed from a Divine Spark granted to him after proving his mettle. The Divine Spark took the form of a thick dark blue leather belt adorned with large metal plates covered in storm-based iconogrophy.</p>
+			<p class="indent"><strong><em>Dormant.</em></strong> While wearing the Belt of the Tempest in its dormant state, you have resistance to lightning damage and thunder damage, and your Strength score is raised by 2 to a Maximum of 30. In addition, you can use a bonus action to become a Storm Avatar for 1 minute, gaining the following benefits for the duration:</p>
+			<ul>
+				<li>You have immunity to lightning damage and thunder damage.</li>
+				<li>When you hit with a weapon attack that normally deals bludgeoning damage, it deals thunder damage instead. When you hit with a weapon attack that normally deals piercing or slashing damage, it deals lightning damage instead.</li>
+				<li>As a bonus action, you can choose one creature you can see within 30 feet of you to be struck by lightning. The target must make a DC 15 Dexterity saving throw, taking 3d6 lightning damage on a failed save, or half as much damage on a successful one.</li>
+			</ul>
+			<p class="indent">Once you use the Belt of the Tempest's Storm Avatar property, that property can't be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">belt</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Artifact</set>
+			<set name="attunement">true</set>
+			<set name="slot">belt</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+			<stat name="strength" value="2" />
+			<stat name="strength:max" value="2" />
+		</rules>
 	</element>
 </elements>
