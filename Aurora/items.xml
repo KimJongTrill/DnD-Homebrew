@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.4.6">
+		<update version="1.4.7">
 			<file name="items.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/items.xml" />
 		</update>
 	</info>
@@ -305,7 +305,6 @@
 		</setters>
 	</element>
 	<element name="Belt of the Tempest (Dormant)" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_BOT_1">
-		<compendium display="false" />
 		<description>
 			<p>The Belt of the Tempest was found by Logen and the other Witchlight Warriors inside an ancient temple of Atlanta, it formed from a Divine Spark granted to him after proving his mettle. The Divine Spark took the form of a thick dark blue leather belt adorned with large metal plates covered in storm-based iconogrophy.</p>
 			<p class="indent"><strong><em>Dormant.</em></strong> While wearing the Belt of the Tempest in its dormant state, you have resistance to lightning damage and thunder damage, and your Strength score is raised by 2 to a Maximum of 30. In addition, you can use a bonus action to become a Storm Avatar for 1 minute, gaining the following benefits for the duration:</p>
@@ -332,5 +331,78 @@
 			<stat name="strength" value="2" />
 			<stat name="strength:max" value="2" />
 		</rules>
+	</element>
+	<element name="Mote of Knowledge (Dormant)" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_MOK_1">
+		<description>
+			<p>A Spellshard of endless volume able to hold as much information as one can find, gifted to Jarzamel by Ceritas herself imbued with her Divine energy, given as a reward for the Witchlight Warriors answering her call.</p>
+			<p>A wizard can use this spellshard as a spellbook, with the usual cost in gold and time to scribe a spell into the shard. You can use an action to open your mind to the shard, seeing its content in your mind. On subsequent rounds, reading the text or scribing new text on blank pages in the shard requires concentration (as if concentrating on a spell) and takes the same amount of time it takes you to read and write normally. Thinking of a particular phrase or topic draws you to the first section in the shard that addresses it.</p>
+			<p class="indent"><strong><em>Dormant.</em></strong> You can use the Mote as a spellcasting focus for your spells while attuned to it, in addition it has the following properties while in its Dormant state:</p>
+			<ul>
+				<li>You gain a +1 bonus to spell attack rolls and to the saving throw DCs of your spells.</li>
+				<li>When you prepare wizard spells attuned to the mote the number of spells you can prepare increases by 1.</li>
+				<li>The Gold cost for Spell Copying is halved while using the Mote as your spellbook.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">spellbook</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Artifact</set>
+			<set name="attunement">true</set>
+			<set name="slot">belt</set>
+		</setters>
+		<rules>
+			<stat name="spellcasting:attack" value="1" />
+			<stat name="spellcasting:dc" value="1" />
+			<stat name="wizard:spellcasting:prepare" value="1" />
+		</rules>
+	</element>
+	<element name="Bloodwell Vial of Wealth (Dormant)" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_BVOW_1">
+		<description>
+			<p>The Bloodwell of Wealth was once a standard Bloodwell Vial but has been imbued with a Divine Spark, when Gerry DeMarkk and the Witchlight Warriors delved into a Temple of Rikkus to prove their worth.The Divine Spark changed the existing Bloobwell Vial that called to Gerry all those years ago in that shop, into a more extravagant version adorned with fine gems and the golden symbol of Rikkus etched into the glass vial. To attune to this vial, you must place a few drops of your blood into it. The vial can't be opened while your attunement to it lasts. If your attunement to the vial ends, the contained blood turns to ash.</p>
+			<p class="indent"><strong><em>Dormant.</em></strong> You can use the Mote as a spellcasting focus for your spells while attuned to it, in addition it has the following properties while in its Dormant state:</p>
+			<ul>
+				<li>You gain a +1 bonus to spell attack rolls and to the saving throw DCs of your spells.</li>
+				<li>When you roll any Hit Dice to recover hit points while you are carrying the vial, you can regain 5 sorcery points. This property of the vial can't be used again until the next dawn.</li>
+				<li>You can cast use the vial to cast the following spells: *cure wounds* [as a 2nd-level spell], *lesser restoration*, and *shield of faith*.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">spellbook</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Artifact</set>
+			<set name="attunement">true</set>
+			<set name="slot">neck</set>
+		</setters>
+		<rules>
+			<stat name="spellcasting:attack" value="1" />
+			<stat name="spellcasting:dc" value="1" />
+		</rules>
+	</element>
+	<element name="Rings of the Trickster (Dormant)" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ROT_1">
+		<description>
+			<p>When Unamed and the Witchlight Warriors were tested by Haymil the spark given to Unamed took the form of two rings. These paired rings are engraved with small knives and other bladed weapons in an intricate pattern that conceals the true design to anyone but the attuned wearer.</p>
+			<p class="indent"><strong><em>Dormant.</em></strong> As part of the attunement to these rings you must choose weapons to bond with each, once bonded the weapon exists in an extra dimensional space inside the ring, is considered on your person, and can be drawn to your hand a flick of the wrist and are stored by you at will as long as they exist on the same plane. You also gain the following additonal benefits while attuned:</p>
+			<ul>
+				<li>You gain a +1 bonus to your bonded melee weapon strikes damage and to hit.</li>
+				<li>You gain the Two-Weapon Fighting fighting style.</li>
+				<li>When you successfully use your sneak attack as part of your attack action, you can make a second sneak attack strike, with your offhand weapon as part of Two-Weapon Fighting, against another target using half the number of Sneak Attack dice for your level (round up).</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">ring</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Artifact</set>
+			<set name="attunement">true</set>
+			<set name="slot">ring</set>
+		</setters>
 	</element>
 </elements>
