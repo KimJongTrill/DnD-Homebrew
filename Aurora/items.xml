@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.4.8">
+		<update version="1.4.9">
 			<file name="items.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/items.xml" />
 		</update>
 	</info>
@@ -408,6 +408,39 @@
 			<set name="rarity">Artifact</set>
 			<set name="attunement">true</set>
 			<set name="slot">ring</set>
+		</setters>
+	</element>
+	<element name="Sword of The Elements" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_SOTE">
+		<description>
+			<p>This item appears to be a longsword hilt with a place for a small badge on the bottom. While grasping the hilt, you can use a bonus action to cause a blade of pure energy to spring into existence, or make the blade disappear. While the blade exists, this magic longsword has the finesse property and deals force instead of slashing. If you are proficient with shortswords or longswords, you are proficient with the <em>Sword of the Elements</em>.</p>
+			<p class="indent">After the Badge of the Tribunal is put into the slot you can attune to the item and you gain a +2 bonus to attack and damage rolls made with this weapon. Additionally, when you hit an elemental with it, that target takes an extra 1d8 force damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">longsword,force</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="longsword">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">Longsword</set>
+		</setters>
+	</element>
+	<element name="Stormrider Boots" type="Magic Item" source="Third Party Curated Homebrew" id="ID_CHB_TALDOREI_CR_MAGIC_ITEM_STORMRIDER_BOOTS">
+		<description>
+			<p>These dark leather boots look to be of common make, but a subtle pattern of swirling storm clouds upon their soles suggests the potency of their enchantment. You can activate these boots as part of your movement, gaining the following benefits until the end of your turn:</p>
+			<p class="indent">You have a flying speed of 90 feet.</p>
+			<p class="indent">Opportunity attacks against you are made with disadvantage.</p>
+			<p class="indent">Whenever you move within 5 feet of a hostile creature, it must succeed on a DC 15 Dexterity saving throw or take 3d8 lightning damage. A creature can’t be damaged in this way more than once per turn.</p>
+			<p class="indent">Once  this property is used, it can’t be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="slot">feet</set>
 		</setters>
 	</element>
 </elements>
