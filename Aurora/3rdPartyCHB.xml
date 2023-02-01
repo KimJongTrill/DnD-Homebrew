@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="1.5.0">
+			<file name="3rdPartyCHB.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/3rdPartyCHB.xml" />
+		</update>
+	</info>
+	
+	<element name="Stormrider Boots" type="Magic Item" source="Third Party Curated Homebrew" id="ID_CHB_TALDOREI_CR_MAGIC_ITEM_STORMRIDER_BOOTS">
+		<description>
+			<p>These dark leather boots look to be of common make, but a subtle pattern of swirling storm clouds upon their soles suggests the potency of their enchantment. You can activate these boots as part of your movement, gaining the following benefits until the end of your turn:</p>
+			<p class="indent">You have a flying speed of 90 feet.</p>
+			<p class="indent">Opportunity attacks against you are made with disadvantage.</p>
+			<p class="indent">Whenever you move within 5 feet of a hostile creature, it must succeed on a DC 15 Dexterity saving throw or take 3d8 lightning damage. A creature can’t be damaged in this way more than once per turn.</p>
+			<p class="indent">Once  this property is used, it can’t be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="slot">feet</set>
+		</setters>
+	</element>
+	<element name="Amulet of Equilibrium" type="Magic Item" source="Third Party Curated Homebrew" id="ID_CHB_TGS_AMULET_EQUILIBRIUM">
+		<description>
+			<p>This spiraling pendant is made of three magic-sensitive panes of colorful crystal. Each piece of crystal is attuned to a different arcane element. If you can cast spells, you can use the amulet as a spellcasting focus while you're attuned to it.</p>
+			<p>The amulet has 4 charges and regains 2 expended charges daily at dawn. When you deal cold, fire, or lightning damage to a single creature while wearing the amulet, you can expend any number of its charges to reroll that many of the cold, fire, or lightning damage dice. You must use the new rolls. Whenever you take cold, fire, or lightning damage from a hostile creature, the amulet regains 1 charge.</p>
+		</description>
+		<setters>
+			<set name="keywords">element</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">neck</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+</elements>
