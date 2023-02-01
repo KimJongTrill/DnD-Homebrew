@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.4.9">
+		<update version="1.5.0">
 			<file name="items.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/items.xml" />
 		</update>
 	</info>
@@ -287,23 +287,6 @@
 			<set name="rarity">Common</set>
 		</setters>
 	</element>
-	
-	<element name="Amulet of Equilibrium" type="Magic Item" source="Third Party Curated Homebrew" id="ID_CHB_TGS_AMULET_EQUILIBRIUM">
-		<description>
-			<p>This spiraling pendant is made of three magic-sensitive panes of colorful crystal. Each piece of crystal is attuned to a different arcane element. If you can cast spells, you can use the amulet as a spellcasting focus while you're attuned to it.</p>
-			<p>The amulet has 4 charges and regains 2 expended charges daily at dawn. When you deal cold, fire, or lightning damage to a single creature while wearing the amulet, you can expend any number of its charges to reroll that many of the cold, fire, or lightning damage dice. You must use the new rolls. Whenever you take cold, fire, or lightning damage from a hostile creature, the amulet regains 1 charge.</p>
-		</description>
-		<setters>
-			<set name="keywords">element</set>
-			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
-			<set name="weight" lb="0">0 lb.</set>
-			<set name="slot">neck</set>
-			<set name="type">Wondrous Item</set>
-			<set name="attunement">true</set>
-			<set name="rarity">Uncommon</set>
-		</setters>
-	</element>
 	<element name="Belt of the Tempest (Dormant)" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_BOT_1">
 		<description>
 			<p>The Belt of the Tempest was found by Logen and the other Witchlight Warriors inside an ancient temple of Atlanta, it formed from a Divine Spark granted to him after proving his mettle. The Divine Spark took the form of a thick dark blue leather belt adorned with large metal plates covered in storm-based iconogrophy.</p>
@@ -410,6 +393,32 @@
 			<set name="slot">ring</set>
 		</setters>
 	</element>
+	<element name="Markings of the Wild (Dormant)" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_MOW_1">
+		<description>
+			<p>Upon the Witchlight Warriors proving their worth to Verdana she gifted Benax a Divine Spark that altered his existing tattoo, enhancing it further.This tattoo when placed in the skin and attuned covers the wearers limbs and body with intricate vine patterns along with the symbol of Verdana appearing on the forehead</p>
+			<p class="indent"><strong><em>Dormant.</em></strong> It has the following properties while attuned to in its Dormant state:</p>
+			<ul>
+				<li>Your attacks with monk weapons and unarmed strikes are considered magical for the purpose of overcoming immunity and resistance to non-magical attacks, and you gain a +1 bonus to attack and damage rolls with unarmed strikes and monk weapons.</li>
+				<li>Your Constitution Score is raised by 2 to a Maximum of 30.</li>
+				<li>As a bonus action you can regain Ki points equal to roll of your Martial Arts Die, once per long rest.</li>
+				<li>As a bonus action, you can empower the tattoo for 1 minute. For the duration, each of your melee attacks with a weapon or an unarmed strike can reach a target up to 15 feet away from you, as inky tendrils launch toward the target. In addition, your melee attacks deal an extra 1d6 force damage on a hit. Once used, this bonus action can't be used again until the next dawn</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">tattoo</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Artifact</set>
+			<set name="attunement">true</set>
+			<set name="slot">body</set>
+		</setters>
+		<rules>
+			<stat name="constitution" value="2" />
+			<stat name="constitution:max" value="2" />
+		</rules>
+	</element>
 	<element name="Sword of The Elements" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_SOTE">
 		<description>
 			<p>This item appears to be a longsword hilt with a place for a small badge on the bottom. While grasping the hilt, you can use a bonus action to cause a blade of pure energy to spring into existence, or make the blade disappear. While the blade exists, this magic longsword has the finesse property and deals force instead of slashing. If you are proficient with shortswords or longswords, you are proficient with the <em>Sword of the Elements</em>.</p>
@@ -424,23 +433,6 @@
 			<set name="rarity">Rare</set>
 			<set name="enhancement">2</set>
 			<set name="weapon">Longsword</set>
-		</setters>
-	</element>
-	<element name="Stormrider Boots" type="Magic Item" source="Third Party Curated Homebrew" id="ID_CHB_TALDOREI_CR_MAGIC_ITEM_STORMRIDER_BOOTS">
-		<description>
-			<p>These dark leather boots look to be of common make, but a subtle pattern of swirling storm clouds upon their soles suggests the potency of their enchantment. You can activate these boots as part of your movement, gaining the following benefits until the end of your turn:</p>
-			<p class="indent">You have a flying speed of 90 feet.</p>
-			<p class="indent">Opportunity attacks against you are made with disadvantage.</p>
-			<p class="indent">Whenever you move within 5 feet of a hostile creature, it must succeed on a DC 15 Dexterity saving throw or take 3d8 lightning damage. A creature can’t be damaged in this way more than once per turn.</p>
-			<p class="indent">Once  this property is used, it can’t be used again until the next dawn.</p>
-		</description>
-		<setters>
-			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
-			<set name="weight" lb="0">0 lb.</set>
-			<set name="type">Wondrous Item</set>
-			<set name="rarity">Rare</set>
-			<set name="slot">feet</set>
 		</setters>
 	</element>
 </elements>
