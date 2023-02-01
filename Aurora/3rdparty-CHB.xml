@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.5.0">
-			<file name="3rdPartyCHB.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/3rdPartyCHB.xml" />
+		<update version="1.1.0">
+			<file name="3rdparty-CHB.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/3rdparty-CHB.xml" />
 		</update>
 	</info>
 	
