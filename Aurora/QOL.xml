@@ -286,6 +286,55 @@
 			<stat inline="true" name="dragon ancestor damage type" value="Necrotic" />
 		</rules>
 	</element>
+	<element name="Divine Soul Additional Cleric Spells" type="Class Feature" source="Internal" id="ID_OCF_SORCERER_DIVINE_SOUL_ADDITIONAL_CLERIC_SPELLS">
+		<description>
+			<p><i>1st-level divine soul sorcerer feature</i></p>
+			<p>The spells in the following list expand the cleric spell list in the <i>Player's Handbook</i>. The list is organized by spell level, not character level. If a spell can be cast as a ritual, the ritual tag appears after the spell's name. Each spell is in the <i>Player's Handbook</i>, unless it has an asterisk (a spell in chapter 3 of <i>Tasha’s Cauldron of Everything</i>). <i>Xanathar's Guide to Everything</i> also offers more spells.</p>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>Aura of vitality, Spirit shroud*</em></td></tr>
+				<tr><td>4th</td><td><em>Aura of life, Aura of purity</em></td></tr>
+				<tr><td>5th</td><td><em>Summon celestial*</em></td></tr>
+				<tr><td>6th</td><td><em>Sunbeam</em></td></tr>
+				<tr><td>8th</td><td><em>Sunburst</em></td></tr>
+				<tr><td>9th</td><td><em>Power word heal</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>The spells in the following list expand the cleric spell list in the <i>Player's Handbook</i>. The list is organized by spell level, not character level. If a spell can be cast as a ritual, the ritual tag appears after the spell's name. Each spell is in the <i>Player's Handbook</i>, unless it has an asterisk (a spell in chapter 3 of <i>Tasha’s Cauldron of Everything</i>). <i>Xanathar's Guide to Everything</i> also offers more spells.</description>
+		</sheet>
+		<spellcasting name="Sorcerer" extend="true">
+			<extend>ID_PHB_SPELL_AURA_OF_VITALITY</extend>
+			<extend>ID_WOTC_TCOE_SPELL_SPIRIT_SHROUD</extend>
+			<extend>ID_PHB_SPELL_AURA_OF_LIFE</extend>
+			<extend>ID_PHB_SPELL_AURA_OF_PURITY</extend>
+			<extend>ID_WOTC_TCOE_SPELL_SUMMON_CELESTIAL</extend>
+			<extend>ID_PHB_SPELL_SUNBEAM</extend>
+			<extend>ID_PHB_SPELL_SUNBURST</extend>
+			<extend>ID_PHB_SPELL_POWER_WORD_HEAL</extend>
+		</spellcasting>
+	</element>
+
+	<element name="Sorcerer, LV01: Divine Soul Additional Cleric Spells" type="Item" source="Internal" id="ID_OCF_ITEM_SORCERER_DIVINE_SOUL_ADDITIONAL_CLERIC_SPELLS">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_OCF_SORCERER_DIVINE_SOUL_ADDITIONAL_CLERIC_SPELLS" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">first level, 1st level, spellcasting</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_OCF_SORCERER_DIVINE_SOUL_ADDITIONAL_CLERIC_SPELLS" requirements="ID_WOTC_XGTE_SORCERER_ARCHETYPE_DIVINE_SOUL"/>
+		</rules>
+	</element>
 
 	<!--Missing Supports-->
 	<append id="ID_WOTC_ACQINC_BACKGROUND_FEATURE_NAME_DROPPING">
