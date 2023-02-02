@@ -109,7 +109,7 @@
         	</sheet>
 	</element>
 	
-	<element name="Custom Attunement PB 4" type="Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_CUSTOM_ATTUNEMENT_4">
+	<element name="Custom Attunement: Proficiency 4" type="Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_CUSTOM_ATTUNEMENT_4">
 		<description>
 			<p><i>KJT Homebrew</i></p>
 			<p>Attunement slots are equal to Proficiency Bonus (Minimum 3). Equip to enable.</p>
@@ -128,7 +128,7 @@
 		</rules>
 	</element>
 	
-	<element name="Custom Attunement PB 5" type="Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_CUSTOM_ATTUNEMENT_5">
+	<element name="Custom Attunement: Proficiency 5" type="Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_CUSTOM_ATTUNEMENT_5">
 		<description>
 			<p><i>KJT Homebrew</i></p>
 			<p>Attunement slots are equal to Proficiency Bonus (Minimum 3). Equip to enable.</p>
@@ -147,7 +147,7 @@
 		</rules>
 	</element>
 	
-	<element name="Custom Attunement PB 6" type="Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_CUSTOM_ATTUNEMENT_6">
+	<element name="Custom Attunement: Proficiency 6" type="Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_CUSTOM_ATTUNEMENT_6">
 		<description>
 			<p><i>KJT Homebrew</i></p>
 			<p>Attunement slots are equal to Proficiency Bonus (Minimum 3). Equip to enable.</p>
