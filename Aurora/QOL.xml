@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.3.0">
+		<update version="1.3.1">
 			<file name="QOL.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/QOL.xml" />
 		</update>
 	</info>
@@ -163,6 +163,24 @@
 		</setters>
 		<rules>
 			<stat name="attunement:max" value="6" bonus="base"/>
+		</rules>
+	</element>
+	<element name="DM Gift: Expertise" type="Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_DMG_Expertise">
+		<description>
+			<p><i>KJT Homebrew</i></p>
+			<p>Gift from a gracious DM.</p>
+		</description>
+		<sheet display="false">
+			<description>Gift from a gracious DM.</description>
+		</sheet>
+		<setters>
+			<set name="category">Homebrew Rules</set>
+			<set name="keywords">expertise</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<select type="Class Feature" name="Expertise, Skill Expert" supports="Expertise, Skill" />
 		</rules>
 	</element>
 	<element name="Custom Background" type="Background" source="Player’s Handbook" id="ID_WOTC_PHB_BACKGROUND_CUSTOM">
