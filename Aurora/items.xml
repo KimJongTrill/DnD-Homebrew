@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.5.0">
+		<update version="1.5.1">
 			<file name="items.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/items.xml" />
 		</update>
 	</info>
@@ -412,7 +412,6 @@
 			<set name="type">Wondrous Item</set>
 			<set name="rarity">Artifact</set>
 			<set name="attunement">true</set>
-			<set name="slot">body</set>
 		</setters>
 		<rules>
 			<stat name="constitution" value="2" />
