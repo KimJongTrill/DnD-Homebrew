@@ -8987,11 +8987,7 @@
 				"The third command word, 'Sail', causes the box to take the shape of a ship 50 feet long, 20 feet wide; and 15 feet deep, and with a speed of 4 mph. The ship has a deck, a steering oar, an anchor, a deck cabin, and a mast with a sail. The ship can hold fifteen Medium creatures comfortably.",
 				"When the box becomes a vessel, its weight becomes that of a normal vessel its size, and anything that was stored in the box remains in the boat.",
 				"The fourth command word, 'Park' causes the folding boat to fold back into a box, provided that no creatures are aboard. Any objects in the vessel remain outside the box as it folds."
-			],
-			"lootTables": [
-				"Magic Item Table C"
-			],
-			"hasFluffImages": true
+			]
 		},
 		{
 			"name": "Salve of Swimming",
@@ -9002,11 +8998,7 @@
 			"rarity": "uncommon",
 			"entries": [
 				"This jar contains enough salve for 6 uses when found. You can coat yourself in this greasy substance over the course of a minute and your skin magically repels water granting you the ability to move through water easily. When applied the potion grants you a swim speed of 40 feet for 1 hours but confers no other benefits."
-			],
-			"lootTables": [
-				"Magic Item Table B"
-			],
-			"hasFluffImages": true
+			]
 		},
 		{
 			"name": "Belt of the Tempest (Dormant)",
@@ -9171,8 +9163,7 @@
 						"This item is cursed to turn the attuned wearer into a Scrooge after 7 days, nothing short of {@spell wish|phb} can end attunement."
 					]
 				}
-			],
-			"hasFluffImages": true
+			]
 		},
 		{
 			"name": "Holy Symbol of Christmas Spirit",
@@ -9216,8 +9207,7 @@
 						"As an action, you can expend 5 charges while presenting the holy symbol to make it shed bright light in a 30-foot radius and dim light for an additional 30 feet. The light is Christmas Cheer and lasts for 10 minutes or until you end the effect (no action required)."
 					]
 				}
-			],
-			"hasFluffImages": true
+			]
 		},
 		{
 			"name": "Rings of the Trickster (Dormant)",
@@ -9255,9 +9245,6 @@
 			"rarity": "legendary",
 			"entries": [
 				"This potion is of unknown effects as the properties are unable to be determined until observed. The potion's effects are only able to be known once consumed, consult your DM for the effect."
-			],
-			"lootTables": [
-				"Magic Item Table E"
 			]
 		},
 		{
@@ -9270,9 +9257,6 @@
 			"rarity": "uncommon",
 			"entries": [
 				"This suit is made of golden stretchy material. You can also use a bonus action to cause the suit to assume the appearance of any clothing. You decide what it looks like, including color, style, and accessories. The illusory appearance lasts until you use this property again or remove the suit."
-			],
-			"lootTables": [
-				"Magic Item Table G"
 			]
 		},
 		{
@@ -9378,8 +9362,7 @@
 			],
 			"entries": [
 				"These Knuckle Dusters are crafted from Divinium and allow a caster to channel their magical ability into martial prowess. While attuned you gain the fighting style, Unarmed Fighting, and melee attacks you make with the Scholar's Knuckles are made with your spell attack modifier."
-			],
-			"hasFluffImages": false
+			]
 		}
 	],
 	"legendaryGroup": [
