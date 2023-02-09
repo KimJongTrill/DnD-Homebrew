@@ -8288,6 +8288,313 @@
 					]
 				}
 			]
+		},
+		{
+			"source": "KimJongTrillsCustomContent",
+			"name": "Gustav Breeze",
+			"environment": [
+				"mountain",
+				"urban"
+			],
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Air Genasi"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				17
+			],
+			"hp": {
+				"formula": "12d8 + 24",
+				"average": 78
+			},
+			"speed": {
+				"walk": 60
+			},
+			"str": 8,
+			"dex": 18,
+			"con": 14,
+			"int": 8,
+			"wis": 16,
+			"cha": 12,
+			"save": {
+				"dex": "+7",
+				"wis": "+6",
+				"str": "+2"
+			},
+			"skill": {
+				"acrobatics": "+7",
+				"insight": "+6",
+				"perception": "+6",
+				"stealth": "+7"
+			},
+			"passive": 16,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Unarmored Defense",
+					"entries": [
+						"While the monk is wearing no armor and wielding no shield, its AC includes its Wisdom modifier."
+					]
+				},
+				{
+					"name": "Mobile",
+					"entries": [
+						"When you use the Dash action, difficult terrain doesn't cost you extra movement on that turn.",
+						"When you make a melee attack against a creature, you don't provoke opportunity attacks from that creature for the rest of the turn, whether you hit or not."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The monk makes two Unarmed Strikes or two Dart attacks."
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d6 + 4}) bludgeoning damage. If the target is a creature, the monk can choose one of the following additional effects:",
+						{
+							"type": "list",
+							"items": [
+								"The target must succeed on a {@dc 14} Strength saving throw or drop one item it is holding (monk's choice).",
+								"The target must succeed on a {@dc 14} Dexterity saving throw or be knocked {@condition prone}.",
+								"The target must succeed on a {@dc 14} Constitution saving throw or be {@condition stunned} until the end of the monk's next turn."
+							]
+						}
+					]
+				},
+				{
+					"name": "Dart",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 20/60 ft., one target. {@h}8 ({@damage 1d6 + 4}) piercing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Deflect Missile",
+					"entries": [
+						"In response to being hit by a ranged weapon attack, the monk deflects the missile. The damage it takes from the attack is reduced by 15 ({@damage 1d10 + 10}). If the damage is reduced to 0, the monk catches the missile if it's small enough to hold in one hand and the monk has a hand free."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"conditionInflict": [
+				"prone",
+				"stunned"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded3/creature/token/Monk,%20Legendary%20%28Token%29.png",
+			"fluff": {},
+			"bonus": [
+				{
+					"name": "Dash",
+					"entries": [
+						"Dashes"
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"Makes an unarmed strike"
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Gustav has a save of {@dc 14}, and a {@hit 6} to hit for spells or Ki Saves"
+					],
+					"daily": {
+						"2e": [
+							"{@spell shatter}",
+							"{@spell thunderwave}"
+						]
+					},
+					"will": [
+						"{@spell shocking grasp}",
+						"{@spell thunderclap|XGE}"
+					],
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"damageTagsSpell": [
+				"L",
+				"T"
+			],
+			"resist": [
+				"lightning"
+			]
+		},
+		{
+			"name": "Strike Team Echo",
+			"source": "KimJongTrillsCustomContent",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item half plate armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"special": "85"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 20,
+			"con": 14,
+			"int": 6,
+			"wis": 12,
+			"cha": 12,
+			"save": {
+				"str": "+9",
+				"con": "+6",
+				"wis": "+5"
+			},
+			"passive": 15,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"cr": "9",
+			"trait": [
+				{
+					"name": "Indomitable (1/Day)",
+					"entries": [
+						"The mercenary rerolls a failed saving throw."
+					]
+				},
+				{
+					"name": "Manifest Echo",
+					"entries": [
+						"The mercenary can use a bonus action to magically manifest an echo in an unoccupied space it can see within 15 feet. The echo has an AC of 18 and 1 hit point. Any action taken from the mercenary can be taken from the echo as well. This can also be used to swap places with the echo for 15 feet of movement. "
+					]
+				},
+				{
+					"name": "Unleash Incarnation (1/Day)",
+					"entries": [
+						"The mercenary can make an extra attack originating from the echo's position when it takes the attack action."
+					]
+				},
+				{
+					"name": "Gunner",
+					"entries": [
+						"Being within 5 feet of a hostile creature doesn’t impose disadvantage on ranged attack rolls."
+					]
+				},
+				{
+					"name": "Sharpshooter",
+					"entries": [
+						"Ranged attacks made at long range do not impose disadvantage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The mercenary makes two Rifle attacks."
+					]
+				},
+				{
+					"name": "Carbine Rifle",
+					"entries": [
+						"{@atk rw} {@hit 10} to hit, range 100 ft., one target. {@h}11 ({@damage 1d10 + 6}) piercing damage."
+					]
+				},
+				{
+					"name": "Sharpshot",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 100 ft., one target. {@h}21 ({@damage 1d10 + 16}) piercing damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Second Wind (Recharges after a Short or Long Rest)",
+					"entries": [
+						"The mercenary regains 15 hit points."
+					]
+				}
+			],
+			"environment": [
+				"desert",
+				"urban"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/champion.mp3"
+			},
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"P"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"skill": {
+				"survival": "+5",
+				"stealth": "+9",
+				"perception": "+5",
+				"acrobatics": "+9",
+				"intimidation": "+5"
+			},
+			"miscTags": [
+				"RW"
+			],
+			"senses": [
+				"blindsight 10 ft.",
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"B",
+				"D"
+			]
 		}
 	],
 	"item": [
@@ -8305,7 +8612,7 @@
 			"name": "Infinite Grimoire",
 			"source": "KimJongTrillsCustomContent",
 			"page": 0,
-			"rarity": "uncommon",
+			"rarity": "artifact",
 			"wondrous": true,
 			"weight": 3,
 			"entries": [
@@ -8316,7 +8623,7 @@
 					"type": "entries",
 					"name": "Enhanced",
 					"entries": [
-						" rare (requires attunement by a wizard)",
+						"(requires attunement by a wizard)",
 						"You gain a +1 to your Wizard Spell {@action Attack} rolls and Spell Save DC.",
 						"When you use your Arcane Recovery feature you can gain 1 additional level of spells."
 					]
@@ -8325,7 +8632,7 @@
 					"type": "entries",
 					"name": "Empowered",
 					"entries": [
-						" very rare (requires attunement by a wizard)",
+						"(requires attunement by a wizard)",
 						"You gain a +1 to your Wizard Spell {@action Attack} rolls and Spell Save DC.",
 						"When you use your Arcane Recovery feature you can gain 2 additional level of spells.",
 						"When you prepare wizard spells using the grimoire as your spellbook, the number of spells you can prepare increases by 2 total."
@@ -8335,7 +8642,7 @@
 					"type": "entries",
 					"name": "Perfected",
 					"entries": [
-						" legendary (requires attunement by a wizard)",
+						"(requires attunement by a wizard)",
 						"When you use your Arcane Recovery feature you can gain 3 additional level of spells.",
 						"When you prepare wizard spells using the grimoire as your spellbook, the number of spells you can prepare increases by 3 total.",
 						"If you aren't wearing armor, your base Armor Class is 15 + your Dexterity modifier.",
@@ -8566,7 +8873,6 @@
 		{
 			"name": "Spelljamming Mythallar",
 			"source": "KimJongTrillsCustomContent",
-			"page": 0,
 			"rarity": "artifact",
 			"reqAttune": "by a spellcaster",
 			"wondrous": true,
@@ -8576,9 +8882,9 @@
 				{
 					"type": "list",
 					"items": [
-						"While you're within 500 feet of the Spelljamming Mythallar, you can choose which direction and how fast the mythallar moves.  It can move up to Spelljamming Speed (100 million miles in 24 hours) in Wildspace or the Astral Sea, or up to 10 mph while objects weighing 1 ton or more are within 1 mile of it. All matter within 500 feet of the device moves with it. The Spelljamming Mythallar and all structures held aloft by it hover in place when not in motion.",
+						"While you're within 500 feet of the Spelljamming Mythallar, you can choose which direction and how fast the mythallar moves.  It can move up to Spelljamming Speed (100 million miles in 24 hours) in Wildspace or the Astral Sea, or up to 10 mph while objects weighing 1 ton or more are within 1 mile of it. All matter within 500 feet of the device moves with it. The Spelljamming Mythallar and all structures held aloft by it hover in place when not in motion. In Wildspace the Spelljamming Mythallar has enough air for 180 million days.",
 						"As an action, you can cause one magic item you are holding within 30 feet of the Spelljamming Mythallar to immediately regain all its expended charges or uses. A magic item recharged in this manner can't be recharged by the Spelljamming Mythallar again until after the item regains expended charges or uses on its own.",
-						"You can use the Spelljamming Mythallar to cast the {@spell dream of the blue veil|tce} provided you have the material components. The creature limit is lifted and instead uses the area controlled by the mythallar. This property can be used 1 time per day, or after the mythallar has been fueled by a magic item (up to DM Discretion).",
+						"You can use the Spelljamming Mythallar to cast the {@spell dream of the blue veil|tce} provided you have the material components. The creature limit is lifted and instead uses the area controlled by the mythallar. The creatures also do not fall unconscious but the area controlled by the mythallar enters a transitive plane between origin and destination for the duration. This property can be used 1 time per week, or after the mythallar has been fueled by a magic item (up to DM Discretion).",
 						"Any creature that touches the globe of the mythallar must make a DC 30 Constitution saving throw, taking {@damage 30d10 + 100} force damage on a failed save, or half as much damage on a successful one. Any object that touches the globe, other than some artifacts or the mythallar's cradle, is disintegrated instantly (no save)."
 					]
 				},
@@ -8586,11 +8892,10 @@
 					"type": "entries",
 					"name": "Transfer Attunement",
 					"entries": [
-						"You can use an action to touch a willing spellcaster. That creature attunes to the spelljamming helm immediately, and your attunement to it ends."
+						"You can use an action to touch a willing spellcaster. That creature attunes to the Spelljamming Mythallar immediately, and your attunement to it ends."
 					]
 				}
-			],
-			"hasFluffImages": false
+			]
 		},
 		{
 			"name": "Belt of Utility",
@@ -9037,6 +9342,44 @@
 			"entries": [
 				"This necklace is a gift from the Matron of Ravens, Markuul, it can be used to trap a soul and bind it to a Domain within the Shadowfell. As a reaction when a creature dies within 120 feet of you you can bind the soul to the necklace. However, if the you die while wearing it your soul shall be bound instead. Upon a soul being bound the necklace vanishes and your attunement ends."
 			]
+		},
+		{
+			"name": "Ram of Silent Entry",
+			"wondrous": true,
+			"tier": "major",
+			"rarity": "rare",
+			"source": "KimJongTrillsCustomContent",
+			"entries": [
+				"You can use the Ram of Silent Entry, like a portable ram to break down doors. When doing so, you gain a +4 bonus on the Strength check. One other character can help you use the ram, giving you advantage on this check.The ram also has a button you can activate as an action to make your next strike against the door in silence, once this property is used it cannot be used again until the next dawn."
+			]
+		},
+		{
+			"name": "Skyrider's Board",
+			"source": "KimJongTrillsCustomContent",
+			"tier": "major",
+			"rarity": "rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"The Skyrider's Board is a common tool among the Air Zashnik with each of their warriors needing to undergo a trip to the Plane of Air to retrieve the reagents, this one belonged to Gustav Breeze Chief of the Air Zashnik.",
+				"While you are mounted on the Skyrider's Board, you can use an action to cast the {@spell levitate} spell on yourself at will. If your concentration drops and you would fall, the board casts {@spell feather fall} on you."
+			]
+		},
+		{
+			"name": "Scholar's Knuckles",
+			"source": "KimJongTrillsCustomContent",
+			"tier": "major",
+			"rarity": "rare",
+			"reqAttune": "by a spellcaster",
+			"reqAttuneTags": [
+				{
+					"spellcasting": true
+				}
+			],
+			"entries": [
+				"These Knuckle Dusters are crafted from Divinium and allow a caster to channel their magical ability into martial prowess. While attuned you gain the fighting style, Unarmed Fighting, and melee attacks you make with the Scholar's Knuckles are made with your spell attack modifier."
+			],
+			"hasFluffImages": false
 		}
 	],
 	"legendaryGroup": [
@@ -9056,6 +9399,82 @@
 			"regionalEffects": [],
 			"mythicEncounter": [],
 			"source": "KimJongTrillsCustomContent"
+		}
+	],
+	"spell": [
+		{
+			"name": "Mellburt's Tower",
+			"source": "KimJongTrillsCustomContent",
+			"page": 0,
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a fragment of stone, wood, or other building material"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 24
+					}
+				}
+			],
+			"entries": [
+				"You conjure a two-story tower made of the material used as a component for the spell. The tower can be round or square in shape. Each level of the tower is 10 feet tall and has a radius of 20 feet. The front door has a lock with key that uses your spellcasting DC, as do all other locks conjured by this spell. Access between levels consists of a spiral staircase. Each level takes one of the following forms, chosen by you when you cast the spell:",
+				{
+					"type": "list",
+					"items": [
+						"A master bedroom with a luxurious bed, couch, chest, study desk, and magical fireplace",
+						"A barracks style room with 8 single beds and dressers for storage.",
+						"A workshop with an alchemical (or other artisan station) station, fully stocked bookshelves of basic texts the caster has read, parchments, ink, and ink pens",
+						"A dining space with a kitchen, dining table, chairs, and magical fireplace.",
+						"A lounge with couches, armchairs, card table, and magical fireplace.",
+						"A spa with toilets, washtubs, a magical steam brazier, and sauna benches",
+						"An observatory with a telescope and maps of the night sky.",
+						"A dungeon with 4 locking cells, of which you have the keys (this can be an underground level if desired).",
+						"An open rooftop (this must be the top level).",
+						"An unfurnished, empty room."
+					]
+				},
+				"The interior of the tower is warm and dry, regardless of conditions outside. Any equipment or furnishings conjured with the tower dissipate into smoke if removed from it. At the end of the spell's duration, all creatures and objects within the tower that were not created by the spell appear safely outside on the ground, and all traces of the tower and its furnishings disappear.",
+				"You can cast this spell again while it is active to maintain the tower's existence for another 24 hours. You can create a permanent tower by casting this spell in the same location and with the same configuration every day for one year."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the tower can have one additional story for each slot level beyond 3rd."
+					]
+				}
+			],
+			"miscTags": [
+				"PRM"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
 		}
 	]
 }
