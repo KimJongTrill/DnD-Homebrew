@@ -320,6 +320,7 @@
 			<stat name="strength:max" value="2" />
 		</rules>
 	</element>
+	
 	<element name="Mote of Knowledge (Dormant)" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_MOK_1">
 		<description>
 			<p>A Spellshard of endless volume able to hold as much information as one can find, gifted to Jarzamel by Ceritas herself imbued with her Divine energy, given as a reward for the Witchlight Warriors answering her call.</p>
@@ -347,6 +348,7 @@
 			<stat name="wizard:spellcasting:prepare" value="1" />
 		</rules>
 	</element>
+	
 	<element name="Bloodwell Vial of Wealth (Dormant)" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_BVOW_1">
 		<description>
 			<p>The Bloodwell of Wealth was once a standard Bloodwell Vial but has been imbued with a Divine Spark, when Gerry DeMarkk and the Witchlight Warriors delved into a Temple of Rikkus to prove their worth.The Divine Spark changed the existing Bloobwell Vial that called to Gerry all those years ago in that shop, into a more extravagant version adorned with fine gems and the golden symbol of Rikkus etched into the glass vial. To attune to this vial, you must place a few drops of your blood into it. The vial can't be opened while your attunement to it lasts. If your attunement to the vial ends, the contained blood turns to ash.</p>
@@ -372,6 +374,7 @@
 			<stat name="spellcasting:dc" value="1" />
 		</rules>
 	</element>
+	
 	<element name="Rings of the Trickster (Dormant)" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ROT_1">
 		<description>
 			<p>When Unamed and the Witchlight Warriors were tested by Haymil the spark given to Unamed took the form of two rings. These paired rings are engraved with small knives and other bladed weapons in an intricate pattern that conceals the true design to anyone but the attuned wearer.</p>
@@ -393,6 +396,7 @@
 			<set name="slot">ring</set>
 		</setters>
 	</element>
+	
 	<element name="Markings of the Wild (Dormant)" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_MOW_1">
 		<description>
 			<p>Upon the Witchlight Warriors proving their worth to Verdana she gifted Benax a Divine Spark that altered his existing tattoo, enhancing it further.This tattoo when placed in the skin and attuned covers the wearers limbs and body with intricate vine patterns along with the symbol of Verdana appearing on the forehead</p>
@@ -418,6 +422,7 @@
 			<stat name="constitution:max" value="2" />
 		</rules>
 	</element>
+	
 	<element name="Sword of The Elements" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_SOTE">
 		<description>
 			<p>This item appears to be a longsword hilt with a place for a small badge on the bottom. While grasping the hilt, you can use a bonus action to cause a blade of pure energy to spring into existence, or make the blade disappear. While the blade exists, this magic longsword has the finesse property and deals force instead of slashing. If you are proficient with shortswords or longswords, you are proficient with the <em>Sword of the Elements</em>.</p>
@@ -434,6 +439,7 @@
 			<set name="weapon">Longsword</set>
 		</setters>
 	</element>
+	
 	<element name="Crystal Greataxe" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_AUGUSTE">
 		<description>
 			<p>This Crystal Greataxe was passed down through the generations of the Auguste family lineage since early in the Great War passing from warrior to warrior eventually to Logen, who met the orginal owner of the axe, Auguste the Crystal Dragon. Auguste bonded Logen to the axe making it tied to his existence rather than himself before he was killed by Gorotto.</p>
@@ -456,6 +462,7 @@
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
 		</rules>
 	</element>
+	
 	<element name="Divinium Armor" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_DIVINIUM_ARMOR">
 		<description>
 			<p>This suit of armor is reinforced with a magically enhanced metal alloy called Divinium, an alloy of Ethereum and Adamantine bonded by magic. While you're wearing the armor, any critical hit against you becomes a normal hit. In addition, when you are subjected to a magical effect that allows you to make a Strength or Constitution saving throw to take only half damage, you instead take no damage if you succeed on the saving throw.</p>
