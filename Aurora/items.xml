@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.5.2">
+		<update version="1.5.3">
 			<file name="items.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/items.xml" />
 		</update>
 	</info>
@@ -455,5 +455,21 @@
 		<rules>
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
 		</rules>
+	</element>
+	<element name="Divinium Armor" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_DIVINIUM_ARMOR">
+		<description>
+			<p>This suit of armor is reinforced with a magically enhanced metal alloy called Divinium, an alloy of Ethereum and Adamantine bonded by magic. While you're wearing the armor, any critical hit against you becomes a normal hit. In addition, when you are subjected to a magical effect that allows you to make a Strength or Constitution saving throw to take only half damage, you instead take no damage if you succeed on the saving throw.</p>
+		</description>
+		<setters>		
+			<set name="keywords">medium, heavy</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">body</set>
+			<set name="type" addition="medium or heavy, but not hide">Armor</set>
+			<set name="rarity">Rare</set>
+			<set name="armor">(ID_INTERNAL_ARMOR_GROUP_MEDIUM||ID_INTERNAL_ARMOR_GROUP_HEAVY),!Hide</set>
+			<set name="name-format">Divinium {{parent}}</set>
+		</setters>
 	</element>
 </elements>
