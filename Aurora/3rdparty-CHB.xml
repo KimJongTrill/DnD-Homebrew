@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.1.0">
+		<update version="1.1.1">
 			<file name="3rdparty-CHB.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/3rdparty-CHB.xml" />
 		</update>
 	</info>
@@ -38,5 +38,76 @@
 			<set name="attunement">true</set>
 			<set name="rarity">Uncommon</set>
 		</setters>
+	</element>
+	<element name="Hybrid Transformation" type="Feat" source="Third Party Curated Homebrew" id="ID_CHB_MMM_FEAT_LYCANFEAT">
+		<prerequisite>The Dm has said that  you have been cursed with Lycanthropy</prerequisite>
+		<description>
+			<p>
+				<em>Prerequisite: You ave been cursed with Lycanthropy</em>
+			</p>
+			<p>You have begun to change, your form shifting to a more bestial one. You gain the following benefits:</p>
+			<ul>
+				<p>
+					<p class="indent">
+						<strong>
+							<em>Heightened Senses.</em>
+						</strong>You begin to adopt the improved abilities of a natural predator. You gain advantage on Wisdom (Perception) checks that rely on hearing or smell.
+					</p>
+
+					<p class="indent">
+						<strong>
+							<em>Hybrid Transformation.</em>
+						</strong>You begin to learn to control the lycanthropic curse that now lives in your blood. As an action, you can transform into your Hybrid form. This form lasts for 10 minutes. You can speak, use equipment, and wear armor in this form. You can revert to your normal form earlier by using an action on your turn. You automatically revert to your normal form in you fall unconscious, drop to 0 hit points, or die. The benefits of this form replace the rules for Lycanthropy withing the Monster Manual.</p>
+					<p>You regain expended uses when you finish a short or long rest.</p>
+					<em>While you are transformed, you gain the following features:</em>
+					<p></p>
+					<p class="indent">
+						<b>
+							<i>Feral Might.</i>
+						</b> You gain a bonus to melee damage rolls equal to half your proficiency bonus (rounded down). You also have advantage on Strength checks and Strength saving throws.
+					</p>
+					<p class="indent">
+						<b>
+							<i>Resilient Hide.</i>
+						</b> You have resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons that aren’t silvered. While you are not wearing heavy armor, you gain a +1 bonus to your AC.
+					</p>
+					<p class="indent">
+						<b>
+							<i>Predatory Strikes.</i>
+						</b>You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes. When you use the Attack action with an unarmed strikem you can make another unarmed strike as a bonus action.
+					</p>
+					<p class="indent">Your unarmed strikes deal 1d6 slashing damage.</p>
+					<p class="indent">
+						<b>
+							<i>Cursed Weakness.</i>
+						</b>  You have vulnerability to damage from silvered weapons.
+					</p>
+					<p class="indent">
+						<b>
+							<i>Bloodlust.</i>
+						</b> At the start of your turn, if you’ve taken any damage since the beginning of your last turn, you must make a Wisdom saving throw to maintain control. The DC equals 10, or half of the total damage you’ve taken from attacks since your last turn, whichever number is higher. On a failed save, you must move directly towards the nearest creature to you and use the Attack action against the creature. If there is more than one possible target, the DM chooses the target. You then regain control for the remainder of your turn.
+					</p>
+					<p class="indent">If you are under an effect that prevents you from concentrating (like the Barbarian’s rage feature), you automatically fail this saving throw.</p>
+				</p>
+			</ul>
+		</description>
+		<sheet>
+			<description usage="2/Long+Short Rest">
+				HEIGHTENED SENSES: You gain ADV on WIS (Perception) checks that rely on hearing or smell.
+				HYBRID TRANSFORMATION: As an action, you can transform into your Hybrid form. This form lasts for 10 minutes. You can speak, use equipment, and wear armor in this form. You can revert to your normal form by using an action. You revert to your normal form if you fall unconscious, drop to 0 hit points, or die. While transformed, you gain the following features:
+				
+				RESILIENT HIDE: You have resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons that aren’t silvered. While not wearing heavy armor, you gain a +1 bonus AC.
+				CURSED WEAKNESS: You are vulnerable to dmg from silvered weapons.
+				PREDATORY STRIKES: You can use DEX instead of STR for the atk and dmg rolls of your unarmed strikes. When you use the Attack action with an unarmed strike you can make another as a bonus action. Your unarmed strikes deal 1d6 slashing damage.
+				FERAL MIGHT: You gain a +{{feral might:damage}} to melee dmg rolls. You have ADV on STR checks and STR ST.
+				BLOODLUST: At the start of your turn, if you’ve taken any dmg since the start of your last turn, you must make a WIS ST. The DC equals 10, or half of the total dmg you’ve taken from atks since your last turn, whichever is higher. On a failed ST, you must move directly towards the nearest creature and use the atk action against it. If there is more than one possible target, the DM chooses. You then regain control for the rest of your turn.
+
+				If you are under an effect that prevents you from concentrating, you automatically fail this ST.
+			</description>
+		</sheet>
+		<rules>
+			<stat name="ac:misc" value="1" equipped="![armor:heavy]" />
+			<stat name="feral might:damage" value="proficiency:half" />
+		</rules>
 	</element>
 </elements>
