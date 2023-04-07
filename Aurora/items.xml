@@ -1,70 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.6">
+		<update version="1.6.1">
 			<file name="items.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/items.xml" />
 		</update>
 	</info>
-	
-	<element name="Brass Knuckles" type="Weapon" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_KNUCKS_B">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
-		<description>
-			<p>These melee weapons receive the same benefits as your unarmed strikes.</p>
-		</description>
-		<setters>
-			<set name="category">Weapons</set>
-			<set name="cost" currency="gp">5</set>
-			<set name="weight" lb=".5">.5 lb.</set>
-			<set name="slot">onehand</set>
-			<set name="damage" type="bludgeoning">1d4</set>
-			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB</set>
-		</setters>
-	</element>
-	
-	<element name="Barbed Kunckles" type="Weapon" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_KNUCKS_S">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
-		<description>
-			<p>These melee weapons receive the same benefits as your unarmed strikes.</p>
-		</description>
-		<setters>
-			<set name="category">Weapons</set>
-			<set name="cost" currency="gp">5</set>
-			<set name="weight" lb=".5">.5 lb.</set>
-			<set name="slot">onehand</set>
-			<set name="damage" type="slashing">1d4</set>
-			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB</set>
-		</setters>
-	</element>
-	
-	<element name="Spiked Knuckles" type="Weapon" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_KNUCKS_P">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
-		<description>
-			<p>These melee weapons receive the same benefits as your unarmed strikes.</p>
-		</description>
-		<setters>
-			<set name="category">Weapons</set>
-			<set name="cost" currency="gp">5</set>
-			<set name="weight" lb=".5">.5 lb.</set>
-			<set name="slot">onehand</set>
-			<set name="damage" type="piercing">1d4</set>
-			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB</set>
-		</setters>
-	</element>
-	
-	<element name="Polehammer" type="Weapon" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_POLEHAMMER">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
-		<description>
-			<p>This weapon is a polearm with a large blunt object attached to one end.</p>
-		</description>
-		<setters>
-			<set name="category">Weapons</set>
-			<set name="cost" currency="gp">20</set>
-			<set name="weight" lb="6">6 lb.</set>
-			<set name="slot">twohand</set>
-			<set name="damage" type="bludgeoning">1d10</set>
-			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_PIKE</set>
-		</setters>
-	</element>
     
 	<element name="Amulet of Lathander" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_AMULET_OF_LATHANDER">
 		<description>
@@ -344,7 +284,8 @@
 			<set name="name-format">Divinium {{parent}}</set>
 		</setters>
 	</element>
-		<element name="Spellwoven Robes (Intelligence)" type="Magic Item" source="Third Party Curated Homebrew" id="ID_CHB_TGS_SPELLWOVEN_INT">
+	
+	<element name="Spellwoven Robes (Intelligence)" type="Magic Item" source="Third Party Curated Homebrew" id="ID_CHB_TGS_SPELLWOVEN_INT">
 		<description>
 			<p>These robes are unique to the wearer and are spun from special, magic-sensitive threads. While wearing these robes, you gain an additional way to calculate your AC. Your AC equals 10 + your spellcasting ability modifier. Whenever you cast a spell of first level or higher, you can also change the apparent style, color, and apparent material of the robe. Regardless of its appearance, it is always a robe and its weight remains the same. Glowing, arcane glyphs appear on the robe's fabric when you cast a spell before fading away a moment later.</p>
 		</description>
@@ -363,7 +304,8 @@
 			<stat name="ac:calculation" value="ac:spellwoven robes" bonus="calculation" equipped="[armor:none]" alt="Spellwoven Robes (Intelligence)" />
 		</rules>
 	</element>
-		<element name="Spellwoven Robes (Wisdom)" type="Magic Item" source="Third Party Curated Homebrew" id="ID_CHB_TGS_SPELLWOVEN_WIS">
+	
+	<element name="Spellwoven Robes (Wisdom)" type="Magic Item" source="Third Party Curated Homebrew" id="ID_CHB_TGS_SPELLWOVEN_WIS">
 		<description>
 			<p>These robes are unique to the wearer and are spun from special, magic-sensitive threads. While wearing these robes, you gain an additional way to calculate your AC. Your AC equals 10 + your spellcasting ability modifier. Whenever you cast a spell of first level or higher, you can also change the apparent style, color, and apparent material of the robe. Regardless of its appearance, it is always a robe and its weight remains the same. Glowing, arcane glyphs appear on the robe's fabric when you cast a spell before fading away a moment later.</p>
 		</description>
@@ -382,6 +324,7 @@
 			<stat name="ac:calculation" value="ac:spellwoven robes" bonus="calculation" equipped="[armor:none]" alt="Spellwoven Robes (Wisdom)" />
 		</rules>
 	</element>
+	
 	<element name="Spellwoven Robes (Charisma)" type="Magic Item" source="Third Party Curated Homebrew" id="ID_CHB_TGS_SPELLWOVEN_CHA">
 		<description>
 			<p>These robes are unique to the wearer and are spun from special, magic-sensitive threads. While wearing these robes, you gain an additional way to calculate your AC. Your AC equals 10 + your spellcasting ability modifier. Whenever you cast a spell of first level or higher, you can also change the apparent style, color, and apparent material of the robe. Regardless of its appearance, it is always a robe and its weight remains the same. Glowing, arcane glyphs appear on the robe's fabric when you cast a spell before fading away a moment later.</p>
