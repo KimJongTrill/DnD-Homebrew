@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.4">
+		<update version="1.4.1">
 			<file name="QOL.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/QOL.xml" />
 		</update>
 	</info>
@@ -165,6 +165,7 @@
 			<stat name="attunement:max" value="6" bonus="base"/>
 		</rules>
 	</element>
+	
 	<element name="DM Gift: Expertise" type="Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_DMG_Expertise">
 		<description>
 			<p><i>KJT Homebrew</i></p>
@@ -183,6 +184,7 @@
 			<select type="Class Feature" name="Expertise, DM Gift" supports="Expertise, Skill" />
 		</rules>
 	</element>
+	
 	<element name="Custom Background" type="Background" source="Player’s Handbook" id="ID_WOTC_PHB_BACKGROUND_CUSTOM">
 		<description>
 			<p>You might want to tweak some of the features of a background so it better fits your character or the campaign setting. To customize a background, you can replace one feature with any other one, choose any two skills, and choose a total of two tool proficiencies or languages from the sample backgrounds. You can either use the equipment package from your background or spend coin on gear as described in chapter 5. (If you spend coin, you can’t also take the equipment package suggested for your class.) Finally, choose two personality traits, one ideal, one bond, and one flaw. If you can’t find a feature that matches your desired background, work with your DM to create one.</p>
@@ -253,7 +255,7 @@
 		</rules>
 	</element>
 
-		<element name="Crystal Dragon" type="Archetype Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_CRYSTAL">
+	<element name="Crystal Dragon" type="Archetype Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_CRYSTAL">
 		<supports>Dragon Ancestor</supports>
 		<description>
 			<p>You choose the crystal dragon as your ancestor. The radiant damage type is used by features you gain later.</p>
@@ -266,7 +268,7 @@
 		</rules>
 	</element>
 
-		<element name="Emerald Dragon" type="Archetype Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_EMERALD">
+	<element name="Emerald Dragon" type="Archetype Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_EMERALD">
 		<supports>Dragon Ancestor</supports>
 		<description>
 			<p>You choose the emerald dragon as your ancestor. The psychic damage type is used by features you gain later.</p>
@@ -279,7 +281,7 @@
 		</rules>
 	</element>
 
-		<element name="Sapphire Dragon" type="Archetype Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_SAPPHIRE">
+	<element name="Sapphire Dragon" type="Archetype Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_SAPPHIRE">
 		<supports>Dragon Ancestor</supports>
 		<description>
 			<p>You choose the Sapphire dragon as your ancestor. The thunder damage type is used by features you gain later.</p>
@@ -292,7 +294,7 @@
 		</rules>
 	</element>
 
-		<element name="Topaz Dragon" type="Archetype Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_TOPAZ">
+	<element name="Topaz Dragon" type="Archetype Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_TOPAZ">
 		<supports>Dragon Ancestor</supports>
 		<description>
 			<p>You choose the topaz dragon as your ancestor. The necrotic damage type is used by features you gain later.</p>
@@ -304,6 +306,7 @@
 			<stat inline="true" name="dragon ancestor damage type" value="Necrotic" />
 		</rules>
 	</element>
+	
 	<element name="Divine Soul Additional Cleric Spells" type="Class Feature" source="Internal" id="ID_OCF_SORCERER_DIVINE_SOUL_ADDITIONAL_CLERIC_SPELLS">
 		<description>
 			<p><i>1st-level divine soul sorcerer feature</i></p>
@@ -353,6 +356,7 @@
 			<grant type="Class Feature" id="ID_OCF_SORCERER_DIVINE_SOUL_ADDITIONAL_CLERIC_SPELLS" requirements="ID_WOTC_XGTE_SORCERER_ARCHETYPE_DIVINE_SOUL"/>
 		</rules>
 	</element>
+	
 	<element name="Expanded Spell List: Divine Soul Sorcerer" type="Item" source="Internal" id="ID_OCF_ITEM_EXPANDED_DIVINE_SOUL">
 		<compendium display="false" />
 		<description>
@@ -379,6 +383,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_GREATER_RESTORATION" level="9" spellcasting="Sorcerer" />
 		</rules>
 	</element>
+	
 	<element name="Expanded Spell List: Draconic Bloodline Sorcerer" type="Item" source="Internal" id="ID_OCF_ITEM_EXPANDED_DRACONIC_BLOODLINE">
 		<compendium display="false" />
 		<description>
@@ -406,6 +411,7 @@
 			<grant type="Spell" id="ID_WOTC_FTOD_SPELL_SUMMON_DRACONIC_SPIRIT" level="9" spellcasting="Sorcerer" />
 		</rules>
 	</element>
+	
 	<element name="Expanded Spell List: Shadow Magic Sorcerer" type="Item" source="Internal" id="ID_OCF_ITEM_EXPANDED_SHADOW_MAGIC">
 		<compendium display="false" />
 		<description>
@@ -432,6 +438,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_SEEMING" level="9" spellcasting="Sorcerer" />
 		</rules>
 	</element>
+	
 	<element name="Expanded Spell List: Storm Sorcerer" type="Item" source="Internal" id="ID_OCF_ITEM_EXPANDED_STORM_SORCERY">
 		<compendium display="false" />
 		<description>
@@ -459,6 +466,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_DESTRUCTIVE_WAVE" level="9" spellcasting="Sorcerer" />
 		</rules>
 	</element>
+	
 	<element name="Expanded Spell List: Wild Magic Sorcerer" type="Item" source="Internal" id="ID_OCF_ITEM_EXPANDED_WILD_MAGIC">
 		<compendium display="false" />
 		<description>
