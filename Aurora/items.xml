@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.6.2">
+		<update version="1.6.3">
 			<file name="items.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/items.xml" />
 		</update>
 	</info>
@@ -402,8 +402,8 @@
 			<set name="rarity">Rare</set>
 		</setters>
 		<rules>
-			<grant type="Spell" id="ID_PHB_LEVITATE" />
-			<grant type="Spell" id="ID_PHB_FEATHER_FALL" />
+			<grant type="Spell" id="ID_PHB_SPELL_LEVITATE" />
+			<grant type="Spell" id="ID_PHB_SPELL_FEATHER_FALL" />
 		</rules>
 	</element>
 </elements>
