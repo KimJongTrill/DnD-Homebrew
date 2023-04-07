@@ -356,7 +356,7 @@
 			<ul>
 				<li>You gain a +1 bonus to spell attack rolls and to the saving throw DCs of your spells.</li>
 				<li>When you roll any Hit Dice to recover hit points while you are carrying the vial, you can regain 5 sorcery points. This property of the vial can't be used again until the next dawn.</li>
-				<li>You can cast use the vial to cast the following spells: *cure wounds* [as a 2nd-level spell], *lesser restoration*, and *shield of faith*.</li>
+				<li>You can cast use the vial to cast the following spells: cure wounds (as a 2nd-level spell), lesser restoration, and shield of faith. You can cast each spell once per day.</li>
 			</ul>
 		</description>
 		<setters>
@@ -372,6 +372,9 @@
 		<rules>
 			<stat name="spellcasting:attack" value="1" />
 			<stat name="spellcasting:dc" value="1" />
+			<grant type="Spell" id="ID_PHB_SPELL_CURE_WOUNDS" />
+			<grant type="Spell" id="ID_PHB_SPELL_LESSER_RESTORATION" />
+			<grant type="Spell" id="ID_PHB_SPELL_SHIELD_OF_FAITH" />
 		</rules>
 	</element>
 	
@@ -534,6 +537,35 @@
 			<stat name="ac:spellwoven robes" value="10" />
 			<stat name="ac:spellwoven robes" value="charisma:modifier" />
 			<stat name="ac:calculation" value="ac:spellwoven robes" bonus="calculation" equipped="[armor:none]" alt="Spellwoven Robes (Charisma)" />
+		</rules>
+	</element>
+	
+	<element name="Staff of the Dryad" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_DRYAD_STAFF">
+		<description>
+			<p>This staff can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it.</p>
+			<p>The staff has 5 charges for the following properties. It regains 1d4 + 1 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff loses its properties and becomes a nonmagical quarterstaff.</p>
+			<p>You can use an action to expend 1 or more of the staff's charges to cast one of the following spells from it, using your spell save DC: entangle (1 charge), pass without trace (2 charges), barkskin (2 charges), locate animals or plants (1 charge), speak with animals (1 charge), or speak with plants (1 charge). You can also use an action to cast the druidcraft spell from the staff without using any charges.</p>
+			<p class="indent"><strong><em>Tree Form.</em></strong> You can use an action to plant one end of the staff in fertile earth and expend 1 charge to transform the staff into a healthy tree. The tree is 60 feet tall and has a 5-foot-diameter trunk, and its branches at the top spread out in a 20-foot radius. The tree appears ordinary but radiates a faint aura of transmutation magic if targeted by detect magic. While touching the tree and using another action to speak its command word, you return the staff to its normal form. Any creature in the tree falls when it reverts to a staff.</p>
+		</description>
+		<setters>
+			<set name="category">Staffs</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="weapon">Quarterstaff</set>
+			<set name="type">Staff</set>
+			<set name="attunement" addition="by a spellcaster">true</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">2</set>
+			<set name="charges">5</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_PASS_WITHOUT_TRACE" />
+			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_ANIMALS" />
+			<grant type="Spell" id="ID_PHB_SPELL_ENTANGLE" />
+			<grant type="Spell" id="ID_PHB_SPELL_LOCATE_ANIMALS_OR_PLANTS" />
+			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_PLANTS" />
+			<grant type="Spell" id="ID_PHB_SPELL_DRUIDCRAFT" />
 		</rules>
 	</element>
 </elements>
