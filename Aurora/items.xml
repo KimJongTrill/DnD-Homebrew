@@ -389,7 +389,7 @@
 	
 	<element name="Skyrider's Board" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_SKYRIDER_BOARD">
 		<description>
-			<p>The Skyrider's Board is a common tool among the Air Zashnik with each of their warriors needing to undergo a trip to the Plane of Air to retrieve the reagents, this one belonged to Gustav Breeze Chief of the Air Zashnik.</p>
+			<p>The Skyrider's Board is a common tool among the Air Zashniik with each of their warriors needing to undergo a trip to the Plane of Air to retrieve the reagents, this one belonged to Gustav Breeze Chief of the Air Zashnik.</p>
 			<p>While you are mounted on the Skyrider's Board, you can use an action to cast the levitate spell on yourself at will. The board casts feather fall on you anytime you fall when mounted.</p>
 		</description>
 		<setters>
