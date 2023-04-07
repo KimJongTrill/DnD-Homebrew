@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
   <info>
-    <update version="1.4">
+    <update version="1.4.1">
       <file name="KJTCC.index" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/KJTCC.index" />
     </update>
   </info>
@@ -14,6 +14,7 @@
     <file name="teruvian-grung.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/teruvian-grung.xml" />
     <file name="teruvian-gunslinger.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/teruvian-gunslinger.xml" />
     <file name="3rdparty-CHB.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/3rdparty-CHB.xml" />
-    <file name="Artifacts.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/Artifacts.xml" />
+    <file name="artifacts.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/artifacts.xml" />
+    <file name="weapon-base.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/weapon-base.xml" />
   </files>
 </index>
