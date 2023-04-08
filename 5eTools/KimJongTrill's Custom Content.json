@@ -611,179 +611,6 @@
 			]
 		},
 		{
-			"name": "Ravager Fanatic",
-			"source": "KimJongTrillsCustomContent",
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"any race"
-				]
-			},
-			"alignment": [
-				"C",
-				"E"
-			],
-			"ac": [
-				{
-					"ac": 14,
-					"from": [
-						"{@item studded leather armor|phb}"
-					]
-				}
-			],
-			"hp": {
-				"average": 33,
-				"formula": "6d8 + 6"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 11,
-			"dex": 14,
-			"con": 12,
-			"int": 10,
-			"wis": 14,
-			"cha": 14,
-			"skill": {
-				"deception": "+4",
-				"persuasion": "+4",
-				"religion": "+2"
-			},
-			"passive": 12,
-			"languages": [
-				"any one language (usually Common)"
-			],
-			"cr": "2",
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"The fanatic is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). The fanatic has the following cleric spells prepared:"
-					],
-					"spells": {
-						"0": {
-							"spells": [
-								"{@spell light}",
-								"{@spell thaumaturgy}",
-								"{@spell toll the dead|XGE}"
-							]
-						},
-						"1": {
-							"spells": [
-								"{@spell bane}",
-								"{@spell command}",
-								"{@spell inflict wounds}",
-								"{@spell shield of faith}"
-							],
-							"slots": 4
-						},
-						"2": {
-							"spells": [
-								"{@spell hold person}",
-								"{@spell spiritual weapon}"
-							],
-							"slots": 3
-						}
-					},
-					"ability": "wis",
-					"type": "spellcasting"
-				}
-			],
-			"trait": [
-				{
-					"name": "Dark Devotion",
-					"entries": [
-						"The fanatic has advantage on saving throws against being {@condition charmed} or {@condition frightened}."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"The fanatic makes two melee attacks."
-					]
-				},
-				{
-					"name": "Dagger",
-					"entries": [
-						"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one creature. {@h}4 ({@damage 1d4 + 2}) piercing damage."
-					]
-				},
-				{
-					"name": "Spells",
-					"entries": [
-						"{@atk sp} {@hit 4} to hit or {@dc 12}, varied range ({@damage 1d8}) ({@damage 1d12}) ({@damage 1d8 + 2}) ({@damage 3d10}) ({@damage 4d10})"
-					]
-				}
-			],
-			"environment": [
-				"urban"
-			],
-			"fluff": {
-				"name": "Cult Fanatic",
-				"source": "MM",
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									"Fanatics are often part of a cult's leadership, using their charisma and dogma to influence and prey on those of weak will. Most are interested in personal power above all else"
-								]
-							}
-						]
-					}
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "internal",
-							"path": "bestiary/MM/Cult Fanatic.jpg"
-						}
-					}
-				]
-			},
-			"tokenUrl": "https://get.5e.tools/img/MM/Cult Fanatic.png",
-			"soundClip": {
-				"type": "external",
-				"url": "https://get.5e.tools/audio/bestiary/cult-fanatic.mp3"
-			},
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"C",
-				"X"
-			],
-			"damageTags": [
-				"P"
-			],
-			"spellcastingTags": [
-				"CC"
-			],
-			"miscTags": [
-				"RW",
-				"MW",
-				"THW"
-			],
-			"conditionInflictSpell": [
-				"paralyzed",
-				"prone"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true,
-			"damageTagsSpell": [
-				"N",
-				"O"
-			]
-		},
-		{
 			"name": "Shadowtooth Black, Champion of Winter",
 			"shortName": "Shadowtooth Black",
 			"isNamedCreature": true,
@@ -1880,240 +1707,6 @@
 			]
 		},
 		{
-			"name": "Wendigo",
-			"source": "KimJongTrillsCustomContent",
-			"size": [
-				"L"
-			],
-			"type": "fey",
-			"alignment": [
-				"C",
-				"E"
-			],
-			"ac": [
-				{
-					"ac": 15,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"special": "200"
-			},
-			"speed": {
-				"walk": 40
-			},
-			"str": 20,
-			"dex": 16,
-			"con": 18,
-			"int": 10,
-			"wis": 16,
-			"cha": 18,
-			"skill": {
-				"perception": "+7",
-				"stealth": "+7",
-				"survival": "+7"
-			},
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"passive": 17,
-			"immune": [
-				"cold",
-				{
-					"immune": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical attacks not made with silvered weapons",
-					"cond": true
-				}
-			],
-			"conditionImmune": [
-				"charmed",
-				"exhaustion",
-				"frightened",
-				"paralyzed",
-				"stunned"
-			],
-			"languages": [
-				"Common",
-				"Elvish",
-				"and Sylvan; telepathy 60 ft."
-			],
-			"cr": "9",
-			"spellcasting": [
-				{
-					"name": "Innate Spellcasting",
-					"headerEntries": [
-						"The wendigo's innate spellcasting ability is Charisma (spell save {@dc 16}). The wendigo can innately cast the following spells, without providing material components:"
-					],
-					"will": [
-						"{@spell chill touch} ({@dice 3d8})",
-						"{@spell dancing lights}",
-						"{@spell detect magic}"
-					],
-					"daily": {
-						"1e": [
-							"{@spell greater invisibility}",
-							"{@spell wind walk} (self only)."
-						]
-					},
-					"ability": "cha",
-					"type": "spellcasting"
-				}
-			],
-			"trait": [
-				{
-					"name": "Charge",
-					"entries": [
-						"If the wendigo moves at least 10 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 ({@damage 2d8}) piercing damage. If the target is a creature, it must succeed on a {@dc 15} Strength saving throw or be knocked {@condition prone}."
-					]
-				},
-				{
-					"name": "Keen Hearing and Smell",
-					"entries": [
-						"The wendigo has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
-					]
-				},
-				{
-					"name": "Regeneration",
-					"entries": [
-						"The wendigo regains 10 hit points at the start of its turn. If the wendigo takes fire damage, this trait doesn't function at the start of the wendigo's next turn. The wendigo dies only if it starts its turn with 0 hit points and doesn't regenerate."
-					]
-				},
-				{
-					"name": "Legendary Resistance (2/Day)",
-					"entries": [
-						"If the Wendigo fails a save it can choose to succeed instead"
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"The wendigo makes three melee attacks: one with its ravenous bite or gore and two with its claws."
-					]
-				},
-				{
-					"name": "Ravenous Bite",
-					"entries": [
-						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) piercing damage plus 7 ({@damage 2d6}) necrotic damage and the target must succeed on a {@dc 16} Constitution saving throw against disease or become {@condition poisoned} until the disease is cured. While {@condition poisoned}, the target's Wisdom score is reduced by {@dice 1d4} at the start of each of its turns. This reduction will not cause a target's score to go below 3. When a target's Wisdom reaches a score of 3, it becomes insane and ravenous. While in this state, the creature acts as an ally of the wendigo, gains a bite attack ({@damage 1d6} piercing damage), and must spend its action each turn making a bite attack against an enemy of the wendigo. The Wisdom score reduction lasts until the target finishes a short or long rest."
-					]
-				},
-				{
-					"name": "Claw",
-					"entries": [
-						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d6 + 5}) slashing damage."
-					]
-				},
-				{
-					"name": "Gore",
-					"entries": [
-						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) piercing damage."
-					]
-				},
-				{
-					"name": "Baleful Howl",
-					"entries": [
-						"The wendigo emits a terrifying howl. Every enemy within 300 feet of the wendigo that can hear it must succeed on a {@dc 16} Wisdom saving throw or be {@condition frightened} for 1 minute. A {@condition frightened} target that  starts its turn within 30 feet of the wendigo must use all its movement on that turn to get as far from the wendigo as possible, must finish the move before taking an action, and must take the most direct route, even if hazards lie that way. A {@condition frightened} target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
-						"A target that successfully saves is immune to the wendigo's baleful howl for the next 24 hours."
-					]
-				}
-			],
-			"traitTags": [
-				"Charge",
-				"Keen Senses",
-				"Legendary Resistances",
-				"Regeneration"
-			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"C",
-				"E",
-				"S",
-				"TP"
-			],
-			"damageTags": [
-				"N",
-				"P",
-				"S",
-				"Y"
-			],
-			"spellcastingTags": [
-				"I"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"conditionInflict": [
-				"frightened",
-				"poisoned",
-				"prone"
-			],
-			"conditionInflictSpell": [
-				"invisible",
-				"incapacitated"
-			],
-			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded2/token/wendigo.png",
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded2/wendigo.webp"
-						}
-					}
-				]
-			},
-			"damageTagsSpell": [
-				"N"
-			],
-			"legendary": [
-				{
-					"name": "Claw",
-					"entries": [
-						"Uses its claw attack twice against the same target."
-					]
-				},
-				{
-					"name": "Bite",
-					"entries": [
-						"Uses its bite attack"
-					]
-				},
-				{
-					"name": "Nimble Movement",
-					"entries": [
-						"Moves up to its movement speed without provoking opportunity attacks"
-					]
-				},
-				{
-					"name": "Charge (2 Actions)",
-					"entries": [
-						"Moves up to its movement speed and makes a gore attack."
-					]
-				}
-			],
-			"bonus": [
-				{
-					"name": "Maddening Whispers",
-					"entries": [
-						"As a bonus action, the wendigo chooses one creature it can see within 60 feet of it. The target must succeed on a {@dc 16} Wisdom saving throw, or it takes 13 ({@damage 2d8 + 4}) psychic damage and must use its reaction to move up to half its speed and make a melee weapon attack against one creature of the wendigo's choice that the wendigo can see. Constructs and undead are immune to this effect."
-					]
-				}
-			]
-		},
-		{
 			"name": "Minion of Dib",
 			"source": "KimJongTrillsCustomContent",
 			"size": [
@@ -3032,354 +2625,6 @@
 			]
 		},
 		{
-			"name": "Auguste, Crystal Dragon",
-			"group": [
-				"Gem Dragon"
-			],
-			"source": "KimJongTrillsCustomContent",
-			"size": [
-				"H"
-			],
-			"type": {
-				"type": "dragon",
-				"tags": [
-					"gem"
-				]
-			},
-			"alignment": [
-				"C",
-				"N"
-			],
-			"alignmentPrefix": "typically ",
-			"ac": [
-				{
-					"ac": 16,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"average": 172,
-				"formula": "15d12 + 75"
-			},
-			"speed": {
-				"walk": 40,
-				"burrow": 40,
-				"climb": 40,
-				"fly": 80
-			},
-			"str": 21,
-			"dex": 12,
-			"con": 21,
-			"int": 18,
-			"wis": 15,
-			"cha": 19,
-			"save": {
-				"dex": "+5",
-				"con": "+9",
-				"wis": "+6",
-				"cha": "+8"
-			},
-			"skill": {
-				"perception": "+10",
-				"stealth": "+9",
-				"survival": "+6"
-			},
-			"senses": [
-				"blindsight 60 ft.",
-				"darkvision 120 ft."
-			],
-			"passive": 20,
-			"resist": [
-				"cold",
-				"radiant"
-			],
-			"languages": [
-				"Common",
-				"Draconic",
-				"telepathy 120 ft."
-			],
-			"cr": "12",
-			"spellcasting": [
-				{
-					"name": "Spellcasting (Psionics)",
-					"headerEntries": [
-						"The dragon casts one of the following spells, requiring no spell components and using Intelligence as the spellcasting ability (spell save {@dc 16}):"
-					],
-					"will": [
-						"{@spell dancing lights}",
-						"{@spell detect thoughts}",
-						"{@spell guidance}"
-					],
-					"daily": {
-						"2e": [
-							"{@spell command}",
-							"{@spell greater restoration}",
-							"{@spell lesser restoration}",
-							"{@spell plane shift}",
-							"{@spell raulothim's psychic lance|FTD}",
-							"{@spell Tasha's mind whip|TCE}"
-						]
-					},
-					"ability": "int",
-					"type": "spellcasting"
-				}
-			],
-			"trait": [
-				{
-					"name": "Legendary Resistance (3/Day)",
-					"entries": [
-						"If the dragon fails a saving throw, it can choose to succeed instead."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"The dragon makes one Bite attack and two Claw attacks."
-					]
-				},
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}16 ({@damage 2d10 + 5}) piercing damage plus 4 ({@damage 1d8}) radiant damage."
-					]
-				},
-				{
-					"name": "Claw",
-					"entries": [
-						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d8 + 5}) slashing damage."
-					]
-				},
-				{
-					"name": "Scintillating Breath {@recharge 5}",
-					"entries": [
-						"The dragon exhales a burst of brilliant radiance in a 60-foot cone. Each creature in that area must make a {@dc 17} Constitution saving throw, taking 40 ({@damage 9d8}) radiant damage on a failed save, or half as much damage on a successful one. The dragon then gains 15 temporary hit points by absorbing a portion of the radiant energy."
-					]
-				}
-			],
-			"bonus": [
-				{
-					"name": "Change Shape",
-					"entries": [
-						"The dragon magically transforms into any creature that is Medium or Small, while retaining its game statistics (other than its size). This transformation ends if the dragon is reduced to 0 hit points or uses a bonus action to end it."
-					]
-				},
-				{
-					"name": "Psychic Step",
-					"entries": [
-						"The dragon magically teleports to an unoccupied space it can see within 60 feet of it."
-					]
-				}
-			],
-			"legendary": [
-				{
-					"name": "Claw",
-					"entries": [
-						"The dragon makes one Claw attack."
-					]
-				},
-				{
-					"name": "Psionics (Costs 2 Actions)",
-					"entries": [
-						"The dragon uses Psychic Step or Spellcasting."
-					]
-				},
-				{
-					"name": "Starlight Strike (Costs 3 Actions)",
-					"entries": [
-						"The dragon releases a searing beam of starlight at a creature that it can see within 60 feet of it. The target must succeed on a {@dc 17} Dexterity saving throw or take 31 ({@damage 9d6}) radiant damage."
-					]
-				}
-			],
-			"dragonAge": "adult",
-			"traitTags": [
-				"Legendary Resistances"
-			],
-			"senseTags": [
-				"B",
-				"SD"
-			],
-			"actionTags": [
-				"Breath Weapon",
-				"Multiattack",
-				"Shapechanger"
-			],
-			"languageTags": [
-				"C",
-				"DR",
-				"TP"
-			],
-			"damageTags": [
-				"P",
-				"R",
-				"S"
-			],
-			"damageTagsLegendary": [
-				"R"
-			],
-			"spellcastingTags": [
-				"P"
-			],
-			"miscTags": [
-				"MW",
-				"RCH",
-				"AOE"
-			],
-			"conditionInflictSpell": [
-				"charmed",
-				"incapacitated",
-				"prone"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true,
-			"tokenUrl": "https://5e.tools/img/FTD/Adult Crystal Dragon.png",
-			"fluff": {
-				"name": "Adult Crystal Dragon",
-				"source": "FTD",
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							"Shimmering with radiant energy and brimming with life, crystal dragons enjoy an innate psionic connection to the Positive Plane that suffuses their bodies as well as their personalities with light. Though they prefer to live in desolate, frigid regions, many of them are among the friendliest of dragonkind, nurturing and optimistic."
-						]
-					},
-					{
-						"type": "section",
-						"entries": [
-							{
-								"type": "entries",
-								"name": "Inner Glow",
-								"entries": [
-									"When they hatch, crystal dragons have dull gray scales, with a few white or clear crystalline points, allowing the wyrmlings to blend in to rocky terrain in the face of danger. As they age, their scales turn snow white, then slowly fade to transparency. The oldest crystal dragons have scales of perfect clarity that bend and refract light, sometimes making them difficult to see clearly.",
-									"The radiant energy of the Positive Plane shimmers in crystal dragons' scales. It glows like starlight between their bodies and the spines and horns that hover close to their heads and backs. These horns shift with the dragon's mood: bristling with anger, lying back with fear or suspicion, and rippling in side-to-side waves with amusement or joy."
-								]
-							},
-							{
-								"type": "entries",
-								"name": "Visions in Starlight",
-								"entries": [
-									"Many crystal dragons study the stars, recording their observations of the night sky and tracking the signs written in starlight. They read these signs as omens, giving them glimpses of what is to come, and they eagerly examine the potential futures of any creatures who come to them in peace.",
-									"Crystal dragons' connection to the radiant forces of the Positive Plane fosters a nurturing, optimistic attitude in most of these dragons. They sometimes adopt the abandoned eggs or hatchlings of other dragons; many a white wyrmling has been raised in the caring environment of a crystal dragon's lair. But they fiercely oppose destructive forces in their home territories, which sometimes leads nearby frost giants and white dragons to put aside their mutual enmity to hunt them."
-								]
-							},
-							{
-								"type": "entries",
-								"name": "Glittering Hoards",
-								"entries": [
-									"For their treasure hoards, crystal dragons prize diamonds and baubles that refract light, collections of prophecy, works on astronomy, and star charts. When it comes to magical treasure, they seek items and spells that predict the future, create or manipulate light, or channel positive energy for healing and nurturing."
-								]
-							}
-						]
-					},
-					{
-						"type": "section",
-						"entries": [
-							{
-								"type": "entries",
-								"name": "A Crystal Dragon's Lair",
-								"entries": [
-									"Crystal dragons dwell in cold regions, where they construct ice and snow structures reminiscent of castles but open to the sky. Glittering crystals scattered about their lairs glow with gathered starlight, and caves or tunnels beneath the ice and snow provide protected areas for their hoards. They use their burrowing ability to dig blinds and secret passages throughout their lairs, allowing them to move easily—and potentially unnoticed.",
-									"The challenge rating of a legendary crystal dragon increases by 1 when it's encountered in its lair."
-								]
-							}
-						]
-					},
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"name": "Lair Actions",
-								"entries": [
-									"On initiative count 20 (losing initiative ties), the dragon can take one of the following lair actions; the dragon can't take the same lair action two rounds in a row:",
-									{
-										"type": "list",
-										"style": "list-hang-notitle",
-										"items": [
-											{
-												"type": "item",
-												"name": "Beguiling Whisper",
-												"entry": "The dragon telepathically whispers to one creature within range of the dragon's telepathy. The creature must succeed on a DC 15 Wisdom saving throw or be {@condition charmed} by the dragon until initiative count 20 on the next round. A creature {@condition charmed} in this way obeys to the best of its ability any command the dragon issues that isn't directly harmful to the creature."
-											},
-											{
-												"type": "item",
-												"name": "Ice Passage",
-												"entry": "The dragon can open a passage through a wall of ice or snow that is up to 5 feet thick, creating an opening up to 30 feet wide and high."
-											},
-											{
-												"type": "item",
-												"name": "Starlight's Gleam",
-												"entry": "The dragon chooses a point it can see in the lair. Gleaming starlight radiates from that point to fill a 10-foot-radius sphere with dim light. Each creature other than the dragon in that area when the light appears must succeed on a DC 15 Dexterity saving throw or take 13 ({@damage 2d12}) radiant damage and be outlined in the glow. {@action Attack} rolls made against an outlined creature have advantage, and the creature can't hide or benefit from being {@condition invisible}. The starlight and the glow around any creature fades on initiative count 20 on the next round."
-											}
-										]
-									}
-								]
-							}
-						]
-					},
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"name": "Regional Effects",
-								"entries": [
-									"The region surrounding a legendary crystal dragon's lair is altered by the dragon's magic, creating one or more of the following effects:",
-									{
-										"type": "list",
-										"style": "list-hang-notitle",
-										"items": [
-											{
-												"type": "item",
-												"name": "Clear Skies",
-												"entry": "The skies above a crystal dragon's lair remain clear and free of precipitation unless magically altered. Winds blow lightly, posing little threat to those approaching the lair, and visibility is the best possible for the time of day."
-											},
-											{
-												"type": "item",
-												"name": "Crystal Profusion",
-												"entry": "Plentiful quartz crystals form in natural stone within 6 miles of the lair, particularly in places where natural light can shine on the crystals."
-											},
-											{
-												"type": "item",
-												"name": "Icy Sight",
-												"entry": "Ice and quartz within 6 miles of the lair become conduits for the dragon's psionic presence. As an action, the dragon can cast the {@spell clairvoyance} spell, requiring no spell components and targeting any ice or quartz crystals in that region."
-											},
-											{
-												"type": "item",
-												"name": "Positive Energy",
-												"entry": "Any creature that finishes a long rest within 6 miles of the lair regains two additional spent Hit Dice."
-											},
-											{
-												"type": "item",
-												"name": "Thriving Wildlife",
-												"entry": "Animal populations flourish within 6 miles of the lair. Ability checks made to forage for food by hunting, fishing, or trapping in that area are made with advantage."
-											}
-										]
-									},
-									"If the dragon dies, the animal population near the lair returns to normal levels over the course of {@dice 1d10} days. The increased Hit Die recovery ends immediately. The existing abundance of quartz crystals remains, but new crystals form at a normal rate."
-								]
-							}
-						]
-					}
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "internal",
-							"path": "bestiary/FTD/Adult Crystal Dragon.webp"
-						}
-					}
-				]
-			},
-			"damageTagsSpell": [
-				"Y"
-			]
-		},
-		{
 			"name": "Neia Kelxisys' Simulacrum",
 			"source": "KimJongTrillsCustomContent",
 			"page": 0,
@@ -3859,15 +3104,16 @@
 			],
 			"ac": [
 				{
-					"ac": 21,
+					"ac": 20,
 					"from": [
-						"{@item demon armor}",
+						"{@item plate armor|phb}",
 						"{@item shield|phb}"
 					]
 				}
 			],
 			"hp": {
-				"special": "150"
+				"formula": "14d8 + 28",
+				"average": 91
 			},
 			"speed": {
 				"walk": 30
@@ -3881,18 +3127,19 @@
 			"save": {
 				"wis": "+5",
 				"cha": "+6",
-				"con": "+6",
-				"str": "+8"
+				"con": "+5",
+				"str": "+7"
 			},
 			"skill": {
-				"athletics": "+7",
-				"deception": "+6",
-				"intimidation": "+6"
+				"athletics": "+8",
+				"deception": "+7",
+				"intimidation": "+7",
+				"perception": "+6"
 			},
 			"senses": [
 				"Devil's Sight 120 ft."
 			],
-			"passive": 12,
+			"passive": 16,
 			"resist": [
 				"necrotic",
 				"poison"
@@ -3900,7 +3147,7 @@
 			"languages": [
 				"any one language (usually Common)"
 			],
-			"cr": "9",
+			"cr": "7",
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
@@ -3940,25 +3187,11 @@
 					"type": "spellcasting"
 				}
 			],
-			"trait": [
-				{
-					"name": "Aura of Protection",
-					"entries": [
-						"All allies within 10 feet gain +3 to saves."
-					]
-				},
-				{
-					"name": "Legendary Resistance (2/Day)",
-					"entries": [
-						"If the Lieutenant fails a saving throw, it can choose to succeed instead."
-					]
-				}
-			],
 			"action": [
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The knight attacks twice with one of its weapons."
+						"The knight attacks twice with its sword."
 					]
 				},
 				{
@@ -3970,7 +3203,7 @@
 				{
 					"name": "Eldritch Blast",
 					"entries": [
-						"{@atk rsp} {@hit 6} to hit, 120 ft., 2 beams. {@h}9 ({@damage 1d10 + 3}) force damage."
+						"{@atk rsp} {@hit 7} to hit, 120 ft., 2 beams. {@h}9 ({@damage 1d10 + 3}) force damage."
 					]
 				}
 			],
@@ -4040,421 +3273,7 @@
 				"O"
 			],
 			"shortName": true,
-			"legendary": [
-				{
-					"name": "Greatsword",
-					"entries": [
-						"Makes an attack with the Greatsword"
-					]
-				},
-				{
-					"name": "Eldritch Blast",
-					"entries": [
-						"Cast Eldritch Blast"
-					]
-				},
-				{
-					"name": "Cast Spell (2 Actions)",
-					"entries": [
-						"uses it's Spellcasting feature"
-					]
-				},
-				{
-					"name": "Move",
-					"entries": [
-						"Moves up to its movement speed."
-					]
-				}
-			],
-			"isNamedCreature": true,
-			"traitTags": [
-				"Legendary Resistances"
-			]
-		},
-		{
-			"name": "Ravager Warlock",
-			"source": "KimJongTrillsCustomContent",
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"warlock"
-				]
-			},
-			"alignment": [
-				"E"
-			],
-			"alignmentPrefix": "typically ",
-			"ac": [
-				{
-					"ac": 16,
-					"from": [
-						"blood aegis"
-					]
-				}
-			],
-			"hp": {
-				"average": 127,
-				"formula": "15d8 + 60"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 11,
-			"dex": 14,
-			"con": 18,
-			"int": 11,
-			"wis": 12,
-			"cha": 20,
-			"save": {
-				"con": "+8",
-				"int": "+4",
-				"wis": "+5",
-				"cha": "+9"
-			},
-			"skill": {
-				"deception": "+13",
-				"medicine": "+5",
-				"survival": "+5"
-			},
-			"passive": 11,
-			"resist": [
-				"necrotic"
-			],
-			"conditionImmune": [
-				"exhaustion"
-			],
-			"languages": [
-				"Common plus any four languages"
-			],
-			"cr": "9",
-			"trait": [
-				{
-					"name": "Oriq Mask",
-					"entries": [
-						"The blood mage wears an Oriq mask. While wearing the mask, the blood mage can't be targeted by any divination magic or perceived through magical scrying sensors, and it adds double its proficiency bonus to Charisma (Deception) checks (included above)."
-					]
-				},
-				{
-					"name": "Sanguine Sense",
-					"entries": [
-						"While the blood mage isn't {@condition blinded}, it can see any creature that isn't an Undead or a Construct within 60 feet of itself, even through total cover, heavily obscured areas, invisibility, or any other phenomena that would prevent sight."
-					]
-				},
-				{
-					"name": "Legendary Resistance (3/day)",
-					"entries": [
-						"If the blood mage fails a saving throw you can choose to succeed instead."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"The blood mage makes two Blood Lash attacks."
-					]
-				},
-				{
-					"name": "Blood Lash",
-					"entries": [
-						"{@atk ms} {@hit 9} to hit, reach 10 ft., one target. {@h}16 ({@damage 2d10 + 5}) necrotic damage. If the target is a creature, it can't regain hit points until the start of the blood mage's next turn."
-					]
-				},
-				{
-					"name": "Blood Boil {@recharge 4}",
-					"entries": [
-						"The blood mage chooses a point within 150 feet of itself, and a 20-foot radius sphere centered on that point fills with a burst of searing, blood-red mist. Each creature of the blood mage's choice that it can see in that area must make a {@dc 17} Constitution saving throw. On a failed save, a creature takes 21 ({@damage 6d6}) necrotic damage and is {@condition incapacitated} until the end of its next turn. On a success, a creature takes half as much damage and isn't {@condition incapacitated}. A creature dies if reduced to 0 hit points by this necrotic damage."
-					]
-				},
-				{
-					"name": "Eldritch Blast",
-					"entries": [
-						"{@atk rs} {@hit 9} to hit, 120 ft., 3 beams. {@h}11 ({@damage 1d10 + 5}) force damage."
-					]
-				}
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"C",
-				"X"
-			],
-			"damageTags": [
-				"N",
-				"O"
-			],
-			"miscTags": [
-				"RCH",
-				"AOE"
-			],
-			"conditionInflict": [
-				"incapacitated"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true,
-			"tokenUrl": "https://5e.tools/img/SCC/Oriq Blood Mage.png",
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"spells": {
-						"5": {
-							"spells": [
-								"{@spell counterspell}",
-								"{@spell dimension door}",
-								"{@spell hellish rebuke} ({@damage 6d10})",
-								"{@spell hold person}"
-							],
-							"slots": 4,
-							"lower": 1
-						}
-					},
-					"type": "spellcasting"
-				}
-			],
-			"spellcastingTags": [
-				"O"
-			],
-			"damageTagsSpell": [
-				"F",
-				"O"
-			],
-			"traitTags": [
-				"Legendary Resistances"
-			],
-			"bonus": [
-				{
-					"name": "Shadow Step",
-					"entries": [
-						"When you are in dim light or darkness, as a bonus action you can teleport up to 30 feet to an unoccupied space you can see that is also in dim light or darkness."
-					]
-				}
-			]
-		},
-		{
-			"name": "Ravager Blood Lord",
-			"group": [
-				"Ravagers"
-			],
-			"source": "KimJongTrillsCustomContent",
-			"size": [
-				"L"
-			],
-			"type": {
-				"type": "aberration",
-				"tags": [
-					"any"
-				]
-			},
-			"alignment": [
-				"C",
-				"E"
-			],
-			"ac": [
-				{
-					"ac": 17,
-					"from": [
-						"unarmored defense"
-					]
-				}
-			],
-			"hp": {
-				"average": 157,
-				"formula": "15d10 + 75"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 22,
-			"dex": 14,
-			"con": 20,
-			"int": 12,
-			"wis": 16,
-			"cha": 16,
-			"save": {
-				"str": "+10",
-				"con": "+9",
-				"wis": "+7"
-			},
-			"skill": {
-				"intimidation": "+11",
-				"religion": "+5"
-			},
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"passive": 13,
-			"languages": [
-				"Abyssal",
-				"Common",
-				"one other language"
-			],
-			"cr": "9",
-			"spellcasting": [
-				{
-					"name": "Innate Spellcasting",
-					"headerEntries": [
-						"The Blood Lord's innate spellcasting ability is Wisdom (spell save {@dc 15}, {@hit 7} to hit with spell attacks). It can innately cast the following spells, requiring no components:"
-					],
-					"will": [
-						"{@spell spirit guardians}",
-						"{@spell thaumaturgy}"
-					],
-					"daily": {
-						"1e": [
-							"{@spell destructive wave}",
-							"{@spell fire storm}",
-							"{@spell fireball}",
-							"{@spell harm}"
-						]
-					},
-					"ability": "wis",
-					"type": "spellcasting"
-				}
-			],
-			"trait": [
-				{
-					"name": "Legendary Resistance (3/Day)",
-					"entries": [
-						"If the Blood Lord fails a saving throw, it can choose to succeed instead."
-					]
-				},
-				{
-					"name": "Unarmored Defense",
-					"entries": [
-						"While the Blood Lord is wearing no armor and not wielding a {@item shield|PHB}, its AC includes its Constitution modifier."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"The Blood Lord makes four attacks with its Dual Bloodswords or three attacks with its Crimson Spear."
-					]
-				},
-				{
-					"name": "Dual Bloodswords",
-					"entries": [
-						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d6 + 6}) slashing damage plus 3 ({@damage 1d6}) necrotic damage."
-					]
-				},
-				{
-					"name": "Crimson Spear",
-					"entries": [
-						"{@atk mw,rw} {@hit 10} to hit, range 20/60 ft., one target. {@h}13 ({@damage 2d6 + 6}) piercing damage plus 3 ({@damage 1d6}) necrotic damage, or 15 ({@damage 2d8 + 6}) piercing damage plus 3 ({@damage 1d6}) necrotic damage if used with both hands to make a melee attack."
-					]
-				},
-				{
-					"name": "Whirlwind Strikes {@recharge 5}",
-					"entries": [
-						"Each Creature within 15 feet of the Blood Lord must make a {@dc 18} Dexterity Save or take ({@damage 5d6}) slashing and ({@damage 5d6}) necrotic damage, half as much on a success"
-					]
-				}
-			],
-			"bonus": [
-				{
-					"name": "Aggressive",
-					"entries": [
-						"The Blood Lord can move up to its speed toward a hostile creature it can see."
-					]
-				}
-			],
-			"legendary": [
-				{
-					"name": "Attack",
-					"entries": [
-						"The Blood  Lord makes a Crimson spear or Dual Bloodswords attack."
-					]
-				},
-				{
-					"name": "Move",
-					"entries": [
-						"The Blood Lord moves up to half its speed without provoking opportunity attacks."
-					]
-				},
-				{
-					"name": "Cast a Spell (Costs 3 Actions)",
-					"entries": [
-						"The Blood Lord {@action cast a spell|PHB|casts an innate spell}."
-					]
-				}
-			],
-			"environment": [
-				"desert",
-				"forest",
-				"grassland",
-				"hill",
-				"mountain"
-			],
-			"fluff": {},
-			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TDCSR/creature/RavagerSlaughterLordToken.webp",
-			"traitTags": [
-				"Legendary Resistances"
-			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"AB",
-				"C",
-				"X"
-			],
-			"damageTags": [
-				"N",
-				"P",
-				"S"
-			],
-			"spellcastingTags": [
-				"I"
-			],
-			"miscTags": [
-				"MW",
-				"RW",
-				"THW",
-				"AOE"
-			],
-			"conditionInflictSpell": [
-				"blinded",
-				"deafened",
-				"stunned"
-			],
-			"damageTagsSpell": [
-				"F",
-				"N",
-				"R",
-				"T"
-			],
-			"resist": [
-				{
-					"resist": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"preNote": "non-magical"
-				},
-				{
-					"resist": [
-						"poison"
-					]
-				}
-			],
-			"immune": [
-				"necrotic"
-			],
-			"conditionImmune": [
-				"paralyzed",
-				"petrified",
-				"poisoned",
-				"stunned"
-			]
+			"isNamedCreature": true
 		},
 		{
 			"name": "Christhia, The Vengeful",
@@ -5206,224 +4025,6 @@
 				"str": "+9",
 				"con": "+6"
 			}
-		},
-		{
-			"source": "KimJongTrillsCustomContent",
-			"name": "Zaharith, Oracle of Destruction",
-			"environment": [
-				"outer Planes",
-				"urban"
-			],
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"Elven"
-				]
-			},
-			"alignment": [
-				"A"
-			],
-			"ac": [
-				{
-					"ac": 15,
-					"from": [
-						"{@item spellwoven robes|tgs1}"
-					]
-				}
-			],
-			"hp": {
-				"average": 130,
-				"formula": "20d8 + 40"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 14,
-			"dex": 14,
-			"con": 14,
-			"int": 20,
-			"wis": 15,
-			"cha": 16,
-			"save": {
-				"dex": "+7",
-				"int": "+10",
-				"wis": "+7"
-			},
-			"skill": {
-				"arcana": "+15",
-				"history": "+15"
-			},
-			"resist": [
-				{
-					"resist": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical attacks",
-					"cond": true
-				}
-			],
-			"passive": 12,
-			"languages": [
-				"any six languages"
-			],
-			"languageTags": [
-				"X"
-			],
-			"cr": "16",
-			"trait": [
-				{
-					"name": "Legendary Resistance (3/Day)",
-					"entries": [
-						"If the archmage fails a saving throw, it can choose to succeed instead."
-					]
-				},
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"The archmage has advantage on saving throws against spells and other magical effects."
-					]
-				},
-				{
-					"name": "Supreme Focus",
-					"entries": [
-						"The archmage has advantage on saving throws it makes to maintain its concentration."
-					]
-				}
-			],
-			"traitTags": [
-				"Legendary Resistances",
-				"Magic Resistance"
-			],
-			"action": [
-				{
-					"name": "Quarterstaff",
-					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) bludgeoning damage, or 6 ({@damage 1d8 + 2}) bludgeoning damage if used with two hands, plus 7 ({@damage 2d6}) force damage. If the target is a Large of smaller creature, it must succeed on a {@dc 18} Strength saving throw or be pushed up to 10 feet and knocked {@condition prone}."
-					]
-				},
-				{
-					"name": "Teleport",
-					"entries": [
-						"The archmage magically teleports, along with any equipment it is wearing or carrying and any creatures it has {@condition grappled}, up to 60 feet to an unoccupied space it can see."
-					]
-				}
-			],
-			"actionTags": [
-				"Teleport"
-			],
-			"spellcasting": [
-				{
-					"name": "Innate Spellcasting",
-					"headerEntries": [
-						"The archmage casts one of the following spells using Intelligence as the spellcasting ability (spell save {@dc 18}, {@hit 10} to hit with spell attacks):"
-					],
-					"footerEntries": [
-						"*The archmage casts these spells on itself before combat."
-					],
-					"will": [
-						"{@spell divination}",
-						"{@spell fire bolt} ({@damage 4d10})",
-						"{@spell mage hand}",
-						"{@spell mind spike|XGE}",
-						"{@spell ray of frost} ({@damage 4d8}) ",
-						"{@spell scrying}",
-						"{@spell see invisibility}",
-						"{@spell shield}",
-						"{@spell sword burst|TCE} ({@damage 4d6})",
-						"{@spell toll the dead|XGE} ({@damage 4d8}) ({@damage 4d12})"
-					],
-					"daily": {
-						"2e": [
-							"{@spell animate dead}",
-							"{@spell banishment}",
-							"{@spell cone of cold}",
-							"{@spell counterspell} 5th level",
-							"{@spell dimension door}",
-							"{@spell hold person}",
-							"{@spell lightning bolt}"
-						],
-						"1e": [
-							"{@spell arcane gate}",
-							"{@spell disintegrate}",
-							"{@spell dispel magic}",
-							"{@spell foresight}",
-							"{@spell globe of invulnerability}",
-							"{@spell mind blank}*",
-							"{@spell plane shift}",
-							"{@spell teleport}",
-							"{@spell wall of force}"
-						]
-					},
-					"ability": "int",
-					"type": "spellcasting"
-				}
-			],
-			"spellcastingTags": [
-				"I"
-			],
-			"conditionInflictSpell": [
-				"incapacitated"
-			],
-			"shortName": "archmage",
-			"legendary": [
-				{
-					"name": "Cantrip",
-					"entries": [
-						"The archmage casts a cantrip."
-					]
-				},
-				{
-					"name": "Quarterstaff",
-					"entries": [
-						"The archmage attacks with its Quarterstaff."
-					]
-				},
-				{
-					"name": "Teleport",
-					"entries": [
-						"The archmage uses its Teleport action."
-					]
-				},
-				{
-					"name": "Cast a Spell (Costs 2 Actions)",
-					"entries": [
-						"The archmage casts {@spell banishment}, {@spell dispel magic}, {@spell lightning bolt}, or {@spell hold person}, if available."
-					]
-				}
-			],
-			"damageTags": [
-				"B",
-				"O"
-			],
-			"conditionInflict": [
-				"prone"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded3/creature/token/Archmage,%20Legendary%20%28Token%29.png",
-			"fluff": {},
-			"damageTagsSpell": [
-				"C",
-				"F",
-				"L",
-				"N",
-				"O",
-				"Y"
-			],
-			"conditionImmune": [
-				{
-					"conditionImmune": [
-						"charmed"
-					],
-					"preNote": "from mind blank"
-				}
-			]
 		},
 		{
 			"name": "Throne Room Gargoyle",
@@ -7373,7 +5974,7 @@
 		},
 		{
 			"source": "KimJongTrillsCustomContent",
-			"name": "Zahara, Oracle of Destruction",
+			"name": "Zephara, The Necromantress",
 			"environment": [
 				"outer Planes",
 				"urban"
@@ -7388,37 +5989,42 @@
 				]
 			},
 			"alignment": [
-				"A"
+				"L",
+				"E"
 			],
 			"ac": [
 				{
-					"ac": 15,
+					"ac": 17,
 					"from": [
 						"{@item spellwoven robes|tgs1}"
-					]
+					],
+					"condition": "22 with {@spell shield|phb} spell"
 				}
 			],
 			"hp": {
-				"average": 130,
-				"formula": "20d8 + 40"
+				"formula": "20d8 + 40",
+				"average": 200
 			},
 			"speed": {
 				"walk": 30
 			},
 			"str": 14,
 			"dex": 14,
-			"con": 14,
+			"con": 16,
 			"int": 20,
 			"wis": 15,
 			"cha": 16,
 			"save": {
-				"dex": "+7",
 				"int": "+10",
-				"wis": "+7"
+				"wis": "+7",
+				"con": "+8",
+				"cha": "+8"
 			},
 			"skill": {
 				"arcana": "+15",
-				"history": "+15"
+				"history": "+10",
+				"religion": "+15",
+				"perception": "+12"
 			},
 			"resist": [
 				{
@@ -7431,7 +6037,7 @@
 					"cond": true
 				}
 			],
-			"passive": 12,
+			"passive": 27,
 			"languages": [
 				"any six languages"
 			],
@@ -7469,16 +6075,7 @@
 					"entries": [
 						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) bludgeoning damage, or 6 ({@damage 1d8 + 2}) bludgeoning damage if used with two hands, plus 7 ({@damage 2d6}) force damage. If the target is a Large of smaller creature, it must succeed on a {@dc 18} Strength saving throw or be pushed up to 10 feet and knocked {@condition prone}."
 					]
-				},
-				{
-					"name": "Teleport",
-					"entries": [
-						"The archmage magically teleports, along with any equipment it is wearing or carrying and any creatures it has {@condition grappled}, up to 60 feet to an unoccupied space it can see."
-					]
 				}
-			],
-			"actionTags": [
-				"Teleport"
 			],
 			"spellcasting": [
 				{
@@ -7487,15 +6084,15 @@
 						"The archmage casts one of the following spells using Intelligence as the spellcasting ability (spell save {@dc 18}, {@hit 10} to hit with spell attacks):"
 					],
 					"footerEntries": [
-						"*The archmage casts these spells on itself before combat."
+						"*The archmage casts these spells on itself before combat.",
+						"**Contingencied for being targeted or in the AoE of a spell"
 					],
 					"will": [
-						"{@spell divination}",
+						"{@spell animate dead}",
 						"{@spell fire bolt} ({@damage 4d10})",
 						"{@spell mage hand}",
-						"{@spell mind spike|XGE}",
+						"{@spell mind sliver|TCE} ({@damage 4d6}) ",
 						"{@spell ray of frost} ({@damage 4d8}) ",
-						"{@spell scrying}",
 						"{@spell see invisibility}",
 						"{@spell shield}",
 						"{@spell sword burst|TCE} ({@damage 4d6})",
@@ -7503,22 +6100,22 @@
 					],
 					"daily": {
 						"2e": [
-							"{@spell animate dead}",
 							"{@spell banishment}",
-							"{@spell cone of cold}",
-							"{@spell counterspell} 5th level",
+							"{@spell counterspell} 5th level, 1 per level below",
 							"{@spell dimension door}",
+							"{@spell dispel magic}",
 							"{@spell hold person}",
 							"{@spell lightning bolt}"
 						],
 						"1e": [
-							"{@spell arcane gate}",
+							"{@spell clone}",
+							"{@spell cone of cold}",
+							"{@spell contingency}",
+							"{@spell demiplane}",
 							"{@spell disintegrate}",
-							"{@spell dispel magic}",
-							"{@spell foresight}",
-							"{@spell globe of invulnerability}",
-							"{@spell mind blank}*",
+							"{@spell globe of invulnerability}**",
 							"{@spell plane shift}",
+							"{@spell psychic scream|XGE} ({@damage 14d6})",
 							"{@spell teleport}",
 							"{@spell wall of force}"
 						]
@@ -7542,12 +6139,6 @@
 					]
 				},
 				{
-					"name": "Quarterstaff",
-					"entries": [
-						"The archmage attacks with its Quarterstaff."
-					]
-				},
-				{
 					"name": "Teleport",
 					"entries": [
 						"The archmage uses its Teleport action."
@@ -7556,7 +6147,7 @@
 				{
 					"name": "Cast a Spell (Costs 2 Actions)",
 					"entries": [
-						"The archmage casts {@spell banishment}, {@spell dispel magic}, {@spell lightning bolt}, or {@spell hold person}, if available."
+						"The archmage casts a spell."
 					]
 				}
 			],
@@ -7587,706 +6178,17 @@
 					],
 					"preNote": "from mind blank"
 				}
-			]
-		},
-		{
-			"name": "Rick Magnus (Clone)",
-			"source": "KimJongTrillsCustomContent",
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"any race"
-				]
-			},
-			"alignment": [
-				"A"
-			],
-			"ac": [
-				{
-					"ac": 15,
-					"from": [
-						"{@item spellwoven robes|tgs1}"
-					]
-				}
-			],
-			"hp": {
-				"special": "225"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 14,
-			"dex": 10,
-			"con": 14,
-			"int": 20,
-			"wis": 16,
-			"cha": 16,
-			"save": {
-				"int": "+9",
-				"wis": "+6"
-			},
-			"skill": {
-				"arcana": "+13",
-				"history": "+13"
-			},
-			"passive": 13,
-			"resist": [
-				{
-					"special": "damage from spells"
-				}
-			],
-			"languages": [
-				"any six languages"
-			],
-			"cr": "12",
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Rick Magnus (Clone) is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 17}, {@hit 9} to hit with spell attacks). The archmage can cast {@spell disguise self} and {@spell invisibility} at will and has the following wizard spells prepared:"
-					],
-					"footerEntries": [
-						"*Rick Magnus (Clone) casts these spells on itself before combat."
-					],
-					"will": [
-						"{@spell misty step}",
-						"{@spell shield}"
-					],
-					"spells": {
-						"0": {
-							"spells": [
-								"{@spell fire bolt}",
-								"{@spell light}",
-								"{@spell mage hand}",
-								"{@spell prestidigitation}",
-								"{@spell shocking grasp}"
-							]
-						},
-						"1": {
-							"spells": [
-								"{@spell charm person}",
-								"{@spell feather fall}",
-								"{@spell magic missile}"
-							],
-							"slots": 4
-						},
-						"2": {
-							"spells": [
-								"{@spell detect thoughts}",
-								"{@spell invisibility}",
-								"{@spell mirror image}"
-							],
-							"slots": 3
-						},
-						"3": {
-							"spells": [
-								"{@spell counterspell}",
-								"{@spell fast friends|AI}",
-								"{@spell fly}",
-								"{@spell pulse wave|EGW}"
-							],
-							"slots": 3
-						},
-						"4": {
-							"spells": [
-								"{@spell banishment}",
-								"{@spell dimension door}",
-								"{@spell dominate beast}",
-								"{@spell gravity sinkhole|EGW}",
-								"{@spell greater invisibility}"
-							],
-							"slots": 3
-						},
-						"5": {
-							"spells": [
-								"{@spell dominate person}",
-								"{@spell wall of force}"
-							],
-							"slots": 3
-						},
-						"6": {
-							"spells": [
-								"{@spell globe of invulnerability}"
-							],
-							"slots": 1
-						},
-						"7": {
-							"spells": [
-								"{@spell teleport}"
-							],
-							"slots": 1
-						},
-						"8": {
-							"spells": [
-								"{@spell dominate monster}",
-								"{@spell mind blank}*"
-							],
-							"slots": 1
-						},
-						"9": {
-							"spells": [
-								"{@spell time stop}"
-							],
-							"slots": 1
-						}
-					},
-					"ability": "int",
-					"type": "spellcasting"
-				}
-			],
-			"trait": [
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"Rick Magnus (Clone) has advantage on saving throws against spells and other magical effects."
-					]
-				}
-			],
-			"environment": [
-				"urban"
-			],
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/archmage.mp3"
-			},
-			"traitTags": [
-				"Magic Resistance"
-			],
-			"languageTags": [
-				"X"
-			],
-			"damageTags": [
-				"B",
-				"O"
-			],
-			"damageTagsSpell": [
-				"F",
-				"L",
-				"O"
-			],
-			"spellcastingTags": [
-				"CW"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true,
-			"action": [
-				{
-					"name": "Staff of Striking [10 charges]",
-					"entries": [
-						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d6 + 5}) bludgeoning damage, or 9 ({@damage 1d8 + 5}) bludgeoning damage if used with both hands, plus 3 ({@damage 1d6}) force damage for each charge expended on a hit."
-					]
-				}
-			],
-			"miscTags": [
-				"MW"
-			],
-			"shortName": true,
-			"legendaryActions": 3,
-			"legendary": [
-				{
-					"name": "Cast Spell (2 Points)",
-					"entries": [
-						"Uses Spellcasting"
-					]
-				},
-				{
-					"name": "Move",
-					"entries": [
-						"Moves its movement speed"
-					]
-				},
-				{
-					"name": "Strike",
-					"entries": [
-						"Make a Weapon Attack"
-					]
-				}
-			],
-			"isNamedCreature": true
-		},
-		{
-			"name": "Gorotto, The Destroyer, Red Dragon",
-			"group": [
-				"Chromatic Dragon"
-			],
-			"source": "KimJongTrillsCustomContent",
-			"size": [
-				"G"
-			],
-			"type": "dragon",
-			"alignment": [
-				"C",
-				"E"
-			],
-			"ac": [
-				{
-					"ac": 22,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"average": 546,
-				"formula": "28d20 + 252"
-			},
-			"speed": {
-				"walk": 40,
-				"climb": 40,
-				"fly": 80
-			},
-			"str": 30,
-			"dex": 10,
-			"con": 29,
-			"int": 18,
-			"wis": 15,
-			"cha": 23,
-			"save": {
-				"dex": "+7",
-				"con": "+16",
-				"wis": "+9",
-				"cha": "+13"
-			},
-			"skill": {
-				"perception": "+16",
-				"stealth": "+7"
-			},
-			"senses": [
-				"blindsight 60 ft.",
-				"darkvision 120 ft."
-			],
-			"passive": 26,
-			"immune": [
-				"fire"
-			],
-			"languages": [
-				"Common",
-				"Draconic"
-			],
-			"cr": "24",
-			"trait": [
-				{
-					"name": "Legendary Resistance (5/Day)",
-					"entries": [
-						"If the dragon fails a saving throw, it can choose to succeed instead."
-					]
-				},
-				{
-					"name": "Flyby",
-					"entries": [
-						"Gorotto doesn't provoke opportunity attacks when it flies out of an enemy's reach."
-					]
-				},
-				{
-					"name": "Fire Absorption",
-					"entries": [
-						"Whenever Gorotto is subjected to fire damage, it takes no damage and instead regains a number of hit points equal to the fire damage dealt."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
-					]
-				},
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 17} to hit, reach 15 ft., one target. {@h}21 ({@damage 2d10 + 10}) piercing damage plus 14 ({@damage 4d6}) fire damage."
-					]
-				},
-				{
-					"name": "Claw",
-					"entries": [
-						"{@atk mw} {@hit 17} to hit, reach 10 ft., one target. {@h}17 ({@damage 2d6 + 10}) slashing damage."
-					]
-				},
-				{
-					"name": "Tail",
-					"entries": [
-						"{@atk mw} {@hit 17} to hit, reach 20 ft., one target. {@h}19 ({@damage 2d8 + 10}) bludgeoning damage."
-					]
-				},
-				{
-					"name": "Frightful Presence",
-					"entries": [
-						"Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a {@dc 21} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours."
-					]
-				},
-				{
-					"name": "Fire Breath {@recharge 5}",
-					"entries": [
-						"The dragon exhales fire in a 90-foot cone. Each creature in that area must make a {@dc 24} Dexterity saving throw, taking 91 ({@damage 26d6}) fire damage on a failed save, or half as much damage on a successful one."
-					]
-				}
-			],
-			"legendary": [
-				{
-					"name": "Detect",
-					"entries": [
-						"The dragon makes a Wisdom ({@skill Perception}) check."
-					]
-				},
-				{
-					"name": "Glide",
-					"entries": [
-						"The dragon can fly using its movement"
-					]
-				},
-				{
-					"name": "Tail Attack",
-					"entries": [
-						"The dragon makes a tail attack."
-					]
-				},
-				{
-					"name": "Wing Attack (Costs 2 Actions)",
-					"entries": [
-						"The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a {@dc 25} Dexterity saving throw or take 17 ({@damage 2d6 + 10}) bludgeoning damage and be knocked {@condition prone}. The dragon can then fly up to half its flying speed."
-					]
-				},
-				{
-					"name": "Cast a Spell (3 Actions)",
-					"entries": [
-						"Uses Spellcasting."
-					]
-				}
-			],
-			"legendaryGroup": {
-				"name": "Elemental Gauntlet",
-				"source": "KimJongTrillsCustomContent"
-			},
-			"environment": [
-				"hill",
-				"mountain"
-			],
-			"dragonCastingColor": "red",
-			"dragonAge": "ancient",
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/red-dragon.mp3"
-			},
-			"traitTags": [
-				"Damage Absorption",
-				"Flyby",
-				"Legendary Resistances"
-			],
-			"senseTags": [
-				"B",
-				"SD"
-			],
-			"actionTags": [
-				"Breath Weapon",
-				"Frightful Presence",
-				"Multiattack",
-				"Shapechanger"
-			],
-			"languageTags": [
-				"C",
-				"DR"
-			],
-			"damageTags": [
-				"B",
-				"F",
-				"P",
-				"S"
-			],
-			"damageTagsLegendary": [
-				"F"
-			],
-			"miscTags": [
-				"MW",
-				"RCH",
-				"AOE"
-			],
-			"conditionInflict": [
-				"frightened",
-				"prone"
-			],
-			"conditionInflictLegendary": [
-				"incapacitated",
-				"poisoned",
-				"prone"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true,
-			"tokenUrl": "https://5e.tools/img/MM/Ancient Red Dragon.png",
-			"fluff": {
-				"name": "Ancient Red Dragon",
-				"source": "MM",
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									"The most covetous of the true dragons, red dragons tirelessly seek to increase their treasure hoards. They are exceptionally vain, even for dragons, and their conceit is reflected in their proud bearing and their disdain for other creatures. The odor of sulfur and pumice surrounds a red dragon, whose swept-back horns and spinal frill define its silhouette. Its beaked snout vents smoke at all times, and its eyes dance with flame when it is angry. Its wings are the longest of any chromatic dragon, and have a blue-black tint along the trailing edge that resembles metal burned blue by fire.",
-									"The scales of a red dragon wyrmling are a bright glossy scarlet, turning a dull, deeper red and becoming as thick and strong as metal as the dragon ages. Its pupils also fade as it ages, and the oldest red dragons have eyes that resemble molten lava orbs.",
-									{
-										"name": "Mountain Masters",
-										"type": "entries",
-										"entries": [
-											"Red dragons prefer mountainous terrain, badlands, and any other locale where they can perch high and survey their domain. Their preference for mountains brings them into conflict with the hill-dwelling copper dragons from time to time."
-										]
-									},
-									{
-										"name": "Arrogant Tyrants",
-										"type": "entries",
-										"entries": [
-											"Red dragons fly into destructive rages and act on impulse when angered. They are so ferocious and vengeful that they are regarded as the archetypical evil dragon by many cultures.",
-											"No other dragon comes close to the arrogance of the red dragon. These creatures see themselves as kings and emperors, and view the rest of dragonkind as inferior. Believing that they are chosen by Tiamat to rule in her name, red dragons consider the world and every creature in it as theirs to command."
-										]
-									},
-									{
-										"name": "Status and Slaves",
-										"type": "entries",
-										"entries": [
-											"Red dragons are fiercely territorial and isolationist. However, they yearn to know about events in the wider world, and they make use of lesser creatures as informants, messengers, and spies. They are most interested in news about other red dragons, with which they compete constantly for status.",
-											"When it requires servants, a red dragon demands fealty from chaotic evil humanoids. If allegiance isn't forthcoming, it slaughters a tribe's leaders and claims lordship over the survivors. Creatures serving a red dragon live in constant terror of being roasted and eaten for displeasing it. They spend most of their time fawning over the creature in an attempt to stay alive."
-										]
-									},
-									{
-										"name": "Obsessive Collectors",
-										"type": "entries",
-										"entries": [
-											"Red dragons value wealth above all else, and their treasure hoards are legendary. They covet anything of monetary value, and can often judge the worth of a bauble to within a copper piece at a glance. A red dragon has a special affection for treasure claimed from powerful enemies it has slain, exhibiting that treasure to prove its superiority.",
-											"A red dragon knows the value and provenance of every item in its hoard, along with each item's exact location. It might notice the absence of a single coin, igniting its rage as it tracks down and slays the thief without mercy. If the thief can't be found, the dragon goes on a rampage, laying waste to towns and villages in an attempt to sate its wrath."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "A Red Dragon's Lair",
-										"entries": [
-											"Red dragons lair in high mountains or hills, dwelling in caverns under snow-capped peaks, or within the deep halls of abandoned mines and dwarven strongholds. Caves with volcanic or geothermal activity are the most highly prized red dragon lairs, creating hazards that hinder intruders and letting searing heat and volcanic gases wash over a dragon as it sleeps. With its hoard well protected deep within the lair, a red dragon spends as much of its time outside the mountain as in it. For a red dragon, the great heights of the world are the throne from which it can look out to survey all it controls-and the wider world it seeks to control.",
-											"Throughout the lair complex, servants erect monuments to the dragon's power, telling the grim story of its life, the enemies it has slain, and the nations it has conquered."
-										]
-									}
-								]
-							}
-						]
-					},
-					{
-						"type": "entries",
-						"name": "Chromatic Dragons",
-						"entries": [
-							"The black, blue, green, red, and white dragons represent the evil side of dragonkind. Aggressive, gluttonous, and vain, chromatic dragons are dark sages and powerful tyrants feared by all creatures-including each other.",
-							{
-								"name": "Driven by Greed",
-								"entries": [
-									" Chromatic dragons lust after treasure, and this greed colors their every scheme and plot. They believe that the world's wealth belongs to them by right, and a chromatic dragon seizes that wealth without regard for the humanoids and other creatures that have \"stolen\" it. With its piles of coins, gleaming gems, and magic items, a dragon's hoard is the stuff of legend. However, chromatic dragons have no interest in commerce, amassing wealth for no other reason than to have it."
-								],
-								"type": "entries"
-							},
-							{
-								"name": "Creatures of Ego",
-								"type": "entries",
-								"entries": [
-									"Chromatic dragons are united by their sense of superiority, believing themselves the most powerful and worthy of all mortal creatures. When they interact with other creatures, it is only to further their own interests. They believe in their innate right to rule, and this belief is the cornerstone of every chromatic dragon's personality and worldview. Trying to humble a chromatic dragon is like trying to convince the wind to stop blowing. To these creatures, humanoids are animals, fit to serve as prey or beasts of burden, and wholly unworthy of respect."
-								]
-							},
-							{
-								"name": "Dangerous Lairs",
-								"type": "entries",
-								"entries": [
-									"A dragon's lair serves as the seat of its power and a vault for its treasure. With its innate toughness and tolerance for severe environmental effects, a dragon selects or builds a lair not for shelter but for defense, favoring multiple entrances and exits, and security for its hoard.",
-									"Most chromatic dragon lairs are hidden in dangerous and remote locations to prevent all but the most audacious mortals from reaching them. A black dragon might lair in the heart of a vast swamp, while a red dragon might claim the caldera of an active volcano. In addition to the natural defenses of their lairs, powerful chromatic dragons use magical guardians, traps, and subservient creatures to protect their treasures."
-								]
-							},
-							{
-								"name": "Queen of Evil Dragons",
-								"type": "entries",
-								"entries": [
-									"Tiamat the Dragon Queen is the chief deity of evil dragonkind. She dwells on Avernus, the first layer of the Nine Hells. As a lesser god, Tiamat has the power to grant spells to her worshipers, though she is loath to share her power. She epitomizes the avarice of evil dragons, believing that the multiverse and all its treasures will one day be hers and hers alone.",
-									"Tiamat is a gigantic dragon whose five heads reflect the forms of the chromatic dragons that worship her-black, blue, green, red, and white. She is a terror on the battlefield, capable of annihilating whole armies with her five breath weapons, her formidable spellcasting, and her fearsome claws.",
-									"Tiamat's most hated enemy is Bahamut the Platinum Dragon, with whom she shares control of the faith of dragonkind. She also holds a special enmity for Asmodeus, who long ago stripped her of the rule of Avernus and who continues to curb the Dragon Queen's power."
-								]
-							}
-						]
-					},
-					"True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.",
-					"Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.",
-					"Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.",
-					"True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.",
-					"Dragon Age Categories",
-					{
-						"type": "table",
-						"colLabels": [
-							"Category",
-							"Size",
-							"Age Range"
-						],
-						"colStyles": [
-							"col-4",
-							"col-4",
-							"col-4"
-						],
-						"rows": [
-							[
-								"Wyrmling",
-								"Medium",
-								"5 years or less"
-							],
-							[
-								"Young",
-								"Large",
-								"6–100 years"
-							],
-							[
-								"Adult",
-								"Huge",
-								"101–800 years"
-							],
-							[
-								"Ancient",
-								"Gargantuan",
-								"801 years or more"
-							]
-						]
-					},
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"name": "Lair Actions",
-								"entries": [
-									"On initiative count 20 (losing initiative ties), the dragon takes a lair action to cause one of the following effects; the dragon can't use the same effect two rounds in a row:",
-									{
-										"type": "list",
-										"items": [
-											"Magma erupts from a point on the ground the dragon can see within 120 feet of it, creating a 20-foot-high, 5-foot-radius geyser. Each creature in the geyser's area must make a {@dc 15} Dexterity saving throw, taking 21 ({@damage 6d6}) fire damage on a failed save, or half as much damage on a successful one.",
-											"A tremor shakes the lair in a 60-foot radius around the dragon. Each creature other than the dragon on the ground in that area must succeed on a {@dc 15} Dexterity saving throw or be knocked {@condition prone}.",
-											"Volcanic gases form a cloud in a 20-foot-radius sphere centered on a point the dragon can see within 120 feet of it. The sphere spreads around corners, and its area is lightly obscured. It lasts until initiative count 20 on the next round. Each creature that starts its turn in the cloud must succeed on a {@dc 13} Constitution saving throw or be {@condition poisoned} until the end of its turn. While {@condition poisoned} in this way, a creature is {@condition incapacitated}."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Additional Lair Actions",
-										"entries": [
-											"At your discretion, a legendary ({@creature Adult Red Dragon||adult} or {@creature Ancient Red Dragon||ancient}) red dragon can use one or both of the following additional lair actions while in its lair:",
-											{
-												"type": "list",
-												"style": "list-hang-notitle",
-												"items": [
-													{
-														"type": "item",
-														"name": "Noxious Smoke",
-														"entry": "A cloud of thick, dark smoke fills a 20-foot-radius sphere centered on a point the dragon can see within 120 feet of it. The sphere spreads around corners, and its area is {@quickref Vision and Light|PHB|2||heavily obscured}. A creature other than the dragon that starts its turn in the cloud or enters it for the first time on its turn must succeed on a DC 15 Constitution saving throw or be {@condition poisoned} until the end of its turn. The cloud lasts until initiative count 20 on the next round."
-													},
-													{
-														"type": "item",
-														"name": "Searing Heat",
-														"entry": "Searing heat spreads out in a 15-foot-radius sphere centered on a point the dragon can see within 120 feet of it. Any creature that enters the affected area or starts its turn there must make a DC 15 Constitution saving throw, taking 10 ({@damage 3d6}) fire damage on a failed save, or half as much damage on a successful one. The heat lasts until initiative count 20 on the next round."
-													}
-												]
-											}
-										],
-										"source": "FTD"
-									}
-								]
-							}
-						]
-					},
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"name": "Regional Effects",
-								"entries": [
-									"The region containing a legendary red dragon's lair is warped by the dragon's magic, which creates one or more of the following effects:",
-									{
-										"type": "list",
-										"items": [
-											"Small earthquakes are common within 6 miles of the dragon's lair.",
-											"Water sources within 1 mile of the lair are supernaturally warm and tainted by sulfur.",
-											"Rocky fissures within 1 mile of the dragon's lair form portals to the Elemental Plane of Fire, allowing creatures of elemental fire into the world to dwell nearby."
-										]
-									},
-									"If the dragon dies, these effects fade over the course of {@dice 1d10} days.",
-									{
-										"type": "entries",
-										"name": "Additional Regional Effects",
-										"entries": [
-											"Any of these effects might appear in the area around a red dragon's lair, in addition to or instead of the effects described in the {@i Monster Manual}:",
-											{
-												"type": "list",
-												"style": "list-hang-notitle",
-												"items": [
-													{
-														"type": "item",
-														"name": "Desertification",
-														"entry": "Precipitation is almost nonexistent within 6 miles of the dragon's lair, making the land parched and arid and most plant life withered and brown."
-													},
-													{
-														"type": "item",
-														"name": "Fiery Senses",
-														"entry": "The dragon can hear up to 30 feet through any open flame within 1 mile of the dragon's lair."
-													},
-													{
-														"type": "item",
-														"name": "Ominous Flames",
-														"entry": "Open flames within 6 miles of the dragon's lair are tinged dark red, hiss and crackle constantly, and throw off embers and showers of sparks."
-													}
-												]
-											}
-										],
-										"source": "FTD"
-									}
-								]
-							}
-						]
-					}
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "internal",
-							"path": "bestiary/MM/Red Dragon.jpg"
-						}
-					}
-				]
-			},
-			"legendaryActions": 5,
-			"isNamedCreature": true,
-			"shortName": "Gorotto",
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Gorotto is an 18th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 21}, {@hit 13} to hit with spell attacks) and can innately cast the following spells:"
-					],
-					"daily": {
-						"9": [
-							"{@spell fire storm}",
-							"{@spell fireball}",
-							"{@spell hold monster}"
-						]
-					},
-					"ability": "cha",
-					"type": "spellcasting"
-				}
-			],
-			"spellcastingTags": [
-				"O"
-			],
-			"damageTagsSpell": [
-				"F"
 			],
 			"bonus": [
 				{
-					"name": "Change Shape",
+					"name": "Teleport",
 					"entries": [
-						"The dragon magically transforms into any creature that is Medium or Small, while retaining its game statistics (other than its size). This transformation ends if the dragon is reduced to 0 hit points or uses a bonus action to end it."
+						"The archmage magically teleports, along with any equipment it is wearing or carrying and any creatures it has {@condition grappled}, up to 60 feet to an unoccupied space it can see."
 					]
 				}
+			],
+			"senses": [
+				"{@spell see invisibility} at-will"
 			]
 		},
 		{
@@ -8595,6 +6497,3207 @@
 				"B",
 				"D"
 			]
+		},
+		{
+			"name": "Rick Magnus (Clone)",
+			"source": "KimJongTrillsCustomContent",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item spellwoven robes|tgs1}"
+					]
+				}
+			],
+			"hp": {
+				"special": "225"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 14,
+			"int": 20,
+			"wis": 16,
+			"cha": 16,
+			"save": {
+				"int": "+9",
+				"wis": "+6"
+			},
+			"skill": {
+				"arcana": "+13",
+				"history": "+13"
+			},
+			"passive": 13,
+			"resist": [
+				{
+					"special": "damage from spells"
+				}
+			],
+			"languages": [
+				"any six languages"
+			],
+			"cr": "12",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Rick Magnus (Clone) is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 17}, {@hit 9} to hit with spell attacks). The archmage can cast {@spell shield} and {@spell invisibility} at will and has the following wizard spells prepared:"
+					],
+					"footerEntries": [
+						"*Rick Magnus (Clone) casts these spells on itself before combat."
+					],
+					"will": [
+						"{@spell misty step}",
+						"{@spell shield}"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}",
+								"{@spell light}",
+								"{@spell mage hand}",
+								"{@spell prestidigitation}",
+								"{@spell shocking grasp}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell charm person}",
+								"{@spell feather fall}",
+								"{@spell magic missile}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell detect thoughts}",
+								"{@spell invisibility}",
+								"{@spell mirror image}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell fast friends|AI}",
+								"{@spell fly}",
+								"{@spell pulse wave|EGW}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell banishment}",
+								"{@spell dimension door}",
+								"{@spell dominate beast}",
+								"{@spell fabricate}",
+								"{@spell gravity sinkhole|EGW}",
+								"{@spell greater invisibility}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell dominate person}",
+								"{@spell wall of force}"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell disintegrate}",
+								"{@spell globe of invulnerability}"
+							],
+							"slots": 1
+						},
+						"7": {
+							"spells": [
+								"{@spell teleport}"
+							],
+							"slots": 1
+						},
+						"8": {
+							"spells": [
+								"{@spell dominate monster}",
+								"{@spell mind blank}*"
+							],
+							"slots": 1
+						},
+						"9": {
+							"spells": [
+								"{@spell time stop}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Rick Magnus (Clone) has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/archmage.mp3"
+			},
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"languageTags": [
+				"X"
+			],
+			"damageTags": [
+				"B",
+				"O"
+			],
+			"damageTagsSpell": [
+				"F",
+				"L",
+				"O"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"action": [
+				{
+					"name": "Staff of Striking [10 charges]",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d6 + 5}) bludgeoning damage, or 9 ({@damage 1d8 + 5}) bludgeoning damage if used with both hands, plus 3 ({@damage 1d6}) force damage for each charge expended on a hit."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"shortName": true,
+			"legendaryActions": 3,
+			"legendary": [
+				{
+					"name": "Cast Spell (2 Points)",
+					"entries": [
+						"Uses Spellcasting"
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"Moves its movement speed"
+					]
+				},
+				{
+					"name": "Strike",
+					"entries": [
+						"Make a Weapon Attack"
+					]
+				}
+			],
+			"isNamedCreature": true
+		},
+		{
+			"source": "KimJongTrillsCustomContent",
+			"page": 272,
+			"name": "Elrax, Ravager-sworn",
+			"environment": [
+				"volcanic"
+			],
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"condition": "blood aegis",
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "30d8 + 150",
+				"average": 285
+			},
+			"speed": {
+				"fly": {
+					"number": 40,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 10,
+			"dex": 16,
+			"con": 20,
+			"int": 12,
+			"wis": 12,
+			"cha": 20,
+			"save": {
+				"wis": "+7",
+				"cha": "+11",
+				"con": "+11"
+			},
+			"skill": {
+				"arcana": "+7",
+				"deception": "+11",
+				"perception": "+7",
+				"religion": "+7"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 17,
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"any two languages (usually Abyssal or Infernal)"
+			],
+			"languageTags": [
+				"AB",
+				"I",
+				"X"
+			],
+			"cr": "20",
+			"trait": [
+				{
+					"name": "Legendary Resistance (5/Day)",
+					"entries": [
+						"If the warlock fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Dark One's Own Luck (Recharges After A Short Or Long Rest)",
+					"entries": [
+						"When the warlock makes an ability check or saving throw, it can add a {@dice d10} to the roll. It can do this after the roll is made but before any of the roll's effects occur."
+					]
+				},
+				{
+					"name": "Spell Penetration",
+					"entries": [
+						"When the warlock casts a spell and is interrupted by an enemy's {@spell counterspell}, treat the spell's level as 3 levels higher."
+					]
+				},
+				{
+					"name": "Supreme Focus",
+					"entries": [
+						"The warlock has advantage on saving throws it makes to maintain its concentration."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"action": [
+				{
+					"name": "Ravager Hatchet",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage, plus 10 ({@damage 3d6}) necrotic damage, Elrax regains hit points equal to the necrotic damage ."
+					]
+				},
+				{
+					"name": "Summon Fiend (1/Day)",
+					"entries": [
+						"The warlock summons a barbed devil, barlgura, or mezzoloth. A summoned fiend appears in an unoccupied space within 60 feet of the warlock and acts as an ally of the warlock. It remains for an hour, until it or the warlock dies, or until its summoner dismisses it as an action."
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The warlock casts one of the following spells using Charisma as the spellcasting ability (spell save {@dc 19}, {@hit 11} to hit with spell attacks):"
+					],
+					"will": [
+						"{@spell eldritch blast} (4 beams, {@damage 1d10 + 5})",
+						"{@spell freedom of movement}",
+						"{@spell toll the dead|XGE} ({@damage 4d12})"
+					],
+					"daily": {
+						"6": [
+							"{@spell banishment} (as 5th-level spell)",
+							"{@spell cone of cold} (necrotic damage)",
+							"{@spell fireball} (as 5th-level spell)",
+							"{@spell wall of force}"
+						],
+						"1e": [
+							"{@spell circle of death}",
+							"{@spell power word pain|XGE}",
+							"{@spell power word stun}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I",
+				"CL"
+			],
+			"conditionInflictSpell": [
+				"incapacitated"
+			],
+			"shortName": "warlock",
+			"legendary": [
+				{
+					"name": "Move",
+					"entries": [
+						"The warlock moves up to half its speed without provoking {@action opportunity attack|PHB|opportunity attacks}."
+					]
+				},
+				{
+					"name": "Quarterstaff",
+					"entries": [
+						"The warlock attacks with its Quarterstaff."
+					]
+				},
+				{
+					"name": "Diabolical Presence",
+					"entries": [
+						"The warlock targets one creature it can see within 60 feet of it. If the target can see and hear the warlock, it must succeed on a {@dc 18} Wisdom saving throw or become {@condition charmed} or {@condition frightened} (warlock's choice) for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to warlock's Diabolical Presence for the next 24 hours."
+					]
+				},
+				{
+					"name": "Eldritch Blast",
+					"entries": [
+						"The warlock casts {@spell eldritch blast}."
+					]
+				}
+			],
+			"damageTags": [
+				"N",
+				"S"
+			],
+			"conditionInflict": [
+				"charmed",
+				"frightened"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded3/creature/token/Warlock%20Of%20The%20Fiend,%20Legendary%20%28Token%29.png",
+			"fluff": {},
+			"damageTagsSpell": [
+				"C",
+				"F",
+				"N",
+				"O"
+			],
+			"immune": [
+				"necrotic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"paralyzed",
+				"poisoned",
+				"restrained",
+				"stunned"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Grugrugrug",
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"demon"
+				]
+			},
+			"source": "KimJongTrillsCustomContent",
+			"alignment": [
+				{
+					"alignment": [
+						"C",
+						"E"
+					]
+				},
+				{
+					"alignment": [
+						"U"
+					],
+					"note": "when under the effects of Iron Flask"
+				}
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"condition": "(natural armor)"
+				}
+			],
+			"hp": {
+				"formula": "13d10 + 65",
+				"average": 136
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 23,
+			"dex": 17,
+			"con": 21,
+			"int": 14,
+			"wis": 14,
+			"cha": 16,
+			"passive": 16,
+			"cr": "11",
+			"save": {
+				"cha": "+7",
+				"con": "+9",
+				"dex": "+7"
+			},
+			"skill": {
+				"intimidation": "+7",
+				"perception": "+6"
+			},
+			"resist": [
+				"cold",
+				"fire",
+				"lightning"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"senses": [
+				"truesight 120 ft."
+			],
+			"senseTags": [
+				"U"
+			],
+			"languages": [
+				"Abyssal",
+				"Common",
+				"telepathy 120 ft."
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"TP"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"Grugrugrug's spellcasting ability is Charisma, spell save {@dc 15}  {@hit 7} to hit with spell attacks. The demon can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell darkness}",
+						"{@spell detect evil and good}",
+						"{@spell shatter}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell confusion}",
+							"{@spell hold person}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Grugrugrug has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"Grugrugrug's weapon attacks are magical."
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"shortName": true,
+			"isNamedCreature": true,
+			"damageTagsSpell": [
+				"T"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Grugrugrug makes three attacks: one with its bite and two with its ranseur. It can attack with its tongue instead of making a bite attack."
+					]
+				},
+				{
+					"name": "Ranseur",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}20 ({@damage 4d6 + 6}) piercing damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}17 ({@damage 2d10 + 6}) piercing damage."
+					]
+				},
+				{
+					"name": "Tongue",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}15 ({@damage 2d8 + 6}) slashing damage, and the target is {@condition grappled} (escape {@dc 16}). Until this grapple ends, the target is {@condition restrained}, and Grugrugrug cannot attack with its tongue."
+					]
+				},
+				{
+					"name": "Combustible Spittle {@recharge 5}",
+					"entries": [
+						"Grugrugrug  spits a line of acid in a 30-foot line that is 5 feet wide. Each creature in that line must make a {@dc 17} Dexterity saving throw, taking 27 ({@damage 6d8}) acid damage on a failed save, or half as much on a successful one. At the start of the demon’s next turn, the acid ignites and any targets hit by it burst into flames, taking 10 ({@damage 3d6}) fire damage per round until extinguished."
+					]
+				}
+			],
+			"damageTags": [
+				"A",
+				"F",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained"
+			],
+			"actionTags": [
+				"Multiattack"
+			]
+		},
+		{
+			"name": "Ravager Warlock, Legendary",
+			"source": "KimJongTrillsCustomContent",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"warlock"
+				]
+			},
+			"alignment": [
+				"E"
+			],
+			"alignmentPrefix": "typically ",
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"blood aegis"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d10 + 75",
+				"average": 225
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 20,
+			"int": 12,
+			"wis": 14,
+			"cha": 14,
+			"save": {
+				"con": "+10",
+				"int": "+6",
+				"wis": "+7",
+				"cha": "+7"
+			},
+			"skill": {
+				"medicine": "+7",
+				"survival": "+7",
+				"perception": "+7",
+				"arcana": "+11",
+				"stealth": "+12"
+			},
+			"passive": 17,
+			"resist": [],
+			"conditionImmune": [
+				"exhaustion",
+				"paralyzed",
+				"stunned"
+			],
+			"languages": [
+				"All languages"
+			],
+			"cr": "15",
+			"trait": [
+				{
+					"name": "Sanguine Sense",
+					"entries": [
+						"While the blood mage isn't {@condition blinded}, it can see any creature that isn't an Undead or a Construct within 60 feet of itself, even through total cover, heavily obscured areas, invisibility, or any other phenomena that would prevent sight."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/day)",
+					"entries": [
+						"If the blood mage fails a saving throw you can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Blood Magic",
+					"entries": [
+						"The Warlock has advantage on Constitution saving throws to maintain concentration on a spell."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The blood mage makes two Blood Lash attacks."
+					]
+				},
+				{
+					"name": "Blood Lash",
+					"entries": [
+						"{@atk ms} {@hit 9} to hit, reach 10 ft., one target. {@h}16 ({@damage 2d10 + 5}) necrotic damage. If the target is a creature, it can't regain hit points until the start of the blood mage's next turn."
+					]
+				},
+				{
+					"name": "Eldritch Blast",
+					"entries": [
+						"{@atk rs} {@hit 9} to hit, 120 ft., 3 beams. {@h}11 ({@damage 1d10 + 5}) force damage."
+					]
+				},
+				{
+					"name": "Blood Boil {@recharge 4}",
+					"entries": [
+						"The blood mage chooses a point within 150 feet of itself, and a 20-foot radius sphere centered on that point fills with a burst of searing, blood-red mist. Each creature of the blood mage's choice that it can see in that area must make a {@dc 17} Constitution saving throw. On a failed save, a creature takes 21 ({@damage 6d6}) necrotic damage and is {@condition incapacitated} until the end of its next turn. On a success, a creature takes half as much damage and isn't {@condition incapacitated}. A creature dies if reduced to 0 hit points by this necrotic damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"N",
+				"O"
+			],
+			"miscTags": [
+				"RCH",
+				"AOE"
+			],
+			"conditionInflict": [
+				"incapacitated"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/SCC/Oriq Blood Mage.png",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Ravager Warlock uses Constitution as its spellcasting modifier {@dc 18} {@hit 9}."
+					],
+					"spells": {
+						"5": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell dimension door}",
+								"{@spell hellish rebuke} ({@damage 6d10})",
+								"{@spell hold person}"
+							],
+							"slots": 4,
+							"lower": 1
+						}
+					},
+					"ability": "con",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CL"
+			],
+			"damageTagsSpell": [
+				"F",
+				"O"
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"bonus": [
+				{
+					"name": "Shadow Step",
+					"entries": [
+						"When you are in dim light or darkness, as a bonus action you can teleport up to 30 feet to an unoccupied space you can see that is also in dim light or darkness."
+					]
+				}
+			],
+			"isNamedCreature": true,
+			"legendary": [
+				{
+					"name": "Spellcasting [2 Actions]",
+					"entries": [
+						"Uses Spellcasting or Eldritch Blast"
+					]
+				},
+				{
+					"name": "Blood Lash",
+					"entries": [
+						"Makes a Blood Lash attack."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"Moves its movement speed without provoking opportunity attacks"
+					]
+				}
+			],
+			"senses": [
+				"Devilsight 120 ft.",
+				"blindsight 60 ft."
+			],
+			"immune": [
+				"necrotic"
+			],
+			"senseTags": [
+				"B"
+			]
+		},
+		{
+			"name": "Ravager Warlock",
+			"source": "KimJongTrillsCustomContent",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"warlock"
+				]
+			},
+			"alignment": [
+				"E"
+			],
+			"alignmentPrefix": "typically ",
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"blood aegis"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d10 + 75",
+				"average": 157
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 20,
+			"int": 12,
+			"wis": 14,
+			"cha": 14,
+			"save": {
+				"con": "+10",
+				"int": "+6",
+				"wis": "+7",
+				"cha": "+7"
+			},
+			"skill": {
+				"medicine": "+7",
+				"survival": "+7",
+				"perception": "+7",
+				"arcana": "+11",
+				"stealth": "+12"
+			},
+			"passive": 17,
+			"resist": [],
+			"conditionImmune": [
+				"exhaustion",
+				"paralyzed",
+				"stunned"
+			],
+			"languages": [
+				"All languages"
+			],
+			"cr": "13",
+			"trait": [
+				{
+					"name": "Sanguine Sense",
+					"entries": [
+						"While the blood mage isn't {@condition blinded}, it can see any creature that isn't an Undead or a Construct within 60 feet of itself, even through total cover, heavily obscured areas, invisibility, or any other phenomena that would prevent sight."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/day)",
+					"entries": [
+						"If the blood mage fails a saving throw you can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Blood Magic",
+					"entries": [
+						"The Warlock has advantage on Constitution saving throws to maintain concentration on a spell."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The blood mage makes two Blood Lash attacks."
+					]
+				},
+				{
+					"name": "Blood Lash",
+					"entries": [
+						"{@atk ms} {@hit 9} to hit, reach 10 ft., one target. {@h}16 ({@damage 2d10 + 5}) necrotic damage. If the target is a creature, it can't regain hit points until the start of the blood mage's next turn."
+					]
+				},
+				{
+					"name": "Eldritch Blast",
+					"entries": [
+						"{@atk rs} {@hit 9} to hit, 120 ft., 3 beams. {@h}11 ({@damage 1d10 + 5}) force damage."
+					]
+				},
+				{
+					"name": "Blood Boil {@recharge 4}",
+					"entries": [
+						"The blood mage chooses a point within 150 feet of itself, and a 20-foot radius sphere centered on that point fills with a burst of searing, blood-red mist. Each creature of the blood mage's choice that it can see in that area must make a {@dc 17} Constitution saving throw. On a failed save, a creature takes 21 ({@damage 6d6}) necrotic damage and is {@condition incapacitated} until the end of its next turn. On a success, a creature takes half as much damage and isn't {@condition incapacitated}. A creature dies if reduced to 0 hit points by this necrotic damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"N",
+				"O"
+			],
+			"miscTags": [
+				"RCH",
+				"AOE"
+			],
+			"conditionInflict": [
+				"incapacitated"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/SCC/Oriq Blood Mage.png",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Ravager Warlock uses Constitution as its spellcasting modifier {@dc 18} {@hit 9}."
+					],
+					"spells": {
+						"5": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell dimension door}",
+								"{@spell hellish rebuke} ({@damage 6d10})",
+								"{@spell hold person}"
+							],
+							"slots": 4,
+							"lower": 1
+						}
+					},
+					"ability": "con",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CL"
+			],
+			"damageTagsSpell": [
+				"F",
+				"O"
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"bonus": [
+				{
+					"name": "Shadow Step",
+					"entries": [
+						"When you are in dim light or darkness, as a bonus action you can teleport up to 30 feet to an unoccupied space you can see that is also in dim light or darkness."
+					]
+				}
+			],
+			"senses": [
+				"Devilsight 120 ft.",
+				"blindsight 60 ft."
+			],
+			"immune": [
+				"necrotic"
+			],
+			"senseTags": [
+				"B"
+			]
+		},
+		{
+			"name": "Ravager Blood Lord",
+			"group": [
+				"Ravagers"
+			],
+			"source": "KimJongTrillsCustomContent",
+			"size": [
+				"L"
+			],
+			"type": "aberration",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"blood aegis"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d12 + 105",
+				"average": 202
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 22,
+			"dex": 16,
+			"con": 24,
+			"int": 12,
+			"wis": 14,
+			"cha": 18,
+			"save": {
+				"str": "+10",
+				"con": "+11",
+				"wis": "+6"
+			},
+			"skill": {
+				"intimidation": "+12"
+			},
+			"senses": [
+				"darkvision 60 ft.",
+				"blindsight 120 ft."
+			],
+			"passive": 12,
+			"languages": [
+				"Abyssal",
+				"Common",
+				"one other language"
+			],
+			"cr": "9",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The Blood Lord's innate spellcasting ability is Constitution (spell save {@dc 19}, {@hit 11} to hit with spell attacks). It can innately cast the following spells, requiring no components:"
+					],
+					"will": [
+						"{@spell spirit guardians} ({@damage 3d8})",
+						"{@spell thaumaturgy}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell destructive wave}",
+							"{@spell divine word}",
+							"{@spell fire storm}",
+							"{@spell fireball}",
+							"{@spell harm}"
+						]
+					},
+					"ability": "con",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the Blood Lord fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Unarmored Defense",
+					"entries": [
+						"While the Blood Lord is wearing no armor and not wielding a {@item shield|PHB}, its AC includes its Constitution modifier."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Blood Lord makes four attacks with its Dual Bloodswords or three attacks with its Crimson Spear."
+					]
+				},
+				{
+					"name": "Dual Bloodswords",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d6 + 6}) slashing damage plus 3 ({@damage 1d6}) necrotic damage."
+					]
+				},
+				{
+					"name": "Crimson Spear",
+					"entries": [
+						"{@atk rw} {@hit 10} to hit, range 60 ft., one target. {@h}13 ({@damage 2d6 + 6}) piercing damage plus 3 ({@damage 1d6}) necrotic damage."
+					]
+				},
+				{
+					"name": "Whirlwind Strikes {@recharge 5}",
+					"entries": [
+						"Each Creature within 15 feet of the Blood Lord must make a {@dc 18} Dexterity Save or take ({@damage 5d6}) slashing and ({@damage 5d6}) necrotic damage, half as much on a success"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Aggressive",
+					"entries": [
+						"The Blood Lord can move up to its speed toward a hostile creature it can see."
+					]
+				},
+				{
+					"name": "Blood Curse",
+					"entries": [
+						"Cast Spirit Guardians"
+					]
+				}
+			],
+			"environment": [
+				"desert",
+				"forest",
+				"grassland",
+				"hill",
+				"mountain"
+			],
+			"fluff": {},
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TDCSR/creature/RavagerSlaughterLordToken.webp",
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"D",
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"S"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW",
+				"AOE"
+			],
+			"conditionInflictSpell": [
+				"blinded",
+				"deafened",
+				"stunned"
+			],
+			"damageTagsSpell": [
+				"F",
+				"N",
+				"R",
+				"T"
+			],
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"preNote": "non-magical"
+				},
+				{
+					"resist": [
+						"poison"
+					]
+				}
+			],
+			"immune": [
+				"necrotic"
+			],
+			"conditionImmune": [
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"stunned"
+			],
+			"isNamedCreature": true,
+			"shortName": "Ravager Blood Lord"
+		},
+		{
+			"name": "Ravager Fanatic",
+			"source": "KimJongTrillsCustomContent",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d8 + 4",
+				"average": 22
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 14,
+			"con": 12,
+			"int": 10,
+			"wis": 14,
+			"cha": 14,
+			"skill": {
+				"deception": "+4",
+				"persuasion": "+4",
+				"religion": "+2"
+			},
+			"passive": 12,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"cr": "2",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The fanatic is a 4th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 12}, {@hit 4} to hit with spell attacks). The fanatic has the following cleric spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell light}",
+								"{@spell thaumaturgy}",
+								"{@spell toll the dead|XGE}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell bane}",
+								"{@spell command}",
+								"{@spell inflict wounds}",
+								"{@spell shield of faith}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell hold person}",
+								"{@spell spiritual weapon}"
+							],
+							"slots": 3
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Dark Devotion",
+					"entries": [
+						"The fanatic has advantage on saving throws against being {@condition charmed} or {@condition frightened}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The fanatic makes two melee attacks."
+					]
+				},
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one creature. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Spells",
+					"entries": [
+						"{@atk sp} {@hit 4} to hit or {@dc 12}, varied range ({@damage 1d8}) ({@damage 1d12}) ({@damage 1d8 + 2}) ({@damage 3d10}) ({@damage 4d10})"
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"name": "Cult Fanatic",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Fanatics are often part of a cult's leadership, using their charisma and dogma to influence and prey on those of weak will. Most are interested in personal power above all else"
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Cult Fanatic.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://get.5e.tools/img/MM/Cult Fanatic.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://get.5e.tools/audio/bestiary/cult-fanatic.mp3"
+			},
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"THW"
+			],
+			"conditionInflictSpell": [
+				"paralyzed",
+				"prone"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"damageTagsSpell": [
+				"N",
+				"O"
+			]
+		},
+		{
+			"name": "Ravager Commander",
+			"source": "KimJongTrillsCustomContent",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"L",
+				"NX",
+				"C",
+				"NY",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 21,
+					"from": [
+						"{@item demon armor}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d10 + 30",
+				"average": 180
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 13,
+			"con": 14,
+			"int": 12,
+			"wis": 14,
+			"cha": 16,
+			"save": {
+				"wis": "+5",
+				"cha": "+6",
+				"con": "+7",
+				"str": "+9"
+			},
+			"skill": {
+				"athletics": "+9",
+				"deception": "+8",
+				"intimidation": "+8",
+				"perception": "+7"
+			},
+			"senses": [
+				"Devil's Sight 120 ft."
+			],
+			"passive": 17,
+			"resist": [
+				"necrotic",
+				"poison"
+			],
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"cr": "13",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Its spellcasting ability is Charisma (spell save {@dc 15}, {@hit 6} to hit with spell attacks). It has the following spells prepared:"
+					],
+					"footerEntries": [
+						"{@damage 2d8} | {@damage 2d12} "
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell eldritch blast}",
+								"{@spell toll the dead|XGE}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell bane}",
+								"{@spell command}",
+								"{@spell compelled duel}",
+								"{@spell hellish rebuke}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell crown of madness}",
+								"{@spell darkness}",
+								"{@spell find steed}",
+								"{@spell hold person}"
+							],
+							"slots": 4
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell dispel magic}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Aura of Protection",
+					"entries": [
+						"All allies within 10 feet gain +3 to saves."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the Lieutenant fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The knight attacks three times with one of its weapons."
+					]
+				},
+				{
+					"name": "Ravager Blade",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d8 + 5}) slashing and ({@damage 2d8}) necrotic damage, heals for necrotic damage."
+					]
+				},
+				{
+					"name": "Eldritch Blast",
+					"entries": [
+						"{@atk rsp} {@hit 8} to hit, 120 ft., 3 beams. {@h}9 ({@damage 1d10 + 3}) force damage."
+					]
+				}
+			],
+			"fluff": {
+				"name": "Bone Knight",
+				"source": "ERLW",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Bone knights are the champions of the Order of the Emerald Claw. Clad in distinctive bonecraft armor—heavy armor adorned with the bones of fallen enemies—these fearsome warriors command squads of undead soldiers as they pursue the sinister goals of Lady Illmarrow.",
+									{
+										"type": "entries",
+										"name": "Karrnathi Patriots",
+										"entries": [
+											"Early in the Last War, Karrnath turned to the necromancers of the Blood of Vol to bolster the nation's army with undead forces. The skeletons and zombies created by the necromancers were mindless creatures that required guidance. The first bone knights were appointed to provide this control.",
+											"Devoted paladins of the Blood of Vol were fused into suits of bonecraft armor, whose magic focused their divine gifts, allowing them to command units of mindless undead. Bonecraft armor can't be removed without killing the knight who wears it, and when donning it, each bone knight understood that their former life was over."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "The Fall of the Emerald Claw",
+										"entries": [
+											"During the Last War, many bone knights took service with the Order of the Emerald Claw, helping that name strike fear into the enemies of Karrnath. In the last decade, King Kaius III of Karrnath has done much to ensure a peaceful end to the Last War. Under the terms of the Treaty of Thronehold, Kaius sealed most of Karrnath's undead in deep vaults, and the Order of the Emerald Claw was disbanded. A few bone knights remained in service to the crown, but most were cast aside—still bound to their bonecraft armor and still convinced of Karrnathi supremacy. These bone knights felt that Kaius had betrayed both them and their nation, leading their once-proud order to find a new purpose in the service of Lady Illmarrow."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/ERLW/Bone Knight.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://get.5e.tools/img/ERLW/Bone Knight.png",
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"O"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"damageTagsSpell": [
+				"F",
+				"N",
+				"O"
+			],
+			"shortName": true,
+			"isNamedCreature": true,
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"Makes a melee Attack"
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"Moves his speed without provoking opportunity attacks"
+					]
+				},
+				{
+					"name": "Spellcasting [2 Actions]",
+					"entries": [
+						"Casts a spell"
+					]
+				}
+			],
+			"conditionImmune": [
+				"paralyzed",
+				"stunned"
+			]
+		},
+		{
+			"name": "Ravager Blood Lord, Legendary",
+			"group": [
+				"Ravagers"
+			],
+			"source": "KimJongTrillsCustomContent",
+			"size": [
+				"H"
+			],
+			"type": "aberration",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"blood aegis"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d12 + 105",
+				"average": 285
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 22,
+			"dex": 16,
+			"con": 24,
+			"int": 12,
+			"wis": 14,
+			"cha": 18,
+			"save": {
+				"str": "+11",
+				"con": "+12",
+				"wis": "+7"
+			},
+			"skill": {
+				"intimidation": "+14"
+			},
+			"senses": [
+				"darkvision 60 ft.",
+				"blindsight 120 ft."
+			],
+			"passive": 12,
+			"languages": [
+				"Abyssal",
+				"Common",
+				"one other language"
+			],
+			"cr": "13",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The Blood Lord's innate spellcasting ability is Constitution (spell save {@dc 20}, {@hit 12} to hit with spell attacks). It can innately cast the following spells, requiring no components:"
+					],
+					"will": [
+						"{@spell spirit guardians} ({@damage 3d8})",
+						"{@spell thaumaturgy}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell destructive wave}",
+							"{@spell divine word}",
+							"{@spell fire storm}",
+							"{@spell fireball}",
+							"{@spell harm}"
+						]
+					},
+					"ability": "con",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the Blood Lord fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Unarmored Defense",
+					"entries": [
+						"While the Blood Lord is wearing no armor and not wielding a {@item shield|PHB}, its AC includes its Constitution modifier."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Blood Lord makes four attacks with its Dual Bloodswords or three attacks with its Crimson Spear."
+					]
+				},
+				{
+					"name": "Dual Bloodsword",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d6 + 6}) slashing damage plus 3 ({@damage 1d6}) necrotic damage."
+					]
+				},
+				{
+					"name": "Crimson Spear",
+					"entries": [
+						"{@atk rw} {@hit 11} to hit, range 60 ft., one target. {@h}13 ({@damage 2d6 + 6}) piercing damage plus 3 ({@damage 1d6}) necrotic damage."
+					]
+				},
+				{
+					"name": "Whirlwind Strikes {@recharge 5}",
+					"entries": [
+						"Each Creature within 15 feet of the Blood Lord must make a {@dc 18} Dexterity Save or take ({@damage 5d6}) slashing and ({@damage 5d6}) necrotic damage, half as much on a success"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Aggressive",
+					"entries": [
+						"The Blood Lord can move up to its speed toward a hostile creature it can see."
+					]
+				},
+				{
+					"name": "Blood Curse",
+					"entries": [
+						"Cast Spirit Guardians"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"The Blood  Lord makes a Crimson spear or Dual Bloodsword attack."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"The Blood Lord moves up to half its speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Cast a Spell (Costs 2 Actions)",
+					"entries": [
+						"The Blood Lord {@action cast a spell|PHB|casts an innate spell}."
+					]
+				}
+			],
+			"environment": [
+				"desert",
+				"forest",
+				"grassland",
+				"hill",
+				"mountain"
+			],
+			"fluff": {},
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TDCSR/creature/RavagerSlaughterLordToken.webp",
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"D",
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"S"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW",
+				"AOE"
+			],
+			"conditionInflictSpell": [
+				"blinded",
+				"deafened",
+				"stunned"
+			],
+			"damageTagsSpell": [
+				"F",
+				"N",
+				"R",
+				"T"
+			],
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"preNote": "non-magical"
+				},
+				{
+					"resist": [
+						"poison"
+					]
+				}
+			],
+			"immune": [
+				"necrotic"
+			],
+			"conditionImmune": [
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"stunned"
+			],
+			"isNamedCreature": true,
+			"shortName": "Ravager Blood Lord"
+		},
+		{
+			"name": "Fey-Blessed Eric",
+			"source": "KimJongTrillsCustomContent",
+			"size": [
+				"T"
+			],
+			"type": "fey",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"formula": "4d4",
+				"average": 10
+			},
+			"speed": {
+				"walk": 10,
+				"fly": 60
+			},
+			"str": 8,
+			"dex": 18,
+			"con": 10,
+			"int": 6,
+			"wis": 14,
+			"cha": 12,
+			"skill": {
+				"perception": "+6",
+				"stealth": "+6"
+			},
+			"passive": 16,
+			"languages": [
+				"understands Common",
+				"and Sylvan but can't speak"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Fey Utility",
+					"entries": [
+						"You can have Eric can use its action to change into alternate forms that resembles any of the find familiar forms available to you, or back into its true form. Its statistics are the same in each form, except for using the new forms movement, and gaining the forms senses and traits in addition to its own. Any equipment Eric is wearing or carrying isn't transformed."
+					]
+				},
+				{
+					"name": "Careful",
+					"entries": [
+						"Eric doesn't provoke opportunity attacks when it moves out of an enemy's reach."
+					]
+				},
+				{
+					"name": "Keen Senses",
+					"entries": [
+						"Eric has advantage on Wisdom ({@skill Perception}) checks."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Strike",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d4 + 4}) force damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"languageTags": [
+				"C",
+				"CS",
+				"S"
+			],
+			"damageTags": [
+				"O"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"tokenUrl": "https://5e.tools/img/ERLW/Valenar Hawk.png",
+			"fluff": {
+				"name": "Valenar Hawk",
+				"source": "ERLW",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"The elves of Valenar say that when their ancestors fought the giants of Xen'drik, elf druids took the forms of animals on the battlefield. The cruel and mighty Emperor Cul'sir of the giants laid a curse upon the druids and trapped them in the forms of animals. Just as the ancestors of the Valenar guide their warriors in battle, the spirits of these druids can awaken power in an animal to create a companion worthy of a champion.",
+									"Valenar animals are awakened to advanced intelligence and power by the touch of an ancestral spirit. Traditionally, Valenar animals choose Valenar elves as companions, reflecting a bond between the ancestors of elf and animal. To be chosen by a Valenar animal is a great honor, and any such elf is treated with respect and reverence. Still, on the rare occasions when a Valenar animal chooses an adventurer of a different ancestry as a companion, it is universally accepted.",
+									"The Valenar animals presented here—hawk, hound, and steed—are but examples, for the ancestral spirits can take on many animal forms.",
+									{
+										"type": "entries",
+										"name": "Variant: Ancestral Traits",
+										"entries": [
+											"Each Valenar animal can be customized with an ancestral gift, a supernatural trait granted by its ancestral spirit. Choose a trait or roll on the Ancestral Traits table for each Valenar animal.",
+											{
+												"type": "table",
+												"caption": "Ancestral Traits",
+												"colLabels": [
+													"d8",
+													"Trait"
+												],
+												"colStyles": [
+													"col-2 text-center",
+													"col-10"
+												],
+												"rows": [
+													[
+														"1",
+														"Bestow Luck (1/Day). As a bonus action, the animal chooses one creature it can see within 30 feet of it. The next ability check, attack roll, or saving throw the target makes in the next hour has advantage."
+													],
+													[
+														"2",
+														"Burst of Speed {@recharge}. The animal can take the {@action Dash} action as a bonus action."
+													],
+													[
+														"3",
+														"Camouflage. The animal has advantage on Dexterity ({@skill Stealth}) checks it makes while outdoors."
+													],
+													[
+														"4",
+														"Lie Detector. The animal knows when a creature within 15 feet of it tells a lie."
+													],
+													[
+														"5",
+														"Fey Ancestry. The animal has advantage on saving throws against being {@condition charmed} or {@condition frightened}, and magic can't put it to sleep."
+													],
+													[
+														"6",
+														"Fey Step (1/Day). The animal, along with anything it is wearing or carrying, teleports up to 30 feet to an unoccupied space it can see."
+													],
+													[
+														"7",
+														"Quickness {@recharge}. The animal can take the {@action Dodge} action as a bonus action."
+													],
+													[
+														"8",
+														"Shrouded Step. The animal can't be tracked except by magical means, and it leaves behind no tracks or other traces of its passage."
+													]
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"shortName": "Eric",
+			"isNamedCreature": true,
+			"familiar": true
+		},
+		{
+			"name": "Gorotto, The Destroyer",
+			"group": [
+				"Chromatic Dragon"
+			],
+			"source": "KimJongTrillsCustomContent",
+			"size": [
+				"G",
+				"M"
+			],
+			"type": "dragon",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 22,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "777 idk well see"
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40,
+				"fly": 80
+			},
+			"str": 25,
+			"dex": 14,
+			"con": 28,
+			"int": 19,
+			"wis": 15,
+			"cha": 23,
+			"save": {
+				"dex": "+9",
+				"con": "+16",
+				"wis": "+9",
+				"cha": "+13"
+			},
+			"skill": {
+				"perception": "+16",
+				"athletics": "+21",
+				"intimidation": "+20",
+				"insight": "+9"
+			},
+			"senses": [
+				"blindsight 60 ft.",
+				"darkvision 120 ft."
+			],
+			"passive": 31,
+			"immune": [
+				"fire"
+			],
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"cr": "24",
+			"trait": [
+				{
+					"name": "Legendary Resistance (5/Day)",
+					"entries": [
+						"If Gorotto fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Frightful Presence",
+					"entries": [
+						"Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a {@dc 21} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours."
+					]
+				},
+				{
+					"name": "Sentinel's Watch",
+					"entries": [
+						"Adv. on all Perception checks, +5 to passive"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Gorotto can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 15 ft., one target. {@h}16 ({@damage 2d8 + 7}) piercing damage, plus 14 ({@damage 4d6}) fire damage."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 10 ft., one target. {@h}14 ({@damage 2d6 + 7}) slashing damage."
+					]
+				},
+				{
+					"name": "Tail (Dragon Form)",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 20 ft., one target. {@h}23 ({@damage 3d10 + 7}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Fire Breath {@recharge 5}",
+					"entries": [
+						"The dragon exhales fire in a 90-foot cone. Each creature in that area must make a {@dc 23} Dexterity saving throw, taking 91 ({@damage 26d6}) fire damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Detect",
+					"entries": [
+						"The dragon makes a Wisdom ({@skill Perception}) check."
+					]
+				},
+				{
+					"name": "Attack",
+					"entries": [
+						"The dragon makes a melee attack."
+					]
+				},
+				{
+					"name": "Cast a Spell (Costs 2 Actions)",
+					"entries": [
+						"Uses spellcasting"
+					]
+				},
+				{
+					"name": "Wing Attack (Costs 2 Actions, Dragon Form)",
+					"entries": [
+						"The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a {@dc 25} Dexterity saving throw or take 17 ({@damage 2d6 + 10}) bludgeoning damage and be knocked {@condition prone}. The dragon can then fly up to half its flying speed."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"Moves up to his movement speed without provoking opportunity attacks."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Elemental Gauntlet",
+				"source": "KimJongTrillsCustomContent"
+			},
+			"dragonCastingColor": "red",
+			"dragonAge": "ancient",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/red-dragon.mp3"
+			},
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack",
+				"Shapechanger"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"P",
+				"S"
+			],
+			"damageTagsLegendary": [
+				"F"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"conditionInflict": [
+				"frightened",
+				"prone"
+			],
+			"conditionInflictLegendary": [
+				"incapacitated",
+				"poisoned",
+				"prone"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"shortName": true,
+			"resist": [
+				{
+					"resist": [
+						"cold",
+						"lightning",
+						"thunder"
+					],
+					"note": "from the Gauntlet"
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Gorotto's spell casting ability is Charisma, spell save {@dc 21}, spell attack bonus {@hit 13}."
+					],
+					"will": [
+						"{@spell fire bolt} ({@damage 4d10})",
+						"{@spell fireball} ({@damage 8d6})",
+						"{@spell telekinesis} ({@hit 6})"
+					],
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"damageTagsSpell": [
+				"F"
+			],
+			"bonus": [
+				{
+					"name": "Change Shape",
+					"entries": [
+						"Changes into either his humanoid or dragon form."
+					]
+				},
+				{
+					"name": "Gauntlet of the Elements",
+					"entries": [
+						"Gorotto summons to a point that he can see, a Huge class Water, Earth, Air, or Fire Elemental (from MME) the Elemental acts immediately after Gorotto in Initiative and persists until destroyed or another is summoned."
+					]
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"stunned"
+			],
+			"isNamedCreature": true,
+			"legendaryActions": 5
+		},
+		{
+			"name": "Plasmaris, The Cerulean Queen",
+			"group": [
+				"Chromatic Dragon"
+			],
+			"source": "KimJongTrillsCustomContent",
+			"size": [
+				"G"
+			],
+			"type": "dragon",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 22,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 481,
+				"formula": "26d20 + 208"
+			},
+			"speed": {
+				"walk": 40,
+				"fly": 80,
+				"swim": 40
+			},
+			"str": 24,
+			"dex": 10,
+			"con": 27,
+			"int": 18,
+			"wis": 20,
+			"cha": 20,
+			"save": {
+				"con": "+15",
+				"wis": "+12",
+				"cha": "+12",
+				"int": "+11"
+			},
+			"skill": {
+				"stealth": "+7",
+				"survival": "+12",
+				"intimidation": "+19",
+				"perception": "+19"
+			},
+			"senses": [
+				"blindsight 60 ft.",
+				"darkvision 120 ft."
+			],
+			"passive": 29,
+			"immune": [
+				"lightning"
+			],
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"cr": "23",
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the dragon fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Frightful Presence",
+					"entries": [
+						"Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a {@dc 20} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 15 ft., one target. {@h}20 ({@damage 2d10 + 9}) piercing damage plus 11 ({@damage 2d10}) lightning damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 10 ft., one target. {@h}16 ({@damage 2d6 + 9}) slashing damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 20 ft., one target. {@h}18 ({@damage 2d8 + 9}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Lightning Breath {@recharge 5}",
+					"entries": [
+						"The dragon exhales lightning in a 120-foot line that is 10 feet wide. Each creature in that line must make a {@dc 23} Dexterity saving throw, taking 88 ({@damage 16d10}) lightning damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Detect",
+					"entries": [
+						"The dragon makes a Wisdom ({@skill Perception}) check."
+					]
+				},
+				{
+					"name": "Tail Attack",
+					"entries": [
+						"The dragon makes a tail attack."
+					]
+				},
+				{
+					"name": "Spellcasting (Costs 2 Actions)",
+					"entries": [
+						"Cast a spell."
+					]
+				},
+				{
+					"name": "Wing Attack (Costs 2 Actions)",
+					"entries": [
+						"The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a {@dc 24} Dexterity saving throw or take 16 ({@damage 2d6 + 9}) bludgeoning damage and be knocked {@condition prone}. The dragon can then fly up to half its flying speed."
+					]
+				}
+			],
+			"dragonCastingColor": "blue",
+			"dragonAge": "ancient",
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"B",
+				"L",
+				"P",
+				"S"
+			],
+			"damageTagsLegendary": [
+				"B",
+				"L"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"conditionInflict": [
+				"frightened",
+				"prone"
+			],
+			"conditionInflictLegendary": [
+				"blinded",
+				"prone",
+				"restrained"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Vain and territorial, blue dragons soar through the skies over deserts, preying on caravans and plundering herds and settlements in the verdant lands beyond the desert's reach. These dragons can also be found in dry steppes, searing badlands, and rocky coasts. They guard their territories against all potential competitors, especially brass dragons.",
+									"A blue dragon is recognized by its dramatic frilled ears and the massive ridged horn atop its blunt head. Rows of spikes extend back from its nostrils to line its brow, and cluster on its jutting lower jaw.",
+									"A blue dragon's scales vary in color from an iridescent azure to a deep indigo, polished to a glossy finish by the desert sands. As the dragon ages, its scales become thicker and harder, and its hide hums and crackles with static electricity. These effects intensify when the dragon is angry or about to attack, giving off an odor of ozone and dusty air.",
+									{
+										"name": "Vain and Deadly",
+										"type": "entries",
+										"entries": [
+											"A blue dragon will not stand for any remark or insinuation that it is weak or inferior, taking great pleasure in lording its power over humanoids and other lesser creatures.",
+											"A blue dragon is a patient and methodical combatant. When fighting on its own terms, it turns combat into an extended affair of hours or even days, attacking from a distance with volleys of lightning, then flying well out of harm's reach as it waits to attack again."
+										]
+									},
+									{
+										"name": "Desert Predators",
+										"type": "entries",
+										"entries": [
+											"Though they sometimes eat cacti and other desert plants to sate their great hunger, blue dragons are carnivores. They prefer to dine on herd animals, cooking those creatures with their lightning breath before gorging themselves. Their dining habits make blue dragons an enormous threat to desert caravans and nomadic tribes, which become convenient collections of food and treasure to a dragon's eye.",
+											"When it hunts, a blue dragon buries itself in the desert sand so that only the horn on its nose pokes above the surface, appearing to be an outcropping of stone. When prey draws near, the dragon rises up, sand pouring from its wings like an avalanche as it attacks."
+										]
+									},
+									{
+										"name": "Overlords and Minions",
+										"type": "entries",
+										"entries": [
+											"Blue dragons covet valuable and talented creatures whose service reinforces their sense of superiority. Bards, sages, artists, wizards, and assassins can become valuable agents for a blue dragon, which rewards loyal service handsomely.",
+											"A blue dragon keeps its lair secret and well protected, and even its most trusted servants are rarely allowed within. It encourages ankhegs, giant scorpions, and other creatures of the desert to dwell near its lair for additional security. Older blue dragons sometimes attract air elementals and other creatures to serve them."
+										]
+									},
+									{
+										"name": "Hoarders of Gems",
+										"type": "entries",
+										"entries": [
+											"Though blue dragons collect anything that looks valuable, they are especially fond of gems. Considering blue to be the most noble and beautiful of colors, they covet sapphires, favoring jewelery and magic items adorned with those gems.",
+											"A blue dragon buries its most valuable treasures deep in the sand, while scattering a few less valuable trinkets in plainer sight over hidden sinkholes to punish and eliminate would-be thieves."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "A Blue Dragon's Lair",
+										"entries": [
+											"Blue dragons make their lairs in barren places, using their lightning breath and their burrowing ability to carve out crystallized caverns and tunnels beneath the sands.",
+											"Thunderstorms rage around a legendary blue dragon's lair, and narrow tubes lined with glassy sand ventilate the lair, all the while avoiding the deadly sinkholes that are the dragon's first line of defense.",
+											"A blue dragon will collapse the caverns that make up its lair if that lair is invaded. The dragon then burrows out, leaving its attackers to be crushed and suffocated. When it returns later, it collects its possessions-along with the wealth of the dead intruders."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Chromatic Dragons",
+						"entries": [
+							"The black, blue, green, red, and white dragons represent the evil side of dragonkind. Aggressive, gluttonous, and vain, chromatic dragons are dark sages and powerful tyrants feared by all creatures-including each other.",
+							{
+								"name": "Driven by Greed",
+								"entries": [
+									" Chromatic dragons lust after treasure, and this greed colors their every scheme and plot. They believe that the world's wealth belongs to them by right, and a chromatic dragon seizes that wealth without regard for the humanoids and other creatures that have \"stolen\" it. With its piles of coins, gleaming gems, and magic items, a dragon's hoard is the stuff of legend. However, chromatic dragons have no interest in commerce, amassing wealth for no other reason than to have it."
+								],
+								"type": "entries"
+							},
+							{
+								"name": "Creatures of Ego",
+								"type": "entries",
+								"entries": [
+									"Chromatic dragons are united by their sense of superiority, believing themselves the most powerful and worthy of all mortal creatures. When they interact with other creatures, it is only to further their own interests. They believe in their innate right to rule, and this belief is the cornerstone of every chromatic dragon's personality and worldview. Trying to humble a chromatic dragon is like trying to convince the wind to stop blowing. To these creatures, humanoids are animals, fit to serve as prey or beasts of burden, and wholly unworthy of respect."
+								]
+							},
+							{
+								"name": "Dangerous Lairs",
+								"type": "entries",
+								"entries": [
+									"A dragon's lair serves as the seat of its power and a vault for its treasure. With its innate toughness and tolerance for severe environmental effects, a dragon selects or builds a lair not for shelter but for defense, favoring multiple entrances and exits, and security for its hoard.",
+									"Most chromatic dragon lairs are hidden in dangerous and remote locations to prevent all but the most audacious mortals from reaching them. A black dragon might lair in the heart of a vast swamp, while a red dragon might claim the caldera of an active volcano. In addition to the natural defenses of their lairs, powerful chromatic dragons use magical guardians, traps, and subservient creatures to protect their treasures."
+								]
+							},
+							{
+								"name": "Queen of Evil Dragons",
+								"type": "entries",
+								"entries": [
+									"Tiamat the Dragon Queen is the chief deity of evil dragonkind. She dwells on Avernus, the first layer of the Nine Hells. As a lesser god, Tiamat has the power to grant spells to her worshipers, though she is loath to share her power. She epitomizes the avarice of evil dragons, believing that the multiverse and all its treasures will one day be hers and hers alone.",
+									"Tiamat is a gigantic dragon whose five heads reflect the forms of the chromatic dragons that worship her-black, blue, green, red, and white. She is a terror on the battlefield, capable of annihilating whole armies with her five breath weapons, her formidable spellcasting, and her fearsome claws.",
+									"Tiamat's most hated enemy is Bahamut the Platinum Dragon, with whom she shares control of the faith of dragonkind. She also holds a special enmity for Asmodeus, who long ago stripped her of the rule of Avernus and who continues to curb the Dragon Queen's power."
+								]
+							}
+						]
+					},
+					"True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.",
+					"Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.",
+					"Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.",
+					"True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.",
+					"Dragon Age Categories",
+					{
+						"type": "table",
+						"colLabels": [
+							"Category",
+							"Size",
+							"Age Range"
+						],
+						"colStyles": [
+							"col-4",
+							"col-4",
+							"col-4"
+						],
+						"rows": [
+							[
+								"Wyrmling",
+								"Medium",
+								"5 years or less"
+							],
+							[
+								"Young",
+								"Large",
+								"6–100 years"
+							],
+							[
+								"Adult",
+								"Huge",
+								"101–800 years"
+							],
+							[
+								"Ancient",
+								"Gargantuan",
+								"801 years or more"
+							]
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Lair Actions",
+								"entries": [
+									"On initiative count 20 (losing initiative ties), the dragon takes a lair action to cause one of the following effects; the dragon can't use the same effect two rounds in a row:",
+									{
+										"type": "list",
+										"items": [
+											"Part of the ceiling collapses above one creature that the dragon can see within 120 feet of it. The creature must succeed on a {@dc 15} Dexterity saving throw or take 10 ({@damage 3d6}) bludgeoning damage and be knocked {@condition prone} and buried. The buried target is {@condition restrained} and unable to breathe or stand up. A creature can take an action to make a {@dc 10} Strength check, ending the buried state on a success.",
+											"A cloud of sand swirls about in a 20-foot-radius sphere centered on a point the dragon can see within 120 feet of it. The cloud spreads around corners. Each creature in the cloud must succeed on a {@dc 15} Constitution saving throw or be {@condition blinded} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+											"Lightning arcs, forming a 5-foot-wide line between two of the lair's solid surfaces that the dragon can see. They must be within 120 feet of the dragon and 120 feet of each other. Each creature in that line must succeed on a {@dc 15} Dexterity saving throw or take 10 ({@damage 3d6}) lightning damage."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Additional Lair Actions",
+										"entries": [
+											"At your discretion, a legendary ({@creature Adult Blue Dragon||adult} or {@creature Ancient Blue Dragon||ancient}) blue dragon can use one or both of the following additional lair actions while in its lair:",
+											{
+												"type": "list",
+												"style": "list-hang-notitle",
+												"items": [
+													{
+														"type": "item",
+														"name": "Misleading Mirage",
+														"entry": "Until initiative count 20 on the next round, at each intersection or branching passage in the lair, a creature other than the dragon has a {@chance 50|50 percent} chance of going in a different direction from the direction it intends."
+													},
+													{
+														"type": "item",
+														"name": "Sudden Sinkhole",
+														"entry": "The dragon chooses a point on the ground that it can see within 120 feet of it. A 5-foot-radius, 20-foot-deep pit forms centered on that point. A creature on the ground above where the pit formed must make a DC 15 Dexterity saving throw. On a failed save, a creature falls to the bottom of the pit, taking 7 ({@damage 2d6}) bludgeoning damage and landing {@condition prone}. On a successful save, a creature moves to the nearest unoccupied space instead of falling in the pit."
+													}
+												]
+											}
+										],
+										"source": "FTD"
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Regional Effects",
+								"entries": [
+									"The region containing a legendary blue dragon's lair is warped by the dragon's magic, which creates one or more of the following effects:",
+									{
+										"type": "list",
+										"items": [
+											"Thunderstorms rage within 6 miles of the lair.",
+											"Dust devils scour the land within 6 miles of the lair. A dust devil has the statistics of an air elemental, but it can't fly, has a speed of 50 feet, and has an Intelligence and Charisma of 1 (-5).",
+											"Hidden sinkholes form in and around the dragon's lair. A sinkhole can be spotted from a safe distance with a successful {@dc 20} Wisdom ({@skill Perception}) check. Otherwise, the first creature to step on the thin crust covering the sinkhole must succeed on a {@dc 15} Dexterity saving throw or fall {@dice 1d6 × 10} feet into the sinkhole."
+										]
+									},
+									"If the dragon dies, the dust devils disappear immediately, and the thunderstorms abate within {@dice 1d10} days. Any sinkholes remain where they are.",
+									{
+										"type": "entries",
+										"name": "Additional Regional Effects",
+										"entries": [
+											"Any of these effects might appear in the area around a blue dragon's lair, in addition to or instead of the effects described in the {@i Monster Manual}:",
+											{
+												"type": "list",
+												"style": "list-hang-notitle",
+												"items": [
+													{
+														"type": "item",
+														"name": "Blue Luster",
+														"entry": "Creatures that spend a year within 1 mile of the dragon's lair find blue objects fascinating and feel compelled to acquire them at every opportunity."
+													},
+													{
+														"type": "item",
+														"name": "Mirage Terrain",
+														"entry": "The area immediately surrounding the lair appears to be a lush oasis. A creature carefully examining the illusion can attempt a DC 15 Intelligence ({@skill Investigation}) check to disbelieve it. A creature who disbelieves the illusion sees it as a vague image superimposed on the underlying terrain."
+													},
+													{
+														"type": "item",
+														"name": "Sandstorm",
+														"entry": "A sandstorm blows constantly within 1 mile of the dragon's lair."
+													}
+												]
+											}
+										],
+										"source": "FTD"
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/WdJAoRa.jpeg"
+						}
+					}
+				]
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Plasmaris uses Charisma as her spellcasting modifier {@dc 20} {@hit 12}"
+					],
+					"will": [
+						"{@spell animal messenger}",
+						"{@spell gust of wind}",
+						"{@spell lightning bolt} ({@damage 8d6})"
+					],
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"damageTagsSpell": [
+				"L"
+			],
+			"legendaryGroup": {
+				"name": "Cerulean Queen",
+				"source": "KimJongTrillsCustomContent"
+			}
+		},
+		{
+			"name": "King Wendigo",
+			"source": "KimJongTrillsCustomContent",
+			"size": [
+				"H"
+			],
+			"type": "fey",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d12 + 100",
+				"average": 230
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 20,
+			"dex": 16,
+			"con": 20,
+			"int": 12,
+			"wis": 18,
+			"cha": 22,
+			"skill": {
+				"perception": "+14",
+				"stealth": "+13",
+				"survival": "+7"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 24,
+			"immune": [
+				"cold",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks not made with silvered weapons",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"stunned"
+			],
+			"languages": [
+				"Common",
+				"Elvish",
+				"and Sylvan; telepathy 60 ft."
+			],
+			"cr": "16",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The wendigo's innate spellcasting ability is Charisma (spell save {@dc 19}). The wendigo can innately cast the following spells, without providing material components:"
+					],
+					"will": [
+						"{@spell chill touch} ({@dice 4d8})",
+						"{@spell dancing lights}",
+						"{@spell detect magic}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell greater invisibility}",
+							"{@spell wind walk} (self only)."
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The wendigo has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The wendigo regains 20 hit points at the start of its turn. If the wendigo takes fire damage, this trait doesn't function at the start of the wendigo's next turn. The wendigo dies only if it starts its turn with 0 hit points and doesn't regenerate."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the Wendigo fails a save it can choose to succeed instead"
+					]
+				},
+				{
+					"name": "Baleful Howl",
+					"entries": [
+						"The wendigo emits a terrifying howl. Every enemy within 300 feet of the wendigo that can hear it must succeed on a {@dc 19} Wisdom saving throw or be {@condition frightened} for 1 minute. A {@condition frightened} target that starts its turn within 30 feet of the wendigo must use all its movement on that turn to get as far from the wendigo as possible, must finish the move before taking an action, and must take the most direct route, even if hazards lie that way. A {@condition frightened} target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The wendigo uses its Baleful Howl and makes three melee attacks: one with its ravenous bite or gore and two with its claws."
+					]
+				},
+				{
+					"name": "Gore",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}19 ({@damage 3d8 + 5}) piercing damage.",
+						"If the wendigo moves at least 10 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 ({@damage 2d8}) piercing damage. If the target is a creature, it must succeed on a {@dc 19} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Ravenous Bite",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}16 ({@damage 3d6 + 5}) piercing damage plus 11 ({@damage 3d6}) necrotic damage and the target must succeed on a {@dc 19} Constitution saving throw against disease or become {@condition poisoned} until the disease is cured. ",
+						"While {@condition poisoned}, the target's Wisdom score is reduced by {@dice 1d4} at the start of each of its turns. This reduction will not cause a target's score to go below 3. When a target's Wisdom reaches a score of 3, it becomes insane and ravenous. While in this state, the creature acts as an ally of the wendigo, gains a bite attack ({@damage 1d6} piercing damage), and must spend its action each turn making a bite attack against an enemy of the wendigo. The Wisdom score reduction lasts until the target finishes a short or long rest, unless the target has become ravenous in that case it becomes a Tikbalang if not Remove Cursed in 24 hours. If not cured in 7 days by Geater Restoration the target becomes a Wendigo"
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Legendary Resistances",
+				"Regeneration"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"E",
+				"S",
+				"TP"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"S",
+				"Y"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"frightened",
+				"poisoned",
+				"prone"
+			],
+			"conditionInflictSpell": [
+				"invisible",
+				"incapacitated"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded2/token/wendigo.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded2/wendigo.webp"
+						}
+					}
+				]
+			},
+			"damageTagsSpell": [
+				"N"
+			],
+			"legendary": [
+				{
+					"name": "Claw",
+					"entries": [
+						"Uses its claw attack twice against the same target."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"Uses its bite attack"
+					]
+				},
+				{
+					"name": "Nimble Movement",
+					"entries": [
+						"Moves up to its movement speed without provoking opportunity attacks"
+					]
+				},
+				{
+					"name": "Charge (2 Actions)",
+					"entries": [
+						"Moves up to its movement speed and makes a gore attack."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Maddening Whispers",
+					"entries": [
+						"As a bonus action, the wendigo chooses one creature it can see within 60 feet of it. The target must succeed on a {@dc 19} Wisdom saving throw, or it takes 18 ({@damage 3d8 + 4}) psychic damage and must use its reaction to move up to half its speed and make a melee weapon attack against one creature of the wendigo's choice that the wendigo can see. Constructs and undead are immune to this effect."
+					]
+				}
+			],
+			"shortName": true,
+			"isNamedCreature": true,
+			"save": {
+				"wis": "+9",
+				"con": "+10",
+				"cha": "+11"
+			}
+		},
+		{
+			"name": "Kas, The Bloody Handed",
+			"source": "KimJongTrillsCustomContent",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 22,
+					"from": [
+						"{@item plate armor|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 200,
+				"formula": "21d8 + 105"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 20,
+			"dex": 11,
+			"con": 20,
+			"int": 12,
+			"wis": 16,
+			"cha": 20,
+			"save": {
+				"str": "+11",
+				"dex": "+6",
+				"wis": "+9",
+				"cha": "+11",
+				"con": "+11"
+			},
+			"skill": {
+				"history": "+8",
+				"insight": "+10",
+				"intimidation": "+12"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 13,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons"
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Abyssal",
+				"Common"
+			],
+			"cr": "19",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The death knight is a 19th-level spell caster. Its spellcasting ability is Charisma (spell save {@dc 19}, {@hit 11} to hit with spell attacks). It has the following paladin spells prepared:"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell command}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell hold person}",
+								"{@spell magic weapon}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell dispel magic}",
+								"{@spell elemental weapon}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell banishment}",
+								"{@spell staggering smite}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell cone of cold} (necrotic)",
+								"{@spell destructive wave} (necrotic)"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Fear Aura",
+					"entries": [
+						"A creature that starts its turn within 20 feet of the death knight must succeed on a {@dc 13} Wisdom saving throw, unless the death knight is {@condition incapacitated}. On a failed save, the creature is {@condition frightened} for 1 minute. While {@condition frightened} in this way, a creature must take the {@action Dash} action and move away from the death knight by the safest available route on each of its turns, unless there is nowhere to move, in which case it needn't take the {@action Dash} action. If the creature ends its turn in a location where it doesn't have line of sight to the death knight, the creature can repeat the saving throw. On a success, the effect ends If a creature's saving throw is successful, the creature is immune to the death knight's Fear Aura for the next 24 hours."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The death knight has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Marshal Undead",
+					"entries": [
+						"Unless the death knight is {@condition incapacitated}, it and undead creatures of its choice within 60 feet of it have advantage on saving throws against features that turn undead."
+					]
+				},
+				{
+					"name": "Smite (1/Turn)",
+					"entries": [
+						"As a bonus action, when the death knight hits a creature with a weapon attack, it can expend a 1st level spell slot to deal {@damage 2d8} radiant or necrotic damage to the target. If the death knight expends a spell slot of 2nd level or higher, the extra damage increases by {@dice 1d8} for each level above 1st (maximum {@dice 5d8})."
+					]
+				},
+				{
+					"name": "Mobile",
+					"entries": [
+						"When you use the Dash action, difficult terrain doesn't cost you extra movement on that turn. Additionally, when you make a melee attack against a creature, you don't provoke opportunity attacks from that creature for the rest of the turn, whether you hit or not."
+					]
+				},
+				{
+					"name": "Strong Mind",
+					"entries": [
+						"Advantage on Constitution Saves to maintain {@status concentration} on a spell."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"Chooses to succeed on a saving throw it fails."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The death knight uses Command Undead. It then makes three melee attacks."
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d8 + 5}) slashing damage, or 10 ({@damage 1d10 + 5}) slashing damage if used with two hands, plus 22 ({@damage 5d8}) necrotic damage regaining half as much necrotic damage in hit points."
+					]
+				},
+				{
+					"name": "Shield Bash",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 5 ft., one creature. {@h}7 ({@damage 1d4 + 5}) bludgeoning damage plus 22 ({@damage 5d8}) necrotic damage regaining half as much necrotic damage in hit points. If the target is Large or smaller, it must succeed on a {@dc 19} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Hellfire Orb (1/Day)",
+					"entries": [
+						"The death knight hurls a magical ball of fire that explodes at a point it can see within 120 feet of it. Each creature in a 20-foot radius sphere centered on that point must succeed on a {@dc 19} Dexterity saving throw. The sphere spreads around corners. A creature takes 42 ({@damage 12d6}) fire damage and 42 ({@damage 12d6}) necrotic damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"The death knight adds 6 to its AC against one melee attack that would hit it. To do so, the death knight must see the attacker and be wielding a melee weapon."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Command",
+					"entries": [
+						"The death knight uses its Command Undead ability."
+					]
+				},
+				{
+					"name": "Deft Strike",
+					"entries": [
+						"The death knight makes a weapon attack and moves up to its speed."
+					]
+				},
+				{
+					"name": "Cast a Spell (Costs 2 Actions)",
+					"entries": [
+						"The death knight casts a spell from its list of prepared spells, using a spell slot as normal."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"languageTags": [
+				"AB",
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"N",
+				"S"
+			],
+			"spellcastingTags": [
+				"CP"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded/token/deathknightlord.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded/deathknightlord.webp"
+						}
+					}
+				]
+			},
+			"damageTagsSpell": [
+				"A",
+				"C",
+				"F",
+				"L",
+				"N",
+				"R",
+				"T",
+				"Y"
+			],
+			"conditionInflict": [
+				"frightened",
+				"prone"
+			],
+			"isNamedCreature": true,
+			"shortName": true,
+			"bonus": [
+				{
+					"name": "Command Undead",
+					"entries": [
+						"The death knight targets one undead ally it can see within 30 feet of it and gives it a telepathic command. The target can use its reaction to move up to half its speed and make one weapon attack."
+					]
+				}
+			]
 		}
 	],
 	"item": [
@@ -8611,42 +9714,22 @@
 		{
 			"name": "Infinite Grimoire",
 			"source": "KimJongTrillsCustomContent",
-			"page": 0,
 			"rarity": "artifact",
 			"wondrous": true,
-			"weight": 3,
+			"reqAttune": "optional",
 			"entries": [
 				"Your spell book now has an infinite number of pages, is three inches thick, eight inches wide, twelve inches long, and weighs three pounds.",
 				"You can use the grimoire as your spellbook, and you can scribe new spells into it as normal. When you prepare wizard spells using the grimoire, the number of wizard spells you can prepare increases by 1.",
 				"In the presence of Wizards that show great power, those Wizards may see the grimoire show increased abilities over time.",
 				{
 					"type": "entries",
-					"name": "Enhanced",
-					"entries": [
-						"(requires attunement by a wizard)",
-						"You gain a +1 to your Wizard Spell {@action Attack} rolls and Spell Save DC.",
-						"When you use your Arcane Recovery feature you can gain 1 additional level of spells."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Empowered",
-					"entries": [
-						"(requires attunement by a wizard)",
-						"You gain a +1 to your Wizard Spell {@action Attack} rolls and Spell Save DC.",
-						"When you use your Arcane Recovery feature you can gain 2 additional level of spells.",
-						"When you prepare wizard spells using the grimoire as your spellbook, the number of spells you can prepare increases by 2 total."
-					]
-				},
-				{
-					"type": "entries",
 					"name": "Perfected",
 					"entries": [
-						"(requires attunement by a wizard)",
+						"These features require attunement to the Infinite Grimoire:",
 						"When you use your Arcane Recovery feature you can gain 3 additional level of spells.",
 						"When you prepare wizard spells using the grimoire as your spellbook, the number of spells you can prepare increases by 3 total.",
 						"If you aren't wearing armor, your base Armor Class is 15 + your Dexterity modifier.",
-						"You gain a +2 to your Wizard Spell {@action Attack} rolls and Spell Save DC."
+						"You gain a +2 to your spell attack rolls and spell save DC for your wizard spells."
 					]
 				}
 			]
@@ -8947,7 +10030,6 @@
 		{
 			"name": "Wand of the Weavestepper",
 			"source": "KimJongTrillsCustomContent",
-			"page": 0,
 			"rarity": "rare",
 			"reqAttune": "by a spellcaster",
 			"reqAttuneTags": [
@@ -8955,18 +10037,7 @@
 					"spellcasting": true
 				}
 			],
-			"wondrous": true,
-			"focus": [
-				"Artificer",
-				"Bard",
-				"Cleric",
-				"Druid",
-				"Paladin",
-				"Ranger",
-				"Sorcerer",
-				"Warlock",
-				"Wizard"
-			],
+			"type": "WD",
 			"entries": [
 				"This wand is made from many rare woods twisted and fused together using the raw power of the Weave by the Witch Neia Kelxisys, Vekzian Hero of the Great War. The wand was her chosen tool of destruction when facing off against the warring nations of Kol and Eshea allowing her to move among the battlefield with ease.",
 				"You have advantage on initiative rolls while you are holding the wand. In addition whenever you use a spell slot to cast a spell, you can immediately teleport to an unoccupied space you can see within 15 feet of you."
@@ -8992,12 +10063,11 @@
 		{
 			"name": "Salve of Swimming",
 			"source": "KimJongTrillsCustomContent",
-			"page": 0,
 			"type": "P",
 			"tier": "minor",
 			"rarity": "uncommon",
 			"entries": [
-				"This jar contains enough salve for 6 uses when found. You can coat yourself in this greasy substance over the course of a minute and your skin magically repels water granting you the ability to move through water easily. When applied the potion grants you a swim speed of 40 feet for 1 hours but confers no other benefits."
+				"This jar contains enough salve for 6 uses when full. You can coat yourself in this greasy substance over the course of a minute and your skin magically repels water granting you the ability to move through water easily. When applied the potion grants you a swim speed of 40 feet for 1 hours but confers no other benefits."
 			]
 		},
 		{
@@ -9081,7 +10151,7 @@
 			"staff": true,
 			"weapon": true,
 			"entries": [
-				"This magical quarterstaff is made of braided fibers from the Elemental Plane of Water. As a bonus action, you can speak the weapon's command word to cast {@spell shillelagh}, taking the form of a small Pike. While in this form it deals piercing instead of bludgeoning."
+				"This magical quarterstaff is made of braided fibers from the Elemental Plane of Water. As a bonus action, you can speak the weapon's command word to cast {@spell shillelagh}, taking the form of a small Pike. While in this form it deals piercing instead of bludgeoning damage."
 			]
 		},
 		{
@@ -9238,13 +10308,12 @@
 		{
 			"name": "Schrödinger's Potion",
 			"source": "KimJongTrillsCustomContent",
-			"page": 0,
-			"srd": true,
 			"type": "P",
 			"tier": "minor",
 			"rarity": "legendary",
 			"entries": [
-				"This potion is of unknown effects as the properties are unable to be determined until observed. The potion's effects are only able to be known once consumed, consult your DM for the effect."
+				"This potion is of unknown effects as the properties are unable to be determined until observed.",
+				"The potion's effects are only able to be known once consumed, consult your DM for the effect."
 			]
 		},
 		{
@@ -9289,7 +10358,6 @@
 		{
 			"name": "Markings of the Wild (Dormant)",
 			"source": "KimJongTrillsCustomContent",
-			"page": 0,
 			"rarity": "artifact",
 			"reqAttune": "by Benax",
 			"wondrous": true,
@@ -9300,6 +10368,21 @@
 				"Upon the Witchlight Warriors proving their worth to Verdana she gifted Benax a Divine Spark that altered his existing tattoo, enhancing it further.This tattoo when placed in the skin and attuned covers the wearers limbs and body with intricate vine patterns along with the symbol of Verdana appearing on the forehead.",
 				{
 					"type": "entries",
+					"name": "Nature's Wrath",
+					"entries": [
+						"As a bonus action, you can empower the tattoo for 1 minute. For the duration:",
+						{
+							"type": "list",
+							"items": [
+								"Each of your melee attacks with a weapon or an unarmed strike can reach a target up to 15 feet away from you, as vines launch toward the target",
+								"Your melee attacks deal an extra {@damage 1d6} force damage on a hit.",
+								"Once used, this bonus action can't be used again until the next dawn."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
 					"name": "Dormant",
 					"entries": [
 						"It has the following properties while in its Dormant state:",
@@ -9308,8 +10391,7 @@
 							"items": [
 								"Your attacks with monk weapons and unarmed strikes are considered magical for the purpose of overcoming immunity and resistance to non-magical attacks, and you gain a +1 bonus to attack and damage rolls with unarmed strikes and monk weapons.",
 								"Your Constitution Score is raised by 2 to a Maximum of 30.",
-								"As a bonus action you can regain Ki points equal to roll of your Martial Arts Die, once per long rest.",
-								"As a bonus action, you can empower the tattoo for 1 minute. For the duration, each of your melee attacks with a weapon or an unarmed strike can reach a target up to 15 feet away from you, as inky tendrils launch toward the target. In addition, your melee attacks deal an extra {@damage 1d6} force damage on a hit. Once used, this bonus action can't be used again until the next dawn."
+								"As a bonus action you can regain Ki points equal to roll of your Martial Arts Die, once per long rest."
 							]
 						}
 					]
@@ -9324,7 +10406,7 @@
 			"reqAttune": true,
 			"source": "KimJongTrillsCustomContent",
 			"entries": [
-				"This necklace is a gift from the Matron of Ravens, Markuul, it can be used to trap a soul and bind it to a Domain within the Shadowfell. As a reaction when a creature dies within 120 feet of you you can bind the soul to the necklace. However, if the you die while wearing it your soul shall be bound instead. Upon a soul being bound the necklace vanishes and your attunement ends."
+				"This necklace is a gift from the Matron of Ravens, Markuul, it can be used to trap a soul and bind it to a Domain within the Shadowfell. As a reaction when a creature dies within 120 feet of you you can bind the soul to the necklace. However, if the attuned creature dies while wearing it your soul shall be bound instead. Upon a soul being bound the necklace vanishes and your attunement ends."
 			]
 		},
 		{
@@ -9353,15 +10435,422 @@
 			"name": "Scholar's Knuckles",
 			"source": "KimJongTrillsCustomContent",
 			"tier": "major",
+			"rarity": "very rare",
+			"reqAttune": "by a spellcaster",
+			"wondrous": true,
+			"weaponCategory": "simple",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"dmg2": "1d8",
+			"entries": [
+				"This pair of Knuckle Dusters are crafted from Divinium and inscribed with magical runes to allow a spellcaster to channel their magical ability into martial prowess. While attuned you are proficient with them, can use them as a spellcasting focus, and melee attacks you make with the Scholar's Knuckles are made with your spell attack modifier."
+			]
+		},
+		{
+			"name": "Potion of Warding",
+			"source": "KimJongTrillsCustomContent",
+			"type": "P",
+			"tier": "minor",
+			"rarity": "rare",
+			"entries": [
+				"This potion is a glowing blue syrup-like liquid. When consumed it surrounds you in a blue arcane shield and you gain resistance to damage until the beginning of your next turn."
+			]
+		},
+		{
+			"name": "Arclight Boomerang",
+			"source": "KimJongTrillsCustomContent",
+			"type": "R",
+			"rarity": "uncommon",
+			"weaponCategory": "simple",
+			"range": "60/120",
+			"dmg1": "1d4",
+			"dmgType": "B",
+			"entries": [
+				"This boomerang is a ranged weapon made from arclight found in the Storm Queen's lair. When thrown, it has a range of 60/120 feet, and any creature that is proficient with the javelin is also proficient with this weapon. On a hit, the boomerang deals {@damage 1d4} bludgeoning damage and {@damage 4d4} lightning damage, and the lightning arcs to another target of your choice within 30 feet, who must make a DC 15 Dexterity Save or take the same lightning damage.",
+				"Once the boomerang deals lightning damage to a target, the weapon loses its ability to deal lightning damage and functions as a magical boomerang that returns after each attack until the next dawn."
+			]
+		},
+		{
+			"name": "Belt of the Tempest (Awakened)",
+			"source": "KimJongTrillsCustomContent",
+			"resist": [
+				"lightning",
+				"thunder"
+			],
+			"rarity": "artifact",
+			"reqAttune": "by Logen Auguste",
+			"wondrous": true,
+			"entries": [
+				"The Belt of the Tempest was found by Logen and the other Witchlight Warriors inside an ancient temple of Atlanta, it formed from a Divine Spark granted to him after proving his mettle. The Divine Spark took the form of a thick dark blue leather belt adorned with large metal plates covered in storm-based iconogrophy.",
+				{
+					"type": "entries",
+					"name": "Storm Avatar",
+					"entries": [
+						"You can use a bonus action to become a Storm Avatar for 1 minute, gaining the following benefits for the duration:",
+						{
+							"type": "list",
+							"items": [
+								"You have immunity to lightning damage and thunder damage.",
+								"When you hit with a weapon attack that normally deals bludgeoning damage, it deals thunder damage instead. When you hit with a weapon attack that normally deals piercing or slashing damage, it deals lightning damage instead.",
+								"As a bonus action, you can choose one creature you can see within 30 feet of you to be struck by lightning. The target must make a DC 15 Dexterity saving throw, taking {@damage 3d6} lightning damage on a failed save, or half as much damage on a successful one.",
+								"Once you use the Belt of the Tempest's Storm Avatar property, that property can't be used again until the next dawn."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Dormant",
+					"entries": [
+						"While wearing the Belt of the Tempest in its Dormant state, you gain the following benefits:",
+						{
+							"type": "list",
+							"items": [
+								"You have resistance to lightning damage and thunder damage.",
+								"Your Strength score is raised by 2 to a Maximum of 30."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Awakened",
+					"entries": [
+						"Growing in power and reaching its Awakened state the Belt of the Tempest grants these new properties:",
+						{
+							"type": "list",
+							"items": [
+								"While in Storm Avatar state gain a Flying Speed with hover, equal to your walking speed",
+								"Your Strength Score is now raised by 4 to a Maximum of 30.",
+								"You gain an additional Second Wind per short rest."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Bloodwell Vial of Wealth (Awakened)",
+			"source": "KimJongTrillsCustomContent",
+			"rarity": "artifact",
+			"reqAttune": "by Gerry DeMarkk",
+			"wondrous": true,
+			"entries": [
+				"The Bloodwell of Wealth was once a standard Bloodwell Vial but has been imbued with a Divine Spark, when Gerry DeMarkk and the Witchlight Warriors delved into a Temple of Rikkus to prove their worth.The Divine Spark changed the existing Bloobwell Vial that called to Gerry all those years ago in that shop, into a more extravagant version adorned with fine gems and the golden symbol of Rikkus etched into the glass vial. To attune to this vial, you must place a few drops of your blood into it. The vial can't be opened while your attunement to it lasts. If your attunement to the vial ends, the contained blood turns to ash.",
+				{
+					"type": "entries",
+					"name": "Dormant",
+					"entries": [
+						"You can use the vial as a spellcasting focus for your spells while wearing or holding it, in addition it has the following properties while in its Dormant state:",
+						{
+							"type": "list",
+							"items": [
+								"You gain a +1 bonus to spell attack rolls and to the saving throw DCs of your spells.",
+								"When you roll any Hit Dice to recover hit points while you are carrying the vial, you can regain 5 sorcery points. This property of the vial can't be used again until the next dawn.",
+								"You can use the vial to cast the following spells; {@spell cure wounds} (as a 2nd-level spell), {@spell lesser restoration}, and {@spell shield of faith}."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Awakened",
+					"entries": [
+						"Growing in power and reaching its Awakened state the Bloodwell Vial of Wealth grants these new properties:",
+						{
+							"type": "list",
+							"items": [
+								"You gain a +2 bonus to spell attack rolls.",
+								"Whenever you use a spell of 1st level or higher to restore hit points to a creature, the creature regains additional hit points equal to 2 + the spell's level.",
+								"You can additionally cast {@spell protection from evil and good|phb}, {@spell augury|phb}, and {@spell speak with dead|phb} with the vial."
+							]
+						},
+						"Once the vial has been used to cast a spell, it can't be used to cast that spell again until the next dawn."
+					]
+				}
+			]
+		},
+		{
+			"name": "Rings of the Trickster (Awakened)",
+			"source": "KimJongTrillsCustomContent",
+			"rarity": "artifact",
+			"reqAttune": "by Unamed",
+			"wondrous": true,
+			"entries": [
+				"When Unamed and the Witchlight Warriors were tested by Haymil the spark given to Unamed took the form of two rings. These paired rings are engraved with small knives and other bladed weapons in an intricate pattern that conceals the true design to anyone but the attuned wearer.",
+				{
+					"type": "entries",
+					"name": "Dormant",
+					"entries": [
+						" As part of the attunement to these rings you must choose weapons to bond with each, once bonded the weapon exists in an extra dimensional space inside the ring, is considered on your person, and can be drawn to your hand a flick of the wrist and are stored by you at will as long as they exist on the same plane. You also gain the following additonal benefits while attuned:",
+						{
+							"type": "list",
+							"items": [
+								"You gain a +1 bonus to your bonded melee weapon strikes damage and to hit.",
+								"You gain the Two-Weapon Fighting fighting style.",
+								"When you successfully use your sneak attack as part of your attack action, you can make a second sneak attack strike, with your offhand weapon as part of Two-Weapon Fighting, against another target using half the number of Sneak Attack dice for your level (round up)."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Awakened",
+					"entries": [
+						"Growing in power and reaching its Awakened state the Rings of the Trickster grants these new properties",
+						{
+							"type": "list",
+							"items": [
+								"Your bonded melee weapon strikes gain +2 bonus to damage and to hit.",
+								"Your speed increases by 10 feet.",
+								"When you make a melee attack and can normally use your bonus action to make another melee attack via TWF, you can make the extra attack as part of that same Attack action."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Mote of Knowledge (Awakened)",
+			"source": "KimJongTrillsCustomContent",
+			"rarity": "artifact",
+			"reqAttune": "by Jarzamel",
+			"wondrous": true,
+			"entries": [
+				"A Spellshard of endless volume able to hold as much information as one can find, gifted to Jarzamel by Ceritas herself imbued with her Divine energy, given as a reward for the Witchlight Warriors answering her call.",
+				"A wizard can use this spellshard as a spellbook, with the usual cost in gold and time to scribe a spell into the shard. You can use an action to open your mind to the shard, seeing its content in your mind. On subsequent rounds, reading the text or scribing new text on blank pages in the shard requires concentration (as if concentrating on a spell) and takes the same amount of time it takes you to read and write normally. Thinking of a particular phrase or topic draws you to the first section in the shard that addresses it.",
+				{
+					"type": "entries",
+					"name": "Dormant",
+					"entries": [
+						"You can use the Mote as a spellcasting focus for your spells while attuned to it, in addition it has the following properties while in its Dormant state:",
+						{
+							"type": "list",
+							"items": [
+								"You gain a +1 bonus to spell attack rolls and to the saving throw DCs of your spells.",
+								"When you prepare wizard spells attuned to the mote the number of spells you can prepare increases by 1.",
+								"The Gold cost for Spell Copying is halved while using the Mote as your spellbook."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Awakened",
+					"entries": [
+						"Growing in power and reaching its Awakened state the Mote of Knowledge grants these new properties:",
+						{
+							"type": "list",
+							"items": [
+								"You gain a +2 bonus to spell attack rolls, and you can add your Intelligence modifier to the damage of your cantrips.",
+								"When you prepare wizard spells attuned to the mote the number of spells you can prepare increases by 2 now.",
+								"As a bonus action once per short rest, you prepare a spell of 1st level or higher from your spellbook. This spell must be of a level for which you have spell slots, and it replaces another spell that you had previously prepared."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Markings of the Wild (Awakened)",
+			"source": "KimJongTrillsCustomContent",
+			"rarity": "artifact",
+			"reqAttune": "by Benax",
+			"wondrous": true,
+			"entries": [
+				"Upon the Witchlight Warriors proving their worth to Verdana she gifted Benax a Divine Spark that altered his existing tattoo, enhancing it further.This tattoo when placed in the skin and attuned covers the wearers limbs and body with intricate vine patterns along with the symbol of Verdana appearing on the forehead.",
+				{
+					"type": "entries",
+					"name": "Nature's Wrath",
+					"entries": [
+						"As a bonus action, you can empower the tattoo for 1 minute. For the duration:",
+						{
+							"type": "list",
+							"items": [
+								"Each of your melee attacks with a weapon or an unarmed strike can reach a target up to 15 feet away from you, as vines launch toward the target",
+								"Your melee attacks deal an extra {@damage 1d6} force damage on a hit.",
+								"Once used, this bonus action can't be used again until the next dawn."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Dormant",
+					"entries": [
+						"It has the following properties while wearing the Markings of the Wild in its Dormant state:",
+						{
+							"type": "list",
+							"items": [
+								"Your attacks with monk weapons and unarmed strikes are considered magical for the purpose of overcoming immunity and resistance to non-magical attacks, and you gain a +1 bonus to attack and damage rolls with unarmed strikes and monk weapons.",
+								"Your Constitution Score is raised by 2 to a Maximum of 30.",
+								"As a bonus action you can regain Ki points equal to roll of your Martial Arts Die, once per long rest."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Awakened",
+					"entries": [
+						"Growing in power and reaching its Awakened state the Markings of the Wild grants these new properties:",
+						{
+							"type": "list",
+							"items": [
+								"You gain a +2 bonus to attack and damage rolls with unarmed strikes and monk weapons.",
+								"Your Constitution Score is raised by 4 now to a Maximum of 30.",
+								"When you use Patient Defense or Step of the Wind you can also make an unarmed strike as part of that bonus action."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Balloon Sword",
+			"source": "KimJongTrillsCustomContent",
+			"baseItem": "longsword|phb",
+			"type": "M",
+			"tier": "major",
+			"rarity": "artifact",
+			"weight": 3,
+			"weaponCategory": "martial",
+			"property": [
+				"F",
+				"V"
+			],
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"dmg2": "1d10",
+			"bonusWeapon": "+2",
+			"entries": [
+				"This item appears to be a sword made out of a balloon, it only allows someone chosen by it to wield it, and the chosen wielder is proficient.",
+				"You gain a +2 bonus to attack and damage rolls made with this weapon, and it is the only thing able to stop the Jabberwocks regneration trait, and kill it for real."
+			]
+		},
+		{
+			"name": "Belt of the Elements",
+			"source": "KimJongTrillsCustomContent",
+			"wondrous": true,
+			"tier": "major",
+			"rarity": "very rare",
+			"reqAttune": "by the Elemental Tribunal",
+			"entries": [
+				"The belt was originally worn by the First Elemental Tribunal, Atriaxx and was used in the creation of the Planes over 10000 years ago, in 1069 PR it was reassembled by Benax. Ultimately Benax used the reassembled belt to drain the energy from Gorotto's Elemental Gauntlet and eventually restabilize the Elemental Planes before too much damage has been done.",
+				"While attuned to the belt, you gain resistance to the channeled Plane's associated damage type: Air (lightning), Earth (thunder), Fire (fire), and Water (cold), and you deal an extra martial arts die of that same type to any target you hit with a melee attack. Whenever you spend 1 or more Ki points, you can choose to shift its planar energy to a different plane of your choice."
+			]
+		},
+		{
+			"name": "Shield of Throwing",
+			"source": "KimJongTrillsCustomContent",
+			"type": "S",
+			"tier": "major",
+			"rarity": "very rare",
+			"reqAttune": true,
+			"weight": 6,
+			"range": "20/60",
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"entries": [
+				"This Shield has a story.",
+				"Attuning to this item allows it to be used even while using a weapon with two hands as the shield floats off the bracer used to wear it. Additionally, as a bonus action you can throw the Shield, making a ranged weapon attack (Range 20/60, 1d6 bludgeoning), and it returns to the bracer at start of your next turn giving no AC bonus until then, unless you use your Reaction to catch it on the turn you throw it."
+			]
+		},
+		{
+			"name": "Dragon's Bane",
+			"source": "KimJongTrillsCustomContent",
+			"baseItem": "longbow|phb",
+			"type": "M",
+			"tier": "major",
+			"rarity": "very rare",
+			"weight": 3,
+			"weaponCategory": "martial",
+			"property": [
+				"A",
+				"2H"
+			],
+			"range": "150/600",
+			"dmg1": "1d8",
+			"dmgType": "P",
+			"bonusWeapon": "+1",
+			"entries": [
+				"This longbow is crafted of a lightweight metal rumored to have been forged in the breath of a good dragon. If you are proficient with {@item shortbow|phb|shortbows} or {@item longbow|phb|longbows}, you are proficient with this bow.",
+				"You gain a +1 bonus to attack and damage rolls made with this magic weapon.",
+				"When you hit a dragon with this weapon, the dragon takes an extra {@dice 3d6} damage of the weapon's type. For the purpose of this weapon, \"dragon\" refers to any creature with the dragon type, including dragon turtles and wyverns."
+			]
+		},
+		{
+			"name": "Staff of the Dryad",
+			"source": "KimJongTrillsCustomContent",
+			"page": 0,
+			"tier": "minor",
 			"rarity": "rare",
 			"reqAttune": "by a spellcaster",
-			"reqAttuneTags": [
-				{
-					"spellcasting": true
-				}
+			"weight": 4,
+			"weaponCategory": "simple",
+			"property": [
+				"V"
 			],
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"dmg2": "1d8",
+			"bonusWeapon": "+2",
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d4 + 1}",
+			"charges": 5,
+			"staff": true,
 			"entries": [
-				"These Knuckle Dusters are crafted from Divinium and allow a caster to channel their magical ability into martial prowess. While attuned you gain the fighting style, Unarmed Fighting, and melee attacks you make with the Scholar's Knuckles are made with your spell attack modifier."
+				"This staff can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it.",
+				"The staff has 5 charges for the following properties. It regains {@dice 1d4 + 1} expended charges daily at dawn. If you expend the last charge, roll a {@dice d20}. On a 1, the staff loses its properties and becomes a nonmagical quarterstaff.",
+				{
+					"type": "entries",
+					"name": "Spells",
+					"entries": [
+						"You can use an action to expend 1 or more of the staff's charges to cast one of the following spells from it, using your spell save DC: {@spell entangle} (1 charge), {@spell pass without trace} (2 charges), {@spell barkskin} (2 charges), {@spell locate animals or plants} (1 charge), {@spell speak with animals} (1 charge), or {@spell speak with plants} (1 charge).",
+						"You can also use an action to cast the {@spell druidcraft} spell from the staff without using any charges."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Tree Form",
+					"entries": [
+						"You can use an action to plant one end of the staff in fertile earth and expend 1 charge to transform the staff into a healthy tree. The tree is 60 feet tall and has a 5-foot-diameter trunk, and its branches at the top spread out in a 20-foot radius. The tree appears ordinary but radiates a faint aura of transmutation magic if targeted by {@spell detect magic}. While touching the tree and using another action to speak its command word, you return the staff to its normal form. Any creature in the tree falls when it reverts to a staff."
+					]
+				}
+			]
+		},
+		{
+			"name": "Earthmover",
+			"source": "KimJongTrillsCustomContent",
+			"rarity": "uncommon",
+			"wondrous": true,
+			"entries": [
+				"This item looks like an ordinary shovel with a 4-foot-long wooden shaft and a blade of iron. When you wield this shovel you can cast the {@spell mold earth|xge} spell at will. Additionally once per day you can cast the {@spell meld into stone} spell."
+			]
+		},
+		{
+			"name": "Amulet of Supreme Protection",
+			"wondrous": true,
+			"reqAttune": "by a creature proficient with heavy armor",
+			"subtype": "jewelry",
+			"rarity": "rare",
+			"source": "KimJongTrillsCustomContent",
+			"entries": [
+				"While wearing this amulet; you gain a +1 to your AC while wearing a paired armor set, your AC equals 13 + your Dexterity modifier when the armor is stored inside the amulet, and you can don or doff a set of paired armor as a bonus action. The amulet can be paired to only one set of armor at a time, you pair a set of armor through the process of wearing it while attuning to this empty amulet.",
+				"The armor is stored in an extradimensional space inside the amulet, and while there, it is restored and cleaned as if it were a brand new set of armor each time it is summoned. Any spells or effects targeting it (such as heat metal) are removed while stored there. The amulet will store cursed armor, even if the curse would normally prevent its removal. It does not remove the attunement to the armor, nor does it eliminate any cursed effects the armor may carry."
+			]
+		},
+		{
+			"name": "Irwin's Grapple Gun",
+			"source": "KimJongTrillsCustomContent",
+			"tier": "minor",
+			"rarity": "common",
+			"wondrous": true,
+			"entries": [
+				"Using this gun you can shoot a grappling hook at an object that can support being attached to up to 60 feet away."
 			]
 		}
 	],
@@ -9371,24 +10860,41 @@
 			"lairActions": [
 				"The Gauntlet User can activate a Gem on Initiative Count 20, once you use a gem you cannot use it for 2 more rounds.",
 				"<b>Fire Gem</b>",
-				"Magma erupts from a point on the ground the Gauntlet User can see within 120 feet of it, creating a 20-foot-high, 5-foot-radius geyser. Each creature in the geyser's area must make a {@dc 15} Dexterity saving throw, taking 21 ({@damage 6d6}) fire damage on a failed save, or half as much damage on a successful one.",
+				"Magma erupts from a point on the ground the Gauntlet User can see within 120 feet of it, creating a 10-foot-radius, 60-foot-radius geyser. Each creature in the geyser's area must make a {@dc 18} Dexterity saving throw, taking ({@damage 5d8}) fire damage on a failed save, or half as much damage on a successful one.",
 				"<b>Earth Gem</b>",
-				"A tremor shakes in a 60-foot radius around the Gauntlet User. Each creature other than the Gauntlet User on the ground in that area must succeed on a {@dc 15} Dexterity saving throw or be knocked {@condition prone}.",
+				"A tremor shakes in a 60-foot radius around the Gauntlet User. Each creature other than the Gauntlet User on the ground in that area must succeed on a {@dc 18} Dexterity saving throw or be knocked {@condition prone} as the field changes.",
 				"<b>Water Gem</b>",
-				"A wave pulses out to a 60-foot radius around the Gauntlet User. Each creature other than the Gauntlet User in that area is pushed back 15 feet and must succeed on a {@dc 18} Strength saving throw or be knocked {@condition prone} and take ({@damage 3d6}) bludgeoning damage.",
+				"A wave pulses out to a 60-foot radius around the Gauntlet User. Each creature other than the Gauntlet User in that area is pushed back 15 feet and must succeed on a {@dc 18} Strength saving throw or be knocked {@condition prone} and take ({@damage 4d8}) bludgeoning damage.",
 				"<b>Air Gem</b>",
-				"A Gust of Wind blows out from the Gauntlet User in a 120 foot radius. For each creature other than the Gauntlet User the area is considered difficult terrain and projectiles automatically miss if they enter the area."
+				"A gust of wind swirls around the Gauntlet User in a 60 foot radius and moves with them until Initiative 20. For each creature other than the Gauntlet User the area is considered difficult terrain and projectiles automatically miss if they enter the area."
 			],
-			"regionalEffects": [],
+			"regionalEffects": [
+				"The skies are marked with scars of the Elemental Planes colliding with the Material, the ground shakes, winds roar, magma erupts in the distance, rain hits your face, the Reckoning has arrived and He needs to be stopped."
+			],
 			"mythicEncounter": [],
 			"source": "KimJongTrillsCustomContent"
+		},
+		{
+			"name": "Cerulean Queen",
+			"regionalEffects": [
+				"The region surrounding the Cerulean Keep is warped by the dragon's magic, which creates one or more of the following effects:",
+				"- Thunderstorms rage within 6 miles of the lair.",
+				"- Water Elementals patrol the seas attempting to sink any vessels chosen by the Cerulean Queen"
+			],
+			"mythicEncounter": [],
+			"source": "KimJongTrillsCustomContent",
+			"lairActions": [
+				"On initiative count 20 (losing initiative ties), the dragon takes a lair action to cause one of the following effects; the dragon can't use the same effect two rounds in a row:",
+				"- <b>Static Arc.</b> Lightning arcs, forming a 5-foot-wide line between two of the lair's solid surfaces that the dragon can see. They must be within 120 feet of the dragon and 120 feet of each other. Each creature in that line must succeed on a DC 15 Dexterity saving throw or take 10 ({@damage 3d6}) lightning damage.",
+				"- <b>Sudden Wind.</b>  The dragon chooses a point on the ground that it can see within 120 feet of it. A 5-foot-radius cyclone forms centered on that point. A creature in the space must make a DC 15 Strength saving throw. On a failed save, a creature is thrashed in the whirlwind as it takes 7 ({@damage 2d6}) bludgeoning damage and lands prone. On a successful save, the whirlwind dissipates.",
+				"- <b>Discharged Flash.</b>   Ligntning bursts in the air affecting a 10 foot radius within 120 feet of the dragon. A creature in the space must make a DC 15 Constitution saving throw. On a failed save, a creature is {@condition blinded} for a minute repeating the save at the end of each of its turns."
+			]
 		}
 	],
 	"spell": [
 		{
 			"name": "Mellburt's Tower",
 			"source": "KimJongTrillsCustomContent",
-			"page": 0,
 			"level": 3,
 			"school": "C",
 			"time": [
