@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.6.3">
+		<update version="1.6.4">
 			<file name="items.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/items.xml" />
 		</update>
 	</info>
@@ -285,66 +285,6 @@
 		</setters>
 	</element>
 	
-	<element name="Spellwoven Robes (Intelligence)" type="Magic Item" source="Third Party Curated Homebrew" id="ID_CHB_TGS_SPELLWOVEN_INT">
-		<description>
-			<p>These robes are unique to the wearer and are spun from special, magic-sensitive threads. While wearing these robes, you gain an additional way to calculate your AC. Your AC equals 10 + your spellcasting ability modifier. Whenever you cast a spell of first level or higher, you can also change the apparent style, color, and apparent material of the robe. Regardless of its appearance, it is always a robe and its weight remains the same. Glowing, arcane glyphs appear on the robe's fabric when you cast a spell before fading away a moment later.</p>
-		</description>
-		<setters>
-			<set name="keywords">ac, robes, cloak</set>
-			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
-			<set name="weight" lb="0">0 lb.</set>
-			<set name="slot">shoulders</set>
-			<set name="type">Wondrous Item</set>
-			<set name="rarity">Uncommon</set>
-		</setters>
-		<rules>
-			<stat name="ac:spellwoven robes" value="10" />
-			<stat name="ac:spellwoven robes" value="intelligence:modifier" />
-			<stat name="ac:calculation" value="ac:spellwoven robes" bonus="calculation" equipped="[armor:none]" alt="Spellwoven Robes (Intelligence)" />
-		</rules>
-	</element>
-	
-	<element name="Spellwoven Robes (Wisdom)" type="Magic Item" source="Third Party Curated Homebrew" id="ID_CHB_TGS_SPELLWOVEN_WIS">
-		<description>
-			<p>These robes are unique to the wearer and are spun from special, magic-sensitive threads. While wearing these robes, you gain an additional way to calculate your AC. Your AC equals 10 + your spellcasting ability modifier. Whenever you cast a spell of first level or higher, you can also change the apparent style, color, and apparent material of the robe. Regardless of its appearance, it is always a robe and its weight remains the same. Glowing, arcane glyphs appear on the robe's fabric when you cast a spell before fading away a moment later.</p>
-		</description>
-		<setters>
-			<set name="keywords">ac, robes, cloak</set>
-			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
-			<set name="weight" lb="0">0 lb.</set>
-			<set name="slot">shoulders</set>
-			<set name="type">Wondrous Item</set>
-			<set name="rarity">Uncommon</set>
-		</setters>
-		<rules>
-			<stat name="ac:spellwoven robes" value="10" />
-			<stat name="ac:spellwoven robes" value="wisdom:modifier" />
-			<stat name="ac:calculation" value="ac:spellwoven robes" bonus="calculation" equipped="[armor:none]" alt="Spellwoven Robes (Wisdom)" />
-		</rules>
-	</element>
-	
-	<element name="Spellwoven Robes (Charisma)" type="Magic Item" source="Third Party Curated Homebrew" id="ID_CHB_TGS_SPELLWOVEN_CHA">
-		<description>
-			<p>These robes are unique to the wearer and are spun from special, magic-sensitive threads. While wearing these robes, you gain an additional way to calculate your AC. Your AC equals 10 + your spellcasting ability modifier. Whenever you cast a spell of first level or higher, you can also change the apparent style, color, and apparent material of the robe. Regardless of its appearance, it is always a robe and its weight remains the same. Glowing, arcane glyphs appear on the robe's fabric when you cast a spell before fading away a moment later.</p>
-		</description>
-		<setters>
-			<set name="keywords">ac, robes, cloak</set>
-			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
-			<set name="weight" lb="0">0 lb.</set>
-			<set name="slot">shoulders</set>
-			<set name="type">Wondrous Item</set>
-			<set name="rarity">Uncommon</set>
-		</setters>
-		<rules>
-			<stat name="ac:spellwoven robes" value="10" />
-			<stat name="ac:spellwoven robes" value="charisma:modifier" />
-			<stat name="ac:calculation" value="ac:spellwoven robes" bonus="calculation" equipped="[armor:none]" alt="Spellwoven Robes (Charisma)" />
-		</rules>
-	</element>
-	
 	<element name="Staff of the Dryad" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_DRYAD_STAFF">
 		<description>
 			<p>This staff can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it.</p>
@@ -372,19 +312,6 @@
 			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_PLANTS" />
 			<grant type="Spell" id="ID_PHB_SPELL_DRUIDCRAFT" />
 		</rules>
-	</element>
-	
-	<element name="Timeshifters Mantle" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_CHB_TGS_TIMESHIFTERS_MANTLE">		
-		<description>
-			<p>If a Large or smaller creature hits you with a melee attack while you're wearing this cloak, you can use your reaction to cause time to briefly warp around you. After taking the damage from the attack, you can immediately move up to half your speed without provoking opportunity attacks, and the attacker's speed is reduced to 0 until the end of this turn. Once this property of the cloak has been used, it can't be used again until the next dawn.</p>
-		</description>
-		<setters>
-			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
-			<set name="weight" lb="0">0 lb.</set>
-			<set name="type">Wondrous Item</set>
-			<set name="rarity">Rare</set>
-		</setters>
 	</element>
 	
 	<element name="Skyrider's Board" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_SKYRIDER_BOARD">
