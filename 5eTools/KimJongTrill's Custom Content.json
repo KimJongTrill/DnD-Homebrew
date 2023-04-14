@@ -9698,6 +9698,152 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "Echo of Atriaxx",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "KimJongTrillsCustomContent",
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				18
+			],
+			"hp": {
+				"formula": "20d8 + 40",
+				"average": 130
+			},
+			"speed": {
+				"walk": 70
+			},
+			"str": 10,
+			"dex": 18,
+			"con": 14,
+			"int": 6,
+			"wis": 18,
+			"cha": 13,
+			"passive": 20,
+			"languages": [
+				"Celestial",
+				"Common",
+				"Primordial"
+			],
+			"languageTags": [
+				"CE",
+				"C",
+				"P"
+			],
+			"senses": [
+				"blindsight 10 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"save": {
+				"cha": "+7",
+				"wis": "+10",
+				"int": "+4",
+				"con": "+8",
+				"dex": "+10",
+				"str": "+6"
+			},
+			"skill": {
+				"acrobatics": "+16",
+				"perception": "+10",
+				"survival": "+10",
+				"insight": "+10"
+			},
+			"action": [
+				{
+					"name": "Sword",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}11 ({@damage 1d10 + 6}) force damage."
+					]
+				},
+				{
+					"name": "Fist",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d10 + 4}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Spell",
+					"entries": [
+						"Casts a Ki spell"
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"O"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"actionHeader": [
+				"Atriaxx can Cast a Ki Spell or make 2 weapon attacks"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Casts these spells using Ki with a {@dc 18}"
+					],
+					"daily": {
+						"1": [
+							"{@spell cone of cold} [{@damage 8d8}]",
+							"{@spell wall of fire} [{@damage 6d8}]"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"damageTagsSpell": [
+				"C",
+				"F"
+			],
+			"trait": [
+				{
+					"name": "Stunning Strike 4/Day",
+					"entries": [
+						"A target hit by one of Atriaxx's attacks must make a {@dc 18} Constitution Save or be {@condition stunned} until the end of his next turn."
+					]
+				},
+				{
+					"name": "Feats",
+					"entries": [
+						"|",
+						"Mobile - no AOp",
+						"Crusher - push 5 once, adv after crits",
+						"Athlete - Stand up is 5",
+						"Sentinel - No Disengage allowed, AOp stops move"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Monk Shit",
+					"entries": [
+						"Atriaxx can make one attack with his Sword, or 2 with his Fist if he uses his Action to make weapon attacks"
+					]
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned",
+				{
+					"special": "disease"
+				}
+			]
 		}
 	],
 	"item": [
@@ -10138,7 +10284,7 @@
 			"baseItem": "quarterstaff|phb",
 			"tier": "minor",
 			"rarity": "rare",
-			"reqAttune": true,
+			"reqAttune": "by a spellcaster",
 			"focus": true,
 			"weight": 4,
 			"weaponCategory": "simple",
@@ -10735,11 +10881,10 @@
 			"name": "Belt of the Elements",
 			"source": "KimJongTrillsCustomContent",
 			"wondrous": true,
-			"tier": "major",
-			"rarity": "very rare",
+			"rarity": "legendary",
 			"reqAttune": "by the Elemental Tribunal",
 			"entries": [
-				"The belt was originally worn by the First Elemental Tribunal, Atriaxx and was used in the creation of the Planes over 10000 years ago, in 1069 PR it was reassembled by Benax. Ultimately Benax used the reassembled belt to drain the energy from Gorotto's Elemental Gauntlet and eventually restabilize the Elemental Planes before too much damage has been done.",
+				"The belt was originally worn by the First Elemental Tribunal, Atriaxx and was used in the creation of the Elemental Planes many millennia ago, in 1069 PR it was reassembled by Benax, the current Elemental Tribunal. Ultimately Benax used the reassembled belt to drain the energy from Gorotto's Elemental Gauntlet.",
 				"While attuned to the belt, you gain resistance to the channeled Plane's associated damage type: Air (lightning), Earth (thunder), Fire (fire), and Water (cold), and you deal an extra martial arts die of that same type to any target you hit with a melee attack. Whenever you spend 1 or more Ki points, you can choose to shift its planar energy to a different plane of your choice."
 			]
 		},
@@ -10851,6 +10996,17 @@
 			"wondrous": true,
 			"entries": [
 				"Using this gun you can shoot a grappling hook at an object that can support being attached to up to 60 feet away."
+			]
+		},
+		{
+			"name": "Belt of the Elements, Empty",
+			"source": "KimJongTrillsCustomContent",
+			"wondrous": true,
+			"rarity": "legendary",
+			"reqAttune": "by the Elemental Tribunal",
+			"entries": [
+				"The belt was originally worn by the First Elemental Tribunal, Atriaxx and was used in the creation of the Elemental Planes many millennia ago, in 1069 PR it was reassembled by Benax, the current Elemental Tribunal.",
+				"You can use a reaction when within 30 feet to interrupt the wielder of the Elemental Gauntlet from accessing a stored Elemental Plane's energy within 30 feet of you, the wielder must make a DC 30 CHA Save or lose access to that planes energy as it becomes stored in the Belt of the Elements."
 			]
 		}
 	],
