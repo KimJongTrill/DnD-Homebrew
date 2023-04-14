@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.6.4">
+		<update version="1.6.5">
 			<file name="items.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/items.xml" />
 		</update>
 	</info>
@@ -327,7 +327,7 @@
 			<set name="type">Wondrous Item</set>
 			<set name="attunement">true</set>
 			<set name="rarity">Rare</set>
-			<set name="charges">3</set>
+			<set name="charges">2</set>
 		</setters>
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_LEVITATE" />
