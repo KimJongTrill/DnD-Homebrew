@@ -91,9 +91,9 @@
 		<rules>
 			<stat name="spellcasting:attack" value="1" />
 			<stat name="spellcasting:dc" value="1" />
-			<grant type="Additional Spell" id="ID_PHB_SPELL_CURE_WOUNDS" />
-			<grant type="Additional Spell" id="ID_PHB_SPELL_LESSER_RESTORATION" />
-			<grant type="Additional Spell" id="ID_PHB_SPELL_SHIELD_OF_FAITH" />
+			<grant type="Spell" id="ID_PHB_SPELL_CURE_WOUNDS" />
+			<grant type="Spell" id="ID_PHB_SPELL_LESSER_RESTORATION" />
+			<grant type="Spell" id="ID_PHB_SPELL_SHIELD_OF_FAITH" />
 		</rules>
 	</element>
 	
