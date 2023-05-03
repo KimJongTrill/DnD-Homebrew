@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.6.5">
+		<update version="1.7.0">
 			<file name="items.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/items.xml" />
 		</update>
 	</info>
@@ -332,6 +332,76 @@
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_LEVITATE" />
 			<grant type="Spell" id="ID_PHB_SPELL_FEATHER_FALL" />
+		</rules>
+	</element>
+	<element name="Staff of Avoidance" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_STAFF_AVOIDANCE">
+		<description>
+			<p>This staff is made of magically imbued wood treated by the various breaths of the Dragons that forged it. It can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it.</p>
+			<p>The staff has 6 charges for the following properties. It regains 1d6 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff loses its properties and becomes a nonmagical quarterstaff.</p>
+			<p>You can expend 1 or more of the staff's charges to cast one of the following spells from it, using your spell save DC: absorb elements (1 charge), shield (1 charge), feather fall (1 charge), warding wind (2 charges), protection from energy (3 charges), or counterspell (3 charges).</p>
+		</description>
+		<setters>
+			<set name="category">Staffs</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="weapon">Quarterstaff</set>
+			<set name="type">Staff</set>
+			<set name="attunement" addition="by a spellcaster">true</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">2</set>
+			<set name="charges">6</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SHIELD" />
+			<grant type="Spell" id="ID_XGTE_SPELL_ABSORB_ELEMENTS" />
+			<grant type="Spell" id="ID_PHB_SPELL_FEATHER_FALL" />
+			<grant type="Spell" id="ID_XGTE_SPELL_WARDING_WIND" />
+			<grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_ENERGY" />
+			<grant type="Spell" id="ID_PHB_SPELL_COUNTERSPELL" />
+		</rules>
+	</element>
+		<element name="Dragon's Bane" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_DRAGONS_BANE">
+		<description>
+			<p>This longbow is crafted of a lightweight metal shaped by the breaths of the Dragon's that forged it. If you are proficient with shortbows or longbows, you are proficient with this bow.</p>
+			<p>You gain a +2 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p>When you hit a dragon with this weapon, the dragon takes an extra 3d6 damage of the weapon's type. For the purpose of this weapon, "dragon" refers to any creature with the dragon type, including dragon turtles and wyverns.</p>
+		</description>
+		<setters>
+			<set name="keywords">longbow</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="longbow">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+			<set name="weapon">Longbow</set>
+			<set name="enhancement">2</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGBOW" />
+		</rules>
+	</element>
+		<element name="Amulet of Supreme Protection" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_SUPREME_PROTECTION">
+		<description>
+			<p>While wearing this amulet; you gain a +1 to your AC while wearing a paired armor set, your AC equals 13 + your Dexterity modifier when the armor is stored inside the amulet, and you can don or doff a set of paired armor as a bonus action. The amulet can be paired to only one set of armor at a time, you pair a set of armor through the process of wearing it while attuning to this empty amulet.</p>
+			<p>The armor is stored in an extradimensional space inside the amulet, and while there, it is restored and cleaned as if it were a brand new set of armor each time it is summoned. Any spells or effects targeting it (such as heat metal) are removed while stored there. The amulet will store cursed armor, even if the curse would normally prevent its removal. It does not remove the attunement to the armor, nor does it eliminate any cursed effects the armor may carry.</p>
+		</description>
+		<setters>
+			<set name="keywords">amulet, armor</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">neck</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="attunement" addition="by a creature proficient in heavy armor">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+		<rules>
+			<stat name="ac:misc" value="1" />
+			<stat name="ac:amulet" value="13" />
+			<stat name="ac:amulet" value="dexterity:modifier" />
+			<stat name="ac:calculation" value="ac:amulet" bonus="calculation" equipped="[armor:none]" alt="Amulet of Supreme Protection" />		
 		</rules>
 	</element>
 </elements>
