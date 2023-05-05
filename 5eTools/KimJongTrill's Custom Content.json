@@ -5974,225 +5974,6 @@
 		},
 		{
 			"source": "KimJongTrillsCustomContent",
-			"name": "Zephara, The Necromantress",
-			"environment": [
-				"outer Planes",
-				"urban"
-			],
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"Elven"
-				]
-			},
-			"alignment": [
-				"L",
-				"E"
-			],
-			"ac": [
-				{
-					"ac": 17,
-					"from": [
-						"{@item spellwoven robes|tgs1}"
-					],
-					"condition": "22 with {@spell shield|phb} spell"
-				}
-			],
-			"hp": {
-				"formula": "20d8 + 40",
-				"average": 200
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 14,
-			"dex": 14,
-			"con": 16,
-			"int": 20,
-			"wis": 15,
-			"cha": 16,
-			"save": {
-				"int": "+10",
-				"wis": "+7",
-				"con": "+8",
-				"cha": "+8"
-			},
-			"skill": {
-				"arcana": "+15",
-				"history": "+10",
-				"religion": "+15",
-				"perception": "+12"
-			},
-			"resist": [
-				{
-					"resist": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical attacks",
-					"cond": true
-				}
-			],
-			"passive": 27,
-			"languages": [
-				"any six languages"
-			],
-			"languageTags": [
-				"X"
-			],
-			"cr": "16",
-			"trait": [
-				{
-					"name": "Legendary Resistance (3/Day)",
-					"entries": [
-						"If the archmage fails a saving throw, it can choose to succeed instead."
-					]
-				},
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"The archmage has advantage on saving throws against spells and other magical effects."
-					]
-				},
-				{
-					"name": "Supreme Focus",
-					"entries": [
-						"The archmage has advantage on saving throws it makes to maintain its concentration."
-					]
-				}
-			],
-			"traitTags": [
-				"Legendary Resistances",
-				"Magic Resistance"
-			],
-			"action": [
-				{
-					"name": "Quarterstaff",
-					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) bludgeoning damage, or 6 ({@damage 1d8 + 2}) bludgeoning damage if used with two hands, plus 7 ({@damage 2d6}) force damage. If the target is a Large of smaller creature, it must succeed on a {@dc 18} Strength saving throw or be pushed up to 10 feet and knocked {@condition prone}."
-					]
-				}
-			],
-			"spellcasting": [
-				{
-					"name": "Innate Spellcasting",
-					"headerEntries": [
-						"The archmage casts one of the following spells using Intelligence as the spellcasting ability (spell save {@dc 18}, {@hit 10} to hit with spell attacks):"
-					],
-					"footerEntries": [
-						"*The archmage casts these spells on itself before combat.",
-						"**Contingencied for being targeted or in the AoE of a spell"
-					],
-					"will": [
-						"{@spell animate dead}",
-						"{@spell fire bolt} ({@damage 4d10})",
-						"{@spell mage hand}",
-						"{@spell mind sliver|TCE} ({@damage 4d6}) ",
-						"{@spell ray of frost} ({@damage 4d8}) ",
-						"{@spell see invisibility}",
-						"{@spell shield}",
-						"{@spell sword burst|TCE} ({@damage 4d6})",
-						"{@spell toll the dead|XGE} ({@damage 4d8}) ({@damage 4d12})"
-					],
-					"daily": {
-						"2e": [
-							"{@spell banishment}",
-							"{@spell counterspell} 5th level, 1 per level below",
-							"{@spell dimension door}",
-							"{@spell dispel magic}",
-							"{@spell hold person}",
-							"{@spell lightning bolt}"
-						],
-						"1e": [
-							"{@spell clone}",
-							"{@spell cone of cold}",
-							"{@spell contingency}",
-							"{@spell demiplane}",
-							"{@spell disintegrate}",
-							"{@spell globe of invulnerability}**",
-							"{@spell plane shift}",
-							"{@spell psychic scream|XGE} ({@damage 14d6})",
-							"{@spell teleport}",
-							"{@spell wall of force}"
-						]
-					},
-					"ability": "int",
-					"type": "spellcasting"
-				}
-			],
-			"spellcastingTags": [
-				"I"
-			],
-			"conditionInflictSpell": [
-				"incapacitated"
-			],
-			"shortName": "archmage",
-			"legendary": [
-				{
-					"name": "Cantrip",
-					"entries": [
-						"The archmage casts a cantrip."
-					]
-				},
-				{
-					"name": "Teleport",
-					"entries": [
-						"The archmage uses its Teleport action."
-					]
-				},
-				{
-					"name": "Cast a Spell (Costs 2 Actions)",
-					"entries": [
-						"The archmage casts a spell."
-					]
-				}
-			],
-			"damageTags": [
-				"B",
-				"O"
-			],
-			"conditionInflict": [
-				"prone"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded3/creature/token/Archmage,%20Legendary%20%28Token%29.png",
-			"fluff": {},
-			"damageTagsSpell": [
-				"C",
-				"F",
-				"L",
-				"N",
-				"O",
-				"Y"
-			],
-			"conditionImmune": [
-				{
-					"conditionImmune": [
-						"charmed"
-					],
-					"preNote": "from mind blank"
-				}
-			],
-			"bonus": [
-				{
-					"name": "Teleport",
-					"entries": [
-						"The archmage magically teleports, along with any equipment it is wearing or carrying and any creatures it has {@condition grappled}, up to 60 feet to an unoccupied space it can see."
-					]
-				}
-			],
-			"senses": [
-				"{@spell see invisibility} at-will"
-			]
-		},
-		{
-			"source": "KimJongTrillsCustomContent",
 			"name": "Gustav Breeze",
 			"environment": [
 				"mountain",
@@ -6720,7 +6501,6 @@
 		},
 		{
 			"source": "KimJongTrillsCustomContent",
-			"page": 272,
 			"name": "Elrax, Ravager-sworn",
 			"environment": [
 				"volcanic"
@@ -6810,7 +6590,14 @@
 				{
 					"name": "Supreme Focus",
 					"entries": [
-						"The warlock has advantage on saving throws it makes to maintain its concentration."
+						"The warlock has advantage on saving throws it makes to maintain its {@status concentration}."
+					]
+				},
+				{
+					"name": "Hurl Through Hell (1/Day)",
+					"entries": [
+						"When you hit a creature with an attack, you can use this feature to instantly transport the target through the lower planes. The creature disappears and hurtles through a nightmare landscape.",
+						"At the end of your next turn, the target returns to the space it previously occupied, or the nearest unoccupied space. If the target is not a fiend, it takes {@damage 10d10} psychic damage as it reels from its horrific experience."
 					]
 				}
 			],
@@ -6819,15 +6606,9 @@
 			],
 			"action": [
 				{
-					"name": "Ravager Hatchet",
+					"name": "Ravager Blade",
 					"entries": [
 						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage, plus 10 ({@damage 3d6}) necrotic damage, Elrax regains hit points equal to the necrotic damage ."
-					]
-				},
-				{
-					"name": "Summon Fiend (1/Day)",
-					"entries": [
-						"The warlock summons a barbed devil, barlgura, or mezzoloth. A summoned fiend appears in an unoccupied space within 60 feet of the warlock and acts as an ally of the warlock. It remains for an hour, until it or the warlock dies, or until its summoner dismisses it as an action."
 					]
 				}
 			],
@@ -6835,7 +6616,7 @@
 				{
 					"name": "Innate Spellcasting",
 					"headerEntries": [
-						"The warlock casts one of the following spells using Charisma as the spellcasting ability (spell save {@dc 19}, {@hit 11} to hit with spell attacks):"
+						"The warlock casts one of the following spells using Charisma as the spellcasting ability (spell save {@dc 22}, {@hit 14} to hit with spell attacks):"
 					],
 					"will": [
 						"{@spell eldritch blast} (4 beams, {@damage 1d10 + 5})",
@@ -6844,13 +6625,15 @@
 					],
 					"daily": {
 						"6": [
+							"{@spell animate objects}",
 							"{@spell banishment} (as 5th-level spell)",
 							"{@spell cone of cold} (necrotic damage)",
-							"{@spell fireball} (as 5th-level spell)",
-							"{@spell wall of force}"
+							"{@spell dimension door}",
+							"{@spell fireball} (as 5th-level spell)"
 						],
 						"1e": [
 							"{@spell circle of death}",
+							"{@spell power word kill}",
 							"{@spell power word pain|XGE}",
 							"{@spell power word stun}"
 						]
@@ -6871,19 +6654,13 @@
 				{
 					"name": "Move",
 					"entries": [
-						"The warlock moves up to half its speed without provoking {@action opportunity attack|PHB|opportunity attacks}."
+						"The warlock moves up to its speed without provoking opportunity attacks."
 					]
 				},
 				{
-					"name": "Quarterstaff",
+					"name": "Ravager Blade",
 					"entries": [
-						"The warlock attacks with its Quarterstaff."
-					]
-				},
-				{
-					"name": "Diabolical Presence",
-					"entries": [
-						"The warlock targets one creature it can see within 60 feet of it. If the target can see and hear the warlock, it must succeed on a {@dc 18} Wisdom saving throw or become {@condition charmed} or {@condition frightened} (warlock's choice) for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to warlock's Diabolical Presence for the next 24 hours."
+						"The warlock make a melee attack"
 					]
 				},
 				{
@@ -6891,23 +6668,28 @@
 					"entries": [
 						"The warlock casts {@spell eldritch blast}."
 					]
+				},
+				{
+					"name": "Cast a Spell (2 Actions)",
+					"entries": [
+						"Uses Spell Casting"
+					]
 				}
 			],
 			"damageTags": [
 				"N",
 				"S"
 			],
-			"conditionInflict": [
-				"charmed",
-				"frightened"
-			],
 			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded3/creature/token/Warlock%20Of%20The%20Fiend,%20Legendary%20%28Token%29.png",
 			"fluff": {},
 			"damageTagsSpell": [
+				"B",
 				"C",
 				"F",
 				"N",
-				"O"
+				"O",
+				"P",
+				"S"
 			],
 			"immune": [
 				"necrotic"
@@ -6922,6 +6704,14 @@
 			],
 			"miscTags": [
 				"MW"
+			],
+			"bonus": [
+				{
+					"name": "Summon Blood Lord",
+					"entries": [
+						"The warlock summons a Blood Lord, which appears in an unoccupied space within 60 feet of the warlock and acts as an ally of the warlock. It remains for an hour, until it or the warlock dies, or until its summoner dismisses it as an action."
+					]
+				}
 			]
 		},
 		{
@@ -9844,6 +9634,435 @@
 					"special": "disease"
 				}
 			]
+		},
+		{
+			"source": "KimJongTrillsCustomContent",
+			"name": "Zephara, The Necromantress",
+			"environment": [
+				"outer Planes",
+				"urban"
+			],
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Elven"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item robe of the archmagi}"
+					],
+					"condition": "22 with {@spell shield|phb} spell"
+				}
+			],
+			"hp": {
+				"formula": "20d8 + 60",
+				"average": 150
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 14,
+			"con": 16,
+			"int": 20,
+			"wis": 15,
+			"cha": 16,
+			"save": {
+				"int": "+10",
+				"wis": "+7",
+				"con": "+9",
+				"cha": "+8"
+			},
+			"skill": {
+				"arcana": "+15",
+				"history": "+17",
+				"religion": "+15",
+				"perception": "+12"
+			},
+			"passive": 27,
+			"languages": [
+				"any six languages"
+			],
+			"languageTags": [
+				"X"
+			],
+			"cr": "20",
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the archmage fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The archmage has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Supreme Focus",
+					"entries": [
+						"The archmage has advantage on saving throws it makes to maintain its {@status concentration}."
+					]
+				},
+				{
+					"name": "Strength of the Grave",
+					"entries": [
+						"When damage reduces Zephara to 0 hit points, you can make a Charisma saving throw ({@dc 5} + the damage taken). On a success, you instead drop to 1 hit point. If she is reduced to 0 hit points by radiant damage or by a critical hit, this trait doesn't function."
+					]
+				},
+				{
+					"name": "Portent",
+					"entries": [
+						"Roll {@dice 3d20} and record those rolls, Zephara replace any attack roll, saving throw, or ability check made by her or a creature that she can see with one of these foretelling rolls. You must choose to do so before the roll, and you can replace a roll in this way only once per turn."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance"
+			],
+			"action": [
+				{
+					"name": "Quarterstaff",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) bludgeoning damage, or 8 ({@damage 1d8 + 4}) bludgeoning damage if used with two hands, plus 7 ({@damage 2d6}) force damage. If the target is a Large of smaller creature, it must succeed on a {@dc 18} Strength saving throw or be pushed up to 10 feet and knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Green Flame Blade",
+					"entries": [
+						"quarterstaff damage + {@damage 3d8} fire, and {@damage 3d8+5} fire to a target within 5ft of the other."
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The archmage casts one of the following spells using Intelligence as the spellcasting ability (spell save {@dc 20}, {@hit 12} to hit with spell attacks):"
+					],
+					"footerEntries": [
+						"*Contingency for being targeted by an attack",
+						"**Cast each day"
+					],
+					"will": [
+						"{@spell animate dead}",
+						"{@spell fire bolt} ({@damage 4d10})",
+						"{@spell green-flame blade|TCE}",
+						"{@spell mage hand}",
+						"{@spell mind sliver|TCE} ({@damage 4d6}) ",
+						"{@spell see invisibility}",
+						"{@spell shield}",
+						"{@spell toll the dead|XGE} ({@damage 4d8}) ({@damage 4d12})"
+					],
+					"daily": {
+						"2e": [
+							"{@spell absorb elements|XGE}",
+							"{@spell counterspell} 5th level, 1 per level below",
+							"{@spell dimension door}",
+							"{@spell dispel magic}",
+							"{@spell hold person}",
+							"{@spell ray of enfeeblement}"
+						],
+						"1e": [
+							"{@spell chain lightning}",
+							"{@spell cone of cold}",
+							"{@spell demiplane}",
+							"{@spell disintegrate}",
+							"{@spell feeblemind}",
+							"{@spell foresight}**",
+							"{@spell mirror image}*",
+							"{@spell plane shift}",
+							"{@spell teleport}",
+							"{@spell wall of force}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"conditionInflictSpell": [
+				"incapacitated"
+			],
+			"shortName": "Zephara",
+			"legendary": [
+				{
+					"name": "Cantrip",
+					"entries": [
+						"The archmage casts a cantrip."
+					]
+				},
+				{
+					"name": "Teleport",
+					"entries": [
+						"The archmage uses its Teleport action."
+					]
+				},
+				{
+					"name": "Cast a Spell (Costs 2 Actions)",
+					"entries": [
+						"The archmage casts a spell."
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"O"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"fluff": {},
+			"damageTagsSpell": [
+				"C",
+				"F",
+				"L",
+				"N",
+				"O",
+				"Y"
+			],
+			"conditionImmune": [
+				{
+					"conditionImmune": [
+						"paralyzed",
+						"restrained"
+					],
+					"note": "(from magical effects)"
+				}
+			],
+			"bonus": [
+				{
+					"name": "Teleport",
+					"entries": [
+						"The archmage magically teleports, along with any equipment it is wearing or carrying and any creatures it has {@condition grappled}, up to 60 feet to an unoccupied space it can see."
+					]
+				}
+			],
+			"senses": [
+				"Devil's Sight 120 ft.",
+				"{@spell see invisibility} at-will"
+			],
+			"isNamedCreature": true
+		},
+		{
+			"name": "Ghaffari Hit Squad",
+			"size": [
+				"M"
+			],
+			"type": "aberration",
+			"source": "KimJongTrillsCustomContent",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item half plate armor|phb}"
+					],
+					"condition": "18 when wielding dual scimitars"
+				}
+			],
+			"hp": {
+				"special": "94"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 18,
+			"con": 16,
+			"int": 10,
+			"wis": 14,
+			"cha": 9,
+			"passive": 12,
+			"cr": "9",
+			"trait": [
+				{
+					"name": "Banneret",
+					"entries": [
+						"When you use your Second Wind feature, you can choose up to three creatures within 60 feet of you that are allied with you. Each one regains hit points equal to your fighter level, provided that the creature can see or hear you.",
+						"When you use your Action Surge feature, you can choose one creature within 60 feet of you that is allied with you. That creature can make one melee or ranged weapon attack with its reaction, provided that it can see or hear you."
+					]
+				},
+				{
+					"name": "Second Wind (Recharges after a Short or Long Rest)",
+					"entries": [
+						"As a bonus action, the Ghaffari Hit Squad can regain hit points equal to {@damage 1d10 + 10}"
+					]
+				},
+				{
+					"name": "Action Surge (Recharges after a Short or Long Rest)",
+					"entries": [
+						"The Ghaffari Hit Squad can take an extra action on its turn."
+					]
+				}
+			],
+			"save": {
+				"str": "+5",
+				"con": "+7"
+			},
+			"action": [
+				{
+					"name": "Scimitar",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) damage."
+					]
+				},
+				{
+					"name": "Carbine",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 100/100 ft., one target. {@h}9 ({@damage 1d10 + 4}) damage."
+					]
+				},
+				{
+					"name": "Sharpshot",
+					"entries": [
+						"{@atk rw} {@hit 3} to hit, range 100/100 ft., one target. {@h}19 ({@damage 1d10 + 14}) damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"actionHeader": [
+				"The Hit Squad member makes two attacks"
+			],
+			"bonus": [
+				{
+					"name": "Dual Wield",
+					"entries": [
+						"If the hit squad member attacks with a scimitar using its action make a single scimitar attack as a Bonus Action"
+					]
+				}
+			]
+		},
+		{
+			"name": "Don Giovanni DeMarcco",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "KimJongTrillsCustomContent",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item barrier tattoo (large)|tce}"
+					]
+				}
+			],
+			"hp": {
+				"special": "173"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 20,
+			"dex": 14,
+			"con": 18,
+			"int": 14,
+			"wis": 11,
+			"cha": 13,
+			"passive": 15,
+			"shortName": "The Don",
+			"trait": [
+				{
+					"name": "Feats",
+					"entries": [
+						"|",
+						"Crusher",
+						"Athlete"
+					]
+				},
+				{
+					"name": "Reckless",
+					"entries": [
+						"At the start of its turn, The Don can gain advantage on all melee weapon attack rolls it makes during that turn, but attack rolls against it have advantage until the start of its next turn."
+					]
+				}
+			],
+			"skill": {
+				"athletics": "+15",
+				"intimidation": "+11",
+				"perception": "+5",
+				"sleight of hand": "+7",
+				"stealth": "+7"
+			},
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"action": [
+				{
+					"name": "Family Rings",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}17 ({@damage 3d6 + 7}) b/p/s damage or {@h}20 ({@damage 3d8 + 7}) b/p/s damage."
+					]
+				},
+				{
+					"name": "Revolver",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 30/60 ft., one target. {@h}12 ({@damage 3d6 + 2}) piercing damage, target cannot regain HP until start of his next turn."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"damageTags": [
+				"P"
+			],
+			"traitTags": [
+				"Reckless"
+			],
+			"isNamedCreature": true,
+			"legendary": [
+				{
+					"name": "Move",
+					"entries": [
+						"Moves his speed"
+					]
+				},
+				{
+					"name": "Attack",
+					"entries": [
+						"Makes an attack"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Extra Strike",
+					"entries": [
+						"If The Don attacks with only his fists he can make a attack as his bonus actions with the Rings"
+					]
+				}
+			]
 		}
 	],
 	"item": [
@@ -10592,7 +10811,7 @@
 			"dmgType": "B",
 			"dmg2": "1d8",
 			"entries": [
-				"This pair of Knuckle Dusters are crafted from Divinium and inscribed with magical runes to allow a spellcaster to channel their magical ability into martial prowess. While attuned you are proficient with them, can use them as a spellcasting focus, and melee attacks you make with the Scholar's Knuckles are made with your spell attack modifier."
+				"This set of Knuckle Dusters are crafted from Divinium and inscribed with magical runes to allow a spellcaster to channel their magical ability into martial prowess. While attuned you are proficient with them, can use them as a spellcasting focus, and melee attacks you make with the Scholar's Knuckles are made with your spell attack modifier, and you add your spell ability modifier to damage rolls."
 			]
 		},
 		{
@@ -10709,7 +10928,7 @@
 						{
 							"type": "list",
 							"items": [
-								"You gain a +2 bonus to spell attack rolls.",
+								"You now gain a +2 bonus to spell attack rolls and {@spell guidance} doesn't count against your known cantrip limit.",
 								"Whenever you use a spell of 1st level or higher to restore hit points to a creature, the creature regains additional hit points equal to 2 + the spell's level.",
 								"You can additionally cast {@spell protection from evil and good|phb}, {@spell augury|phb}, and {@spell speak with dead|phb} with the vial."
 							]
@@ -10726,12 +10945,12 @@
 			"reqAttune": "by Unamed",
 			"wondrous": true,
 			"entries": [
-				"When Unamed and the Witchlight Warriors were tested by Haymil the spark given to Unamed took the form of two rings. These paired rings are engraved with small knives and other bladed weapons in an intricate pattern that conceals the true design to anyone but the attuned wearer.",
+				"When Unamed and the Witchlight Warriors were tested by Haymil the spark given to Unamed took the form of two rings. These paired rings are engraved with small knives and other bladed weapons in an intricate pattern that conceals the true design to anyone but the attuned wearer. As part of the attunement to these rings you must choose weapons to bond with each, once bonded the weapon exists in an extra dimensional space inside the ring, is considered on your person, and can be drawn to your hand a flick of the wrist and are stored by you at will as long as they exist on the same plane. ",
 				{
 					"type": "entries",
 					"name": "Dormant",
 					"entries": [
-						" As part of the attunement to these rings you must choose weapons to bond with each, once bonded the weapon exists in an extra dimensional space inside the ring, is considered on your person, and can be drawn to your hand a flick of the wrist and are stored by you at will as long as they exist on the same plane. You also gain the following additonal benefits while attuned:",
+						"You also gain the following additonal benefits while attuned:",
 						{
 							"type": "list",
 							"items": [
@@ -10750,7 +10969,7 @@
 						{
 							"type": "list",
 							"items": [
-								"Your bonded melee weapon strikes gain +2 bonus to damage and to hit.",
+								"Your bonded melee weapon strikes now gain a +2 bonus to damage and to hit.",
 								"Your speed increases by 10 feet.",
 								"When you make a melee attack and can normally use your bonus action to make another melee attack via TWF, you can make the extra attack as part of that same Attack action."
 							]
@@ -10791,7 +11010,7 @@
 						{
 							"type": "list",
 							"items": [
-								"You gain a +2 bonus to spell attack rolls, and you can add your Intelligence modifier to the damage of your cantrips.",
+								"You now gain a +2 bonus to spell attack rolls, and you can add your Intelligence modifier to the damage of your cantrips.",
 								"When you prepare wizard spells attuned to the mote the number of spells you can prepare increases by 2 now.",
 								"As a bonus action once per short rest, you prepare a spell of 1st level or higher from your spellbook. This spell must be of a level for which you have spell slots, and it replaces another spell that you had previously prepared."
 							]
@@ -10846,7 +11065,7 @@
 						{
 							"type": "list",
 							"items": [
-								"You gain a +2 bonus to attack and damage rolls with unarmed strikes and monk weapons.",
+								"You now gain a +2 bonus to attack and damage rolls with unarmed strikes and monk weapons.",
 								"Your Constitution Score is raised by 4 now to a Maximum of 30.",
 								"When you use Patient Defense or Step of the Wind you can also make an unarmed strike as part of that bonus action."
 							]
@@ -10907,6 +11126,7 @@
 		{
 			"name": "Dragon's Bane",
 			"source": "KimJongTrillsCustomContent",
+			"reqAttune": true,
 			"baseItem": "longbow|phb",
 			"type": "M",
 			"tier": "major",
@@ -10920,17 +11140,16 @@
 			"range": "150/600",
 			"dmg1": "1d8",
 			"dmgType": "P",
-			"bonusWeapon": "+1",
+			"bonusWeapon": "+2",
 			"entries": [
-				"This longbow is crafted of a lightweight metal rumored to have been forged in the breath of a good dragon. If you are proficient with {@item shortbow|phb|shortbows} or {@item longbow|phb|longbows}, you are proficient with this bow.",
-				"You gain a +1 bonus to attack and damage rolls made with this magic weapon.",
+				"This longbow is crafted of a lightweight metal shaped by the breaths of the Dragon's that forged it. If you are proficient with {@item shortbow|phb|shortbows} or {@item longbow|phb|longbows}, you are proficient with this bow.",
+				"You gain a +2 bonus to attack and damage rolls made with this magic weapon.",
 				"When you hit a dragon with this weapon, the dragon takes an extra {@dice 3d6} damage of the weapon's type. For the purpose of this weapon, \"dragon\" refers to any creature with the dragon type, including dragon turtles and wyverns."
 			]
 		},
 		{
 			"name": "Staff of the Dryad",
 			"source": "KimJongTrillsCustomContent",
-			"page": 0,
 			"tier": "minor",
 			"rarity": "rare",
 			"reqAttune": "by a spellcaster",
@@ -11008,6 +11227,146 @@
 				"The belt was originally worn by the First Elemental Tribunal, Atriaxx and was used in the creation of the Elemental Planes many millennia ago, in 1069 PR it was reassembled by Benax, the current Elemental Tribunal.",
 				"You can use a reaction when within 30 feet to interrupt the wielder of the Elemental Gauntlet from accessing a stored Elemental Plane's energy within 30 feet of you, the wielder must make a DC 30 CHA Save or lose access to that planes energy as it becomes stored in the Belt of the Elements."
 			]
+		},
+		{
+			"name": "Curator's Badge",
+			"source": "KimJongTrillsCustomContent",
+			"tier": "minor",
+			"rarity": "very rare",
+			"reqAttune": "by a Curator",
+			"wondrous": true,
+			"entries": [
+				"This brooch is emblazoned by a symbol of Ceritas in a fine ornate golden design with a polished blue stone finish to most who see it, but those attuned to any brooches like it see the symbol of the Order of Providence superimposed over the scales with an illusory holographic effect. These badges are used by Curators to learn helpful information about things they encounter in their research, both of the monsters in wilderness and those in civilization they may face getting into danger in pursuit of their goals.",
+				"While wearing this brooch, you can use a bonus action to determine any resistance, vulnerability, or immunity to damage of a creature within 60 feet of you that you can see. You do so by making an Intelligence check with a DC of 5 + the CR of the creature, if 1 or greater.",
+				"Additionally once per day you can cast the {@spell detect thoughts} and {@spell sending} spells. You can also cast these spells using spell slots you have of the appropriate level."
+			]
+		},
+		{
+			"name": "Staff of Avoidance",
+			"source": "KimJongTrillsCustomContent",
+			"tier": "major",
+			"rarity": "rare",
+			"reqAttune": "by a spellcaster",
+			"weight": 4,
+			"weaponCategory": "simple",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"dmg2": "1d8",
+			"bonusWeapon": "+2",
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"staff": true,
+			"entries": [
+				"This staff is made of magically imbued wood treated by the various breaths of the Dragons that forged it. It can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it.",
+				"The staff has 6 charges for the following properties. It regains {@dice 1d6} expended charges daily at dawn. If you expend the last charge, roll a {@dice d20}. On a 1, the staff loses its properties and becomes a nonmagical quarterstaff.",
+				{
+					"type": "entries",
+					"name": "Spells",
+					"entries": [
+						"You can expend 1 or more of the staff's charges to cast one of the following spells from it, using your spell save DC: {@spell absorb elements|xge} (1 charge), {@spell shield} (1 charge), {@spell feather fall} (1 charge), {@spell warding wind|xge} (2 charges), {@spell protection from energy} (3 charges), or {@spell counterspell} (3 charges)."
+					]
+				}
+			]
+		},
+		{
+			"name": "Warhead of Nuclear Winter",
+			"source": "KimJongTrillsCustomContent",
+			"tier": "major",
+			"rarity": "artifact",
+			"wondrous": true,
+			"entries": [
+				"This metal ball fits in your hand and is adorned with a yellow and black symbol with the word DANGER under it. You can throw it at a space within 60 feet as an action causing it detonate, destroying itself in the process.",
+				"When the Warhead goes off all creatures in a mile radius must succeed on a DC 50 Constitution saving throw or take {@damage 1000d20} force damage, half on success. The wave continues on initiative 20 expanding a mile each round for a minute, lowering the DC by 5 and halving the intial damage each round after the first. Any objects, inclusing those worn or carried are destroyed on contact unless they are an Artifact. Any area affected by the blast is considered to be under the effect of an {@spell antimagic field} for the next {@damage 10d100} years."
+			]
+		},
+	],
+	"item": [
+		{
+			"name": "Long Rifle",
+			"source": "KimJongTrillsCustomContent",
+			"type": "R",
+			"weapon": true,
+			"firearm": true,
+			"weaponCategory": "martial",
+			"rarity": "none",
+			"value": 50000,
+			"weight": 10,
+			"dmg1": "1d12",
+			"dmgType": "P",
+			"property": [
+				"A",
+				"H",
+				"LD",
+				"2H"
+			],
+			"range": "100/200",
+			"entries": []
+		},
+		{
+			"name": "Carbine Rifle",
+			"source": "KimJongTrillsCustomContent",
+			"type": "R",
+			"weapon": true,
+			"firearm": true,
+			"weaponCategory": "martial",
+			"rarity": "none",
+			"value": 25000,
+			"weight": 5,
+			"dmg1": "1d10",
+			"dmgType": "P",
+			"property": [
+				"A",
+				"H",
+				"RLD",
+				"2H"
+			],
+			"range": "50/100",
+			"reload": 5,
+			"entries": []
+		},
+		{
+			"name": "Flintlock",
+			"type": "R",
+			"weapon": true,
+			"firearm": true,
+			"weaponCategory": "martial",
+			"rarity": "none",
+			"value": 10000,
+			"weight": 3,
+			"dmg1": "1d10",
+			"dmgType": "P",
+			"property": [
+				"A",
+				"LD"
+			],
+			"range": "60/120",
+			"source": "KimJongTrillsCustomContent",
+			"entries": []
+		},
+		{
+			"name": "Revolver",
+			"source": "KimJongTrillsCustomContent",
+			"type": "R",
+			"weapon": true,
+			"firearm": true,
+			"weaponCategory": "martial",
+			"rarity": "none",
+			"value": 15000,
+			"weight": 1.5,
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"property": [
+				"A",
+				"RLD",
+				"L"
+			],
+			"range": "30/60",
+			"reload": 6,
+			"entries": []
 		}
 	],
 	"legendaryGroup": [
