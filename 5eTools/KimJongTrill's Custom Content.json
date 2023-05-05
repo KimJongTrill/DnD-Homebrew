@@ -6,7 +6,7 @@
 				"abbreviation": "KJTCC",
 				"full": "KimJongTrill's Custom Content",
 				"color": "68BB59",
-				"url": "https://sites.google.com/view/teruvia/home",
+				"url": "https://www.gmbinder.com/pdf/-MxkLio91IPl29SFoO8H/adventurers-guide-to-trvia.pdf",
 				"authors": [
 					"KimJongTrill"
 				],
@@ -11282,9 +11282,9 @@
 				"This metal ball fits in your hand and is adorned with a yellow and black symbol with the word DANGER under it. You can throw it at a space within 60 feet as an action causing it detonate, destroying itself in the process.",
 				"When the Warhead goes off all creatures in a mile radius must succeed on a DC 50 Constitution saving throw or take {@damage 1000d20} force damage, half on success. The wave continues on initiative 20 expanding a mile each round for a minute, lowering the DC by 5 and halving the intial damage each round after the first. Any objects, inclusing those worn or carried are destroyed on contact unless they are an Artifact. Any area affected by the blast is considered to be under the effect of an {@spell antimagic field} for the next {@damage 10d100} years."
 			]
-		},
+		}
 	],
-	"item": [
+	"baseitem": [
 		{
 			"name": "Long Rifle",
 			"source": "KimJongTrillsCustomContent",
@@ -11348,7 +11348,7 @@
 			"entries": []
 		},
 		{
-			"name": "Revolver",
+			"name": "Six-Shooter",
 			"source": "KimJongTrillsCustomContent",
 			"type": "R",
 			"weapon": true,
