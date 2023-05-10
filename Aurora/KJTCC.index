@@ -16,5 +16,6 @@
     <file name="3rdparty-CHB.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/3rdparty-CHB.xml" />
     <file name="artifacts.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/artifacts.xml" />
     <file name="weapon-base.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/weapon-base.xml" />
+    <file name="deities.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/deities.xml" />
   </files>
 </index>
