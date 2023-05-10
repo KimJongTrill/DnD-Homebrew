@@ -1,0 +1,105 @@
+<elements>
+	<info>
+		<update version="1.0.1">
+			<file name="deities.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/deities.xml" />
+		</update>
+	</info>
+	<element name="Atlanta" type="Deity" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_DEITY_ATLANTA">
+		<description>
+			<p class="flavor">goddess of lightning</p>
+		</description>
+		<setters>
+			<set name="setting">Teruvia</set>
+			<set name="domains">Tempest, Skies, Storms</set>
+			<set name="symbol">Lightning Bolt</set>
+			<set name="gender">female</set>
+		</setters>
+		<sheet>
+			<description>goddess of lightning</description>
+		</sheet>
+	</element>
+	<element name="Ceritas" type="Deity" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_DEITY_CERITAS">
+		<description>
+			<p class="flavor">goddess of knowledge</p>
+		</description>
+		<setters>
+			<set name="setting">Teruvia</set>
+			<set name="domains">Arcana, Knowledge, Order, Moon</set>
+			<set name="symbol">Scales</set>
+			<set name="gender">female</set>
+		</setters>
+		<sheet>
+			<description>goddess of knowledge</description>
+		</sheet>
+	</element>
+	<element name="Fiero" type="Deity" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_DEITY_FIERO">
+		<description>
+			<p class="flavor">god of fire</p>
+		</description>
+		<setters>
+			<set name="setting">Teruvia</set>
+			<set name="domains">Light, War, Forge, Summer</set>
+			<set name="symbol">Ember</set>
+			<set name="gender">male</set>
+		</setters>
+		<sheet>
+			<description>god of fire</description>
+		</sheet>
+	</element>
+	<element name="Haymil" type="Deity" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_DEITY_HAYMIL">
+		<description>
+			<p class="flavor">goddess of trickery</p>
+		</description>
+		<setters>
+			<set name="setting">Teruvia</set>
+			<set name="domains">Trickery, Luck</set>
+			<set name="symbol">Question Mark</set>
+			<set name="gender">none</set>
+		</setters>
+		<sheet>
+			<description>god of trickery</description>
+		</sheet>
+	</element>
+	<element name="Markuul" type="Deity" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_DEITY_MARKUUL">
+		<description>
+			<p class="flavor">goddess of death</p>
+		</description>
+		<setters>
+			<set name="setting">Teruvia</set>
+			<set name="domains">Death, Fate, Winter, Life</set>
+			<set name="symbol">Raven</set>
+			<set name="gender">female</set>
+		</setters>
+		<sheet>
+			<description>goddess of death</description>
+		</sheet>
+	</element>
+	<element name="Rikkus" type="Deity" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_DEITY_RIKKUS">
+		<description>
+			<p class="flavor">god of wealth</p>
+		</description>
+		<setters>
+			<set name="setting">Teruvia</set>
+			<set name="domains">Wealth, Harvest, Fall</set>
+			<set name="symbol">Chalice</set>
+			<set name="gender">male</set>
+		</setters>
+		<sheet>
+			<description>god of wealth</description>
+		</sheet>
+	</element>
+	<element name="Verdana" type="Deity" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_DEITY_VERDANA">
+		<description>
+			<p class="flavor">goddess of nature</p>
+		</description>
+		<setters>
+			<set name="setting">Teruvia</set>
+			<set name="domains">Nature, Spring</set>
+			<set name="symbol">Vines</set>
+			<set name="gender">female</set>
+		</setters>
+		<sheet>
+			<description>goddess of nature</description>
+		</sheet>
+	</element>
+</elements>
