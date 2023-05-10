@@ -1,6 +1,6 @@
 <elements>
 	<info>
-		<update version="1.0.1">
+		<update version="1.0.2">
 			<file name="deities.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/deities.xml" />
 		</update>
 	</info>
@@ -13,6 +13,7 @@
 			<set name="domains">Tempest, Skies, Storms</set>
 			<set name="symbol">Lightning Bolt</set>
 			<set name="gender">female</set>
+			<set name="alignment">LG</set>
 		</setters>
 		<sheet>
 			<description>goddess of lightning</description>
@@ -27,6 +28,7 @@
 			<set name="domains">Arcana, Knowledge, Order, Moon</set>
 			<set name="symbol">Scales</set>
 			<set name="gender">female</set>
+			<set name="alignment">NG</set>
 		</setters>
 		<sheet>
 			<description>goddess of knowledge</description>
@@ -41,6 +43,7 @@
 			<set name="domains">Light, War, Forge, Summer</set>
 			<set name="symbol">Ember</set>
 			<set name="gender">male</set>
+			<set name="alignment">CG</set>
 		</setters>
 		<sheet>
 			<description>god of fire</description>
@@ -55,6 +58,7 @@
 			<set name="domains">Trickery, Luck</set>
 			<set name="symbol">Question Mark</set>
 			<set name="gender">none</set>
+			<set name="alignment">CG</set>
 		</setters>
 		<sheet>
 			<description>god of trickery</description>
@@ -69,6 +73,7 @@
 			<set name="domains">Death, Fate, Winter, Life</set>
 			<set name="symbol">Raven</set>
 			<set name="gender">female</set>
+			<set name="alignment">N</set>
 		</setters>
 		<sheet>
 			<description>goddess of death</description>
@@ -83,6 +88,7 @@
 			<set name="domains">Wealth, Harvest, Fall</set>
 			<set name="symbol">Chalice</set>
 			<set name="gender">male</set>
+			<set name="alignment">LG</set>
 		</setters>
 		<sheet>
 			<description>god of wealth</description>
@@ -97,6 +103,7 @@
 			<set name="domains">Nature, Spring</set>
 			<set name="symbol">Vines</set>
 			<set name="gender">female</set>
+			<set name="alignment">NG</set>
 		</setters>
 		<sheet>
 			<description>goddess of nature</description>
