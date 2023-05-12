@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.1.6">
+		<update version="1.2.0">
 			<file name="artifacts.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/artifacts.xml" />
 		</update>
 	</info>
+	
 	<element name="Belt of the Tempest (Dormant)" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_BOT_1">
 		<description>
 			<p>The Belt of the Tempest was found by Logen and the other Witchlight Warriors inside an ancient temple of Atlanta, it formed from a Divine Spark granted to him after proving his mettle. The Divine Spark took the form of a thick dark blue leather belt adorned with large metal plates covered in storm-based iconogrophy.</p>
@@ -149,6 +150,195 @@
 		<rules>
 			<stat name="constitution" value="2" />
 			<stat name="constitution:max" value="2" />
+		</rules>
+	</element>
+	
+	<element name="Belt of the Tempest (Awakened)" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_BOT_2">
+		<description>
+			<p>The Belt of the Tempest was found by Logen and the other Witchlight Warriors inside an ancient temple of Atlanta, it formed from a Divine Spark granted to him after proving his mettle. The Divine Spark took the form of a thick dark blue leather belt adorned with large metal plates covered in storm-based iconogrophy.</p>
+			<p class="indent"><strong><em>Storm Avatar.</em></strong> You can use a bonus action to become a Storm Avatar for 1 minute, gaining the following benefits for the duration:</p>
+			<ul>
+				<li>You have immunity to lightning damage and thunder damage.</li>
+				<li>When you hit with a weapon attack that normally deals bludgeoning damage, it deals thunder damage instead. When you hit with a weapon attack that normally deals piercing or slashing damage, it deals lightning damage instead.</li>
+				<li>As a bonus action, you can choose one creature you can see within 30 feet of you to be struck by lightning. The target must make a DC 15 Dexterity saving throw, taking 3d6 lightning damage on a failed save, or half as much damage on a successful one.</li>
+				<li>Once you use the Belt of the Tempest's Storm Avatar property, that property can't be used again until the next dawn.</li>
+			</ul>
+			<p class="indent"><strong><em>Dormant.</em></strong> Growing in power and reaching its Awakened state the Belt of the Tempest grants these new properties:</p>
+			<ul>
+				<li>You have resistance to lightning damage and thunder damage.</li>
+				<li>Your Strength score is raised by 2 to a Maximum of 30.</li>
+			</ul>
+			<p class="indent"><strong><em>Awakened.</em></strong> While attuned to the Belt of the Tempest:</p>
+			<ul>
+				<li>While in Storm Avatar state gain a Flying Speed with hover, equal to your walking speed</li>
+				<li>Your Strength score is raised by 4 now to a Maximum of 30.</li>
+				<li>You gain an additional Second Wind per short rest.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">belt</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Artifact</set>
+			<set name="attunement">true</set>
+			<set name="slot">belt</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+			<stat name="strength" value="4" />
+			<stat name="strength:max" value="4" />
+		</rules>
+	</element>
+	
+	<element name="Mote of Knowledge (Awakened)" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_MOK_2">
+		<description>
+			<p>A Spellshard of endless volume able to hold as much information as one can find, gifted to Jarzamel by Ceritas herself imbued with her Divine energy, given as a reward for the Witchlight Warriors answering her call.</p>
+			<p>A wizard can use this spellshard as a spellbook, with the usual cost in gold and time to scribe a spell into the shard. You can use an action to open your mind to the shard, seeing its content in your mind. On subsequent rounds, reading the text or scribing new text on blank pages in the shard requires concentration (as if concentrating on a spell) and takes the same amount of time it takes you to read and write normally. Thinking of a particular phrase or topic draws you to the first section in the shard that addresses it.</p>
+			<p class="indent"><strong><em>Dormant.</em></strong> You can use the Mote as a spellcasting focus for your spells while attuned to it, in addition it has the following properties while in its Dormant state:</p>
+			<ul>
+				<li>You gain a +1 bonus to spell attack rolls and to the saving throw DCs of your spells.</li>
+				<li>When you prepare wizard spells attuned to the mote the number of spells you can prepare increases by 1.</li>
+				<li>The Gold cost for Spell Copying is halved while using the Mote as your spellbook.</li>
+			</ul>
+			<p class="indent"><strong><em>Awakened.</em></strong> You can use the Mote as a spellcasting focus for your spells while attuned to it, in addition it has the following properties while in its Dormant state:</p>
+			<ul>
+				<li>You now gain a +2 bonus to spell attack rolls, and you can add your Intelligence modifier to the damage of your cantrips</li>
+				<li>When you prepare wizard spells attuned to the mote the number of spells you can prepare increases by 2 now.</li>
+				<li>As a bonus action once per short rest, you prepare a spell of 1st level or higher from your spellbook. This spell must be of a level for which you have spell slots, and it replaces another spell that you had previously prepared.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">spellbook</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Artifact</set>
+			<set name="attunement">true</set>
+			<set name="slot">belt</set>
+		</setters>
+		<rules>
+			<stat name="spellcasting:attack" value="2" />
+			<stat name="spellcasting:dc" value="1" />
+			<stat name="wizard:spellcasting:prepare" value="2" />
+		</rules>
+	</element>
+	
+	<element name="Bloodwell Vial of Wealth (Awakened)" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_BVOW_2">
+		<description>
+			<p>The Bloodwell of Wealth was once a standard Bloodwell Vial but has been imbued with a Divine Spark, when Gerry DeMarkk and the Witchlight Warriors delved into a Temple of Rikkus to prove their worth.The Divine Spark changed the existing Bloobwell Vial that called to Gerry all those years ago in that shop, into a more extravagant version adorned with fine gems and the golden symbol of Rikkus etched into the glass vial. To attune to this vial, you must place a few drops of your blood into it. The vial can't be opened while your attunement to it lasts. If your attunement to the vial ends, the contained blood turns to ash.</p>
+			<p class="indent"><strong><em>Dormant.</em></strong> You can use the Bloodwell Vial as a spellcasting focus for your spells while attuned to it, in addition it has the following properties while in its Dormant state:</p>
+			<ul>
+				<li>You gain a +1 bonus to spell attack rolls and to the saving throw DCs of your spells.</li>
+				<li>When you roll any Hit Dice to recover hit points while you are carrying the vial, you can regain 5 sorcery points. This property of the vial can't be used again until the next dawn.</li>
+				<li>You can cast use the vial to cast the following spells: cure wounds (as a 2nd-level spell), lesser restoration, and shield of faith.</li>
+			</ul>
+			<p class="indent"><strong><em>Awakened.</em></strong> You can use the Bloodwell Vial as a spellcasting focus for your spells while attuned to it, in addition it has the following properties while in its Dormant state:</p>
+			<ul>
+				<li>You now gain a +2 bonus to spell attack rolls and guidance doesn't count against your known cantrip limit.</li>
+				<li>Whenever you use a spell of 1st level or higher to restore hit points to a creature, the creature regains additional hit points equal to 2 + the spell's level.</li>
+				<li>You can additionally cast protection from evil and good, augury, and speak with dead with the vial.</li>
+			</ul>
+			<p class="indent">Once the vial has been used to cast a spell, it can't be used to cast that spell again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">spellbook</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Artifact</set>
+			<set name="attunement">true</set>
+			<set name="slot">neck</set>
+			<set name="charges">1</set>
+		</setters>
+		<rules>
+			<stat name="spellcasting:attack" value="2" />
+			<stat name="spellcasting:dc" value="1" />
+			<grant type="Additional Spell" id="ID_PHB_SPELL_CURE_WOUNDS" />
+			<grant type="Additional Spell" id="ID_PHB_SPELL_LESSER_RESTORATION" />
+			<grant type="Additional Spell" id="ID_PHB_SPELL_SHIELD_OF_FAITH" />
+			<grant type="Additional Spell" id="ID_PHB_SPELL_GUIDANCE" />
+			<grant type="Additional Spell" id="ID_PHB_SPELL_AUGURY" />
+			<grant type="Additional Spell" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" />
+			<grant type="Additional Spell" id="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" />
+		</rules>
+	</element>
+	
+	<element name="Rings of the Trickster (Awakened)" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ROT_2">
+		<description>
+			<p>When Unamed and the Witchlight Warriors were tested by Haymil the spark given to Unamed took the form of two rings. These paired rings are engraved with small knives and other bladed weapons in an intricate pattern that conceals the true design to anyone but the attuned wearer. As part of the attunement to these rings you must choose weapons to bond with each, once bonded the weapon exists in an extra dimensional space inside the ring, is considered on your person, and can be drawn to your hand a flick of the wrist and are stored by you at will as long as they exist on the same plane.</p>
+			<p class="indent"><strong><em>Dormant.</em></strong> You gain the following additonal benefits while attuned:</p>
+			<ul>
+				<li>You gain a +1 bonus to your bonded melee weapon strikes damage and to hit.</li>
+				<li>You gain the Two-Weapon Fighting fighting style.</li>
+				<li>When you successfully use your sneak attack as part of your attack action, you can make a second sneak attack strike, with your offhand weapon as part of Two-Weapon Fighting, against another target using half the number of Sneak Attack dice for your level (round up).</li>
+			</ul>
+			<p class="indent"><strong><em>Awakened.</em></strong> Growing in power and reaching its Awakened state the Rings of the Trickster grants these new properties:</p>
+			<ul>
+				<li>Your bonded melee weapon strikes now gain a +2 bonus to damage and to hit.</li>
+				<li>Your speed increases by 10 feet.</li>
+				<li>When you make a melee attack and can normally use your bonus action to make another melee attack via TWF, you can make the extra attack as part of that same Attack action.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">ring</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Artifact</set>
+			<set name="attunement">true</set>
+			<set name="slot">ring</set>
+		</setters>
+		<rules>
+			<stat name="innate speed:misc" value="10" />
+			<stat name="innate speed:climb:misc" value="10" requirements="[innate speed:climb:1]" />
+			<stat name="innate speed:fly:misc" value="10" requirements="[innate speed:fly:1]" />
+			<stat name="innate speed:swim:misc" value="10" requirements="[innate speed:swim:1]" />
+			<stat name="innate speed:burrow:misc" value="10" requirements="[innate speed:burrow:1]" />
+		</rules>
+	</element>
+	
+	<element name="Markings of the Wild (Awakened)" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_MOW_2">
+		<description>
+			<p>Upon the Witchlight Warriors proving their worth to Verdana she gifted Benax a Divine Spark that altered his existing tattoo, enhancing it further.This tattoo when placed in the skin and attuned covers the wearers limbs and body with intricate vine patterns along with the symbol of Verdana appearing on the forehead</p>
+			<p class="indent"><strong><em>Nature's Wrath</em></strong> As a bonus action, you can empower the tattoo for 1 minute.</p>
+			<ul>
+				<li>For the duration, each of your melee attacks with a weapon or an unarmed strike can reach a target up to 15 feet away from you, as tendril like vines launch toward the target.</li>
+				<li>In addition, your melee attacks deal an extra 1d6 force damage on a hit.</li>
+				<li>Once you use the Nature's Wrath property, that property can't be used again until the next dawn.</li>
+			</ul>
+			<p class="indent"><strong><em>Dormant.</em></strong> It has the following properties while attuned to in its Dormant state:</p>
+			<ul>
+				<li>Your attacks with monk weapons and unarmed strikes are considered magical for the purpose of overcoming immunity and resistance to non-magical attacks, and you gain a +1 bonus to attack and damage rolls with unarmed strikes and monk weapons.</li>
+				<li>Your Constitution Score is raised by 2 to a Maximum of 30.</li>
+				<li>As a bonus action you can regain Ki points equal to roll of your Martial Arts Die, once per long rest.</li>
+
+			</ul>
+			<p class="indent"><strong><em>Awakened.</em></strong> Growing in power and reaching its Awakened state the Markings of the Wild grants these new properties:</p>
+			<ul>
+				<li>You now gain a +2 bonus to attack and damage rolls with unarmed strikes and monk weapons.</li>
+				<li>Your Constitution Score is raised by 4 now to a Maximum of 30</li>
+				<li>When you use Patient Defense or Step of the Wind you can also make an unarmed strike as part of that bonus action.</li>
+
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">tattoo</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Artifact</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<stat name="constitution" value="4" />
+			<stat name="constitution:max" value="4" />
 		</rules>
 	</element>
 </elements>
