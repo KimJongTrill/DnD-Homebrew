@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.7.0">
+		<update version="1.8.0">
 			<file name="items.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/items.xml" />
 		</update>
 	</info>
@@ -245,26 +245,63 @@
 		</setters>
 	</element>
 	
-	<element name="Crystal Greataxe" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_AUGUSTE">
+	<element name="Crystal Greataxe" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_CRYSTAL_AXE">
 		<description>
 			<p>This Crystal Greataxe was passed down through the generations of the Auguste family lineage since early in the Great War passing from warrior to warrior eventually to Logen, who met the orginal owner of the axe, Auguste the Crystal Dragon. Auguste bonded Logen to the axe making it tied to his existence rather than himself before he was killed by Gorotto.</p>
-			<p><b><i>Slumbering.</i></b> Whenever you roll a 20 on your attack roll with this weapon, each creature of your choice within 5 feet of the target takes 5 damage of the type dealt by the dragon’s breath weapon.</p>
-			<p><b><i>Stirring.</i></b> The Stirring weapon has the Slumbering property. In addition, you gain a +1 bonus to attack and damage rolls made using the weapon. On a hit, the weapon deals an extra 1d6 damage of the type dealt by the dragon’s breath weapon.</p>
-			<p><b><i>Wakened.</i></b> The Wakened weapon has the Slumbering property, and it improves on the Stirring property. The bonus to attack and damage rolls increases to +2, and the extra damage dealt by the weapon increases to 2d6.</p>
-			<p class="indent">As an action, you can unleash a 30-foot cone of destructive energy from the weapon. Each creature in that area must make a DC 16 Dexterity saving throw, taking 8d6 damage of the type dealt by the dragon’s breath weapon on a failed save, or half as much damage on a successful one. Once this action is used, it can’t be used again until the next dawn.</p>
+			<p><b><i>Ascendant.</i></b> The Ascendant weapon has a +3 bonus to attack and damage rolls and does an additonal 2d6 radiant damage. Whenever you roll a 20 on your attack roll with this weapon, each creature of your choice within 5 feet of the target takes 5 radiant damage.</p>
+			<p class="indent"> As an action, you can unleash a 30-foot cone of destructive energy from the weapon. Each creature in that area must make a DC 16 Dexterity saving throw, taking 8d6 radiant damage on a failed save, or half as much damage on a successful one. Once this action is used, it can’t be used again until the next dawn.</p>
+			<p class="indent"> You also gain a draconic familiar in the form of a fragment of Auguste's consciousness he implanted before he died.</p>
 		</description>
 		<setters>
-			<set name="keywords">hoard, draconic, breath weapon</set>
+			<set name="keywords">draconic</set>
 			<set name="category">Magic Weapons</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="attunement">true</set>
-			<set name="rarity">Very Rare</set>
+			<set name="rarity">Legendary</set>
 			<set name="type" addition="greataxe">Weapon</set>
 			<set name="weapon">Greataxe</set>
-			<set name="enhancement">2</set>
+			<set name="enhancement">3</set>
 		</setters>
 		<rules>
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+			<grant type="Magic Item" id="ID_WOTC_FTOD_MAGIC_ITEM_DRACONIC_FAMILIAR" />
+			<select type="Companion" name="Fragment of Consciousness" supports="Auguste II" />
+		</rules>
+	</element>
+
+	<element name="Auguste II" type="Companion" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_AUGUSTE_II">
+		<supports>Auguste II</supports>
+		<description>
+			<p>Auguste implanted a framgent of his consciousness into the Axe to be awakened when Gorotto was slain.</p>
+       		</description>
+		<setters>
+			<set name="strength">6</set>
+			<set name="dexterity">15</set>
+			<set name="constitution">13</set>
+			<set name="intelligence">10</set>
+			<set name="wisdom">12</set>
+			<set name="charisma">10</set>
+			<set name="ac">13</set>
+			<set name="hp">7 (2d4+2)</set>
+			<set name="speed">15 ft., fly 60 ft.</set>
+			<set name="languages">Common and Draconic</set>
+			<set name="resistances">radiant</set>
+			<set name="skills">Perception +3, Stealth +4</set>
+			<set name="senses">blindsight 10 ft., darkvision 60 ft., passive Perception 13</set>
+			<set name="type">Dragon</set>
+			<set name="size">Tiny</set>
+			<set name="alignment">chaotic neutral</set>
+			<set name="challenge">1/4</set>
+			<set name="traits">ID_WOTC_MM_COMPANION_TRAIT_PSEUDODRAGON_KEEN_SENSES, ID_WOTC_MM_COMPANION_TRAIT_PSEUDODRAGON_MAGIC_RESISTANCE</set>
+			<set name="actions">ID_WOTC_MM_COMPANION_ACTION_PSEUDODRAGON_BITE,ID_WOTC_MM_COMPANION_ACTION_PSEUDODRAGON_STING</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="13" />
+			<stat name="companion:hp:max" value="7" bonus="base" />
+			<stat name="companion:speed" value="15" bonus="base" />
+			<stat name="companion:speed:fly" value="60" bonus="base" />
+			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:stealth:proficiency" value="companion:proficiency" bonus="base" />
 		</rules>
 	</element>
 	
@@ -334,6 +371,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_FEATHER_FALL" />
 		</rules>
 	</element>
+	
 	<element name="Staff of Avoidance" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_STAFF_AVOIDANCE">
 		<description>
 			<p>This staff is made of magically imbued wood treated by the various breaths of the Dragons that forged it. It can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it.</p>
@@ -361,7 +399,8 @@
 			<grant type="Spell" id="ID_PHB_SPELL_COUNTERSPELL" />
 		</rules>
 	</element>
-		<element name="Dragon's Bane" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_DRAGONS_BANE">
+	
+	<element name="Dragon's Bane" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_DRAGONS_BANE">
 		<description>
 			<p>This longbow is crafted of a lightweight metal shaped by the breaths of the Dragon's that forged it. If you are proficient with shortbows or longbows, you are proficient with this bow.</p>
 			<p>You gain a +2 bonus to attack and damage rolls made with this magic weapon.</p>
@@ -381,7 +420,8 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGBOW" />
 		</rules>
 	</element>
-		<element name="Amulet of Supreme Protection" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_SUPREME_PROTECTION">
+	
+	<element name="Amulet of Supreme Protection" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_SUPREME_PROTECTION">
 		<description>
 			<p>While wearing this amulet; you gain a +1 to your AC while wearing a paired armor set, your AC equals 13 + your Dexterity modifier when the armor is stored inside the amulet, and you can don or doff a set of paired armor as a bonus action. The amulet can be paired to only one set of armor at a time, you pair a set of armor through the process of wearing it while attuning to this empty amulet.</p>
 			<p>The armor is stored in an extradimensional space inside the amulet, and while there, it is restored and cleaned as if it were a brand new set of armor each time it is summoned. Any spells or effects targeting it (such as heat metal) are removed while stored there. The amulet will store cursed armor, even if the curse would normally prevent its removal. It does not remove the attunement to the armor, nor does it eliminate any cursed effects the armor may carry.</p>
@@ -403,5 +443,28 @@
 			<stat name="ac:amulet" value="dexterity:modifier" />
 			<stat name="ac:calculation" value="ac:amulet" bonus="calculation" equipped="[armor:none]" alt="Amulet of Supreme Protection" />		
 		</rules>
+	</element>
+	
+	<element name="Belt of the Elements" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_BOTE">
+		<description>
+			<p>The belt was originally worn by the First Elemental Tribunal, Atriaxx and was used in the creation of the Elemental Planes many millennia ago, in 1069 PR it was reassembled by Benax, the current Elemental Tribunal. Ultimately Benax used the reassembled belt to drain the energy from Gorotto's Elemental Gauntlet, recharging the millenias old artifact.</p>
+			<p class="indent"><strong><em>Ascended Tribunal.</em></strong>While the Elemental Tribunal is attuned to the charged belt:</p>
+			<ul>
+				<li>You gain resistance to the channeled Plane's associated damage type: Air (lightning), Earth (thunder), Fire (fire), and Water (cold).</li>
+				<li>You deal an extra martial arts die of that same type to any target you hit with a melee attack.</li>
+				<li>Whenever you spend 1 or more Ki points, you can choose to shift its planar energy to a different plane of your choice.</li>
+				<li>Attuning to this and the Sword of the Elements at the same time uses only one attunement slot</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">belt</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Legendary</set>
+			<set name="attunement">true</set>
+			<set name="slot">belt</set>
+		</setters>
 	</element>
 </elements>
