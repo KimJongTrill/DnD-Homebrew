@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.1">
+		<update version="1.1.1">
 			<file name="weapon-base.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/weapon-base.xml" />
 		</update>
 	</info>
@@ -17,7 +17,7 @@
 			<set name="weight" lb=".5">.5 lb.</set>
 			<set name="slot">onehand</set>
 			<set name="damage" type="bludgeoning">1d4</set>
-			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER</set>
 		</setters>
 	</element>
 	
@@ -32,7 +32,7 @@
 			<set name="weight" lb=".5">.5 lb.</set>
 			<set name="slot">onehand</set>
 			<set name="damage" type="slashing">1d4</set>
-			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER</set>
 		</setters>
 	</element>
 	
@@ -47,7 +47,7 @@
 			<set name="weight" lb=".5">.5 lb.</set>
 			<set name="slot">onehand</set>
 			<set name="damage" type="piercing">1d4</set>
-			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER</set>
 		</setters>
 	</element>
 	
