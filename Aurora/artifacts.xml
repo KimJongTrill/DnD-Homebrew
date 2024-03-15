@@ -342,7 +342,7 @@
 		</rules>
 	</element>
 
-	<element name="Belt of the Tempest (Exalted)” type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_BOT_3”>
+	<element name="Belt of the Tempest (Exalted)" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_BOT_3">
 		<description>
 			<p>The Belt of the Tempest was found by Logen and the other Witchlight Warriors inside an ancient temple of Atlanta, it formed from a Divine Spark granted to him after proving his mettle. The Divine Spark took the form of a thick dark blue leather belt adorned with large metal plates covered in storm-based iconogrophy.</p>
 			<p class="indent"><strong><em>Storm Avatar.</em></strong> You can use a bonus action to become a Storm Avatar for 1 minute, gaining the following benefits for the duration:</p>
@@ -388,7 +388,7 @@
 		</rules>
 	</element>
 	
-	<element name="Mote of Knowledge (Exalted)” type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_MOK_3”>
+	<element name="Mote of Knowledge (Exalted)" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_MOK_3">
 		<description>
 			<p>A Spellshard of endless volume able to hold as much information as one can find, gifted to Jarzamel by Ceritas herself imbued with her Divine energy, given as a reward for the Witchlight Warriors answering her call.</p>
 			<p>A wizard can use this spellshard as a spellbook, with the usual cost in gold and time to scribe a spell into the shard. You can use an action to open your mind to the shard, seeing its content in your mind. On subsequent rounds, reading the text or scribing new text on blank pages in the shard requires concentration (as if concentrating on a spell) and takes the same amount of time it takes you to read and write normally. Thinking of a particular phrase or topic draws you to the first section in the shard that addresses it.</p>
@@ -428,7 +428,7 @@
 		</rules>
 	</element>
 	
-	<element name="Bloodwell Vial of Wealth (Exalted)” type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_BVOW_3”>
+	<element name="Bloodwell Vial of Wealth (Exalted)" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_BVOW_3">
 		<description>
 			<p>The Bloodwell of Wealth was once a standard Bloodwell Vial but has been imbued with a Divine Spark, when Gerry DeMarkk and the Witchlight Warriors delved into a Temple of Rikkus to prove their worth.The Divine Spark changed the existing Bloobwell Vial that called to Gerry all those years ago in that shop, into a more extravagant version adorned with fine gems and the golden symbol of Rikkus etched into the glass vial. To attune to this vial, you must place a few drops of your blood into it. The vial can't be opened while your attunement to it lasts. If your attunement to the vial ends, the contained blood turns to ash.</p>
 			<p class="indent"><strong><em>Dormant.</em></strong> You can use the Bloodwell Vial as a spellcasting focus for your spells while attuned to it, in addition it has the following properties while in its Dormant state:</p>
@@ -478,7 +478,7 @@
 		</rules>
 	</element>
 	
-	<element name="Rings of the Trickster (Exalted)” type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ROT_3”>
+	<element name="Rings of the Trickster (Exalted)" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ROT_3">
 		<description>
 			<p>When Unamed and the Witchlight Warriors were tested by Haymil the spark given to Unamed took the form of two rings. These paired rings are engraved with small knives and other bladed weapons in an intricate pattern that conceals the true design to anyone but the attuned wearer. As part of the attunement to these rings you must choose weapons to bond with each, once bonded the weapon exists in an extra dimensional space inside the ring, is considered on your person, and can be drawn to your hand a flick of the wrist and are stored by you at will as long as they exist on the same plane.</p>
 			<p class="indent"><strong><em>Dormant.</em></strong> You gain the following additonal benefits while attuned:</p>
@@ -520,7 +520,7 @@
 		</rules>
 	</element>
 	
-	<element name="Markings of the Wild (Exalted)” type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_MOW_3”>
+	<element name="Markings of the Wild (Exalted)" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_MOW_3">
 		<description>
 			<p>Upon the Witchlight Warriors proving their worth to Verdana she gifted Benax a Divine Spark that altered his existing tattoo, enhancing it further.This tattoo when placed in the skin and attuned covers the wearers limbs and body with intricate vine patterns along with the symbol of Verdana appearing on the forehead</p>
 			<p class="indent"><strong><em>Nature's Wrath</em></strong> As a bonus action, you can empower the tattoo for 1 minute.</p>
