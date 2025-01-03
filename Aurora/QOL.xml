@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.4.1">
+		<update version="1.4.2">
 			<file name="QOL.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/QOL.xml" />
 		</update>
 	</info>
@@ -493,6 +493,15 @@
 			<grant type="Spell" id="ID_XGTE_SPELL_FAR_STEP" level="9" spellcasting="Sorcerer" />
 			<grant type="Spell" id="ID_PHB_SPELL_REINCARNATE" level="9" spellcasting="Sorcerer" />
 		</rules>
+	</element>
+	<element name="Gunslinger" type="Class Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_CLASS_FEATURE_FIGHTING_STYLE_GUNSLINGER">
+		<supports>Fighting Style, Fighter, Ranger</supports>
+		<description>
+			<p>You are able to use Two-Weapon Fighting with light Firearms despite them not being melee weapons.</p>
+		</description>
+		<sheet>
+			<description>You are able to use Two-Weapon Fighting with light Firearms despite them not being melee weapons.			</description>
+		</sheet>
 	</element>
 
 	<!--Missing Supports-->
