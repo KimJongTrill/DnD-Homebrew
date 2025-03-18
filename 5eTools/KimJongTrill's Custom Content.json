@@ -11063,6 +11063,653 @@
 			"conditionInflict": [
 				"stunned"
 			]
+		},
+		{
+			"name": "Cheddar, The Mad Warlock",
+			"source": "KimJongTrillsCustomContent",
+			"size": [
+				"M"
+			],
+			"type": "aberration",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"alignmentPrefix": "Typically ",
+			"ac": [
+				15
+			],
+			"hp": {
+				"special": "60"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 14,
+			"con": 10,
+			"int": 12,
+			"wis": 11,
+			"cha": 16,
+			"senses": [
+				"darkvision 30 ft."
+			],
+			"passive": 10,
+			"resist": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"prone",
+				"restrained",
+				"stunned"
+			],
+			"languages": [
+				"telepathy 30 ft."
+			],
+			"cr": "3",
+			"spellcasting": [
+				{
+					"name": "Spellcasting (Psionics)",
+					"headerEntries": [
+						"The warlock casts one of the following spells, requiring no spell components and using Charisma as the spellcasting ability (spell save {@dc 13}):"
+					],
+					"will": [
+						"{@spell command}",
+						"{@spell comprehend languages}",
+						"{@spell detect thoughts}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell confusion}",
+							"{@spell dominate monster}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Swarm",
+					"entries": [
+						"The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny rat. The swarm can't regain hit points or gain temporary hit points."
+					]
+				},
+				{
+					"name": "Telepathic Shroud",
+					"entries": [
+						"The swarm is immune to any effect that would sense its emotions or read its thoughts, as well as to all divination spells."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}11 ({@damage 3d6}) piercing damage, plus 9 ({@damage 2d8}) psychic damage."
+					]
+				},
+				{
+					"name": "Eldritch Blast",
+					"entries": [
+						"{@atk rs} {@hit 5} to hit, range 120 ft., one target. {@h}11 ({@damage 1d10 + 5}) force damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Illumination",
+					"entries": [
+						"The warlock sheds dim light from its brains in a 5-foot radius, increases the illumination to bright light in a 5- to 20-foot radius (and dim light for an additional number of feet equal to the chosen radius), or extinguishes the light."
+					]
+				}
+			],
+			"environment": [
+				"underdark",
+				"urban"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/swarm-of-cranium-rats.mp3"
+			},
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"TP"
+			],
+			"spellcastingTags": [
+				"P",
+				"CL"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"conditionInflictSpell": [
+				"charmed",
+				"prone"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Swarm of Cranium Rats",
+				"source": "MPMM"
+			},
+			"fluff": {
+				"name": "Swarm of Cranium Rats",
+				"source": "MPMM",
+				"entries": [
+					{
+						"type": "section",
+						"name": "Cranium Rat",
+						"entries": [
+							"Mind flayers create cranium rats by bombarding rats with psionic energy. Cranium rats are somewhat smarter than ordinary rats and behave as such. If enough cranium rats come together to form a swarm, they merge their minds into a single intelligence with the accumulated memories of all the swarm's constituents. The rats become smarter as a result, and retain their heightened intelligence for as long as the swarm persists. The swarm also awakens latent psionic abilities implanted within each cranium rat by its mind flayer creators, bestowing upon the swarm psionic powers.",
+							"A single cranium rat uses its natural telepathy to communicate hunger, fear, and other base emotions. A swarm of cranium rats communicating telepathically \"speaks\" as one creature, often referring to itself using the collective pronouns \"we\" and \"us.\" Some mind flayer colonies use cranium rats as spies. The rats invade communities and act as eyes and ears for the colony's elder brain, transmitting their thoughts when they swarm and are within range of the elder brain's telepathy."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MPMM/Swarm of Cranium Rats.webp"
+						},
+						"credit": "Marco Nelor"
+					}
+				]
+			},
+			"damageTags": [
+				"O",
+				"P",
+				"Y"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			]
+		},
+		{
+			"source": "KimJongTrillsCustomContent",
+			"name": "Krampus",
+			"environment": [
+				"shadowfell",
+				"urban"
+			],
+			"size": [
+				"L"
+			],
+			"type": "fey",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"special": "160"
+			},
+			"speed": {
+				"walk": 45
+			},
+			"str": 16,
+			"dex": 18,
+			"con": 14,
+			"int": 14,
+			"wis": 14,
+			"cha": 20,
+			"save": {
+				"wis": "+5",
+				"cha": "+8",
+				"con": "+5",
+				"str": "+6"
+			},
+			"skill": {
+				"arcana": "+5",
+				"religion": "+5",
+				"athletics": "+6",
+				"insight": "+5",
+				"perception": "+8",
+				"stealth": "+10",
+				"intimidation": "+8"
+			},
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"preNote": "non-magical"
+				},
+				{
+					"resist": [
+						"poison",
+						"psychic"
+					]
+				}
+			],
+			"immune": [
+				"necrotic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 18,
+			"senseTags": [
+				"U"
+			],
+			"languages": [
+				"Abyssal",
+				"Sylvan",
+				"and Infernal"
+			],
+			"languageTags": [
+				"AB",
+				"S",
+				"I"
+			],
+			"cr": "8",
+			"action": [
+				{
+					"name": "Krampus' Kane",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. 13 ({@damage 2d8+4}) necrotic damage."
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The warlock casts one of the following spells using Charisma as the spellcasting ability (spell save {@dc 16}, {@hit 8} to hit with spell attacks):"
+					],
+					"will": [
+						"{@spell disguise self}",
+						"{@spell eldritch blast} (3 beams, {@damage 1d10 + 5} psychic)",
+						"{@spell infestation|XGE} ({@damage 3d6} necrotic)",
+						"{@spell mind sliver|XPHB} ({@damage 3d6} psychic)",
+						"{@spell poison spray} ({@damage 3d12} poison)"
+					],
+					"daily": {
+						"5": [
+							"{@spell antilife shell} (as 5th-level spell)",
+							"{@spell blight} (as 5th-level spell)",
+							"{@spell blindness/deafness} (as 5th-level spell)",
+							"{@spell cloudkill} (as 5th-level spell)",
+							"{@spell greater invisibility} (as 5th-level spell)"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I",
+				"CL"
+			],
+			"conditionInflictSpell": [
+				"blinded",
+				"invisible"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded3/creature/token/Warlock%20Of%20The%20Undead%20%28Token%29.png",
+			"fluff": {},
+			"hasFluffImages": true,
+			"legendaryActions": 3,
+			"isNamedCreature": true,
+			"legendary": [
+				{
+					"name": "Spellcasting (2 Actions)",
+					"entries": [
+						"Krampus can cast a spell."
+					]
+				},
+				{
+					"name": "Attack",
+					"entries": [
+						"Krampus makes a ranged or melee attack."
+					]
+				},
+				{
+					"name": "Krampus Leap",
+					"entries": [
+						"Krampus moves to any space within 45 feet of it without provoking opportunity attacks."
+					]
+				}
+			],
+			"trait": [
+				{
+					"name": "Aura of Scrooge",
+					"entries": [
+						"Once during each of its turns, when Krampus hits a creature with an attack, Krampus can force it to make a {@dc 16} Wisdom saving throw, and if the saving throw fails, the target is {@condition frightened} of Krampus until the end of the Krampus' next turn."
+					]
+				}
+			],
+			"conditionInflict": [
+				"frightened",
+				"prone"
+			],
+			"actionHeader": [
+				"Krampus can use his Krampus' Kane to attack twice"
+			],
+			"bonus": [
+				{
+					"name": "Horn Butt",
+					"entries": [
+						"Krampus can use his horns to {@action shove} a creature within 5 ft of him, the creature must succeed on a STR or DEX Save {@dc 14} or be knocked {@condition prone}"
+					]
+				}
+			],
+			"damageTags": [
+				"N"
+			],
+			"damageTagsSpell": [
+				"I",
+				"N",
+				"O",
+				"Y"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"intelligence"
+			]
+		},
+		{
+			"name": "Zomidus Thurr",
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "undead",
+				"tags": [
+					"giant"
+				]
+			},
+			"source": "KimJongTrillsCustomContent",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				25
+			],
+			"hp": {
+				"special": "1100 + 500 THP"
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 60,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 7,
+			"dex": 26,
+			"con": 27,
+			"int": 30,
+			"wis": 29,
+			"cha": 26,
+			"passive": 28,
+			"cr": "30",
+			"senses": [
+				"darkvision 120 ft.",
+				"Lifesense 300 ft. (see traits)"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languages": [
+				"telepathy 300 ft."
+			],
+			"languageTags": [
+				"TP"
+			],
+			"save": {
+				"dex": "+17",
+				"con": "+17",
+				"int": "+19",
+				"cha": "+17"
+			},
+			"skill": {
+				"arcana": "+19",
+				"deception": "+17",
+				"history": "+28",
+				"insight": "+18",
+				"perception": "+18",
+				"persuasion": "+17",
+				"stealth": "+17"
+			},
+			"resist": [
+				"acid",
+				"fire",
+				"lightning",
+				"thunder"
+			],
+			"immune": [
+				{
+					"immune": [
+						"cold",
+						"necrotic",
+						"poison"
+					]
+				},
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"trait": [
+				{
+					"name": "Eternal Evil",
+					"entries": [
+						"If destroyed by conventional means, Zomidus Thurr is not truly slain. Instead, a fragment of Zomidus Thurr's soul seeks out a living giant creature within 10 miles of the site of the its destruction and attempts to consume the giant's soul, rejuvenating Zomidus Thurr's essence in the process. If there are no eligible giants within range, Zomidus Thurr's soul is utterly obliterated, and it cannot return to life by any known means.",
+						"If Zomidus Thurr successfully possesses a giant, over the next 24 hours the target must attempt on a {@dc 27} Constitution saving throw at the end of each hour as it struggles to survive. If it fails three saving throws in this manner, the creature dies. If a creature dies while affected by this feature, Zomidus Thurr consumes its soul and becomes active again, regaining all of its hit points. If the creature manages to survive for the duration or if Zomidus Thurr is expelled from the target's body during the possession attempt, Zomidus Thurr is utterly obliterated and cannot return to life by any known means."
+					]
+				},
+				{
+					"name": "Lifesense",
+					"entries": [
+						"Zomidus Thurr can detect and pinpoint the exact location of any living creature within 300 feet of it."
+					]
+				},
+				{
+					"name": "Orbs of the Weave",
+					"entries": [
+						"When Zomidus Thurr fails a saving throw, it can end attunement with one of its {@item Orbs of the Weave|kimjongtrillscustomcontent} to succeed instead."
+					]
+				}
+			],
+			"traitTags": [
+				"Incorporeal Movement"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting (Psionics)",
+					"headerEntries": [
+						"The lich's innate spellcasting ability is Intelligence (spell save {@dc 27}, {@hit 17} to hit with spell attacks). It can innately cast the following spells, requiring no components, and it does not need to maintain concentration to maintain their effects for the duration:"
+					],
+					"will": [
+						"{@spell dominate person}",
+						"{@spell eldritch blast|XPHB} 4 beams {@damage 1d10+10} force damage",
+						"{@spell synaptic static|XGE}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell disintegrate} (8th level)",
+							"{@spell dominate monster}",
+							"{@spell teleport}"
+						],
+						"2e": [
+							"{@spell mass suggestion} (9th level)",
+							"{@spell psychic scream|XGE}",
+							"{@spell weird}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"P",
+				"I"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Zomidus Thurr casts two spells, one of which must be a spell it can cast at will. He can use his True Telekinesis action in place of casting one of the spells."
+					]
+				},
+				{
+					"name": "True Telekinesis",
+					"entries": [
+						"Zomidus Thurr targets up to four creatures or objects it is aware of within 300 feet of it. Each target must succeed on a {@dc 27} Strength saving throw or be subjected to one of the following effects. If Zomidus Thurr is ever more than 300 feet away from a target affected by this feature, the effect ends (when applicable).",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Crush",
+									"entry": "The target takes 55 ({@dice 10d10}) bludgeoning damage."
+								},
+								{
+									"type": "item",
+									"name": "Restrain",
+									"entry": "The target is moved up to 30 feet and {@condition restrained}. A {@condition restrained} creature can be suspended in the air if Zomidus Thurr desires and may attempt a {@dc 27} Strength saving throw at the end of each of its turns to end the effect. This feature cannot affect creatures or objects weighing more than 100,000 pounds."
+								},
+								{
+									"type": "item",
+									"name": "Shove",
+									"entry": "Zomidus Thurr throws the target up to 120 feet in a direction of its choice. If the target is a held object, the wielder must succeed on a {@dc 27} Strength saving throw or relinquish the object. This feature cannot affect creatures or objects weighing more than 100,000 pounds."
+								}
+							]
+						}
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"Zomidus Thurr can take 5 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. Zomidus Thurr regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Cast a Spell",
+					"entries": [
+						"Zomidus Thurr casts a spell that it can cast at will."
+					]
+				},
+				{
+					"name": "Power Overwhelming (Costs 3 Actions)",
+					"entries": [
+						"Until the end of Zomidus Thurr's next turn, whenever it deals damage it instead deals double damage."
+					]
+				},
+				{
+					"name": "Read Minds (Costs 2 Actions)",
+					"entries": [
+						"Zomidus Thurr reads the surface thoughts of each creature with which it is able to be in telepathic contact. Until the end of Zomidus Thurr's next turn, affected creatures have disadvantage on attack rolls, saving throws, and ability checks against Zomidus Thurr."
+					]
+				},
+				{
+					"name": "Telekinesis",
+					"entries": [
+						"Zomidus Thurr takes its True Telekinesis action but can only target a single object or creature."
+					]
+				},
+				{
+					"name": "Weave Step",
+					"entries": [
+						"Zomidus Thurr uses its Weave Step "
+					]
+				}
+			],
+			"fluff": {},
+			"hasFluff": true,
+			"conditionInflict": [
+				"restrained"
+			],
+			"isNamedCreature": true,
+			"bonus": [
+				{
+					"name": "Minor Telekinesis",
+					"entries": [
+						"Zomidus Thurr takes its True Telekinesis action but can only target a single object or creature."
+					]
+				},
+				{
+					"name": "Weave Step",
+					"entries": [
+						"Zomidus Thurr teleports to a space within 60 feet that it can see."
+					]
+				}
+			],
+			"reactionHeader": [
+				"Zomidus Thurr can take up to three reactions per round but only one per turn."
+			],
+			"reaction": [
+				{
+					"name": "Spell Negation",
+					"entries": [
+						"Zomidus Thurr interrupts a creature he can see that is casting a spell. If the spell is 4th level or lower, it fails and has no effect. If the spell is 5th level or higher, Zomidus Thurr makes an Intelligence check ({@dc 10} plus the spell's level). On a successful check, the spell fails and has no effect. Whatever the spell's level, the caster takes {@damage 3d6} psychic damage if the spell fails."
+					]
+				}
+			],
+			"damageTags": [
+				"B"
+			],
+			"damageTagsSpell": [
+				"O",
+				"Y"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"strength"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"intelligence",
+				"wisdom"
+			]
 		}
 	],
 	"item": [
@@ -12316,7 +12963,7 @@
 			"baseItem": "greataxe|phb",
 			"type": "M",
 			"tier": "major",
-			"rarity": "Legendary",
+			"rarity": "legendary",
 			"reqAttune": "by a creature of Auguste's Lineage",
 			"weight": 7,
 			"weaponCategory": "martial",
@@ -12355,7 +13002,7 @@
 			"reqAttune": true,
 			"wondrous": true,
 			"entries": [
-				"Crenshinibon is a glowing crystal shard with an emerald hue. It was created by 7 liches in a bygone era, and possesses a malevolent sentience.",
+				"Crenshinibon is a glowing crystal shard with an emerald hue. It was created by 7 liches in a bygone era impued with the power of the Far Realms, and possesses a malevolent sentience.",
 				"Its personality is marked by a never-ending hunger for power and glory at whatever cost, and it prefers to be wielded by evil-aligned spellcasters. Other wielders are vehicles to aquire such spellcasters, and nothing more.",
 				{
 					"type": "entries",
@@ -12386,115 +13033,10 @@
 							"type": "list",
 							"items": [
 								"It can expend one of its own charges to cause Evil-Aligned creatures of CR 5 and lower within 1 mile to know the distance and direction to crenshinibon for the next 24hrs. During this time, they act to aquire crenshinibon by whatever means possible, and creatures of CR 3 and lower fall under its control. While traveling with Crenshinibon, {@dice 1d4 + 1}  of these creatures appear each hour per tier of play.",
-								"In the event that Crenshinibon has found a suitable host, all of these creatures instead follow Crenshinibons orders to the best of their ability.",
+								"In the event that Crenshinibon has found a suitable host, all of these creatures instead follow the host's orders to the best of their ability.",
 								"Crenshinibon can cast Suggestion DC 15 WIS by expending one of its charges. When it does, it can target creatures of any creature type."
 							]
 						}
-					]
-				},
-				{
-					"type": "table",
-					"caption": "Minions",
-					"colLabels": [
-						"{@dice d10}",
-						"Item"
-					],
-					"colStyles": [
-						"col-1 text-center",
-						"col-11 text-center"
-					],
-					"rows": [
-						[
-							{
-								"type": "cell",
-								"roll": {
-									"exact": 1,
-									"pad": true
-								}
-							},
-							"Goblin - 1/4"
-						],
-						[
-							{
-								"type": "cell",
-								"roll": {
-									"exact": 2
-								}
-							},
-							"Hill Giant - 5"
-						],
-						[
-							{
-								"type": "cell",
-								"roll": {
-									"exact": 3
-								}
-							},
-							"Ogre - 2"
-						],
-						[
-							{
-								"type": "cell",
-								"roll": {
-									"exact": 4
-								}
-							},
-							"Gnoll - 1/2"
-						],
-						[
-							{
-								"type": "cell",
-								"roll": {
-									"exact": 5
-								}
-							},
-							"Ettin - 4"
-						],
-						[
-							{
-								"type": "cell",
-								"roll": {
-									"exact": 6
-								}
-							},
-							"Troll - 5"
-						],
-						[
-							{
-								"type": "cell",
-								"roll": {
-									"exact": 7
-								}
-							},
-							"Orc - 1/2"
-						],
-						[
-							{
-								"type": "cell",
-								"roll": {
-									"exact": 8
-								}
-							},
-							"Bugbear - 1"
-						],
-						[
-							{
-								"type": "cell",
-								"roll": {
-									"exact": 9
-								}
-							},
-							"Kobold - 1/8 "
-						],
-						[
-							{
-								"type": "cell",
-								"roll": {
-									"exact": 10
-								}
-							},
-							"Minotaur - 3"
-						]
 					]
 				},
 				{
@@ -12513,40 +13055,6 @@
 						"Once you create Crishal-Tirith, you cannot do so again until you finish a long rest."
 					]
 				}
-			]
-		},
-		{
-			"name": "Plaguestarter",
-			"source": "KimJongTrillsCustomContent",
-			"immune": [
-				"necrotic"
-			],
-			"tier": "major",
-			"rarity": "legendary",
-			"reqAttune": "by a spellcaster",
-			"weight": 4,
-			"weaponCategory": "simple",
-			"property": [
-				"V"
-			],
-			"dmg1": "1d6",
-			"dmgType": "B",
-			"dmg2": "1d8",
-			"recharge": "dawn",
-			"rechargeAmount": "{@dice 2d8 + 4}",
-			"charges": 20,
-			"staff": true,
-			"entries": [
-				"Plaguestarter can be wielded as a magic quarterstaff that grants a +3 bonus to attack and damage rolls made with it.",
-				"You have immunity to necrotic damage while you are attuned to Plaguestarter.",
-				"The staff has 20 charges. While holding it, you can use an action to expend the listed charges or an additional charge per level to cast it at a higher level up to 9th-level, using your spell save DC: {@spell animate dead} (3 charges), {@spell create undead} (6 charges), or {@spell finger of death} (7 charges).",
-				"As an action, you can expend 14 charges and choose one undead that you can see within 60 feet of you. That creature must make a Charisma saving throw against your wizard spell save DC. If it succeeds, you can't use this feature on it again. If it fails, it becomes friendly to you and obeys your commands until you use this feature again. Intelligent undead are harder to control in this way. If the target has an Intelligence of 8 or higher, it has advantage on the saving throw. If it fails the saving throw and has an Intelligence of 12 or higher, it can repeat the saving throw at the end of every hour until it succeeds and breaks free.",
-				"The staff regains {@dice 2d8 + 4} expended charges daily at dawn. If you expend the last charge, roll a {@dice d20}. On a 1 the staff turns to blood and is destroyed."
-			],
-			"attachedSpells": [
-				"animate dead",
-				"create undead",
-				"finger of death"
 			]
 		},
 		{
@@ -12607,8 +13115,8 @@
 			"charges": 20,
 			"staff": true,
 			"entries": [
-				"Plaguestarter can be wielded as a magic quarterstaff that grants a +3 bonus to attack and damage rolls made with it.",
-				"You have immunity to necrotic damage while you are attuned to Plaguestarter.",
+				"Death Warden can be wielded as a magic quarterstaff that grants a +3 bonus to attack and damage rolls made with it.",
+				"You have immunity to necrotic damage while you are attuned to Death Warden.",
 				"The staff has 20 charges. While holding it, you can use an action to expend the listed charges or an additional charge per level to cast it at a higher level up to 9th-level, using your spell save DC: {@spell animate dead} (3 charges), {@spell create undead} (6 charges), or {@spell finger of death} (7 charges). Undead created in this way do not need to have control reasserted as long as attunement remains",
 				"As an action, you can expend 14 charges and choose one undead that you can see within 60 feet of you. That creature must make a Charisma saving throw against your spell save DC. If it succeeds, you can't use this feature on it again. If it fails, it becomes friendly to you and obeys your commands until you use this feature again. Intelligent undead are harder to control in this way. If the target has an Intelligence of 8 or higher, it has advantage on the saving throw. If it fails the saving throw and has an Intelligence of 12 or higher, it can repeat the saving throw at the end of every hour until it succeeds and breaks free.",
 				"The staff regains {@dice 2d8 + 4} expended charges daily at dawn. If you expend the last charge, roll a {@dice d20}. On a 1 the staff turns to blood and is destroyed."
@@ -12677,7 +13185,7 @@
 			"charges": 6,
 			"staff": true,
 			"entries": [
-				"This staff is made of dark ebony wood with a reddish tint that comes to a twisting mass of wood at the top. It can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it. It also gives the weareer advantage on intimidation checks",
+				"This staff is made of dark ebony wood with a reddish tint that comes to a twisting mass of wood at the top. It can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it. It also gives the wielder advantage on Intimidation checks",
 				"The staff has 7 charges for the following properties. It regains {@dice 1d6+1} expended charges daily at dawn. If you expend the last charge, roll a {@dice d20}. On a 1, the staff loses its properties and becomes a nonmagical quarterstaff.",
 				{
 					"type": "entries",
@@ -13117,6 +13625,387 @@
 			"source": "KimJongTrillsCustomContent",
 			"entries": [
 				"This ring is a translucent grey band that seems to shift and flicker. As a bonus action, you may tap into the Dunamantic energy stored inside the ring and roll {@dice 1d6}. For that many rounds, you gain an additional bonus action on each of your turns. For the same number of rounds afterward, you can't use reactions and can only take an action or a bonus action on your turn, not both. You can use this property once per short rest."
+			]
+		},
+		{
+			"name": "The Blade",
+			"source": "KimJongTrillsCustomContent",
+			"baseItem": "greatsword|xphb",
+			"type": "M",
+			"rarity": "artifact",
+			"reqAttune": "by a creature chosen by The Blade",
+			"sentient": true,
+			"weight": 3,
+			"weaponCategory": "martial",
+			"property": [
+				"H|xphb",
+				"2H|xphb"
+			],
+			"mastery": [
+				"Graze|XPHB"
+			],
+			"dmg1": "2d6",
+			"dmgType": "S",
+			"bonusWeapon": "+2",
+			"entries": [
+				"The Blade is a weapon of unknown origin drawing from a great power beyond this plane of existence",
+				"In darkness, the unsheathed blade of this sword sheds moonlight, creating bright light in a 15-foot radius and dim light for an additional 15 feet.",
+				{
+					"name": "Pact Bound",
+					"type": "entries",
+					"entries": [
+						"The Blade decides who may wield it and enters into a pact with the creature to supply it with this Eldritch Power it can draw upon in exchange for the wielder carrying it into battle and complying with the requests of The Blade.",
+						"Bonuses to this weapons attack and damage rolls also increase your bonus to spell attack rolls and spell DC by the same amount."
+					]
+				},
+				{
+					"name": "Enhanced Pact",
+					"type": "entries",
+					"entries": [
+						"The Blade gains a +2 bonus to attack and damage rolls and does an extra {@dice d6} of damage on a hit.",
+						"The wielder can regain one warlock spell slot as an action while holding The Blade. You can't use this property again until you finish a long rest"
+					]
+				},
+				{
+					"name": "Sentience",
+					"type": "entries",
+					"entries": [
+						"A moon blade is a sentient neutral good weapon with an Intelligence of 12, a Wisdom of 10, and a Charisma of 12. It has hearing and {@sense darkvision} out to a range of 120 feet.",
+						"The weapon communicates by transmitting emotions, sending a tingling sensation through the wielder's hand when it wants to communicate something it has sensed. It can communicate more explicitly, through visions or dreams, when the wielder is either in a trance or asleep."
+					]
+				}
+			]
+		},
+		{
+			"name": "Enchanted Healer's Kit",
+			"source": "KimJongTrillsCustomContent",
+			"rarity": "rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"This {@item Healer's Kit|phb} is magically imbued to contain 20 uses that resupply daily at dawn, and while attuned you gain the benefits of the {@feat Healer|phb} feat when using it."
+			]
+		},
+		{
+			"name": "Orb of the Weave (Time)",
+			"source": "KimJongTrillsCustomContent",
+			"rarity": "artifact",
+			"curse": true,
+			"tier": "major",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"While holding this Orb of the Weave, you have a limited ability to see into the immediate future. For the duration, you can't be {@status surprised} and have advantage on attack rolls, ability checks, and saving throws. Additionally, other creatures have disadvantage on attack rolls against you."
+			]
+		},
+		{
+			"name": "Orb of the Weave (Space)",
+			"source": "KimJongTrillsCustomContent",
+			"rarity": "artifact",
+			"curse": true,
+			"tier": "major",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"While holding this Orb of the Weave, you have the ability to cast {@spell gate|phb} at will, instead of having to target a different plane of existence you can target a place on any plane of existence including the curent one you are in."
+			]
+		},
+		{
+			"name": "Orb of the Weave (Mind)",
+			"source": "KimJongTrillsCustomContent",
+			"rarity": "artifact",
+			"curse": true,
+			"tier": "major",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"While holding this Orb of the Weave you can prey upon the on the deepest fears of a creatures mind. Each creature in a 30-foot-radius sphere centered on a point of your choice within range must make a Wisdom saving throw. On a failed save, a creature becomes {@condition frightened} for the duration. At the end of each of the {@condition frightened} creature's turns, it must succeed on a Wisdom saving throw or take {@damage 4d10} psychic damage. On a successful save, the creature becomes immune to this affect for one hour."
+			]
+		},
+		{
+			"name": "Orb of the Weave (Soul)",
+			"source": "KimJongTrillsCustomContent",
+			"rarity": "artifact",
+			"curse": true,
+			"tier": "major",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"While holding this Orb of the Weave, you can use an action to emit flood of healing energy into injured creatures around you. You restore up to 700 hit points, divided as you choose among any number of creatures that you can see within range. Creatures healed by this spell are also cured of all diseases and any effect making them {@condition paralyzed}, {@condition petrified}, {@condition poisoned}, {@condition blinded}, or {@condition deafened}."
+			]
+		},
+		{
+			"name": "Orb of the Weave (Reality)",
+			"source": "KimJongTrillsCustomContent",
+			"rarity": "artifact",
+			"curse": true,
+			"tier": "major",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"While holding this Orb of the Weave, you can use an action to to cast {@spell true polymorph|phb}, this spell requires no concentration and the effect lasts until it is dispelled, or ended by you."
+			]
+		},
+		{
+			"name": "Orb of the Weave (Power)",
+			"source": "KimJongTrillsCustomContent",
+			"rarity": "artifact",
+			"curse": true,
+			"tier": "major",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"While holding this Orb of the Weave, you are immune to all damage and your Strength score is 30."
+			]
+		},
+		{
+			"name": "Orbs of the Weave",
+			"source": "KimJongTrillsCustomContent",
+			"rarity": "artifact",
+			"curse": true,
+			"tier": "major",
+			"wondrous": true,
+			"entries": [
+				"There are 6 distinct Orbs of the Weave in universe, forged at the beginning of time, existing for long before the world of Térûvia was formed.",
+				{
+					"type": "list",
+					"name": "Orbs of the Weave",
+					"items": [
+						"{@item Orb of the Weave (Time)|kimjongtrillscustomcontent}",
+						"{@item Orb of the Weave (Space)|kimjongtrillscustomcontent}",
+						"{@item Orb of the Weave (Mind)|kimjongtrillscustomcontent}",
+						"{@item Orb of the Weave (Soul)|kimjongtrillscustomcontent}",
+						"{@item Orb of the Weave (Reality)|kimjongtrillscustomcontent}",
+						"{@item Orb of the Weave (Power)|kimjongtrillscustomcontent}"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ultimate Wish",
+					"entries": [
+						"Gathering all 6 of these Orbs of the Weave and attuning to them allows the user to make an Ultimate {@spell Wish|phb} with no restrictions or complications, after the Orbs of the Weave have been used in this way they will scatter across the Universe and remain inert until {@dice 10d100} years have passed."
+					]
+				}
+			]
+		},
+		{
+			"name": "Behemoth Slayers",
+			"source": "KimJongTrillsCustomContent",
+			"baseItem": "rapier|xphb",
+			"type": "M",
+			"rarity": "very rare",
+			"reqAttune": true,
+			"weight": 3,
+			"weaponCategory": "martial",
+			"property": [
+				"F|xphb"
+			],
+			"mastery": [
+				"Nick|XPHB"
+			],
+			"dmg1": "1d8",
+			"dmgType": "P",
+			"bonusWeapon": "+2",
+			"entries": [
+				"The Behemoth Slayer is an enchantment crafted by Kolian Artificers used during the War of Behemoths with the intent of being exremetly lethal to those of the giant forces that occupy their land. Weapons of this class are held by some of the highest caliber in the Kolian forces, with paired rapiers such as these held by their most well trained assasins.",
+				"Once attuned to these weapons have a +2 to attack and damage rolls and deal an extra {@dice d6} of piercing damage.",
+				{
+					"name": "Giant's Ire",
+					"type": "entries",
+					"entries": [
+						"When attacking a giant you require one less on the die to get a critical hit, this effect stacks with others of similar effect. When dealing damage to a giant it takes an extra {@dice 1d6} piercing damage and must make a {@dc 15} STR Save or be knocked {@condition prone}."
+					]
+				}
+			]
+		},
+		{
+			"name": "Magnum Tour Pro LXIX",
+			"source": "KimJongTrillsCustomContent",
+			"rarity": "very rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"bonusWeapon": "+2",
+			"entries": [
+				"This narrow cylindrical brown leather bag has a single strap, and circular opening on top where 3 clubs are stored inside a Driver, an Iron, and a Putter; used in a new game in Térûvia taking Gigantis by storm called Golf. The bottom of the bag has a pocket where if you put 200 gold pieces in you can recieve 20 enchanted +2 golf stones, that do base {@dice d6} bludgeoning damage, that in return to fill the pocket.",
+				{
+					"type": "entries",
+					"name": "Full Coverage",
+					"entries": [
+						"You can draw a club from this bag as if drawing a weapon, and you can use each of these different clubs to hit an enchanted golf stone at a target. Each club is considered a martial weapon, and when taking out your weapon you can choose from;",
+						{
+							"type": "list",
+							"items": [
+								"Driver: Can hit the enchanted golf stone with a range of 60/180, dealing {@dice 1d8} extra bludgeoning damage on a hit.",
+								"Iron: Can hit the enchanted golf stone with a range of 60/180, dealing {@dice 1d10} extra bludgeoning damage on a hit.",
+								"Putter: Uses the statistics of a {@item maul|phb} or {@item greataxe|phb}, gaining the bonus of the enchanted golf stone wedged in the face of the club."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Blade of Words",
+			"source": "KimJongTrillsCustomContent",
+			"baseItem": "rapier|phb",
+			"type": "M",
+			"rarity": "very rare",
+			"reqAttune": true,
+			"weight": 3,
+			"weaponCategory": "martial",
+			"property": [
+				"F|xphb"
+			],
+			"mastery": [
+				"Nick|XPHB"
+			],
+			"dmg1": "1d8",
+			"dmgType": "P",
+			"bonusWeapon": "+2",
+			"entries": [
+				"This rapier is",
+				"One attuned to these weapons have a +2 to attack and damage rolls and deal an extra {@dice 1d6} of piercing damage.",
+				{
+					"name": "Giant's Ire",
+					"type": "entries",
+					"entries": [
+						"When attacking a giant you require one less on the die to get a critical hit, this effect stacks with others of similar effect.",
+						"When dealing damage to a giant it takes an extra {@dice 1d6} piercing damage and must make a {@dc 15} STR Save or be knocked {@condition prone}."
+					]
+				}
+			]
+		},
+		{
+			"name": "Blade of Melodies",
+			"source": "KimJongTrillsCustomContent",
+			"baseItem": "longsword|xphb",
+			"type": "M",
+			"rarity": "very rare",
+			"reqAttune": "by a Bard",
+			"weight": 3,
+			"weaponCategory": "martial",
+			"property": [
+				"V|xphb"
+			],
+			"mastery": [
+				"Sap|XPHB"
+			],
+			"dmg1": "1d10",
+			"dmgType": "S",
+			"bonusWeapon": "+2",
+			"entries": [
+				"This longsword is a magical sword that can be transformed into an instrument of your choice, replicating the instrument in high quality or back into a rapier using a Bonus Action. When disguised in this way the weapon is undetectable. When a Bard is attuned to this weapon it gains the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"The Blade of Melodies is considered a +2 weapon and while attuned to it you gain a +2 bonus to spell attack rolls and to the saving throw DCs of your bard spells.",
+						"When attacking with Blade of Melodies use your spellcasting ability modifier instead of STR to make the attack.",
+						"When you cast the {@spell vicious mockery|phb} use a {@dice d8} for the damage die.",
+						"As an action, you can regain one use of your Bardic Inspiration feature. This property of the Blade of Melodies can't be used again until the next dawn."
+					]
+				}
+			]
+		},
+		{
+			"name": "Stormguard Badge",
+			"source": "KimJongTrillsCustomContent",
+			"tier": "minor",
+			"rarity": "very rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"This brooch is emblazoned by a symbol of Atlanta in a fine ornate silver design with a polished blue stone finish. It is worn by those Logen The Wyrm has deemed to be worthy of being called his Stormguard",
+				"While wearing this brooch, you can use a bonus action to summon the power of Altanta granting yourself the effects of a {@item potion of speed|dmg}, once used in this way you cannot do so until the next dawn."
+			]
+		},
+		{
+			"name": "Hand Wraps of Monastic Mastery",
+			"source": "KimJongTrillsCustomContent",
+			"rarity": "very rare",
+			"wondrous": true,
+			"bonusWeapon": "+3",
+			"entries": [
+				"While wearing these wraps, you have a +3 bonus to attack rolls and damage rolls made with your Unarmed Strikes. Those strikes deal your choice of Force damage or their normal damage type. You also gain a +2 bonus to the saving throw DCs of your ki features. In addition, you can use an action to regain ki points equal to a roll of your Martial Arts die. You can't use this action again until the next dawn."
+			]
+		},
+		{
+			"name": "The Blade (Past)",
+			"source": "KimJongTrillsCustomContent",
+			"baseItem": "greatsword|xphb",
+			"type": "M",
+			"rarity": "artifact",
+			"reqAttune": "by a creature chosen by The Blade",
+			"sentient": true,
+			"weight": 3,
+			"weaponCategory": "martial",
+			"property": [
+				"H|xphb",
+				"2H|xphb"
+			],
+			"mastery": [
+				"Graze|XPHB"
+			],
+			"dmg1": "2d6",
+			"dmgType": "S",
+			"bonusWeapon": "+2",
+			"entries": [
+				"The Blade is a weapon of unknown origin drawing from a great power beyond this plane of existence",
+				"In darkness, the unsheathed blade of this sword sheds moonlight, creating bright light in a 15-foot radius and dim light for an additional 15 feet.",
+				{
+					"name": "Oath Bound",
+					"type": "entries",
+					"entries": [
+						"The Blade decides who may wield it and enters into a pact with the creature to supply it with this Eldritch Power it can draw upon in exchange for the wielder carrying it into battle and complying with the requests of The Blade.",
+						"Bonuses to this weapons attack and damage rolls also increase your bonus to spell attack rolls and spell DC by the same amount."
+					]
+				},
+				{
+					"name": "Enhanced Oath",
+					"type": "entries",
+					"entries": [
+						"You gain a +3 bonus to attack rolls and damage rolls made with this magic weapon. When you hit a Fiend or an Undead with it, that creature takes an extra {@damage 2d10} Radiant damage.",
+						"While you hold the drawn weapon, it creates a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from you. You and all creatures {@variantrule Friendly [Attitude]|XPHB|Friendly} to you in the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} have {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects. If you have 17 or more levels in the Paladin class, the size of the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} increases to 30 feet."
+					]
+				},
+				{
+					"name": "Sentience",
+					"type": "entries",
+					"entries": [
+						"A moon blade is a sentient neutral good weapon with an Intelligence of 12, a Wisdom of 10, and a Charisma of 12. It has hearing and {@sense darkvision} out to a range of 120 feet.",
+						"The weapon communicates by transmitting emotions, sending a tingling sensation through the wielder's hand when it wants to communicate something it has sensed. It can communicate more explicitly, through visions or dreams, when the wielder is either in a trance or asleep."
+					]
+				}
+			]
+		},
+		{
+			"name": "Silver Tongue",
+			"source": "KimJongTrillsCustomContent",
+			"baseItem": "dagger",
+			"rarity": "very rare",
+			"reqAttune": "by a Bard",
+			"weight": 3,
+			"weaponCategory": "simple",
+			"property": [
+				"F|XPHB",
+				"L|XPHB",
+				"T|XPHB"
+			],
+			"mastery": [
+				"Nick|XPHB"
+			],
+			"dmg1": "1d4",
+			"dmgType": "P",
+			"bonusWeapon": "+2",
+			"entries": [
+				"This dagger is made of fine polished silver from the handle to the blade, which resembles a tongue. This blade can be magically concealed on your person and when disguised in this way the weapon is undetectable. When a Bard is attuned to this weapon it gains the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"The Silver Tongue is considered a +2 weapon and while attuned to it you gain a +2 bonus to spell attack rolls and to the saving throw DCs of your bard spells.",
+						"When attacking with Silver Tongue use your spellcasting ability modifier instead of DEX to make the attack.",
+						"When you hit with an attack using Silver Tongue you deal extra damage equal to your bardic inspiration die, you can also expend uses of bardic inspiration to increase this damage by an additonal die for each use."
+					]
+				}
 			]
 		}
 	],
