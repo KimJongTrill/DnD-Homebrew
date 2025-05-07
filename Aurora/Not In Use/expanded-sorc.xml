@@ -193,15 +193,6 @@
 			<grant type="Spell" id="ID_PHB_SPELL_REINCARNATE" level="9" spellcasting="Sorcerer" />
 		</rules>
 	</element>
-	
-	<element name="Gunslinger" type="Class Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_CLASS_FEATURE_FIGHTING_STYLE_GUNSLINGER">
-		<supports>Fighting Style, Fighter, Ranger</supports>
-		<description>
-			<p>You are able to use Two-Weapon Fighting with light Firearms despite them not being melee weapons.</p>
-		</description>
-		<sheet>
-			<description>You are able to use Two-Weapon Fighting with light Firearms despite them not being melee weapons.</description>
-		</sheet>
-	</element>	
+		
 
 </elements>
