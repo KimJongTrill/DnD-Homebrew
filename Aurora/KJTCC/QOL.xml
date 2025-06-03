@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.8.1">
+		<update version="1.8.2">
 			<file name="QOL.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/KJTCC/QOL.xml" />
 		</update>
 	</info>
@@ -142,7 +142,7 @@
 
 	<!--Custom BG for Freedom-->
 
-	<element name="Custom Background 2024" type="Background" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_CUSTOM_BG">
+	<element name="!Custom Background 2024!" type="Background" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_CUSTOM_BG">
 		<description>
 			<table>
 				<tr><td><b>Ability Scores:</b></td><td> Your Choice of +2/+1 or +1/+1/+1</td></tr>
@@ -160,9 +160,10 @@
 			<select type="Proficiency" name="Skill Proficiency (Custom Background)" number="2" supports="Skill 2024" />
 			<select type="Proficiency" name="Tool Proficiency (Custom Background)" supports="Tool 2024" />
 			<select type="Language" name="Language (Custom Background)" number="2" supports="2024 Starting" />
-			<select type="Ability Score Improvement" name="Ability Score Improvement Option" supports="ID_WOTC_ASI_ABILITY_SCORE_IMPROVEMENT_OPTION_1|ID_WOTC_ASI_ABILITY_SCORE_IMPROVEMENT_OPTION_2" />
+			<select type="Ability Score Improvement (Background)" name="Ability Score Improvement Option" supports="ID_WOTC_ASI_ABILITY_SCORE_IMPROVEMENT_OPTION_1|ID_WOTC_ASI_ABILITY_SCORE_IMPROVEMENT_OPTION_2" />
 			<select type="Feat" name="Origin Feat" supports="Origin"/>
 			<grant id="ID_WOTC_PHB24_LANGUAGE_COMMON"/>
+			<grant id="ID_INTERNAL_GRANTS_BACKGROUND_ASI"/>
 		</rules>
 	</element>
 
@@ -252,35 +253,34 @@
         	</rules>
     	</append>
 
-	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS">
+		<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS">
         	<rules>
             		<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
         	</rules>
     	</append>
 
-	<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR">
+		<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR">
         	<rules>
             		<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
         	</rules>
     	</append>
 
-	<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR">
+		<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR">
         	<rules>
             		<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
         	</rules>
     	</append>
 
-	<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR">
+		<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR">
         	<rules>
             		<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
         	</rules>
     	</append>
 
-	<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS">
+		<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS">
         	<rules>
            	 	<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
         	</rules>
     	</append>
-
 
 </elements>
