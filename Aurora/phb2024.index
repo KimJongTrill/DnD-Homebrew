@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
-		<update version="0.1.2">
+		<update version="0.1.3">
 			<file name="phb2024.index" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024.index" />
 		</update>
 	</info>
@@ -19,7 +19,7 @@
         <file name="race-tiefling.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024/races/race-tiefling.xml" />
 
 		<!-- classes -->
-		<file name="class-cleric" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024/classes/class-cleric.xml" />
+		<file name="class-cleric.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024/classes/class-cleric.xml" />
 		<file name="class-fighter.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024/classes/class-fighter.xml" />
 		<file name="class-monk.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024/classes/class-monk.xml" />
 		<file name="class-wizard.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024/classes/class-wizard.xml" />		
