@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="phb2024.index" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024.index" />
 		</update>
 	</info>
 	<files>
-		<file name="source.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024/source.xml" />
-
 		<!-- races -->
         <file name="race-aasimar.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024/races/race-aasimar.xml" />
         <file name="race-dragonborn.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024/races/race-dragonborn.xml" />
