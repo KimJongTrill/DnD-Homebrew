@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
-	
+	<info>
+		<name>Languages</name>
+		<description></description>
+		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
+		<update version="0.0.2">
+			<file name="languages.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024/misc/languages.xml" />
+		</update>
+	</info>
 	<element name="Starting Language" type="Support" source="Internal" id="ID_INTERNAL_SUPPORT_LANGUAGE_STARTING" />
 	<element name="Exotic Language" type="Support" source="Internal" id="ID_INTERNAL_SUPPORT_LANGUAGE_EXOTIC" />
 	<element name="Secret Language" type="Support" source="Internal" id="ID_INTERNAL_SUPPORT_LANGUAGE_SECRET" /> 
