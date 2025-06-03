@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="1.2">
-			<file name="source.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/source.xml" />
+			<file name="source.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/KJTCC/source.xml" />
 		</update>
 	</info>
 	<element name="KimJongTrill’s Custom Content" type="Source" source="KimJongTrill’s Custom Content" id="ID_KJT_CC">
