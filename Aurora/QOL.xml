@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.8.0">
+		<update version="1.8.1">
 			<file name="QOL.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/QOL.xml" />
 		</update>
 	</info>
@@ -237,22 +237,49 @@
 	<element name="Weapon Proficiency (Firearms)" type="Proficiency" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS">
 		<sheet alt="Firearms" />
 		<rules>
-			<grant type="Proficiency" id="ID_KJT_CC_WEAPON_FLINTLOCK_PROFICIENCY" />
-			<grant type="Proficiency" id="ID_KJT_CC_WEAPON_REVOLVER_PROFICIENCY" />
-			<grant type="Proficiency" id="ID_KJT_CC_WEAPON_LONG_RIFLE_PROFICIENCY" />
-			<grant type="Proficiency" id="ID_KJT_CC_WEAPON_CARBINE_RIFLE_PROFICIENCY" />
+			<grant type="Proficiency" id="ID_KJT_CC_PROFICIENCY_WEAPON_FIREARMS" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_PISTOL" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_MUSKET" />
 		</rules>
 	</element>
 
-	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS">
-		<rules>
-			<grant type="Proficiency" id="ID_KJT_CC_PROFICIENCY_WEAPON_FIREARMS" />
-		</rules>
-	</append>
+	<!-- 2024 Fixes for Backward Compat-->
+	
+    	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS">
+        	<rules>
+            		<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+        	</rules>
+    	</append>
 
-	<append id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS">
-		<rules>
-			<grant type="Proficiency" id="ID_KJT_CC_PROFICIENCY_WEAPON_FIREARMS" />
-		</rules>
-	</append>
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS">
+        	<rules>
+            		<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+        	</rules>
+    	</append>
+
+	<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR">
+        	<rules>
+            		<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+        	</rules>
+    	</append>
+
+	<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR">
+        	<rules>
+            		<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+        	</rules>
+    	</append>
+
+	<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR">
+        	<rules>
+            		<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+        	</rules>
+    	</append>
+
+	<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS">
+        	<rules>
+           	 	<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+        	</rules>
+    	</append>
+
+
 </elements>
