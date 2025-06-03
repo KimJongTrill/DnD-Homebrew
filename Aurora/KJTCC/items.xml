@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="1.8.0">
-			<file name="items.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/items.xml" />
+			<file name="items.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/KJTCC/items.xml" />
 		</update>
 	</info>
     
