@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.8.2">
+		<update version="1.8.3">
 			<file name="QOL.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/KJTCC/QOL.xml" />
 		</update>
 	</info>
@@ -160,12 +160,35 @@
 			<select type="Proficiency" name="Skill Proficiency (Custom Background)" number="2" supports="Skill 2024" />
 			<select type="Proficiency" name="Tool Proficiency (Custom Background)" supports="Tool 2024" />
 			<select type="Language" name="Language (Custom Background)" number="2" supports="2024 Starting" />
-			<select type="Ability Score Improvement (Background)" name="Ability Score Improvement Option" supports="ID_WOTC_ASI_ABILITY_SCORE_IMPROVEMENT_OPTION_1|ID_WOTC_ASI_ABILITY_SCORE_IMPROVEMENT_OPTION_2" />
+			<select type="Ability Score Improvement (Background)" name="Ability Score Improvement Option" supports="ID_WOTC_BACKGROUND_ASI_OPTION_2|ID_WOTC_BACKGROUND_ASI_OPTION_2" />
 			<select type="Feat" name="Origin Feat" supports="Origin"/>
 			<grant id="ID_WOTC_PHB24_LANGUAGE_COMMON"/>
 			<grant id="ID_INTERNAL_GRANTS_BACKGROUND_ASI"/>
 		</rules>
 	</element>
+
+	<element name="Ability Score Improvement +2, +1" type="Ability Score Improvement" source="Internal" id="ID_WOTC_BACKGROUND_ASI_OPTION_1">
+        <supports>Custom Ability Score Improvement Option</supports>
+        <description>
+            <p>You can increase one of the scores by 2 and increase a different score by 1.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Ability Score Improvement" name="Custom Ability Score Improvement +2" supports="Custom Ability Score Increase 2"/>
+            <select type="Ability Score Improvement" name="Custom Ability Score Improvement +1" supports="Custom Ability Score Increase 1"/>
+        </rules>
+    </element>
+
+    <element name="Ability Score Improvement +1, +1, +1" type="Ability Score Improvement" source="Internal" id="ID_WOTC_BACKGROUND_ASI_OPTION_2">
+        <supports>Custom Ability Score Improvement Option</supports>
+        <description>
+            <p>You can increase three different scores by 1.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Ability Score Improvement" name="Custom Ability Score Improvement +1" number="3" supports="Custom Ability Score Increase 1" />
+        </rules>
+    </element>
 
 	<!--Expanded Elelmental Affinity for Dragon Sorc-->
 
