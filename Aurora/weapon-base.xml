@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.2.0">
+		<update version="1.3.0">
 			<file name="weapon-base.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/weapon-base.xml" />
 		</update>
 	</info>
 
 	<element name="Brass Knuckles" type="Weapon" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_KNUCKS_B">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_WOTC_PHB24_WEAPON_PROPERTY_NICK</supports>
 		<description>
 			<p>These melee weapons receive the same benefits as your unarmed strikes.</p>
 		</description>
@@ -17,12 +17,12 @@
 			<set name="weight" lb=".5">.5 lb.</set>
 			<set name="slot">onehand</set>
 			<set name="damage" type="bludgeoning">1d4</set>
-			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER</set>
+			<set name="proficiency">ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER</set>
 		</setters>
 	</element>
 	
 	<element name="Barbed Kunckles" type="Weapon" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_KNUCKS_S">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_WOTC_PHB24_WEAPON_PROPERTY_NICK</supports>
 		<description>
 			<p>These melee weapons receive the same benefits as your unarmed strikes.</p>
 		</description>
@@ -32,12 +32,12 @@
 			<set name="weight" lb=".5">.5 lb.</set>
 			<set name="slot">onehand</set>
 			<set name="damage" type="slashing">1d4</set>
-			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER</set>
+			<set name="proficiency">ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER</set>
 		</setters>
 	</element>
 	
 	<element name="Spiked Knuckles" type="Weapon" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_KNUCKS_P">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_WOTC_PHB24_WEAPON_PROPERTY_NICK</supports>
 		<description>
 			<p>These melee weapons receive the same benefits as your unarmed strikes.</p>
 		</description>
@@ -47,12 +47,12 @@
 			<set name="weight" lb=".5">.5 lb.</set>
 			<set name="slot">onehand</set>
 			<set name="damage" type="piercing">1d4</set>
-			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER</set>
+			<set name="proficiency">ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER</set>
 		</setters>
 	</element>
 	
 	<element name="Polehammer" type="Weapon" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_POLEHAMMER">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_WOTC_PHB24_WEAPON_PROPERTY_TOPPLE</supports>
 		<description>
 			<p>This weapon is a polearm with a large blunt object attached to one end.</p>
 		</description>
@@ -62,12 +62,12 @@
 			<set name="weight" lb="6">6 lb.</set>
 			<set name="slot">twohand</set>
 			<set name="damage" type="bludgeoning">1d10</set>
-			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_PIKE</set>
+			<set name="proficiency">ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_PIKE</set>
 		</setters>
 	</element>
 	
 	<element name="Flintlock" type="Weapon" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_WEAPON_FLINTLOCK">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_WOTC_PHB24_WEAPON_PROPERTY_AMMUNITION, ID_WOTC_PHB24_WEAPON_PROPERTY_LOADING, ID_WOTC_PHB24_WEAPON_PROPERTY_VEX</supports>
 		<description />
 		<setters>
 			<set name="category">Weapons</set>
@@ -76,12 +76,12 @@
 			<set name="slot">onehand</set>
 			<set name="range">60/120</set>
 			<set name="damage" type="piercing">1d10</set>
-			<set name="proficiency">ID_WOTC_DMG_PROFICIENCY_WEAPON_RENAISSANCE_FIREARMS_PISTOL</set>
+			<set name="proficiency">ID_KJT_CC_WEAPON_FLINTLOCK_PROFICIENCY</set>
 		</setters>
 	</element>
 	
 	<element name="Six-Shooter" type="Weapon" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_WEAPON_REVOLVER">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD_6_SHOTS, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_WOTC_PHB24_WEAPON_PROPERTY_AMMUNITION, ID_WOTC_PHB24_WEAPON_PROPERTY_NICK</supports>
 		<description />
 		<setters>
 			<set name="category">Weapons</set>
@@ -90,12 +90,12 @@
 			<set name="slot">onehand</set>
 			<set name="range">30/60</set>
 			<set name="damage" type="piercing">1d6</set>
-			<set name="proficiency">ID_WOTC_DMG_PROFICIENCY_WEAPON_MODERN_FIREARMS_REVOLVER</set>
+			<set name="proficiency">ID_KJT_CC_WEAPON_REVOLVER_PROFICIENCY</set>
 		</setters>
   	</element>
 	
   	<element name="Long Rifle" type="Weapon" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_WEAPON_LONG_RIFLE">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_WOTC_PHB24_WEAPON_PROPERTY_AMMUNITION, ID_WOTC_PHB24_WEAPON_PROPERTY_LOADING, ID_WOTC_PHB24_WEAPON_PROPERTY_TWOHANDED, ID_WOTC_PHB24_WEAPON_PROPERTY_SAP</supports>
 		<description />
 		<setters>
 			<set name="category">Weapons</set>
@@ -104,12 +104,12 @@
 			<set name="slot">twohand</set>
 			<set name="range">100/200</set>
 			<set name="damage" type="piercing">1d12</set>
-			<set name="proficiency">ID_WOTC_DMG_PROFICIENCY_WEAPON_RENAISSANCE_FIREARMS_MUSKET</set>
+			<set name="proficiency">ID_KJT_CC_WEAPON_LONG_RIFLE_PROFICIENCY</set>
 		</setters>
 	</element>
 	
  	 <element name="Carbine Rifle" type="Weapon" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_WEAPON_CARBINE_RIFLE">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD_5_SHOTS, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_WOTC_PHB24_WEAPON_PROPERTY_AMMUNITION, ID_WOTC_PHB24_WEAPON_PROPERTY_TWOHANDED, ID_WOTC_PHB24_WEAPON_PROPERTY_VEX</supports>
 		<description />
 		<setters>
 			<set name="category">Weapons</set>
@@ -118,8 +118,26 @@
 			<set name="slot">twohand</set>
 			<set name="range">50/100</set>
 			<set name="damage" type="piercing">1d10</set>
-			<set name="proficiency">ID_WOTC_DMG_PROFICIENCY_WEAPON_RENAISSANCE_FIREARMS_MUSKET</set>
+			<set name="proficiency">ID_KJT_CC_WEAPON_CARBINE_RIFLE_PROFICIENCY</set>
 		</setters>
 	</element>
 	
+	<!-- Custom Weapon Proficiencies -->
+
+	<element name="Weapon Proficiency (Flintlock)" type="Proficiency" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_WEAPON_FLINTLOCK_PROFICIENCY">
+		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_WOTC_PHB24_WEAPON_PROPERTY_AMMUNITION, ID_WOTC_PHB24_WEAPON_PROPERTY_LOADING</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Revolver)" type="Proficiency" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_WEAPON_REVOLVER_PROFICIENCY">
+		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_WOTC_PHB24_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Long Rifle)" type="Proficiency" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_WEAPON_LONG_RIFLE_PROFICIENCY">
+		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_WOTC_PHB24_WEAPON_PROPERTY_AMMUNITION, ID_WOTC_PHB24_WEAPON_PROPERTY_LOADING, ID_WOTC_PHB24_WEAPON_PROPERTY_TWOHANDED</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Carbine Rifle)" type="Proficiency" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_WEAPON_CARBINE_RIFLE_PROFICIENCY">
+		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_WOTC_PHB24_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_WOTC_PHB24_WEAPON_PROPERTY_TWOHANDED</supports>
+	</element>
+
 </elements>
