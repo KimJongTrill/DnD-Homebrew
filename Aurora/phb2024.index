@@ -12,16 +12,16 @@
 		<file name="source.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024/source.xml" />
 
 		<!-- races -->
-        <file name="race-aasimar" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024/races/race-aasimar.xml" />
-        <file name="race-dragonborn" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024/races/race-dragonborn.xml" />
-        <file name="race-dwarf" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024/races/race-dwarf.xml" />
-        <file name="race-elf" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024/races/race-elf.xml" />
-        <file name="race-gnome" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024/races/race-gnome.xml" />
-        <file name="race-goliath" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024/races/race-goliath.xml" />
-        <file name="race-halfling" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024/races/race-halfling.xml" />
-        <file name="race-human" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024/races/race-human.xml" />
-        <file name="race-orc" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024/races/race-orc.xml" />
-        <file name="race-tiefling" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024/races/race-tiefling.xml" />
+        <file name="race-aasimar.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024/races/race-aasimar.xml" />
+        <file name="race-dragonborn.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024/races/race-dragonborn.xml" />
+        <file name="race-dwarf.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024/races/race-dwarf.xml" />
+        <file name="race-elf.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024/races/race-elf.xml" />
+        <file name="race-gnome.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024/races/race-gnome.xml" />
+        <file name="race-goliath.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024/races/race-goliath.xml" />
+        <file name="race-halfling.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024/races/race-halfling.xml" />
+        <file name="race-human.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024/races/race-human.xml" />
+        <file name="race-orc.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024/races/race-orc.xml" />
+        <file name="race-tiefling.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024/races/race-tiefling.xml" />
 
 		<!-- classes -->
 		<file name="class-cleric" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024/classes/class-cleric.xml" />
