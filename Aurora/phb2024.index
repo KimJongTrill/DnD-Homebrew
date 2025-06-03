@@ -4,8 +4,8 @@
 		<name>Player’s Handbook 2024</name>
 		<description></description>
 		<author url="">Wizards of the Coast</author>
-		<update version="0.0.2">
-			<file name="players-handbook-2024.index" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024.index" />
+		<update version="0.0.3">
+			<file name="phb2024.index" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024.index" />
 		</update>
 	</info>
 	<files>
