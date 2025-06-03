@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="1.4.0">
-			<file name="weapon-base.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/weapon-base.xml" />
+			<file name="weapon-base.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/KJTCC/weapon-base.xml" />
 		</update>
 	</info>
 
