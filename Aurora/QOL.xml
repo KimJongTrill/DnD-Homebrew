@@ -49,8 +49,9 @@
 
 	<!--Spells as Items for Sheet Calc-->
 
+
 	<element name="Shillelagh" type="Weapon" source="Player’s Handbook" id="ID_WOTC_PHB_SHILLELAGH">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING</supports>
+		<supports> ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING</supports>
 		<description>
 			<p></p>
 		</description>
@@ -60,12 +61,12 @@
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="slot">onehand</set>
 			<set name="damage" type="bludgeoning">1d8</set>
-			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF</set>
+			<set name="proficiency">ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS</set>
 		</setters>
 	</element>
 
 	<element name="Magic Stone" type="Weapon" source="Player’s Handbook" id="ID_WOTC_PHB_MAGIC_STONE">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING</supports>
+		<supports>ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING</supports>
 		<description>
 			<p></p>
 		</description>
@@ -76,7 +77,7 @@
 			<set name="slot">onehand</set>
 			<set name="range">60 ft</set>
 			<set name="damage" type="bludgeoning">1d6</set>
-			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_DART</set>
+			<set name="proficiency">ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS</set>
 		</setters>
 	</element>
 
