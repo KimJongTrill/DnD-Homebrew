@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.6.0">
+		<update version="1.7.0">
 			<file name="QOL.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/QOL.xml" />
 		</update>
 	</info>
-		
+
+	<!--Rez Diamonds-->
+	
 	<element name="Revivify Diamond" type="Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_REVIVE_DIAMOND">
 		<description>
 			<p>Transparent blue-white, canary, pink, brown, or blue.</p>
@@ -44,6 +46,8 @@
 			<set name="valuable">true</set>
 		</setters>
 	</element>
+
+	<!--Spells as Items for Sheet Calc-->
 
 	<element name="Shillelagh" type="Weapon" source="Player’s Handbook" id="ID_WOTC_PHB_SHILLELAGH">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING</supports>
@@ -93,7 +97,9 @@
 		</rules>
 	</element>
 
-	<element name="Custom Attunement: Proficiency 4" type="Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_CUSTOM_ATTUNEMENT_4">
+	<!--Custom Attunment-->
+
+	<element name="Custom Attunement" type="Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_CUSTOM_ATTUNEMENT">
 		<description>
 			<p><i>KJT Homebrew</i></p>
 			<p>Attunement slots are equal to Proficiency Bonus (Minimum 3). Equip to enable.</p>
@@ -108,47 +114,11 @@
 			<set name="inventory-hidden">true</set>
 		</setters>
 		<rules>
-			<stat name="attunement:max" value="4" bonus="base"/>
+			<stat name="attunement:max" value="proficiency" bonus="base"/>
 		</rules>
 	</element>
-	
-	<element name="Custom Attunement: Proficiency 5" type="Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_CUSTOM_ATTUNEMENT_5">
-		<description>
-			<p><i>KJT Homebrew</i></p>
-			<p>Attunement slots are equal to Proficiency Bonus (Minimum 3). Equip to enable.</p>
-		</description>
-		<sheet display="false">
-			<description>Attunement slots are equal to Proficiency Bonus (Minimum 3). Equip to enable.</description>
-		</sheet>
-		<setters>
-			<set name="category">Homebrew Rules</set>
-			<set name="keywords">Attunement</set>
-			<set name="slot">misc</set>
-			<set name="inventory-hidden">true</set>
-		</setters>
-		<rules>
-			<stat name="attunement:max" value="5" bonus="base"/>
-		</rules>
-	</element>
-	
-	<element name="Custom Attunement: Proficiency 6" type="Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_CUSTOM_ATTUNEMENT_6">
-		<description>
-			<p><i>KJT Homebrew</i></p>
-			<p>Attunement slots are equal to Proficiency Bonus (Minimum 3). Equip to enable.</p>
-		</description>
-		<sheet display="false">
-			<description>Attunement slots are equal to Proficiency Bonus (Minimum 3). Equip to enable.</description>
-		</sheet>
-		<setters>
-			<set name="category">Homebrew Rules</set>
-			<set name="keywords">Attunement</set>
-			<set name="slot">misc</set>
-			<set name="inventory-hidden">true</set>
-		</setters>
-		<rules>
-			<stat name="attunement:max" value="6" bonus="base"/>
-		</rules>
-	</element>
+
+	<!--Additional Expertise-->
 	
 	<element name="DM Gift: Expertise" type="Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_DMG_Expertise">
 		<description>
@@ -168,202 +138,115 @@
 			<select type="Class Feature" name="Expertise, DM Gift" supports="Expertise, Skill" />
 		</rules>
 	</element>
-	
-	<element name="Custom Background" type="Background" source="Player’s Handbook" id="ID_WOTC_PHB_BACKGROUND_CUSTOM">
+
+	<!--Custom BG for Freedom-->
+
+	<element name="Custom Background 2024" type="Background" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_CUSTOM_BG">
 		<description>
-			<p>You might want to tweak some of the features of a background so it better fits your character or the campaign setting. To customize a background, you can replace one feature with any other one, choose any two skills, and choose a total of two tool proficiencies or languages from the sample backgrounds. You can either use the equipment package from your background or spend coin on gear as described in chapter 5. (If you spend coin, you can’t also take the equipment package suggested for your class.) Finally, choose two personality traits, one ideal, one bond, and one flaw. If you can’t find a feature that matches your desired background, work with your DM to create one.</p>
-			<ul>
-				<li><strong>Skill Proficiencies:</strong> You can select any two skills to be proficient with</li>
-				<li><strong>Tool Proficiencies and Languages:</strong> You can select up to 2 tool proficiencies or languages</li>
-				<li><strong>Background Feature:</strong> You can pick any background feature</li>
-				<li><strong>Equipment:</strong> Use the equipment package from another background</li>
-			</ul>
+			<table>
+				<tr><td><b>Ability Scores:</b></td><td> Your Choice of +2/+1 or +1/+1/+1</td></tr>
+				<tr><td><b>Feat:</b> </td><td> One Origin Feat</td></tr>
+				<tr><td><b>Skill Proficiencies:</b></td><td> Choose 2</td></tr>
+				<tr><td><b>Tool Proficiency:</b></td><td> Choose 1</td></tr>
+				<tr><td><b>Equipment:</b></td><td>IDK</td></tr>
+			</table>
+			<p>Epic Backstory</p>
 		</description>
 		<setters>
-			<set name="short">2 Skills, 1-2 Language/Tool</set>
+			<set name="short">ONLY USE THIS ONE</set>
 		</setters>
 		<rules>
-			<select type="Proficiency" name="Skill Proficiency (Custom Background)" number="2" supports="Skill" />
-			<select type="Background Feature" name="First Tool Proficiency / Language" supports="Tool Language Select" />
-			<select type="Background Feature" name="Second Tool Proficiency / Language" supports="Tool Language Select 2" optional="true" />
-			<select type="Background Feature" name="Background Feature" supports="Background Feature" />
+			<select type="Proficiency" name="Skill Proficiency (Custom Background)" number="2" supports="Skill 2024" />
+			<select type="Proficiency" name="Tool Proficiency (Custom Background)" supports="Tool 2024" />
+			<select type="Language" name="Language (Custom Background)" number="2" supports="2024 Starting" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option" supports="ID_WOTC_ASI_ABILITY_SCORE_IMPROVEMENT_OPTION_1|ID_WOTC_ASI_ABILITY_SCORE_IMPROVEMENT_OPTION_2" />
+			<select type="Feat" name="Origin Feat" supports="Origin"/>
+			<grant id="ID_WOTC_PHB24_LANGUAGE_COMMON"/>
 		</rules>
 	</element>
 
-	<element name="Tool Proficiency" type="Background Feature" source="Player’s Handbook" id="ID_WOTC_PHB_BACKGROUND_CUSTOM_TOOL_SELECT">
-		<supports>Tool Language Select</supports>
-		<rules>
-			<select type="Proficiency" name="Tool Proficiency (Custom Background)" supports="Tool and Kit||Gaming Set||Tool||Disguise Kit" />
-		</rules>
+	<!--Expanded Elelmental Affinity for Dragon Sorc-->
+
+	<element name="Force" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_SORCERER_DRACONIC_ELEMENTAL_AFFINITY_FORCE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SORCERER_24_DRACONIC_ELEMENTAL_AFFINITY_FORCE</requirements>
+		<supports>Elemental Affinity</supports>
+		<description>
+			<p>Your draconic elemental affinity is Force.</p>
+		</description>
 		<sheet display="false" />
-		<compendium display="false" />
+		<rules>
+			<stat inline="true" name="elemental affinity damage type" value="Force" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FORCE" />
+		</rules>
 	</element>
 
-	<element name="Additional Language" type="Background Feature" source="Player’s Handbook" id="ID_WOTC_PHB_BACKGROUND_CUSTOM_LANGUAGE_SELECT">
-		<supports>Tool Language Select</supports>
-		<rules>
-			<select type="Language" name="Language (Custom Background)" supports="Standard||Exotic" />
-		</rules>
+	<element name="Psychic" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_SORCERER_DRACONIC_ELEMENTAL_AFFINITY_PSYCHIC">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SORCERER_24_DRACONIC_ELEMENTAL_AFFINITY_PSYCHIC</requirements>
+		<supports>Elemental Affinity</supports>
+		<description>
+			<p>Your draconic elemental affinity is Psychic.</p>
+		</description>
 		<sheet display="false" />
-		<compendium display="false" />
+		<rules>
+			<stat inline="true" name="elemental affinity damage type" value="Psychic" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+		</rules>
 	</element>
 
-	<element name="Tool Proficiency" type="Background Feature" source="Player’s Handbook" id="ID_WOTC_PHB_BACKGROUND_CUSTOM_TOOL_SELECT_2">
-		<supports>Tool Language Select 2</supports>
-		<rules>
-			<select type="Proficiency" name="Tool Proficiency (Custom Background)" supports="Tool and Kit||Gaming Set||Tool||Disguise Kit" />
-		</rules>
+	<element name="Radiant" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_SORCERER_DRACONIC_ELEMENTAL_AFFINITY_RADIANT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SORCERER_24_DRACONIC_ELEMENTAL_AFFINITY_RADIANT</requirements>
+		<supports>Elemental Affinity</supports>
+		<description>
+			<p>Your draconic elemental affinity is Radiant.</p>
+		</description>
 		<sheet display="false" />
-		<compendium display="false" />
+		<rules>
+			<stat inline="true" name="elemental affinity damage type" value="Radiant" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+		</rules>
 	</element>
 
-	<element name="Additional Language" type="Background Feature" source="Player’s Handbook" id="ID_WOTC_PHB_BACKGROUND_CUSTOM_LANGUAGE_SELECT_2">
-		<supports>Tool Language Select 2</supports>
-		<rules>
-			<select type="Language" name="Language (Custom Background)" supports="Standard||Exotic" />
-		</rules>
+	<element name="Necrotic" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_SORCERER_DRACONIC_ELEMENTAL_AFFINITY_NECROTIC">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SORCERER_24_DRACONIC_ELEMENTAL_AFFINITY_NECROTIC</requirements>
+		<supports>Elemental Affinity</supports>
+		<description>
+			<p>Your draconic elemental affinity is Necrotic.</p>
+		</description>
 		<sheet display="false" />
-		<compendium display="false" />
-	</element>
-	
-	<element name="Amethyst Dragon" type="Archetype Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_AMETHYST">
-		<supports>Dragon Ancestor</supports>
-		<description>
-			<p>You choose the amethyst dragon as your ancestor. The force damage type is used by features you gain later.</p>
-		</description>
-		<sheet>
-			<description>The amethyst dragon as your ancestor.</description>
-		</sheet>
 		<rules>
-			<stat inline="true" name="dragon ancestor damage type" value="Force" />
+			<stat inline="true" name="elemental affinity damage type" value="Necrotic" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
 		</rules>
 	</element>
 
-	<element name="Crystal Dragon" type="Archetype Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_CRYSTAL">
-		<supports>Dragon Ancestor</supports>
+	<element name="Thunder" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_SORCERER_DRACONIC_ELEMENTAL_AFFINITY_THUNDER">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SORCERER_24_DRACONIC_ELEMENTAL_AFFINITY_THUNDER</requirements>
+		<supports>Elemental Affinity</supports>
 		<description>
-			<p>You choose the crystal dragon as your ancestor. The radiant damage type is used by features you gain later.</p>
+			<p>Your draconic elemental affinity is Thunder.</p>
 		</description>
-		<sheet>
-			<description>The crystal dragon as your ancestor.</description>
-		</sheet>
+		<sheet display="false" />
 		<rules>
-			<stat inline="true" name="dragon ancestor damage type" value="Radiant" />
+			<stat inline="true" name="elemental affinity damage type" value="Thunder" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
 		</rules>
-	</element>
-
-	<element name="Emerald Dragon" type="Archetype Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_EMERALD">
-		<supports>Dragon Ancestor</supports>
-		<description>
-			<p>You choose the emerald dragon as your ancestor. The psychic damage type is used by features you gain later.</p>
-		</description>
-		<sheet>
-			<description>The emerald dragon as your ancestor.</description>
-		</sheet>
-		<rules>
-			<stat inline="true" name="dragon ancestor damage type" value="Psychic" />
-		</rules>
-	</element>
-
-	<element name="Sapphire Dragon" type="Archetype Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_SAPPHIRE">
-		<supports>Dragon Ancestor</supports>
-		<description>
-			<p>You choose the Sapphire dragon as your ancestor. The thunder damage type is used by features you gain later.</p>
-		</description>
-		<sheet>
-			<description>The sapphire dragon as your ancestor.</description>
-		</sheet>
-		<rules>
-			<stat inline="true" name="dragon ancestor damage type" value="Thunder" />
-		</rules>
-	</element>
-
-	<element name="Topaz Dragon" type="Archetype Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_TOPAZ">
-		<supports>Dragon Ancestor</supports>
-		<description>
-			<p>You choose the topaz dragon as your ancestor. The necrotic damage type is used by features you gain later.</p>
-		</description>
-		<sheet>
-			<description>The topaz dragon as your ancestor.</description>
-		</sheet>
-		<rules>
-			<stat inline="true" name="dragon ancestor damage type" value="Necrotic" />
-		</rules>
-	</element>
-		<element name="Gunslinger" type="Class Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_CLASS_FEATURE_FIGHTING_STYLE_GUNSLINGER">
-		<supports>Fighting Style, Fighter, Ranger</supports>
-		<description>
-			<p>You are able to use Two-Weapon Fighting with light Firearms despite them not being melee weapons.</p>
-		</description>
-		<sheet>
-			<description>You are able to use Two-Weapon Fighting with light Firearms despite them not being melee weapons.</description>
-		</sheet>
 	</element>
 
 	<!--Missing Supports-->
-	<append id="ID_WOTC_ACQINC_BACKGROUND_FEATURE_NAME_DROPPING">
-		<supports>Background Feature</supports>
-	</append>
-	<append id="ID_WOTC_ACQINC_BACKGROUND_FEATURE_SUPPLY_CHAIN">
-		<supports>Background Feature</supports>
-	</append>
-	<append id="ID_WOTC_ACQINC_BACKGROUND_FEATURE_NEVER_TELL_ME_THE_ODDS">
-		<supports>Background Feature</supports>
-	</append>
-	<append id="ID_WOTC_ACQINC_BACKGROUND_FEATURE_LEGALESE">
-		<supports>Background Feature</supports>
-	</append>
-	<append id="ID_WOTC_ACQINC_BACKGROUND_FEATURE_INSIDE_INFORMANT">
-		<supports>Background Feature</supports>
-	</append>
-	<append id="ID_WOTC_ALEE_BACKGROUND_FEATURE_WAGONMASTER">
-		<supports>Background Feature</supports>
-	</append>
-	<append id="ID_WOTC_ALEE_BACKGROUND_FEATURE_DEEP_MINER">
-		<supports>Background Feature</supports>
-	</append>
-	<append id="ID_WOTC_ALEE_BACKGROUND_FEATURE_HARBORFOLK">
-		<supports>Background Feature</supports>
-	</append>
-	<append id="ID_WOTC_ALEE_BACKGROUND_FEATURE_HIGHBORN">
-		<supports>Background Feature</supports>
-	</append>
-	<append id="ID_WOTC_ALEE_BACKGROUND_FEATURE_PHLAN_SURVIVOR">
-		<supports>Background Feature</supports>
-	</append>
-	<append id="ID_WOCT_BGDIA_BACKGROUND_FEATURE_DUAL_PERSONALITIES">
-		<supports>Background Feature</supports>
-	</append>
-	<append id="ID_WOTC_EGTW_BACKGROUND_FEATURE_BALLAD_OF_THE_GRINNING_FOOL">
-		<supports>Background Feature</supports>
-	</append>
-	<append id="ID_WOTC_EGTW_BACKGROUND_FEATURE_SHADOW_NETWORK">
-		<supports>Background Feature</supports>
-	</append>
-	<append id="ID_WOTC_GOS_BACKGROUND_FEATURE_HARVEST_THE_WATER">
-		<supports>Background Feature</supports>
-	</append>
-	<append id="ID_WOTC_GOS_BACKGROUND_FEATURE_MARINE_STEADY">
-		<supports>Background Feature</supports>
-	</append>
-	<append id="ID_WOTC_GOS_BACKGROUND_FEATURE_ILL_PATCH_IT">
-		<supports>Background Feature</supports>
-	</append>
-	<append id="ID_WOTC_GOS_BACKGROUND_FEATURE_DOWN_LOW">
-		<supports>Background Feature</supports>
-	</append>
-	<append id="ID_WOTC_MOOT_BACKGROUND_FEATURE_ECHOES_OF_VICTORY">
-		<supports>Background Feature</supports>
-	</append>
-	<append id="ID_WOTC_ROD_BACKGROUND_HILLSFAR_MERCHANT_FEATURE_FACTOR">
-		<supports>Background Feature</supports>
-	</append>
-	<append id="ID_WOTC_ROD_BACKGROUND_HILLSFAR_MERCHANT_FEATURE_TRADE_CONTRACT">
-		<supports>Background Feature</supports>
-	</append>
-	<append id="ID_WOTC_UA20200224_ARCHETYPE_FEATURE_ARMORER_POWER_ARMOR">
+
+	<element name="Weapon Proficiency (Firearms)" type="Proficiency" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS">
+		<sheet alt="Firearms" />
 		<rules>
-			<stat name="speed" value="0" bonus="armor" />
+			<grant type="Proficiency" id="ID_KJT_CC_WEAPON_FLINTLOCK_PROFICIENCY" />
+			<grant type="Proficiency" id="ID_KJT_CC_WEAPON_REVOLVER_PROFICIENCY" />
+			<grant type="Proficiency" id="ID_KJT_CC_WEAPON_LONG_RIFLE_PROFICIENCY" />
+			<grant type="Proficiency" id="ID_KJT_CC_WEAPON_CARBINE_RIFLE_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS" />
 		</rules>
 	</append>
 </elements>
