@@ -1,7 +1,7 @@
 <elements>
 	<info>
 		<update version="1.0.2">
-			<file name="deities.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/deities.xml" />
+			<file name="deities.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/KJTCC/deities.xml" />
 		</update>
 	</info>
 	<element name="Atlanta" type="Deity" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_DEITY_ATLANTA">
