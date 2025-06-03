@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Oath of the Ancients</name>
+		<description>The Oath of the Ancients subclass from the Player’s Handbook 2024.</description>
+		<author url="https://dndstore.wizards.com/us/en/product/1001494/2024-player-s-handbook-digital-plus-physical-bundle">Wizards of the Coast</author>
+
+		<update version="0.0.1">
+			<file name="paladin-ancients.xml" url="https://raw.githubusercontent.com/Netrinil/Aurora/master/core/players-handbook-2024/archetypes/paladin-ancients.xml" />
+		</update>
+	</info>
+
+	<element name="Oath of the Ancients" type="Archetype" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_ARCHETYPE_PALADIN_OATH_OF_THE_ANCIENTS">
+		<supports>Sacred Oath</supports>
+		<description>
+			<p class="flavor">Preserve Life and Light in the World</p>
+			<p>The Oath of the Ancients is as old as the first elves. Paladins who swear this oath cherish the light; they love the beautiful and life-giving things of the world more than any principles of honor, courage, and justice.They often adorn their armor and clothing with images of growing things —leaves, antlers, or flowers— to reflect their commitment to preserving life and light.</p>
+			<p class="indent">These paladins share the following tenets:</p>
+			<ul>
+				<li>Kindle the light of hope.</li>
+				<li>Shelter life.</li>
+				<li>Delight in art and laughter.</li>
+			</ul>
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_OOTA_NATURES_WRATH" />
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_OOTA_OATH_SPELLS" />
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_OOTA_AURA_OF_WARDING" />
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_OOTA_UNDYING_SENTINEL" />
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_OOTA_ELDER_CHAMPION" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_OOTA_NATURES_WRATH" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_OOTA_OATH_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_OOTA_AURA_OF_WARDING" level="7" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_OOTA_UNDYING_SENTINEL" level="15" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_OOTA_ELDER_CHAMPION" level="20" />
+		</rules>
+	</element>
+	<element name="Level 3: Nature's Wrath" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_OOTA_NATURES_WRATH">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_24_OOTA_NATURES_WRATH</requirements>
+		<description>
+			<p>As a Magic action, you can expend one use of your Channel Divinity to conjure spectral vines around nearby creatures. Each creature of your choice that you can see within 15 feet of yourself must succeed on a Strength saving throw or have the Restrained condition for 1 minute. A Restrained creature repeats the save at the end of each of its turns, ending the effect on itself on a success.</p>
+		</description>
+		<sheet alt="Nature's Wrath" action="Magic Action" usage="Channel Divinity">
+			<description>Each creature of your choice that you can see within 15ft of yourself must succeed on a STR saving throw or have the Restrained condition for 1 minute. A Restrained creature repeats the save at the end of each of its turns, ending the effect on itself on a success.</description>
+		</sheet>
+	</element>
+	<element name="Level 3: Oath Spells" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_OOTA_OATH_SPELLS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_24_OOTA_OATH_SPELLS</requirements>
+		<description>
+			<p>The magic of your oath ensures you always have certain spells ready; when you reach a Paladin level specified in the Oath of the Ancients Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5 class="caption">OATH OF THE ANCIENTS SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Paladin Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>Ensnaring Strike, Speak with Animals</em></td></tr>
+				<tr><td>5th</td><td><em>Misty Step, Moonbeam</em></td></tr>
+				<tr><td>9th</td><td><em>Plant Growth, Protection from Energy</em></td></tr>
+				<tr><td>13th</td><td><em>Ice Storm, Stoneskin</em></td></tr>
+				<tr><td>17th</td><td><em>Commune with Nature, Tree Stride</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ENSNARING_STRIKE" level="3" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SPEAK_WITH_ANIMALS" level="3" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MISTY_STEP" level="5" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MOONBEAM" level="5" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_PLANT_GROWTH" level="9" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_PROTECTION_FROM_ENERGY" level="9" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ICE_STORM" level="13" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_STONESKIN" level="13" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_COMMUNE_WITH_NATURE" level="17" spellcasting="Paladin" prepared="true"/>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_TREE_STRIDE" level="17" spellcasting="Paladin" prepared="true"/>
+		</rules>
+	</element>
+	<element name="Level 7: Aura of Warding" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_OOTA_AURA_OF_WARDING">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_24_OOTA_AURA_OF_WARDING</requirements>
+		<description>
+			<p>Ancient magic lies so heavily upon you that it forms an eldritch ward, blunting energy from beyond the Material Plane; you and your allies have Resistance to Necrotic, Psychic, and Radiant damage while in your Aura of Protection.</p>
+		</description>
+		<sheet alt="Aura of Warding">
+			<description>You and your allies have Resistance to Necrotic, Psychic, and Radiant damage within your Aura of Protection.</description>
+		</sheet>
+	</element>
+	<element name="Level 15: Undying Sentinel" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_OOTA_UNDYING_SENTINEL">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_24_OOTA_UNDYING_SENTINEL</requirements>
+		<description>
+			<p>When you are reduced to 0 Hit Points and not killed outright, you can drop to 1 Hit Point instead, and you regain a number of Hit Points equal to three times your Paladin level. Once you use this feature, you can't do so again until you finish a Long Rest.</p>
+			<p class="indent">Additionally, you can't be aged magically, and you cease visibly aging.</p>
+		</description>
+		<sheet alt="Undying Sentinel" usage="1/Long Rest">
+			<description>When you are reduced to 0 hit points and are not killed outright, you can choose to drop to 1 hit point instead, and you regain {{undying:sentinel}} Hit Points.
+			You suffer none of the drawbacks of old age, and you can't be aged magically.</description>
+		</sheet>
+		<rules>
+			<stat name="undying:sentinel" value="level:paladin" />
+			<stat name="undying:sentinel" value="level:paladin" />
+			<stat name="undying:sentinel" value="level:paladin" />
+		</rules>
+	</element>
+	<element name="Level 20: Elder Champion" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_OOTA_ELDER_CHAMPION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_24_OOTA_ELDER_CHAMPION</requirements>
+		<description>
+			<p>As a Bonus Action, you can imbue your Aura of Protection with primal power, granting the benefits below for 1 minute or until you end them (no action required).Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending a level 5 spell slot (no action required).</p>
+			<p class="indent"><b><i>Diminish Defiance.</i></b> Enemies in the aura have Disadvantage on saving throws against your spells and Channel Divinity options.</p>
+			<p class="indent"><b><i>Regeneration.</i></b> At the start of each of your turns, you regain 10 Hit Points.</p>
+			<p class="indent"><b><i>Swift Spells.</i></b> Whenever you cast a spell that has a casting time of an action, you can cast it using a Bonus Action instead.</p>
+		</description>
+		<sheet alt="Elder Champion" action="Bonus Action" usage="1/Long Rest">
+			<description>You gain the following benefits for 10 minutes. &#13;
+			You can expend a level 5 spell slot to use this feature again.</description>			
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Diminish Defiance" supports="ID_WOTC_PHB24_ARCHETYPE_FEATURE_OOTA_DIMINISH_DEFIANCE" default="ID_WOTC_PHB24_ARCHETYPE_FEATURE_OOTA_DIMINISH_DEFIANCE" />
+			<select type="Archetype Feature" name="Regeneration" supports="ID_WOTC_PHB24_ARCHETYPE_FEATURE_OOTA_REGENERATION" default="ID_WOTC_PHB24_ARCHETYPE_FEATURE_OOTA_REGENERATION" />
+			<select type="Archetype Feature" name="Swift Spells" supports="ID_WOTC_PHB24_ARCHETYPE_FEATURE_OOTA_SWIFT_SPELLS" default="ID_WOTC_PHB24_ARCHETYPE_FEATURE_OOTA_SWIFT_SPELLS" />
+		</rules>
+	</element>
+	<element name="Diminish Defiance" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_OOTA_DIMINISH_DEFIANCE">
+		<supports>ID_WOTC_PHB24_ARCHETYPE_FEATURE_OOTA_DIMINISH_DEFIANCE</supports>
+		<description>
+			<p>Enemies in the aura have Disadvantage on saving throws against your spells and Channel Divinity options.</p>
+		</description>
+		<sheet>
+			<description>Enemies in the aura have Disadvantage on saving throws against your spells and Channel Divinity options.</description>
+		</sheet>
+	</element>
+	<element name="Regeneration" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_OOTA_REGENERATION">
+		<supports>ID_WOTC_PHB24_ARCHETYPE_FEATURE_OOTA_REGENERATION</supports>
+		<description>
+			<p>At the start of each of your turns, you regain 10 Hit Points.</p>
+		</description>
+		<sheet>
+			<description>At the start of each of your turns, you regain 10 Hit Points.</description>
+		</sheet>
+	</element>
+	<element name="Swift Spells" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_OOTA_SWIFT_SPELLS">
+		<supports>ID_WOTC_PHB24_ARCHETYPE_FEATURE_OOTA_SWIFT_SPELLS</supports>
+		<description>
+			<p>Whenever you cast a spell that has a casting time of an action, you can cast it using a Bonus Action instead.</p>
+		</description>
+		<sheet>
+			<description>Whenever you cast a spell that has a casting time of an action, you can cast it using a Bonus Action instead.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Nature's Wrath Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_24_OOTA_NATURES_WRATH" />
+	<element name="Oath Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_24_OOTA_OATH_SPELLS" />
+	<element name="Aura of Warding Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_24_OOTA_AURA_OF_WARDING" />
+	<element name="Undying Sentinel Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_24_OOTA_UNDYING_SENTINEL" />
+	<element name="Elder Champion Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_24_OOTA_ELDER_CHAMPION" />
+	
+	
+</elements>

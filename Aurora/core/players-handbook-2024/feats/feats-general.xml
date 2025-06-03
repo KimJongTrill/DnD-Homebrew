@@ -1,0 +1,2372 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>General Category Feats</name>
+		<description>The General Category Feats from the Player’s Handbook 2024.</description>
+		<author url="https://dndstore.wizards.com/us/en/product/1001494/2024-player-s-handbook-digital-plus-physical-bundle">Wizards of the Coast</author>
+		<update version="0.0.2">
+			<file name="feats-general.xml" url="https://raw.githubusercontent.com/Netrinil/Aurora/master/core/players-handbook-2024/feats/feats-general.xml" />
+		</update>
+	</info>
+		
+	<element name="Ability Score Improvement" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT">
+		<supports>General</supports>
+		<requirements>[level:4]</requirements>
+		<prerequisite>Level 4+, General Feat</prerequisite>
+		<description>
+			<p><em>General Feat (Prerequisite: Level 4+)</em></p>
+			<p>Increase one ability score of your choice by 2, or increase two ability scores of your choice by 1.This feat can't increase an ability score above 20.</p>
+			<p class="indent"><b><i>Repeatable.</i></b> You can take this feat more than once.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement (4th LV)" supports="ID_WOTC_PHB24_FEAT_FEATURE_ASI_OPTION2_1|ID_WOTC_PHB24_FEAT_FEATURE_ASI_OPTION1_1" />
+		</rules>
+	</element>
+	<element name="Ability Score Improvement" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_2">
+		<compendium display="false" />
+		<supports>General</supports>
+		<requirements>ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT</requirements>
+		<prerequisite>Level 4+, General Feat</prerequisite>
+		<description />
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement (8th LV)" supports="ID_WOTC_PHB24_FEAT_FEATURE_ASI_OPTION2_2|ID_WOTC_PHB24_FEAT_FEATURE_ASI_OPTION1_2" />
+		</rules>
+	</element>
+	<element name="Ability Score Improvement" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_3">
+		<compendium display="false" />
+		<supports>General</supports>
+		<requirements>ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_2</requirements>
+		<prerequisite>Level 4+, General Feat</prerequisite>
+		<description />
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement (12th LV)" supports="ID_WOTC_PHB24_FEAT_FEATURE_ASI_OPTION2_3|ID_WOTC_PHB24_FEAT_FEATURE_ASI_OPTION1_3" />
+		</rules>
+	</element>
+	<element name="Ability Score Improvement" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_4">
+		<compendium display="false" />
+		<supports>General</supports>
+		<requirements>ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_3</requirements>
+		<prerequisite>Level 4+, General Feat</prerequisite>
+		<description />
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement (16th LV)" supports="ID_WOTC_PHB24_FEAT_FEATURE_ASI_OPTION2_4|ID_WOTC_PHB24_FEAT_FEATURE_ASI_OPTION1_4" />
+		</rules>
+	</element>
+	<element name="Ability Score Improvement" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_5">
+		<compendium display="false" />
+		<supports>General</supports>
+		<requirements>ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT,ID_WOTC_PHB24_CLASS_FIGHTER</requirements>
+		<prerequisite>Level 4+, General Feat</prerequisite>
+		<description />
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement (6th LV)" supports="ID_WOTC_PHB24_FEAT_FEATURE_ASI_OPTION2_5|ID_WOTC_PHB24_FEAT_FEATURE_ASI_OPTION1_5" />
+		</rules>
+	</element>
+	<element name="Ability Score Improvement" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_6">
+		<compendium display="false" />
+		<supports>General</supports>
+		<requirements>ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_2,ID_WOTC_PHB24_CLASS_ROGUE</requirements>
+		<prerequisite>Level 4+, General Feat</prerequisite>
+		<description />
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement (10th LV)" supports="ID_WOTC_PHB24_FEAT_FEATURE_ASI_OPTION2_6|ID_WOTC_PHB24_FEAT_FEATURE_ASI_OPTION1_6" />
+		</rules>
+	</element>
+	<element name="Ability Score Improvement" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_7">
+		<compendium display="false" />
+		<supports>General</supports>
+		<requirements>ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_3,ID_WOTC_PHB24_CLASS_FIGHTER</requirements>
+		<prerequisite>Level 4+, General Feat</prerequisite>
+		<description />
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement (14th LV)" supports="ID_WOTC_PHB24_FEAT_FEATURE_ASI_OPTION2_7|ID_WOTC_PHB24_FEAT_FEATURE_ASI_OPTION1_7" />
+		</rules>
+	</element>	
+	<element name="Ability Score Improvement" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_8">
+		<compendium display="false" />
+		<supports>General</supports>
+		<requirements>ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_4</requirements>
+		<prerequisite>Level 4+, General Feat</prerequisite>
+		<description />
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement (19th LV)" supports="ID_WOTC_PHB24_FEAT_FEATURE_ASI_OPTION2_8|ID_WOTC_PHB24_FEAT_FEATURE_ASI_OPTION1_8" />
+		</rules>
+	</element>
+	<element name="Ability Score Improvement +2" type="Ability Score Improvement" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_ASI_OPTION2_1">
+		<compendium display="false" />
+		<description>
+			<p>Increase one ability score of your choice by 2.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement +2 (Feat)" supports="Feat ASI 2" />
+		</rules>
+	</element>
+	<element name="Ability Score Improvement +2" type="Ability Score Improvement" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_ASI_OPTION2_2">
+		<compendium display="false" />
+		<description>
+			<p>Increase one ability score of your choice by 2.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement +2 (Feat)" supports="Feat ASI 2" />
+		</rules>
+	</element>
+	<element name="Ability Score Improvement +2" type="Ability Score Improvement" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_ASI_OPTION2_3">
+		<compendium display="false" />
+		<description>
+			<p>Increase one ability score of your choice by 2.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement +2 (Feat)" supports="Feat ASI 2" />
+		</rules>
+	</element>
+	<element name="Ability Score Improvement +2" type="Ability Score Improvement" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_ASI_OPTION2_4">
+		<compendium display="false" />
+		<description>
+			<p>Increase one ability score of your choice by 2.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement +2 (Feat)" supports="Feat ASI 2" />
+		</rules>
+	</element>
+	<element name="Ability Score Improvement +2" type="Ability Score Improvement" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_ASI_OPTION2_5">
+		<compendium display="false" />
+		<description>
+			<p>Increase one ability score of your choice by 2.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement +2 (Feat)" supports="Feat ASI 2" />
+		</rules>
+	</element>
+	<element name="Ability Score Improvement +2" type="Ability Score Improvement" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_ASI_OPTION2_6">
+		<compendium display="false" />
+		<description>
+			<p>Increase one ability score of your choice by 2.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement +2 (Feat)" supports="Feat ASI 2" />
+		</rules>
+	</element>
+	<element name="Ability Score Improvement +2" type="Ability Score Improvement" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_ASI_OPTION2_7">
+		<compendium display="false" />
+		<description>
+			<p>Increase one ability score of your choice by 2.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement +2 (Feat)" supports="Feat ASI 2" />
+		</rules>
+	</element>
+	<element name="Ability Score Improvement +2" type="Ability Score Improvement" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_ASI_OPTION2_8">
+		<compendium display="false" />
+		<description>
+			<p>Increase one ability score of your choice by 2.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement +2 (Feat)" supports="Feat ASI 2" />
+		</rules>
+	</element>
+	<element name="Ability Score Improvement +1, +1" type="Ability Score Improvement" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_ASI_OPTION1_1">
+		<compendium display="false" />
+		<description>
+			<p>Increase two ability scores of your choice by 1.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement +1, +1 (Feat)" supports="Feat ASI 1" number="2"/>
+		</rules>
+	</element>
+	<element name="Ability Score Improvement +1, +1" type="Ability Score Improvement" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_ASI_OPTION1_2">
+		<compendium display="false" />
+		<description>
+			<p>Increase two ability scores of your choice by 1.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement +1, +1 (Feat)" supports="Feat ASI 1" number="2"/>
+		</rules>
+	</element>
+	<element name="Ability Score Improvement +1, +1" type="Ability Score Improvement" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_ASI_OPTION1_3">
+		<compendium display="false" />
+		<description>
+			<p>Increase two ability scores of your choice by 1.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement +1, +1 (Feat)" supports="Feat ASI 1" number="2"/>
+		</rules>
+	</element>
+	<element name="Ability Score Improvement +1, +1" type="Ability Score Improvement" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_ASI_OPTION1_4">
+		<compendium display="false" />
+		<description>
+			<p>Increase two ability scores of your choice by 1.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement +1, +1 (Feat)" supports="Feat ASI 1" number="2"/>
+		</rules>
+	</element>
+	<element name="Ability Score Improvement +1, +1" type="Ability Score Improvement" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_ASI_OPTION1_5">
+		<compendium display="false" />
+		<description>
+			<p>Increase two ability scores of your choice by 1.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement +1, +1 (Feat)" supports="Feat ASI 1" number="2"/>
+		</rules>
+	</element>
+	<element name="Ability Score Improvement +1, +1" type="Ability Score Improvement" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_ASI_OPTION1_6">
+		<compendium display="false" />
+		<description>
+			<p>Increase two ability scores of your choice by 1.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement +1, +1 (Feat)" supports="Feat ASI 1" number="2"/>
+		</rules>
+	</element>
+	<element name="Ability Score Improvement +1, +1" type="Ability Score Improvement" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_ASI_OPTION1_7">
+		<compendium display="false" />
+		<description>
+			<p>Increase two ability scores of your choice by 1.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement +1, +1 (Feat)" supports="Feat ASI 1" number="2"/>
+		</rules>
+	</element>
+	<element name="Ability Score Improvement +1, +1" type="Ability Score Improvement" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_ASI_OPTION1_8">
+		<compendium display="false" />
+		<description>
+			<p>Increase two ability scores of your choice by 1.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement +1, +1 (Feat)" supports="Feat ASI 1" number="2"/>
+		</rules>
+	</element>
+ 	 
+	<element name="Actor" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_ACTOR">
+		<requirements>[level:4],[cha:13]</requirements>
+		<supports>General</supports>
+		<prerequisite>Level 4+, Charisma 13+, General Feat</prerequisite>
+		<description>
+			<p><em>General Feat (Prerequisite: Level 4+, Charisma 13+)</em></p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Charisma score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Impersonation.</i></b> While you're disguised as a real or fictional person, you have Advantage on Charisma (Deception or Performance) checks to convince others that you are that person.</p>
+			<p class="indent"><b><i>Mimicry.</i></b> You can mimic the sounds of other creatures, including speech. A creature that hears the mimicry must succeed on a Wisdom (Insight) check to determine the effect is faked (DC 8 plus your Charisma modifier and Proficiency Bonus).</p>
+		</description>
+		<sheet>
+			<description>While you're disguised as a real or fictional person, you have Advantage on Charisma (Deception or Performance) checks to convince others that you are that person. You can mimic the sounds of other creatures, including speech. A creature that hears the mimicry must succeed on a DC{{actor:mimicry:dc}} WIS(Insight) check to determine the effect is faked.</description>
+		</sheet>
+		<rules>
+			<stat name="charisma" value="1" alt="Actor" />
+			<stat name="actor:mimicry:dc" value="8" />
+			<stat name="actor:mimicry:dc" value="proficiency" />
+			<stat name="actor:mimicry:dc" value="charisma:modifier" />
+		</rules>
+	</element>
+
+	<element name="Athlete" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_ATHLETE">
+		<requirements>[level:4],([str:13]||[dex:13])</requirements>
+		<supports>General</supports>
+		<prerequisite>Level 4+, Strength or Dexterity 13+, General Feat</prerequisite>
+		<description>
+			<p><em>General Feat (Prerequisite: Level 4+, Strength or Dexterity 13+)</em></p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Strength or Dexterity score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Climb Speed.</i></b> You gain a Climb Speed equal to your Speed.</p>
+			<p class="indent"><b><i>Hop Up.</i></b> When you have the Prone condition, you can right yourself with only 5 feet of movement.</p>
+			<p class="indent"><b><i>Jumping.</i></b> You can make a running Long or High Jump after moving only 5 feet.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat Feature" name="Ability Score Increase (Athlete)" supports="Athlete" />
+			<stat name="speed:climb" value="speed" bonus="base" />
+		</rules>
+	</element>
+	<element name="Strength" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_ATHLETE_STRENGTH">
+		<compendium display="false" />
+		<supports>Athlete</supports>
+		<description>
+			<p>Increase your Strength by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Athlete">
+			<description>When you have the Prone condition, you can right yourself with only 5 feet of movement. You can make a running Long or High Jump after moving only 5 feet.</description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="1" alt="Athlete" />
+		</rules>
+	</element>
+	<element name="Dexterity" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_ATHLETE_DEXTERITY">
+		<compendium display="false" />
+		<supports>Athlete</supports>
+		<description>
+			<p>Increase your Dexterity by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Athlete">
+			<description>When you have the Prone condition, you can right yourself with only 5 feet of movement. You can make a running Long or High Jump after moving only 5 feet.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" alt="Athlete" />
+		</rules>
+	</element>
+
+	<element name="Charger" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_CHARGER">
+		<requirements>[level:4],([str:13]||[dex:13])</requirements>
+		<supports>General</supports>
+		<prerequisite>Level 4+, Strength or Dexterity 13+, General Feat</prerequisite>
+		<description>
+			<p><em>General Feat (Prerequisite: Level 4+, Strength or Dexterity 13+)</em></p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Strength or Dexterity score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Improved Dash.</i></b> When you take the Dash action, your Speed increases by 10 feet for that action.</p>
+			<p class="indent"><b><i>Charge Attack.</i></b> If you move at least 10 feet in a straight line toward a target immediately before hitting it with a melee attack roll as part of the Attack action, choose one of the following effects: gain a 1d8 bonus to the attack's damage roll, or push the target up to 10 feet away if it is no more than one size larger than you. You can use this benefit only once on each of your turns.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat Feature" name="Ability Score Increase (Charger)" supports="Charger" />
+			<stat name="speed:climb" value="speed" bonus="base" />
+		</rules>
+	</element>
+	<element name="Strength" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_CHARGER_STRENGTH">
+		<compendium display="false" />
+		<supports>Charger</supports>
+		<description>
+			<p>Increase your Strength by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Charger">
+			<description>When you take the Dash action, your Speed increases by 10 feet for that action. If you move at least 10ft in a straight line toward a target immediately before hitting it with a melee attack roll as part of the Attack action, choose one of the following effects: gain a 1d8 bonus to the attack's damage roll, or push the target up to 10 feet away if it is no more than one size larger than you. You can use this benefit only once on each of your turns.</description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="1" alt="Charger" />
+		</rules>
+	</element>
+	<element name="Dexterity" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_CHARGER_DEXTERITY">
+		<compendium display="false" />
+		<supports>Charger</supports>
+		<description>
+			<p>Increase your Dexterity by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Charger">
+			<description>When you take the Dash action, your Speed increases by 10 feet for that action. If you move at least 10ft in a straight line toward a target immediately before hitting it with a melee attack roll as part of the Attack action, choose one of the following effects: gain a 1d8 bonus to the attack's damage roll, or push the target up to 10 feet away if it is no more than one size larger than you. You can use this benefit only once on each of your turns.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" alt="Charger" />
+		</rules>
+	</element>
+
+	<element name="Chef" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_CHEF">
+		<requirements>[level:4]</requirements>
+		<supports>General</supports>
+		<prerequisite>Level 4+, General Feat</prerequisite>
+		<description>
+			<p><em>General Feat (Prerequisite: Level 4+)</em></p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Constitution or Wisdom score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Cook's Utensils.</i></b> You gain proficiency with Cook's Utensils if you don't already have it.</p>
+			<p class="indent"><b><i>Replenishing Meal.</i></b> As part of a Short Rest, you can cook special food if you have ingredients and Cook's Utensils on hand. You can prepare enough of this food for a number of creatures equal to 4 plus your Proficiency Bonus. At the end of the Short Rest, any creature who eat the food and spends one or more Hit Dice to regain Hit Points regains an extra 1d8 Hit Points.</p>
+			<p class="indent"><b><i>Bolstering Treats.</i></b> With 1 hour of work or when you finish a Long Rest, you can cook a number of treats equal to your Proficiency Bonus if you have ingredients and Cook's Utensils on hand. These special treats last 8 hours after being made. A creature can use a Bonus Action to eat one of those treats to gain a number of Temporary Hit Points equal to your Proficiency Bonus.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat Feature" name="Ability Score Increase (Chef)" supports="Chef" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS" />
+			<stat name="chef:meal" value="4" />
+			<stat name="chef:meal" value="proficiency" />
+		</rules>
+	</element>
+	<element name="Constitution" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_CHEF_CONSTITUTION">
+		<compendium display="false" />
+		<supports>Chef</supports>
+		<description>
+			<p>Increase your Constitution by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Chef">
+			<description>As part of a Short Rest, if you have ingredients and Cook's Utensils on hand, you can prepare enough of food for {{chef:meal}} creatures. At the end of the Short Rest, any creature who eat the food and spends one or more Hit Dice to regain HP regains an extra 1d8 HP. 
+			With 1 hour of work or when you finish a Long Rest, you can cook {{proficiency}} treats if you have ingredients and Cook's Utensils on hand. These special treats last 8 hours. A creature can use a Bonus Action to eat one of those treats to gain {{proficiency}} Temporary HP.</description>
+		</sheet>
+		<rules>
+			<stat name="constitution" value="1" alt="Chef" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_CHEF_WISDOM">
+		<compendium display="false" />
+		<supports>Chef</supports>
+		<description>
+			<p>Increase your Wisdom by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Chef">
+			<description>As part of a Short Rest, if you have ingredients and Cook's Utensils on hand, you can prepare enough of food for {{chef:meal}} creatures. At the end of the Short Rest, any creature who eat the food and spends one or more Hit Dice to regain HP regains an extra 1d8 HP. 
+			With 1h of work or when you finish a Long Rest, you can cook {{proficiency}} treats if you have ingredients and Cook's Utensils on hand. These special treats last 8h. A creature can use a Bonus Action to eat one of those treats to gain {{proficiency}} Temporary HP.</description>
+		</sheet>
+		<rules>
+			<stat name="wisdom" value="1" alt="Chef" />
+		</rules>
+	</element>
+
+	<element name="Crossbow Expert" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_CROSSBOW_EXPERT">
+		<requirements>[level:4],[dex:13]</requirements>
+		<supports>General</supports>
+		<prerequisite>Level 4+, Dexterity 13+, General Feat</prerequisite>
+		<description>
+			<p><em>General Feat (Prerequisite: Level 4+, Dexterity 13+)</em></p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Dexterity score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Ignore Loading.</i></b> You ignore the Loading property of the Hand Crossbow. Heavy Crossbow, and Light Crossbow (all called crossbows elsewhere in this feat). If you're holding one of them, you can load a piece of ammunition into it even if you lack a free hand.</p>
+			<p class="indent"><b><i>Firing in Melee.</i></b> Being within 5 feet of an enemy doesn't impose Disadvantage on your attack rolls with crossbows.</p>
+			<p class="indent"><b><i>Dual Wielding.</i></b> When you make the extra attack of the Light property, you can add your ability modifier to the damage of the extra attack if that attack is with a crossbow that has the Light property and you aren't already adding that modifier to the damage.</p>
+		</description>
+		<sheet>
+			<description> You ignore the Loading property of crossbows. If you're holding one of them, you can load a piece of ammunition into it even if you lack a free hand. Being within 5 feet of an enemy doesn't impose Disadvantage on your attack rolls with crossbows. When you make the extra attack with a crossbow that has the Light property, you can add your ability modifier to the damage of the extra attack if you aren't already adding that modifier to the damage.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" alt="Crossbow Expert" />
+		</rules>
+	</element>
+
+	<element name="Crusher" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_CRUSHER">
+		<requirements>[level:4]</requirements>
+		<supports>General</supports>
+		<prerequisite>Level 4+, General Feat</prerequisite>
+		<description>
+			<p><em>General Feat (Prerequisite: Level 4+)</em></p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Strength or Constitution score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Push.</i></b> Once per turn, when you hit a creature with an attack that deals Bludgeoning damage, you can move it 5 feet to an unoccupied space if the target is no more than one size larger than you.</p>
+			<p class="indent"><b><i>Enhanced Critical.</i></b> When you score a Critical Hit that deals Bludgeoning damage to a creature, attack rolls against that creature have Advantage until the start of your next turn.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat Feature" name="Ability Score Increase (Crusher)" supports="Crusher" />
+		</rules>
+	</element>
+	<element name="Strength" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_CRUSHER_STRENGTH">
+		<compendium display="false" />
+		<supports>Crusher</supports>
+		<description>
+			<p>Increase your Strength by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Crusher">
+			<description>Once per turn, when you hit a creature with an attack that deals Bludgeoning damage, you can move it 5 feet to an unoccupied space if the target is no more than one size larger than you. 
+			When you score a Critical Hit that deals Bludgeoning damage to a creature, attack rolls against that creature have Advantage until the start of your next turn.</description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="1" alt="Crusher" />
+		</rules>
+	</element>
+	<element name="Constitution" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_CRUSHER_CONSTITUTION">
+		<compendium display="false" />
+		<supports>Crusher</supports>
+		<description>
+			<p>Increase your Constitution by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Crusher">
+			<description>Once per turn, when you hit a creature with an attack that deals Bludgeoning damage, you can move it 5 feet to an unoccupied space if the target is no more than one size larger than you. 
+			When you score a Critical Hit that deals Bludgeoning damage to a creature, attack rolls against that creature have Advantage until the start of your next turn.</description>
+		</sheet>
+		<rules>
+			<stat name="constitution" value="1" alt="Crusher" />
+		</rules>
+	</element>
+
+	<element name="Defensive Duelist" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_DEFENSIVE_DUELIST">
+		<requirements>[level:4],[dex:13]</requirements>
+		<supports>General</supports>
+		<prerequisite>Level 4+, Dexterity 13+, General Feat</prerequisite>
+		<description>
+			<p><em>General Feat (Prerequisite: Level 4+, Dexterity 13+)</em></p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Dexterity score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Parry.</i></b> If you're holding a Finesse weapon and another creature hits you with a melee attack, you can take a Reaction to add your Proficiency Bonus to your Armor Class, potentially causing the attack to miss you. You gain this bonus to your AC against melee attacks until the start of your next turn.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>If you're holding a Finesse weapon and another creature hits you with a melee attack, you can add +{{proficiency}} to your AC, potentially causing the attack to miss you. You gain this AC bonus against melee attacks until the start of your next turn.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" alt="Defensive Duelist" />
+		</rules>
+	</element>
+
+	<element name="Dual Wielder" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_DUAL_WIELDER">
+		<requirements>[level:4],([str:13]||[dex:13])</requirements>
+		<supports>General</supports>
+		<prerequisite>Level 4+, Strength or Dexterity 13+, General Feat</prerequisite>
+		<description>
+			<p><em>General Feat (Prerequisite: Level 4+, Strength or Dexterity 13+)</em></p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Strength or Dexterity score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Enhanced Dual Wielding.</i></b> When you take the Attack action on your turn and attack with a weapon that has the Light property, you can make one extra attack as a Bonus Action later on the same turn with a different weapon, which must be a Melee weapon that lacks the Two-Handed property. You don't add your ability modifier to the extra attack's damage unless that modifier is negative.</p>
+			<p class="indent"><b><i>Quick Draw.</i></b> You can draw or stow two weapons that lack the Two-Handed property when you would normally be able to draw or stow only one.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat Feature" name="Ability Score Increase (Dual Wielder)" supports="Dual Wielder" />
+		</rules>
+	</element>
+	<element name="Strength" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_DUAL_WIELDER_STRENGTH">
+		<compendium display="false" />
+		<supports>Dual Wielder</supports>
+		<description>
+			<p>Increase your Strength by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Dual Wielder">
+			<description>When you attack with a weapon that has the Light property, you can make one extra attack as a Bonus Action with a different Melee weapon that lacks the Two-Handed property. You don't add your ability modifier to the extra attack's damage unless that modifier is negative. You can draw or stow two weapons that lack the Two-Handed property instead of only one.</description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="1" alt="Dual Wielder" />
+		</rules>
+	</element>
+	<element name="Dexterity" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_DUAL_WIELDER_DEXTERITY">
+		<compendium display="false" />
+		<supports>Dual Wielder</supports>
+		<description>
+			<p>Increase your Dexterity by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Dual Wielder">
+			<description>When you attack with a weapon that has the Light property, you can make one extra attack as a Bonus Action with a different Melee weapon that lacks the Two-Handed property. You don't add your ability modifier to the extra attack's damage unless that modifier is negative. You can draw or stow two weapons that lack the Two-Handed property instead of only one.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" alt="Dual Wielder" />
+		</rules>
+	</element>
+
+	<element name="Durable" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_DURABLE">
+		<requirements>[level:4]</requirements>
+		<supports>General</supports>
+		<prerequisite>Level 4+, General Feat</prerequisite>
+		<description>
+			<p><em>General Feat (Prerequisite: Level 4+)</em></p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Constitution score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Defy Death.</i></b> You have Advantage on Death Saving Throws.</p>
+			<p class="indent"><b><i>Speedy Recovery.</i></b> As a Bonus Action, you can expend one of your Hit Point Dice, roll the die, and regain a number of Hit Points equal to the roll.</p>
+		</description>
+		<sheet>
+			<description>You have Advantage on Death Saving Throws. As a Bonus Action, you can expend one of your Hit Point Dice, roll the die, and regain a number of HP equal to the roll.</description>
+		</sheet>
+		<rules>
+			<stat name="constitution" value="1" alt="Durable" />
+		</rules>
+	</element>
+	
+	<element name="Elemental Adept" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_ELEMENTAL_ADEPT">
+		<requirements>[level:4],(ID_WOTC_PHB24_CLASS_FEATURE_BARD_SPELLCASTING||ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SPELLCASTING||ID_WOTC_PHB24_CLASS_FEATURE_DRUID_SPELLCASTING||ID_WOTC_PHB24_ARCHETYPE_FEATURE_FIGHTER_ELDRITCH_KNIGHT_SPELLCASTING||ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_SPELLCASTING||ID_WOTC_PHB24_CLASS_FEATURE_RANGER_SPELLCASTING||ID_WOTC_PHB24_ARCHETYPE_FEATURE_ROGUE_ARCANE_TRICKSTER_SPELLCASTING||ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_PACT_MAGIC||ID_WOTC_PHB24_CLASS_FEATURE_SORCERER_SPELLCASTING_SORCERER||ID_WOTC_PHB24_CLASS_FEATURE_WIZARD_SPELLCASTING)</requirements>
+		<supports>General</supports>
+		<prerequisite>Level 4+, Spellcasting or Pact Magic Feature, General Feat</prerequisite>
+		<description>
+			<p><em>General Feat (Prerequisite: Level 4+, Spellcasting or Pact Magic Feature)</em></p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Energy Mastery.</i></b> Choose one of the following damage types: Acid, Cold, Fire, Lightning, or Thunder. Spells you cast ignore Resistance to damage of the chosen type. In addition, when you roll damage for a spell you cast that deals damage of that type, you can treat any 1 on a damage die as a 2.</p>
+			<p class="indent"><b><i>Repeatable.</i></b> You can take this feat more than once, but you must choose a different damage type each time for Energy Mastery.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat Feature" name="Ability Score Increase, Elemental Adept" supports="Elemental Adept 24" />
+			<select type="Feat Feature" name="Energy Mastery" supports="Energy Mastery" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_ELEMENTAL_ADEPT_INTELLIGENCE">
+		<compendium display="false" />
+		<supports>Elemental Adept 24</supports>
+		<description>
+			<p>Increase your Intelligence by 1, to a maximum of 20.</p>
+		</description>
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<stat name="intelligence" value="1" alt="Elemental Adept" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_ELEMENTAL_ADEPT_WISDOM">
+		<compendium display="false" />
+		<supports>Elemental Adept 24</supports>
+		<description>
+			<p>Increase your Wisdom by 1, to a maximum of 20.</p>
+		</description>
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<stat name="wisdom" value="1" alt="Elemental Adept" />
+		</rules>
+	</element>
+	<element name="Charisma" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_ELEMENTAL_ADEPT_CHARISMA">
+		<compendium display="false" />
+		<supports>Elemental Adept 24</supports>
+		<description>
+			<p>Increase your Charisma by 1, to a maximum of 20.</p>
+		</description>
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<stat name="charisma" value="1" alt="Elemental Adept" />
+		</rules>
+	</element>
+	<element name="Acid" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_ELEMENTAL_ADEPT_ACID">
+		<compendium display="false" />
+		<supports>Energy Mastery</supports>
+		<description>
+			<p>Spells you cast ignore Acid Resistance. In addition, when you roll damage for a spell you cast that deals Acid damage, you can treat any 1 on a damage die as a 2.</p>
+		</description>
+		<sheet alt="Elemental Adept, Acid">
+			<description>Spells you cast ignore Acid Resistance. Treat any 1 on a damage die as a 2 with Acid spells.</description>
+		</sheet>
+	</element>
+	<element name="Cold" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_ELEMENTAL_ADEPT_COLD">
+		<compendium display="false" />
+		<supports>Energy Mastery</supports>
+		<description>
+			<p>Spells you cast ignore Cold Resistance. In addition, when you roll damage for a spell you cast that deals Cold damage, you can treat any 1 on a damage die as a 2.</p>
+		</description>
+		<sheet alt="Elemental Adept, Cold">
+			<description>Spells you cast ignore Cold Resistance. Treat any 1 on a damage die as a 2 with Cold spells.</description>
+		</sheet>
+	</element>
+	<element name="Fire" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_ELEMENTAL_ADEPT_FIRE">
+		<compendium display="false" />
+		<supports>Energy Mastery</supports>
+		<description>
+			<p>Spells you cast ignore Fire Resistance. In addition, when you roll damage for a spell you cast that deals Fire damage, you can treat any 1 on a damage die as a 2.</p>
+		</description>
+		<sheet alt="Elemental Adept, Fire">
+			<description>Spells you cast ignore Fire Resistance. Treat any 1 on a damage die as a 2 with Fire spells.</description>
+		</sheet>
+	</element>
+	<element name="Lightning" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_ELEMENTAL_ADEPT_LIGHTNING">
+		<compendium display="false" />
+		<supports>Energy Mastery</supports>
+		<description>
+			<p>Spells you cast ignore Lightning Resistance. In addition, when you roll damage for a spell you cast that deals Lightning damage, you can treat any 1 on a damage die as a 2.</p>
+		</description>
+		<sheet alt="Elemental Adept, Lightning">
+			<description>Spells you cast ignore Lightning Resistance. Treat any 1 on a damage die as a 2 with Lightning spells.</description>
+		</sheet>
+	</element>
+	<element name="Thunder" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_ELEMENTAL_ADEPT_THUNDER">
+		<compendium display="false" />
+		<supports>Energy Mastery</supports>
+		<description>
+			<p>Spells you cast ignore Thunder Resistance. In addition, when you roll damage for a spell you cast that deals Thunder damage, you can treat any 1 on a damage die as a 2.</p>
+		</description>
+		<sheet alt="Elemental Adept, Thunder">
+			<description>Spells you cast ignore Thunder Resistance. Treat any 1 on a damage die as a 2 with Thunder spells.</description>
+		</sheet>
+	</element>
+	<element name="Elemental Adept" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_ELEMENTAL_ADEPT_2">
+		<compendium display="false" />
+		<requirements>ID_WOTC_PHB24_FEAT_ELEMENTAL_ADEPT,(ID_WOTC_PHB24_CLASS_FEATURE_BARD_SPELLCASTING||ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SPELLCASTING||ID_WOTC_PHB24_CLASS_FEATURE_DRUID_SPELLCASTING||ID_WOTC_PHB24_ARCHETYPE_FEATURE_FIGHTER_ELDRITCH_KNIGHT_SPELLCASTING||ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_SPELLCASTING||ID_WOTC_PHB24_CLASS_FEATURE_RANGER_SPELLCASTING||ID_WOTC_PHB24_ARCHETYPE_FEATURE_ROGUE_ARCANE_TRICKSTER_SPELLCASTING||ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_PACT_MAGIC||ID_WOTC_PHB24_CLASS_FEATURE_SORCERER_SPELLCASTING_SORCERER||ID_WOTC_PHB24_CLASS_FEATURE_WIZARD_SPELLCASTING)</requirements>
+		<prerequisite>Level 4+, Spellcasting or Pact Magic Feature, General Feat</prerequisite>
+		<description />
+		<sheet display="false" />
+		<rules>
+			<select type="Feat Feature" name="Ability Score Increase, Elemental Adept" supports="Elemental Adept 24" />
+			<select type="Feat Feature" name="Energy Mastery" supports="Energy Mastery" />
+		</rules>
+	</element>
+	<element name="Elemental Adept" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_ELEMENTAL_ADEPT_3">
+		<compendium display="false" />
+		<requirements>ID_WOTC_PHB24_FEAT_ELEMENTAL_ADEPT_2,(ID_WOTC_PHB24_CLASS_FEATURE_BARD_SPELLCASTING||ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SPELLCASTING||ID_WOTC_PHB24_CLASS_FEATURE_DRUID_SPELLCASTING||ID_WOTC_PHB24_ARCHETYPE_FEATURE_FIGHTER_ELDRITCH_KNIGHT_SPELLCASTING||ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_SPELLCASTING||ID_WOTC_PHB24_CLASS_FEATURE_RANGER_SPELLCASTING||ID_WOTC_PHB24_ARCHETYPE_FEATURE_ROGUE_ARCANE_TRICKSTER_SPELLCASTING||ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_PACT_MAGIC||ID_WOTC_PHB24_CLASS_FEATURE_SORCERER_SPELLCASTING_SORCERER||ID_WOTC_PHB24_CLASS_FEATURE_WIZARD_SPELLCASTING)</requirements>
+		<prerequisite>Level 4+, Spellcasting or Pact Magic Feature, General Feat</prerequisite>
+		<description />
+		<sheet display="false" />
+		<rules>
+			<select type="Feat Feature" name="Ability Score Increase, Elemental Adept" supports="Elemental Adept 24" />
+			<select type="Feat Feature" name="Energy Mastery" supports="Energy Mastery" />
+		</rules>
+	</element>
+	<element name="Elemental Adept" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_ELEMENTAL_ADEPT_4">
+		<compendium display="false" />
+		<requirements>ID_WOTC_PHB24_FEAT_ELEMENTAL_ADEPT_3,(ID_WOTC_PHB24_CLASS_FEATURE_BARD_SPELLCASTING||ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SPELLCASTING||ID_WOTC_PHB24_CLASS_FEATURE_DRUID_SPELLCASTING||ID_WOTC_PHB24_ARCHETYPE_FEATURE_FIGHTER_ELDRITCH_KNIGHT_SPELLCASTING||ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_SPELLCASTING||ID_WOTC_PHB24_CLASS_FEATURE_RANGER_SPELLCASTING||ID_WOTC_PHB24_ARCHETYPE_FEATURE_ROGUE_ARCANE_TRICKSTER_SPELLCASTING||ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_PACT_MAGIC||ID_WOTC_PHB24_CLASS_FEATURE_SORCERER_SPELLCASTING_SORCERER||ID_WOTC_PHB24_CLASS_FEATURE_WIZARD_SPELLCASTING)</requirements>
+		<prerequisite>Level 4+, Spellcasting or Pact Magic Feature, General Feat</prerequisite>
+		<description />
+		<sheet display="false" />
+		<rules>
+			<select type="Feat Feature" name="Ability Score Increase, Elemental Adept" supports="Elemental Adept 24" />
+			<select type="Feat Feature" name="Energy Mastery" supports="Energy Mastery" />
+		</rules>
+	</element>
+	<element name="Elemental Adept" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_ELEMENTAL_ADEPT_5">
+		<compendium display="false" />
+		<requirements>ID_WOTC_PHB24_FEAT_ELEMENTAL_ADEPT_4,(ID_WOTC_PHB24_CLASS_FEATURE_BARD_SPELLCASTING||ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SPELLCASTING||ID_WOTC_PHB24_CLASS_FEATURE_DRUID_SPELLCASTING||ID_WOTC_PHB24_ARCHETYPE_FEATURE_FIGHTER_ELDRITCH_KNIGHT_SPELLCASTING||ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_SPELLCASTING||ID_WOTC_PHB24_CLASS_FEATURE_RANGER_SPELLCASTING||ID_WOTC_PHB24_ARCHETYPE_FEATURE_ROGUE_ARCANE_TRICKSTER_SPELLCASTING||ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_PACT_MAGIC||ID_WOTC_PHB24_CLASS_FEATURE_SORCERER_SPELLCASTING_SORCERER||ID_WOTC_PHB24_CLASS_FEATURE_WIZARD_SPELLCASTING)</requirements>
+		<prerequisite>Level 4+, Spellcasting or Pact Magic Feature, General Feat</prerequisite>
+		<description />
+		<sheet display="false" />
+		<rules>
+			<select type="Feat Feature" name="Ability Score Increase, Elemental Adept" supports="Elemental Adept 24" />
+			<select type="Feat Feature" name="Energy Mastery" supports="Energy Mastery" />
+		</rules>
+	</element>
+	
+	<element name="Fey-Touched" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEYTOUCHED">
+		<requirements>[level:4]</requirements>
+		<supports>General</supports>
+		<prerequisite>Level 4+, General Feat</prerequisite>
+		<description>
+			<p><em>General Feat (Prerequisite: Level 4+)</em></p>
+			<p>Your exposure to the Feywild's magic grants you the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Fey Magic.</i></b> Choose one level 1 spell from the Divination or Enchantment school of magic. You always have that spell and the Misty Step spell prepared. You can cast each of these spells without expending a spell slot. Once you cast either spell in this way, you can't cast that spell in this way again until you finish a Long Rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat Feature" name="Ability Score Increase (Fey-Touched)" supports="Fey-Touched" />
+			<select type="Spell" name="Spell, Fey Touched" supports="1,(Divination||Enchantment)" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MISTY_STEP" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_FEYTOUCHED_INTELLIGENCE">
+		<compendium display="false" />
+		<supports>Fey-Touched</supports>
+		<description>
+			<p>Increase your Intelligence by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Fey-Touched">
+			<description>Choose one level 1 spell from the Divination or Enchantment school of magic. You always have that spell and the Misty Step spell prepared. You can cast each of these spells without expending a spell slot. Once you cast either spell in this way, you can't cast that spell in this way again until you finish a Long Rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is Intelligence.</description>
+		</sheet>
+		<rules>
+			<stat name="intelligence" value="1" alt="Fey-Touched" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_FEYTOUCHED_WISDOM">
+		<compendium display="false" />
+		<supports>Fey-Touched</supports>
+		<description>
+			<p>Increase your Wisdom by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Fey-Touched">
+			<description>Choose one level 1 spell from the Divination or Enchantment school of magic. You always have that spell and the Misty Step spell prepared. You can cast each of these spells without expending a spell slot. Once you cast either spell in this way, you can't cast that spell in this way again until you finish a Long Rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is Wisdom.</description>
+		</sheet>
+		<rules>
+			<stat name="wisdom" value="1" alt="Fey-Touched" />
+		</rules>
+	</element>
+	<element name="Charisma" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_FEYTOUCHED_CHARISMA">
+		<compendium display="false" />
+		<supports>Fey-Touched</supports>
+		<description>
+			<p>Increase your Charisma by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Fey-Touched">
+			<description>Choose one level 1 spell from the Divination or Enchantment school of magic. You always have that spell and the Misty Step spell prepared. You can cast each of these spells without expending a spell slot. Once you cast either spell in this way, you can't cast that spell in this way again until you finish a Long Rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is Charisma.</description>
+		</sheet>
+		<rules>
+			<stat name="charisma" value="1" alt="Fey-Touched" />
+		</rules>
+	</element>
+
+	<element name="Grappler" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_GRAPPLER">
+		<requirements>[level:4],([str:13]||[dex:13])</requirements>
+		<supports>General</supports>
+		<prerequisite>Level 4+, Strength or Dexterity 13+, General Feat</prerequisite>
+		<description>
+			<p><em>General Feat (Prerequisite: Level 4+, Strength or Dexterity 13+)</em></p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Strength or Dexterity score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Punch and Grab.</i></b> When you hit a creature with an Unarmed Strike as part of the Attack action on your turn, you can use both the Damage and the Grapple option. You can use this benefit only once per turn.</p>
+			<p class="indent"><b><i>Attack Advantage.</i></b> You have Advantage on attack rolls against a creature Grappled by you.</p>
+			<p class="indent"><b><i>Fast Wrestler.</i></b> Your Speed isn't halved when you move a creature Grappled by you if the creature is your size or smaller.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat Feature" name="Ability Score Increase (Grappler)" supports="Grappler" />
+		</rules>
+	</element>
+	<element name="Strength" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_GRAPPLER_STRENGTH">
+		<compendium display="false" />
+		<supports>Grappler</supports>
+		<description>
+			<p>Increase your Strength by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Grappler">
+			<description>When you hit a creature with an Unarmed Strike as part of the Attack action on your turn, you can use both the Damage and the Grapple option. You can use this benefit only once per turn. You have Advantage on attack rolls against a creature Grappled by you. Your Speed isn't halved when you move a creature Grappled by you if the creature is your size or smaller.</description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="1" alt="Grappler" />
+		</rules>
+	</element>
+	<element name="Dexterity" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_GRAPPLER_DEXTERITY">
+		<compendium display="false" />
+		<supports>Grappler</supports>
+		<description>
+			<p>Increase your Dexterity by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Grappler">
+			<description>When you hit a creature with an Unarmed Strike as part of the Attack action on your turn, you can use both the Damage and the Grapple option. You can use this benefit only once per turn. You have Advantage on attack rolls against a creature Grappled by you. Your Speed isn't halved when you move a creature Grappled by you if the creature is your size or smaller.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" alt="Grappler" />
+		</rules>
+	</element>
+
+	<element name="Great Weapon Master" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_GREAT_WEAPON_MASTER">
+		<requirements>[level:4],[str:13]</requirements>
+		<supports>General</supports>
+		<prerequisite>Level 4+, Strength 13+, General Feat</prerequisite>
+		<description>
+			<p><em>General Feat (Prerequisite: Level 4+, Strength 13+)</em></p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Strength score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Heavy Weapon Mastery.</i></b> When you hit a creature with a weapon that has the Heavy property as part of the Attack action on your turn, you can cause the weapon to deal extra damage to the target. The extra damage equals your Proficiency Bonus.</p>
+			<p class="indent"><b><i>Hew.</i></b> Immediately after you score a Critical Hit with a Melee weapon or reduce a creature to 0 Hit Points with one, you can make one attack with the same weapon as a Bonus Action.</p>
+		</description>
+		<sheet>
+			<description>When you hit a creature with a weapon that has the Heavy property as part of your Attack action, you can deal {{proficiency}} extra damage to the target.
+			Immediately after you score a Critical Hit with a Melee weapon or reduce a creature to 0 Hit Points with one, you can make one attack with the same weapon as a Bonus Action.</description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="1" alt="Great Weapon Master" />
+		</rules>
+	</element>
+
+	<element name="Heavily Armored" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_HEAVILY_ARMORED">
+		<requirements>[level:4],ID_WOTC_PHB24_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR</requirements>
+		<supports>General</supports>
+		<prerequisite>Level 4+, Medium Armor Training, General Feat</prerequisite>
+		<description>
+			<p><em>General Feat (Prerequisite: Level 4+, Medium Armor Training)</em></p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Constitution or Strength score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Armor Training.</i></b> You gain training with Heavy armor.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat Feature" name="Ability Score Increase (Heavily Armored)" supports="Heavily Armored" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+		</rules>
+	</element>
+	<element name="Strength" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_HEAVILY_ARMORED_STRENGTH">
+		<compendium display="false" />
+		<supports>Heavily Armored</supports>
+		<description>
+			<p>Increase your Strength by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Heavily Armored">
+			<description>You gain training with Heavy armor.</description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="1" alt="Heavily Armored" />
+		</rules>
+	</element>
+	<element name="Constitution" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_HEAVILY_ARMORED_CONSTITUTION">
+		<compendium display="false" />
+		<supports>Heavily Armored</supports>
+		<description>
+			<p>Increase your Constitution by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Heavily Armored">
+			<description>You gain training with Heavy armor.</description>
+		</sheet>
+		<rules>
+			<stat name="constitution" value="1" alt="Heavily Armored" />
+		</rules>
+	</element>
+
+	<element name="Heavy Armor Master" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_HEAVY_ARMOR_MASTER">
+		<requirements>[level:4],ID_WOTC_PHB24_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR</requirements>
+		<supports>General</supports>
+		<prerequisite>Level 4+, Heavy Armor Training, General Feat</prerequisite>
+		<description>
+			<p><em>General Feat (Prerequisite: Level 4+, Heavy Armor Training)</em></p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Constitution or Strength score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Damage Reduction.</i></b> When you're hit by an attack while you're wearing Heavy armor, any Bludgeoning, Piercing, and Slashing damage dealt to you by that attack is reduced by an amount equal to your Proficiency Bonus.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat Feature" name="Ability Score Increase (Heavy Armor Master)" supports="Heavy Armor Master" />
+		</rules>
+	</element>
+	<element name="Strength" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_HEAVY_ARMOR_MASTER_STRENGTH">
+		<compendium display="false" />
+		<supports>Heavy Armor Master</supports>
+		<description>
+			<p>Increase your Strength by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Heavy Armor Master">
+			<description>When you're hit by an attack while you're wearing Heavy armor, any Bludgeoning, Piercing, and Slashing damage dealt to you by that attack is reduced by {{proficiency}}.</description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="1" alt="Heavy Armor Master" />
+		</rules>
+	</element>
+	<element name="Constitution" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_HEAVY_ARMOR_MASTER_CONSTITUTION">
+		<compendium display="false" />
+		<supports>Heavy Armor Master</supports>
+		<description>
+			<p>Increase your Constitution by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Heavy Armor Master">
+			<description>When you're hit by an attack while you're wearing Heavy armor, any Bludgeoning, Piercing, and Slashing damage dealt to you by that attack is reduced by {{proficiency}}.</description>
+		</sheet>
+		<rules>
+			<stat name="constitution" value="1" alt="Heavy Armor Master" />
+		</rules>
+	</element>
+
+	<element name="Inspiring Leader" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_INSPIRING_LEADER">
+		<requirements>[level:4],([wis:13]||[cha:13])</requirements>
+		<supports>General</supports>
+		<prerequisite>Level 4+, Wisdom or Charisma 13+, General Feat</prerequisite>
+		<description>
+			<p><em>General Feat (Prerequisite: Level 4+, Wisdom or Charisma 13+)</em></p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Wisdom or Charisma score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Bolstering Performance.</i></b> When you finish a Short or Long Rest, you can give an inspiring performance: a speech, song, or dance. When you do so, choose up to six allies (which can include yourself) within 30 feet of yourself who witness the performance. The chosen creatures each gain Temporary Hit Points equal to your character level plus the modifier of the ability you increased with this feat.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat Feature" name="Ability Score Increase (Inspiring Leader)" supports="Inspiring Leader" />
+			<stat name="perf:temp" value="level" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_INSPIRING_LEADER_WISDOM">
+		<compendium display="false" />
+		<supports>Inspiring Leader</supports>
+		<description>
+			<p>Increase your Wisdom by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Inspiring Leader">
+			<description>When you finish a Short or Long Rest, you can give an inspiring performance. When you do so, choose up to six allies (can include yourself) within 30ft of yourself who witness the performance. The chosen creatures each gain {{perf:temp}}Temporary HP.</description>
+		</sheet>
+		<rules>
+			<stat name="wisdom" value="1" alt="Inspiring Leader" />
+			<stat name="perf:temp" value="wisdom:modifier" />
+		</rules>
+	</element>
+	<element name="Charisma" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_INSPIRING_LEADER_CHARISMA">
+		<compendium display="false" />
+		<supports>Inspiring Leader</supports>
+		<description>
+			<p>Increase your Charisma by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Inspiring Leader">
+			<description>When you finish a Short or Long Rest, you can give an inspiring performance. When you do so, choose up to six allies (can include yourself) within 30ft of yourself who witness the performance. The chosen creatures each gain {{perf:temp}}Temporary HP.</description>
+		</sheet>
+		<rules>
+			<stat name="charisma" value="1" alt="Inspiring Leader" />
+			<stat name="perf:temp" value="charisma:modifier" />
+		</rules>
+	</element>
+
+	<element name="Keen Mind" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_KEEN_MIND">
+		<requirements>[level:4],[int:13]</requirements>
+		<supports>General</supports>
+		<prerequisite>Level 4+, Intelligence 13+, General Feat</prerequisite>
+		<description>
+			<p><em>General Feat (Prerequisite: Level 4+, Intelligence 13+)</em></p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Intelligence score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Lore Knowledge.</i></b> Choose one of the following skills: Arcana, History, Investigation, Nature, or Religion. If you lack proficiency in the chosen skill, you gain proficiency in it, and if you already have proficiency in it, you gain Expertise in it.</p>
+			<p class="indent"><b><i>Quick Study.</i></b> You can take the Study action as a Bonus Action.</p>
+		</description>
+		<sheet>
+			<description>You can take the Study action as a Bonus Action.</description>
+		</sheet>
+		<rules>
+			<stat name="intelligence" value="1" alt="Keen Mind" />
+			<select type="Feat Feature" name="Skill Proficiency (Keen Mind)" supports="Keen Mind" />
+		</rules>
+	</element>
+	<element name="Arcana" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_KEEN_MIND_ARCANA">
+		<compendium display="false" />
+		<supports>Keen Mind</supports>
+		<description />
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SKILL_ARCANA" requirements="!ID_WOTC_PHB24_PROFICIENCY_SKILL_ARCANA" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SKILL_ARCANA_EXPERTISE" requirements="ID_WOTC_PHB24_PROFICIENCY_SKILL_ARCANA" />
+		</rules>
+	</element>
+	<element name="Arcana Proficiency" type="Grants" source="Internal" id="ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SKILL_ARCANA">
+		<rules>
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_SKILL_ARCANA" />
+		</rules>
+	</element>
+	<element name="Arcana Expertise" type="Grants" source="Internal" id="ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SKILL_ARCANA_EXPERTISE">
+		<rules>
+			<stat name="arcana:proficiency" value="proficiency" bonus="double" requirements="!ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SKILL_ARCANA" alt="Expertise" />
+		</rules>
+	</element>
+	<element name="History" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_KEEN_MIND_HISTORY">
+		<compendium display="false" />
+		<supports>Keen Mind</supports>
+		<description />
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SKILL_HISTORY" requirements="!ID_WOTC_PHB24_PROFICIENCY_SKILL_HISTORY" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SKILL_HISTORY_EXPERTISE" requirements="ID_WOTC_PHB24_PROFICIENCY_SKILL_HISTORY" />
+		</rules>
+	</element>
+	<element name="History Proficiency" type="Grants" source="Internal" id="ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SKILL_HISTORY">
+		<rules>
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_SKILL_HISTORY" />
+		</rules>
+	</element>
+	<element name="History Expertise" type="Grants" source="Internal" id="ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SKILL_HISTORY_EXPERTISE">
+		<rules>
+			<stat name="history:proficiency" value="proficiency" bonus="double" requirements="!ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SKILL_HISTORY" alt="Expertise" />
+		</rules>
+	</element>
+	<element name="Investigation" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_KEEN_MIND_INVESTIGATION">
+		<compendium display="false" />
+		<supports>Keen Mind</supports>
+		<description />
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SKILL_INVESTIGATION" requirements="!ID_WOTC_PHB24_PROFICIENCY_SKILL_INVESTIGATION" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SKILL_INVESTIGATION_EXPERTISE" requirements="ID_WOTC_PHB24_PROFICIENCY_SKILL_INVESTIGATION" />
+		</rules>
+	</element>
+	<element name="Investigation Proficiency" type="Grants" source="Internal" id="ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SKILL_INVESTIGATION">
+		<rules>
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_SKILL_INVESTIGATION" />
+		</rules>
+	</element>
+	<element name="Investigation Expertise" type="Grants" source="Internal" id="ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SKILL_INVESTIGATION_EXPERTISE">
+		<rules>
+			<stat name="investigation:proficiency" value="proficiency" bonus="double" requirements="!ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SKILL_INVESTIGATION" alt="Expertise" />
+		</rules>
+	</element>
+	<element name="Nature" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_KEEN_MIND_NATURE">
+		<compendium display="false" />
+		<supports>Keen Mind</supports>
+		<description />
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SKILL_NATURE" requirements="!ID_WOTC_PHB24_PROFICIENCY_SKILL_NATURE" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SKILL_NATURE_EXPERTISE" requirements="ID_WOTC_PHB24_PROFICIENCY_SKILL_NATURE" />
+		</rules>
+	</element>
+	<element name="Nature Proficiency" type="Grants" source="Internal" id="ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SKILL_NATURE_EXPERTISE">
+		<rules>
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_SKILL_NATURE" />
+		</rules>
+	</element>
+	<element name="Nature Expertise" type="Grants" source="Internal" id="ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SKILL_NATURE_EXPERTISE">
+		<rules>
+			<stat name="nature:proficiency" value="proficiency" bonus="double" requirements="!ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SKILL_NATURE" alt="Expertise" />
+		</rules>
+	</element>
+	<element name="Religion" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_KEEN_MIND_RELIGION">
+		<compendium display="false" />
+		<supports>Keen Mind</supports>
+		<description />
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SKILL_RELIGION" requirements="!ID_WOTC_PHB24_PROFICIENCY_SKILL_RELIGION" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SKILL_RELIGION_EXPERTISE" requirements="ID_WOTC_PHB24_PROFICIENCY_SKILL_RELIGION" />
+		</rules>
+	</element>
+	<element name="Religion Proficiency" type="Grants" source="Internal" id="ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SKILL_RELIGION">
+		<rules>
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_SKILL_RELIGION" />
+		</rules>
+	</element>
+	<element name="Religion Expertise" type="Grants" source="Internal" id="ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SKILL_RELIGION_EXPERTISE">
+		<rules>
+			<stat name="religion:proficiency" value="proficiency" bonus="double" requirements="!ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SKILL_RELIGION" alt="Expertise" />
+		</rules>
+	</element>
+
+	<element name="Lightly Armored" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_LIGHTLY_ARMORED">
+		<requirements>[level:4]</requirements>
+		<supports>General</supports>
+		<prerequisite>Level 4+, General Feat</prerequisite>
+		<description>
+			<p><em>General Feat (Prerequisite: Level 4+)</em></p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Strength or Dexterity score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Armor Training.</i></b> You gain training with Light armor and Shields.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat Feature" name="Ability Score Increase (Lightly Armored)" supports="Lightly Armored" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+		</rules>
+	</element>
+	<element name="Strength" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_LIGHTLY_ARMORED_STRENGTH">
+		<compendium display="false" />
+		<supports>Lightly Armored</supports>
+		<description>
+			<p>Increase your Strength by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Lightly Armored">
+			<description>You gain training with Light armor and Shields.</description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="1" alt="Lightly Armored" />
+		</rules>
+	</element>
+	<element name="Dexterity" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_LIGHTLY_ARMORED_DEXTERITY">
+		<compendium display="false" />
+		<supports>Lightly Armored</supports>
+		<description>
+			<p>Increase your Dexterity by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Lightly Armored">
+			<description>You gain training with Light armor and Shields.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" alt="Lightly Armored" />
+		</rules>
+	</element>
+
+	<element name="Mage Slayer" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_MAGE_SLAYER">
+		<requirements>[level:4]</requirements>
+		<supports>General</supports>
+		<prerequisite>Level 4+, General Feat</prerequisite>
+		<description>
+			<p><em>General Feat (Prerequisite: Level 4+)</em></p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Strength or Dexterity score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Concentration Breaker.</i></b> When you damage a creature that is concentrating, it has Disadvantage on the saving throw it makes to maintain Concentration.</p>
+			<p class="indent"><b><i>Guarded Mind.</i></b> If you fail an Intelligence, a Wisdom, or a Charisma saving throw, you can cause yourself to succeed instead. Once you use this benefit, you can't use it again until you finish a Short or Long Rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat Feature" name="Ability Score Increase (Mage Slayer)" supports="Mage Slayer" />
+		</rules>
+	</element>
+	<element name="Strength" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_MAGE_SLAYER_STRENGTH">
+		<compendium display="false" />
+		<supports>Mage Slayer</supports>
+		<description>
+			<p>Increase your Strength by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Mage Slayer">
+			<description>When you damage a creature that is concentrating, it has Disadvantage on the saving throw it makes to maintain Concentration.
+			(1/Short||Long Rest) If you fail an Intelligence, a Wisdom, or a Charisma saving throw, you can cause yourself to succeed instead.</description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="1" alt="Mage Slayer" />
+		</rules>
+	</element>
+	<element name="Dexterity" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_MAGE_SLAYER_DEXTERITY">
+		<compendium display="false" />
+		<supports>Mage Slayer</supports>
+		<description>
+			<p>Increase your Dexterity by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Mage Slayer">
+			<description>When you damage a creature that is concentrating, it has Disadvantage on the saving throw it makes to maintain Concentration.
+			(1/Short||Long Rest) If you fail an Intelligence, a Wisdom, or a Charisma saving throw, you can cause yourself to succeed instead.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" alt="Mage Slayer" />
+		</rules>
+	</element>
+
+	<element name="Martial Weapon Training" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_MARTIAL_WEAPON_TRAINING">
+		<requirements>[level:4]</requirements>
+		<supports>General</supports>
+		<prerequisite>Level 4+, General Feat</prerequisite>
+		<description>
+			<p><em>General Feat (Prerequisite: Level 4+)</em></p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Strength or Dexterity score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Weapon Proficiency.</i></b> You gain proficiency with Martial weapons.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat Feature" name="Ability Score Increase (Martial Weapon Training)" supports="Martial Weapon Training" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+		</rules>
+	</element>
+	<element name="Strength" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_MARTIAL_WEAPON_TRAINING_STRENGTH">
+		<compendium display="false" />
+		<supports>Martial Weapon Training</supports>
+		<description>
+			<p>Increase your Strength by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Martial Weapon Training">
+			<description>You gain proficiency with Martial weapons.</description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="1" alt="Martial Weapon Training" />
+		</rules>
+	</element>
+	<element name="Dexterity" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_MARTIAL_WEAPON_TRAINING_DEXTERITY">
+		<compendium display="false" />
+		<supports>Martial Weapon Training</supports>
+		<description>
+			<p>Increase your Dexterity by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Martial Weapon Training">
+			<description>You gain proficiency with Martial weapons.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" alt="Martial Weapon Training" />
+		</rules>
+	</element>
+
+	<element name="Medium Armor Master" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_MEDIUM_ARMOR_MASTER">
+		<requirements>[level:4],ID_WOTC_PHB24_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR</requirements>
+		<supports>General</supports>
+		<prerequisite>Level 4+, Medium Armor Training, General Feat</prerequisite>
+		<description>
+			<p><em>General Feat (Prerequisite: Level 4+, Medium Armor Training)</em></p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Strength or Dexterity score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Dexterous Wearer.</i></b> While you're wearing Medium armor, you can add 3, rather than 2, to your AC if you have a Dexterity score of 16 or higher.</p>
+		</description>
+		<sheet>
+			<description>Immediately after you take the Attack action or the Magic action, you can teleport up to 30ft to an unoccupied space you can see.</description>
+		</sheet>
+		<rules>
+			<select type="Feat Feature" name="Ability Score Increase (Medium Armor Master)" supports="Medium Armor Master" />
+			<stat name="ac:armored:dexterity:cap" value="3" bonus="base" requirements="[dex:16]" />
+		</rules>
+	</element>
+	<element name="Strength" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_MEDIUM_ARMOR_MASTER_STRENGTH">
+		<compendium display="false" />
+		<supports>Medium Armor Master</supports>
+		<description>
+			<p>Increase your Strength by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Medium Armor Master">
+			<description>You can add 3, rather than 2, to your AC when you're wearing Medium armor.</description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="1" alt="Medium Armor Master" />
+		</rules>
+	</element>
+	<element name="Dexterity" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_MEDIUM_ARMOR_MASTER_DEXTERITY">
+		<compendium display="false" />
+		<supports>Medium Armor Master</supports>
+		<description>
+			<p>Increase your Dexterity by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Medium Armor Master">
+			<description>You can add 3, rather than 2, to your AC when you're wearing Medium armor.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" alt="Medium Armor Master" />
+		</rules>
+	</element>
+
+	<element name="Moderately Armored" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_MODERATELY_ARMORED">
+		<requirements>[level:4],ID_WOTC_PHB24_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR</requirements>
+		<supports>General</supports>
+		<prerequisite>Level 4+, Light Armor Training, General Feat</prerequisite>
+		<description>
+			<p><em>General Feat (Prerequisite: Level 4+, Light Armor Training)</em></p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Strength or Dexterity score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Armor Training.</i></b> You gain training with Medium armor.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat Feature" name="Ability Score Increase (Moderately Armored)" supports="Moderately Armored" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+		</rules>
+	</element>
+	<element name="Strength" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_MODERATELY_ARMORED_STRENGTH">
+		<compendium display="false" />
+		<supports>Moderately Armored</supports>
+		<description>
+			<p>Increase your Strength by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Moderately Armored">
+			<description>You gain training with Medium armor.</description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="1" alt="Moderately Armored" />
+		</rules>
+	</element>
+	<element name="Dexterity" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_MODERATELY_ARMORED_DEXTERITY">
+		<compendium display="false" />
+		<supports>Moderately Armored</supports>
+		<description>
+			<p>Increase your Dexterity by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Moderately Armored">
+			<description>You gain training with Medium armor.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" alt="Moderately Armored" />
+		</rules>
+	</element>
+
+	<element name="Mounted Combatant" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_MOUNTED_COMBATANT">
+		<requirements>[level:4]</requirements>
+		<supports>General</supports>
+		<prerequisite>Level 4+, General Feat</prerequisite>
+		<description>
+			<p><em>General Feat (Prerequisite: Level 4+)</em></p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Strength, Dexterity, or Wisdom score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Mounted Strike.</i></b> While mounted, you have Advantage on attack rolls against any unmounted creature within 5 feet of your mount that is at least one size smaller than the mount.</p>
+			<p class="indent"><b><i>Leap Aside.</i></b> If your mount is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw and only half damage if it fails. For your mount to gain this benefit, you must be riding it, and neither of you can have the Incapacitated condition.</p>
+			<p class="indent"><b><i>Veer.</i></b> While mounted, you can force an attack that hits your mount to hit you instead if you don't have the Incapacitated condition.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat Feature" name="Ability Score Increase (Mounted Combatant)" supports="Mounted Combatant" />
+		</rules>
+	</element>
+	<element name="Strength" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_MOUNTED_COMBATANT_STRENGTH">
+		<compendium display="false" />
+		<supports>Mounted Combatant</supports>
+		<description>
+			<p>Increase your Strength by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Mounted Combatant">
+			<description>While mounted, you have Advantage on attack rolls against any unmounted creature within 5 feet of your mount that is at least one size smaller than the mount.
+			If your mount is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw and only half damage if it fails. For your mount to gain this benefit, you must be riding it, and neither of you can have the Incapacitated condition.
+			While mounted, you can force an attack that hits your mount to hit you instead if you don't have the Incapacitated condition.</description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="1" alt="Mounted Combatant" />
+		</rules>
+	</element>
+	<element name="Dexterity" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_MOUNTED_COMBATANT_DEXTERITY">
+		<compendium display="false" />
+		<supports>Mounted Combatant</supports>
+		<description>
+			<p>Increase your Dexterity by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Mounted Combatant">
+			<description>While mounted, you have Advantage on attack rolls against any unmounted creature within 5 feet of your mount that is at least one size smaller than the mount.
+			If your mount is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw and only half damage if it fails. For your mount to gain this benefit, you must be riding it, and neither of you can have the Incapacitated condition.
+			While mounted, you can force an attack that hits your mount to hit you instead if you don't have the Incapacitated condition.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" alt="Mounted Combatant" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_MOUNTED_COMBATANT_WISDOM">
+		<compendium display="false" />
+		<supports>Mounted Combatant</supports>
+		<description>
+			<p>Increase your Wisdom by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Mounted Combatant">
+			<description>While mounted, you have Advantage on attack rolls against any unmounted creature within 5 feet of your mount that is at least one size smaller than the mount.
+			If your mount is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw and only half damage if it fails. For your mount to gain this benefit, you must be riding it, and neither of you can have the Incapacitated condition.
+			While mounted, you can force an attack that hits your mount to hit you instead if you don't have the Incapacitated condition.</description>
+		</sheet>
+		<rules>
+			<stat name="wisdom" value="1" alt="Mounted Combatant" />
+		</rules>
+	</element>
+
+	<element name="Observant" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_OBSERVANT">
+		<requirements>[level:4],([int:13]||[wis:13])</requirements>
+		<supports>General</supports>
+		<prerequisite>Level 4+, Intelligence or Wisdom 13+, General Feat</prerequisite>
+		<description>
+			<p><em>General Feat (Prerequisite: Level 4+, Intelligence or Wisdom 13+)</em></p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Intelligence or Wisdom score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Keen Observer.</i></b> Choose one of the following skills: Insight, Investigation, or Perception. If you lack proficiency with the chosen skill, you gain proficiency in it, and if you already have proficiency in it, you gain Expertise in it.</p>
+			<p class="indent"><b><i>Quick Search.</i></b> You can take the Search action as a Bonus Action.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat Feature" name="Ability Score Increase (Observant)" supports="Observant" />
+			<select type="Feat Feature" name="Skill Proficiency (Observant)" supports="Observant2" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_SPELLSNIPER_INTELLIGENCE">
+		<compendium display="false" />
+		<supports>Observant</supports>
+		<description>
+			<p>Increase your Intelligence by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Observant">
+			<description>You can take the Search action as a Bonus Action.</description>
+		</sheet>
+		<rules>
+			<stat name="intelligence" value="1" alt="Observant" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_SPELLSNIPER_WISDOM">
+		<compendium display="false" />
+		<supports>Observant</supports>
+		<description>
+			<p>Increase your Wisdom by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Observant">
+			<description>You can take the Search action as a Bonus Action.</description>
+		</sheet>
+		<rules>
+			<stat name="wisdom" value="1" alt="Observant" />
+		</rules>
+	</element>
+	<element name="Insight" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_OBSERVANT_INSIGHT">
+		<compendium display="false" />
+		<supports>Observant2</supports>
+		<description />
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SKILL_INSIGHT" requirements="!ID_WOTC_PHB24_PROFICIENCY_SKILL_INSIGHT" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SKILL_INSIGHT_EXPERTISE" requirements="ID_WOTC_PHB24_PROFICIENCY_SKILL_INSIGHT" />
+		</rules>
+	</element>
+	<element name="Insight Proficiency" type="Grants" source="Internal" id="ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SKILL_INSIGHT">
+		<rules>
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_SKILL_INSIGHT" />
+		</rules>
+	</element>
+	<element name="Insight Expertise" type="Grants" source="Internal" id="ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SKILL_INSIGHT_EXPERTISE">
+		<rules>
+			<stat name="insight:proficiency" value="proficiency" bonus="double" requirements="!ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SKILL_INSIGHT" alt="Expertise" />
+		</rules>
+	</element>
+	<element name="Investigation" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_OBSERVANT_INVESTIGATION">
+		<compendium display="false" />
+		<supports>Observant2</supports>
+		<description />
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SKILL_INVESTIGATION" requirements="!ID_WOTC_PHB24_PROFICIENCY_SKILL_INVESTIGATION" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SKILL_INVESTIGATION_EXPERTISE" requirements="ID_WOTC_PHB24_PROFICIENCY_SKILL_INVESTIGATION" />
+		</rules>
+	</element>	
+	<element name="Perception" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_OBSERVANT_PERCEPTION">
+		<compendium display="false" />
+		<supports>Observant2</supports>
+		<description />
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SKILL_PERCEPTION" requirements="!ID_WOTC_PHB24_PROFICIENCY_SKILL_PERCEPTION" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SKILL_PERCEPTION_EXPERTISE" requirements="ID_WOTC_PHB24_PROFICIENCY_SKILL_PERCEPTION" />
+		</rules>
+	</element>
+	<element name="Perception Proficiency" type="Grants" source="Internal" id="ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SKILL_PERCEPTION">
+		<rules>
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_SKILL_PERCEPTION" />
+		</rules>
+	</element>
+	<element name="Perception Expertise" type="Grants" source="Internal" id="ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SKILL_PERCEPTION_EXPERTISE">
+		<rules>
+			<stat name="perception:proficiency" value="proficiency" bonus="double" requirements="!ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SKILL_PERCEPTION" alt="Expertise" />
+		</rules>
+	</element>
+
+	<element name="Piercer" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_PIERCER">
+		<requirements>[level:4]</requirements>
+		<supports>General</supports>
+		<prerequisite>Level 4+, General Feat</prerequisite>
+		<description>
+			<p><em>General Feat (Prerequisite: Level 4+)</em></p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase Strength or Dexterity by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Puncture.</i></b> Once per turn, when you hit a creature with an attack that deals Piercing damage, you can reroll one of the attack's damage dice, and you must use the new roll.</p>
+			<p class="indent"><b><i>Enhanced Critical.</i></b> When you score a Critical Hit that deals Piercing damage to a creature, you can roll one additional damage die when determining the extra Piercing damage the target takes.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat Feature" name="Ability Score Increase (Piercer)" supports="Piercer" />
+		</rules>
+	</element>
+	<element name="Strength" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_PIERCER_STRENGTH">
+		<compendium display="false" />
+		<supports>Piercer</supports>
+		<description>
+			<p>Increase your Strength by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Piercer">
+			<description>Once per turn, when you hit a creature with an attack that deals Piercing damage, you can reroll one of the attack's damage dice, and you must use the new roll.
+			When you score a Critical Hit that deals Piercing damage to a creature, you can roll one additional damage die when determining the extra Piercing damage the target takes.</description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="1" alt="Piercer" />
+		</rules>
+	</element>
+	<element name="Dexterity" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_PIERCER_DEXTERITY">
+		<compendium display="false" />
+		<supports>Piercer</supports>
+		<description>
+			<p>Increase your Dexterity by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Piercer">
+			<description>Once per turn, when you hit a creature with an attack that deals Piercing damage, you can reroll one of the attack's damage dice, and you must use the new roll.
+			When you score a Critical Hit that deals Piercing damage to a creature, you can roll one additional damage die when determining the extra Piercing damage the target takes.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" alt="Piercer" />
+		</rules>
+	</element>
+
+	<element name="Poisoner" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_POISONER">
+		<requirements>[level:4]</requirements>
+		<supports>General</supports>
+		<prerequisite>Level 4+, General Feat</prerequisite>
+		<description>
+			<p><em>General Feat (Prerequisite: Level 4+)</em></p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase  your Dexterity or Intelligence score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Potent Poison.</i></b> When you make a damage roll that deals Poison damage, it ignores Resistance to Poison damage.</p>
+			<p class="indent"><b><i>Brew Poison.</i></b> You gain proficiency with the Poisoner's Kit. With 1 hour of work using such a kit and expending 50 GP worth of materials, you can create a number of poison doses equal to your Proficiency Bonus. As a Bonus Action, you can apply a poison dose to a weapon or piece of ammunition. Once applied, the poison retains its potency for 1 minute or until you hit with the poisoned item, whichever is shorter. When a creature takes damage from the poisoned item, that creature must succeed on a Constitution saving throw (DC 8 plus the modifier of the ability increased by this feat and your Proficiency Bonus) or take 2d8 Poison damage and have the Poisoned condition until the end of your next turn.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat Feature" name="Ability Score Increase (Poisoner)" supports="Poisoner" />
+			<stat name="poison:dose:dc" value="8" />
+			<stat name="poison:dose:dc" value="proficiency" />
+		</rules>
+	</element>
+	<element name="Dexterity" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_POISONER_DEXTERITY">
+		<compendium display="false" />
+		<supports>Poisoner</supports>
+		<description>
+			<p>Increase your Dexterity by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Poisoner">
+			<description>When you make a damage roll that deals Poison damage, it ignores Resistance to Poison damage.
+			With 1 hour of work using a Poisoner's Kit and expending 50 GP worth of materials, you can create {{proficiency}} poison doses. As a Bonus Action, you can apply a poison dose to a weapon or piece of ammunition. Once applied, the poison retains its potency for 1 minute or until you hit with the poisoned item, whichever is shorter. When a creature takes damage from the poisoned item, that creature must succeed on a DC{{poison:dose:dc}} Constitution saving throw or take 2d8 Poison damage and have the Poisoned condition until the end of your next turn.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" alt="Poisoner" />
+			<stat name="poison:dose:dc" value="dexterity:modifier" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_POISONER_INTELLIGENCE">
+		<compendium display="false" />
+		<supports>Poisoner</supports>
+		<description>
+			<p>Increase your Intelligence by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Poisoner">
+			<description>When you make a damage roll that deals Poison damage, it ignores Resistance to Poison damage.
+			With 1 hour of work using a Poisoner's Kit and expending 50 GP worth of materials, you can create {{proficiency}} poison doses. As a Bonus Action, you can apply a poison dose to a weapon or piece of ammunition. Once applied, the poison retains its potency for 1 minute or until you hit with the poisoned item, whichever is shorter. When a creature takes damage from the poisoned item, that creature must succeed on a DC{{poison:dose:dc}} Constitution saving throw or take 2d8 Poison damage and have the Poisoned condition until the end of your next turn.</description>
+		</sheet>
+		<rules>
+			<stat name="intelligence" value="1" alt="Poisoner" />
+			<stat name="poison:dose:dc" value="intelligence:modifier" />
+		</rules>
+	</element>
+
+	<element name="Polearm Master" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_POLEARM_MASTER">
+		<requirements>[level:4],([str:13]||[dex:13])</requirements>
+		<supports>General</supports>
+		<prerequisite>Level 4+, Strength or Dexterity 13+, General Feat</prerequisite>
+		<description>
+			<p><em>General Feat (Prerequisite: Level 4+, Strength or Dexterity 13+)</em></p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Dexterity or Strength score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Pole Strike.</i></b> Immediately after you take the Attack action and attack with a Quarterstaff, a Spear, or a weapon that has the Heavy and Reach properties, you can use a Bonus Action to make a melee attack with the opposite end of the weapon. The weapon deals Bludgeoning damage, and the weapon's damage die for this attack is a d4.</p>
+			<p class="indent"><b><i>Reactive Strike.</i></b> While you're holding a Quarterstaff, a Spear, or a weapon that has the Heavy and Reach properties, you can take a Reaction to make one melee attack against a creature that enters the reach you have with that weapon.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat Feature" name="Ability Score Increase (Polearm Master)" supports="Polearm Master" />
+		</rules>
+	</element>
+	<element name="Strength" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_POLEARM_MASTER_STRENGTH">
+		<compendium display="false" />
+		<supports>Polearm Master</supports>
+		<description>
+			<p>Increase your Strength by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Polearm Master">
+			<description>Immediately after you take the Attack action and attack with a Quarterstaff, a Spear, or a weapon that has the Heavy and Reach properties, you can use a Bonus Action to make a melee attack with the opposite end of the weapon. The weapon deals Bludgeoning damage, and the weapon's damage die for this attack is a d4.
+			While you're holding a Quarterstaff, a Spear, or a weapon that has the Heavy and Reach properties, you can take a Reaction to make one melee attack against a creature that enters the reach you have with that weapon.</description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="1" alt="Polearm Master" />
+		</rules>
+	</element>
+	<element name="Dexterity" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_POLEARM_MASTER_DEXTERITY">
+		<compendium display="false" />
+		<supports>Polearm Master</supports>
+		<description>
+			<p>Increase your Dexterity by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Polearm Master">
+			<description>Immediately after you take the Attack action and attack with a Quarterstaff, a Spear, or a weapon that has the Heavy and Reach properties, you can use a Bonus Action to make a melee attack with the opposite end of the weapon. The weapon deals Bludgeoning damage, and the weapon's damage die for this attack is a d4.
+			While you're holding a Quarterstaff, a Spear, or a weapon that has the Heavy and Reach properties, you can take a Reaction to make one melee attack against a creature that enters the reach you have with that weapon.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" alt="Polearm Master" />
+		</rules>
+	</element>
+
+	<element name="Resilient" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_RESILIENT">
+		<requirements>[level:4]</requirements>
+		<supports>General</supports>
+		<prerequisite>Level 4+, General Feat</prerequisite>
+		<description>
+			<p><em>General Feat (Prerequisite: Level 4+)</em></p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Choose one ability in which you lack saving throw proficiency. Increase the chosen ability score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Saving Throw Proficiency.</i></b> You gain saving throw proficiency with the chosen ability.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat Feature" name="Ability Score Increase (Resilient)" supports="Resilient" />
+		</rules>
+	</element>
+	<element name="Resilient (Strength)" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_RESILIENT_STRENGTH">
+		<requirements>!ID_WOTC_PHB24_PROFICIENCY_SAVINGTHROW_STRENGTH</requirements>
+		<compendium display="false" />
+		<supports>Resilient</supports>
+		<description>
+			<p>You gain proficiency with Strength saving throws.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="strength" value="1" alt="Resilient" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SAVINGTHROW_STRENGTH" />
+		</rules>
+	</element>
+	<element name="Strength Saving Throw Proficiency" type="Grants" source="Internal" id="ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SAVINGTHROW_STRENGTH">
+		<rules>
+			<stat name="strength:save:proficiency" value="proficiency" bonus="proficiency" alt="Proficiency" />
+		</rules>
+	</element>
+	<element name="Resilient (Dexterity)" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_RESILIENT_DEXTERITY">
+		<requirements>!ID_WOTC_PHB24_PROFICIENCY_SAVINGTHROW_DEXTERITY</requirements>
+		<compendium display="false" />
+		<supports>Resilient</supports>
+		<description>
+			<p>You gain proficiency with Dexterity saving throws.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="dexterity" value="1" alt="Resilient" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
+		</rules>
+	</element>
+	<element name="Dexterity Saving Throw Proficiency" type="Grants" source="Internal" id="ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SAVINGTHROW_DEXTERITY">
+		<rules>
+			<stat name="dexterity:save:proficiency" value="proficiency" bonus="proficiency" alt="Proficiency" />
+		</rules>
+	</element>
+	<element name="Resilient (Constitution)" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_RESILIENT_CONSTITUTION">
+		<requirements>!ID_WOTC_PHB24_PROFICIENCY_SAVINGTHROW_CONSTITUTION</requirements>
+		<compendium display="false" />
+		<supports>Resilient</supports>
+		<description>
+			<p>You gain proficiency with Constitution saving throws.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="1" alt="Resilient" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
+		</rules>
+	</element>
+	<element name="Constitution Saving Throw Proficiency" type="Grants" source="Internal" id="ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SAVINGTHROW_CONSTITUTION">
+		<rules>
+			<stat name="constitution:save:proficiency" value="proficiency" bonus="proficiency" alt="Proficiency" />
+		</rules>
+	</element>
+	<element name="Resilient (Intelligence)" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_RESILIENT_INTELLIGENCE">
+		<requirements>!ID_WOTC_PHB24_PROFICIENCY_SAVINGTHROW_INTELLIGENCE</requirements>
+		<compendium display="false" />
+		<supports>Resilient</supports>
+		<description>
+			<p>You gain proficiency with Intelligence saving throws.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="intelligence" value="1" alt="Resilient" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
+		</rules>
+	</element>
+	<element name="Intelligence Saving Throw Proficiency" type="Grants" source="Internal" id="ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SAVINGTHROW_INTELLIGENCE">
+		<rules>
+			<stat name="intelligence:save:proficiency" value="proficiency" bonus="proficiency" alt="Proficiency" />
+		</rules>
+	</element>
+	<element name="Resilient (Wisdom)" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_RESILIENT_WISDOM">
+		<requirements>!ID_WOTC_PHB24_PROFICIENCY_SAVINGTHROW_WISDOM</requirements>
+		<compendium display="false" />
+		<supports>Resilient</supports>
+		<description>
+			<p>You gain proficiency with Wisdom saving throws.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="wisdom" value="1" alt="Resilient" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SAVINGTHROW_WISDOM" />
+		</rules>
+	</element>
+	<element name="Wisdom Saving Throw Proficiency" type="Grants" source="Internal" id="ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SAVINGTHROW_WISDOM">
+		<rules>
+			<stat name="wisdom:save:proficiency" value="proficiency" bonus="proficiency" alt="Proficiency" />
+		</rules>
+	</element>
+	<element name="Resilient (Charisma)" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_RESILIENT_CHARISMA">
+		<requirements>!ID_WOTC_PHB24_PROFICIENCY_SAVINGTHROW_CHARISMA</requirements>
+		<compendium display="false" />
+		<supports>Resilient</supports>
+		<description>
+			<p>You gain proficiency with Charisma saving throws.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="charisma" value="1" alt="Resilient" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SAVINGTHROW_CHARISMA" />
+		</rules>
+	</element>
+	<element name="Charisma Saving Throw Proficiency" type="Grants" source="Internal" id="ID_INTERNAL_GRANTS_PHB24_PROFICIENCY_SAVINGTHROW_CHARISMA">
+		<rules>
+			<stat name="charisma:save:proficiency" value="proficiency" bonus="proficiency" alt="Proficiency" />
+		</rules>
+	</element>
+
+	<element name="Ritual Caster" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_RITUAL_CASTER">
+		<requirements>[level:4],([int:13]||[wis:13]||[cha:13])</requirements>
+		<supports>General</supports>
+		<prerequisite>Level 4+, Intelligence, Wisdom, or Charisma 13+, General Feat</prerequisite>
+		<description>
+			<p><em>General Feat (Prerequisite: Level 4+; Intelligence, Wisdom, or Charisma 13+)</em></p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b>  Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Ritual Spells.</i></b> Choose a number of level 1 spells equal to your Proficiency Bonus that have the Ritual tag. You always have those spells prepared, and you can cast them with any spell slots you have. The spells' spellcasting ability is the ability increased by this feat. Whenever your Proficiency Bonus increases thereafter, you can add an additional level 1 spell with the Ritual tag to the spells always prepared with this feature.</p>
+			<p class="indent"><b><i>Quick Ritual.</i></b> With this benefit, you can cast a Ritual spell that you have prepared using its regular casting time rather than the extended time for a Ritual. Doing so doesn't require a spell slot. Once you cast the spell in this way, you can't use this benefit again until you finish a Long Rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat Feature" name="Ability Score Increase (Ritual Caster)" supports="Ritual Caster" />
+			<select type="Spell" name="1st-level Spell (Ritual Caster)" supports="Ritual,1" number="2" />
+			<select type="Spell" name="1st-level Spell (Ritual Caster)" supports="Ritual,1" level="5" />
+			<select type="Spell" name="1st-level Spell (Ritual Caster)" supports="Ritual,1" level="9" />
+			<select type="Spell" name="1st-level Spell (Ritual Caster)" supports="Ritual,1" level="13" />
+			<select type="Spell" name="1st-level Spell (Ritual Caster)" supports="Ritual,1" level="17" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_RITUAL_CASTER_INTELLIGENCE">
+		<compendium display="false" />
+		<supports>Ritual Caster</supports>
+		<description>
+			<p>Increase your Intelligence by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Ritual Caster">
+			<description>Choose {{proficiency}} level 1 spells that have the Ritual tag. You always have those spells prepared, and you can cast them with any spell slots you have. The spells' spellcasting ability is Intelligence. 
+			You can cast a Ritual spell that you have prepared using its regular casting time rather than the extended time for a Ritual. Doing so doesn't require a spell slot. Once you cast the spell in this way, you can't use this benefit again until you finish a Long Rest.</description>
+		</sheet>
+		<rules>
+			<stat name="intelligence" value="1" alt="Ritual Caster" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_RITUAL_CASTER_WISDOM">
+		<compendium display="false" />
+		<supports>Ritual Caster</supports>
+		<description>
+			<p>Increase your Wisdom by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Ritual Caster">
+			<description>Choose {{proficiency}} level 1 spells that have the Ritual tag. You always have those spells prepared, and you can cast them with any spell slots you have. The spells' spellcasting ability is Intelligence. 
+			You can cast a Ritual spell that you have prepared using its regular casting time rather than the extended time for a Ritual. Doing so doesn't require a spell slot. Once you cast the spell in this way, you can't use this benefit again until you finish a Long Rest.</description>
+		</sheet>
+		<rules>
+			<stat name="wisdom" value="1" alt="Ritual Caster" />
+		</rules>
+	</element>
+	<element name="Charisma" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_RITUAL_CASTER_CHARISMA">
+		<compendium display="false" />
+		<supports>Ritual Caster</supports>
+		<description>
+			<p>Increase your Charisma by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Ritual Caster">
+			<description>Choose {{proficiency}} level 1 spells that have the Ritual tag. You always have those spells prepared, and you can cast them with any spell slots you have. The spells' spellcasting ability is Intelligence. 
+			You can cast a Ritual spell that you have prepared using its regular casting time rather than the extended time for a Ritual. Doing so doesn't require a spell slot. Once you cast the spell in this way, you can't use this benefit again until you finish a Long Rest.</description>
+		</sheet>
+		<rules>
+			<stat name="charisma" value="1" alt="Ritual Caster" />
+		</rules>
+	</element>
+
+	<element name="Sentinel" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_SENTINEL">
+		<requirements>[level:4],([str:13]||[dex:13])</requirements>
+		<supports>General</supports>
+		<prerequisite>Level 4+, Strength or Dexterity 13+, General Feat</prerequisite>
+		<description>
+			<p><em>General Feat (Prerequisite: Level 4+, Strength or Dexterity 13+)</em></p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Strength or Dexterity score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Guardian.</i></b> Immediately after a creature within 5 feet of you takes the Disengage action or hits a target other than you with an attack, you can make an Opportunity Attack against that creature.</p>
+			<p class="indent"><b><i>Halt.</i></b> When you hit a creature with an Opportunity Attack, the creature's Speed becomes 0 for the rest of the current turn.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat Feature" name="Ability Score Increase (Sentinel)" supports="Sentinel" />
+		</rules>
+	</element>
+	<element name="Strength" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_SENTINEL_STRENGTH">
+		<compendium display="false" />
+		<supports>Sentinel</supports>
+		<description>
+			<p>Increase your Strength by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Sentinel">
+			<description>Immediately after a creature within 5 feet of you takes the Disengage action or hits a target other than you with an attack, you can make an Opportunity Attack against that creature.
+			When you hit a creature with an Opportunity Attack, the creature's Speed becomes 0 for the rest of the current turn.</description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="1" alt="Sentinel" />
+		</rules>
+	</element>
+	<element name="Dexterity" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_SENTINEL_DEXTERITY">
+		<compendium display="false" />
+		<supports>Sentinel</supports>
+		<description>
+			<p>Increase your Dexterity by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Sentinel">
+			<description>Immediately after a creature within 5 feet of you takes the Disengage action or hits a target other than you with an attack, you can make an Opportunity Attack against that creature.
+			When you hit a creature with an Opportunity Attack, the creature's Speed becomes 0 for the rest of the current turn.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" alt="Sentinel" />
+		</rules>
+	</element>
+	
+	<element name="Shadow-Touched" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_SHADOW_TOUCHED">
+		<requirements>[level:4]</requirements>
+		<supports>General</supports>
+		<prerequisite>Level 4+, General Feat</prerequisite>
+		<description>
+			<p><em>General Feat (Prerequisite: Level 4+)</em></p>
+			<p>Your exposure to the Shadowfell's magic grants you the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b>  Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Shadow Magic.</i></b> Choose one level 1 spell from the Illusion or Necromancy school of magic. You always have that spell and the Invisibility spell prepared. You can cast each of these spells without expending a spell slot. Once you cast either spell in this way, you can't cast that spell in this way again until you finish a Long Rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat Feature" name="Ability Score Increase (Shadow-Touched)" supports="Shadow Touched" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_INVISIBILITY" />
+			<select type="Spell" name="Spell, Shadow-Touched" supports="1,(Illusion||Necromancy)" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_SHADOW_TOUCHED_INTELLIGENCE">
+		<compendium display="false" />
+		<supports>Shadow Touched</supports>
+		<description>
+			<p>Increase your Intelligence by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Shadow-Touched">
+			<description>Choose one level 1 spell from the Illusion or Necromancy school of magic. You always have that spell and the Invisibility spell prepared. You can cast each of these spells without expending a spell slot. Once you cast either spell in this way, you can't cast that spell in this way again until you finish a Long Rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is Intelligence.</description>
+		</sheet>
+		<rules>
+			<stat name="intelligence" value="1" alt="Shadow-Touched" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_SHADOW_TOUCHED_WISDOM">
+		<compendium display="false" />
+		<supports>Shadow Touched</supports>
+		<description>
+			<p>Increase your Wisdom by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Shadow-Touched">
+			<description>Choose one level 1 spell from the Illusion or Necromancy school of magic. You always have that spell and the Invisibility spell prepared. You can cast each of these spells without expending a spell slot. Once you cast either spell in this way, you can't cast that spell in this way again until you finish a Long Rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is Wisdom.</description>
+		</sheet>
+		<rules>
+			<stat name="wisdom" value="1" alt="Shadow-Touched" />
+		</rules>
+	</element>
+	<element name="Charisma" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_SHADOW_TOUCHED_CHARISMA">
+		<compendium display="false" />
+		<supports>Shadow Touched</supports>
+		<description>
+			<p>Increase your Charisma by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Spell Sniper">
+			<description>Choose one level 1 spell from the Illusion or Necromancy school of magic. You always have that spell and the Invisibility spell prepared. You can cast each of these spells without expending a spell slot. Once you cast either spell in this way, you can't cast that spell in this way again until you finish a Long Rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is Charisma.</description>
+		</sheet>
+		<rules>
+			<stat name="charisma" value="1" alt="Spell Sniper" />
+		</rules>
+	</element>
+
+	<element name="Sharpshooter" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_SHARPSHOOTER">
+		<requirements>[level:4],[dex:13]</requirements>
+		<supports>General</supports>
+		<prerequisite>Level 4+, Dexterity 13+, General Feat</prerequisite>
+		<description>
+			<p><em>General Feat (Prerequisite: Level 4+, Dexterity 13+)</em></p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Dexterity score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Bypass Cover.</i></b> Your ranged attacks with weapons ignore Half Cover and Three-Quarters Cover.</p>
+			<p class="indent"><b><i>Firing in Melee.</i></b> Being within 5 feet of an enemy doesn't impose Disadvantage on your attack rolls with Ranged weapons.</p>
+			<p class="indent"><b><i>Long Shots.</i></b> Attacking at long range doesn't impose Disadvantage on your attack rolls with Ranged weapons.</p>
+		</description>
+		<sheet>
+			<description>Your ranged attacks with weapons ignore Half Cover and Three-Quarters Cover. Being within 5ft of an enemy doesn't impose Disadvantage on your attack rolls with Ranged weapons. Attacking at long range doesn't impose Disadvantage on your attack rolls with Ranged weapons.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" alt="Sharpshooter" />
+		</rules>
+	</element>
+
+	<element name="Shield Master" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_SHIELD_MASTER">
+		<requirements>[level:4],ID_WOTC_PHB24_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS</requirements>
+		<supports>General</supports>
+		<prerequisite>Level 4+, Shield Training, General Feat</prerequisite>
+		<description>
+			<p><em>General Feat (Prerequisite: Level 4+, Shield Training)</em></p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Strength score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Shield Bash.</i></b> If you attack a creature within 5 feet of you as part of the Attack action and hit with a Melee weapon, you can immediately bash the target with your Shield if it's equipped, forcing the target to make a Strength saving throw (DC 8 plus your Strength modifier and Proficiency Bonus). On a failed save, you either push the target 5 feet from you or cause it to have the Prone condition (your choice). You can use this benefit only once on each of your turns.</p>
+			<p class="indent"><b><i>Interpose Shield.</i></b> If you're subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you can take a Reaction to take no damage if you succeed on the saving throw and are holding a Shield.</p>
+		</description>
+		<sheet>
+			<description>If, as part of the Attack action, you hit a creature within 5ft of you with a Melee weapon, you can immediately bash the target with your Shield if it's equipped, forcing the target to make a DC{{shield:bash:dc}} Strength saving throw. On a failed save, you either push the target 5ft from you or cause it to have the Prone condition (your choice). You can use this benefit only once on each of your turns.
+			If you're subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you can take a Reaction to take no damage if you succeed on the saving throw and are holding a Shield.</description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="1" alt="Shield Master" />
+			<stat name="shield:bash:dc" value="8" />
+			<stat name="shield:bash:dc" value="proficiency" />
+			<stat name="shield:bash:dc" value="strength:modifier" />
+		</rules>
+	</element>
+	
+	<element name="Skill Expert" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_SKILL_EXPERT">
+		<requirements>[level:4]</requirements>
+		<supports>General</supports>
+		<prerequisite>Level 4+, General Feat</prerequisite>
+		<description>
+			<p><em>General Feat (Prerequisite: Level 4+)</em></p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase one ability score of your choice by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Skill Proficiency.</i></b> You gain proficiency in one skill of your choice.</p>
+			<p class="indent"><b><i>Expertise.</i></b> Choose one skill in which you have proficiency but lack Expertise. You gain Expertise with that skill.</p>
+		</description>
+		<sheet>
+			<description>You gain proficiency in one skill of your choice. You gain Expertise with one skill in which you have proficiency.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Skill Expert)" supports="Feat Ability Score Increase" />
+			<select type="Proficiency" name="Skill Proficiency (Skill Expert)" supports="ID_PROFICIENCY_SKILL" />
+			<select type="Proficiency" name="Expertise (Skill Expert)" supports="ID_INTERNAL_SUPPORT_EXPERTISE"/>
+		</rules>
+	</element>
+
+	<element name="Skulker" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_SKULKER">
+		<requirements>[level:4],[dex:13]</requirements>
+		<supports>General</supports>
+		<prerequisite>Level 4+, Dexterity 13+, General Feat</prerequisite>
+		<description>
+			<p><em>General Feat (Prerequisite: Level 4+, Dexterity 13+)</em></p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Dexterity by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Blindsight.</i></b> You have Blindsight with a range of 10 feet.</p>
+			<p class="indent"><b><i>Fog of War.</i></b> You exploit the distractions of battle, gaining Advantage on any Dexterity (Stealth) check you make as part of the Hide action during combat.</p>
+			<p class="indent"><b><i>Sniper.</i></b> If you make an attack roll while hidden and the roll misses, making the attack roll doesn't reveal your location.</p>
+		</description>
+		<sheet>
+			<description>You gain you Advantage on any Dexterity (Stealth) check you make as part of the Hide action during combat. If you make an attack roll while hidden and the roll misses, making the attack roll doesn't reveal your location.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" alt="Skulker" />
+			<grant type="Vision" id="ID_VISION_BLINDSIGHT" />
+			<stat name="blindsight:range" value="10" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Slasher" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_SLASHER">
+		<requirements>[level:4]</requirements>
+		<supports>General</supports>
+		<prerequisite>Level 4+, General Feat</prerequisite>
+		<description>
+			<p><em>General Feat (Prerequisite: Level 4+)</em></p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Strength or Dexterity score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Hamstring.</i></b> Once per turn when you hit a creature with an attack that deals Slashing damage, you can reduce the Speed of that creature by 10 feet until the start of your next turn.</p>
+			<p class="indent"><b><i>Enhanced Critical.</i></b> When you score a Critical Hit that deals Slashing damage to a creature, it has Disadvantage on attack rolls until the start of your next turn.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat Feature" name="Ability Score Increase (Slasher)" supports="Slasher" />
+		</rules>
+	</element>
+	<element name="Strength" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_SLASHER_STRENGTH">
+		<compendium display="false" />
+		<supports>Slasher</supports>
+		<description>
+			<p>Increase your Strength by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Slasher">
+			<description>Once per turn when you hit a creature with an attack that deals Slashing damage, you can reduce the Speed of that creature by 10ft until the start of your next turn.
+			When you score a Critical Hit that deals Slashing damage to a creature, it has Disadvantage on attack rolls until the start of your next turn.</description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="1" alt="Slasher" />
+		</rules>
+	</element>
+	<element name="Dexterity" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_SLASHER_DEXTERITY">
+		<compendium display="false" />
+		<supports>Slasher</supports>
+		<description>
+			<p>Increase your Dexterity by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Slasher">
+			<description>Once per turn when you hit a creature with an attack that deals Slashing damage, you can reduce the Speed of that creature by 10ft until the start of your next turn.
+			When you score a Critical Hit that deals Slashing damage to a creature, it has Disadvantage on attack rolls until the start of your next turn.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" alt="Slasher" />
+		</rules>
+	</element>
+
+	<element name="Speedy" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_SPEEDY">
+		<requirements>[level:4],([dex:13]||[con:13])</requirements>
+		<supports>General</supports>
+		<prerequisite>Level 4+, Dexterity or Constitution 13+, General Feat</prerequisite>
+		<description>
+			<p><em>General Feat (Prerequisite: Level 4+, Dexterity or Constitution 13+)</em></p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Dexterity or Constitution score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Speed Increase.</i></b> Your Speed increases by 10 feet.</p>
+			<p class="indent"><b><i>Dash over Difficult Terrain.</i></b> When you take the Dash action on your turn, Difficult Terrain doesn't cost you extra movement for the rest of that turn.</p>
+			<p class="indent"><b><i>Agile Movement.</i></b> Opportunity Attacks have Disadvantage against you.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat Feature" name="Ability Score Increase (Speedy)" supports="Speedy" />
+			<stat name="speed" value="10" />
+		</rules>
+	</element>
+	<element name="Dexterity" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_SPEEDY_DEXTERITY">
+		<compendium display="false" />
+		<supports>Speedy</supports>
+		<description>
+			<p>Increase your Dexterity by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Speedy">
+			<description>When you take the Dash action on your turn, Difficult Terrain doesn't cost you extra movement for the rest of that turn. Opportunity Attacks have Disadvantage against you.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" alt="Speedy" />
+		</rules>
+	</element>
+	<element name="Constitution" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_SPEEDY_CONSTITUTION">
+		<compendium display="false" />
+		<supports>Speedy</supports>
+		<description>
+			<p>Increase your Constitution by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Speedy">
+			<description>When you take the Dash action on your turn, Difficult Terrain doesn't cost you extra movement for the rest of that turn. Opportunity Attacks have Disadvantage against you.</description>
+		</sheet>
+		<rules>
+			<stat name="constitution" value="1" alt="Speedy" />
+		</rules>
+	</element>
+
+	<element name="Spell Sniper" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_SPELLSNIPER">
+		<requirements>[level:4],(ID_WOTC_PHB24_CLASS_FEATURE_BARD_SPELLCASTING||ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SPELLCASTING||ID_WOTC_PHB24_CLASS_FEATURE_DRUID_SPELLCASTING||ID_WOTC_PHB24_ARCHETYPE_FEATURE_FIGHTER_ELDRITCH_KNIGHT_SPELLCASTING||ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_SPELLCASTING||ID_WOTC_PHB24_CLASS_FEATURE_RANGER_SPELLCASTING||ID_WOTC_PHB24_ARCHETYPE_FEATURE_ROGUE_ARCANE_TRICKSTER_SPELLCASTING||ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_PACT_MAGIC||ID_WOTC_PHB24_CLASS_FEATURE_SORCERER_SPELLCASTING_SORCERER||ID_WOTC_PHB24_CLASS_FEATURE_WIZARD_SPELLCASTING)</requirements>
+		<supports>General</supports>
+		<prerequisite>Level 4+, Spellcasting or Pact Magic Feature, General Feat</prerequisite>
+		<description>
+			<p><em>General Feat (Prerequisite: Level 4+, Spellcasting or Pact Magic Feature)</em></p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Bypass Cover.</i></b> Your attack rolls for spells ignore Half Cover and Three-Quarters Cover.</p>
+			<p class="indent"><b><i>Casting in Melee.</i></b> Being within 5 feet of an enemy doesn't impose Disadvantage on your attack rolls with spells.</p>
+			<p class="indent"><b><i>Increased Range.</i></b> When you cast a spell that has a range of at least 10 feet and requires you to make an attack roll, you can increase the spell's range by 60 feet.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat Feature" name="Ability Score Increase (Spell Sniper)" supports="Spell Sniper" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_SPELLSNIPER_INTELLIGENCE">
+		<compendium display="false" />
+		<supports>Spell Sniper</supports>
+		<description>
+			<p>Increase your Intelligence by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Spell Sniper">
+			<description>Being within 5 feet of an enemy doesn't impose Disadvantage on your attack rolls with spells. Your attack rolls for spells ignore Half Cover and Three-Quarters Cover. When you cast a spell that has a range of at least 10ft and requires you to make an attack roll, you can increase the spell's range by 60ft.</description>
+		</sheet>
+		<rules>
+			<stat name="intelligence" value="1" alt="Spell Sniper" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_SPELLSNIPER_WISDOM">
+		<compendium display="false" />
+		<supports>Spell Sniper</supports>
+		<description>
+			<p>Increase your Wisdom by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Spell Sniper">
+			<description>Being within 5 feet of an enemy doesn't impose Disadvantage on your attack rolls with spells. Your attack rolls for spells ignore Half Cover and Three-Quarters Cover. When you cast a spell that has a range of at least 10ft and requires you to make an attack roll, you can increase the spell's range by 60ft.</description>
+		</sheet>
+		<rules>
+			<stat name="wisdom" value="1" alt="Spell Sniper" />
+		</rules>
+	</element>
+	<element name="Charisma" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_SPELLSNIPER_CHARISMA">
+		<compendium display="false" />
+		<supports>Spell Sniper</supports>
+		<description>
+			<p>Increase your Charisma by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Spell Sniper">
+			<description>Being within 5 feet of an enemy doesn't impose Disadvantage on your attack rolls with spells. Your attack rolls for spells ignore Half Cover and Three-Quarters Cover. When you cast a spell that has a range of at least 10ft and requires you to make an attack roll, you can increase the spell's range by 60ft.</description>
+		</sheet>
+		<rules>
+			<stat name="charisma" value="1" alt="Spell Sniper" />
+		</rules>
+	</element>
+
+	<element name="Telekinetic" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_TELEKINETIC">
+		<requirements>[level:4]</requirements>
+		<supports>General</supports>
+		<prerequisite>Level 4+, General Feat</prerequisite>
+		<description>
+			<p><em>General Feat (Prerequisite: Level 4+)</em></p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase one ability score of your choice by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Minor Telekinesis.</i></b> You learn the <i>Mage Hand</i> spell. You can cast it without Verbal or Somatic components, you can make the spectral hand invisible, and its range increases by 30 feet when you cast it. The spell's spellcasting ability is the ability increased by this feat.</p>
+			<p class="indent"><b><i>Telekinetic Shove.</i></b> As a Bonus Action, you can telekinetically shove one creature you can see within 30 feet of yourself. When you do so, the target must succeed on a Strength saving throw (DC 8 plus the ability modifier of the score increased by this feat and your Proficiency Bonus) or be moved 5 feet toward or away from you.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB24_SPELL_MAGE_HAND" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat Feature" name="Ability Score Increase (Telekinetic)" supports="Telekinetic" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MAGE_HAND" />
+			<stat name="telekinetic:mage hand:dc" value="8" />
+			<stat name="telekinetic:mage hand:dc" value="proficiency" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_TELEKINETIC_INTELLIGENCE">
+		<compendium display="false" />
+		<supports>Telekinetic</supports>
+		<description>
+			<p>Increase your Intelligence by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Telekinetic">
+			<description>You learn the mage hand cantrip, can cast it without verbal or somatic components, and you can make the spectral hand invisible. If you already know this spell, its range increases by 30 feet when you cast it. Your spellcasting ability for this spell is Intelligence.  
+			As a bonus action, you can try to telekinetically shove one creature you can see within 30 feet of you. When you do so, the target must succeed on a DC{{telekinetic:mage hand:dc}} Strength save or be moved 5 feet toward you or away from you.</description>
+		</sheet>
+		<rules>
+			<stat name="intelligence" value="1" alt="Telekinetic" />
+			<stat name="telekinetic:mage hand:dc" value="intelligence:modifier" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_TELEKINETIC_WISDOM">
+		<compendium display="false" />
+		<supports>Telekinetic</supports>
+		<description>
+			<p>Increase your Wisdom by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Telekinetic">
+			<description>You learn the mage hand cantrip, can cast it without verbal or somatic components, and you can make the spectral hand invisible. If you already know this spell, its range increases by 30 feet when you cast it. Your spellcasting ability for this spell is Wisdom.  
+			As a bonus action, you can try to telekinetically shove one creature you can see within 30 feet of you. When you do so, the target must succeed on a DC{{telekinetic:mage hand:dc}} Strength save or be moved 5 feet toward you or away from you.</description>
+		</sheet>
+		<rules>
+			<stat name="wisdom" value="1" alt="Telekinetic" />
+			<stat name="telekinetic:mage hand:dc" value="wisdom:modifier" />
+		</rules>
+	</element>
+	<element name="Charisma" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_TELEKINETIC_CHARISMA">
+		<compendium display="false" />
+		<supports>Telekinetic</supports>
+		<description>
+			<p>Increase your Charisma by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Telekinetic">
+			<description>You learn the mage hand cantrip, can cast it without verbal or somatic components, and you can make the spectral hand invisible. If you already know this spell, its range increases by 30 feet when you cast it. Your spellcasting ability for this spell is Charisma.  
+			As a bonus action, you can try to telekinetically shove one creature you can see within 30 feet of you. When you do so, the target must succeed on a DC{{telekinetic:mage hand:dc}} Strength save or be moved 5 feet toward you or away from you.</description>
+		</sheet>
+		<rules>
+			<stat name="charisma" value="1" alt="Telekinetic" />
+			<stat name="telekinetic:mage hand:dc" value="charisma:modifier" />
+		</rules>
+	</element>
+
+	<element name="Telepathic" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_TELEPATHIC">
+		<requirements>[level:4]</requirements>
+		<supports>General</supports>
+		<prerequisite>Level 4+, General Feat</prerequisite>
+		<description>
+			<p><em>General Feat (Prerequisite: Level 4+)</em></p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Telepathic Utterance.</i></b> You can speak telepathically to any creature you can see within 60 feet of yourself. Your telepathic utterances are in a language you know, and the creature understands you only if it knows that language. Your communication doesn't give the creature the ability to respond to you telepathically.</p>
+			<p class="indent"><b><i>Detect Thought.</i></b> You always have the <i>Detect Thoughts</i> spell prepared. You can cast it without a spell slot or spell components, and you must finish a Long Rest before you can cast it in this way again. You can also cast it using spell slots you have of the appropriate level. Your spellcasting ability for the spell is the ability increased by this feat.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB24_SPELL_DETECT_THOUGHTS" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat Feature" name="Ability Score Increase (Telepathic)" supports="Telepathic" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DETECT_THOUGHTS" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_TELEPATHIC_INTELLIGENCE">
+		<compendium display="false" />
+		<supports>Telepathic</supports>
+		<description>
+			<p>Increase your Intelligence by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Telepathic">
+			<description>You can speak telepathically to any creature you can see within 60 feet of you. Your telepathic utterances are in a language you know, and the creature understands you only if it knows that language. Your communication doesn't give the creature the ability to respond to you telepathically. 
+			You can cast the detect thoughts spell, requiring no spell slot or components, and you must finish a long rest before you can cast this it this way again. Your spellcasting ability for this spell is Intelligence. If you have spell slots of 2nd level or higher, you can cast this spell with them.</description>
+		</sheet>
+		<rules>
+			<stat name="intelligence" value="1" alt="Telepathic" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_TELEPATHIC_WISDOM">
+		<compendium display="false" />
+		<supports>Telepathic</supports>
+		<description>
+			<p>Increase your Wisdom by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Telepathic">
+			<description>You can speak telepathically to any creature you can see within 60 feet of you. Your telepathic utterances are in a language you know, and the creature understands you only if it knows that language. Your communication doesn't give the creature the ability to respond to you telepathically. 
+			You can cast the detect thoughts spell, requiring no spell slot or components, and you must finish a long rest before you can cast this it this way again. Your spellcasting ability for this spell is Wisdom. If you have spell slots of 2nd level or higher, you can cast this spell with them.</description>
+		</sheet>
+		<rules>
+			<stat name="wisdom" value="1" alt="Telepathic" />
+		</rules>
+	</element>
+	<element name="Charisma" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_TELEPATHIC_CHARISMA">
+		<compendium display="false" />
+		<supports>Telepathic</supports>
+		<description>
+			<p>Increase your Charisma by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Telepathic">
+			<description>You can speak telepathically to any creature you can see within 60 feet of you. Your telepathic utterances are in a language you know, and the creature understands you only if it knows that language. Your communication doesn't give the creature the ability to respond to you telepathically. 
+			You can cast the detect thoughts spell, requiring no spell slot or components, and you must finish a long rest before you can cast this it this way again. Your spellcasting ability for this spell is Charisma. If you have spell slots of 2nd level or higher, you can cast this spell with them.</description>
+		</sheet>
+		<rules>
+			<stat name="charisma" value="1" alt="Telepathic" />
+		</rules>
+	</element>
+
+	<element name="War Caster" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_WAR_CASTER">
+		<requirements>[level:4],(ID_WOTC_PHB24_CLASS_FEATURE_BARD_SPELLCASTING||ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SPELLCASTING||ID_WOTC_PHB24_CLASS_FEATURE_DRUID_SPELLCASTING||ID_WOTC_PHB24_ARCHETYPE_FEATURE_FIGHTER_ELDRITCH_KNIGHT_SPELLCASTING||ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_SPELLCASTING||ID_WOTC_PHB24_CLASS_FEATURE_RANGER_SPELLCASTING||ID_WOTC_PHB24_ARCHETYPE_FEATURE_ROGUE_ARCANE_TRICKSTER_SPELLCASTING||ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_PACT_MAGIC||ID_WOTC_PHB24_CLASS_FEATURE_SORCERER_SPELLCASTING_SORCERER||ID_WOTC_PHB24_CLASS_FEATURE_WIZARD_SPELLCASTING)</requirements>
+		<supports>General</supports>
+		<prerequisite>Level 4+, Spellcasting or Pact Magic Feature, General Feat</prerequisite>
+		<description>
+			<p><em>General Feat (Prerequisite: Level 4+, Spellcasting or Pact Magic Feature)</em></p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Concentration.</i></b> You have Advantage on Constitution saving throws that you make to maintain Concentration.</p>
+			<p class="indent"><b><i>Reactive Spell.</i></b> When a creature provokes an Opportunity Attack from you by leaving your reach, you can take a Reaction to cast a spell at the creature rather than making an Opportunity Attack. The spell must have a casting time of one action and must target only that creature.</p>
+			<p class="indent"><b><i>Somatic Components.</i></b> You can perform the Somatic components of spells even when you have weapons or a Shield in one or both hands.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat Feature" name="Ability Score Increase (War Caster)" supports="War Caster" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_WAR_CASTER_INTELLIGENCE">
+		<compendium display="false" />
+		<supports>War Caster</supports>
+		<description>
+			<p>Increase your Intelligence by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="War Caster">
+			<description>You have advantage on Constitution saving throws that you make to maintain Concentration.
+			You can perform the somatic components of spells even when you have weapons or a shield in one or both hands.
+			When a creature provokes an Opportunity Attack from you, you can use your Reaction to cast a spell at the creature, rather than making an Opportunity Attack. The spell must have a casting time of 1 action and must target only that creature.</description>
+		</sheet>
+		<rules>
+			<stat name="intelligence" value="1" alt="War Caster" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_WAR_CASTER_WISDOM">
+		<compendium display="false" />
+		<supports>War Caster</supports>
+		<description>
+			<p>Increase your Wisdom by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="War Caster">
+			<description>You have advantage on Constitution saving throws that you make to maintain Concentration.
+			You can perform the somatic components of spells even when you have weapons or a shield in one or both hands.
+			When a creature provokes an Opportunity Attack from you, you can use your Reaction to cast a spell at the creature, rather than making an Opportunity Attack. The spell must have a casting time of 1 action and must target only that creature.</description>
+		</sheet>
+		<rules>
+			<stat name="wisdom" value="1" alt="War Caster" />
+		</rules>
+	</element>
+	<element name="Charisma" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_WAR_CASTER_CHARISMA">
+		<compendium display="false" />
+		<supports>War Caster</supports>
+		<description>
+			<p>Increase your Charisma by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="War Caster">
+			<description>You have advantage on Constitution saving throws that you make to maintain Concentration.
+			You can perform the somatic components of spells even when you have weapons or a shield in one or both hands.
+			When a creature provokes an Opportunity Attack from you, you can use your Reaction to cast a spell at the creature, rather than making an Opportunity Attack. The spell must have a casting time of 1 action and must target only that creature.</description>
+		</sheet>
+		<rules>
+			<stat name="charisma" value="1" alt="War Caster" />
+		</rules>
+	</element>
+
+	<element name="Weapon Master" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_WEAPON_MASTER">
+		<requirements>[level:4]</requirements>
+		<supports>General</supports>
+		<prerequisite>Level 4+, General Feat</prerequisite>
+		<description>
+			<p><em>General Feat (Prerequisite: Level 4+)</em></p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Strength or Dexterity score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Mastery Property.</i></b> Your training with weapons allows you to use the mastery property of one kind of Simple or Martial weapon of your choice, provided you have proficiency with it. Whenever you finish a Long Rest, you can change the kind of weapon to another eligible kind.</p>
+		</description>
+		<sheet>
+			<description>You can use the mastery property of one kind of Simple or Martial weapon  you are proficient with. Whenever you finish a Long Rest, you can change the kind of weapon to another eligible kind.</description>
+		</sheet>
+		<rules>
+			<select type="Feat Feature" name="Ability Score Increase (Weapon Master)" supports="Weapon Master" />
+			<select type="Class Feature" name="Weapon Mastery" supports="Weapon Mastery"/>
+		</rules>
+	</element>
+	<element name="Strength" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_WEAPON_MASTER_STRENGTH">
+		<compendium display="false" />
+		<supports>Weapon Master</supports>
+		<description>
+			<p>Increase your Strength by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Weapon Master">
+			<description>You can use the mastery property of one kind of Simple or Martial weapon  you are proficient with. Whenever you finish a Long Rest, you can change the kind of weapon to another eligible kind.</description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="1" alt="Weapon Master" />
+		</rules>
+	</element>
+	<element name="Dexterity" type="Feat Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_FEATURE_WEAPON_MASTER_DEXTERITY">
+		<compendium display="false" />
+		<supports>Weapon Master</supports>
+		<description>
+			<p>Increase your Dexterity by 1, to a maximum of 20.</p>
+		</description>
+		<sheet alt="Weapon Master">
+			<description>You can use the mastery property of one kind of Simple or Martial weapon  you are proficient with. Whenever you finish a Long Rest, you can change the kind of weapon to another eligible kind.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" alt="Weapon Master" />
+		</rules>
+	</element>
+
+</elements>

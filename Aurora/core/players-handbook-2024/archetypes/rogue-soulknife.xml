@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Soulknife</name>
+		<description>The Soulknife subclass from the Player’s Handbook 2024.</description>
+		<author url="https://dndstore.wizards.com/us/en/product/1001494/2024-player-s-handbook-digital-plus-physical-bundle">Wizards of the Coast</author>
+		<update version="0.0.6">
+			<file name="rogue-soulknife.xml" url="https://raw.githubusercontent.com/Netrinil/Aurora/master/core/players-handbook-2024/archetypes/rogue-soulknife.xml" />
+		</update>
+	</info>
+
+	<element name="Soulknife" type="Archetype" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_ARCHETYPE_ROGUE_SOULKNIFE">
+		<supports>Roguish Archetype</supports>
+		<description>
+			<p class="flavor">Strike Foes with Psionic Blades</p>
+			<p>A Soulknife strikes with the mind, cutting through barriers both physical and psychic. These Rogues discover psionic power within themselves and channel it to do their roguish work. As a Soulknife, your psionic abilities might have haunted you since childhood, revealing their full potential only as you experienced the stress of adventure. Or you might have sought out an order of psychic adepts and spent years learning how to manifest your power.</p>
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ROGUE_SOULKNIFE_PSIONIC_POWER" />
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ROGUE_SOULKNIFE_PSYCHIC_BLADES" />
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ROGUE_SOULKNIFE_SOUL_BLADES" />
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ROGUE_SOULKNIFE_PSYCHIC_VEIL" />
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ROGUE_SOULKNIFE_REND_MIND" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ROGUE_SOULKNIFE_PSIONIC_POWER" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ROGUE_SOULKNIFE_PSYCHIC_BLADES" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ROGUE_SOULKNIFE_SOUL_BLADES" level="9" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ROGUE_SOULKNIFE_PSYCHIC_VEIL" level="13" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ROGUE_SOULKNIFE_REND_MIND" level="17" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Psionic Power" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ROGUE_SOULKNIFE_PSIONIC_POWER">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_24_SOULKNIFE_PSIONIC_POWER</requirements>
+		<description>
+			<p>You harbor a wellspring of psionic energy within yourself. It is represented by your Psionic Energy Dice, which fuel certain powers you have from this subclass. The Soulknife Energy Dice table shows the number of these dice you have when you reach certain Rogue levels, and the table shows the die size.</p>
+			<h5 class="caption">Soulknife Energy Dice</h5>
+			<table>
+				<thead>
+					<tr><td class="center">Rogue Level</td><td class="center">Die Size</td><td class="center">Number</td></tr>
+				</thead>
+				<tr><td class="center">3</td><td class="center">d6</td><td class="center">4</td></tr>
+				<tr><td class="center">5</td><td class="center">d8</td><td class="center">6</td></tr>
+				<tr><td class="center">9</td><td class="center">d8</td><td class="center">8</td></tr>
+				<tr><td class="center">11</td><td class="center">d10</td><td class="center">8</td></tr>
+				<tr><td class="center">13</td><td class="center">d10</td><td class="center">10</td></tr>
+				<tr><td class="center">17</td><td class="center">d12</td><td class="center">12</td></tr>
+			</table>
+			<p>Any features in this subclass that use a Psionic Energy Die use only the dice from this subclass. Some of your powers expend a Psionic Energy Die, as specified in a power’s description, and you can’t use a power if it requires you to use a die when your Psionic Energy Dice are all expended.</p>
+			<p class="indent">You regain one of your expended Psionic Energy Dice when you finish a Short Rest, and you regain all of them when you finish a Long Rest.</p>
+			<p>The powers below use your Psionic Energy dice.</p>
+			<p class="indent"><em><strong>Psi-Bolstered Knack.</strong></em> If you fail an ability check using a skill or tool with which you have proficiency, you can roll one Psionic Energy Die and add the number rolled to the check, potentially turning failure into success. The die is expended only if the roll then succeeds.</p>
+			<p class="indent"><em><strong>Psychic Whispers.</strong></em> You can establish telepathic communication between yourself and others. As a Magic action, choose one or more creatures you can see, up to a number of creatures equal to your Proficiency Bonus, and then roll one Psionic Energy Die. For a number of hours equal to the number rolled, the chosen creatures can speak telepathically with you, and you can speak telepathically with them. To send or receive a message (no action required), you and the other creature must be within 1 mile of each other. A creature can end the telepathic connection at any time (no action required).</p>
+			<p class="indent">The first time you use this power after each Long Rest, you don’t expend the Psionic Energy Die. All other times you use the power, you expend the die.</p>
+		</description>
+		<sheet alt="Psionic Power" usage="{{psionic power:dice:amount}}d{{psionic power:dice:size}}/Long Rest">
+			<description>This energy is represented by your Psionic Energy dice, which are each a d{{psionic power:dice:size}}. You can regain one expended Psionic Energy die whenever you finish a Short Rest.</description>
+		</sheet>
+		<rules>
+			<stat name="psionic power:dice:size" value="6" bonus="base" />
+			<stat name="psionic power:dice:size" value="8" level="5" bonus="base" />
+			<stat name="psionic power:dice:size" value="10" level="11" bonus="base" />
+			<stat name="psionic power:dice:size" value="12" level="17" bonus="base" />
+			<stat name="soul knife psionic power:proficiency" value="proficiency" />
+			<stat name="soul knife psionic power:proficiency" value="proficiency" />
+			<stat name="psionic power:dice:amount" value="soul knife psionic power:proficiency" bonus="base" />
+			<stat name="psionic power:dc" value="8" bonus="base" />
+			<stat name="psionic power:dc" value="proficiency" bonus="proficiency" />
+			<stat name="psionic power:dc" value="intelligence:modifier" bonus="ability" />
+			<select type="Archetype Feature" name="Psi-Bolstered Knack" supports="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ROGUE_SOULKNIFE_PSIONIC_POWER_PSI_BOLSTERED_KNACK" default="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ROGUE_SOULKNIFE_PSIONIC_POWER_PSI_BOLSTERED_KNACK" />
+			<select type="Archetype Feature" name="Psychic Whispers" supports="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ROGUE_SOULKNIFE_PSIONIC_POWER_PSYCHIC_WHISPERS" default="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ROGUE_SOULKNIFE_PSIONIC_POWER_PSYCHIC_WHISPERS" />
+		</rules>
+	</element>
+	<element name="Psi-Bolstered Knack" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ROGUE_SOULKNIFE_PSIONIC_POWER_PSI_BOLSTERED_KNACK">
+		<supports>ID_WOTC_PHB24_ARCHETYPE_FEATURE_ROGUE_SOULKNIFE_PSIONIC_POWER_PSI_BOLSTERED_KNACK</supports>
+		<compendium display="false" />
+		<description>
+			<p>If you fail an ability check using a skill or tool with which you have proficiency, you can roll one Psionic Energy Die and add the number rolled to the check, potentially turning failure into success. The die is expended only if the roll then succeeds.</p>
+		</description>
+		<sheet usage="Psionic Energy">
+			<description>If you fail an ability check using a skill or tool with which you have proficiency, you can roll one Psionic Energy Die and add the number rolled to the check, potentially turning failure into success. &#13;
+			The die is expended only if the roll then succeeds.</description>
+		</sheet>
+	</element>
+	<element name="Psychic Whispers" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ROGUE_SOULKNIFE_PSIONIC_POWER_PSYCHIC_WHISPERS">
+		<supports>ID_WOTC_PHB24_ARCHETYPE_FEATURE_ROGUE_SOULKNIFE_PSIONIC_POWER_PSYCHIC_WHISPERS</supports>
+		<compendium display="false" />
+		<description>
+			<p>You can establish telepathic communication between yourself and others. As a Magic action, choose one or more creatures you can see, up to a number of creatures equal to your Proficiency Bonus, and then roll one Psionic Energy Die. For a number of hours equal to the number rolled, the chosen creatures can speak telepathically with you, and you can speak telepathically with them. To send or receive a message (no action required), you and the other creature must be within 1 mile of each other. A creature can end the telepathic connection at any time (no action required).</p>
+			<p class="indent">The first time you use this power after each Long Rest, you don’t expend the Psionic Energy Die. All other times you use the power, you expend the die.</p>
+		</description>
+		<sheet action="Magic Action" usage="Psionic Energy">
+			<description>Choose up to {{proficiency}} creatures you can see, and then roll one Psionic Energy die. For a number of hours equal to the number rolled, the chosen creatures can speak telepathically with you, and you can speak telepathically with them. To send or receive a message (no action required), you and the other creature must be within 1 mile of each other. A creature can end the telepathic connection at any time (no action required). &#13;
+			The first time you use this power after each Long Rest, you don’t expend the Psionic Energy die. All other times you use the power, you expend the die.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Psychic Blades" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ROGUE_SOULKNIFE_PSYCHIC_BLADES">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_24_SOULKNIFE_PSYCHIC_BLADES</requirements>
+		<description>
+			<p>You can manifest shimmering blades of psychic energy. Whenever you take the Attack action or make an Opportunity Attack, you can manifest a Psychic Blade in your free hand and make the attack with that blade. This magic blade is a simple melee weapon with the finesse and thrown properties, and has the Vex weapon mastery. It has a normal range of 20 feet and a long range of 120 feet. On a hit, it deals psychic damage equal to 1d6 plus the ability modifier you used for the attack roll.</p>
+			<p class="indent">The blade vanishes immediately after it hits or misses its target, and it leaves no mark if it deals damage.</p>
+			<p class="indent">After you attack with the blade on your turn, you can make a melee or ranged attack with a second psychic blade as a Bonus Action on the same turn if your other hand is free to create it. The damage die of this bonus attack is 1d4 instead of 1d6.</p>
+		</description>
+		<sheet alt="Psychic Blades">
+			<description>Whenever you take the Attack action or make an Opportunity Attack, you can manifest a Psychic Blade in your free hand and make the attack with that blade. The blade is a simple melee weapon with the finesse and thrown properties, has the Vex weapon mastery, and a range of 20/120 feet. On a hit, it deals 1d6+{{psychic blades:modifier}}, and vanishes immediately after it hits or misses its target, leaving no mark on its target if it deals damage.
+			After you attack with the blade on your turn, you can make a melee or ranged attack with a second psychic blade as a Bonus Action on the same turn if your other hand is free to create it. The damage die of this bonus attack is 1d4 instead of 1d6.</description>
+		</sheet>
+		<rules>
+			<stat name="psychic blades:modifier" value="strength:modifier" bonus="psychic blades" />
+			<stat name="psychic blades:modifier" value="dexterity:modifier" bonus="psychic blades" />
+		</rules>
+	</element>
+
+	<element name="Level 9: Soul Blades" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ROGUE_SOULKNIFE_SOUL_BLADES">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_24_SOULKNIFE_SOUL_BLADES</requirements>
+		<description>
+			<p>You can now use the following powers with your Psychic Blades.</p>
+			<p class="indent"><strong><em>Homing Strikes.</em></strong> If you make an attack roll with your Psychic Blade and miss the target, you can roll one Psionic Energy Die and add the number rolled to the attack roll. If this causes the attack to hit, the die is expended.</p>
+			<p class="indent"><strong><em>Psychic Teleportation.</em></strong> As a Bonus Action, you manifest a Psychic Blade, expend one Psionic Energy Die and roll it, and throw the blade at an unoccupied space you can see up to a number of feet away equal to 10 times the number rolled. You then teleport to that space, and the blade vanishes.</p>
+		</description>
+		<sheet alt="Soul Blades">
+			<description>Your Psychic Blades are now an expression of your psi-suffused soul.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Homing Strikes" supports="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ROGUE_SOULKNIFE_SOUL_BLADES_HOMING_STRIKES" default="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ROGUE_SOULKNIFE_SOUL_BLADES_HOMING_STRIKES" />
+			<select type="Archetype Feature" name="Psychic Teleportation" supports="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ROGUE_SOULKNIFE_SOUL_BLADES_PSYCHIC_TELEPORTATION" default="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ROGUE_SOULKNIFE_SOUL_BLADES_PSYCHIC_TELEPORTATION" />
+		</rules>
+	</element>
+	<element name="Homing Strikes" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ROGUE_SOULKNIFE_SOUL_BLADES_HOMING_STRIKES">
+		<supports>ID_WOTC_PHB24_ARCHETYPE_FEATURE_ROGUE_SOULKNIFE_SOUL_BLADES_HOMING_STRIKES</supports>
+		<compendium display="false" />
+		<description>
+			<p>If you make an attack roll with your Psychic Blade and miss the target, you can roll one Psionic Energy Die and add the number rolled to the attack roll. If this causes the attack to hit, the die is expended.</p>
+		</description>
+		<sheet usage="Psionic Energy">
+			<description>If you make an attack roll with your Psychic Blade and miss the target, you can roll one Psionic Energy Die and add the number rolled to the attack roll. If this causes the attack to hit, the die is expended.</description>
+		</sheet>
+	</element>
+	<element name="Psychic Teleportation" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ROGUE_SOULKNIFE_SOUL_BLADES_PSYCHIC_TELEPORTATION">
+		<supports>ID_WOTC_PHB24_ARCHETYPE_FEATURE_ROGUE_SOULKNIFE_SOUL_BLADES_PSYCHIC_TELEPORTATION</supports>
+		<compendium display="false" />
+		<description>
+			<p>As a Bonus Action, you manifest a Psychic Blade, expend one Psionic Energy Die and roll it, and throw the blade at an unoccupied space you can see up to a number of feet away equal to 10 times the number rolled. You then teleport to that space, and the blade vanishes.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Psionic Energy">
+			<description>You manifest a Psychic Blade, expend one Psionic Energy Die and roll it, and throw the blade at an unoccupied space you can see up to a number of feet away equal to 10 times the number rolled. You then teleport to that space, and the blade vanishes.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 13: Psychic Veil" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ROGUE_SOULKNIFE_PSYCHIC_VEIL">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_24_SOULKNIFE_PSYCHIC_VEIL</requirements>
+		<description>
+			<p>You can weave a veil of psychic static to mask yourself. As a Magic Action, you gain the Invisible condition for 1 hour or until you dismiss this effect (no action required). This invisibility ends early immediately after you deal damage to a creature or you force a creature to make a saving throw.</p>
+			<p class="indent">Once you use this feature, you can’t do so again until you finish a Long Rest unless you expend a Psionic Energy Die (no action required) to restore your use of it.</p>
+		</description>
+		<sheet alt="Psychic Veil" action="Magic Action" usage="1/Long Rest">
+			<description>You gain the Invisible condition for 1 hour or until you dismiss this effect. This invisibility ends early immediately after you deal damage to a creature or you force a creature to make a saving throw.
+			You can expend a Psionic Energy die (no action required) to use this feature again.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 17: Rend Mind" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ROGUE_SOULKNIFE_REND_MIND">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_24_SOULKNIFE_REND_MIND</requirements>
+		<description>
+			<p>You can sweep your Psychic Blades through a creature’s mind. When you use your Psychic Blades to deal Sneak Attack damage to a creature, you can force that target to make a Wisdom saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus). If the save fails, the target has the Stunned condition for 1 minute. The Stunned target repeats the save at the end of each of its turns, ending the effect on itself on a success.</p>
+			<p class="indent">Once you use this feature, you can’t do so again until you finish a Long Rest unless you expend three Psionic Energy Dice (no action required) to restore your use of it.</p>
+		</description>
+		<sheet alt="Rend Mind" usage="1/Long Rest">
+			<description>When you use your Psychic Blades to deal Sneak Attack damage to a creature, you can force that target to make a DC{{rend mind:dc}} Wisdom saving throw. If the save fails, the target has the Stunned condition for 1 minute. The Stunned target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+			You can expend three Psionic Energy dice (no action required) to use this feature again.</description>
+		</sheet>
+		<rules>
+			<stat name="rend mind:dc" value="8" />
+			<stat name="rend mind:dc" value="proficiency" />
+			<stat name="rend mind:dc" value="dexterity:modifier" />
+		</rules>
+	</element>	
+
+	<!--Psychic Blades item-->
+	<element name="Psychic Blade" type="Weapon" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_WEAPON_PSYCHIC_BLADE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PSYCHIC, ID_WOTC_PHB24_WEAPON_PROPERTY_FINESSE, ID_WOTC_PHB24_WEAPON_PROPERTY_THROWN, ID_WOTC_PHB24_WEAPON_PROPERTY_VEX</supports>
+		<requirements>ID_WOTC_PHB24_ARCHETYPE_ROGUE_SOULKNIFE</requirements>
+		<description>
+			<p>A psychic blade manifested by the will of a Soulknife Rogue.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" />
+			<set name="weight" />
+			<set name="slot">onehand</set>
+			<set name="range">20/120</set>
+			<set name="damage" type="psychic">1d6</set>
+			<set name="proficiency">ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER</set>
+		</setters>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Psionic Power Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_24_SOULKNIFE_PSIONIC_POWER" />
+	<element name="Psychic Blades Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_24_SOULKNIFE_PSYCHIC_BLADES" />
+	<element name="Soul Blades Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_24_SOULKNIFE_SOUL_BLADES" />
+	<element name="Psychic Veil Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_24_SOULKNIFE_PSYCHIC_VEIL" />
+	<element name="Rend Mind Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_24_SOULKNIFE_REND_MIND" />
+</elements>

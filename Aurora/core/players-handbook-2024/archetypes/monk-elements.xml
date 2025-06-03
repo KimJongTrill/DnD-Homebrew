@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Warrior of the Elements</name>
+		<description>The Warrior of the Elements subclass from the Player’s Handbook 2024.</description>
+		<author url="https://dndstore.wizards.com/us/en/product/1001494/2024-player-s-handbook-digital-plus-physical-bundle">Wizards of the Coast</author>
+		<update version="0.0.4">
+			<file name="monk-elements.xml" url="https://raw.githubusercontent.com/Netrinil/Aurora/master/core/players-handbook-2024/archetypes/monk-elements.xml" />
+		</update>
+	</info>
+
+	<element name="Warrior of the Elements" type="Archetype" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_ARCHETYPE_MONK_WARRIOR_OF_THE_ELEMENTS">
+		<supports>Monastic Tradition</supports>
+		<description>
+			<p class="flavor">Wield Strikes and Bursts of Elemental Power</p>
+			<p>Warriors of the Elements tap into the power of the Elemental Planes. Harnessing their supernatural focus, these Monks momentarily tame the energy of the Elemental Chaos to empower themselves in and out of battle.</p>
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_ELEMENTAL_ATTUNEMENT"/>
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_MANIPULATE_ELEMENTS"/>
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_ELEMENTAL_BURST"/>
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_STRIDE_OF_THE_ELEMENTS"/>
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_ELEMENTAL_EPITOME"/>
+		</description>
+		<sheet display="false">
+			<description>Warriors of the Elements tap into the power of the Elemental Planes. </description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_ELEMENTAL_ATTUNEMENT" level="3"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_MANIPULATE_ELEMENTS" level="3"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_ELEMENTAL_BURST" level="6"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_STRIDE_OF_THE_ELEMENTS" level="11"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_ELEMENTAL_EPITOME" level="17"/>
+		</rules>
+	</element>
+
+	<element name="Level 3: Elemental Attunement" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_ELEMENTAL_ATTUNEMENT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MONK_24_ELEMENTS_ELEMENTAL_ATTUNEMENT</requirements>
+		<description>
+			<p>At the start of your turn, you can expend 1 Focus Point to imbue yourself with elemental energy. The energy lasts for 10 minutes or until you have the Incapacitated condition. You gain the following benefits while this feature is active.</p>
+			<p class="indent"><em><strong>Reach.</strong></em> When you make an Unarmed Strike, your reach is 10 feet greater than normal, as elemental energy extends from you.</p>
+			<p class="indent"><em><strong>Elemental Strikes.</strong></em> Whenever you hit with your Unarmed Strike, you can cause it to deal your choice of Acid, Cold, Fire, Lightning, or Thunder damage rather than its normal damage type. When you deal one of these types with it, you can also force the target to make a Strength saving throw. On a failed save, you can move the target up to 10 feet toward or away from you, as elemental energy swirls around it.</p>
+		</description>
+		<sheet usage="1 Focus" alt="Elemental Attunement">
+			<description>At the start of your turn, you can imbue yourself with elemental energy for the next 10 minutes, or until you have the Incapacitated condition. While imbued, your Unarmed Strikes are enhanced.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Reach" supports="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_ELEMENTAL_ATTUNEMENT_REACH" default="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_ELEMENTAL_ATTUNEMENT_REACH"/>
+			<select type="Archetype Feature" name="Elemental Strikes" supports="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_ELEMENTAL_ATTUNEMENT_ELEMENTAL_STRIKES" default="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_ELEMENTAL_ATTUNEMENT_ELEMENTAL_STRIKES" />
+		</rules>
+	</element>
+	<element name="Elemental Attunement: Reach" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_ELEMENTAL_ATTUNEMENT_REACH">
+		<supports>ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_ELEMENTAL_ATTUNEMENT_REACH</supports>
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MONK_24_ELEMENTS_ELEMENTAL_ATTUNEMENT_REACH</requirements>
+		<compendium display="false" />
+		<description>
+			<p>When you make an Unarmed Strike, your reach is 10 feet greater than normal, as elemental energy extends from you.</p>
+		</description>
+		<sheet alt="Reach">
+			<description>When you make an Unarmed Strike, your reach is 10 feet greater than normal.</description>
+		</sheet>
+	</element>
+	<element name="Elemental Attunement: Elemental Strikes" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_ELEMENTAL_ATTUNEMENT_ELEMENTAL_STRIKES">
+		<supports>ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_ELEMENTAL_ATTUNEMENT_ELEMENTAL_STRIKES</supports>
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MONK_24_ELEMENTS_ELEMENTAL_ATTUNEMENT_ELEMENTAL_STRIKES</requirements>
+		<compendium display="false" />
+		<description>
+			<p>Whenever you hit with your Unarmed Strike, you can cause it to deal your choice of Acid, Cold, Fire, Lightning, or Thunder damage rather than its normal damage type. When you deal one of these types with it, you can also force the target to make a Strength saving throw. On a failed save, you can move the target up to 10 feet toward or away from you, as elemental energy swirls around it.</p>
+		</description>
+		<sheet alt="Elemental Strikes">
+			<description>Whenever you hit with your Unarmed Strike, you can cause it to deal your choice of Acid, Cold, Fire, Lightning, or Thunder damage rather than its normal damage type. When you deal one of these types with it, you can also force the target to make a DC{{focus:dc}} Strength saving throw. On a failed save, you can move the target up to 10 feet toward or away from you, as elemental energy swirls around it.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Manipulate Elements" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_MANIPULATE_ELEMENTS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MONK_24_ELEMENTS_MANIPULATE_ELEMENTS</requirements>
+		<description>
+			<p>You know the <em>Elementalism</em> spell. Wisdom is your spellcasting ability for it.</p>
+		</description>
+		<sheet alt="Manipulate Elements">
+			<description>You know the Elementalism spell. Wisdom is your spellcasting ability for it.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ELEMENTALISM" />
+		</rules>
+	</element>
+
+	<element name="Level 6: Elemental Burst" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_ELEMENTAL_BURST">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MONK_24_ELEMENTS_ELEMENTAL_BURST</requirements>
+		<description>
+			<p>As a Magic action, you can expend 2 Focus Points to cause elemental energy to burst in a 20-foot-radius Sphere centered on a point within 120 feet of yourself. Choose a damage type: Acid, Cold, Fire, Lightning, or Thunder.</p>
+			<p class="indent">Each creature in the Sphere must make a Dexterity saving throw. On a failed save, a creature takes damage of the chosen type equal to three rolls of your Martial Arts die. On a successful save, a creature takes half as much damage.</p>
+		</description>
+		<sheet action="Magic Action" usage="2 Focus" alt="Elemental Burst">
+			<description>You can cause elemental energy to burst in a 20-foot-radius Sphere centered on a point within 120 feet of yourself. Choose a damage type: Acid, Cold, Fire, Lightning, or Thunder. Each creature in the Sphere must make a DC{{focus:dc}} Dexterity saving throw. On a failed save, a creature takes 3d{{martial arts:dice}} damage of the chosen type. On a successful save, a creature takes half as much damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 11: Stride of the Elements" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_STRIDE_OF_THE_ELEMENTS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MONK_24_ELEMENTS_STRIDE_OF_THE_ELEMENTS</requirements>
+		<description>
+			<p>While your Elemental Attunement is active, you also have a Fly Speed and a Swim Speed equal to your Speed.</p>
+		</description>
+		<sheet alt="Stride of the Elements">
+			<description>While your Elemental Attunement is active, you also have a Fly Speed and a Swim Speed equal to your Speed.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 17: Elemental Epitome" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_ELEMENTAL_EPITOME">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MONK_24_ELEMENTS_ELEMENTAL_EPITOME</requirements>
+		<description>
+			<p>While your Elemental Attunement is active, you also gain the following benefits.</p>
+			<p class="indent"><em><strong>Damage Resistance.</strong></em> You gain Resistance to one of the following damage types of your choice: Acid, Cold, Fire, Lightning, or Thunder. At the start of each of your turns, you can change this choice.</p>
+			<p class="indent"><em><strong>Destructive Stride.</strong></em> When you use your Step of the Wind, your Speed increases by 20 feet until the end of the turn. For that duration, any creature of your choice takes damage equal to one roll of your Martial Arts die when you enter a space within 5 feet of it. The damage type is your choice of Acid, Cold, Fire, Lightning, or Thunder. A creature can take this damage only once per turn.</p>
+			<p class="indent"><em><strong>Empowered Strikes.</strong></em> Once on each of your turns, you can deal extra damage to a target equal to one roll of your Martial Arts die when you hit it with an Unarmed Strike. The extra damage is the same type dealt by that strike.</p>
+		</description>
+		<sheet alt="Elemental Epitome">
+			<description>While your Elemental Attunement is active, your ability to channel the elements is unparalleled.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Damage Resistance" supports="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_ELEMENTAL_EPITOME_DAMAGE_RESISTANCE" default="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_ELEMENTAL_EPITOME_DAMAGE_RESISTANCE"/>
+			<select type="Archetype Feature" name="Destructive Stride" supports="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_ELEMENTAL_EPITOME_DESTRUCTIVE_STRIDE" default="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_ELEMENTAL_EPITOME_DESTRUCTIVE_STRIDE"/>
+			<select type="Archetype Feature" name="Empowered Strikes" supports="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_ELEMENTAL_EPITOME_EMPOWERED_STRIKES" default="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_ELEMENTAL_EPITOME_EMPOWERED_STRIKES"/>
+		</rules>
+	</element>
+	<element name="Elemental Epitome: Damage Resistance" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_ELEMENTAL_EPITOME_DAMAGE_RESISTANCE">
+		<supports>ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_ELEMENTAL_EPITOME_DAMAGE_RESISTANCE</supports>
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MONK_24_ELEMENTS_ELEMENTAL_EPITOME_DAMAGE_RESISTANCE</requirements>
+		<compendium display="false" />
+		<description>
+			<p>You gain Resistance to one of the following damage types of your choice: Acid, Cold, Fire, Lightning, or Thunder. At the start of each of your turns, you can change this choice.</p>
+		</description>
+		<sheet alt="Damage Resistance">
+			<description>You gain Resistance to one of the following damage types of your choice: Acid, Cold, Fire, Lightning, or Thunder. At the start of each of your turns, you can change this choice.</description>
+		</sheet>
+	</element>
+	<element name="Elemental Epitome: Destructive Stride" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_ELEMENTAL_EPITOME_DESTRUCTIVE_STRIDE">
+		<supports>ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_ELEMENTAL_EPITOME_DESTRUCTIVE_STRIDE</supports>
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MONK_24_ELEMENTS_ELEMENTAL_EPITOME_DESTRUCTIVE_STRIDE</requirements>
+		<compendium display="false" />
+		<description>
+			<p>When you use your Step of the Wind, your Speed increases by 20 feet until the end of the turn. For that duration, any creature of your choice takes damage equal to one roll of your Martial Arts die when you enter a space within 5 feet of it. The damage type is your choice of Acid, Cold, Fire, Lightning, or Thunder. A creature can take this damage only once per turn.</p>
+		</description>
+		<sheet action="Step of the Wind" alt="Destructive Stride">
+			<description>Your Speed increases by 20 feet until the end of the turn. For that duration, any creature of your choice takes 1d{{martial arts:dice}} damage when you enter a space within 5 feet of it. The damage type is your choice of Acid, Cold, Fire, Lightning, or Thunder. A creature can take this damage only once per turn.</description>
+		</sheet>
+	</element>
+	<element name="Elemental Epitome: Empowered Strikes" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_ELEMENTAL_EPITOME_EMPOWERED_STRIKES">
+		<supports>ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_ELEMENTAL_EPITOME_EMPOWERED_STRIKES</supports>
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MONK_24_ELEMENTS_ELEMENTAL_EPITOME_EMPOWERED_STRIKES</requirements>
+		<compendium display="false" />
+		<description>
+			<p>Once on each of your turns, you can deal extra damage to a target equal to one roll of your Martial Arts die when you hit it with an Unarmed Strike. The extra damage is the same type dealt by that strike.</p>
+		</description>
+		<sheet usage="1/Turn" alt="Empowered Strikes">
+			<description>Once on each of your turns, you can deal 1d{{martial arts:dice}} extra damage to a target when you hit it with an Unarmed Strike. The extra damage is the same type dealt by that strike.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Elemental Attunement Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_24_ELEMENTS_ELEMENTAL_ATTUNEMENT" />
+	<element name="Elemental Attunement: Reach Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_24_ELEMENTS_ELEMENTAL_ATTUNEMENT_REACH" />
+	<element name="Elemental Attunement: Elemental Strikes Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_24_ELEMENTS_ELEMENTAL_ATTUNEMENT_ELEMENTAL_STRIKES" />
+	<element name="Manipulate Elements Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_24_ELEMENTS_MANIPULATE_ELEMENTS" />
+	<element name="Elemental Burst Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_24_ELEMENTS_ELEMENTAL_BURST" />
+	<element name="Stride of the Elements Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_24_ELEMENTS_STRIDE_OF_THE_ELEMENTS" />
+	<element name="Elemental Epitome Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_24_ELEMENTS_ELEMENTAL_EPITOME" />
+	<element name="Elemental Epitome: Damage Resistance Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_24_ELEMENTS_ELEMENTAL_EPITOME_DAMAGE_RESISTANCE" />
+	<element name="Elemental Epitome: Destructive Stride Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_24_ELEMENTS_ELEMENTAL_EPITOME_DESTRUCTIVE_STRIDE" />
+	<element name="Elemental Epitome: Empowered Strikes Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_24_ELEMENTS_ELEMENTAL_EPITOME_EMPOWERED_STRIKES" />
+</elements>
