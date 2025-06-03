@@ -3,7 +3,7 @@
 	<info>
 		<name>Weapons</name>
 		<update version="0.0.1">
-			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/Netrinil/Aurora/master/core/players-handbook-2024/items/items-weapons.xml" />
+			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024/items/items-weapons.xml" />
 		</update>
 	</info>
 	

@@ -5,7 +5,7 @@
 		<description>The Oath of Glory subclass from the Player’s Handbook 2024.</description>
 		<author url="https://dndstore.wizards.com/us/en/product/1001494/2024-player-s-handbook-digital-plus-physical-bundle">Wizards of the Coast</author>
 		<update version="0.0.1">
-			<file name="paladin-glory.xml" url="https://raw.githubusercontent.com/Netrinil/Aurora/master/core/players-handbook-2024/archetypes/paladin-glory.xml" />
+			<file name="paladin-glory.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024/archetypes/paladin-glory.xml" />
 		</update>
 	</info>
 	<element name="Oath of Glory" type="Archetype" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_ARCHETYPE_PALADIN_OATH_OF_GLORY">

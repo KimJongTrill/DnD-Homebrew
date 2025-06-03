@@ -5,7 +5,7 @@
 		<description>The Oath of Vengeance subclass from the Player’s Handbook 2024.</description>
 		<author url="https://dndstore.wizards.com/us/en/product/1001494/2024-player-s-handbook-digital-plus-physical-bundle">Wizards of the Coast</author>
 		<update version="0.0.1">
-			<file name="paladin-vengeance.xml" url="https://raw.githubusercontent.com/Netrinil/Aurora/master/core/players-handbook-2024/archetypes/paladin-vengeance.xml" />
+			<file name="paladin-vengeance.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024/archetypes/paladin-vengeance.xml" />
 		</update>
 	</info>
 
