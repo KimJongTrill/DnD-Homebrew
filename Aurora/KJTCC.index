@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
   <info>
-    <update version="1.5.1">
+    <update version="1.5.2">
       <file name="KJTCC.index" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/KJTCC.index" />
     </update>
   </info>
@@ -15,5 +15,6 @@
     <file name="artifacts.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/artifacts.xml" />
     <file name="weapon-base.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/weapon-base.xml" />
     <file name="deities.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/deities.xml" />
+    <file name="spells.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/spells.xml" />
   </files>
 </index>
