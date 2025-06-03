@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.3.5">
+		<update version="1.4.0">
 			<file name="weapon-base.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/weapon-base.xml" />
 		</update>
 	</info>
@@ -17,7 +17,7 @@
 			<set name="weight" lb=".5">.5 lb.</set>
 			<set name="slot">onehand</set>
 			<set name="damage" type="bludgeoning">1d4</set>
-			<set name="proficiency">ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER</set>
+			<set name="proficiency">ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS</set>
 		</setters>
 	</element>
 	
@@ -32,7 +32,7 @@
 			<set name="weight" lb=".5">.5 lb.</set>
 			<set name="slot">onehand</set>
 			<set name="damage" type="slashing">1d4</set>
-			<set name="proficiency">ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER</set>
+			<set name="proficiency">ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS</set>
 		</setters>
 	</element>
 	
@@ -47,7 +47,7 @@
 			<set name="weight" lb=".5">.5 lb.</set>
 			<set name="slot">onehand</set>
 			<set name="damage" type="piercing">1d4</set>
-			<set name="proficiency">ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER</set>
+			<set name="proficiency">ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS</set>
 		</setters>
 	</element>
 	
@@ -62,7 +62,7 @@
 			<set name="weight" lb="6">6 lb.</set>
 			<set name="slot">twohand</set>
 			<set name="damage" type="bludgeoning">1d10</set>
-			<set name="proficiency">ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_PIKE</set>
+			<set name="proficiency">ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS</set>
 		</setters>
 	</element>
 	
@@ -76,7 +76,7 @@
 			<set name="slot">onehand</set>
 			<set name="range">60/120</set>
 			<set name="damage" type="piercing">1d10</set>
-			<set name="proficiency">ID_KJT_CC_WEAPON_FLINTLOCK_PROFICIENCY</set>
+			<set name="proficiency">ID_KJT_CC_PROFICIENCY_WEAPON_FIREARMS</set>
 		</setters>
 	</element>
 	
@@ -90,7 +90,7 @@
 			<set name="slot">onehand</set>
 			<set name="range">30/60</set>
 			<set name="damage" type="piercing">1d6</set>
-			<set name="proficiency">ID_KJT_CC_WEAPON_REVOLVER_PROFICIENCY</set>
+			<set name="proficiency">ID_KJT_CC_PROFICIENCY_WEAPON_FIREARMS</set>
 		</setters>
   	</element>
 	
@@ -104,7 +104,7 @@
 			<set name="slot">twohand</set>
 			<set name="range">100/200</set>
 			<set name="damage" type="piercing">1d12</set>
-			<set name="proficiency">ID_KJT_CC_WEAPON_LONG_RIFLE_PROFICIENCY</set>
+			<set name="proficiency">ID_KJT_CC_PROFICIENCY_WEAPON_FIREARMS</set>
 		</setters>
 	</element>
 	
@@ -118,7 +118,7 @@
 			<set name="slot">twohand</set>
 			<set name="range">50/100</set>
 			<set name="damage" type="piercing">1d10</set>
-			<set name="proficiency">ID_KJT_CC_WEAPON_CARBINE_RIFLE_PROFICIENCY</set>
+			<set name="proficiency">ID_KJT_CC_PROFICIENCY_WEAPON_FIREARMS</set>
 		</setters>
 	</element>
 	
@@ -141,13 +141,21 @@
 	</element>
 
     	<element name="Weapon Proficiency (KJTCC Firearms)" type="Proficiency" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_PROFICIENCY_WEAPON_FIREARMS">
+		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_WOTC_PHB24_WEAPON_PROPERTY_AMMUNITION</supports>
 		<sheet alt="Firearms" />
-		<rules>
-			<grant type="Proficiency" id="ID_KJT_CC_WEAPON_FLINTLOCK_PROFICIENCY" />
-			<grant type="Proficiency" id="ID_KJT_CC_WEAPON_REVOLVER_PROFICIENCY" />
-			<grant type="Proficiency" id="ID_KJT_CC_WEAPON_LONG_RIFLE_PROFICIENCY" />
-			<grant type="Proficiency" id="ID_KJT_CC_WEAPON_CARBINE_RIFLE_PROFICIENCY" />
-		</rules>
 	</element>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_KJT_CC_PROFICIENCY_WEAPON_FIREARMS" />
+		</rules>
+	</append>
+
+	<append id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_KJT_CC_PROFICIENCY_WEAPON_FIREARMS" />
+		</rules>
+	</append>
+
 	
 </elements>
