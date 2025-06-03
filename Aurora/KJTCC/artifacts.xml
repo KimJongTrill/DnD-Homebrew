@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="1.3.1">
-			<file name="artifacts.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/artifacts.xml" />
+			<file name="artifacts.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/KJTCC/artifacts.xml" />
 		</update>
 	</info>
 	
