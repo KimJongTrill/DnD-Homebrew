@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="phb2024.index" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024.index" />
 		</update>
 	</info>
@@ -85,7 +85,7 @@
 		<!-- items -->
         <file name="items-armor.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024/items/items-armor.xml" />
         <file name="items-gear.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024/items/items-gear.xml" />
-        <file name="items-instrument.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024/items/instrument.xml" />
+        <file name="items-instrument.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024/items/items-instrument.xml" />
         <file name="items-mounts-vehicles.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024/items/items-mounts-vehicles.xml" />
         <file name="items-packs.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024/items/items-packs.xml" />
         <file name="items-tools.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024/items/items-tools.xml" />
