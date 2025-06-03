@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.9.0">
+		<update version="1.9.1">
 			<file name="QOL.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/KJTCC/QOL.xml" />
 		</update>
 	</info>
@@ -142,7 +142,7 @@
 
 	<!--Custom BG for Freedom-->
 
-	<element name="!Custom Background 2024!" type="Background" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_CUSTOM_BG">
+	<element name="2024 Custom Background" type="Background" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_CUSTOM_BG">
 		<description>
 			<table>
 				<tr><td><b>Ability Scores:</b></td><td> Your Choice of +2/+1 or +1/+1/+1</td></tr>
@@ -162,8 +162,8 @@
 			<select type="Language" name="Language (Custom Background)" number="2" supports="2024 Starting" />
 			<select type="Ability Score Improvement" name="Ability Score Improvement (Background)" supports="ID_WOTC_BACKGROUND_ASI_OPTION_1|ID_WOTC_BACKGROUND_ASI_OPTION_2" />
 			<select type="Feat" name="Origin Feat" supports="Origin"/>
-			<grant id="ID_WOTC_PHB24_LANGUAGE_COMMON"/>
-			<grant id="ID_INTERNAL_GRANTS_BACKGROUND_ASI"/>
+			<grant type="Grants" id="ID_WOTC_PHB24_LANGUAGE_COMMON"/>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_BACKGROUND_ASI"/>
 		</rules>
 	</element>
 
@@ -174,8 +174,8 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2" supports="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_STRENGTH_INCREASE_2|ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_DEXTERITY_INCREASE_2|ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_CONSTITUTION_INCREASE_2|ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_INTELLIGENCE_INCREASE_2|ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_WISDOM_INCREASE_2|ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_CHARISMA_INCREASE_2" />
-			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1" supports="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_STRENGTH_INCREASE_1|ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_DEXTERITY_INCREASE_1|ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_CONSTITUTION_INCREASE_1|ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_INTELLIGENCE_INCREASE_1|ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_WISDOM_INCREASE_1|ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_CHARISMA_INCREASE_1" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Background)" supports="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_STRENGTH_INCREASE_2|ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_DEXTERITY_INCREASE_2|ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_CONSTITUTION_INCREASE_2|ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_INTELLIGENCE_INCREASE_2|ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_WISDOM_INCREASE_2|ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_CHARISMA_INCREASE_2" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Background)" supports="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_STRENGTH_INCREASE_1|ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_DEXTERITY_INCREASE_1|ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_CONSTITUTION_INCREASE_1|ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_INTELLIGENCE_INCREASE_1|ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_WISDOM_INCREASE_1|ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_CHARISMA_INCREASE_1" />
 		</rules>
 	</element>
 
@@ -186,7 +186,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1" number="3" supports="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_STRENGTH_INCREASE_1|ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_DEXTERITY_INCREASE_1|ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_CONSTITUTION_INCREASE_1|ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_INTELLIGENCE_INCREASE_1|ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_WISDOM_INCREASE_1|ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_CHARISMA_INCREASE_1" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Background)" number="3" supports="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_STRENGTH_INCREASE_1|ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_DEXTERITY_INCREASE_1|ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_CONSTITUTION_INCREASE_1|ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_INTELLIGENCE_INCREASE_1|ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_WISDOM_INCREASE_1|ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_CHARISMA_INCREASE_1" />
 		</rules>
 	</element>
 
