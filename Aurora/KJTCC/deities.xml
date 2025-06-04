@@ -1,16 +1,17 @@
 <elements>
 	<info>
-		<update version="1.0.2">
+		<update version="1.1.0">
 			<file name="deities.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/KJTCC/deities.xml" />
 		</update>
 	</info>
+
 	<element name="Atlanta" type="Deity" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_DEITY_ATLANTA">
 		<description>
 			<p class="flavor">goddess of lightning</p>
 		</description>
 		<setters>
 			<set name="setting">Teruvia</set>
-			<set name="domains">Tempest, Skies, Storms</set>
+			<set name="domains">War, Skies, Storms, Sea</set>
 			<set name="symbol">Lightning Bolt</set>
 			<set name="gender">female</set>
 			<set name="alignment">LG</set>
@@ -19,6 +20,7 @@
 			<description>goddess of lightning</description>
 		</sheet>
 	</element>
+
 	<element name="Ceritas" type="Deity" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_DEITY_CERITAS">
 		<description>
 			<p class="flavor">goddess of knowledge</p>
@@ -34,13 +36,14 @@
 			<description>goddess of knowledge</description>
 		</sheet>
 	</element>
+
 	<element name="Fiero" type="Deity" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_DEITY_FIERO">
 		<description>
 			<p class="flavor">god of fire</p>
 		</description>
 		<setters>
 			<set name="setting">Teruvia</set>
-			<set name="domains">Light, War, Forge, Summer</set>
+			<set name="domains">Light, Forge, Summer, Sun</set>
 			<set name="symbol">Ember</set>
 			<set name="gender">male</set>
 			<set name="alignment">CG</set>
@@ -49,13 +52,14 @@
 			<description>god of fire</description>
 		</sheet>
 	</element>
+
 	<element name="Haymil" type="Deity" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_DEITY_HAYMIL">
 		<description>
 			<p class="flavor">goddess of trickery</p>
 		</description>
 		<setters>
 			<set name="setting">Teruvia</set>
-			<set name="domains">Trickery, Luck</set>
+			<set name="domains">Trickery, Luck, Joy</set>
 			<set name="symbol">Question Mark</set>
 			<set name="gender">none</set>
 			<set name="alignment">CG</set>
@@ -64,13 +68,14 @@
 			<description>god of trickery</description>
 		</sheet>
 	</element>
+
 	<element name="Markuul" type="Deity" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_DEITY_MARKUUL">
 		<description>
 			<p class="flavor">goddess of death</p>
 		</description>
 		<setters>
 			<set name="setting">Teruvia</set>
-			<set name="domains">Death, Fate, Winter, Life</set>
+			<set name="domains">Death, Fate, Winter, Life, Moon</set>
 			<set name="symbol">Raven</set>
 			<set name="gender">female</set>
 			<set name="alignment">N</set>
@@ -79,6 +84,7 @@
 			<description>goddess of death</description>
 		</sheet>
 	</element>
+
 	<element name="Rikkus" type="Deity" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_DEITY_RIKKUS">
 		<description>
 			<p class="flavor">god of wealth</p>
@@ -94,6 +100,7 @@
 			<description>god of wealth</description>
 		</sheet>
 	</element>
+
 	<element name="Verdana" type="Deity" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_DEITY_VERDANA">
 		<description>
 			<p class="flavor">goddess of nature</p>
@@ -109,4 +116,115 @@
 			<description>goddess of nature</description>
 		</sheet>
 	</element>
+	
+	<element name="Bhaal" type="Deity" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_DEITY_BHAAL">
+		<description>
+			<p class="flavor">god of murder</p>
+		</description>
+		<setters>
+			<set name="setting">Teruvia</set>
+			<set name="domains">murder, blood, rage</set>
+			<set name="symbol">blood</set>
+			<set name="gender">male</set>
+			<set name="alignment">CE</set>
+		</setters>
+		<sheet>
+			<description>god of murder</description>
+		</sheet>
+	</element>
+
+	<element name="Obzhora" type="Deity" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_DEITY_OBZHORA">
+		<description>
+			<p class="flavor">goddess of gluttony</p>
+		</description>
+		<setters>
+			<set name="setting">Teruvia</set>
+			<set name="domains">excess, consumption, gluttony</set>
+			<set name="symbol">full cup</set>
+			<set name="gender">female</set>
+			<set name="alignment">CE</set>
+		</setters>
+		<sheet>
+			<description>god of gluttony</description>
+		</sheet>
+	</element>
+
+	<element name="Bezaan" type="Deity" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_DEITY_BEZAAN">
+		<description>
+			<p class="flavor">god of greed</p>
+		</description>
+		<setters>
+			<set name="setting">Teruvia</set>
+			<set name="domains">greed, theft, hoarding</set>
+			<set name="symbol">gold coin</set>
+			<set name="gender">male</set>
+			<set name="alignment">LE</set>
+		</setters>
+		<sheet>
+			<description>god of greed</description>
+		</sheet>
+	</element>
+
+	<element name="Nothrotita" type="Deity" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_DEITY_NOTHROTITA">
+		<description>
+			<p class="flavor">goddess of sloth</p>
+		</description>
+		<setters>
+			<set name="setting">Teruvia</set>
+			<set name="domains">sloth, laziness</set>
+			<set name="symbol">symbol</set>
+			<set name="gender">female</set>
+			<set name="alignment">NE</set>
+		</setters>
+		<sheet>
+			<description>god of sloth</description>
+		</sheet>
+	</element>
+
+	<element name="Zilveo" type="Deity" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_DEITY_ZILVEO">
+		<description>
+			<p class="flavor">god of envy</p>
+		</description>
+		<setters>
+			<set name="setting">Teruvia</set>
+			<set name="domains">envy, jealousy, betrayal</set>
+			<set name="symbol">snake</set>
+			<set name="gender">nonbinary</set>
+			<set name="alignment">CE</set>
+		</setters>
+		<sheet>
+			<description>god of envy</description>
+		</sheet>
+	</element>
+	<element name="Liandra" type="Deity" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_DEITY_LIANDRA">
+		<description>
+			<p class="flavor">goddess of lies</p>
+		</description>
+		<setters>
+			<set name="setting">Teruvia</set>
+			<set name="domains">one, two</set>
+			<set name="symbol">spider</set>
+			<set name="gender">female</set>
+			<set name="alignment">NG</set>
+		</setters>
+		<sheet>
+			<description>goddess of nature</description>
+		</sheet>
+	</element>
+	<element name="Hubirax" type="Deity" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_DEITY_HUBIRAX">
+		<description>
+			<p class="flavor">god of pride</p>
+		</description>
+		<setters>
+			<set name="setting">Teruvia</set>
+			<set name="domains">pride, war, conquest</set>
+			<set name="symbol">sword</set>
+			<set name="gender">male</set>
+			<set name="alignment">LE</set>
+		</setters>
+		<sheet>
+			<description>god of pride</description>
+		</sheet>
+	</element>
+	
 </elements>

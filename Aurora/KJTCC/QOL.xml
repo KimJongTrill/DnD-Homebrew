@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.9.1">
+		<update version="1.9.2">
 			<file name="QOL.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/KJTCC/QOL.xml" />
 		</update>
 	</info>
@@ -254,6 +254,66 @@
 		<rules>
 			<stat inline="true" name="elemental affinity damage type" value="Thunder" />
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+		</rules>
+	</element>
+
+	<!--Spell Points-->
+
+	<element name="Spell Points" type="Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ITEM_SPELL_POINTS">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_KJT_CC_SPELL_POINTS" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Homebrew Rules</set>
+			<set name="keywords">second level, 2nd level, spellcasting</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_KJT_CC_SPELL_POINTS" requirements="[level:sorcerer:2]"/>
+		</rules>
+	</element>
+
+	<element name="Spell Points" type="Class Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_SPELL_POINTS">
+		<description>
+			<p><i>2nd-level Sorcerer feature</i></p>
+			<p>Sorcerers gain at level 2, pool with Sorcery Points, replace all other slots from levels in multiclass, are pooled wiht Sorcery Points.</p>
+		</description>
+		<sheet usage="{{spellpoints}}/Long Rest" alt="Spell Points">
+			<description>Replaces all spell slots. Includes Sorcery Points.</description>
+		</sheet>
+		<rules>
+			<stat name="casterlevel" value="level:sorcerer"/>
+			<stat name="casterlevel" value="level:cleric"/>
+			<stat name="casterlevel" value="level:bard"/>
+			<stat name="casterlevel" value="level:druid"/>
+			<stat name="casterlevel" value="level:wizard"/>
+			<stat name="casterlevel" value="level:paladin:half"/>
+			<stat name="casterlevel" value="level:ranger:half"/>
+			<stat name="casterlevel" value="level:artificer:half:up"/>
+
+			<stat name="spellpoints" value="6" bonus="base" requirements="[casterlevel:2]"/>
+			<stat name="spellpoints" value="14" bonus="base" requirements="[casterlevel:3]"/>
+			<stat name="spellpoints" value="17" bonus="base" requirements="[casterlevel:4]"/>
+			<stat name="spellpoints" value="27" bonus="base" requirements="[casterlevel:5]"/>
+			<stat name="spellpoints" value="32" bonus="base" requirements="[casterlevel:6]"/>
+			<stat name="spellpoints" value="38" bonus="base" requirements="[casterlevel:7]"/>
+			<stat name="spellpoints" value="44" bonus="base" requirements="[casterlevel:8]"/>
+			<stat name="spellpoints" value="57" bonus="base" requirements="[casterlevel:9]"/>
+			<stat name="spellpoints" value="64" bonus="base" requirements="[casterlevel:10]"/>
+			<stat name="spellpoints" value="73" bonus="base" requirements="[casterlevel:11]"/>
+			<stat name="spellpoints" value="83" bonus="base" requirements="[casterlevel:13]"/>
+			<stat name="spellpoints" value="94" bonus="base" requirements="[casterlevel:15]"/>
+			<stat name="spellpoints" value="107" bonus="base" requirements="[casterlevel:17]"/>
+			<stat name="spellpoints" value="114" bonus="base" requirements="[casterlevel:18]"/>
+			<stat name="spellpoints" value="123" bonus="base" requirements="[casterlevel:19]"/>
+			<stat name="spellpoints" value="133" bonus="base" requirements="[casterlevel:20]"/>
+
+			<stat name="spellpoints" value="sorcery-points"/>
 		</rules>
 	</element>
 
