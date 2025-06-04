@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.9.2">
+		<update version="1.9.3">
 			<file name="QOL.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/KJTCC/QOL.xml" />
 		</update>
 	</info>
@@ -275,18 +275,23 @@
 		</setters>
 		<rules>
 			<grant type="Class Feature" id="ID_KJT_CC_SPELL_POINTS" requirements="[level:sorcerer:2]"/>
-		</rules>
-	</element>
 
-	<element name="Spell Points" type="Class Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_SPELL_POINTS">
-		<description>
-			<p><i>2nd-level Sorcerer feature</i></p>
-			<p>Sorcerers gain at level 2, pool with Sorcery Points, replace all other slots from levels in multiclass, are pooled wiht Sorcery Points.</p>
-		</description>
-		<sheet usage="{{spellpoints}}/Long Rest" alt="Spell Points">
-			<description>Replaces all spell slots. Includes Sorcery Points.</description>
-		</sheet>
-		<rules>
+			<stat name="caster3level" value="1" bonus="base" requirements="[level:fighter:3]"/>
+			<stat name="caster3level" value="2" bonus="base" requirements="[level:fighter:4]"/>
+			<stat name="caster3level" value="3" bonus="base" requirements="[level:fighter:7]"/>
+			<stat name="caster3level" value="4" bonus="base" requirements="[level:fighter:10]"/>
+			<stat name="caster3level" value="5" bonus="base" requirements="[level:fighter:13]"/>
+			<stat name="caster3level" value="6" bonus="base" requirements="[level:fighter:16]"/>
+			<stat name="caster3level" value="7" bonus="base" requirements="[level:fighter:19]"/>
+
+			<stat name="caster3level2" value="1" bonus="base" requirements="[level:rogue:3]"/>
+			<stat name="caster3level2" value="2" bonus="base" requirements="[level:rogue:4]"/>
+			<stat name="caster3level2" value="3" bonus="base" requirements="[level:rogue:7]"/>
+			<stat name="caster3level2" value="4" bonus="base" requirements="[level:rogue:10]"/>
+			<stat name="caster3level2" value="5" bonus="base" requirements="[level:rogue:13]"/>
+			<stat name="caster3level2" value="6" bonus="base" requirements="[level:rogue:16]"/>
+			<stat name="caster3level2" value="7" bonus="base" requirements="[level:rogue:19]"/>
+			
 			<stat name="casterlevel" value="level:sorcerer"/>
 			<stat name="casterlevel" value="level:cleric"/>
 			<stat name="casterlevel" value="level:bard"/>
@@ -295,7 +300,20 @@
 			<stat name="casterlevel" value="level:paladin:half"/>
 			<stat name="casterlevel" value="level:ranger:half"/>
 			<stat name="casterlevel" value="level:artificer:half:up"/>
+			<stat name="casterlevel" value="caster3level" requirements="ID_WOTC_PHB24_ARCHETYPE_FIGHTER_ELDRITCH_KNIGHT"/>
+			<stat name="casterlevel" value="caster3level2" requirements="ID_WOTC_PHB24_ARCHETYPE_ROGUE_ARCANE_TRICKSTER"/>
+		</rules>
+	</element>
 
+	<element name="Spell Points" type="Class Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_SPELL_POINTS">
+		<description>
+			<p><i>2nd-level Sorcerer feature</i></p>
+			<p>Sorcerers gain at level 2, pool with Sorcery Points, replace all other slots from levels in multiclass.</p>
+		</description>
+		<sheet usage="{{spellpoints}}/Long Rest" alt="Spell Points">
+			<description>Replaces all spell slots. Includes Sorcery Points.</description>
+		</sheet>
+		<rules>
 			<stat name="spellpoints" value="6" bonus="base" requirements="[casterlevel:2]"/>
 			<stat name="spellpoints" value="14" bonus="base" requirements="[casterlevel:3]"/>
 			<stat name="spellpoints" value="17" bonus="base" requirements="[casterlevel:4]"/>
