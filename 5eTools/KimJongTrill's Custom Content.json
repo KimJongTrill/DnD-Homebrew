@@ -11482,10 +11482,8 @@
 				"TP"
 			],
 			"save": {
-				"dex": "+17",
-				"con": "+17",
-				"int": "+19",
-				"cha": "+17"
+				"cha": "+17",
+				"int": "+14"
 			},
 			"skill": {
 				"arcana": "+19",
@@ -11537,8 +11535,8 @@
 				{
 					"name": "Eternal Evil",
 					"entries": [
-						"If destroyed by conventional means, Zomidus Thurr is not truly slain. Instead, a fragment of Zomidus Thurr's soul seeks out a living giant creature within 10 miles of the site of the its destruction and attempts to consume the giant's soul, rejuvenating Zomidus Thurr's essence in the process. If there are no eligible giants within range, Zomidus Thurr's soul is utterly obliterated, and it cannot return to life by any known means.",
-						"If Zomidus Thurr successfully possesses a giant, over the next 24 hours the target must attempt on a {@dc 27} Constitution saving throw at the end of each hour as it struggles to survive. If it fails three saving throws in this manner, the creature dies. If a creature dies while affected by this feature, Zomidus Thurr consumes its soul and becomes active again, regaining all of its hit points. If the creature manages to survive for the duration or if Zomidus Thurr is expelled from the target's body during the possession attempt, Zomidus Thurr is utterly obliterated and cannot return to life by any known means."
+						"If destroyed by conventional means, Zomidus Thurr is not truly slain. Instead, a fragment of Zomidus Thurr's soul seeks out a living giant creature within 10 miles of the site of the its destruction and attempts to consume the giant's soul, rejuvenating Zomidus Thurr's essence in the process.",
+						"If Zomidus Thurr successfully possesses a giant, over the next 24 hours the target must attempt on a {@dc 27} Constitution saving throw at the end of each hour as it struggles to survive. If it fails three saving throws in this manner, the creature dies. If a creature dies while affected by this feature, Zomidus Thurr consumes its soul and becomes active again, regaining all of its hit points. If the creature manages to survive for the duration or if Zomidus Thurr is expelled from the target's body during the possession attempt, then Zomidus will look for a new host."
 					]
 				},
 				{
@@ -11550,7 +11548,8 @@
 				{
 					"name": "Orbs of the Weave",
 					"entries": [
-						"When Zomidus Thurr fails a saving throw, it can end attunement with one of its {@item Orbs of the Weave|kimjongtrillscustomcontent} to succeed instead."
+						"When Zomidus Thurr fails a saving throw, it can end attunement with one of its {@item Orbs of the Weave|kimjongtrillscustomcontent} to succeed instead. ",
+						"(Order: Power, Soul, Space, Mind, Reality, Time)"
 					]
 				}
 			],
@@ -11566,18 +11565,19 @@
 					"will": [
 						"{@spell dominate person}",
 						"{@spell eldritch blast|XPHB} 4 beams {@damage 1d10+10} force damage",
-						"{@spell synaptic static|XGE}"
+						"{@spell synaptic static|XGE}",
+						"{@spell vampiric touch|XPHB}  second form only {@damage 5d6}"
 					],
 					"daily": {
+						"2": [
+							"{@spell mass suggestion} (9th level)",
+							"{@spell psychic scream|XGE}",
+							"{@spell weird}"
+						],
 						"3e": [
 							"{@spell disintegrate} (8th level)",
 							"{@spell dominate monster}",
 							"{@spell teleport}"
-						],
-						"2e": [
-							"{@spell mass suggestion} (9th level)",
-							"{@spell psychic scream|XGE}",
-							"{@spell weird}"
 						]
 					},
 					"ability": "int",
@@ -11628,7 +11628,7 @@
 			],
 			"legendaryActions": 3,
 			"legendaryHeader": [
-				"Zomidus Thurr can take 5 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. Zomidus Thurr regains spent legendary actions at the start of its turn."
+				"Zomidus Thurr can take 7 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. Zomidus Thurr regains spent legendary actions at the start of its turn."
 			],
 			"legendary": [
 				{
@@ -11641,12 +11641,6 @@
 					"name": "Power Overwhelming (Costs 3 Actions)",
 					"entries": [
 						"Until the end of Zomidus Thurr's next turn, whenever it deals damage it instead deals double damage."
-					]
-				},
-				{
-					"name": "Read Minds (Costs 2 Actions)",
-					"entries": [
-						"Zomidus Thurr reads the surface thoughts of each creature with which it is able to be in telepathic contact. Until the end of Zomidus Thurr's next turn, affected creatures have disadvantage on attack rolls, saving throws, and ability checks against Zomidus Thurr."
 					]
 				},
 				{
@@ -11683,13 +11677,13 @@
 				}
 			],
 			"reactionHeader": [
-				"Zomidus Thurr can take up to three reactions per round but only one per turn."
+				"Zomidus Thurr can take up to three reactions per round."
 			],
 			"reaction": [
 				{
 					"name": "Spell Negation",
 					"entries": [
-						"Zomidus Thurr interrupts a creature he can see that is casting a spell. If the spell is 4th level or lower, it fails and has no effect. If the spell is 5th level or higher, Zomidus Thurr makes an Intelligence check ({@dc 10} plus the spell's level). On a successful check, the spell fails and has no effect. Whatever the spell's level, the caster takes {@damage 3d6} psychic damage if the spell fails."
+						"Zomidus Thurr interrupts a creature he can see that is casting a spell. If the spell is 3rd level or lower, it fails and has no effect. If the spell is 4th level or higher, the character makes a Save using their Spellcasting ability of ({@dc 10} plus the spell's level). On a successful check, the spell fails and has no effect. Whatever the spell's level, the caster takes {@damage 3d6} psychic damage if the spell fails."
 					]
 				}
 			],
@@ -11697,6 +11691,7 @@
 				"B"
 			],
 			"damageTagsSpell": [
+				"N",
 				"O",
 				"Y"
 			],
@@ -13784,6 +13779,20 @@
 					"name": "Ultimate Wish",
 					"entries": [
 						"Gathering all 6 of these Orbs of the Weave and attuning to them allows the user to make an Ultimate {@spell Wish|phb} with no restrictions or complications, after the Orbs of the Weave have been used in this way they will scatter across the Universe and remain inert until {@dice 10d100} years have passed."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Limited Wish",
+					"entries": [
+						"While Attuned to all 6 Orbs of the Weave allows the user to cast any 8th level, or lower, spell without consuming a spell slot."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Legendary Resistance",
+					"entries": [
+						"While attuned to any of the Orbs of the Weave the wielder can choose to end attunement to any one of the orbs to passa saving throw they have failed, once attunement is ended in this way it cannot be reattuned until the next dawn."
 					]
 				}
 			]

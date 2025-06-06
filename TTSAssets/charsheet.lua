@@ -19,163 +19,6 @@ RollSkillSelected = 0
 messageSaveThrow = ""
 messageSkill = ""
 
-savedDataTable_Dev = {
-    ["characterNameTxtEntry"] = "",
-    ["playerNameTxtEntry"] = "",
-    ["classLVL1TxtEntry"] = 1,
-    ["classLVL2TxtEntry"] = "",
-    ["alignmentTxtEntry"] = "",
-    ["deityTxtEntry"] = "",
-    ["infoGenderTxtEntry"] = "",
-    ["infoAgeTxtEntry"] = "",
-    ["infoHeightTxtEntry"] = "",
-    ["infoWeightTxtEntry"] = "",
-    ["infoSkinTxtEntry"] = "",
-    ["infoHairTxtEntry"] = "",
-    ["infoEyesTxtEntry"] = "",
-    ["ExperienceTxtEntry"] = "",
-    ["STRsaveItemDisplayIdx"] = "",
-    ["DEXsaveItemDisplayIdx"] = "",
-    ["CONsaveItemDisplayIdx"] = "",
-    ["INTsaveItemDisplayIdx"] = "",
-    ["WISsaveItemDisplayIdx"] = "",
-    ["CHAsaveItemDisplayIdx"] = "",
-    ["AcrobaticsItemDisplayIdx"] = "",
-    ["AnimalHandlingItemDisplayIdx"] = "",
-    ["ArcanaItemDisplayIdx"] = "",
-    ["AthleticsItemDisplayIdx"] = "",
-    ["DeceptionItemDisplayIdx"] = "",
-    ["HistoryItemDisplayIdx"] = "",
-    ["InsightItemDisplayIdx"] = "",
-    ["IntimidationItemDisplayIdx"] = "",
-    ["InvestigationItemDisplayIdx"] = "",
-    ["MedicineItemDisplayIdx"] = "",
-    ["NatureItemDisplayIdx"] = "",
-    ["PerceptionItemDisplayIdx"] = "",
-    ["PerformanceItemDisplayIdx"] = "",
-    ["PersuasionItemDisplayIdx"] = "",
-    ["ReligionItemDisplayIdx"] = "",
-    ["SleightofHandItemDisplayIdx"] = "",
-    ["StealthItemDisplayIdx"] = "",
-    ["SurvivalItemDisplayIdx"] = "",
-    ["InspirationCheckboxButtonIdx"] = false,
-    ["ACTxtEntry"] = 0,
-    ["ACtempTxtEntry"] = 0,
-    ["MAXHPTxtEntry"] = 0,
-    ["CurrentHPTxtEntry"] = 0,
-    ["TempHPTxtEntry"] = 0,
-    ["SpeedFlyTxtEntry"] = "",
-    ["SpeedSwimTxtEntry"] = "",
-    ["SpeedLongTxtEntry"] = "",
-    ["SpeedHighTxtEntry"] = "",
-    ["SpeedCrawlTxtEntry"] = "",
-    ["SpeedClimbTxtEntry"] = "",
-    ["HitDiceClass1LeftTxtEntry"] = "",
-    ["HitDiceClass2LeftTxtEntry"] = "",
-    ["ResImuTxtEntry"] = "",
-    ["ExhaustionTxtEntry"] = 0,
-    ["SuccDeathSave1CheckboxButtonIdx"] = false,
-    ["SuccDeathSave2CheckboxButtonIdx"] = false,
-    ["SuccDeathSave3CheckboxButtonIdx"] = false,
-    ["FailDeathSave1CheckboxButtonIdx"] = false,
-    ["FailDeathSave2CheckboxButtonIdx"] = false,
-    ["FailDeathSave3CheckboxButtonIdx"] = false,
-    ["ProfArmorLightCheckboxButtonIdx"] = false,
-    ["ProfArmorMediumCheckboxButtonIdx"] = false,
-    ["ProfArmorHeavyCheckboxButtonIdx"] = false,
-    ["ProfArmorShieldsCheckboxButtonIdx"] = false,
-    ["ProfSimleWeaponCheckboxButtonIdx"] = false,
-    ["ProfMartialWeaponCheckboxButtonIdx"] = false,
-    ["ProfOtherWeaponCheckboxButtonIdx"] = false,
-    ["ProfWeaponsTxtEntry"] = "",
-    ["ProfToolsTxtEntry"] = "",
-    ["LanguagesTxtEntry"] = "",
-    ["coinCPTxtEntry"] = 0,
-    ["coinSPTxtEntry"] = 0,
-    ["coinEPTxtEntry"] = 0,
-    ["coinGPTxtEntry"] = 0,
-    ["coinPPTxtEntry"] = 0,
-    ["weapon1TxtEntry"] = "",
-    ["weapon2TxtEntry"] = "",
-    ["weapon3TxtEntry"] = "",
-    ["weapon4TxtEntry"] = "",
-    ["weapon5TxtEntry"] = "",
-    ["ammo1TxtEntry"] = 0,
-    ["ammo2TxtEntry"] = 0,
-    ["ammo3TxtEntry"] = 0,
-    ["potions1TxtEntry"] = 0,
-    ["potions2TxtEntry"] = 0,
-    ["potions3TxtEntry"] = 0,
-    ["potions4TxtEntry"] = 0,
-    ["SaveCheckSTRCheckboxButtonIdx"] = false,
-    ["SaveCheckDEXCheckboxButtonIdx"] = false,
-    ["SaveCheckCONCheckboxButtonIdx"] = false,
-    ["SaveCheckINTCheckboxButtonIdx"] = false,
-    ["SaveCheckWISCheckboxButtonIdx"] = false,
-    ["SaveCheckCHACheckboxButtonIdx"] = false,
-    ["AcrobaticsSkillCheckCheckboxButtonIdx"] = false,
-    ["AnimalHandlingSkillCheckCheckboxButtonIdx"] = false,
-    ["ArcanaSkillCheckCheckboxButtonIdx"] = false,
-    ["AthleticsSkillCheckCheckboxButtonIdx"] = false,
-    ["DeceptionSkillCheckCheckboxButtonIdx"] = false,
-    ["HistorySkillCheckCheckboxButtonIdx"] = false,
-    ["InsightSkillCheckCheckboxButtonIdx"] = false,
-    ["IntimidationSkillCheckCheckboxButtonIdx"] = false,
-    ["InvestigationSkillCheckCheckboxButtonIdx"] = false,
-    ["MedicineSkillCheckCheckboxButtonIdx"] = false,
-    ["NatureSkillCheckCheckboxButtonIdx"] = false,
-    ["PerceptionSkillCheckCheckboxButtonIdx"] = false,
-    ["PerformanceSkillCheckCheckboxButtonIdx"] = false,
-    ["PersuasionSkillCheckCheckboxButtonIdx"] = false,
-    ["ReligionSkillCheckCheckboxButtonIdx"] = false,
-    ["SleightofHandSkillCheckCheckboxButtonIdx"] = false,
-    ["StealthSkillCheckCheckboxButtonIdx"] = false,
-    ["SurvivalSkillCheckCheckboxButtonIdx"] = false,
-    ["STRscore"] = 10,
-    ["DEXscore"] = 10,
-    ["CONscore"] = 10,
-    ["INTscore"] = 10,
-    ["WISscore"] = 10,
-    ["CHAscore"] = 10,
-    ["raceName"] = "",
-    ["infoSize"] = "",
-    ["Vision"] = "",
-    ["Vision1"] = "",
-    ["Speed"] = "",
-    ["className1"] = "",
-    ["className2"] = "",
-    ["STRsaveCheck"] = "",
-    ["DEXsaveCheck"] = "",
-    ["CONsaveCheck"] = "",
-    ["INTsaveCheck"] = "",
-    ["WISsaveCheck"] = "",
-    ["CHAsaveCheck"] = "",
-    ["AcrobaticsCheck"] = "",
-    ["AnimalHandlingCheck"] = "",
-    ["ArcanaCheck"] = "",
-    ["AthleticsCheck"] = "",
-    ["DeceptionCheck"] = "",
-    ["HistoryCheck"] = "",
-    ["InsightCheck"] = "",
-    ["IntimidationCheck"] = "",
-    ["InvestigationCheck"] = "",
-    ["MedicineCheck"] = "",
-    ["NatureCheck"] = "",
-    ["PerceptionCheck"] = "",
-    ["PerformanceCheck"] = "",
-    ["PersuasionCheck"] = "",
-    ["ReligionCheck"] = "",
-    ["SleightofHandCheck"] = "",
-    ["StealthCheck"] = "",
-    ["SurvivalCheck"] = "",
-    ["STRsaveItem"] = 0,
-    ["DEXsaveItem"] = 0,
-    ["CONsaveItem"] = 0,
-    ["INTsaveItem"] = 0,
-    ["WISsaveItem"] = 0,
-    ["CHAsaveItem"] = 0,
-}
-
 textEntryIndexTable = {
     ["characterNameTxtEntry"] = 0,
     ["playerNameTxtEntry"] = 1,
@@ -413,7 +256,7 @@ function onload(saved_data)
     allUiElementsLoaded = true
     updateSheet()
     createButtons()
-    math.randomseed(os.time())
+    math.randomseed( tonumber(tostring(os.time()):reverse():sub(1,6)) )
     -- USED TO DEBUG BUTTONS
     -- buttons = self.getButtons()
     -- for key, value in pairs(buttons) do
@@ -508,14 +351,6 @@ function createAllTextboxes()
     createTextBox("classLVL2TxtEntry", {5.115, UI_Y_COORD, -3.89}, ONE_ROW, LEVEL_WIDTH, STANDARD_FONT_SIZE, "", NO_LABEL, CENTER_ALIGNED_TEXT, IS_NUMERIC_ENTRY, color(255, 255, 255, 255))
     createTextBox("alignmentTxtEntry", {3.6, UI_Y_COORD, -3.235}, ONE_ROW, 1840, STANDARD_FONT_SIZE, "", NO_LABEL, LEFT_ALIGNED_TEXT, IS_TEXT_ENTRY, color(255, 255, 255, 255))
     createTextBox("deityTxtEntry", {6.51, UI_Y_COORD, -3.245}, ONE_ROW, 1590, STANDARD_FONT_SIZE, "", NO_LABEL, LEFT_ALIGNED_TEXT, IS_TEXT_ENTRY, color(255, 255, 255, 255))
-    createTextBox("infoGenderTxtEntry", {-0.36, UI_Y_COORD, -2.47}, ONE_ROW, 560, 100, "", NO_LABEL, CENTER_ALIGNED_TEXT, IS_TEXT_ENTRY, color(255, 255, 255, 255))
-    createTextBox("infoAgeTxtEntry", {0.51, UI_Y_COORD, -2.47}, ONE_ROW, 440, 100, "", NO_LABEL, CENTER_ALIGNED_TEXT, IS_TEXT_ENTRY, color(255, 255, 255, 255))
-    createTextBox("infoHeightTxtEntry", {1.345, UI_Y_COORD, -2.47}, ONE_ROW, 520, 100, "", NO_LABEL, CENTER_ALIGNED_TEXT, IS_TEXT_ENTRY, color(255, 255, 255, 255))
-    createTextBox("infoWeightTxtEntry", {2.27, UI_Y_COORD, -2.47}, ONE_ROW, 540, 100, "", NO_LABEL, CENTER_ALIGNED_TEXT, IS_TEXT_ENTRY, color(255, 255, 255, 255))
-    createTextBox("infoSkinTxtEntry", {3.14, UI_Y_COORD, -2.56}, 2, 460, 100, "", NO_LABEL, CENTER_ALIGNED_TEXT, IS_TEXT_ENTRY, color(255, 255, 255, 255))
-    createTextBox("infoHairTxtEntry", {3.95, UI_Y_COORD, -2.56}, 2, 460, 100, "", NO_LABEL, CENTER_ALIGNED_TEXT, IS_TEXT_ENTRY, color(255, 255, 255, 255))
-    createTextBox("infoEyesTxtEntry", {4.75, UI_Y_COORD, -2.56}, 2, 460, 100, "", NO_LABEL, CENTER_ALIGNED_TEXT, IS_TEXT_ENTRY, color(255, 255, 255, 255))
-    createTextBox("ExperienceTxtEntry", {5.84, UI_Y_COORD, -2.59}, ONE_ROW, 820, STANDARD_FONT_SIZE, "", NO_LABEL, CENTER_ALIGNED_TEXT, IS_TEXT_ENTRY, color(255, 255, 255, 255))
     createTextBox("STRsaveItemDisplayIdx", {saveITEMXcord, UI_Y_COORD, -4.45}, ONE_ROW, 240, SKILL_FONT_SIZE, "", NO_LABEL, CENTER_ALIGNED_TEXT, IS_NUMERIC_ENTRY, color(255, 255, 255, 255))
     createTextBox("DEXsaveItemDisplayIdx", {saveITEMXcord, UI_Y_COORD, -4.04}, ONE_ROW, 240, SKILL_FONT_SIZE, "", NO_LABEL, CENTER_ALIGNED_TEXT, IS_NUMERIC_ENTRY, color(255, 255, 255, 255))
     createTextBox("CONsaveItemDisplayIdx", {saveITEMXcord, UI_Y_COORD, -3.63}, ONE_ROW, 240, SKILL_FONT_SIZE, "", NO_LABEL, CENTER_ALIGNED_TEXT, IS_NUMERIC_ENTRY, color(255, 255, 255, 255))
@@ -788,13 +623,27 @@ function click_none() end
 
 function checkspellclass(class, playerclass)
     local classes = {
-        ["mage"] = {
-            "",
-            "",
+        ["INT"] = {
+            "Wizard",
+            "Artificer",
         },
-        ["figher"] = {
+        ["WIS"] = {
+            "Cleric",
+            "Druid",
+            "Ranger",
+            "Monk",
+        },
+        ["CHA"] = {
+            "Sorcerer",
+            "Paladin",
+            "Warlock",
+            "Bard",
+        },
+        ["NA"] = {
             "",
-            "",
+            "Fighter",
+            "Barbarian",
+            "Rogue",
         },
     }
 
@@ -811,33 +660,12 @@ end
 function updateCalculatedValues()
     if allUiElementsLoaded == true then
         totalLVL = 0
-        ExpLVLUP = 0
+        ExpLVLUP = ""
         classLVL1 = tonumber(savedDataTable["classLVL1TxtEntry"])
         classLVL2 = tonumber(savedDataTable["classLVL2TxtEntry"])
         if classLVL1 == nil then classLVL1 = 0 end
         if classLVL2 == nil then classLVL2 = 0 end
         totalLVL = classLVL1 + classLVL2
-        if totalLVL == 1 then ExpLVLUP = "300"
-        elseif totalLVL == 2 then ExpLVLUP = "900"
-        elseif totalLVL == 3 then ExpLVLUP = "2,700"
-        elseif totalLVL == 4 then ExpLVLUP = "6,500"
-        elseif totalLVL == 5 then ExpLVLUP = "14,000"
-        elseif totalLVL == 6 then ExpLVLUP = "23,000"
-        elseif totalLVL == 7 then ExpLVLUP = "34,000"
-        elseif totalLVL == 8 then ExpLVLUP = "48,000"
-        elseif totalLVL == 9 then ExpLVLUP = "64,000"
-        elseif totalLVL == 10 then ExpLVLUP = "85,000"
-        elseif totalLVL == 11 then ExpLVLUP = "100,000"
-        elseif totalLVL == 12 then ExpLVLUP = "120,000"
-        elseif totalLVL == 13 then ExpLVLUP = "140,000"
-        elseif totalLVL == 14 then ExpLVLUP = "165,000"
-        elseif totalLVL == 15 then ExpLVLUP = "195,000"
-        elseif totalLVL == 16 then ExpLVLUP = "225,000"
-        elseif totalLVL == 17 then ExpLVLUP = "265,000"
-        elseif totalLVL == 18 then ExpLVLUP = "305,000"
-        elseif totalLVL == 19 then ExpLVLUP = "355,000"
-        elseif totalLVL >= 20 then ExpLVLUP = "max"
-        end
         self.editButton({index = displayNumberIndex["totalLVLDisplayIdx"], label = tostring(totalLVL)})
         self.editButton({index = displayNumberIndex["ExpLVLUPDisplayIdx"], label = tostring(ExpLVLUP)})
         -- STR, DEX, CON, INT, WIS, CHA
@@ -930,6 +758,7 @@ function updateCalculatedValues()
         SleightofHandItem = tonumber(savedDataTable["SleightofHandItemDisplayIdx"])
         StealthItem = tonumber(savedDataTable["StealthItemDisplayIdx"])
         SurvivalItem = tonumber(savedDataTable["SurvivalItemDisplayIdx"])
+
         if AcrobaticsItem == nil then AcrobaticsItem = 0 end
         if AnimalHandlingItem == nil then AnimalHandlingItem = 0 end
         if ArcanaItem == nil then ArcanaItem = 0 end
@@ -948,6 +777,7 @@ function updateCalculatedValues()
         if SleightofHandItem == nil then SleightofHandItem = 0 end
         if StealthItem == nil then StealthItem = 0 end
         if SurvivalItem == nil then SurvivalItem = 0 end
+
         AcrobaticsTotal = AcrobaticsItem + DEXmod
         AnimalHandlingTotal = AnimalHandlingItem + WISmod
         ArcanaTotal = ArcanaItem + INTmod
@@ -966,6 +796,7 @@ function updateCalculatedValues()
         SleightofHandTotal =  SleightofHandItem + DEXmod
         StealthTotal = StealthItem + DEXmod
         SurvivalTotal = SurvivalItem + WISmod
+
         if savedDataTable.AcrobaticsCheck ~= nil and savedDataTable.AcrobaticsCheck == "/2" then AcrobaticsTotal = AcrobaticsTotal + math.floor(ProfBonus * 0.5)
         elseif savedDataTable.AcrobaticsCheck ~= nil and savedDataTable.AcrobaticsCheck == string.char(10008) then AcrobaticsTotal = AcrobaticsTotal + ProfBonus
         elseif savedDataTable.AcrobaticsCheck ~= nil and savedDataTable.AcrobaticsCheck == "x2" then AcrobaticsTotal = AcrobaticsTotal + (ProfBonus * 2)
@@ -1038,6 +869,7 @@ function updateCalculatedValues()
         elseif savedDataTable.SurvivalCheck ~= nil and savedDataTable.SurvivalCheck == string.char(10008) then SurvivalTotal = SurvivalTotal + ProfBonus
         elseif savedDataTable.SurvivalCheck ~= nil and savedDataTable.SurvivalCheck == "x2" then SurvivalTotal = SurvivalTotal + (ProfBonus * 2)
         end
+
         self.editButton({index = displayNumberIndex["AcrobaticsCheckDisplayIdx"], label = tostring(savedDataTable.AcrobaticsCheck)})
         self.editButton({index = displayNumberIndex["AnimalHandlingCheckDisplayIdx"], label = tostring(savedDataTable.AnimalHandlingCheck)})
         self.editButton({index = displayNumberIndex["ArcanaCheckDisplayIdx"], label = tostring(savedDataTable.ArcanaCheck)})
@@ -1092,13 +924,15 @@ function updateCalculatedValues()
         self.editButton({index = displayNumberIndex["SleightofHandModDisplayIdx"], label = tostring(DEXmod)})
         self.editButton({index = displayNumberIndex["StealthModDisplayIdx"], label = tostring(DEXmod)})
         self.editButton({index = displayNumberIndex["SurvivalModDisplayIdx"], label = tostring(WISmod)})
+
         PassivePerception = 10 + PerceptionTotal
         if savedDataTable.PassiveModifier ~= nil then PassivePerception = PassivePerception + savedDataTable.PassiveModifier end
         self.editButton({index = displayNumberIndex["PassivePerceptionDisplayIdx"], label = tostring(PassivePerception)})
-        --
+
         Initiative = DEXmod
         if savedDataTable.InitModifier ~= nil then Initiative = Initiative + savedDataTable.InitModifier end
         self.editButton({index = displayNumberIndex["InitiativeDisplayIdx"], label = tostring(Initiative)})
+
         if HitDiceClass1Total == nil then HitDiceClass1Total = 0 end
         if HitDiceClass2Total == nil then HitDiceClass2Total = 0 end
         HitDiceClass1Total = classLVL1
@@ -1113,6 +947,9 @@ function updateCalculatedValues()
         HitDiceClass2 = ""
     
         if savedDataTable.Atk1Modifier ~= nil then SpellAtkBonus1 = SpellAtkBonus1 + savedDataTable.Atk1Modifier end
+        if savedDataTable.Atk2Modifier ~= nil then SpellAtkBonus2 = SpellAtkBonus2 + savedDataTable.Atk2Modifier end
+        if savedDataTable.DC1Modifier ~= nil then SpellSaveDC1 = SpellSaveDC1 + savedDataTable.DC1Modifier end
+        if savedDataTable.DC2Modifier ~= nil then SpellSaveDC2 = SpellSaveDC2 + savedDataTable.DC2Modifier end
 
         HitDiceClasses = {
             ["Sorcerer"] = "d6",
@@ -1142,73 +979,57 @@ function updateCalculatedValues()
         self.editButton({index = displayNumberIndex["HitDiceClass2DisplayIdx"], label = tostring(HitDiceClass2)})
 
 
-        --[[ if checkspellclass("mage", savedDataTable.classname1) then
+        if checkspellclass("INT", savedDataTable.className1) then
             Caster = 8
             SpellSaveDC1 = SpellSaveDC1 + ProfBonus + Caster + INTmod;
             SpellAtkBonus1 = SpellAtkBonus1 + ProfBonus + INTmod;
-        end ]]
+        end
 
-        if savedDataTable.className1 ~= nil and savedDataTable.className1 == tostring("Wizard") or savedDataTable.className1 == tostring("Abjuration Wizard") or savedDataTable.className1 == tostring("Conjuration Wizard") or savedDataTable.className1 == tostring("Divination Wizard") or savedDataTable.className1 == tostring("Enchantment Wizard") or savedDataTable.className1 == tostring("Evocation Wizard") or savedDataTable.className1 == tostring("Illusion Wizard") or savedDataTable.className1 == tostring("Necromancy Wizard") or savedDataTable.className1 == tostring("Transmutation Wizard") or savedDataTable.className1 == tostring("War Magic Wizard") or savedDataTable.className1 == tostring("Eldritch Knight Fighter") or savedDataTable.className1 == tostring("Psi Warrior Fighter") or savedDataTable.className1 == tostring("Arcane Trickster Rogue") then
-            Caster = 8
-            SpellSaveDC1 = SpellSaveDC1 + ProfBonus + Caster + INTmod;
-            SpellAtkBonus1 = SpellAtkBonus1 + ProfBonus + INTmod;
-        elseif savedDataTable.className1 ~= nil and savedDataTable.className1 == tostring("Knowledge Cleric") or savedDataTable.className1 == tostring("Life Cleric") or savedDataTable.className1 == tostring("Light Cleric") or savedDataTable.className1 == tostring("Nature Cleric") or savedDataTable.className1 == tostring("Tempest Cleric") or savedDataTable.className1 == tostring("Trickery Cleric") or savedDataTable.className1 == tostring("War Cleric") or savedDataTable.className1 == tostring("Death Cleric") or savedDataTable.className1 == tostring("Forge Cleric") or savedDataTable.className1 == tostring("Grave Cleric") or savedDataTable.className1 == tostring("Druid") or savedDataTable.className1 == tostring("Land Druid") or savedDataTable.className1 == tostring("Moon Druid") or savedDataTable.className1 == tostring("Dreams Druid") or savedDataTable.className1 == tostring("Shepherd Druid") or savedDataTable.className1 == tostring("Monk") or savedDataTable.className1 == tostring("Open Hand Monk") or savedDataTable.className1 == tostring("Shadow Monk") or savedDataTable.className1 == tostring("Four Elements Monk") or savedDataTable.className1 == tostring("Drunken Master Monk") or savedDataTable.className1 == tostring("Kensei Monk") or savedDataTable.className1 == tostring("Sun Soul Monk") or savedDataTable.className1 == tostring("Hunter Ranger") or savedDataTable.className1 == tostring("Beast Master Ranger") or savedDataTable.className1 == tostring("Gloom Stalker Ranger") or savedDataTable.className1 == tostring("Horizon Walker Ranger") or savedDataTable.className1 == tostring("Monster Slayer Ranger") then
+        if checkspellclass("WIS", savedDataTable.className1) then
             Caster = 8
             SpellSaveDC1 = SpellSaveDC1 + ProfBonus + Caster + WISmod;
             SpellAtkBonus1 = SpellAtkBonus1 + ProfBonus + WISmod;
-        elseif savedDataTable.className1 ~= nil and savedDataTable.className1 == tostring("Bard") or savedDataTable.className1 == tostring("Lore Bard") or savedDataTable.className1 == tostring("Valor Bard") or savedDataTable.className1 == tostring("Glamour Bard") or savedDataTable.className1 == tostring("Swords Bard") or savedDataTable.className1 == tostring("Whispers Bard") or savedDataTable.className1 == tostring("Devotion Paladin") or savedDataTable.className1 == tostring("Ancients Paladin") or savedDataTable.className1 == tostring("Vengeance Paladin") or savedDataTable.className1 == tostring("Oathbreaker Paladin") or savedDataTable.className1 == tostring("Conquest Paladin") or savedDataTable.className1 == tostring("Redemption Paladin") or savedDataTable.className1 == tostring("Draconic Bloodline Sorcerer") or savedDataTable.className1 == tostring("Wild Magic Sorcerer") or savedDataTable.className1 == tostring("Divine Soul Sorcerer") or savedDataTable.className1 == tostring("Shadow Magic Sorcerer") or savedDataTable.className1 == tostring("Storm Sorcery Sorcerer") or savedDataTable.className1 == tostring("The Archfey Warlock") or savedDataTable.className1 == tostring("The Fiend Warlock") or savedDataTable.className1 == tostring("The Great Old One Warlock") or savedDataTable.className1 == tostring("The Celestial Warlock") or savedDataTable.className1 == tostring("The Hexblade Warlock") then
+        end
+
+        if checkspellclass("CHA", savedDataTable.className1) then
             Caster = 8
             SpellSaveDC1 = SpellSaveDC1 + ProfBonus + Caster + CHAmod;
             SpellAtkBonus1 = SpellAtkBonus1 + ProfBonus + CHAmod;
-        elseif savedDataTable.className1 ~= nil and savedDataTable.className1 == tostring("Rune Knight Fighter") or savedDataTable.className1 == tostring("Wild Magic Barbarian") then
-            Caster = 8
-            SpellSaveDC1 = SpellSaveDC1 + ProfBonus + Caster + CONmod;
-            SpellAtkBonus1 = "NA"
-        elseif savedDataTable.className1 ~= nil and savedDataTable.className1 == tostring("Battle Master Fighter (str)") then
-            Caster = 8
-            SpellSaveDC1 = SpellSaveDC1 + ProfBonus + Caster + STRmod;
-            SpellAtkBonus1 = "NA"
-        elseif savedDataTable.className1 ~= nil and savedDataTable.className1 == tostring("Battle Master Fighter (dex)") then
-            Caster = 8
-            SpellSaveDC1 = SpellSaveDC1 + ProfBonus + Caster + DEXmod;
-            SpellAtkBonus1 = "NA"
-        elseif savedDataTable.className1 ~= nil and savedDataTable.className1 == tostring("") or savedDataTable.className1 == tostring("Barbarian") or savedDataTable.className1 == tostring("Berserker Barbarian") or savedDataTable.className1 == tostring("Totem Warrior Barbarian") or savedDataTable.className1 == tostring("Ancestral Guardian Barbarian") or savedDataTable.className1 == tostring("Storm Herald Barbarian") or savedDataTable.className1 == tostring("Zealot Barbarian") or savedDataTable.className1 == tostring("Fighter") or savedDataTable.className1 == tostring("Champion Fighter") or savedDataTable.className1 == tostring("Arcane Archer Fighter") or savedDataTable.className1 == tostring("Cavalier Fighter") or savedDataTable.className1 == tostring("Samurai Fighter") or savedDataTable.className1 == tostring("Rogue") or savedDataTable.className1 == tostring("Thief Rogue") or savedDataTable.className1 == tostring("Assassin Rogue") or savedDataTable.className1 == tostring("Inquisitive Rogue") or savedDataTable.className1 == tostring("Mastermind Rogue") or savedDataTable.className1 == tostring("Scout Rogue") or savedDataTable.className1 == tostring("Swashbuckler Rogue") then
-            SpellSaveDC1 = "NA"
-            SpellAtkBonus1 = "NA"
         end
-        if savedDataTable.className2 ~= nil and savedDataTable.className2 == tostring("Wizard") or savedDataTable.className2 == tostring("Abjuration Wizard") or savedDataTable.className2 == tostring("Conjuration Wizard") or savedDataTable.className2 == tostring("Divination Wizard") or savedDataTable.className2 == tostring("Enchantment Wizard") or savedDataTable.className2 == tostring("Evocation Wizard") or savedDataTable.className2 == tostring("Illusion Wizard") or savedDataTable.className2 == tostring("Necromancy Wizard") or savedDataTable.className2 == tostring("Transmutation Wizard") or savedDataTable.className2 == tostring("War Magic Wizard") or savedDataTable.className2 == tostring("Eldritch Knight Fighter") or savedDataTable.className2 == tostring("Psi Warrior Fighter") or savedDataTable.className2 == tostring("Arcane Trickster Rogue") then
+
+        if checkspellclass("NA", savedDataTable.className1) then
+            SpellSaveDC1 = "NA";
+            SpellAtkBonus1 = "NA";
+        end
+
+        if checkspellclass("INT", savedDataTable.className2) then
             Caster = 8
             SpellSaveDC2 = SpellSaveDC2 + ProfBonus + Caster + INTmod;
             SpellAtkBonus2 = SpellAtkBonus2 + ProfBonus + INTmod;
-        elseif savedDataTable.className2 ~= nil and savedDataTable.className2 == tostring("Knowledge Cleric") or savedDataTable.className2 == tostring("Life Cleric") or savedDataTable.className2 == tostring("Light Cleric") or savedDataTable.className2 == tostring("Nature Cleric") or savedDataTable.className2 == tostring("Tempest Cleric") or savedDataTable.className2 == tostring("Trickery Cleric") or savedDataTable.className2 == tostring("War Cleric") or savedDataTable.className2 == tostring("Death Cleric") or savedDataTable.className2 == tostring("Forge Cleric") or savedDataTable.className2 == tostring("Grave Cleric") or savedDataTable.className2 == tostring("Druid") or savedDataTable.className2 == tostring("Land Druid") or savedDataTable.className2 == tostring("Moon Druid") or savedDataTable.className2 == tostring("Dreams Druid") or savedDataTable.className2 == tostring("Shepherd Druid") or savedDataTable.className2 == tostring("Monk") or savedDataTable.className2 == tostring("Open Hand Monk") or savedDataTable.className2 == tostring("Shadow Monk") or savedDataTable.className2 == tostring("Four Elements Monk") or savedDataTable.className2 == tostring("Drunken Master Monk") or savedDataTable.className2 == tostring("Kensei Monk") or savedDataTable.className2 == tostring("Sun Soul Monk") or savedDataTable.className2 == tostring("Hunter Ranger") or savedDataTable.className2 == tostring("Beast Master Ranger") or savedDataTable.className2 == tostring("Gloom Stalker Ranger") or savedDataTable.className2 == tostring("Horizon Walker Ranger") or savedDataTable.className2 == tostring("Monster Slayer Ranger") then
+        end
+
+        if checkspellclass("WIS", savedDataTable.className2) then
             Caster = 8
             SpellSaveDC2 = SpellSaveDC2 + ProfBonus + Caster + WISmod;
             SpellAtkBonus2 = SpellAtkBonus2 + ProfBonus + WISmod;
-        elseif savedDataTable.className2 ~= nil and savedDataTable.className2 == tostring("Bard") or savedDataTable.className2 == tostring("Lore Bard") or savedDataTable.className2 == tostring("Valor Bard") or savedDataTable.className2 == tostring("Glamour Bard") or savedDataTable.className2 == tostring("Swords Bard") or savedDataTable.className2 == tostring("Whispers Bard") or savedDataTable.className2 == tostring("Devotion Paladin") or savedDataTable.className2 == tostring("Ancients Paladin") or savedDataTable.className2 == tostring("Vengeance Paladin") or savedDataTable.className2 == tostring("Oathbreaker Paladin") or savedDataTable.className2 == tostring("Conquest Paladin") or savedDataTable.className2 == tostring("Redemption Paladin") or savedDataTable.className2 == tostring("Draconic Bloodline Sorcerer") or savedDataTable.className2 == tostring("Wild Magic Sorcerer") or savedDataTable.className2 == tostring("Divine Soul Sorcerer") or savedDataTable.className2 == tostring("Shadow Magic Sorcerer") or savedDataTable.className2 == tostring("Storm Sorcery Sorcerer") or savedDataTable.className2 == tostring("The Archfey Warlock") or savedDataTable.className2 == tostring("The Fiend Warlock") or savedDataTable.className2 == tostring("The Great Old One Warlock") or savedDataTable.className2 == tostring("The Celestial Warlock") or savedDataTable.className2 == tostring("The Hexblade Warlock") then
+        end
+
+        if checkspellclass("CHA", savedDataTable.className2) then
             Caster = 8
             SpellSaveDC2 = SpellSaveDC2 + ProfBonus + Caster + CHAmod;
             SpellAtkBonus2 = SpellAtkBonus2 + ProfBonus + CHAmod;
-        elseif savedDataTable.className2 ~= nil and savedDataTable.className2 == tostring("Rune Knight Fighter") or savedDataTable.className2 == tostring("Wild Magic Barbarian") then
-            Caster = 8
-            SpellSaveDC2 = SpellSaveDC2 + ProfBonus + Caster + CONmod;
-            SpellAtkBonus2 = "NA"
-        elseif savedDataTable.className2 ~= nil and savedDataTable.className2 == tostring("Battle Master Fighter (str)") then
-            Caster = 8
-            SpellSaveDC2 = SpellSaveDC2 + ProfBonus + Caster + STRmod;
-            SpellAtkBonus2 = "NA"
-        elseif savedDataTable.className2 ~= nil and savedDataTable.className2 == tostring("Battle Master Fighter (dex)") then
-            Caster = 8
-            SpellSaveDC2 = SpellSaveDC2 + ProfBonus + Caster + DEXmod;
-            SpellAtkBonus2 = "NA"
-        elseif savedDataTable.className2 ~= nil and savedDataTable.className2 == tostring("") or savedDataTable.className2 == tostring("Barbarian") or savedDataTable.className2 == tostring("Berserker Barbarian") or savedDataTable.className2 == tostring("Totem Warrior Barbarian") or savedDataTable.className2 == tostring("Ancestral Guardian Barbarian") or savedDataTable.className2 == tostring("Storm Herald Barbarian") or savedDataTable.className2 == tostring("Zealot Barbarian") or savedDataTable.className2 == tostring("Fighter") or savedDataTable.className2 == tostring("Champion Fighter") or savedDataTable.className2 == tostring("Arcane Archer Fighter") or savedDataTable.className2 == tostring("Cavalier Fighter") or savedDataTable.className2 == tostring("Samurai Fighter") or savedDataTable.className2 == tostring("Rogue") or savedDataTable.className2 == tostring("Thief Rogue") or savedDataTable.className2 == tostring("Assassin Rogue") or savedDataTable.className2 == tostring("Inquisitive Rogue") or savedDataTable.className2 == tostring("Mastermind Rogue") or savedDataTable.className2 == tostring("Scout Rogue") or savedDataTable.className2 == tostring("Swashbuckler Rogue") then
-            SpellSaveDC2 = "NA"
-            SpellAtkBonus2 = "NA"
         end
+
+        if checkspellclass("NA", savedDataTable.className2) then
+            SpellSaveDC2 = "NA";
+            SpellAtkBonus2 = "NA";
+        end
+
+
         self.editButton({index = displayNumberIndex["SpellSaveDC1DisplayIdx"], label = tostring(SpellSaveDC1)})
         self.editButton({index = displayNumberIndex["SpellSaveDC2DisplayIdx"], label = tostring(SpellSaveDC2)})
         self.editButton({index = displayNumberIndex["SpellAtkBonus1DisplayIdx"], label = tostring(SpellAtkBonus1)})
         self.editButton({index = displayNumberIndex["SpellAtkBonus2DisplayIdx"], label = tostring(SpellAtkBonus2)})
-
         self.editButton({index = displayNumberIndex["raceNameDisplayIdx"], label = tostring(savedDataTable.raceName)})
         self.editButton({index = displayNumberIndex["infoSizeDisplayIdx"], label = tostring(savedDataTable.infoSize)})
         self.editButton({index = displayNumberIndex["VisionDisplayIdx"], label = tostring(savedDataTable.Vision)})
@@ -1223,6 +1044,7 @@ function updateCalculatedValues()
         SaveCheckINTIsChecked = savedDataTable["SaveCheckINTCheckboxButtonIdx"]
         SaveCheckWISIsChecked = savedDataTable["SaveCheckWISCheckboxButtonIdx"]
         SaveCheckCHAIsChecked = savedDataTable["SaveCheckCHACheckboxButtonIdx"]
+
         if SaveCheckSTRIsChecked ~= nil and SaveCheckSTRIsChecked == true then RollSaveSelected = STRsaveTotal; messageSaveThrow = " )[/b] on their Strength Saving Throw!"
         elseif SaveCheckDEXIsChecked ~= nil and SaveCheckDEXIsChecked == true then RollSaveSelected = DEXsaveTotal; messageSaveThrow = " )[/b] on their Dexterity Saving Throw!"
         elseif SaveCheckCONIsChecked ~= nil and SaveCheckCONIsChecked == true then RollSaveSelected = CONsaveTotal; messageSaveThrow = " )[/b] on their Constitution Saving Throw!"
@@ -1249,6 +1071,7 @@ function updateCalculatedValues()
         SleightofHandSkillIsChecked = savedDataTable["SleightofHandSkillCheckCheckboxButtonIdx"]
         StealthSkillIsChecked = savedDataTable["StealthSkillCheckCheckboxButtonIdx"]
         SurvivalSkillIsChecked = savedDataTable["SurvivalSkillCheckCheckboxButtonIdx"]
+
         if AcrobaticsSkillIsChecked ~= nil and AcrobaticsSkillIsChecked == true then RollSkillSelected = AcrobaticsTotal; messageSkill = " )[/b] on their Acrobatics Check!"
         elseif AnimalHandlingSkillIsChecked ~= nil and AnimalHandlingSkillIsChecked == true then RollSkillSelected = AnimalHandlingTotal; messageSkill = " )[/b] on their Animal Handling Check!"
         elseif ArcanaSkillIsChecked ~= nil and ArcanaSkillIsChecked == true then RollSkillSelected = ArcanaTotal; messageSkill = " )[/b] on their Arcana Check!"
@@ -1276,6 +1099,35 @@ function rollCheckSaveThrow(color, obj)
     playerName = Player[obj].steam_name
     updateRandomSeed()
     d20 = math.random(20)
+    if (SaveCheckSTRIsChecked == true) or (SaveCheckDEXIsChecked == true) or (SaveCheckCONIsChecked == true) or (SaveCheckINTIsChecked == true) or (SaveCheckWISIsChecked == true) or (SaveCheckCHAIsChecked == true) then
+        printToAll("╔═════════════════════════════", displayCol)
+        printToAll("║[b]"..playerName.."'s Saving Throw:[/b]", displayCol)
+        printToAll("║[i]**Original rolls: ( "..(d20).." ) + Modifier: ("..RollSaveSelected..")[/i]", displayCol)
+        broadcastToAll(">> "..playerName.." rolled [b]( "..(d20+RollSaveSelected)..messageSaveThrow.." <<", displayCol)
+    else
+        broadcastToColor("There is no Saving Throw selected.", obj, displayCol)
+    end
+end
+function rollCheckSkill(color, obj)
+    displayCol = getColor(obj)
+    playerName = Player[obj].steam_name
+    updateRandomSeed()
+    d20 = math.random(20)
+    if (AcrobaticsSkillIsChecked == true) or (AnimalHandlingSkillIsChecked == true) or (ArcanaSkillIsChecked == true) or (AthleticsSkillIsChecked == true) or (DeceptionSkillIsChecked == true) or (HistorySkillIsChecked == true) or (InsightSkillIsChecked == true) or (IntimidationSkillIsChecked == true) or (InvestigationSkillIsChecked == true) or (MedicineSkillIsChecked == true) or (NatureSkillIsChecked == true) or (PerceptionSkillIsChecked == true) or (PerformanceSkillIsChecked == true) or (PersuasionSkillIsChecked == true) or (ReligionSkillIsChecked == true) or (SleightofHandSkillIsChecked == true) or (StealthSkillIsChecked == true) or (SurvivalSkillIsChecked == true) then
+        printToAll("╔═════════════════════════════", displayCol)
+        printToAll("║[b]"..playerName.."'s Skill Check:[/b]", displayCol)
+        printToAll("║[i]**Original rolls: ( "..(d20).." ) + Modifier: ("..RollSkillSelected..")[/i]", displayCol)
+        broadcastToAll(">> "..playerName.." rolled [b]( "..(d20+RollSkillSelected)..messageSkill.." <<", displayCol)
+    else
+        broadcastToColor("There is no Skill Check selected.", obj, displayCol)
+    end
+end
+
+function altrollCheckSaveThrow(color, obj)
+    displayCol = getColor(obj)
+    playerName = Player[obj].steam_name
+    updateRandomSeed()
+    d20 = math.random(20)
     d20two = math.random(20)
     if (SaveCheckSTRIsChecked == true) or (SaveCheckDEXIsChecked == true) or (SaveCheckCONIsChecked == true) or (SaveCheckINTIsChecked == true) or (SaveCheckWISIsChecked == true) or (SaveCheckCHAIsChecked == true) then
         printToAll("╔═════════════════════════════", displayCol)
@@ -1286,7 +1138,7 @@ function rollCheckSaveThrow(color, obj)
         broadcastToColor("There is no Saving Throw selected.", obj, displayCol)
     end
 end
-function rollCheckSkill(color, obj)
+function altrollCheckSkill(color, obj)
     displayCol = getColor(obj)
     playerName = Player[obj].steam_name
     updateRandomSeed()
@@ -1317,7 +1169,7 @@ function getColor(obj)
         ["Pink"] = {0.96, 0.439, 0.807},
         ["Grey"] = {0.5, 0.5, 0.5},
         ["Orange"] = {0.956, 0.392, 0.113},
-        ["Black"] = {1, 1, 1},
+        ["Black"] = {0.192, 0.701, 0.168},
     }
 
     return colours[obj]
@@ -1326,20 +1178,36 @@ end
 function updateRandomSeed()
     local chance = math.random(1,10)
     if chance == 1 then
-        math.randomseed(os.time())
+        math.randomseed( tonumber(tostring(os.time()):reverse():sub(1,6)) )
+    end
+end
+
+function SaveThrow(obj,color,altclick)
+    if altclick then
+        altrollCheckSaveThrow(obj,color)
+    else
+        rollCheckSaveThrow(obj,color)
+    end
+end
+
+function SkillsCheck(obj,color,altclick)
+    if altclick then
+        altrollCheckSkill(obj,color)
+    else
+        rollCheckSkill(obj,color)
     end
 end
 
 function createButtons()
 -- Roll Saving Throws
     self.createButton({
-        label="[b]"..string.char(8635)..' Roll '..string.char(8634).."[/b]", click_function="rollCheckSaveThrow",
+        label="[b]"..string.char(8635)..' Roll '..string.char(8634).."[/b]", click_function="SaveThrow",
         function_owner=self, position={-6.7,0.04,-1.94},
         height=190, width=600, font_size=130
     })
--- Roll Saving Throws
+-- Roll Skill Checks
     self.createButton({
-        label="[b]"..string.char(8635)..' Roll '..string.char(8634).."[/b]", click_function="rollCheckSkill",
+        label="[b]"..string.char(8635)..' Roll '..string.char(8634).."[/b]", click_function="SkillsCheck",
         function_owner=self, position={-6.7,0.04,6.5},
         height=190, width=600, font_size=130
     })
@@ -1372,7 +1240,6 @@ local objects = {
         var = "WISscore",
         type = "updateValue",
     },
-    -------------------------
     ['cha score'] = {
         var = "CHAscore",
         type = "updateValue",
@@ -1507,6 +1374,18 @@ local objects = {
     },
     ['atk1 bonus'] = {
         var = "Atk1Modifier",
+        type = "updateModifier",
+    },
+    ['dc1 bonus'] = {
+        var = "DC1Modifier",
+        type = "updateModifier",
+    },    
+    ['atk2 bonus'] = {
+        var = "Atk2Modifier",
+        type = "updateModifier",
+    },    
+    ['dc2 bonus'] = {
+        var = "DC2Modifier",
         type = "updateModifier",
     },
 }
