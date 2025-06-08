@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="2.0.0">
+		<update version="2.0.1">
 			<file name="QOL.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/KJTCC/QOL.xml" />
 		</update>
 	</info>
@@ -264,7 +264,10 @@
 			<p>Sorcerers gain at level 2, pool with Sorcery Points, replace all other slots from levels in multiclass.</p>
 		</description>
 		<sheet usage="{{spellpoints}}/Long Rest" alt="Spell Points">
-			<description>Replaces all spell slots. Includes Sorcery Points.</description>
+			<description>
+				<p>Replaces all spell slots. Includes {{sorcery-points}} Sorcery Points. </p>
+				<p>Point cost Per Level: 2 > 1st, 3 > 2nd, 5 > 3rd, 6 > 4th, 7 > 5th, 9 > 6th, 10 > 7th, 11 > 8th, 13 > 9th</p>
+			</description>
 		</sheet>
 		<rules>	
 			<stat name="spellpoints" value="sorcery-points"/>
