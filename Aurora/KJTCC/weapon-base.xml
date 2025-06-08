@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.4.2">
+		<update version="1.4.3">
 			<file name="weapon-base.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/KJTCC/weapon-base.xml" />
 		</update>
 	</info>
@@ -80,7 +80,7 @@
 			<set name="slot">onehand</set>
 			<set name="damage" type="slashing">1d8</set>
 			<set name="versatile">1d10</set>
-			<set name="proficiency">ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER | ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD</set>
+			<set name="proficiency">ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD</set>
 		</setters>
 	</element>
 
