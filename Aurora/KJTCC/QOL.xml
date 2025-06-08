@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.9.5">
+		<update version="2.0.0">
 			<file name="QOL.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/KJTCC/QOL.xml" />
 		</update>
 	</info>
@@ -48,7 +48,6 @@
 	</element>
 
 	<!--Spells as Items for Sheet Calc-->
-
 
 	<element name="Shillelagh" type="Weapon" source="Player’s Handbook" id="ID_WOTC_PHB_SHILLELAGH">
 		<supports> ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING</supports>
@@ -338,31 +337,31 @@
 	
 	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS">
 		<rules>
-				<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
 		</rules>
 	</append>
 
 	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS">
 		<rules>
-				<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
 		</rules>
 	</append>
 
 	<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR">
 		<rules>
-				<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
 		</rules>
 	</append>
 
 	<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR">
 		<rules>
-				<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
 		</rules>
 	</append>
 
 	<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR">
 		<rules>
-				<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
 		</rules>
 	</append>
 
