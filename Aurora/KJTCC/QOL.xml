@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="2.0.2">
+		<update version="2.0.3">
 			<file name="QOL.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/KJTCC/QOL.xml" />
 		</update>
 	</info>
@@ -270,6 +270,15 @@
 		<rules>	
 			<stat name="spellpoints" value="sorcery-points"/>
 
+			<stat name="casterlevel" value="level:sorcerer"/>
+			<stat name="casterlevel" value="level:cleric"/>
+			<stat name="casterlevel" value="level:bard"/>
+			<stat name="casterlevel" value="level:druid"/>
+			<stat name="casterlevel" value="level:wizard"/>
+			<stat name="casterlevel" value="level:paladin:half"/>
+			<stat name="casterlevel" value="level:ranger:half"/>
+			<stat name="casterlevel" value="level:artificer:half:up"/>
+			
 			<stat name="casterlevel" value="1" bonus="base" requirements="[level:fighter:3], ID_WOTC_PHB24_ARCHETYPE_FIGHTER_ELDRITCH_KNIGHT"/>
 			<stat name="casterlevel" value="2" bonus="base" requirements="[level:fighter:4], ID_WOTC_PHB24_ARCHETYPE_FIGHTER_ELDRITCH_KNIGHT"/>
 			<stat name="casterlevel" value="3" bonus="base" requirements="[level:fighter:7], ID_WOTC_PHB24_ARCHETYPE_FIGHTER_ELDRITCH_KNIGHT"/>
@@ -285,15 +294,6 @@
 			<stat name="casterlevel" value="5" bonus="base" requirements="[level:rogue:13], ID_WOTC_PHB24_ARCHETYPE_ROGUE_ARCANE_TRICKSTER"/>
 			<stat name="casterlevel" value="6" bonus="base" requirements="[level:rogue:16], ID_WOTC_PHB24_ARCHETYPE_ROGUE_ARCANE_TRICKSTER"/>
 			<stat name="casterlevel" value="7" bonus="base" requirements="[level:rogue:19], ID_WOTC_PHB24_ARCHETYPE_ROGUE_ARCANE_TRICKSTER"/>
-			
-			<stat name="casterlevel" value="level:sorcerer"/>
-			<stat name="casterlevel" value="level:cleric"/>
-			<stat name="casterlevel" value="level:bard"/>
-			<stat name="casterlevel" value="level:druid"/>
-			<stat name="casterlevel" value="level:wizard"/>
-			<stat name="casterlevel" value="level:paladin:half"/>
-			<stat name="casterlevel" value="level:ranger:half"/>
-			<stat name="casterlevel" value="level:artificer:half:up"/>
 
 			<stat name="spellpoints" value="6" bonus="base" requirements="[casterlevel:2]"/>
 			<stat name="spellpoints" value="14" bonus="base" requirements="[casterlevel:3]"/>

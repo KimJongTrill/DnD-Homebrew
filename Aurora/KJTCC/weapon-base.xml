@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.4.0">
+		<update version="1.4.1">
 			<file name="weapon-base.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/KJTCC/weapon-base.xml" />
 		</update>
 	</info>
+
+<!--Custom Weapons-->
 
 	<element name="Brass Knuckles" type="Weapon" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_KNUCKS_B">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_WOTC_PHB24_WEAPON_PROPERTY_NICK</supports>
@@ -65,7 +67,56 @@
 			<set name="proficiency">ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS</set>
 		</setters>
 	</element>
-	
+
+	<element name="Katana" type="Weapon" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_KATANA">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_GROUP_SWORDS, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_WOTC_PHB24_WEAPON_PROPERTY_GRAZE</supports>
+		<description>
+			<p>This weapon is a curved, single-edged blade with a long grip to accommodate up two hands.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">15</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="slashing">1d8</set>
+			<set name="versatile">1d10</set>
+			<set name="proficiency">ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER, ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD</set>
+		</setters>
+	</element>
+
+	<element name="Scythe" type="Weapon" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_SCYTHE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_WOTC_PHB24_WEAPON_PROPERTY_SLOW</supports>
+		<description>
+			<p>This weapon is a polearm with a large curved blade attached to one end.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">15</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="slashing">1d8</set>
+			<set name="versatile">1d10</set>
+			<set name="proficiency">ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS</set>
+		</setters>
+	</element>
+
+	<element name="Nunchaku" type="Weapon" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_NUNCHAKU">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_WOTC_PHB24_WEAPON_PROPERTY_NICK</supports>
+		<description>
+			<p>This weapon consists of two rods connected to each other at their ends by a short metal chain or a rope.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">15</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="bludgeoning">1d6</set>
+			<set name="proficiency">ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS, ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_SCIMITAR</set>
+		</setters>
+	</element>
+
+<!--Firearms-->
+
 	<element name="Flintlock" type="Weapon" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_WEAPON_FLINTLOCK">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_WOTC_PHB24_WEAPON_PROPERTY_AMMUNITION, ID_WOTC_PHB24_WEAPON_PROPERTY_LOADING, ID_WOTC_PHB24_WEAPON_PROPERTY_VEX</supports>
 		<description />
@@ -80,8 +131,8 @@
 		</setters>
 	</element>
 	
-	<element name="Six-Shooter" type="Weapon" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_WEAPON_REVOLVER">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_WOTC_PHB24_WEAPON_PROPERTY_AMMUNITION, ID_WOTC_PHB24_WEAPON_PROPERTY_NICK</supports>
+	<element name="Revolver" type="Weapon" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_WEAPON_REVOLVER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_WOTC_PHB24_WEAPON_PROPERTY_AMMUNITION, ID_KJT_CC_WEAPON_PROPERTY_FIREARM_RELOAD_6_SHOTS, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_WOTC_PHB24_WEAPON_PROPERTY_NICK</supports>
 		<description />
 		<setters>
 			<set name="category">Weapons</set>
@@ -89,58 +140,42 @@
 			<set name="weight" lb="1.5">1.5 lbs.</set>
 			<set name="slot">onehand</set>
 			<set name="range">30/60</set>
-			<set name="damage" type="piercing">1d6</set>
+			<set name="damage" type="piercing">1d8</set>
 			<set name="proficiency">ID_KJT_CC_PROFICIENCY_WEAPON_FIREARMS</set>
 		</setters>
   	</element>
 	
   	<element name="Long Rifle" type="Weapon" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_WEAPON_LONG_RIFLE">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_WOTC_PHB24_WEAPON_PROPERTY_AMMUNITION, ID_WOTC_PHB24_WEAPON_PROPERTY_LOADING, ID_WOTC_PHB24_WEAPON_PROPERTY_TWOHANDED, ID_WOTC_PHB24_WEAPON_PROPERTY_SAP</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_WOTC_PHB24_WEAPON_PROPERTY_AMMUNITION, ID_WOTC_PHB24_WEAPON_PROPERTY_LOADING, ID_WOTC_PHB24_WEAPON_PROPERTY_TWOHANDED, ID_WOTC_PHB24_WEAPON_PROPERTY_SLOW</supports>
 		<description />
 		<setters>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">500</set>
 			<set name="weight" lb="10">10 lb.</set>
 			<set name="slot">twohand</set>
-			<set name="range">100/200</set>
+			<set name="range">150/300</set>
 			<set name="damage" type="piercing">1d12</set>
 			<set name="proficiency">ID_KJT_CC_PROFICIENCY_WEAPON_FIREARMS</set>
 		</setters>
 	</element>
 	
  	 <element name="Carbine Rifle" type="Weapon" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_WEAPON_CARBINE_RIFLE">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_WOTC_PHB24_WEAPON_PROPERTY_AMMUNITION, ID_WOTC_PHB24_WEAPON_PROPERTY_TWOHANDED, ID_WOTC_PHB24_WEAPON_PROPERTY_VEX</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_WOTC_PHB24_WEAPON_PROPERTY_AMMUNITION, ID_WOTC_PHB24_WEAPON_PROPERTY_TWOHANDED, ID_KJT_CC_WEAPON_PROPERTY_FIREARM_RELOAD_5_SHOTS, ID_WOTC_PHB24_WEAPON_PROPERTY_SAP</supports>
 		<description />
 		<setters>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">250</set>
 			<set name="weight" lb="10">5 lb.</set>
 			<set name="slot">twohand</set>
-			<set name="range">50/100</set>
+			<set name="range">30/60</set>
 			<set name="damage" type="piercing">1d10</set>
 			<set name="proficiency">ID_KJT_CC_PROFICIENCY_WEAPON_FIREARMS</set>
 		</setters>
 	</element>
 	
-	<!-- Custom Weapon Proficiencies -->
+	<!--Weapon Supports-->
 
-	<element name="Weapon Proficiency (Flintlock)" type="Proficiency" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_WEAPON_FLINTLOCK_PROFICIENCY">
-		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_WOTC_PHB24_WEAPON_PROPERTY_AMMUNITION, ID_WOTC_PHB24_WEAPON_PROPERTY_LOADING</supports>
-	</element>
-
-	<element name="Weapon Proficiency (Revolver)" type="Proficiency" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_WEAPON_REVOLVER_PROFICIENCY">
-		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_WOTC_PHB24_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING</supports>
-	</element>
-
-	<element name="Weapon Proficiency (Long Rifle)" type="Proficiency" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_WEAPON_LONG_RIFLE_PROFICIENCY">
-		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_WOTC_PHB24_WEAPON_PROPERTY_AMMUNITION, ID_WOTC_PHB24_WEAPON_PROPERTY_LOADING, ID_WOTC_PHB24_WEAPON_PROPERTY_TWOHANDED</supports>
-	</element>
-
-	<element name="Weapon Proficiency (Carbine Rifle)" type="Proficiency" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_WEAPON_CARBINE_RIFLE_PROFICIENCY">
-		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_WOTC_PHB24_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_WOTC_PHB24_WEAPON_PROPERTY_TWOHANDED</supports>
-	</element>
-
-    	<element name="Weapon Proficiency (KJTCC Firearms)" type="Proficiency" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_PROFICIENCY_WEAPON_FIREARMS">
+    <element name="Weapon Proficiency (KJTCC Firearms)" type="Proficiency" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_PROFICIENCY_WEAPON_FIREARMS">
 		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_WOTC_PHB24_WEAPON_PROPERTY_AMMUNITION</supports>
 		<sheet alt="Firearms" />
 	</element>
@@ -156,6 +191,19 @@
 			<grant type="Proficiency" id="ID_KJT_CC_PROFICIENCY_WEAPON_FIREARMS" />
 		</rules>
 	</append>
+
+
+
+		<element name="Reload (5 shots)" type="Weapon Property" source="Internal" id="ID_KJT_CC_WEAPON_PROPERTY_FIREARM_RELOAD_5_SHOTS">
+		<description>
+			<p>A limited number of shots can be made with a weapon that has the reload property. A character must then reload it using an action or a bonus action (the character's choice).</p>
+		</description>
+	</element>
+	<element name="Reload (6 shots)" type="Weapon Property" source="Internal" id="ID_KJT_CC_WEAPON_PROPERTY_FIREARM_RELOAD_6_SHOTS">
+		<description>
+			<p>A limited number of shots can be made with a weapon that has the reload property. A character must then reload it using an action or a bonus action (the character's choice).</p>
+		</description>
+	</element>
 
 	
 </elements>
