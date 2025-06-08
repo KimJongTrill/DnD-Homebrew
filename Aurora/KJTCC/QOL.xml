@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="2.0.1">
+		<update version="2.0.2">
 			<file name="QOL.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/KJTCC/QOL.xml" />
 		</update>
 	</info>
@@ -264,29 +264,27 @@
 			<p>Sorcerers gain at level 2, pool with Sorcery Points, replace all other slots from levels in multiclass.</p>
 		</description>
 		<sheet usage="{{spellpoints}}/Long Rest" alt="Spell Points">
-			<description>
-				<p>Replaces all spell slots. Includes {{sorcery-points}} Sorcery Points. </p>
-				<p>Point cost Per Level: 2 > 1st, 3 > 2nd, 5 > 3rd, 6 > 4th, 7 > 5th, 9 > 6th, 10 > 7th, 11 > 8th, 13 > 9th</p>
-			</description>
+			<description>Replaces all spell slots. Includes {{sorcery-points}} Sorcery Points. &#13;
+				Point cost Per Level: 2 > 1st, 3 > 2nd, 5 > 3rd, 6 > 4th, 7 > 5th, 9 > 6th, 10 > 7th, 11 > 8th, 13 > 9th</description>
 		</sheet>
 		<rules>	
 			<stat name="spellpoints" value="sorcery-points"/>
 
-			<stat name="caster3level" value="1" bonus="base" requirements="[level:fighter:3]"/>
-			<stat name="caster3level" value="2" bonus="base" requirements="[level:fighter:4]"/>
-			<stat name="caster3level" value="3" bonus="base" requirements="[level:fighter:7]"/>
-			<stat name="caster3level" value="4" bonus="base" requirements="[level:fighter:10]"/>
-			<stat name="caster3level" value="5" bonus="base" requirements="[level:fighter:13]"/>
-			<stat name="caster3level" value="6" bonus="base" requirements="[level:fighter:16]"/>
-			<stat name="caster3level" value="7" bonus="base" requirements="[level:fighter:19]"/>
+			<stat name="casterlevel" value="1" bonus="base" requirements="[level:fighter:3], ID_WOTC_PHB24_ARCHETYPE_FIGHTER_ELDRITCH_KNIGHT"/>
+			<stat name="casterlevel" value="2" bonus="base" requirements="[level:fighter:4], ID_WOTC_PHB24_ARCHETYPE_FIGHTER_ELDRITCH_KNIGHT"/>
+			<stat name="casterlevel" value="3" bonus="base" requirements="[level:fighter:7], ID_WOTC_PHB24_ARCHETYPE_FIGHTER_ELDRITCH_KNIGHT"/>
+			<stat name="casterlevel" value="4" bonus="base" requirements="[level:fighter:10], ID_WOTC_PHB24_ARCHETYPE_FIGHTER_ELDRITCH_KNIGHT"/>
+			<stat name="casterlevel" value="5" bonus="base" requirements="[level:fighter:13], ID_WOTC_PHB24_ARCHETYPE_FIGHTER_ELDRITCH_KNIGHT"/>
+			<stat name="casterlevel" value="6" bonus="base" requirements="[level:fighter:16], ID_WOTC_PHB24_ARCHETYPE_FIGHTER_ELDRITCH_KNIGHT"/>
+			<stat name="casterlevel" value="7" bonus="base" requirements="[level:fighter:19], ID_WOTC_PHB24_ARCHETYPE_FIGHTER_ELDRITCH_KNIGHT"/>
 
-			<stat name="caster3level2" value="1" bonus="base" requirements="[level:rogue:3]"/>
-			<stat name="caster3level2" value="2" bonus="base" requirements="[level:rogue:4]"/>
-			<stat name="caster3level2" value="3" bonus="base" requirements="[level:rogue:7]"/>
-			<stat name="caster3level2" value="4" bonus="base" requirements="[level:rogue:10]"/>
-			<stat name="caster3level2" value="5" bonus="base" requirements="[level:rogue:13]"/>
-			<stat name="caster3level2" value="6" bonus="base" requirements="[level:rogue:16]"/>
-			<stat name="caster3level2" value="7" bonus="base" requirements="[level:rogue:19]"/>
+			<stat name="casterlevel" value="1" bonus="base" requirements="[level:rogue:3], ID_WOTC_PHB24_ARCHETYPE_ROGUE_ARCANE_TRICKSTER"/>
+			<stat name="casterlevel" value="2" bonus="base" requirements="[level:rogue:4], ID_WOTC_PHB24_ARCHETYPE_ROGUE_ARCANE_TRICKSTER"/>
+			<stat name="casterlevel" value="3" bonus="base" requirements="[level:rogue:7], ID_WOTC_PHB24_ARCHETYPE_ROGUE_ARCANE_TRICKSTER"/>
+			<stat name="casterlevel" value="4" bonus="base" requirements="[level:rogue:10], ID_WOTC_PHB24_ARCHETYPE_ROGUE_ARCANE_TRICKSTER"/>
+			<stat name="casterlevel" value="5" bonus="base" requirements="[level:rogue:13], ID_WOTC_PHB24_ARCHETYPE_ROGUE_ARCANE_TRICKSTER"/>
+			<stat name="casterlevel" value="6" bonus="base" requirements="[level:rogue:16], ID_WOTC_PHB24_ARCHETYPE_ROGUE_ARCANE_TRICKSTER"/>
+			<stat name="casterlevel" value="7" bonus="base" requirements="[level:rogue:19], ID_WOTC_PHB24_ARCHETYPE_ROGUE_ARCANE_TRICKSTER"/>
 			
 			<stat name="casterlevel" value="level:sorcerer"/>
 			<stat name="casterlevel" value="level:cleric"/>
@@ -296,8 +294,6 @@
 			<stat name="casterlevel" value="level:paladin:half"/>
 			<stat name="casterlevel" value="level:ranger:half"/>
 			<stat name="casterlevel" value="level:artificer:half:up"/>
-			<stat name="casterlevel" value="caster3level" requirements="ID_WOTC_PHB24_ARCHETYPE_FIGHTER_ELDRITCH_KNIGHT"/>
-			<stat name="casterlevel" value="caster3level2" requirements="ID_WOTC_PHB24_ARCHETYPE_ROGUE_ARCANE_TRICKSTER"/>
 
 			<stat name="spellpoints" value="6" bonus="base" requirements="[casterlevel:2]"/>
 			<stat name="spellpoints" value="14" bonus="base" requirements="[casterlevel:3]"/>
