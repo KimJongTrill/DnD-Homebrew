@@ -47,6 +47,19 @@
 		</setters>
 	</element>
 
+	<element name="True Resurrection Diamond" type="Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_TRUE_RESURRECTION_DIAMOND">
+		<description>
+			<p>Transparent blue-white, canary, pink, brown, or blue.</p>
+		</description>
+		<setters>
+			<set name="keywords">gemstone</set>
+			<set name="category">Treasure</set>
+			<set name="cost" currency="gp">25000</set>
+			<set name="stackable">true</set>
+			<set name="valuable">true</set>
+		</setters>
+	</element>
+
 	<!--Spells as Items for Sheet Calc-->
 
 	<element name="Shillelagh" type="Weapon" source="Player’s Handbook" id="ID_WOTC_PHB_SHILLELAGH">
@@ -189,7 +202,7 @@
 		</rules>
 	</element>
 
-	<!--Expanded Elelmental Affinity for Dragon Sorc-->
+	<!--Expanded Gem Elemental Affinity for Dragon Sorc-->
 
 	<element name="Force" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_SORCERER_DRACONIC_ELEMENTAL_AFFINITY_FORCE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SORCERER_24_DRACONIC_ELEMENTAL_AFFINITY_FORCE</requirements>
