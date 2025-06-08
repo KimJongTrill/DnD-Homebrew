@@ -317,6 +317,12 @@
 		</rules>
 	</element>
 
+	<append id="ID_WOTC_PHB24_CLASS_FEATURE_SORCERER_FONT_OF_MAGIC">
+        	<rules>
+           	 	<grant type="Class Feature" id="ID_KJT_CC_SPELL_POINTS" />
+        	</rules>
+    </append>
+
 	<!--Missing Supports-->
 
 	<element name="Weapon Proficiency (Firearms)" type="Proficiency" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS">
@@ -330,46 +336,40 @@
 
 	<!-- 2024 Fixes for Backward Compat-->
 	
-    	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS">
-        	<rules>
-            		<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
-        	</rules>
-    	</append>
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS">
+		<rules>
+				<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+		</rules>
+	</append>
 
-		<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS">
-        	<rules>
-            		<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
-        	</rules>
-    	</append>
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS">
+		<rules>
+				<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+		</rules>
+	</append>
 
-		<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR">
-        	<rules>
-            		<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
-        	</rules>
-    	</append>
+	<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR">
+		<rules>
+				<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+		</rules>
+	</append>
 
-		<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR">
-        	<rules>
-            		<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
-        	</rules>
-    	</append>
+	<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR">
+		<rules>
+				<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+		</rules>
+	</append>
 
-		<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR">
-        	<rules>
-            		<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
-        	</rules>
-    	</append>
+	<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR">
+		<rules>
+				<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+		</rules>
+	</append>
 
-		<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS">
-        	<rules>
-           	 	<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
-        	</rules>
-    	</append>
-
-		<append id="ID_WOTC_PHB24_CLASS_FEATURE_SORCERER_FONT_OF_MAGIC">
-        	<rules>
-           	 	<grant type="Class Feature" id="ID_KJT_CC_SPELL_POINTS" />
-        	</rules>
-    	</append>
+	<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS">
+		<rules>
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+		</rules>
+	</append>
 
 </elements>
