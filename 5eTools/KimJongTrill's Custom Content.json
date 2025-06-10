@@ -14037,6 +14037,9 @@
 				"LD",
 				"2H"
 			],
+			"mastery": [
+				"Slow|XPHB"
+			],
 			"range": "100/200",
 			"entries": []
 		},
@@ -14058,12 +14061,16 @@
 				"RLD",
 				"2H"
 			],
+			"mastery": [
+				"Sap|XPHB"
+			],
 			"range": "50/100",
 			"reload": 5,
 			"entries": []
 		},
 		{
 			"name": "Flintlock",
+			"source": "KimJongTrillsCustomContent",
 			"type": "R",
 			"weapon": true,
 			"firearm": true,
@@ -14077,12 +14084,14 @@
 				"A",
 				"LD"
 			],
+			"mastery": [
+				"Vex|XPHB"
+			],
 			"range": "60/120",
-			"source": "KimJongTrillsCustomContent",
 			"entries": []
 		},
 		{
-			"name": "Six-Shooter",
+			"name": "Revolver",
 			"source": "KimJongTrillsCustomContent",
 			"type": "R",
 			"weapon": true,
@@ -14097,6 +14106,9 @@
 				"A",
 				"RLD",
 				"L"
+			],
+			"mastery": [
+				"Nick|XPHB"
 			],
 			"range": "30/60",
 			"reload": 6,
