@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="2.0.4">
+		<update version="2.0.5">
 			<file name="QOL.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/KJTCC/QOL.xml" />
 		</update>
 	</info>
@@ -325,10 +325,11 @@
 			<stat name="spellpoints" value="123" bonus="base" requirements="[casterlevel:19]"/>
 			<stat name="spellpoints" value="133" bonus="base" requirements="[casterlevel:20]"/>
 
+			<grant type="Grants" id="ID_INTERNAL_FEATURE_REPLACEMENT_SORCERER_24_FONT_OF_MAGIC"/>
 		</rules>
 	</element>
 
-	<append id="ID_WOTC_PHB24_CLASS_FEATURE_SORCERER_FONT_OF_MAGIC">
+	<append id="ID_WOTC_PHB24_CLASS_FEATURE_SORCERER_METAMAGIC">
         	<rules>
            	 	<grant type="Class Feature" id="ID_KJT_CC_SPELL_POINTS" />
         	</rules>
