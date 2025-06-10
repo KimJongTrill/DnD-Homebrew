@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="2.0.5">
+		<update version="2.0.6">
 			<file name="QOL.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/KJTCC/QOL.xml" />
 		</update>
 	</info>
@@ -274,13 +274,15 @@
 	<element name="Spell Points" type="Class Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_SPELL_POINTS">
 		<description>
 			<p><i>2nd-level Sorcerer feature</i></p>
-			<p>Sorcerers gain at level 2, pool with Sorcery Points, replace all other slots from levels in multiclass.</p>
+			<p>Sorcerers gain at level 2, replace Sorcery Points in all uses, replace all other slots from levels in multiclass.</p>
 		</description>
 		<sheet usage="{{spellpoints}}/Long Rest" alt="Spell Points">
-			<description>Replaces all spell slots. Includes {{sorcery-points}} Sorcery Points. &#13;
+			<description>Replaces all spell slots. Are considered Sorcery Points. &#13;
 				Point cost Per Level: 2 > 1st, 3 > 2nd, 5 > 3rd, 6 > 4th, 7 > 5th, 9 > 6th, 10 > 7th, 11 > 8th, 13 > 9th</description>
 		</sheet>
 		<rules>	
+			<stat name="sorcery-points" value="level:sorcerer" />
+
 			<stat name="spellpoints" value="sorcery-points"/>
 
 			<stat name="casterlevel" value="level:sorcerer"/>
@@ -330,9 +332,9 @@
 	</element>
 
 	<append id="ID_WOTC_PHB24_CLASS_FEATURE_SORCERER_METAMAGIC">
-        	<rules>
-           	 	<grant type="Class Feature" id="ID_KJT_CC_SPELL_POINTS" />
-        	</rules>
+        <rules>
+           	<grant type="Class Feature" id="ID_KJT_CC_SPELL_POINTS" />
+        </rules>
     </append>
 
 	<!--Missing Supports-->
