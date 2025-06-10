@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.1.4">
+		<update version="1.1.5">
 			<file name="3rdparty-CHB.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/KJTCC/3rdparty-CHB.xml" />
 		</update>
 	</info>
@@ -23,6 +23,7 @@
 			<set name="slot">feet</set>
 		</setters>
 	</element>
+
 	<element name="Amulet of Equilibrium" type="Magic Item" source="Third Party Curated Homebrew" id="ID_CHB_TGS_AMULET_EQUILIBRIUM">
 		<description>
 			<p>This spiraling pendant is made of three magic-sensitive panes of colorful crystal. Each piece of crystal is attuned to a different arcane element. If you can cast spells, you can use the amulet as a spellcasting focus while you're attuned to it.</p>
@@ -40,7 +41,7 @@
 		</setters>
 	</element>
 	
-		<element name="Timeshifters Mantle" type="Magic Item" source="KimJongTrill’s Custom Content" id="ID_CHB_TGS_TIMESHIFTERS_MANTLE">		
+	<element name="Timeshifters Mantle" type="Magic Item" source="Third Party Curated Homebrew" id="ID_CHB_TGS_TIMESHIFTERS_MANTLE">		
 		<description>
 			<p>If a Large or smaller creature hits you with a melee attack while you're wearing this cloak, you can use your reaction to cause time to briefly warp around you. After taking the damage from the attack, you can immediately move up to half your speed without provoking opportunity attacks, and the attacker's speed is reduced to 0 until the end of this turn. Once this property of the cloak has been used, it can't be used again until the next dawn.</p>
 		</description>
@@ -72,7 +73,8 @@
 			<stat name="ac:calculation" value="ac:spellwoven robes" bonus="calculation" equipped="[armor:none]" alt="Spellwoven Robes (Intelligence)" />
 		</rules>
 	</element>
-		<element name="Spellwoven Robes (Wisdom)" type="Magic Item" source="Third Party Curated Homebrew" id="ID_CHB_TGS_SPELLWOVEN_WIS">
+
+	<element name="Spellwoven Robes (Wisdom)" type="Magic Item" source="Third Party Curated Homebrew" id="ID_CHB_TGS_SPELLWOVEN_WIS">
 		<description>
 			<p>These robes are unique to the wearer and are spun from special, magic-sensitive threads. While wearing these robes, you gain an additional way to calculate your AC. Your AC equals 10 + your spellcasting ability modifier. Whenever you cast a spell of first level or higher, you can also change the apparent style, color, and apparent material of the robe. Regardless of its appearance, it is always a robe and its weight remains the same. Glowing, arcane glyphs appear on the robe's fabric when you cast a spell before fading away a moment later.</p>
 		</description>
@@ -91,6 +93,7 @@
 			<stat name="ac:calculation" value="ac:spellwoven robes" bonus="calculation" equipped="[armor:none]" alt="Spellwoven Robes (Wisdom)" />
 		</rules>
 	</element>
+
 	<element name="Spellwoven Robes (Charisma)" type="Magic Item" source="Third Party Curated Homebrew" id="ID_CHB_TGS_SPELLWOVEN_CHA">
 		<description>
 			<p>These robes are unique to the wearer and are spun from special, magic-sensitive threads. While wearing these robes, you gain an additional way to calculate your AC. Your AC equals 10 + your spellcasting ability modifier. Whenever you cast a spell of first level or higher, you can also change the apparent style, color, and apparent material of the robe. Regardless of its appearance, it is always a robe and its weight remains the same. Glowing, arcane glyphs appear on the robe's fabric when you cast a spell before fading away a moment later.</p>
