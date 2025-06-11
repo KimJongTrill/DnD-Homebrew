@@ -230,7 +230,13 @@ end
 function roll(color, obj, alt)
     playerName = Player[obj].steam_name
     displayCol = getColor(obj)
-    if alt then 
+    local diceRolled = 0
+    for i=1, 7 do
+        diceRolled = diceRolled + diceCount[i]
+    end
+    if diceRolled == 0 then
+        broadcastToColor(">>>>No dice to roll!<<<<", obj, displayCol)
+    elseif alt then 
             parallel_roll(color, obj) 
     else 
             direct_roll(color, obj) 
@@ -337,11 +343,12 @@ function parallel_roll(color, obj)
 end
 
 --Function which does the printing, called on by roll()
+--Function which does the printing, called on by roll()
 function printThis(stringForPrint, displayCol)
     if printMode == "ALL" then
         printToAll(stringForPrint, displayCol)
     else
-        printToColor(stringForPrint, displayCol)
+        printToColor(stringForPrint, "Black", displayCol)
     end
 end
 
