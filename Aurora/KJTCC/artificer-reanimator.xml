@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+
+	<info>
+		<update version="1.0.0">
+			<file name="artificer-reanimator.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/KJTCC/artificer-reanimator.xml" />
+		</update>
+	</info>
+
+	<element name="Reanimator" type="Archetype" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ARCHETYPE_ARTIFICER_REANIMATOR">
+		<supports>Artificer Specialist, TCOE Base</supports>
+		<description>
+			<p>Reanimators defy the laws of nature in pursuit of gruesome experiment. These grim Artificers stitch together servants from disparate corpses, use foul magic to strengthen the living, and transform the art of necromancy into a terrifying science.</p>
+			<div element="ID_KJT_CC_ARCHETYPE_FEATURE_REANIMATOR_SPELLS" />
+			<div element="ID_KJT_CC_ARCHETYPE_FEATURE_REANIMATOR_JOLT_TO_LIFE" />
+			<div element="ID_KJT_CC_ARCHETYPE_FEATURE_REANIMATOR_COMPANION" />
+			<div class="reference">
+				<div element="ID_KJT_CC_INFORMATION_REANIMATOR_COMPANION" />
+			</div>
+			<div element="ID_KJT_CC_ARCHETYPE_FEATURE_REANIMATOR_STRANGE_MODIFICATIONS" />
+			<div element="ID_KJT_CC_ARCHETYPE_FEATURE_REANIMATOR_IMPROVED_REANIMATION" />
+			<div element="ID_KJT_CC_ARCHETYPE_FEATURE_REANIMATOR_PROMTHEAN_REANIMATION" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_KJT_CC_ARCHETYPE_FEATURE_REANIMATOR_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_KJT_CC_ARCHETYPE_FEATURE_REANIMATOR_JOLT_TO_LIFE" level="3" />
+			<grant type="Archetype Feature" id="ID_KJT_CC_ARCHETYPE_FEATURE_REANIMATOR_COMPANION" level="3" />
+			<grant type="Archetype Feature" id="ID_KJT_CC_ARCHETYPE_FEATURE_REANIMATOR_STRANGE_MODIFICATIONS" level="5" />
+			<grant type="Archetype Feature" id="ID_KJT_CC_ARCHETYPE_FEATURE_REANIMATOR_IMPROVED_REANIMATION" level="9" />
+			<grant type="Archetype Feature" id="ID_KJT_CC_ARCHETYPE_FEATURE_REANIMATOR_PROMTHEAN_REANIMATION" level="15" />
+		</rules>
+	</element>
+
+	<element name="Reanimator Spells" type="Archetype Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_REANIMATOR_SPELLS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_KJT_CC_ARTIFICER_REANIMATOR_SPELLS</requirements>
+		<description>
+			<p><em>3rd-level Reanimator feature</em></p>
+			<p>You always have certain spells prepared after you reach particular levels in this class, as shown in the Reanimator Spells table. These spells count as artificer spells for you, but they don't count against the number of artificer spells you prepare.</p>
+			<p><strong>Reanimator Spells</strong></p>
+			<table>
+				<thead>
+					<tr><td>Artificer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>False Life, Spare the Dying, Witch Bolt</em></td></tr>
+				<tr><td>5th</td><td><em>Blindness/Deafness, Enhance Ability</em></td></tr>
+				<tr><td>9th</td><td><em>Animate Dead, Lightning Bolt</em></td></tr>
+				<tr><td>13th</td><td><em>Blight, Death Ward</em></td></tr>
+				<tr><td>17th</td><td><em>Antilife Shell, Raise Dead</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FALSE_LIFE" spellcasting="Artificer" level="3" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_WITCH_BOLT" spellcasting="Artificer" level="3" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BLINDNESS_DEAFNESS" spellcasting="Artificer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ENHANCE_ABILITY" spellcasting="Artificer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ANIMATE_DEAD" spellcasting="Artificer" level="9" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_LIGHTNING_BOLT" spellcasting="Artificer" level="9" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BLIGHT" spellcasting="Artificer" level="13" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DEATH_WARD" spellcasting="Artificer" level="13" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ANTILIFE_SHELL" spellcasting="Artificer" level="17" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_RAISE_DEAD" spellcasting="Artificer" level="17" prepared="true" />
+			<select type="Proficiency" name="Tool Proficiency" supports="Tool 2024" />
+			<select type="Proficiency" name="Tool Proficiency" supports="Tool 2024" />
+		</rules>
+	</element>
+	<element name="Jolt to Life" type="Archetype Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_REANIMATOR_JOLT_TO_LIFE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_KJT_CC_ARTIFICER_REANIMATOR_BATTLE_READY</requirements>
+		<description>
+			<p><em>3rd-level Reanimator feature</em></p>
+			<p>When you cast Spare the Dying, you can modify the spell so that it sends a jolt of electricity through the target, reviving it. The target regains 1 Hit Point, and each creature of your choice in a 10-foot Emanation originating from the target makes a Dexterity saving throw against your spell save DC, taking Lightning damage equal to 1d4 plus half your Artificer level (round up) on a failed save or half as much damage on a successful one.</p>
+		</description>
+		<sheet usage="{{life jolt:usage}}/Long Rest">
+			<description>When you cast Spare the Dying, you can modify the spell so that it sends a jolt of electricity through the target, reviving it. The target regains 1 Hit Point, and each creature of your choice in a 10-foot Emanation originating from the target makes a Dexterity saving throw against your spell save DC, taking Lightning damage equal to 1d4 plus {{level:artificer:half:up}} on a failed save or half as much damage on a successful one.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SPARE_THE_DYING" spellcasting="Artificer" prepared="true" />
+			<stat name="life jolt:usage" value="1" bonus="base" />
+			<stat name="life jolt:usage" value="intelligence:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Reanimated Companion" type="Archetype Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_REANIMATOR_COMPANION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_KJT_CC_ARTIFICER_REANIMATOR_COMPANION</requirements>
+		<description>
+			<p><em>3rd-level Reanimator feature</em></p>
+			<p>Using Tinker's Tools or another type of Artisan's Tools with which you have proficiency, you can take a Magic action to create a Reanimated Companion through the power of necromancy and science. The companion manifests in an unoccupied space within 5 feet of you. You determine the companion's appearance; your choices don't affect the companion's game statistics.</p>
+			<p class="indent">In combat, the companion acts during your turn. It can move and take its Reaction on its own, but the only action it takes is the Dodge action unless you take a Bonus Action to command it to take an action. If you have the Incapacitated condition, the companion acts on its own and isn't limited to the Dodge action.</p>
+			<p class="indent">The companion is Friendly to you and your allies and obeys you. It lasts until you finish a Long Rest or until you take a Magic action to dismiss it early, at which point it harmlessly collapses into a pile of viscera. It immediately drops to 0 Hit Points and dies (triggering its Death Burst trait) if you die.</p>
+			<p class="indent">Once you create a companion, you can't do so again until you finish a Long Rest or expend a spell slot to create one. You can have only one companion at a time and can't create one while your companion is present.</p>
+			<div class="reference">
+				<div element="ID_KJT_CC_INFORMATION_REANIMATOR_COMPANION" />
+			</div>
+		</description>
+		<sheet>
+			<description>The companion is Friendly to you and your allies and obeys you. It lasts until you finish a Long Rest or until you take a Magic action to dismiss it early, at which point it harmlessly collapses into a pile of viscera. It immediately drops to 0 Hit Points and dies (triggering its Death Burst trait) if you die. &#13;
+			Once you create a companion, you can't do so again until you finish a Long Rest or expend a spell slot to create one. You can have only one companion at a time and can't create one while your companion is present. &#13;
+			 In combat, the companion acts during your turn. It can move and take its Reaction on its own, but the only action it takes is the Dodge action unless you take a Bonus Action to command it to take an action. If you have the Incapacitated condition, the companion acts on its own and isn't limited to the Dodge action.</description>
+		</sheet>
+		<rules>
+			<select type="Companion" name="Reanimated Companion" supports="Reanimated Companion" default="ID_KJT_CC_COMPANION_ARTIFICER_REANIMATED_COMPANION" />
+		</rules>
+	</element>
+
+	<element name="Strange Modifications" type="Archetype Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_REANIMATOR_STRANGE_MODIFICATIONS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_KJT_CC_ARCHETYPE_FEATURE_REANIMATOR_STRANGE_MODIFICATIONS</requirements>
+		<description>
+			<p><em>5th-level Reanimator feature</em></p>
+			<p>Whenever you create a Reanimated Companion, it gains one of the following options of your choice; choose when you create the companion.</p>
+			<p><strong>Arcane Conduit.</strong> You can cast spells as though you were in the companion's space, but you must use your own senses. Once per turn, when you cast an Artificer spell from the Evocation or Necromancy schools and deal damage while your companion is within 120 feet of you, you can add your Intelligence modifier to one damage roll of that spell.</p>
+			<p><strong>Ferocity.</strong> When you command your companion to take the Dreadful Swipe action, the companion can use it twice.</p>
+		</description>
+		<sheet>
+			<description>Whenever you create a Reanimated Companion, it gains one of the following options of your choice; choose when you create the companion.&#13;
+			Arcane Conduit. You can cast spells as though you were in the companion's space, but you must use your own senses. Once per turn, when you cast an Artificer spell from the Evocation or Necromancy schools and deal damage while your companion is within 120 feet of you, you can add your Intelligence modifier to one damage roll of that spell.&#13;
+			Ferocity. When you command your companion to take the Dreadful Swipe action, the companion can use it twice.</description>
+		</sheet>
+	</element>
+
+	<element name="Improved Reanimation" type="Archetype Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_REANIMATOR_IMPROVED_REANIMATION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_KJT_CC_ARCHETYPE_FEATURE_REANIMATOR_IMPROVED_REANIMATION</requirements>
+		<description>
+			<p><em>9th-level Reanimator feature</em></p>
+			<p>You experiment and alter your companion further. Whenever you create a Reanimated Companion, it gains one of the following options of your choice; choose when you create the companion.</p>
+			<p><strong>Bloated.</strong> The companion becomes Large or Medium (your choice). Whenever it hits a Large or smaller creature with its Dreadful Swipe action, that creature can also be pushed up to 10 feet away from the companion. Additionally, you can add your Intelligence modifier to the damage dealt by the companion's Death Burst.</p>
+			<p><strong>Gaunt.</strong> The companion's Speed increases to 45 feet, and it gains a Climb Speed equal to its Speed. It can climb difficult surfaces, including along ceilings, without needing to make an ability check. In addition, whenever a creature of your choice starts its turn within a 10-foot Emanation originating from your companion, the creature must succeed on a Wisdom saving throw against your spell save DC or have the Frightened condition until the start of its next turn.</p>
+			<p><strong>Moist.</strong> The companion gains a Swim Speed equal to its Speed. In addition, whenever the companion is hit by an attack roll from a creature within 10 feet of it, the attacker takes Acid damage equal to your Intelligence modifier.</p>
+		</description>
+		<sheet>
+			<description>Whenever you create a Reanimated Companion, it gains one of the following options of your choice; choose when you create the companion.&#13;
+			Bloated. The companion becomes Large or Medium (your choice). Whenever it hits a Large or smaller creature with its Dreadful Swipe action, that creature can also be pushed up to 10 feet away from the companion. Additionally, you can add your Intelligence modifier to the damage dealt by the companion's Death Burst.&#13;
+			Gaunt. The companion's Speed increases to 45 feet, and it gains a Climb Speed equal to its Speed. It can climb difficult surfaces, including along ceilings, without needing to make an ability check. In addition, whenever a creature of your choice starts its turn within a 10-foot Emanation originating from your companion, the creature must succeed on a Wisdom saving throw against your spell save DC or have the Frightened condition until the start of its next turn.&#13;
+			Moist. The companion gains a Swim Speed equal to its Speed. In addition, whenever the companion is hit by an attack roll from a creature within 10 feet of it, the attacker takes Acid damage equal to your Intelligence modifier.</description>
+		</sheet>
+	</element>
+
+	<element name="Promethean Reanimation" type="Archetype Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_REANIMATOR_PROMTHEAN_REANIMATION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_KJT_CC_ARTIFICER_REANIMATOR_IMPROVED_DEFENDER</requirements>
+		<description>
+			<p><strong>Facilitated Revival.</strong> When you cast Revivify or Raise Dead, the cost of any Material components needed for that spell is halved.</p>
+			<p><strong>Improved Companion</strong> The damage of your Reanimated Companion's Death Burst increases to 4d6. Necrotic damage dealt by your companion ignores Resistance.</p>
+			<p><strong>Life Transfer.</strong> You can siphon the animating magic of your companion to bolster yourself. When you take damage, you can take a Reaction to cause your Reanimated Companion to drop to 0 Hit Points. The companion immediately dies (triggering its Death Burst trait), and you regain a number of Hit Points equal to your Artificer level.</p>
+		</description>
+		<sheet>
+			<description>&#13;
+			Facilitated Revival. When you cast Revivify or Raise Dead, the cost of any Material components needed for that spell is halved.&#13;
+			Improved Companion. The damage of your Reanimated Companion's Death Burst increases to 4d6. Necrotic damage dealt by your companion ignores Resistance.&#13;
+			Life Transfer. You can siphon the animating magic of your companion to bolster yourself. When you take damage, you can take a Reaction to cause your Reanimated Companion to drop to 0 Hit Points. The companion immediately dies (triggering its Death Burst trait), and you regain a number of Hit Points equal to your Artificer level.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Tool Proficiency Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_KJT_CC_ARTIFICER_REANIMATOR_TOOL_PROFICIENCY" />
+	<element name="Reanimator Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_KJT_CC_ARTIFICER_REANIMATOR_SPELLS" />
+	<element name="Battle Ready Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_KJT_CC_ARTIFICER_REANIMATOR_BATTLE_READY" />
+	<element name="Steel Defender Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_KJT_CC_ARTIFICER_REANIMATOR_STEEL_DEFENDER" />
+	<element name="Extra Attack Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_KJT_CC_ARTIFICER_REANIMATOR_EXTRA_ATTACK" />
+	<element name="Arcane Jolt Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_KJT_CC_ARTIFICER_REANIMATOR_ARCANE_JOLT" />
+	<element name="Improved Defender Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_KJT_CC_ARTIFICER_REANIMATOR_IMPROVED_DEFENDER" />
+
+	<!--Companion-->
+	<element name="Reanimated Companion" type="Companion" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_COMPANION_ARTIFICER_REANIMATED_COMPANION">
+		<supports>Reanimated Companion</supports>
+		<description>
+			<p>Your necrotic workings have borne you a faithful companion. It is friendly to you and your companions, and it obeys your commands.</p>
+		</description>
+		<setters>
+			<set name="size">Medium</set>
+			<set name="type">Undead</set>
+			<set name="alignment">neutral</set>
+			<set name="ac">10 + your intelligence modifier</set>
+			<set name="hp">4 + four times your Artificer level (the companion has a number of Hit Dice [d6s] equal to your Artificer level)</set>
+			<set name="speed">30 ft.</set>
+			<set name="strength">14</set>
+			<set name="dexterity">10</set>
+			<set name="constitution">16</set>
+			<set name="intelligence">4</set>
+			<set name="wisdom">10</set>
+			<set name="charisma">6</set>
+			<set name="resistances">poison, necrotic</set>
+			<set name="immunities">lightning</set>
+			<set name="conditionImmunities">charmed, exhaustion, poisoned</set>
+			<set name="senses">blindsight 60 ft., passive Perception 10</set>
+			<set name="languages">understands the languages you speak</set>
+			<set name="challenge">—</set>
+			<set name="traits">ID_KJT_CC_COMPANION_TRAIT_REANIMATOR_DEATH_BURST,ID_KJT_CC_COMPANION_TRAIT_REANIMATOR_LIGHNING_ABSORPTION</set>
+			<set name="actions">ID_KJT_CC_COMPANION_ACTION_REANIMATOR_DREADFUL_SWIPE</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="10" bonus="base" />
+			<stat name="companion:ac" value="intelligence:modifier" />
+			<stat name="companion:hp:max" value="4" />
+			<stat name="companion:hp:max" value="level:artificer" />
+			<stat name="companion:hp:max" value="level:artificer" />
+			<stat name="companion:hp:max" value="level:artificer" />
+			<stat name="companion:hp:max" value="level:artificer" />
+			<stat name="companion:speed" value="30" bonus="base" />
+			<stat name="companion:proficiency" value="proficiency" bonus="base" />
+			<stat name="companion:proficiency" value="-2" bonus="base companion PB removal"/>
+		</rules>
+	</element>
+	<element name="Death Burst" type="Companion Trait" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_COMPANION_TRAIT_REANIMATOR_DEATH_BURST">
+		<description>
+			<p>The companion explodes when it dies. Dexterity Saving Throw: DC equals your spell save DC, each creature in a 10-foot Emanation originating from the companion. Failure: 2d6 Necrotic damage.</p>
+		</description>
+		<sheet>
+			<description>The companion explodes when it dies. Dexterity Saving Throw: DC equals your spell save DC, each creature in a 10-foot Emanation originating from the companion. Failure: 2d6 Necrotic damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Lighning Absorption" type="Companion Trait" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_COMPANION_TRAIT_REANIMATOR_LIGHNING_ABSORPTION">
+		<description>
+			<p>Whenever the companion is subjected to Lightning damage, it regains a number of Hit Points equal to the Lightning damage dealt.</p>
+		</description>
+		<sheet>
+			<description>Whenever the companion is subjected to Lightning damage, it regains a number of Hit Points equal to the Lightning damage dealt.</description>
+		</sheet>
+	</element>
+
+	<element name="Dreadful Swipe" type="Companion Action" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_COMPANION_ACTION_REANIMATOR_DREADFUL_SWIPE">
+		<description>
+			<p>Melee Weapon Attack: your spell attack modifier to hit, reach 5 ft., one target you can see. Hit: 1d4 + 2 + your intelligence modifier Necrotic damage, and the target can't take Opportunity Attacks until the start of its next turn..</p>
+		</description>
+		<sheet>
+			<description> Melee Weapon Attack: your spell attack modifier to hit, reach 5 ft., one target you can see. Hit: 1d6 + 2 + your intelligence modifier, and the target can't take Opportunity Attacks until the start of its next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Reanimated Companion" type="Information" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_INFORMATION_REANIMATOR_COMPANION">
+		<description>
+			<p style="margin-bottom:-5px"><em>Medium construct</em></p>
+			<h4 style="margin-top:5px" />
+			<ul class="unstyled">
+				<li><strong>Armor Class</strong> 10 + your intelligence modifier</li>
+				<li><strong>Hit Points</strong> 4 + four times your artificer level (the defender has a number of Hit Dice [d6s] equal to your artificer level)</li>
+				<li><strong>Speed</strong> 30 ft.</li>
+			</ul>
+			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>14 (+2)</td><td>10 (+0)</td><td>16 (+3)</td><td>4 (-3)</td><td>10 (+0)</td><td>6 (-2)</td></tr>
+			</table>
+			<ul class="unstyled">
+				<li><strong>Damage Resistances</strong> poison, necrotic</li>
+				<li><strong>Damage Immunities</strong> lightning</li>
+				<li><strong>Condition Immunities</strong> charmed, exhaustion, poisoned</li>
+				<li><strong>Senses</strong> blindsight 60 ft., passive Perception 10 </li>
+				<li><strong>Languages</strong> understands the languages you speak</li>
+			</ul>
+			<h4 style="margin-top:5px; margin-bottom:10px" />
+			<ul class="unstyled">
+				<li><strong><em>Death Burst.</em></strong> The companion explodes when it dies. Dexterity Saving Throw: DC equals your spell save DC, each creature in a 10-foot Emanation originating from the companion. Failure: 2d6 Necrotic damage.</li>
+				<li><strong><em>Lighning Absorption.</em></strong> Whenever the companion is subjected to Lightning damage, it regains a number of Hit Points equal to the Lightning damage dealt.</li>
+			</ul>
+			<h4 style="margin-top:10px">Actions</h4>
+			<ul class="unstyled">
+				<li><em><strong>Dreadful Swipe.</strong> Melee Weapon Attack:</em> your spell attack modifier to hit, reach 5 ft., one target you can see. <em>Hit:</em> 1d6 + 2 + your intelligence modifier, and the target can't take Opportunity Attacks until the start of its next turn.</li>
+			</ul>
+		</description>
+	</element>
+</elements>

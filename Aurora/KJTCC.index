@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
   <info>
-    <update version="1.6.1">
+    <update version="1.7.0">
       <file name="KJTCC.index" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/KJTCC.index" />
     </update>
   </info>
@@ -14,5 +14,6 @@
     <file name="artifacts.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/KJTCC/artifacts.xml" />
     <file name="weapon-base.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/KJTCC/weapon-base.xml" />
     <file name="deities.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/KJTCC/deities.xml" />
+    <file name="artificer-reanimator.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/KJTCC/artificer-reanimator.xml" />
   </files>
 </index>
