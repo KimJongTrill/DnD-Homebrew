@@ -4,7 +4,7 @@
 		<name>General Category Feats</name>
 		<description>The General Category Feats from the Player’s Handbook 2024.</description>
 		<author url="https://dndstore.wizards.com/us/en/product/1001494/2024-player-s-handbook-digital-plus-physical-bundle">Wizards of the Coast</author>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="feats-general.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024/feats/feats-general.xml" />
 		</update>
 	</info>
@@ -1955,7 +1955,7 @@
 			<description>You gain proficiency in one skill of your choice. You gain Expertise with one skill in which you have proficiency.</description>
 		</sheet>
 		<rules>
-			<select type="Ability Score Improvement" name="Ability Score Increase (Skill Expert)" supports="Feat Ability Score Increase" />
+			<select type="Ability Score Improvement" name="Ability Score Increase (Skill Expert)" supports="Feat ASI 1" />
 			<select type="Proficiency" name="Skill Proficiency (Skill Expert)" supports="ID_PROFICIENCY_SKILL" />
 			<select type="Proficiency" name="Expertise (Skill Expert)" supports="ID_INTERNAL_SUPPORT_EXPERTISE"/>
 		</rules>
