@@ -5,7 +5,7 @@
 		<description>The Warlock class from the Player’s Handbook 2024.</description>
 
 		<author url="https://dndstore.wizards.com/us/en/product/1001494/2024-player-s-handbook-digital-plus-physical-bundle">Wizards of the Coast</author>
-		<update version="0.0.6">
+		<update version="0.0.7">
 			<file name="class-warlock.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/phb2024/classes/class-warlock.xml" />
 		</update>
 	</info>
@@ -171,7 +171,7 @@
 			<description>Your arcane research and the magic bestowed on you by your patron have given you facility with spells. You have {{warlock:spellcasting:slots:count}} slots of level {{warlock:spellcasting:slot}}</description>
 		</sheet>
 		<spellcasting name="Warlock" ability="Charisma" allowReplace="true">
-			<list>WarlocK</list>
+			<list>Warlock</list>
 		</spellcasting>
 		<rules>
 			<!-- add not full but single _not counting as multiclass spellcaster due to pact magic -->
