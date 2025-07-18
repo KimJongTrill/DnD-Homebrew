@@ -1325,7 +1325,7 @@ local objects = {
         type = "updateValue",
     },
     ['investigation'] = {
-        var = "IntimidationCheck",
+        var = "InvestigationCheck",
         type = "updateValue",
     },
     ['medicine'] = {
@@ -1340,7 +1340,7 @@ local objects = {
         var = "PerceptionCheck",
         type = "updateValue",
     },
-    ['Performance'] = {
+    ['performance'] = {
         var = "PerformanceCheck",
         type = "updateValue",
     },
