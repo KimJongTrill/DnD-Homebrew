@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="2.1.1">
+		<update version="2.1.2">
 			<file name="QOL.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/KJTCC/QOL.xml" />
 		</update>
 	</info>
@@ -117,7 +117,7 @@
 			<set name="inventory-hidden">true</set>
 		</setters>
 		<rules>
-			<select type="Class Feature" name="Expertise, DM Gift" supports="Skill Expertise" />
+			<select type="Proficiency" name="Expertise, DM Gift" supports="Skill Expertise" />
 		</rules>
 	</element>
 
