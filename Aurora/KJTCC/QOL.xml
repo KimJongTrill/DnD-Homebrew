@@ -62,37 +62,6 @@
 
 	<!--Spells as Items for Sheet Calc-->
 
-	<element name="Shillelagh" type="Weapon" source="Player’s Handbook" id="ID_KJT_CC_SHILLELAGH">
-		<supports> ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING</supports>
-		<description>
-			<p></p>
-		</description>
-		<setters>
-			<set name="category">Weapons</set>
-			<set name="cost" currency="sp">2</set>
-			<set name="weight" lb="0">0 lb.</set>
-			<set name="slot">onehand</set>
-			<set name="damage" type="bludgeoning">1d8</set>
-			<set name="proficiency">ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS</set>
-		</setters>
-	</element>
-
-	<element name="Magic Stone" type="Weapon" source="Player’s Handbook" id="ID_KJT_CC_MAGIC_STONE">
-		<supports>ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING</supports>
-		<description>
-			<p></p>
-		</description>
-		<setters>
-			<set name="category">Weapons</set>
-			<set name="cost" currency="gp">5</set>
-			<set name="weight" lb="0">0 lb.</set>
-			<set name="slot">onehand</set>
-			<set name="range">60 ft</set>
-			<set name="damage" type="bludgeoning">1d6</set>
-			<set name="proficiency">ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS</set>
-		</setters>
-	</element>
-
 	<element name="Mage Armor" type="Item" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_MAGE_ARMOR">
 		<description>
 			<p>Mage Armor from Warlock Invocation, a blessing from your Patron.</p>
@@ -148,7 +117,7 @@
 			<set name="inventory-hidden">true</set>
 		</setters>
 		<rules>
-			<select type="Class Feature" name="Expertise, DM Gift" supports="Expertise, 2024 Skill" />
+			<select type="Class Feature" name="Expertise, DM Gift" supports="Skill Expertise" />
 		</rules>
 	</element>
 
@@ -174,7 +143,7 @@
 			<select type="Language" name="Language (Custom Background)" number="2" supports="2024 Starting" />
 			<select type="Ability Score Improvement" name="Ability Score Improvement (Background)" supports="ID_WOTC_BACKGROUND_ASI_OPTION_1|ID_WOTC_BACKGROUND_ASI_OPTION_2" />
 			<select type="Feat" name="Origin Feat" supports="Origin"/>
-			<grant type="Grants" id="ID_WOTC_PHB24_LANGUAGE_COMMON"/>
+			<grant type="Grants" id="ID_LANGUAGE_COMMON"/>
 			<grant type="Grants" id="ID_INTERNAL_GRANTS_BACKGROUND_ASI"/>
 		</rules>
 	</element>
@@ -204,9 +173,9 @@
 
 	<!--Expanded Gem Elemental Affinity for Dragon Sorc-->
 
-	<element name="Force" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_KJT_CC_ARCHETYPE_FEATURE_SORCERER_DRACONIC_ELEMENTAL_AFFINITY_FORCE">
+	<element name="Force" type="Archetype Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_SORCERER_DRACONIC_ELEMENTAL_AFFINITY_FORCE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SORCERER_24_DRACONIC_ELEMENTAL_AFFINITY_FORCE</requirements>
-		<supports>Elemental Affinity</supports>
+		<supports>PHB24 Elemental Affinity</supports>
 		<description>
 			<p>Your draconic elemental affinity is Force.</p>
 		</description>
@@ -217,9 +186,9 @@
 		</rules>
 	</element>
 
-	<element name="Psychic" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_KJT_CC_ARCHETYPE_FEATURE_SORCERER_DRACONIC_ELEMENTAL_AFFINITY_PSYCHIC">
+	<element name="Psychic" type="Archetype Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_SORCERER_DRACONIC_ELEMENTAL_AFFINITY_PSYCHIC">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SORCERER_24_DRACONIC_ELEMENTAL_AFFINITY_PSYCHIC</requirements>
-		<supports>Elemental Affinity</supports>
+		<supports>PHB24 Elemental Affinity</supports>
 		<description>
 			<p>Your draconic elemental affinity is Psychic.</p>
 		</description>
@@ -230,9 +199,9 @@
 		</rules>
 	</element>
 
-	<element name="Radiant" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_KJT_CC_ARCHETYPE_FEATURE_SORCERER_DRACONIC_ELEMENTAL_AFFINITY_RADIANT">
+	<element name="Radiant" type="Archetype Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_SORCERER_DRACONIC_ELEMENTAL_AFFINITY_RADIANT">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SORCERER_24_DRACONIC_ELEMENTAL_AFFINITY_RADIANT</requirements>
-		<supports>Elemental Affinity</supports>
+		<supports>PHB24 Elemental Affinity</supports>
 		<description>
 			<p>Your draconic elemental affinity is Radiant.</p>
 		</description>
@@ -243,9 +212,9 @@
 		</rules>
 	</element>
 
-	<element name="Necrotic" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_KJT_CC_ARCHETYPE_FEATURE_SORCERER_DRACONIC_ELEMENTAL_AFFINITY_NECROTIC">
+	<element name="Necrotic" type="Archetype Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_SORCERER_DRACONIC_ELEMENTAL_AFFINITY_NECROTIC">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SORCERER_24_DRACONIC_ELEMENTAL_AFFINITY_NECROTIC</requirements>
-		<supports>Elemental Affinity</supports>
+		<supports>PHB24 Elemental Affinity</supports>
 		<description>
 			<p>Your draconic elemental affinity is Necrotic.</p>
 		</description>
@@ -256,9 +225,9 @@
 		</rules>
 	</element>
 
-	<element name="Thunder" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_KJT_CC_ARCHETYPE_FEATURE_SORCERER_DRACONIC_ELEMENTAL_AFFINITY_THUNDER">
+	<element name="Thunder" type="Archetype Feature" source="KimJongTrill’s Custom Content" id="ID_KJT_CC_ARCHETYPE_FEATURE_SORCERER_DRACONIC_ELEMENTAL_AFFINITY_THUNDER">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SORCERER_24_DRACONIC_ELEMENTAL_AFFINITY_THUNDER</requirements>
-		<supports>Elemental Affinity</supports>
+		<supports>PHB24 Elemental Affinity</supports>
 		<description>
 			<p>Your draconic elemental affinity is Thunder.</p>
 		</description>
@@ -327,7 +296,7 @@
 			<stat name="spellpoints" value="123" bonus="base" requirements="[casterlevel:19]"/>
 			<stat name="spellpoints" value="133" bonus="base" requirements="[casterlevel:20]"/>
 
-			<grant type="Grants" id="ID_INTERNAL_FEATURE_REPLACEMENT_SORCERER_24_FONT_OF_MAGIC"/>
+			<grant type="Grants" id="ID_INTERNAL_PHB24_FEATURE_REPLACEMENT_SORCERER_FONT_OF_MAGIC"/>
 		</rules>
 	</element>
 
@@ -348,42 +317,5 @@
 		</rules>
 	</element>
 
-	<!-- 2024 Fixes for Backward Compat-->
-	
-	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS">
-		<rules>
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
-		</rules>
-	</append>
-
-	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS">
-		<rules>
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
-		</rules>
-	</append>
-
-	<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR">
-		<rules>
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
-		</rules>
-	</append>
-
-	<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR">
-		<rules>
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
-		</rules>
-	</append>
-
-	<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR">
-		<rules>
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
-		</rules>
-	</append>
-
-	<append id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS">
-		<rules>
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
-		</rules>
-	</append>
 
 </elements>
