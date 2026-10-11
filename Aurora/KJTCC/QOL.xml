@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="2.1.0">
+		<update version="2.1.1">
 			<file name="QOL.xml" url="https://raw.githubusercontent.com/KimJongTrill/DnD-Homebrew/master/Aurora/KJTCC/QOL.xml" />
 		</update>
 	</info>
@@ -138,9 +138,9 @@
 			<set name="short">ONLY USE THIS ONE</set>
 		</setters>
 		<rules>
-			<select type="Proficiency" name="Skill Proficiency (Custom Background)" number="2" supports="Skill 2024" />
-			<select type="Proficiency" name="Tool Proficiency (Custom Background)" supports="Tool 2024" />
-			<select type="Language" name="Language (Custom Background)" number="2" supports="2024 Starting" />
+			<select type="Proficiency" name="Skill Proficiency (Custom Background)" number="2" supports="Skill" />
+			<select type="Proficiency" name="Tool Proficiency (Custom Background)" supports="Tool, Artisan tools" />
+			<select type="Language" name="Language (Custom Background)" number="2" supports="Standard" />
 			<select type="Ability Score Improvement" name="Ability Score Improvement (Background)" supports="ID_WOTC_BACKGROUND_ASI_OPTION_1|ID_WOTC_BACKGROUND_ASI_OPTION_2" />
 			<select type="Feat" name="Origin Feat" supports="Origin"/>
 			<grant type="Grants" id="ID_LANGUAGE_COMMON"/>
